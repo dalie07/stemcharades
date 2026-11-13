@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+/* Keyboard users must always see where focus is. */
+:where(a, button, input, select, textarea, summary):focus-visible {
+  outline: 3px solid #4f46e5;
+  outline-offset: 2px;
+}
+
+/* Respect the system setting for reduced motion. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
