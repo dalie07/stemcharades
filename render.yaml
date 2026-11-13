@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: stemcharades
+    runtime: node
+    plan: free
+    buildCommand: npm ci --include=dev && npm run build
+    startCommand: npm start
+    healthCheckPath: /healthz
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      # Render terminates TLS in front of us: trust its X-Forwarded-For for per-IP limits.
+      - key: TRUST_PROXY
+        value: "1"
+      - key: NODE_ENV
+        value: production
