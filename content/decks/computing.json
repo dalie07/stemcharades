@@ -1,0 +1,1238 @@
+[
+  {
+    "id": "com-0001",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Fundamentals",
+    "level": 1,
+    "prompt": "Algorithm",
+    "answers": [
+      "algorithm"
+    ],
+    "forbidden": [
+      "steps",
+      "instructions",
+      "recipe",
+      "procedure",
+      "problem"
+    ],
+    "explanation": "An algorithm is a finite, ordered set of steps for solving a problem or completing a task. A computer program implements an algorithm in a programming language.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0002",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Data representation",
+    "level": 1,
+    "prompt": "Binary",
+    "answers": [
+      "binary",
+      "base 2"
+    ],
+    "forbidden": [
+      "ones",
+      "zeros",
+      "bits",
+      "digits",
+      "base"
+    ],
+    "explanation": "Binary is a number system that uses only the digits 0 and 1. Computers use it because electronic circuits easily represent two states.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0003",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Programming",
+    "level": 1,
+    "prompt": "Variable",
+    "answers": [
+      "variable"
+    ],
+    "forbidden": [
+      "store",
+      "value",
+      "name",
+      "assign",
+      "memory"
+    ],
+    "explanation": "A variable is a named location in memory that holds a value which can change while a program runs. Each variable usually has a data type.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0004",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Programming",
+    "level": 2,
+    "prompt": "Recursion",
+    "answers": [
+      "recursion"
+    ],
+    "forbidden": [
+      "function",
+      "itself",
+      "calls",
+      "base case",
+      "repeat"
+    ],
+    "explanation": "Recursion is when a function solves a problem by calling itself on smaller versions of the problem. It needs a base case to stop.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0005",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Algorithms",
+    "level": 3,
+    "prompt": "Big O notation",
+    "answers": [
+      "big o notation",
+      "big o",
+      "big-o"
+    ],
+    "forbidden": [
+      "complexity",
+      "growth",
+      "worst",
+      "time",
+      "algorithm"
+    ],
+    "explanation": "Big O notation describes how an algorithm's running time or memory use grows as the input size grows. It ignores constant factors and focuses on the dominant term.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0006",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Software",
+    "level": 2,
+    "prompt": "Compiler",
+    "answers": [
+      "compiler"
+    ],
+    "forbidden": [
+      "translate",
+      "machine code",
+      "source",
+      "program",
+      "convert"
+    ],
+    "explanation": "A compiler translates the whole of a program written in a high-level language into machine code before it is run. The resulting executable runs without the compiler.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0007",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Data structures",
+    "level": 2,
+    "prompt": "Hash table",
+    "answers": [
+      "hash table",
+      "hash map",
+      "dictionary"
+    ],
+    "forbidden": [
+      "key",
+      "value",
+      "lookup",
+      "bucket"
+    ],
+    "explanation": "A hash table stores key-value pairs and uses a hash function to decide where each pair is placed. This gives lookups in constant time on average.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0008",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Software",
+    "level": 2,
+    "prompt": "API",
+    "answers": [
+      "api",
+      "application programming interface"
+    ],
+    "forbidden": [
+      "interface",
+      "software",
+      "request",
+      "endpoint",
+      "programming"
+    ],
+    "explanation": "An API is a defined set of rules that lets one piece of software ask another for data or actions. Web APIs usually respond to HTTP requests.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0009",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Programming",
+    "level": 1,
+    "prompt": "Boolean",
+    "answers": [
+      "boolean",
+      "bool"
+    ],
+    "forbidden": [
+      "true",
+      "false",
+      "logic",
+      "binary",
+      "two"
+    ],
+    "explanation": "A Boolean is a data type with only two possible values, true or false. Conditions in if statements and loops evaluate to Booleans.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0010",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Data structures",
+    "level": 2,
+    "prompt": "Stack",
+    "answers": [
+      "stack"
+    ],
+    "forbidden": [
+      "lifo",
+      "push",
+      "pop",
+      "last",
+      "plates"
+    ],
+    "explanation": "A stack is a data structure where the last item added is the first one removed. Items are added with push and removed with pop.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0011",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Data structures",
+    "level": 2,
+    "prompt": "Queue",
+    "answers": [
+      "queue"
+    ],
+    "forbidden": [
+      "fifo",
+      "first",
+      "line",
+      "enqueue",
+      "front"
+    ],
+    "explanation": "A queue is a data structure where the first item added is the first one removed. It models a waiting line.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0012",
+    "type": "question",
+    "subject": "Computing",
+    "topic": "Hardware",
+    "level": 1,
+    "prompt": "What does CPU stand for?",
+    "answers": [
+      "central processing unit"
+    ],
+    "forbidden": [
+      "central",
+      "processing",
+      "brain",
+      "computer"
+    ],
+    "explanation": "CPU stands for central processing unit. It fetches, decodes and executes the instructions of a program.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0013",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Programming",
+    "level": 3,
+    "prompt": "Pointer",
+    "answers": [
+      "pointer",
+      "pointers"
+    ],
+    "forbidden": [
+      "memory",
+      "address",
+      "reference",
+      "dereference"
+    ],
+    "explanation": "A pointer is a variable whose value is the memory address of another value. Languages such as C use pointers for direct memory access.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0014",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Security",
+    "level": 2,
+    "prompt": "Encryption",
+    "answers": [
+      "encryption",
+      "encrypt"
+    ],
+    "forbidden": [
+      "secret",
+      "key",
+      "cipher",
+      "decode",
+      "scramble"
+    ],
+    "explanation": "Encryption transforms readable data into unreadable ciphertext using an algorithm and a key. Only someone with the correct key can turn it back into the original.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0015",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Data",
+    "level": 1,
+    "prompt": "Database",
+    "answers": [
+      "database"
+    ],
+    "forbidden": [
+      "data",
+      "stored",
+      "tables",
+      "sql",
+      "records"
+    ],
+    "explanation": "A database is an organised collection of data that can be searched and updated. Relational databases store data in linked tables.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0016",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Programming",
+    "level": 2,
+    "prompt": "Object-oriented programming",
+    "answers": [
+      "object-oriented programming",
+      "oop",
+      "object oriented programming"
+    ],
+    "forbidden": [
+      "class",
+      "objects",
+      "inheritance",
+      "encapsulation"
+    ],
+    "explanation": "Object-oriented programming organises code into objects that combine data and the methods that act on it. Its core ideas include encapsulation, inheritance and polymorphism.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0017",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "AI",
+    "level": 2,
+    "prompt": "Machine learning",
+    "answers": [
+      "machine learning",
+      "ml"
+    ],
+    "forbidden": [
+      "data",
+      "model",
+      "training",
+      "ai",
+      "patterns"
+    ],
+    "explanation": "Machine learning is a way of building programs that improve at a task by learning patterns from data rather than following hand-written rules. The result is a trained model.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0018",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Networks",
+    "level": 1,
+    "prompt": "IP address",
+    "answers": [
+      "ip address"
+    ],
+    "forbidden": [
+      "internet",
+      "network",
+      "number",
+      "identify",
+      "device"
+    ],
+    "explanation": "An IP address is a numerical label that identifies a device on a network and lets data be routed to it. IPv4 addresses have four numbers from 0 to 255.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0019",
+    "type": "question",
+    "subject": "Computing",
+    "topic": "Algorithms",
+    "level": 2,
+    "prompt": "Which sorting algorithm repeatedly swaps adjacent elements that are out of order?",
+    "answers": [
+      "bubble sort",
+      "bubble"
+    ],
+    "forbidden": [
+      "swap",
+      "adjacent",
+      "sorting",
+      "repeatedly"
+    ],
+    "explanation": "Bubble sort repeatedly steps through a list and swaps neighbouring items that are in the wrong order. It is simple but slow, with O(n^2) time in the worst case.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0020",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Software",
+    "level": 1,
+    "prompt": "Operating system",
+    "answers": [
+      "operating system",
+      "os"
+    ],
+    "forbidden": [
+      "windows",
+      "linux",
+      "software",
+      "hardware",
+      "manage"
+    ],
+    "explanation": "An operating system is the software that manages a computer's hardware and provides services for other programs. Windows, macOS and Linux are examples.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0021",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Programming",
+    "level": 1,
+    "prompt": "Loop",
+    "answers": [
+      "loop",
+      "loops"
+    ],
+    "forbidden": [
+      "repeat",
+      "iteration",
+      "while",
+      "for",
+      "code"
+    ],
+    "explanation": "A loop repeats a block of code until a condition changes or a set number of repeats is done. For and while loops are common types.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0022",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Programming",
+    "level": 1,
+    "prompt": "If statement",
+    "answers": [
+      "if statement",
+      "conditional",
+      "selection"
+    ],
+    "forbidden": [
+      "condition",
+      "true",
+      "branch",
+      "else",
+      "decision"
+    ],
+    "explanation": "An if statement runs a block of code only when a condition is true. It lets a program make decisions.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0023",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Programming",
+    "level": 1,
+    "prompt": "Subroutine",
+    "answers": [
+      "subroutine",
+      "procedure",
+      "method"
+    ],
+    "forbidden": [
+      "reuse",
+      "named",
+      "block",
+      "call",
+      "code"
+    ],
+    "explanation": "A subroutine is a named block of code that does a specific job and can be called from elsewhere. Using subroutines avoids repeating code.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0024",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Data structures",
+    "level": 1,
+    "prompt": "Array",
+    "answers": [
+      "array",
+      "arrays"
+    ],
+    "forbidden": [
+      "list",
+      "index",
+      "elements",
+      "collection",
+      "items"
+    ],
+    "explanation": "An array is a collection of items stored in order and accessed by an index number. All items usually have the same data type.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0025",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Data types",
+    "level": 1,
+    "prompt": "String",
+    "answers": [
+      "string",
+      "strings"
+    ],
+    "forbidden": [
+      "text",
+      "characters",
+      "quotes",
+      "sequence",
+      "words"
+    ],
+    "explanation": "A string is a data type for text: a sequence of characters. It is usually written inside quotation marks.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0026",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Data types",
+    "level": 1,
+    "prompt": "Integer",
+    "answers": [
+      "integer",
+      "int"
+    ],
+    "forbidden": [
+      "whole number",
+      "decimal",
+      "data type",
+      "negative",
+      "positive"
+    ],
+    "explanation": "An integer is a data type for whole numbers with no fractional part. It can be positive, negative or zero.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0027",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Data types",
+    "level": 1,
+    "prompt": "Floating point number",
+    "answers": [
+      "float",
+      "floating point",
+      "floating-point number"
+    ],
+    "forbidden": [
+      "decimal",
+      "fractional",
+      "real number",
+      "data type",
+      "point"
+    ],
+    "explanation": "A float is a data type for numbers with a fractional part, stored in a form of scientific notation. Calculations with floats can have small rounding errors.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0028",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Debugging",
+    "level": 1,
+    "prompt": "Syntax error",
+    "answers": [
+      "syntax error"
+    ],
+    "forbidden": [
+      "rules",
+      "language",
+      "typo",
+      "grammar",
+      "compile"
+    ],
+    "explanation": "A syntax error is a mistake that breaks the grammar rules of a programming language. The program cannot run until it is fixed.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0029",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Debugging",
+    "level": 1,
+    "prompt": "Debugging",
+    "answers": [
+      "debugging",
+      "debug"
+    ],
+    "forbidden": [
+      "bugs",
+      "errors",
+      "fix",
+      "find",
+      "code"
+    ],
+    "explanation": "Debugging is the process of finding and fixing errors in a program. Tools such as breakpoints and print statements help.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0030",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Software",
+    "level": 2,
+    "prompt": "Interpreter",
+    "answers": [
+      "interpreter"
+    ],
+    "forbidden": [
+      "line by line",
+      "translate",
+      "run",
+      "source code",
+      "compiler"
+    ],
+    "explanation": "An interpreter translates and runs a program one statement at a time instead of producing a separate executable. Python is commonly run this way.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0031",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Programming",
+    "level": 2,
+    "prompt": "Variable scope",
+    "answers": [
+      "scope",
+      "variable scope"
+    ],
+    "forbidden": [
+      "where",
+      "accessible",
+      "local",
+      "global",
+      "visible"
+    ],
+    "explanation": "Scope is the part of a program where a variable can be used. A variable declared inside a function is usually only visible there.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0032",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Programming",
+    "level": 2,
+    "prompt": "Global variable",
+    "answers": [
+      "global variable",
+      "global variables"
+    ],
+    "forbidden": [
+      "anywhere",
+      "program",
+      "scope",
+      "local",
+      "accessible"
+    ],
+    "explanation": "A global variable is declared outside any function and can be used throughout the program. Overusing them can make code harder to understand.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0033",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Programming",
+    "level": 2,
+    "prompt": "Parameter",
+    "answers": [
+      "parameter",
+      "argument",
+      "parameters"
+    ],
+    "forbidden": [
+      "function",
+      "pass",
+      "input",
+      "value",
+      "call"
+    ],
+    "explanation": "A parameter is a value passed into a subroutine when it is called. It lets one subroutine work with different data.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0034",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Data structures",
+    "level": 3,
+    "prompt": "Linked list",
+    "answers": [
+      "linked list"
+    ],
+    "forbidden": [
+      "nodes",
+      "pointer",
+      "next",
+      "chain",
+      "elements"
+    ],
+    "explanation": "A linked list is a sequence of nodes, each holding a value and a reference to the next node. Items can be inserted without shifting the others.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0035",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Algorithms",
+    "level": 2,
+    "prompt": "Binary search",
+    "answers": [
+      "binary search"
+    ],
+    "forbidden": [
+      "sorted",
+      "halve",
+      "middle",
+      "divide",
+      "list"
+    ],
+    "explanation": "Binary search finds an item in a sorted list by repeatedly comparing with the middle item and discarding half the list. It takes about log n steps.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0036",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Algorithms",
+    "level": 1,
+    "prompt": "Linear search",
+    "answers": [
+      "linear search",
+      "sequential search"
+    ],
+    "forbidden": [
+      "one by one",
+      "list",
+      "check",
+      "each",
+      "start"
+    ],
+    "explanation": "A linear search checks each item in a list in turn until it finds the target or reaches the end. It works on unsorted lists but is slow for large ones.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0037",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Algorithms",
+    "level": 3,
+    "prompt": "Merge sort",
+    "answers": [
+      "merge sort",
+      "mergesort"
+    ],
+    "forbidden": [
+      "divide",
+      "halves",
+      "merge",
+      "conquer",
+      "recursion"
+    ],
+    "explanation": "Merge sort splits a list in half repeatedly, sorts the pieces and merges them back together in order. It takes about n log n steps.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0038",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Data structures",
+    "level": 2,
+    "prompt": "Tree",
+    "answers": [
+      "tree",
+      "binary tree"
+    ],
+    "forbidden": [
+      "nodes",
+      "root",
+      "branches",
+      "leaves",
+      "hierarchy"
+    ],
+    "explanation": "A tree is a hierarchical data structure of nodes with a single root and branches to child nodes. Each node has one parent except the root.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0039",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Data structures",
+    "level": 3,
+    "prompt": "Graph",
+    "answers": [
+      "graph",
+      "graph data structure"
+    ],
+    "forbidden": [
+      "nodes",
+      "edges",
+      "vertices",
+      "connections",
+      "network"
+    ],
+    "explanation": "A graph is a data structure of nodes joined by edges. It models networks such as roads, friendships or the internet.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0040",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Computational thinking",
+    "level": 2,
+    "prompt": "Abstraction",
+    "answers": [
+      "abstraction"
+    ],
+    "forbidden": [
+      "hide",
+      "detail",
+      "simplify",
+      "complexity",
+      "essential"
+    ],
+    "explanation": "Abstraction means hiding unnecessary detail and keeping only what matters to solve a problem. A map is an abstraction of a landscape.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0041",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Computational thinking",
+    "level": 2,
+    "prompt": "Decomposition",
+    "answers": [
+      "decomposition"
+    ],
+    "forbidden": [
+      "break down",
+      "smaller",
+      "problem",
+      "parts",
+      "manageable"
+    ],
+    "explanation": "Decomposition is breaking a large problem into smaller, easier parts that can be solved separately. It makes complex programs manageable.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0042",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Algorithms",
+    "level": 1,
+    "prompt": "Pseudocode",
+    "answers": [
+      "pseudocode"
+    ],
+    "forbidden": [
+      "plain english",
+      "algorithm",
+      "not real",
+      "code",
+      "structure"
+    ],
+    "explanation": "Pseudocode is a way of writing an algorithm in structured, plain language that is not tied to any programming language. It is used to plan code.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0043",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Algorithms",
+    "level": 1,
+    "prompt": "Flowchart",
+    "answers": [
+      "flowchart",
+      "flow chart"
+    ],
+    "forbidden": [
+      "diagram",
+      "symbols",
+      "arrows",
+      "steps",
+      "boxes"
+    ],
+    "explanation": "A flowchart is a diagram that shows the steps of an algorithm using standard symbols joined by arrows. Diamonds show decisions.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0044",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Logic",
+    "level": 2,
+    "prompt": "Truth table",
+    "answers": [
+      "truth table"
+    ],
+    "forbidden": [
+      "logic",
+      "gates",
+      "inputs",
+      "outputs",
+      "true"
+    ],
+    "explanation": "A truth table lists every possible combination of inputs to a logic expression and the resulting output. It fully describes how a logic gate behaves.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0045",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Logic",
+    "level": 2,
+    "prompt": "AND gate",
+    "answers": [
+      "and gate"
+    ],
+    "forbidden": [
+      "both",
+      "inputs",
+      "logic",
+      "true",
+      "output"
+    ],
+    "explanation": "An AND gate outputs true only when both of its inputs are true. Otherwise its output is false.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0046",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Logic",
+    "level": 2,
+    "prompt": "NOT gate",
+    "answers": [
+      "not gate",
+      "inverter"
+    ],
+    "forbidden": [
+      "inverts",
+      "opposite",
+      "input",
+      "logic",
+      "output"
+    ],
+    "explanation": "A NOT gate has one input and outputs the opposite value. True becomes false and false becomes true.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0047",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Data representation",
+    "level": 1,
+    "prompt": "Bit",
+    "answers": [
+      "bit",
+      "bits"
+    ],
+    "forbidden": [
+      "binary",
+      "digit",
+      "smallest",
+      "zero",
+      "one"
+    ],
+    "explanation": "A bit is a single binary digit, either 0 or 1. It is the smallest unit of data in a computer.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0048",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Data representation",
+    "level": 1,
+    "prompt": "Byte",
+    "answers": [
+      "byte",
+      "bytes"
+    ],
+    "forbidden": [
+      "eight",
+      "bits",
+      "storage",
+      "unit",
+      "memory"
+    ],
+    "explanation": "A byte is a group of eight bits. It is the standard unit for measuring storage and can represent 256 different values.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0049",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Data representation",
+    "level": 2,
+    "prompt": "Hexadecimal",
+    "answers": [
+      "hexadecimal",
+      "hex",
+      "base 16"
+    ],
+    "forbidden": [
+      "sixteen",
+      "digits",
+      "letters",
+      "base"
+    ],
+    "explanation": "Hexadecimal is a number system with 16 digits, 0 to 9 and A to F. It is a compact way of writing binary values.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0050",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Data representation",
+    "level": 2,
+    "prompt": "ASCII",
+    "answers": [
+      "ascii"
+    ],
+    "forbidden": [
+      "characters",
+      "code",
+      "text",
+      "encoding",
+      "numbers"
+    ],
+    "explanation": "ASCII is a character encoding that gives each letter, digit and symbol a number. The original version uses 7 bits to represent 128 characters.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0051",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Data representation",
+    "level": 1,
+    "prompt": "Pixel",
+    "answers": [
+      "pixel",
+      "pixels"
+    ],
+    "forbidden": [
+      "screen",
+      "image",
+      "dot",
+      "colour",
+      "resolution"
+    ],
+    "explanation": "A pixel is the smallest single point of a digital image or screen. Many pixels together form the picture.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0052",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Hardware",
+    "level": 1,
+    "prompt": "RAM",
+    "answers": [
+      "ram",
+      "random access memory"
+    ],
+    "forbidden": [
+      "memory",
+      "temporary",
+      "volatile",
+      "fast",
+      "computer"
+    ],
+    "explanation": "RAM is the computer's fast, temporary working memory. It holds the programs and data in use and is cleared when power is switched off.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0053",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Hardware",
+    "level": 2,
+    "prompt": "Cache",
+    "answers": [
+      "cache"
+    ],
+    "forbidden": [
+      "fast",
+      "memory",
+      "store",
+      "frequently",
+      "copy"
+    ],
+    "explanation": "A cache is a small, very fast store that keeps copies of frequently used data. It reduces the time spent fetching data from slower memory.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0054",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Networks",
+    "level": 1,
+    "prompt": "Router",
+    "answers": [
+      "router"
+    ],
+    "forbidden": [
+      "network",
+      "packets",
+      "internet",
+      "wifi",
+      "directs"
+    ],
+    "explanation": "A router forwards data packets between networks, such as from a home network to the internet. It decides the best route for each packet.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0055",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Security",
+    "level": 2,
+    "prompt": "Firewall",
+    "answers": [
+      "firewall"
+    ],
+    "forbidden": [
+      "network",
+      "block",
+      "traffic",
+      "security",
+      "filter"
+    ],
+    "explanation": "A firewall monitors network traffic and blocks anything that breaks its security rules. It protects a computer or network from unauthorised access.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0056",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Security",
+    "level": 1,
+    "prompt": "Phishing",
+    "answers": [
+      "phishing"
+    ],
+    "forbidden": [
+      "email",
+      "scam",
+      "fake",
+      "passwords",
+      "trick"
+    ],
+    "explanation": "Phishing is sending fake messages that pretend to be from a trusted source to trick people into giving away passwords or other private information.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0057",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Security",
+    "level": 1,
+    "prompt": "Malware",
+    "answers": [
+      "malware"
+    ],
+    "forbidden": [
+      "malicious",
+      "software",
+      "virus",
+      "harm",
+      "computer"
+    ],
+    "explanation": "Malware is software designed to damage a computer or steal information. Viruses, worms and ransomware are all types of malware.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0058",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Software",
+    "level": 2,
+    "prompt": "Version control",
+    "answers": [
+      "version control",
+      "git"
+    ],
+    "forbidden": [
+      "history",
+      "changes",
+      "commits",
+      "track",
+      "repository"
+    ],
+    "explanation": "Version control is a system that records changes to files over time so earlier versions can be recovered. It also lets many people work on the same code.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0059",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Networks",
+    "level": 2,
+    "prompt": "HTTP",
+    "answers": [
+      "http",
+      "hypertext transfer protocol"
+    ],
+    "forbidden": [
+      "web",
+      "protocol",
+      "requests",
+      "browser",
+      "server"
+    ],
+    "explanation": "HTTP is the protocol browsers and servers use to exchange web pages and data. A browser sends a request and the server sends back a response.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0060",
+    "type": "question",
+    "subject": "Computing",
+    "topic": "Networks",
+    "level": 1,
+    "prompt": "What does URL stand for?",
+    "answers": [
+      "uniform resource locator"
+    ],
+    "forbidden": [
+      "web",
+      "address",
+      "link",
+      "browser"
+    ],
+    "explanation": "URL stands for uniform resource locator. It is the address that identifies a resource on the web.",
+    "status": "draft"
+  }
+]

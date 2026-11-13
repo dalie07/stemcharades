@@ -1,0 +1,1238 @@
+[
+  {
+    "id": "bio-0001",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Plants",
+    "level": 1,
+    "prompt": "Photosynthesis",
+    "answers": [
+      "photosynthesis"
+    ],
+    "forbidden": [
+      "plants",
+      "light",
+      "glucose",
+      "chlorophyll",
+      "oxygen"
+    ],
+    "explanation": "Photosynthesis is the process by which plants and algae use light energy to make glucose from carbon dioxide and water. Oxygen is released as a by-product.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0002",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Cell division",
+    "level": 1,
+    "prompt": "Mitosis",
+    "answers": [
+      "mitosis"
+    ],
+    "forbidden": [
+      "cell",
+      "division",
+      "identical",
+      "daughter",
+      "growth"
+    ],
+    "explanation": "Mitosis is cell division that produces two genetically identical daughter cells. It is used for growth and repair.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0003",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Cell division",
+    "level": 2,
+    "prompt": "Meiosis",
+    "answers": [
+      "meiosis"
+    ],
+    "forbidden": [
+      "gametes",
+      "halves",
+      "sex",
+      "chromosomes",
+      "division"
+    ],
+    "explanation": "Meiosis is a type of cell division that produces four genetically different cells with half the normal number of chromosomes. It is how gametes are made.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0004",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Genetics",
+    "level": 1,
+    "prompt": "DNA",
+    "answers": [
+      "dna",
+      "deoxyribonucleic acid"
+    ],
+    "forbidden": [
+      "genetic",
+      "helix",
+      "bases",
+      "genes",
+      "nucleotide"
+    ],
+    "explanation": "DNA is the molecule that carries genetic information in most living things. It is a double helix whose sequence of bases codes for proteins.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0005",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Proteins",
+    "level": 1,
+    "prompt": "Enzyme",
+    "answers": [
+      "enzyme",
+      "enzymes"
+    ],
+    "forbidden": [
+      "protein",
+      "catalyst",
+      "substrate",
+      "reaction"
+    ],
+    "explanation": "Enzymes are biological catalysts, made of protein, that speed up chemical reactions in living things. Each enzyme has an active site that fits a specific substrate.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0006",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Transport",
+    "level": 1,
+    "prompt": "Osmosis",
+    "answers": [
+      "osmosis"
+    ],
+    "forbidden": [
+      "water",
+      "membrane",
+      "diffusion",
+      "semipermeable"
+    ],
+    "explanation": "Osmosis is the net movement of water molecules across a partially permeable membrane from a region of higher water potential to lower water potential. It does not need energy from the cell.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0007",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Evolution",
+    "level": 2,
+    "prompt": "Natural selection",
+    "answers": [
+      "natural selection"
+    ],
+    "forbidden": [
+      "darwin",
+      "evolution",
+      "survival",
+      "fittest",
+      "adapted"
+    ],
+    "explanation": "Natural selection is the process by which individuals with advantageous inherited traits survive and reproduce more than others. Over generations the population changes.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0008",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Cells",
+    "level": 1,
+    "prompt": "Mitochondria",
+    "answers": [
+      "mitochondria",
+      "mitochondrion"
+    ],
+    "forbidden": [
+      "powerhouse",
+      "respiration",
+      "atp",
+      "energy",
+      "organelle"
+    ],
+    "explanation": "Mitochondria are the organelles where most aerobic respiration takes place. They release energy by making ATP.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0009",
+    "type": "formula",
+    "subject": "Biology",
+    "topic": "Respiration",
+    "level": 2,
+    "prompt": "Aerobic respiration equation",
+    "latex": "C_6H_{12}O_6+6O_2\\rightarrow 6CO_2+6H_2O",
+    "answers": [
+      "aerobic respiration",
+      "cellular respiration",
+      "respiration"
+    ],
+    "forbidden": [
+      "glucose",
+      "oxygen",
+      "atp",
+      "mitochondria",
+      "breathing"
+    ],
+    "explanation": "In aerobic respiration glucose reacts with oxygen to produce carbon dioxide and water, releasing energy. Most of the energy is captured in ATP.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0010",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Genetics",
+    "level": 2,
+    "prompt": "Allele",
+    "answers": [
+      "allele",
+      "alleles"
+    ],
+    "forbidden": [
+      "gene",
+      "variant",
+      "dominant",
+      "recessive"
+    ],
+    "explanation": "An allele is one of the different versions of a gene. You inherit one allele of each gene from each parent.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0011",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Ecology",
+    "level": 1,
+    "prompt": "Ecosystem",
+    "answers": [
+      "ecosystem"
+    ],
+    "forbidden": [
+      "organisms",
+      "environment",
+      "habitat",
+      "living",
+      "community"
+    ],
+    "explanation": "An ecosystem is a community of living organisms interacting with each other and with the non-living parts of their environment. Examples include ponds and woodlands.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0012",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Homeostasis",
+    "level": 2,
+    "prompt": "Homeostasis",
+    "answers": [
+      "homeostasis"
+    ],
+    "forbidden": [
+      "balance",
+      "stable",
+      "internal",
+      "temperature",
+      "regulate"
+    ],
+    "explanation": "Homeostasis is the maintenance of a stable internal environment despite changes outside. Body temperature and blood glucose are both controlled this way.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0013",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Immunity",
+    "level": 2,
+    "prompt": "Antibody",
+    "answers": [
+      "antibody",
+      "antibodies"
+    ],
+    "forbidden": [
+      "immune",
+      "antigen",
+      "pathogen",
+      "lymphocyte"
+    ],
+    "explanation": "An antibody is a protein made by white blood cells that binds to a specific antigen on a pathogen. This marks the pathogen for destruction.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0014",
+    "type": "question",
+    "subject": "Biology",
+    "topic": "Cells",
+    "level": 1,
+    "prompt": "Which organelle contains chlorophyll?",
+    "answers": [
+      "chloroplast",
+      "chloroplasts"
+    ],
+    "forbidden": [
+      "green",
+      "plant",
+      "photosynthesis",
+      "organelle"
+    ],
+    "explanation": "Chlorophyll is found in chloroplasts, where photosynthesis takes place. It absorbs mainly red and blue light and reflects green.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0015",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Genetics",
+    "level": 2,
+    "prompt": "Genotype",
+    "answers": [
+      "genotype"
+    ],
+    "forbidden": [
+      "alleles",
+      "genes",
+      "phenotype",
+      "genetic",
+      "makeup"
+    ],
+    "explanation": "A genotype is the combination of alleles an organism has for a gene. Together with the environment it determines the phenotype.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0016",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Cells",
+    "level": 2,
+    "prompt": "Ribosome",
+    "answers": [
+      "ribosome",
+      "ribosomes"
+    ],
+    "forbidden": [
+      "protein",
+      "rna",
+      "translation",
+      "mrna"
+    ],
+    "explanation": "Ribosomes are the small structures where proteins are made by translating messenger RNA. They are found free in the cytoplasm and on rough endoplasmic reticulum.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0017",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Ecology",
+    "level": 1,
+    "prompt": "Biodiversity",
+    "answers": [
+      "biodiversity",
+      "biological diversity"
+    ],
+    "forbidden": [
+      "species",
+      "variety",
+      "ecosystem",
+      "habitats"
+    ],
+    "explanation": "Biodiversity is the variety of living things in an area, including the number of species and the genetic variation within them. High biodiversity makes ecosystems more resilient.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0018",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Cells",
+    "level": 2,
+    "prompt": "Stem cell",
+    "answers": [
+      "stem cell",
+      "stem cells"
+    ],
+    "forbidden": [
+      "differentiate",
+      "specialised",
+      "embryonic",
+      "divide"
+    ],
+    "explanation": "A stem cell is an unspecialised cell that can divide and differentiate into other cell types. They are used in research into treating disease.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0019",
+    "type": "question",
+    "subject": "Biology",
+    "topic": "Genetics",
+    "level": 3,
+    "prompt": "What type of bond holds the two strands of DNA together?",
+    "answers": [
+      "hydrogen bond",
+      "hydrogen bonds"
+    ],
+    "forbidden": [
+      "strands",
+      "bases",
+      "pairs",
+      "weak"
+    ],
+    "explanation": "Complementary base pairs, A with T and C with G, are held together by hydrogen bonds. These bonds are weak individually but strong in total, and they can be broken to unzip the DNA.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0020",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Immunity",
+    "level": 1,
+    "prompt": "Vaccination",
+    "answers": [
+      "vaccination",
+      "vaccine"
+    ],
+    "forbidden": [
+      "immunity",
+      "disease",
+      "injection",
+      "pathogen",
+      "antibodies"
+    ],
+    "explanation": "Vaccination introduces a harmless form of a pathogen so the body makes memory cells. If the real pathogen appears later, the immune response is fast.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0021",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Cells",
+    "level": 1,
+    "prompt": "Cell membrane",
+    "answers": [
+      "cell membrane",
+      "plasma membrane"
+    ],
+    "forbidden": [
+      "barrier",
+      "selectively permeable",
+      "phospholipid",
+      "controls",
+      "outside"
+    ],
+    "explanation": "The cell membrane surrounds the cell and controls which substances enter and leave. It is made of a double layer of phospholipids with embedded proteins.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0022",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Cells",
+    "level": 1,
+    "prompt": "Nucleus",
+    "answers": [
+      "nucleus"
+    ],
+    "forbidden": [
+      "dna",
+      "control",
+      "cell",
+      "chromosomes",
+      "membrane"
+    ],
+    "explanation": "The nucleus is the organelle that contains the cell's DNA and controls its activities. It is surrounded by a double membrane with pores.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0023",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Cells",
+    "level": 1,
+    "prompt": "Cell wall",
+    "answers": [
+      "cell wall"
+    ],
+    "forbidden": [
+      "cellulose",
+      "plant",
+      "rigid",
+      "support",
+      "outside"
+    ],
+    "explanation": "A cell wall is a rigid layer outside the cell membrane of plant cells, made mainly of cellulose. It supports the cell and stops it bursting.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0024",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Cells",
+    "level": 1,
+    "prompt": "Vacuole",
+    "answers": [
+      "vacuole",
+      "vacuoles"
+    ],
+    "forbidden": [
+      "sap",
+      "store",
+      "plant",
+      "large",
+      "cell"
+    ],
+    "explanation": "A vacuole is a fluid-filled organelle that stores substances. In plant cells a large permanent vacuole holds cell sap and helps keep the cell firm.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0025",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Cells",
+    "level": 1,
+    "prompt": "Cytoplasm",
+    "answers": [
+      "cytoplasm"
+    ],
+    "forbidden": [
+      "jelly",
+      "reactions",
+      "cell",
+      "organelles",
+      "fluid"
+    ],
+    "explanation": "Cytoplasm is the jelly-like fluid inside a cell in which the organelles sit. Many of the cell's chemical reactions happen in it.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0026",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Transport",
+    "level": 1,
+    "prompt": "Diffusion",
+    "answers": [
+      "diffusion"
+    ],
+    "forbidden": [
+      "particles",
+      "concentration",
+      "gradient",
+      "high",
+      "spread"
+    ],
+    "explanation": "Diffusion is the net movement of particles from a region of higher concentration to a region of lower concentration. It does not need energy from the cell.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0027",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Transport",
+    "level": 2,
+    "prompt": "Active transport",
+    "answers": [
+      "active transport"
+    ],
+    "forbidden": [
+      "energy",
+      "against",
+      "gradient",
+      "carrier",
+      "atp"
+    ],
+    "explanation": "Active transport moves substances across a membrane against their concentration gradient. It needs energy from respiration and carrier proteins.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0028",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Organisation",
+    "level": 1,
+    "prompt": "Tissue",
+    "answers": [
+      "tissue",
+      "tissues"
+    ],
+    "forbidden": [
+      "cells",
+      "group",
+      "same",
+      "function",
+      "organ"
+    ],
+    "explanation": "A tissue is a group of similar cells that work together to do the same job. Muscle tissue is an example.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0029",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Organisation",
+    "level": 1,
+    "prompt": "Organ",
+    "answers": [
+      "organ",
+      "organs"
+    ],
+    "forbidden": [
+      "tissues",
+      "heart",
+      "function",
+      "body",
+      "system"
+    ],
+    "explanation": "An organ is a group of different tissues that work together to carry out a particular function. The stomach and the heart are organs.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0030",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Digestion",
+    "level": 2,
+    "prompt": "Amylase",
+    "answers": [
+      "amylase"
+    ],
+    "forbidden": [
+      "starch",
+      "sugars",
+      "saliva",
+      "enzyme",
+      "breaks"
+    ],
+    "explanation": "Amylase is an enzyme that breaks down starch into sugars. It is made in the salivary glands and the pancreas.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0031",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Digestion",
+    "level": 2,
+    "prompt": "Villi",
+    "answers": [
+      "villi",
+      "villus"
+    ],
+    "forbidden": [
+      "small intestine",
+      "absorption",
+      "surface area",
+      "finger",
+      "projections"
+    ],
+    "explanation": "Villi are tiny finger-like projections lining the small intestine. They greatly increase the surface area for absorbing digested food.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0032",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Blood",
+    "level": 1,
+    "prompt": "Red blood cell",
+    "answers": [
+      "red blood cell",
+      "red blood cells",
+      "erythrocyte"
+    ],
+    "forbidden": [
+      "haemoglobin",
+      "oxygen",
+      "disc",
+      "nucleus",
+      "carry"
+    ],
+    "explanation": "Red blood cells carry oxygen around the body using haemoglobin. They are shaped like biconcave discs and have no nucleus.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0033",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Blood",
+    "level": 1,
+    "prompt": "White blood cell",
+    "answers": [
+      "white blood cell",
+      "white blood cells",
+      "leucocyte",
+      "leukocyte"
+    ],
+    "forbidden": [
+      "pathogens",
+      "immune",
+      "infection",
+      "phagocytosis",
+      "antibodies"
+    ],
+    "explanation": "White blood cells defend the body against infection. Some engulf pathogens and others make antibodies.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0034",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Blood",
+    "level": 1,
+    "prompt": "Platelet",
+    "answers": [
+      "platelet",
+      "platelets"
+    ],
+    "forbidden": [
+      "clotting",
+      "blood",
+      "fragments",
+      "scab",
+      "cut"
+    ],
+    "explanation": "Platelets are small cell fragments in the blood that help it clot at a wound. The clot forms a scab that seals the cut.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0035",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Circulation",
+    "level": 1,
+    "prompt": "Artery",
+    "answers": [
+      "artery",
+      "arteries"
+    ],
+    "forbidden": [
+      "heart",
+      "away",
+      "thick",
+      "pressure",
+      "blood vessel"
+    ],
+    "explanation": "An artery is a blood vessel that carries blood away from the heart under high pressure. Its walls are thick and elastic.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0036",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Circulation",
+    "level": 1,
+    "prompt": "Vein",
+    "answers": [
+      "vein",
+      "veins"
+    ],
+    "forbidden": [
+      "towards",
+      "heart",
+      "valves",
+      "thin",
+      "blood vessel"
+    ],
+    "explanation": "A vein is a blood vessel that carries blood back towards the heart. Its walls are thinner than an artery's and it has valves to stop backflow.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0037",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Circulation",
+    "level": 1,
+    "prompt": "Capillary",
+    "answers": [
+      "capillary",
+      "capillaries"
+    ],
+    "forbidden": [
+      "smallest",
+      "thin",
+      "exchange",
+      "vessels",
+      "wall"
+    ],
+    "explanation": "Capillaries are the smallest blood vessels, with walls only one cell thick. Substances pass between the blood and the body's cells through them.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0038",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Circulation",
+    "level": 1,
+    "prompt": "Heart",
+    "answers": [
+      "heart"
+    ],
+    "forbidden": [
+      "pump",
+      "blood",
+      "chambers",
+      "beats",
+      "organ"
+    ],
+    "explanation": "The heart is a muscular organ that pumps blood around the body. In humans it has four chambers and a double circulation.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0039",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Coordination",
+    "level": 2,
+    "prompt": "Neuron",
+    "answers": [
+      "neuron",
+      "nerve cell",
+      "neurone"
+    ],
+    "forbidden": [
+      "impulses",
+      "electrical",
+      "axon",
+      "brain",
+      "synapse"
+    ],
+    "explanation": "A neuron is a nerve cell that carries electrical impulses. It has a long axon to carry signals over distance.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0040",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Coordination",
+    "level": 2,
+    "prompt": "Synapse",
+    "answers": [
+      "synapse",
+      "synapses"
+    ],
+    "forbidden": [
+      "gap",
+      "neurons",
+      "neurotransmitter",
+      "impulse",
+      "junction"
+    ],
+    "explanation": "A synapse is the tiny gap between two neurons. The signal crosses it as a chemical, called a neurotransmitter.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0041",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Coordination",
+    "level": 2,
+    "prompt": "Reflex arc",
+    "answers": [
+      "reflex arc",
+      "reflex"
+    ],
+    "forbidden": [
+      "automatic",
+      "fast",
+      "spinal cord",
+      "stimulus",
+      "response"
+    ],
+    "explanation": "A reflex is a fast, automatic response to a stimulus that does not involve conscious thought. The nerve pathway for it is called a reflex arc.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0042",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Coordination",
+    "level": 2,
+    "prompt": "Hormone",
+    "answers": [
+      "hormone",
+      "hormones"
+    ],
+    "forbidden": [
+      "chemical",
+      "glands",
+      "blood",
+      "messenger",
+      "target"
+    ],
+    "explanation": "A hormone is a chemical messenger made in a gland and carried in the blood to target organs. Hormones control processes such as growth and blood sugar.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0043",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Coordination",
+    "level": 2,
+    "prompt": "Insulin",
+    "answers": [
+      "insulin"
+    ],
+    "forbidden": [
+      "glucose",
+      "pancreas",
+      "diabetes",
+      "blood sugar",
+      "hormone"
+    ],
+    "explanation": "Insulin is a hormone made by the pancreas that lowers blood glucose by helping cells take it up. People with type 1 diabetes cannot make enough of it.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0044",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Homeostasis",
+    "level": 3,
+    "prompt": "Negative feedback",
+    "answers": [
+      "negative feedback"
+    ],
+    "forbidden": [
+      "reverses",
+      "change",
+      "homeostasis",
+      "return",
+      "control"
+    ],
+    "explanation": "Negative feedback is a control system in which a change triggers a response that reverses the change. It keeps conditions such as temperature near a set point.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0045",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Genetics",
+    "level": 2,
+    "prompt": "Phenotype",
+    "answers": [
+      "phenotype"
+    ],
+    "forbidden": [
+      "observable",
+      "characteristics",
+      "genotype",
+      "traits",
+      "appearance"
+    ],
+    "explanation": "A phenotype is the set of observable characteristics of an organism. It results from the genotype and the environment.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0046",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Genetics",
+    "level": 2,
+    "prompt": "Dominant allele",
+    "answers": [
+      "dominant allele",
+      "dominant"
+    ],
+    "forbidden": [
+      "expressed",
+      "heterozygous",
+      "recessive",
+      "mask",
+      "capital letter"
+    ],
+    "explanation": "A dominant allele is expressed in the phenotype even when only one copy is present. It is usually written with a capital letter.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0047",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Genetics",
+    "level": 2,
+    "prompt": "Recessive allele",
+    "answers": [
+      "recessive allele",
+      "recessive"
+    ],
+    "forbidden": [
+      "hidden",
+      "homozygous",
+      "dominant",
+      "two copies",
+      "masked"
+    ],
+    "explanation": "A recessive allele only shows in the phenotype when two copies are present. With one copy it is masked by a dominant allele.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0048",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Genetics",
+    "level": 3,
+    "prompt": "Heterozygous",
+    "answers": [
+      "heterozygous"
+    ],
+    "forbidden": [
+      "different",
+      "alleles",
+      "two",
+      "gene",
+      "carrier"
+    ],
+    "explanation": "A heterozygous organism has two different alleles of a gene. If one allele is recessive, the organism is a carrier of it.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0049",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Genetics",
+    "level": 3,
+    "prompt": "Homozygous",
+    "answers": [
+      "homozygous"
+    ],
+    "forbidden": [
+      "same",
+      "alleles",
+      "two",
+      "gene",
+      "identical"
+    ],
+    "explanation": "A homozygous organism has two identical alleles of a gene. It can be homozygous dominant or homozygous recessive.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0050",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Genetics",
+    "level": 2,
+    "prompt": "Mutation",
+    "answers": [
+      "mutation",
+      "mutations"
+    ],
+    "forbidden": [
+      "change",
+      "dna",
+      "sequence",
+      "genetic",
+      "variation"
+    ],
+    "explanation": "A mutation is a change in the DNA sequence. Most have little effect, but some alter a protein and can be harmful or helpful.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0051",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Genetics",
+    "level": 1,
+    "prompt": "Gene",
+    "answers": [
+      "gene",
+      "genes"
+    ],
+    "forbidden": [
+      "dna",
+      "protein",
+      "code",
+      "inherited",
+      "section"
+    ],
+    "explanation": "A gene is a section of DNA that codes for a particular protein. Genes are inherited from parents and determine characteristics.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0052",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Genetics",
+    "level": 1,
+    "prompt": "Chromosome",
+    "answers": [
+      "chromosome",
+      "chromosomes"
+    ],
+    "forbidden": [
+      "dna",
+      "nucleus",
+      "genes",
+      "pairs",
+      "forty-six"
+    ],
+    "explanation": "A chromosome is a long, coiled molecule of DNA that carries many genes. Human body cells have 23 pairs, or 46 in total.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0053",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Evolution",
+    "level": 2,
+    "prompt": "Selective breeding",
+    "answers": [
+      "selective breeding",
+      "artificial selection"
+    ],
+    "forbidden": [
+      "humans",
+      "choose",
+      "desirable",
+      "traits",
+      "farmers"
+    ],
+    "explanation": "Selective breeding is when humans choose organisms with desirable traits to breed from, over many generations. It has produced high-yield crops and dairy cattle.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0054",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Biotechnology",
+    "level": 3,
+    "prompt": "Genetic engineering",
+    "answers": [
+      "genetic engineering",
+      "genetic modification",
+      "gene editing"
+    ],
+    "forbidden": [
+      "dna",
+      "gene",
+      "transfer",
+      "organism",
+      "crispr"
+    ],
+    "explanation": "Genetic engineering is changing an organism's genes, often by transferring a gene from one species to another. It is used to make insulin and pest-resistant crops.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0055",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Evolution",
+    "level": 1,
+    "prompt": "Fossil",
+    "answers": [
+      "fossil",
+      "fossils"
+    ],
+    "forbidden": [
+      "remains",
+      "rock",
+      "ancient",
+      "preserved",
+      "evidence"
+    ],
+    "explanation": "A fossil is the preserved remains or traces of an organism from long ago, usually found in rock. Fossils provide evidence for evolution.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0056",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Evolution",
+    "level": 1,
+    "prompt": "Extinction",
+    "answers": [
+      "extinction",
+      "extinct"
+    ],
+    "forbidden": [
+      "species",
+      "die",
+      "no longer",
+      "dinosaurs",
+      "population"
+    ],
+    "explanation": "Extinction is when every individual of a species has died, so the species no longer exists. It can be caused by climate change, disease or loss of habitat.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0057",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Ecology",
+    "level": 1,
+    "prompt": "Food chain",
+    "answers": [
+      "food chain"
+    ],
+    "forbidden": [
+      "producer",
+      "consumer",
+      "energy",
+      "feeding",
+      "predator"
+    ],
+    "explanation": "A food chain shows the transfer of energy from one organism to the next as they feed. It starts with a producer such as a plant.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0058",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Ecology",
+    "level": 2,
+    "prompt": "Carbon cycle",
+    "answers": [
+      "carbon cycle"
+    ],
+    "forbidden": [
+      "carbon dioxide",
+      "photosynthesis",
+      "respiration",
+      "atmosphere",
+      "combustion"
+    ],
+    "explanation": "The carbon cycle is the movement of carbon between the atmosphere, living things and the Earth. Photosynthesis removes carbon dioxide while respiration and burning return it.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0059",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Ecology",
+    "level": 1,
+    "prompt": "Decomposer",
+    "answers": [
+      "decomposer",
+      "decomposers"
+    ],
+    "forbidden": [
+      "break down",
+      "fungi",
+      "bacteria",
+      "dead",
+      "nutrients"
+    ],
+    "explanation": "Decomposers, such as fungi and bacteria, break down dead plants and animals. This returns nutrients to the soil.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0060",
+    "type": "question",
+    "subject": "Biology",
+    "topic": "Plants",
+    "level": 1,
+    "prompt": "What gas do plants absorb from the air for photosynthesis?",
+    "answers": [
+      "carbon dioxide",
+      "co2"
+    ],
+    "forbidden": [
+      "gas",
+      "air",
+      "plants",
+      "stomata",
+      "absorb"
+    ],
+    "explanation": "Plants take in carbon dioxide through their stomata and use it to make glucose. Oxygen is released as a by-product.",
+    "status": "draft"
+  }
+]

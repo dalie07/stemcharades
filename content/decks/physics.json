@@ -1,0 +1,1233 @@
+[
+  {
+    "id": "phy-0001",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Mechanics",
+    "level": 1,
+    "prompt": "Velocity",
+    "answers": [
+      "velocity"
+    ],
+    "forbidden": [
+      "speed",
+      "direction",
+      "displacement",
+      "vector"
+    ],
+    "explanation": "Velocity is the rate of change of displacement with time. It is a vector, so it has both a magnitude and a direction.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0002",
+    "type": "formula",
+    "subject": "Physics",
+    "topic": "Mechanics",
+    "level": 1,
+    "prompt": "Newton's second law",
+    "latex": "F=ma",
+    "answers": [
+      "newton's second law",
+      "newtons second law",
+      "second law of motion",
+      "f=ma"
+    ],
+    "forbidden": [
+      "force",
+      "mass",
+      "acceleration",
+      "newton"
+    ],
+    "explanation": "The resultant force on an object equals its mass multiplied by its acceleration. For a given force, a larger mass accelerates less.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0003",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Energy",
+    "level": 1,
+    "prompt": "Kinetic energy",
+    "answers": [
+      "kinetic energy",
+      "ke"
+    ],
+    "forbidden": [
+      "motion",
+      "moving",
+      "mass",
+      "speed"
+    ],
+    "explanation": "Kinetic energy is the energy an object has because of its motion. It equals one half times mass times speed squared.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0004",
+    "type": "formula",
+    "subject": "Physics",
+    "topic": "Electricity",
+    "level": 1,
+    "prompt": "Ohm's law",
+    "latex": "V=IR",
+    "answers": [
+      "ohm's law",
+      "ohms law"
+    ],
+    "forbidden": [
+      "voltage",
+      "current",
+      "resistance",
+      "ohm"
+    ],
+    "explanation": "For an ohmic conductor at constant temperature, the potential difference across it is proportional to the current through it. The constant of proportionality is the resistance.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0005",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Thermodynamics",
+    "level": 3,
+    "prompt": "Entropy",
+    "answers": [
+      "entropy"
+    ],
+    "forbidden": [
+      "disorder",
+      "randomness",
+      "thermodynamics",
+      "microstates"
+    ],
+    "explanation": "Entropy measures the number of microscopic arrangements that correspond to a system's overall state. The second law of thermodynamics says the total entropy of an isolated system never decreases.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0006",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Waves",
+    "level": 1,
+    "prompt": "Refraction",
+    "answers": [
+      "refraction"
+    ],
+    "forbidden": [
+      "bend",
+      "light",
+      "speed",
+      "medium"
+    ],
+    "explanation": "Refraction is the change in direction of a wave when it passes from one medium into another. It happens because the wave's speed changes in the new medium.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0007",
+    "type": "formula",
+    "subject": "Physics",
+    "topic": "Relativity",
+    "level": 2,
+    "prompt": "Mass-energy equivalence",
+    "latex": "E=mc^2",
+    "answers": [
+      "e=mc^2",
+      "e=mc2",
+      "mass-energy equivalence",
+      "emc2"
+    ],
+    "forbidden": [
+      "einstein",
+      "mass",
+      "energy",
+      "light",
+      "speed"
+    ],
+    "explanation": "Mass and energy are equivalent: a mass m has a rest energy of m times the speed of light squared. This explains how nuclear reactions release energy as mass is converted.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0008",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Waves",
+    "level": 2,
+    "prompt": "Doppler effect",
+    "answers": [
+      "doppler effect",
+      "doppler shift"
+    ],
+    "forbidden": [
+      "frequency",
+      "siren",
+      "moving",
+      "pitch",
+      "wave"
+    ],
+    "explanation": "The Doppler effect is the change in observed frequency of a wave when the source and observer move relative to each other. Approaching sources sound higher pitched, receding ones lower.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0009",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Electricity",
+    "level": 1,
+    "prompt": "Resistor",
+    "answers": [
+      "resistor"
+    ],
+    "forbidden": [
+      "resistance",
+      "current",
+      "ohm",
+      "component"
+    ],
+    "explanation": "A resistor is a component that opposes the flow of electric current. It is used to limit current or to divide a voltage in a circuit.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0010",
+    "type": "formula",
+    "subject": "Physics",
+    "topic": "Gravitation",
+    "level": 2,
+    "prompt": "Newton's law of gravitation",
+    "latex": "F=G\\frac{m_1 m_2}{r^2}",
+    "answers": [
+      "newton's law of gravitation",
+      "law of universal gravitation",
+      "universal gravitation"
+    ],
+    "forbidden": [
+      "gravity",
+      "mass",
+      "distance",
+      "attraction",
+      "inverse"
+    ],
+    "explanation": "Every two masses attract each other with a force proportional to the product of their masses and inversely proportional to the square of the distance between them. G is the gravitational constant.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0011",
+    "type": "question",
+    "subject": "Physics",
+    "topic": "Mechanics",
+    "level": 1,
+    "prompt": "What is the SI unit of force?",
+    "answers": [
+      "newton",
+      "newtons"
+    ],
+    "forbidden": [
+      "unit",
+      "si",
+      "kilogram",
+      "acceleration"
+    ],
+    "explanation": "The SI unit of force is the newton. One newton is the force needed to give a mass of one kilogram an acceleration of one metre per second squared.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0012",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Nuclear",
+    "level": 2,
+    "prompt": "Half-life",
+    "answers": [
+      "half-life",
+      "half life"
+    ],
+    "forbidden": [
+      "decay",
+      "radioactive",
+      "isotope",
+      "halve"
+    ],
+    "explanation": "The half-life is the time taken for half of the nuclei in a radioactive sample to decay. It is constant for a given isotope, whatever the sample size.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0013",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Quantum",
+    "level": 3,
+    "prompt": "Photoelectric effect",
+    "answers": [
+      "photoelectric effect"
+    ],
+    "forbidden": [
+      "electrons",
+      "metal",
+      "photon",
+      "threshold",
+      "frequency"
+    ],
+    "explanation": "The photoelectric effect is the emission of electrons from a metal surface when light above a threshold frequency shines on it. It showed that light comes in quanta, called photons.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0014",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Mechanics",
+    "level": 1,
+    "prompt": "Momentum",
+    "answers": [
+      "momentum"
+    ],
+    "forbidden": [
+      "mass",
+      "velocity",
+      "collision",
+      "impulse"
+    ],
+    "explanation": "Momentum is mass multiplied by velocity. In a closed system the total momentum is conserved.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0015",
+    "type": "formula",
+    "subject": "Physics",
+    "topic": "Waves",
+    "level": 1,
+    "prompt": "Wave equation",
+    "latex": "v=f\\lambda",
+    "answers": [
+      "wave equation",
+      "wave speed equation"
+    ],
+    "forbidden": [
+      "frequency",
+      "wavelength",
+      "speed",
+      "velocity"
+    ],
+    "explanation": "The speed of a wave equals its frequency multiplied by its wavelength. For a fixed speed, a higher frequency means a shorter wavelength.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0016",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Materials",
+    "level": 3,
+    "prompt": "Superconductor",
+    "answers": [
+      "superconductor",
+      "superconductivity"
+    ],
+    "forbidden": [
+      "zero",
+      "resistance",
+      "cold",
+      "temperature"
+    ],
+    "explanation": "A superconductor is a material that has exactly zero electrical resistance below a critical temperature. It also expels magnetic fields from its interior.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0017",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Thermodynamics",
+    "level": 2,
+    "prompt": "Specific heat capacity",
+    "answers": [
+      "specific heat capacity",
+      "specific heat"
+    ],
+    "forbidden": [
+      "energy",
+      "temperature",
+      "kilogram",
+      "joules",
+      "raise"
+    ],
+    "explanation": "Specific heat capacity is the energy needed to raise the temperature of one kilogram of a substance by one kelvin. Water has an unusually high value.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0018",
+    "type": "question",
+    "subject": "Physics",
+    "topic": "Relativity",
+    "level": 1,
+    "prompt": "Roughly what is the speed of light in a vacuum, in metres per second?",
+    "answers": [
+      "3x10^8",
+      "3 x 10^8",
+      "300000000",
+      "3e8",
+      "299792458"
+    ],
+    "forbidden": [
+      "fastest",
+      "universe",
+      "constant",
+      "einstein"
+    ],
+    "explanation": "Light travels at about 3 x 10^8 metres per second in a vacuum, or exactly 299,792,458 m/s. Nothing with mass can reach this speed.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0019",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Electricity",
+    "level": 2,
+    "prompt": "Capacitor",
+    "answers": [
+      "capacitor"
+    ],
+    "forbidden": [
+      "charge",
+      "plates",
+      "farad",
+      "store",
+      "dielectric"
+    ],
+    "explanation": "A capacitor stores energy in an electric field between two conducting plates separated by an insulator. Its capacitance is the charge stored per unit potential difference.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0020",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Astrophysics",
+    "level": 2,
+    "prompt": "Black hole",
+    "answers": [
+      "black hole"
+    ],
+    "forbidden": [
+      "gravity",
+      "escape",
+      "horizon",
+      "singularity"
+    ],
+    "explanation": "A black hole is a region of space where gravity is so strong that nothing, not even light, can escape from inside the event horizon. They form when very massive stars collapse.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0021",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Mechanics",
+    "level": 1,
+    "prompt": "Acceleration",
+    "answers": [
+      "acceleration"
+    ],
+    "forbidden": [
+      "velocity",
+      "change",
+      "speed",
+      "rate",
+      "faster"
+    ],
+    "explanation": "Acceleration is the rate of change of velocity with time. It is measured in metres per second squared.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0022",
+    "type": "formula",
+    "subject": "Physics",
+    "topic": "Energy",
+    "level": 1,
+    "prompt": "Work done",
+    "latex": "W=Fs",
+    "answers": [
+      "work done",
+      "work"
+    ],
+    "forbidden": [
+      "force",
+      "distance",
+      "energy",
+      "joules",
+      "moved"
+    ],
+    "explanation": "Work done is the energy transferred when a force moves an object, equal to the force times the distance moved in the direction of the force. It is measured in joules.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0023",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Energy",
+    "level": 1,
+    "prompt": "Power",
+    "answers": [
+      "power"
+    ],
+    "forbidden": [
+      "watts",
+      "rate",
+      "energy",
+      "time",
+      "work"
+    ],
+    "explanation": "Power is the rate at which energy is transferred or work is done. It is measured in watts, where one watt is one joule per second.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0024",
+    "type": "formula",
+    "subject": "Physics",
+    "topic": "Energy",
+    "level": 1,
+    "prompt": "Gravitational potential energy",
+    "latex": "E_p=mgh",
+    "answers": [
+      "gravitational potential energy",
+      "gpe"
+    ],
+    "forbidden": [
+      "height",
+      "mass",
+      "gravity",
+      "stored"
+    ],
+    "explanation": "Gravitational potential energy is the energy an object stores because of its height in a gravitational field. Near Earth's surface it equals mass times g times height.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0025",
+    "type": "formula",
+    "subject": "Physics",
+    "topic": "Matter",
+    "level": 1,
+    "prompt": "Pressure",
+    "latex": "p=\\frac{F}{A}",
+    "answers": [
+      "pressure"
+    ],
+    "forbidden": [
+      "force",
+      "area",
+      "pascal",
+      "per"
+    ],
+    "explanation": "Pressure is the force acting per unit area on a surface. It is measured in pascals, where one pascal is one newton per square metre.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0026",
+    "type": "formula",
+    "subject": "Physics",
+    "topic": "Matter",
+    "level": 1,
+    "prompt": "Density",
+    "latex": "\\rho=\\frac{m}{V}",
+    "answers": [
+      "density"
+    ],
+    "forbidden": [
+      "mass",
+      "volume",
+      "kilograms",
+      "packed"
+    ],
+    "explanation": "Density is the mass of a substance per unit volume. A material floats in a fluid if its density is lower than the fluid's.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0027",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Waves",
+    "level": 1,
+    "prompt": "Frequency",
+    "answers": [
+      "frequency"
+    ],
+    "forbidden": [
+      "hertz",
+      "waves",
+      "per second",
+      "cycles",
+      "oscillations"
+    ],
+    "explanation": "Frequency is the number of complete waves or oscillations that pass a point each second. It is measured in hertz.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0028",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Waves",
+    "level": 1,
+    "prompt": "Wavelength",
+    "answers": [
+      "wavelength"
+    ],
+    "forbidden": [
+      "distance",
+      "crest",
+      "peak",
+      "wave",
+      "metres"
+    ],
+    "explanation": "Wavelength is the distance between two matching points on neighbouring waves, such as crest to crest. It is usually given the symbol lambda.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0029",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Waves",
+    "level": 1,
+    "prompt": "Reflection",
+    "answers": [
+      "reflection"
+    ],
+    "forbidden": [
+      "mirror",
+      "bounce",
+      "angle",
+      "light",
+      "surface"
+    ],
+    "explanation": "Reflection is when a wave bounces off a surface. The angle of incidence equals the angle of reflection.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0030",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Waves",
+    "level": 2,
+    "prompt": "Total internal reflection",
+    "answers": [
+      "total internal reflection",
+      "tir"
+    ],
+    "forbidden": [
+      "critical angle",
+      "light",
+      "denser",
+      "boundary",
+      "optical fibre"
+    ],
+    "explanation": "Total internal reflection happens when light in a denser medium hits the boundary at more than the critical angle and is reflected entirely. It is how optical fibres carry signals.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0031",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Waves",
+    "level": 2,
+    "prompt": "Diffraction",
+    "answers": [
+      "diffraction"
+    ],
+    "forbidden": [
+      "spread",
+      "gap",
+      "waves",
+      "edges",
+      "slit"
+    ],
+    "explanation": "Diffraction is the spreading of waves as they pass through a gap or around an obstacle. It is most noticeable when the gap is about the size of the wavelength.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0032",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Waves",
+    "level": 2,
+    "prompt": "Interference",
+    "answers": [
+      "interference"
+    ],
+    "forbidden": [
+      "waves",
+      "superposition",
+      "constructive",
+      "destructive",
+      "overlap"
+    ],
+    "explanation": "Interference occurs when two waves meet and their displacements add together. The result is a bigger wave where crests meet crests and cancellation where crests meet troughs.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0033",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Waves",
+    "level": 2,
+    "prompt": "Standing wave",
+    "answers": [
+      "standing wave",
+      "stationary wave"
+    ],
+    "forbidden": [
+      "nodes",
+      "antinodes",
+      "string",
+      "reflected",
+      "fixed"
+    ],
+    "explanation": "A standing wave forms when two waves of the same frequency travel in opposite directions and overlap. It has fixed points of no movement, called nodes.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0034",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Fields",
+    "level": 2,
+    "prompt": "Electric field",
+    "answers": [
+      "electric field"
+    ],
+    "forbidden": [
+      "charge",
+      "force",
+      "region",
+      "lines"
+    ],
+    "explanation": "An electric field is a region where a charged object experiences a force. Its strength is the force per unit charge.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0035",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Fields",
+    "level": 1,
+    "prompt": "Magnetic field",
+    "answers": [
+      "magnetic field"
+    ],
+    "forbidden": [
+      "magnet",
+      "lines",
+      "poles",
+      "force",
+      "compass"
+    ],
+    "explanation": "A magnetic field is the region around a magnet or current where magnetic materials feel a force. Field lines run from the north pole to the south pole.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0036",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Fields",
+    "level": 3,
+    "prompt": "Electromagnetic induction",
+    "answers": [
+      "electromagnetic induction",
+      "faraday induction"
+    ],
+    "forbidden": [
+      "faraday",
+      "emf",
+      "flux",
+      "coil",
+      "magnet"
+    ],
+    "explanation": "Electromagnetic induction is the production of a voltage in a conductor when the magnetic flux through it changes. Faraday's law says the voltage is proportional to the rate of change of flux.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0037",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Electricity",
+    "level": 2,
+    "prompt": "Transformer",
+    "answers": [
+      "transformer"
+    ],
+    "forbidden": [
+      "coils",
+      "voltage",
+      "alternating",
+      "step-up",
+      "primary"
+    ],
+    "explanation": "A transformer changes the voltage of an alternating supply using two coils wound on an iron core. The ratio of turns on the coils sets the ratio of the voltages.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0038",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Electricity",
+    "level": 1,
+    "prompt": "Alternating current",
+    "answers": [
+      "alternating current",
+      "ac"
+    ],
+    "forbidden": [
+      "direction",
+      "reverses",
+      "mains",
+      "sinusoidal"
+    ],
+    "explanation": "Alternating current repeatedly reverses its direction. Mains electricity is alternating current.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0039",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Electricity",
+    "level": 1,
+    "prompt": "Series circuit",
+    "answers": [
+      "series circuit",
+      "series"
+    ],
+    "forbidden": [
+      "components",
+      "loop",
+      "same",
+      "path"
+    ],
+    "explanation": "In a series circuit the components are connected one after another in a single loop. The same current flows through every component.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0040",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Electricity",
+    "level": 1,
+    "prompt": "Parallel circuit",
+    "answers": [
+      "parallel circuit"
+    ],
+    "forbidden": [
+      "branches",
+      "components",
+      "voltage",
+      "same",
+      "paths"
+    ],
+    "explanation": "In a parallel circuit the components are on separate branches. Each branch has the same voltage and the currents add where branches join.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0041",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Mechanics",
+    "level": 2,
+    "prompt": "Terminal velocity",
+    "answers": [
+      "terminal velocity"
+    ],
+    "forbidden": [
+      "falling",
+      "drag",
+      "constant",
+      "air resistance",
+      "weight"
+    ],
+    "explanation": "Terminal velocity is the constant speed a falling object reaches when the drag force equals its weight. After that, there is no resultant force and no more acceleration.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0042",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Mechanics",
+    "level": 2,
+    "prompt": "Projectile motion",
+    "answers": [
+      "projectile motion",
+      "projectile"
+    ],
+    "forbidden": [
+      "thrown",
+      "parabola",
+      "gravity",
+      "trajectory",
+      "horizontal"
+    ],
+    "explanation": "A projectile moves under gravity alone. Its horizontal velocity stays constant while its vertical velocity changes, so its path is a parabola.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0043",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Mechanics",
+    "level": 2,
+    "prompt": "Centripetal force",
+    "answers": [
+      "centripetal force"
+    ],
+    "forbidden": [
+      "circle",
+      "inward",
+      "centre",
+      "circular",
+      "acceleration"
+    ],
+    "explanation": "Centripetal force is the resultant force that keeps an object moving in a circle, directed towards the centre. It is not a separate force but is provided by tension, gravity or friction.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0044",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Mechanics",
+    "level": 1,
+    "prompt": "Moment",
+    "answers": [
+      "moment",
+      "torque",
+      "turning effect"
+    ],
+    "forbidden": [
+      "pivot",
+      "force",
+      "distance",
+      "turning",
+      "rotate"
+    ],
+    "explanation": "The moment of a force is its turning effect about a pivot, equal to the force times the perpendicular distance from the pivot. A balanced object has equal clockwise and anticlockwise moments.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0045",
+    "type": "formula",
+    "subject": "Physics",
+    "topic": "Materials",
+    "level": 1,
+    "prompt": "Hooke's law",
+    "latex": "F=kx",
+    "answers": [
+      "hooke's law",
+      "hookes law"
+    ],
+    "forbidden": [
+      "spring",
+      "extension",
+      "force",
+      "proportional",
+      "stretch"
+    ],
+    "explanation": "Hooke's law says the extension of a spring is proportional to the force applied, up to the limit of proportionality. The constant k is the spring constant.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0046",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Energy",
+    "level": 1,
+    "prompt": "Conservation of energy",
+    "answers": [
+      "conservation of energy",
+      "law of conservation of energy"
+    ],
+    "forbidden": [
+      "created",
+      "destroyed",
+      "transferred",
+      "total"
+    ],
+    "explanation": "Energy cannot be created or destroyed, only transferred from one store to another. The total energy of a closed system stays constant.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0047",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Nuclear",
+    "level": 2,
+    "prompt": "Radioactive decay",
+    "answers": [
+      "radioactive decay",
+      "decay"
+    ],
+    "forbidden": [
+      "nucleus",
+      "unstable",
+      "emits",
+      "alpha",
+      "particles"
+    ],
+    "explanation": "Radioactive decay is the random process by which an unstable nucleus emits radiation to become more stable. It cannot be sped up or slowed down by heating or chemical change.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0048",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Nuclear",
+    "level": 2,
+    "prompt": "Nuclear fission",
+    "answers": [
+      "nuclear fission",
+      "fission"
+    ],
+    "forbidden": [
+      "split",
+      "nucleus",
+      "neutron",
+      "chain reaction",
+      "uranium"
+    ],
+    "explanation": "Nuclear fission is the splitting of a large nucleus into two smaller ones, releasing energy and neutrons. It is used in nuclear power stations.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0049",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Nuclear",
+    "level": 2,
+    "prompt": "Nuclear fusion",
+    "answers": [
+      "nuclear fusion",
+      "fusion"
+    ],
+    "forbidden": [
+      "join",
+      "nuclei",
+      "sun",
+      "hydrogen",
+      "helium"
+    ],
+    "explanation": "Nuclear fusion is the joining of two light nuclei to form a heavier one, releasing energy. It powers the Sun and other stars.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0050",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Nuclear",
+    "level": 2,
+    "prompt": "Alpha particle",
+    "answers": [
+      "alpha particle",
+      "alpha radiation",
+      "alpha"
+    ],
+    "forbidden": [
+      "helium",
+      "nucleus",
+      "two protons",
+      "ionising",
+      "stopped"
+    ],
+    "explanation": "An alpha particle is a helium nucleus, made of two protons and two neutrons. It is strongly ionising but is stopped by a sheet of paper.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0051",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Nuclear",
+    "level": 2,
+    "prompt": "Gamma ray",
+    "answers": [
+      "gamma ray",
+      "gamma rays",
+      "gamma radiation"
+    ],
+    "forbidden": [
+      "electromagnetic",
+      "penetrating",
+      "nucleus",
+      "wavelength",
+      "lead"
+    ],
+    "explanation": "Gamma rays are high-energy electromagnetic waves emitted by unstable nuclei. They are very penetrating and need thick lead or concrete to reduce them.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0052",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Thermodynamics",
+    "level": 2,
+    "prompt": "Absolute zero",
+    "answers": [
+      "absolute zero"
+    ],
+    "forbidden": [
+      "coldest",
+      "kelvin",
+      "lowest",
+      "273"
+    ],
+    "explanation": "Absolute zero is the lowest possible temperature, 0 kelvin or about minus 273 degrees Celsius. At this point particles have the minimum possible energy.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0053",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Thermodynamics",
+    "level": 3,
+    "prompt": "Brownian motion",
+    "answers": [
+      "brownian motion"
+    ],
+    "forbidden": [
+      "pollen",
+      "random",
+      "particles",
+      "collisions",
+      "molecules"
+    ],
+    "explanation": "Brownian motion is the random jiggling of tiny visible particles in a fluid. It is caused by collisions with fast-moving, invisible molecules and is evidence for particle theory.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0054",
+    "type": "question",
+    "subject": "Physics",
+    "topic": "Electricity",
+    "level": 1,
+    "prompt": "What is the unit of electrical resistance?",
+    "answers": [
+      "ohm",
+      "ohms"
+    ],
+    "forbidden": [
+      "unit",
+      "resistance",
+      "omega",
+      "ampere"
+    ],
+    "explanation": "Electrical resistance is measured in ohms. One ohm is the resistance that lets one ampere flow when one volt is applied.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0055",
+    "type": "question",
+    "subject": "Physics",
+    "topic": "Waves",
+    "level": 1,
+    "prompt": "What type of wave is sound: transverse or longitudinal?",
+    "answers": [
+      "longitudinal",
+      "longitudinal wave"
+    ],
+    "forbidden": [
+      "compression",
+      "rarefaction",
+      "transverse",
+      "air",
+      "vibrate"
+    ],
+    "explanation": "Sound is a longitudinal wave: the particles vibrate backwards and forwards in the direction the wave travels. It needs a medium and cannot travel through a vacuum.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0056",
+    "type": "question",
+    "subject": "Physics",
+    "topic": "Energy",
+    "level": 1,
+    "prompt": "What is the SI unit of energy?",
+    "answers": [
+      "joule",
+      "joules"
+    ],
+    "forbidden": [
+      "unit",
+      "si",
+      "newton metre",
+      "calorie"
+    ],
+    "explanation": "The SI unit of energy is the joule. One joule is the work done when a force of one newton moves an object one metre.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0057",
+    "type": "question",
+    "subject": "Physics",
+    "topic": "Atoms",
+    "level": 1,
+    "prompt": "What particle carries a negative charge in an atom?",
+    "answers": [
+      "electron",
+      "electrons"
+    ],
+    "forbidden": [
+      "negative",
+      "orbit",
+      "shell",
+      "atom",
+      "charge"
+    ],
+    "explanation": "Electrons carry a negative charge and surround the nucleus of an atom. Their number equals the number of protons in a neutral atom.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0058",
+    "type": "question",
+    "subject": "Physics",
+    "topic": "Waves",
+    "level": 1,
+    "prompt": "Which colour of visible light has the longest wavelength?",
+    "answers": [
+      "red"
+    ],
+    "forbidden": [
+      "colour",
+      "rainbow",
+      "spectrum",
+      "longest"
+    ],
+    "explanation": "Red light has the longest wavelength of visible light, about 700 nanometres. Violet has the shortest, about 400 nanometres.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0059",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Quantum",
+    "level": 2,
+    "prompt": "Photon",
+    "answers": [
+      "photon",
+      "photons"
+    ],
+    "forbidden": [
+      "light",
+      "quantum",
+      "packet",
+      "energy",
+      "particle"
+    ],
+    "explanation": "A photon is a single packet of electromagnetic energy. Its energy is proportional to the frequency of the radiation.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0060",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Quantum",
+    "level": 3,
+    "prompt": "Wave-particle duality",
+    "answers": [
+      "wave-particle duality",
+      "wave particle duality",
+      "duality"
+    ],
+    "forbidden": [
+      "both",
+      "light",
+      "electrons",
+      "behave",
+      "quantum"
+    ],
+    "explanation": "Wave-particle duality is the idea that light and matter show both wave-like and particle-like behaviour. Which one appears depends on the experiment.",
+    "status": "draft"
+  }
+]

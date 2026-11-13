@@ -1,0 +1,1245 @@
+[
+  {
+    "id": "mat-0001",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Calculus",
+    "level": 2,
+    "prompt": "Derivative",
+    "answers": [
+      "derivative",
+      "differentiation"
+    ],
+    "forbidden": [
+      "rate",
+      "change",
+      "slope",
+      "gradient",
+      "tangent"
+    ],
+    "explanation": "The derivative of a function measures how fast its output changes as its input changes. Geometrically it is the gradient of the tangent to the graph at a point.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0002",
+    "type": "formula",
+    "subject": "Maths",
+    "topic": "Algebra",
+    "level": 1,
+    "prompt": "Quadratic formula",
+    "latex": "x=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}",
+    "answers": [
+      "quadratic formula"
+    ],
+    "forbidden": [
+      "quadratic",
+      "roots",
+      "solve",
+      "equation"
+    ],
+    "explanation": "The formula gives the solutions of any equation of the form ax^2 + bx + c = 0. The part under the square root, b^2 - 4ac, is the discriminant and tells you how many real roots there are.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0003",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Number",
+    "level": 1,
+    "prompt": "Prime number",
+    "answers": [
+      "prime number",
+      "prime",
+      "primes"
+    ],
+    "forbidden": [
+      "divisible",
+      "factor",
+      "two",
+      "one",
+      "integer"
+    ],
+    "explanation": "A prime number is a whole number greater than 1 whose only positive factors are 1 and itself. The number 2 is the only even prime.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0004",
+    "type": "formula",
+    "subject": "Maths",
+    "topic": "Geometry",
+    "level": 1,
+    "prompt": "Pythagoras' theorem",
+    "latex": "a^2+b^2=c^2",
+    "answers": [
+      "pythagoras theorem",
+      "pythagorean theorem",
+      "pythagoras"
+    ],
+    "forbidden": [
+      "right-angled",
+      "hypotenuse",
+      "triangle",
+      "squares",
+      "sides"
+    ],
+    "explanation": "In a right-angled triangle the square of the hypotenuse equals the sum of the squares of the other two sides. It lets you find a missing side length from the other two.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0005",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Calculus",
+    "level": 2,
+    "prompt": "Integral",
+    "answers": [
+      "integral",
+      "integration"
+    ],
+    "forbidden": [
+      "area",
+      "curve",
+      "antiderivative",
+      "sum"
+    ],
+    "explanation": "Integration is the reverse of differentiation. A definite integral gives the signed area under a curve between two limits.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0006",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Linear algebra",
+    "level": 2,
+    "prompt": "Matrix",
+    "answers": [
+      "matrix",
+      "matrices"
+    ],
+    "forbidden": [
+      "array",
+      "rows",
+      "columns",
+      "grid"
+    ],
+    "explanation": "A matrix is a rectangular arrangement of numbers in rows and columns. Matrices represent linear transformations and systems of linear equations.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0007",
+    "type": "formula",
+    "subject": "Maths",
+    "topic": "Geometry",
+    "level": 1,
+    "prompt": "Area of a circle",
+    "latex": "A=\\pi r^2",
+    "answers": [
+      "area of a circle",
+      "circle area"
+    ],
+    "forbidden": [
+      "pi",
+      "radius",
+      "squared",
+      "round"
+    ],
+    "explanation": "The area of a circle is pi times the radius squared. Doubling the radius makes the area four times larger.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0008",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Statistics",
+    "level": 2,
+    "prompt": "Standard deviation",
+    "answers": [
+      "standard deviation",
+      "sd"
+    ],
+    "forbidden": [
+      "spread",
+      "mean",
+      "variance",
+      "deviation",
+      "average"
+    ],
+    "explanation": "Standard deviation measures how widely data values are spread around the mean. It is the square root of the variance.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0009",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Algebra",
+    "level": 2,
+    "prompt": "Logarithm",
+    "answers": [
+      "logarithm",
+      "log"
+    ],
+    "forbidden": [
+      "exponent",
+      "power",
+      "base",
+      "inverse"
+    ],
+    "explanation": "A logarithm answers the question: to what power must the base be raised to give this number? It is the inverse operation of exponentiation.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0010",
+    "type": "formula",
+    "subject": "Maths",
+    "topic": "Complex numbers",
+    "level": 3,
+    "prompt": "Euler's identity",
+    "latex": "e^{i\\pi}+1=0",
+    "answers": [
+      "euler's identity",
+      "eulers identity",
+      "euler identity"
+    ],
+    "forbidden": [
+      "pi",
+      "imaginary",
+      "exponential",
+      "zero",
+      "complex"
+    ],
+    "explanation": "Euler's identity links five fundamental constants: e, i, pi, 1 and 0. It is a special case of Euler's formula, e^(ix) = cos x + i sin x.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0011",
+    "type": "question",
+    "subject": "Maths",
+    "topic": "Geometry",
+    "level": 1,
+    "prompt": "What is the sum of the interior angles of a triangle?",
+    "answers": [
+      "180",
+      "180 degrees"
+    ],
+    "forbidden": [
+      "triangle",
+      "angles",
+      "degrees",
+      "add"
+    ],
+    "explanation": "The interior angles of any triangle in a flat plane add up to 180 degrees. This follows from the properties of parallel lines.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0012",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Linear algebra",
+    "level": 3,
+    "prompt": "Eigenvalue",
+    "answers": [
+      "eigenvalue",
+      "eigenvalues"
+    ],
+    "forbidden": [
+      "matrix",
+      "vector",
+      "scalar",
+      "characteristic",
+      "eigen"
+    ],
+    "explanation": "An eigenvalue is a scalar lambda for which Av = lambda v has a non-zero solution v. It tells you how a linear transformation stretches along its eigenvector direction.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0013",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Probability",
+    "level": 1,
+    "prompt": "Probability",
+    "answers": [
+      "probability"
+    ],
+    "forbidden": [
+      "chance",
+      "likely",
+      "odds",
+      "random"
+    ],
+    "explanation": "Probability is a number from 0 to 1 that measures how likely an event is. For equally likely outcomes it is favourable outcomes divided by total outcomes.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0014",
+    "type": "formula",
+    "subject": "Maths",
+    "topic": "Calculus",
+    "level": 2,
+    "prompt": "Chain rule",
+    "latex": "\\frac{dy}{dx}=\\frac{dy}{du}\\cdot\\frac{du}{dx}",
+    "answers": [
+      "chain rule"
+    ],
+    "forbidden": [
+      "derivative",
+      "composite",
+      "function",
+      "differentiate"
+    ],
+    "explanation": "The chain rule gives the derivative of a function of a function. You differentiate the outer function and multiply by the derivative of the inner function.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0015",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Statistics",
+    "level": 1,
+    "prompt": "Median",
+    "answers": [
+      "median"
+    ],
+    "forbidden": [
+      "middle",
+      "average",
+      "sorted",
+      "ordered"
+    ],
+    "explanation": "The median is the middle value of a data set once it is put in order. With an even number of values it is the mean of the two middle values.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0016",
+    "type": "question",
+    "subject": "Maths",
+    "topic": "Calculus",
+    "level": 2,
+    "prompt": "What is the derivative of sin x?",
+    "answers": [
+      "cos x",
+      "cosx",
+      "cos(x)",
+      "cosine"
+    ],
+    "forbidden": [
+      "differentiate",
+      "sine",
+      "slope",
+      "trigonometric"
+    ],
+    "explanation": "The derivative of sin x with respect to x is cos x, when x is measured in radians. Similarly the derivative of cos x is -sin x.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0017",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Vectors",
+    "level": 1,
+    "prompt": "Vector",
+    "answers": [
+      "vector",
+      "vectors"
+    ],
+    "forbidden": [
+      "magnitude",
+      "direction",
+      "arrow",
+      "scalar"
+    ],
+    "explanation": "A vector is a quantity with both a size and a direction. Displacement and velocity are vectors, while distance and speed are not.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0018",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Calculus",
+    "level": 2,
+    "prompt": "Limit",
+    "answers": [
+      "limit",
+      "limits"
+    ],
+    "forbidden": [
+      "approaches",
+      "tends",
+      "infinity",
+      "value"
+    ],
+    "explanation": "A limit is the value that a function gets arbitrarily close to as its input approaches some point. Limits are the foundation of derivatives and integrals.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0019",
+    "type": "formula",
+    "subject": "Maths",
+    "topic": "Trigonometry",
+    "level": 2,
+    "prompt": "Sine rule",
+    "latex": "\\frac{a}{\\sin A}=\\frac{b}{\\sin B}=\\frac{c}{\\sin C}",
+    "answers": [
+      "sine rule",
+      "law of sines"
+    ],
+    "forbidden": [
+      "sine",
+      "triangle",
+      "sides",
+      "angles"
+    ],
+    "explanation": "The sine rule says that each side of a triangle divided by the sine of its opposite angle gives the same ratio. It is used to solve triangles that are not right-angled.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0020",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Sequences",
+    "level": 1,
+    "prompt": "Fibonacci sequence",
+    "answers": [
+      "fibonacci sequence",
+      "fibonacci"
+    ],
+    "forbidden": [
+      "previous",
+      "add",
+      "rabbits",
+      "golden"
+    ],
+    "explanation": "In the Fibonacci sequence each term is the sum of the two terms before it, starting 0, 1, 1, 2, 3, 5. The ratio of consecutive terms approaches the golden ratio.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0021",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Statistics",
+    "level": 1,
+    "prompt": "Mean",
+    "answers": [
+      "mean",
+      "arithmetic mean",
+      "average"
+    ],
+    "forbidden": [
+      "sum",
+      "divide",
+      "total",
+      "data",
+      "add"
+    ],
+    "explanation": "The mean is found by adding all the values and dividing by how many there are. It is the most common measure of the centre of a data set.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0022",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Statistics",
+    "level": 1,
+    "prompt": "Mode",
+    "answers": [
+      "mode"
+    ],
+    "forbidden": [
+      "common",
+      "frequent",
+      "most",
+      "often"
+    ],
+    "explanation": "The mode is the value that occurs most often in a data set. A data set can have more than one mode, or none.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0023",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Statistics",
+    "level": 1,
+    "prompt": "Range",
+    "answers": [
+      "range"
+    ],
+    "forbidden": [
+      "largest",
+      "smallest",
+      "difference",
+      "spread"
+    ],
+    "explanation": "The range is the difference between the largest and smallest values in a data set. It is a simple measure of how spread out the data is.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0024",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Number",
+    "level": 1,
+    "prompt": "Percentage",
+    "answers": [
+      "percentage",
+      "percent"
+    ],
+    "forbidden": [
+      "hundred",
+      "fraction",
+      "out of",
+      "100",
+      "proportion"
+    ],
+    "explanation": "A percentage expresses an amount as a fraction of 100. For example, 25% means 25 out of every 100, or one quarter.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0025",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Number",
+    "level": 1,
+    "prompt": "Fraction",
+    "answers": [
+      "fraction",
+      "fractions"
+    ],
+    "forbidden": [
+      "numerator",
+      "denominator",
+      "parts",
+      "whole",
+      "divide"
+    ],
+    "explanation": "A fraction represents part of a whole, written as one number over another. The top number counts the parts taken and the bottom number says how many equal parts make the whole.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0026",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Number",
+    "level": 1,
+    "prompt": "Ratio",
+    "answers": [
+      "ratio",
+      "ratios"
+    ],
+    "forbidden": [
+      "compare",
+      "proportion",
+      "quantities",
+      "colon",
+      "parts"
+    ],
+    "explanation": "A ratio compares the sizes of two or more quantities, such as 2:3. Ratios can be simplified by dividing every part by a common factor.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0027",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Number",
+    "level": 1,
+    "prompt": "Square root",
+    "answers": [
+      "square root",
+      "root"
+    ],
+    "forbidden": [
+      "squared",
+      "multiply",
+      "itself",
+      "radical",
+      "number"
+    ],
+    "explanation": "The square root of a number is a value that gives the number when multiplied by itself. For example, the square root of 49 is 7.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0028",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Number",
+    "level": 2,
+    "prompt": "Prime factorisation",
+    "answers": [
+      "prime factorisation",
+      "prime factorization",
+      "prime factor decomposition"
+    ],
+    "forbidden": [
+      "primes",
+      "factors",
+      "product",
+      "break",
+      "multiply"
+    ],
+    "explanation": "Prime factorisation writes a whole number as a product of prime numbers. Every integer above 1 has exactly one such factorisation, apart from the order of the factors.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0029",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Coordinate geometry",
+    "level": 1,
+    "prompt": "Gradient",
+    "answers": [
+      "gradient",
+      "slope"
+    ],
+    "forbidden": [
+      "steepness",
+      "line",
+      "rise",
+      "run"
+    ],
+    "explanation": "The gradient of a straight line measures how steep it is. It equals the change in y divided by the change in x between any two points on the line.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0030",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Geometry",
+    "level": 1,
+    "prompt": "Parallel lines",
+    "answers": [
+      "parallel lines",
+      "parallel"
+    ],
+    "forbidden": [
+      "never",
+      "meet",
+      "distance",
+      "equidistant",
+      "direction"
+    ],
+    "explanation": "Parallel lines lie in the same plane and never meet, however far they are extended. They stay the same distance apart and have equal gradients.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0031",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Geometry",
+    "level": 1,
+    "prompt": "Circumference",
+    "answers": [
+      "circumference"
+    ],
+    "forbidden": [
+      "perimeter",
+      "circle",
+      "around",
+      "distance",
+      "pi"
+    ],
+    "explanation": "The circumference is the distance around the edge of a circle. It equals pi times the diameter, or 2 times pi times the radius.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0032",
+    "type": "formula",
+    "subject": "Maths",
+    "topic": "Geometry",
+    "level": 2,
+    "prompt": "Volume of a sphere",
+    "latex": "V=\\frac{4}{3}\\pi r^3",
+    "answers": [
+      "volume of a sphere",
+      "sphere volume"
+    ],
+    "forbidden": [
+      "radius",
+      "cubed",
+      "pi",
+      "ball"
+    ],
+    "explanation": "The volume of a sphere is four-thirds times pi times the radius cubed. Doubling the radius increases the volume eightfold.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0033",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Sequences",
+    "level": 2,
+    "prompt": "Arithmetic sequence",
+    "answers": [
+      "arithmetic sequence",
+      "arithmetic progression"
+    ],
+    "forbidden": [
+      "common difference",
+      "add",
+      "constant",
+      "terms",
+      "same"
+    ],
+    "explanation": "In an arithmetic sequence each term is found by adding the same fixed amount to the previous one. That fixed amount is called the common difference.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0034",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Sequences",
+    "level": 2,
+    "prompt": "Geometric sequence",
+    "answers": [
+      "geometric sequence",
+      "geometric progression"
+    ],
+    "forbidden": [
+      "common ratio",
+      "multiply",
+      "constant",
+      "terms",
+      "each"
+    ],
+    "explanation": "In a geometric sequence each term is found by multiplying the previous one by the same fixed number. That number is called the common ratio.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0035",
+    "type": "formula",
+    "subject": "Maths",
+    "topic": "Algebra",
+    "level": 3,
+    "prompt": "Binomial theorem",
+    "latex": "(a+b)^n=\\sum_{k=0}^{n}\\binom{n}{k}a^{n-k}b^k",
+    "answers": [
+      "binomial theorem",
+      "binomial expansion"
+    ],
+    "forbidden": [
+      "expand",
+      "coefficients",
+      "pascal",
+      "power",
+      "brackets"
+    ],
+    "explanation": "The binomial theorem gives the expansion of (a + b) raised to a whole-number power n as a sum of terms. The coefficients are the binomial coefficients, which also appear in Pascal's triangle.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0036",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Statistics",
+    "level": 2,
+    "prompt": "Normal distribution",
+    "answers": [
+      "normal distribution",
+      "gaussian distribution",
+      "bell curve"
+    ],
+    "forbidden": [
+      "symmetric",
+      "mean",
+      "spread",
+      "histogram"
+    ],
+    "explanation": "The normal distribution is a symmetric, bell-shaped probability distribution centred on the mean. About 68% of values lie within one standard deviation of the mean.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0037",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Statistics",
+    "level": 2,
+    "prompt": "Correlation",
+    "answers": [
+      "correlation"
+    ],
+    "forbidden": [
+      "relationship",
+      "scatter",
+      "positive",
+      "negative",
+      "causation"
+    ],
+    "explanation": "Correlation measures how strongly two variables are linearly related. A strong correlation does not by itself show that one variable causes the other.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0038",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Statistics",
+    "level": 3,
+    "prompt": "Hypothesis test",
+    "answers": [
+      "hypothesis test",
+      "hypothesis testing",
+      "significance test"
+    ],
+    "forbidden": [
+      "null",
+      "p-value",
+      "reject",
+      "significance",
+      "sample"
+    ],
+    "explanation": "A hypothesis test uses sample data to decide whether there is enough evidence to reject a null hypothesis. The result is judged against a chosen significance level.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0039",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Linear algebra",
+    "level": 3,
+    "prompt": "Determinant",
+    "answers": [
+      "determinant"
+    ],
+    "forbidden": [
+      "matrix",
+      "square",
+      "invertible",
+      "scalar",
+      "zero"
+    ],
+    "explanation": "The determinant is a single number calculated from a square matrix. A matrix has an inverse only if its determinant is not zero.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0040",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Vectors",
+    "level": 2,
+    "prompt": "Dot product",
+    "answers": [
+      "dot product",
+      "scalar product"
+    ],
+    "forbidden": [
+      "vectors",
+      "multiply",
+      "scalar",
+      "cosine",
+      "angle"
+    ],
+    "explanation": "The dot product of two vectors is a single number equal to the product of their magnitudes and the cosine of the angle between them. It is zero when the vectors are perpendicular.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0041",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Vectors",
+    "level": 3,
+    "prompt": "Cross product",
+    "answers": [
+      "cross product",
+      "vector product"
+    ],
+    "forbidden": [
+      "perpendicular",
+      "vectors",
+      "direction",
+      "area",
+      "right-hand"
+    ],
+    "explanation": "The cross product of two vectors in three dimensions is a vector perpendicular to both. Its magnitude equals the area of the parallelogram the two vectors form.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0042",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Calculus",
+    "level": 2,
+    "prompt": "Tangent line",
+    "answers": [
+      "tangent line",
+      "tangent"
+    ],
+    "forbidden": [
+      "touches",
+      "curve",
+      "point",
+      "line",
+      "gradient"
+    ],
+    "explanation": "A tangent to a curve is a straight line that touches the curve at one point and has the same gradient as the curve there. Its gradient is the derivative at that point.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0043",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Graphs",
+    "level": 2,
+    "prompt": "Asymptote",
+    "answers": [
+      "asymptote",
+      "asymptotes"
+    ],
+    "forbidden": [
+      "approaches",
+      "never",
+      "curve",
+      "line",
+      "infinity"
+    ],
+    "explanation": "An asymptote is a line that a curve gets closer and closer to without ever reaching it. The graph of y = 1/x has asymptotes along both axes.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0044",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Functions",
+    "level": 1,
+    "prompt": "Function",
+    "answers": [
+      "function",
+      "functions"
+    ],
+    "forbidden": [
+      "input",
+      "output",
+      "maps",
+      "rule",
+      "relation"
+    ],
+    "explanation": "A function is a rule that gives exactly one output for each input. It is often written as f(x).",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0045",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Algebra",
+    "level": 1,
+    "prompt": "Inequality",
+    "answers": [
+      "inequality",
+      "inequalities"
+    ],
+    "forbidden": [
+      "greater",
+      "less",
+      "sign",
+      "solve",
+      "equation"
+    ],
+    "explanation": "An inequality compares two expressions using symbols such as less than or greater than. Its solution is usually a range of values rather than a single number.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0046",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Algebra",
+    "level": 2,
+    "prompt": "Simultaneous equations",
+    "answers": [
+      "simultaneous equations",
+      "simultaneous equation",
+      "system of equations"
+    ],
+    "forbidden": [
+      "unknowns",
+      "solve",
+      "two",
+      "both"
+    ],
+    "explanation": "Simultaneous equations are two or more equations that must all be true at the same time. Solving them means finding values of the unknowns that satisfy every equation.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0047",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Geometry",
+    "level": 1,
+    "prompt": "Perimeter",
+    "answers": [
+      "perimeter"
+    ],
+    "forbidden": [
+      "distance",
+      "around",
+      "edge",
+      "shape",
+      "sides"
+    ],
+    "explanation": "The perimeter of a shape is the total distance around its boundary. For a polygon it is the sum of the side lengths.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0048",
+    "type": "formula",
+    "subject": "Maths",
+    "topic": "Geometry",
+    "level": 1,
+    "prompt": "Area of a triangle",
+    "latex": "A=\\frac{1}{2}bh",
+    "answers": [
+      "area of a triangle",
+      "triangle area"
+    ],
+    "forbidden": [
+      "base",
+      "height",
+      "half",
+      "shape"
+    ],
+    "explanation": "The area of a triangle is half of its base multiplied by its perpendicular height. It works for every triangle, not only right-angled ones.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0049",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Geometry",
+    "level": 2,
+    "prompt": "Congruent shapes",
+    "answers": [
+      "congruent",
+      "congruence"
+    ],
+    "forbidden": [
+      "identical",
+      "same",
+      "shape",
+      "size",
+      "triangles"
+    ],
+    "explanation": "Two shapes are congruent if one can be moved onto the other by sliding, turning or flipping, with no change of size. Congruent shapes have equal corresponding sides and angles.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0050",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Probability",
+    "level": 3,
+    "prompt": "Permutation",
+    "answers": [
+      "permutation",
+      "permutations"
+    ],
+    "forbidden": [
+      "order",
+      "arrangement",
+      "factorial",
+      "select",
+      "matters"
+    ],
+    "explanation": "A permutation is an arrangement of items in a particular order. The number of ways to arrange n different items is n factorial.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0051",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Probability",
+    "level": 3,
+    "prompt": "Combination",
+    "answers": [
+      "combination",
+      "combinations"
+    ],
+    "forbidden": [
+      "choose",
+      "order",
+      "select",
+      "subset"
+    ],
+    "explanation": "A combination is a selection of items where the order does not matter. The number of ways to choose r items from n is written nCr.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0052",
+    "type": "question",
+    "subject": "Maths",
+    "topic": "Number",
+    "level": 1,
+    "prompt": "What is the value of pi to two decimal places?",
+    "answers": [
+      "3.14",
+      "3.142"
+    ],
+    "forbidden": [
+      "circle",
+      "circumference",
+      "ratio",
+      "decimal"
+    ],
+    "explanation": "Pi is the ratio of a circle's circumference to its diameter, about 3.14159. It is irrational, so its decimal expansion never ends or repeats.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0053",
+    "type": "question",
+    "subject": "Maths",
+    "topic": "Calculus",
+    "level": 2,
+    "prompt": "What is the derivative of x squared?",
+    "answers": [
+      "2x"
+    ],
+    "forbidden": [
+      "differentiate",
+      "power",
+      "slope",
+      "gradient"
+    ],
+    "explanation": "The derivative of x squared with respect to x is 2x. This follows from the power rule: bring the power down and reduce it by one.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0054",
+    "type": "question",
+    "subject": "Maths",
+    "topic": "Calculus",
+    "level": 3,
+    "prompt": "What is the integral of 1 over x?",
+    "answers": [
+      "ln x",
+      "ln(x)",
+      "natural log",
+      "natural logarithm"
+    ],
+    "forbidden": [
+      "integrate",
+      "reciprocal",
+      "natural",
+      "antiderivative"
+    ],
+    "explanation": "The integral of 1/x is the natural logarithm of the absolute value of x, plus a constant. It is the one exception to the usual power rule for integration.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0055",
+    "type": "question",
+    "subject": "Maths",
+    "topic": "Geometry",
+    "level": 1,
+    "prompt": "How many degrees are in a full turn?",
+    "answers": [
+      "360",
+      "360 degrees"
+    ],
+    "forbidden": [
+      "circle",
+      "rotation",
+      "degrees",
+      "angle",
+      "full"
+    ],
+    "explanation": "A full turn is 360 degrees. This is why the angles around a point add up to 360 degrees.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0056",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Complex numbers",
+    "level": 3,
+    "prompt": "Complex number",
+    "answers": [
+      "complex number",
+      "complex numbers"
+    ],
+    "forbidden": [
+      "imaginary",
+      "real",
+      "root",
+      "minus one"
+    ],
+    "explanation": "A complex number has a real part and an imaginary part, written a + bi where i squared equals minus one. They let every polynomial equation have a solution.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0057",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Algebra",
+    "level": 2,
+    "prompt": "Polynomial",
+    "answers": [
+      "polynomial",
+      "polynomials"
+    ],
+    "forbidden": [
+      "terms",
+      "powers",
+      "coefficients",
+      "variable",
+      "degree"
+    ],
+    "explanation": "A polynomial is an expression made of terms that are whole-number powers of a variable multiplied by coefficients. The highest power is called its degree.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0058",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Functions",
+    "level": 2,
+    "prompt": "Domain",
+    "answers": [
+      "domain"
+    ],
+    "forbidden": [
+      "inputs",
+      "function",
+      "values",
+      "allowed"
+    ],
+    "explanation": "The domain of a function is the set of all input values for which it is defined. For f(x) = 1/x the domain excludes zero.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0059",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Proof",
+    "level": 3,
+    "prompt": "Axiom",
+    "answers": [
+      "axiom",
+      "postulate"
+    ],
+    "forbidden": [
+      "assumed",
+      "proof",
+      "true",
+      "theorem",
+      "self-evident"
+    ],
+    "explanation": "An axiom is a statement accepted as true without proof, used as a starting point for reasoning. Theorems are then proved from axioms.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0060",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Proof",
+    "level": 3,
+    "prompt": "Proof by induction",
+    "answers": [
+      "proof by induction",
+      "mathematical induction",
+      "induction"
+    ],
+    "forbidden": [
+      "base case",
+      "inductive",
+      "step",
+      "domino",
+      "integers"
+    ],
+    "explanation": "Proof by induction shows a statement is true for every whole number by proving a base case and then showing that if it holds for one number it holds for the next.",
+    "status": "draft"
+  }
+]
