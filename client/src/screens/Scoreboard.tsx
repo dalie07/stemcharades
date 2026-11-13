@@ -13,7 +13,7 @@ export function Scoreboard({ room, session }: { room: RoomView; session: Session
       <h1 className="text-3xl font-bold">Final scores</h1>
       <ol className="w-full space-y-1 text-left" aria-label="Final standings">
         {summary.standings.map((s) => (
-          <li key={s.playerId} className="flex justify-between rounded bg-slate-100 px-3 py-2">
+          <li key={s.playerId} className="flex justify-between rounded bg-slate-800 px-3 py-2">
             <span>
               {s.rank}. {s.nickname}
               {s.playerId === session.playerId && " (you)"}
@@ -28,12 +28,12 @@ export function Scoreboard({ room, session }: { room: RoomView; session: Session
       <ul className="w-full space-y-3">
         {summary.missed.map((c) => (
           <li key={c.id}>
-            <article className="rounded-xl border border-slate-200 bg-white p-4 text-left shadow-sm">
-              <p className="text-xs uppercase tracking-wide text-slate-600">{c.subject} · {c.topic}</p>
+            <article className="rounded-xl border border-slate-700 bg-slate-800 p-4 text-left shadow-sm">
+              <p className="text-xs uppercase tracking-wide text-slate-400">{c.subject} · {c.topic}</p>
               <h3 className="mt-1 text-lg font-semibold">{c.prompt}</h3>
               {c.latex && <Formula latex={c.latex} />}
               <p className="mt-1 text-sm"><span className="font-medium">Answer:</span> {c.answers[0]}</p>
-              <p className="mt-1 text-sm text-slate-700">{c.explanation}</p>
+              <p className="mt-1 text-sm text-slate-300">{c.explanation}</p>
               <FlagButton card={c} />
             </article>
           </li>
@@ -47,9 +47,9 @@ export function Scoreboard({ room, session }: { room: RoomView; session: Session
       >
         Play again
       </button>
-      {!isHost && <p className="text-sm text-slate-600">The host can start another game.</p>}
+      {!isHost && <p className="text-sm text-slate-400">The host can start another game.</p>}
       <button
-        className="text-indigo-600 underline"
+        className="text-indigo-400 underline"
         onClick={() => {
           leaveRoom();
           location.hash = "#/";

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { flagIssueUrl, flagText, type FlaggableCard } from "../flag";
 
-const style = "min-h-11 rounded px-3 text-sm text-slate-600 underline";
+const style = "min-h-11 rounded px-3 text-sm text-slate-400 underline";
 
 /** Report a wrong or unclear card. Opens a prefilled GitHub issue, or copies the details if none is configured. */
 export function FlagButton({ card }: { card: FlaggableCard }) {

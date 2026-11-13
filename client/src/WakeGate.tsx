@@ -67,14 +67,14 @@ export function WakeGate({ children }: { children: React.ReactNode }) {
     <main className="mx-auto flex min-h-dvh max-w-md flex-col items-center justify-center gap-4 p-4 text-center">
       <h1 className="text-2xl font-bold">{offline ? "You're offline" : "Waking the server…"}</h1>
       {offline ? (
-        <p className="text-slate-600">Online rooms need a connection. Party mode still works.</p>
+        <p className="text-slate-400">Online rooms need a connection. Party mode still works.</p>
       ) : (
         <>
-          <p className="text-slate-600">
+          <p className="text-slate-400">
             The free server naps when nobody is playing. It usually wakes in under a minute.
           </p>
           <div
-            className="h-2 w-full overflow-hidden rounded bg-slate-200"
+            className="h-2 w-full overflow-hidden rounded bg-slate-700"
             role="progressbar"
             aria-label="Waking the server"
             aria-valuemin={0}
@@ -83,7 +83,7 @@ export function WakeGate({ children }: { children: React.ReactNode }) {
           >
             <div className="h-full bg-indigo-600 transition-all" style={{ width: `${Math.min(100, (seconds / 60) * 100)}%` }} />
           </div>
-          <p className="tabular-nums text-sm text-slate-600" role="status">{seconds}s</p>
+          <p className="tabular-nums text-sm text-slate-400" role="status">{seconds}s</p>
         </>
       )}
       <a className="rounded-lg bg-indigo-600 px-4 py-3 font-medium text-white" href="#/party">

@@ -1,8 +1,18 @@
 @import "tailwindcss";
 
+/* Dark theme: a deep slate page with light text. Form controls and scrollbars follow it. */
+:root {
+  color-scheme: dark;
+}
+html,
+body {
+  background-color: #0f172a; /* slate-900 */
+  color: #e2e8f0; /* slate-200 */
+}
+
 /* Keyboard users must always see where focus is. */
 :where(a, button, input, select, textarea, summary):focus-visible {
-  outline: 3px solid #4f46e5;
+  outline: 3px solid #818cf8; /* indigo-400: 6:1 on the page */
   outline-offset: 2px;
 }
 

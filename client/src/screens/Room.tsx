@@ -27,7 +27,7 @@ export function Room() {
   // The lobby draws its own banner; every other screen gets this one so a dropped connection is never silent.
   const banner =
     connection !== "connected" && room.phase !== "lobby" ? (
-      <p role="status" className="sticky top-0 z-10 bg-amber-100 px-3 py-2 text-center text-sm text-amber-900">
+      <p role="status" className="sticky top-0 z-10 bg-amber-900 px-3 py-2 text-center text-sm text-amber-100">
         Connection lost. Reconnecting…
       </p>
     ) : null;

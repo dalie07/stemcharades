@@ -2,7 +2,7 @@ import { useState } from "react";
 import { createRoom, joinRoom } from "../state/socket";
 import { useGameStore } from "../state/gameStore";
 
-const input = "w-full rounded border border-slate-300 px-3 py-3";
+const input = "w-full rounded border border-slate-600 px-3 py-3";
 const primary = "w-full rounded-lg bg-indigo-600 px-4 py-3 font-medium text-white disabled:opacity-40";
 
 export function Online() {
@@ -28,7 +28,7 @@ export function Online() {
   return (
     <main className="mx-auto flex min-h-dvh max-w-md flex-col items-center justify-center gap-4 p-4 text-center">
       <h1 className="text-3xl font-bold">Online room</h1>
-      {notice && <p role="status" className="rounded bg-amber-100 px-3 py-2 text-sm">{notice}</p>}
+      {notice && <p role="status" className="rounded bg-amber-900 px-3 py-2 text-sm">{notice}</p>}
       <label className="w-full text-left">
         Your nickname
         <input className={input} maxLength={20} value={nickname} onChange={(e) => setNickname(e.target.value)} />
@@ -37,7 +37,7 @@ export function Online() {
         Create a room
       </button>
 
-      <p className="text-slate-600">or join a friend's room</p>
+      <p className="text-slate-400">or join a friend's room</p>
       <label className="w-full text-left">
         Room code
         <input
@@ -54,8 +54,8 @@ export function Online() {
       >
         Join room
       </button>
-      {error && <p role="alert" className="text-red-700">{error}</p>}
-      <a className="text-indigo-600 underline" href="#/">Back</a>
+      {error && <p role="alert" className="text-red-400">{error}</p>}
+      <a className="text-indigo-400 underline" href="#/">Back</a>
     </main>
   );
 }

@@ -24,9 +24,9 @@ export function Lobby({ room, session }: { room: RoomView; session: Session }) {
   return (
     <main className="mx-auto flex min-h-dvh max-w-md flex-col items-center gap-4 p-4 text-center">
       {connection !== "connected" && (
-        <p role="status" className="w-full rounded bg-amber-100 px-3 py-2 text-sm">Reconnecting…</p>
+        <p role="status" className="w-full rounded bg-amber-900 px-3 py-2 text-sm">Reconnecting…</p>
       )}
-      <p className="text-slate-600">Room code</p>
+      <p className="text-slate-400">Room code</p>
       <h1 className="text-5xl font-bold tracking-widest" aria-label={`Room code ${room.code.split("").join(" ")}`}>
         {room.code}
       </h1>
@@ -35,16 +35,16 @@ export function Lobby({ room, session }: { room: RoomView; session: Session }) {
         <h2 className="font-medium">Players ({room.players.length}/12)</h2>
         <ul className="mt-1 space-y-1">
           {room.players.map((p) => (
-            <li key={p.id} className="flex items-center justify-between rounded bg-slate-100 px-3 py-2">
+            <li key={p.id} className="flex items-center justify-between rounded bg-slate-800 px-3 py-2">
               <span>
-                <span aria-label={p.connected ? "online" : "offline"} className={p.connected ? "text-green-600" : "text-slate-400"}>●</span>{" "}
+                <span aria-label={p.connected ? "online" : "offline"} className={p.connected ? "text-green-500" : "text-slate-400"}>●</span>{" "}
                 {p.nickname}
                 {p.id === session.playerId && " (you)"}
               </span>
-              {p.isHost && <span className="text-xs font-medium text-indigo-700">HOST</span>}
+              {p.isHost && <span className="text-xs font-medium text-indigo-300">HOST</span>}
               {isHost && !p.isHost && (
                 <button
-                  className="min-h-11 min-w-11 rounded text-red-700 underline"
+                  className="min-h-11 min-w-11 rounded text-red-400 underline"
                   aria-label={`Remove ${p.nickname} from the room`}
                   onClick={() => {
                     if (confirm(`Remove ${p.nickname} from the room?`)) kickPlayer(p.id);
@@ -59,7 +59,7 @@ export function Lobby({ room, session }: { room: RoomView; session: Session }) {
       </section>
 
       {room.customDeck && (
-        <p className="w-full rounded bg-indigo-50 px-3 py-2 text-left text-indigo-900">
+        <p className="w-full rounded bg-indigo-950 px-3 py-2 text-left text-indigo-100">
           Playing the private deck <strong>{room.customDeck.name}</strong> ({room.customDeck.count} cards)
         </p>
       )}
@@ -67,7 +67,7 @@ export function Lobby({ room, session }: { room: RoomView; session: Session }) {
         <label className="w-full text-left">
           Card deck
           <select
-            className="mt-1 w-full rounded border border-slate-300 px-2 py-3"
+            className="mt-1 w-full rounded border border-slate-600 px-2 py-3"
             value={decks.find((d) => d.name === room.customDeck?.name)?.id ?? ""}
             onChange={(e) => selectDeck(e.target.value || null)}
           >
@@ -80,7 +80,7 @@ export function Lobby({ room, session }: { room: RoomView; session: Session }) {
       )}
 
       <section className="w-full space-y-3 text-left">
-        <h2 className="font-medium">Game settings {!isHost && <span className="text-sm font-normal text-slate-600">(host only)</span>}</h2>
+        <h2 className="font-medium">Game settings {!isHost && <span className="text-sm font-normal text-slate-400">(host only)</span>}</h2>
         <fieldset disabled={!isHost} className="space-y-3">
           {!room.customDeck && (<>
           <div className="flex flex-wrap gap-3">
@@ -103,14 +103,14 @@ export function Lobby({ room, session }: { room: RoomView; session: Session }) {
           <div className="flex gap-4">
             <label className="flex-1">
               Round length
-              <select className="mt-1 w-full rounded border border-slate-300 px-2 py-2" value={s.roundSeconds} onChange={(e) => update({ roundSeconds: Number(e.target.value) as 60 | 90 })}>
+              <select className="mt-1 w-full rounded border border-slate-600 px-2 py-2" value={s.roundSeconds} onChange={(e) => update({ roundSeconds: Number(e.target.value) as 60 | 90 })}>
                 <option value={60}>60 seconds</option>
                 <option value={90}>90 seconds</option>
               </select>
             </label>
             <label className="flex-1">
               Rounds
-              <select className="mt-1 w-full rounded border border-slate-300 px-2 py-2" value={s.rounds} onChange={(e) => update({ rounds: Number(e.target.value) })}>
+              <select className="mt-1 w-full rounded border border-slate-600 px-2 py-2" value={s.rounds} onChange={(e) => update({ rounds: Number(e.target.value) })}>
                 {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((n) => (
                   <option key={n} value={n}>{n}</option>
                 ))}
@@ -120,7 +120,7 @@ export function Lobby({ room, session }: { room: RoomView; session: Session }) {
         </fieldset>
       </section>
 
-      {actionError && <p role="alert" className="text-red-700">{actionError}</p>}
+      {actionError && <p role="alert" className="text-red-400">{actionError}</p>}
       <button
         className="w-full rounded-lg bg-indigo-600 px-4 py-3 font-medium text-white disabled:opacity-40"
         disabled={!isHost || room.players.filter((p) => p.connected).length < 2}
@@ -129,11 +129,11 @@ export function Lobby({ room, session }: { room: RoomView; session: Session }) {
         Start game
       </button>
       {isHost && room.players.filter((p) => p.connected).length < 2 && (
-        <p className="text-sm text-slate-600">Waiting for at least one more player.</p>
+        <p className="text-sm text-slate-400">Waiting for at least one more player.</p>
       )}
-      {!isHost && <p className="text-sm text-slate-600">Waiting for the host to start.</p>}
+      {!isHost && <p className="text-sm text-slate-400">Waiting for the host to start.</p>}
       <button
-        className="text-indigo-600 underline"
+        className="text-indigo-400 underline"
         onClick={() => {
           leaveRoom();
           location.hash = "#/";

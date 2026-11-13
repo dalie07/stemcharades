@@ -38,17 +38,17 @@ export function Home() {
   return (
     <main className="mx-auto flex min-h-dvh max-w-md flex-col items-center justify-center gap-4 p-4 text-center">
       <h1 className="text-3xl font-bold">STEMCHARADES</h1>
-      <p className="text-slate-600">Explain it without saying it.</p>
+      <p className="text-slate-400">Explain it without saying it.</p>
       <a className="w-full rounded-lg bg-indigo-600 px-4 py-3 font-medium text-white" href="#/party" onClick={dismiss}>
         Party mode · one phone
       </a>
-      <a className="w-full rounded-lg bg-slate-800 px-4 py-3 font-medium text-white" href="#/online" onClick={dismiss}>
+      <a className="w-full rounded-lg bg-slate-700 px-4 py-3 font-medium text-white" href="#/online" onClick={dismiss}>
         Online room · play with friends
       </a>
-      {notice && <p role="status" className="rounded bg-amber-100 px-3 py-2 text-sm">{notice}</p>}
-      {signInFailed && <p role="alert" className="rounded bg-amber-100 px-3 py-2 text-sm">Sign-in did not work. You can try again, or just play as a guest.</p>}
+      {notice && <p role="status" className="rounded bg-amber-900 px-3 py-2 text-sm">{notice}</p>}
+      {signInFailed && <p role="alert" className="rounded bg-amber-900 px-3 py-2 text-sm">Sign-in did not work. You can try again, or just play as a guest.</p>}
       {me?.authEnabled && (
-        <p className="text-sm text-slate-600">
+        <p className="text-sm text-slate-400">
           {me.user ? (
             <>Signed in as <strong>{me.user.displayName}</strong> · <a className="underline" href="#/me" onClick={dismiss}>My account</a></>
           ) : (
@@ -56,9 +56,9 @@ export function Home() {
           )}
         </p>
       )}
-      <a className="text-sm text-slate-600 underline" href="#/cards" onClick={dismiss}>Browse cards</a>
+      <a className="text-sm text-slate-400 underline" href="#/cards" onClick={dismiss}>Browse cards</a>
 
-      <details className="mt-6 text-sm text-slate-600">
+      <details className="mt-6 text-sm text-slate-400">
         <summary>Server connection · {status}</summary>
         <button
           className="mt-2 rounded border px-3 py-1 disabled:opacity-50"

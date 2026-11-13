@@ -14,8 +14,8 @@ export default defineConfig({
         name: "STEMCHARADES",
         short_name: "STEMCHARADES",
         description: "Explain STEM ideas without saying the forbidden words.",
-        theme_color: "#4f46e5",
-        background_color: "#ffffff",
+        theme_color: "#0f172a",
+        background_color: "#0f172a",
         display: "standalone",
         start_url: "/",
         icons: [

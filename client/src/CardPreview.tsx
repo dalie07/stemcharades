@@ -22,14 +22,14 @@ export function CardPreview() {
           <button
             key={s}
             onClick={() => setSubject(s)}
-            className={`rounded-full px-3 py-1 text-sm ${s === subject ? "bg-indigo-600 text-white" : "bg-slate-100"}`}
+            className={`rounded-full px-3 py-1 text-sm ${s === subject ? "bg-indigo-600 text-white" : "bg-slate-800"}`}
           >
             {s}
           </button>
         ))}
       </div>
       {error && <p role="alert">Could not load cards.</p>}
-      <p className="text-sm text-slate-600">{cards.length} cards</p>
+      <p className="text-sm text-slate-400">{cards.length} cards</p>
       {cards.map((c) => (
         <Card key={c.id} card={c} reveal />
       ))}

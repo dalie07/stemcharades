@@ -59,7 +59,7 @@ export function Party() {
     return (
       <Shell>
         <p role="alert">Couldn't load cards. Connect once to download them for offline play.</p>
-        <a className="text-indigo-600 underline" href="#/">Back</a>
+        <a className="text-indigo-400 underline" href="#/">Back</a>
       </Shell>
     );
 
@@ -70,11 +70,11 @@ export function Party() {
   if (state.phase === "ready") {
     return (
       <Shell>
-        <p className="text-slate-600">
+        <p className="text-slate-400">
           Turn {state.turnIndex + 1} of {totalTurns(state.settings)}
         </p>
         <h1 className="text-3xl font-bold">Pass the phone to {currentPlayer(state)}</h1>
-        <p className="text-slate-600">Only the explainer looks at the screen. {state.settings.roundSeconds}s on the clock.</p>
+        <p className="text-slate-400">Only the explainer looks at the screen. {state.settings.roundSeconds}s on the clock.</p>
         <button className={`${btn} bg-indigo-600 text-white`} onClick={() => setState(startTurn(state, Date.now()))}>
           I'm ready – start
         </button>
@@ -89,14 +89,14 @@ export function Party() {
       <Shell>
         <div className="flex w-full items-center justify-between">
           <span className="font-medium">{currentPlayer(state)}</span>
-          <span className={`text-3xl font-bold tabular-nums ${left <= 10 ? "text-red-600" : ""}`} role="timer">
+          <span className={`text-3xl font-bold tabular-nums ${left <= 10 ? "text-red-400" : ""}`} role="timer">
             {left}s
           </span>
           <span>Got: {got}</span>
         </div>
         <Card card={state.currentCard} />
         <div className="grid w-full grid-cols-2 gap-3">
-          <button className={`${btn} bg-slate-200`} onClick={() => setState(skip(state, Date.now()))}>
+          <button className={`${btn} bg-slate-700`} onClick={() => setState(skip(state, Date.now()))}>
             Skip
           </button>
           <button className={`${btn} bg-green-700 text-white`} onClick={() => setState(gotIt(state, Date.now()))}>
@@ -141,7 +141,7 @@ export function Party() {
       <h1 className="text-3xl font-bold">Final scores</h1>
       <ol className="w-full space-y-1">
         {order.map((p, i) => (
-          <li key={p.name} className="flex justify-between rounded bg-slate-100 px-3 py-2">
+          <li key={p.name} className="flex justify-between rounded bg-slate-800 px-3 py-2">
             <span>{i + 1}. {p.name}</span>
             <span className="font-semibold">{p.score}</span>
           </li>
@@ -189,7 +189,7 @@ function Setup({ cards, onStart }: { cards: CardData[]; onStart: (s: PartySettin
   return (
     <Shell>
       <h1 className="text-3xl font-bold">Party mode</h1>
-      <p className="text-slate-600">One phone, passed around the room. Works offline.</p>
+      <p className="text-slate-400">One phone, passed around the room. Works offline.</p>
 
       <fieldset className="w-full space-y-2 text-left">
         <legend className="font-medium">Players</legend>
@@ -197,7 +197,7 @@ function Setup({ cards, onStart }: { cards: CardData[]; onStart: (s: PartySettin
           <div key={i} className="flex gap-2">
             <input
               aria-label={`Player ${i + 1} name`}
-              className="w-full rounded border border-slate-300 px-3 py-3"
+              className="w-full rounded border border-slate-600 px-3 py-3"
               maxLength={20}
               value={p}
               onChange={(e) => setPlayers(players.map((x, j) => (j === i ? e.target.value : x)))}
@@ -210,7 +210,7 @@ function Setup({ cards, onStart }: { cards: CardData[]; onStart: (s: PartySettin
           </div>
         ))}
         {players.length < 12 && (
-          <button className="text-indigo-600" onClick={() => setPlayers([...players, `Player ${players.length + 1}`])}>
+          <button className="text-indigo-400" onClick={() => setPlayers([...players, `Player ${players.length + 1}`])}>
             + Add player
           </button>
         )}
@@ -244,7 +244,7 @@ function Setup({ cards, onStart }: { cards: CardData[]; onStart: (s: PartySettin
         <label className="flex-1">
           Round length
           <select
-            className="mt-1 w-full rounded border border-slate-300 px-2 py-2"
+            className="mt-1 w-full rounded border border-slate-600 px-2 py-2"
             value={roundSeconds}
             onChange={(e) => setRoundSeconds(Number(e.target.value) as 60 | 90)}
           >
@@ -255,7 +255,7 @@ function Setup({ cards, onStart }: { cards: CardData[]; onStart: (s: PartySettin
         <label className="flex-1">
           Rounds
           <select
-            className="mt-1 w-full rounded border border-slate-300 px-2 py-2"
+            className="mt-1 w-full rounded border border-slate-600 px-2 py-2"
             value={rounds}
             onChange={(e) => setRounds(Number(e.target.value))}
           >
@@ -266,7 +266,7 @@ function Setup({ cards, onStart }: { cards: CardData[]; onStart: (s: PartySettin
         </label>
       </div>
 
-      <p className="text-sm text-slate-600">
+      <p className="text-sm text-slate-400">
         {count} matching cards{count === 0 ? " – pick at least one subject and level" : ""}
       </p>
       <button
@@ -276,7 +276,7 @@ function Setup({ cards, onStart }: { cards: CardData[]; onStart: (s: PartySettin
       >
         Start game
       </button>
-      <a className="text-indigo-600 underline" href="#/">Back</a>
+      <a className="text-indigo-400 underline" href="#/">Back</a>
     </Shell>
   );
 }
