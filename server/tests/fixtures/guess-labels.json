@@ -1,0 +1,1002 @@
+[
+ {
+  "card": "bio-0004",
+  "guess": "DNA",
+  "label": "correct"
+ },
+ {
+  "card": "bio-0004",
+  "guess": "Deoxyribonucleic Acid",
+  "label": "correct"
+ },
+ {
+  "card": "bio-0004",
+  "guess": "RNA",
+  "label": "wrong"
+ },
+ {
+  "card": "bio-0004",
+  "guess": "dnaa",
+  "label": "wrong"
+ },
+ {
+  "card": "bio-0002",
+  "guess": "mitosis",
+  "label": "correct"
+ },
+ {
+  "card": "bio-0002",
+  "guess": "meiosis",
+  "label": "wrong"
+ },
+ {
+  "card": "bio-0003",
+  "guess": "meiosis",
+  "label": "correct"
+ },
+ {
+  "card": "bio-0003",
+  "guess": "mitosis",
+  "label": "wrong"
+ },
+ {
+  "card": "bio-0005",
+  "guess": "enzymes",
+  "label": "correct"
+ },
+ {
+  "card": "bio-0005",
+  "guess": "the enzyme",
+  "label": "correct"
+ },
+ {
+  "card": "bio-0005",
+  "guess": "enzime",
+  "label": "close"
+ },
+ {
+  "card": "phy-0012",
+  "guess": "half life",
+  "label": "correct"
+ },
+ {
+  "card": "phy-0012",
+  "guess": "halflife",
+  "label": "correct"
+ },
+ {
+  "card": "phy-0012",
+  "guess": "half-life",
+  "label": "correct"
+ },
+ {
+  "card": "phy-0012",
+  "guess": "half lives",
+  "label": "correct"
+ },
+ {
+  "card": "phy-0007",
+  "guess": "E=mc^2",
+  "label": "correct"
+ },
+ {
+  "card": "phy-0007",
+  "guess": "e = mc2",
+  "label": "correct"
+ },
+ {
+  "card": "phy-0007",
+  "guess": "mc2",
+  "label": "wrong"
+ },
+ {
+  "card": "phy-0007",
+  "guess": "relativity",
+  "label": "wrong"
+ },
+ {
+  "card": "phy-0003",
+  "guess": "kinetic",
+  "label": "wrong"
+ },
+ {
+  "card": "phy-0003",
+  "guess": "KE",
+  "label": "correct"
+ },
+ {
+  "card": "phy-0003",
+  "guess": "kinetic energy",
+  "label": "correct"
+ },
+ {
+  "card": "phy-0003",
+  "guess": "potential energy",
+  "label": "wrong"
+ },
+ {
+  "card": "mat-0011",
+  "guess": "180",
+  "label": "correct"
+ },
+ {
+  "card": "mat-0011",
+  "guess": "180°",
+  "label": "correct"
+ },
+ {
+  "card": "mat-0011",
+  "guess": "181",
+  "label": "wrong"
+ },
+ {
+  "card": "mat-0011",
+  "guess": "one hundred and eighty",
+  "label": "correct"
+ },
+ {
+  "card": "phy-0018",
+  "guess": "3x10^8",
+  "label": "correct"
+ },
+ {
+  "card": "phy-0018",
+  "guess": "3e8",
+  "label": "correct"
+ },
+ {
+  "card": "phy-0018",
+  "guess": "300 000 000",
+  "label": "correct"
+ },
+ {
+  "card": "phy-0018",
+  "guess": "299,792,458",
+  "label": "correct"
+ },
+ {
+  "card": "che-0015",
+  "guess": "He",
+  "label": "correct"
+ },
+ {
+  "card": "che-0015",
+  "guess": "Helium!",
+  "label": "correct"
+ },
+ {
+  "card": "che-0015",
+  "guess": "Hydrogen",
+  "label": "wrong"
+ },
+ {
+  "card": "che-0015",
+  "guess": "heliom",
+  "label": "close"
+ },
+ {
+  "card": "com-0008",
+  "guess": "api",
+  "label": "correct"
+ },
+ {
+  "card": "com-0008",
+  "guess": "A.P.I.",
+  "label": "correct"
+ },
+ {
+  "card": "com-0008",
+  "guess": "application programming interface",
+  "label": "correct"
+ },
+ {
+  "card": "mat-0016",
+  "guess": "cos(x)",
+  "label": "correct"
+ },
+ {
+  "card": "mat-0016",
+  "guess": "-sin x",
+  "label": "wrong"
+ },
+ {
+  "card": "mat-0016",
+  "guess": "cosine",
+  "label": "correct"
+ },
+ {
+  "card": "bio-0001",
+  "guess": "photosynthesis",
+  "label": "correct"
+ },
+ {
+  "card": "bio-0001",
+  "guess": "photosynthesys",
+  "label": "close"
+ },
+ {
+  "card": "bio-0001",
+  "guess": "photo synthesis",
+  "label": "correct"
+ },
+ {
+  "card": "che-0006",
+  "guess": "pH",
+  "label": "correct"
+ },
+ {
+  "card": "che-0006",
+  "guess": "p.h.",
+  "label": "correct"
+ },
+ {
+  "card": "mat-0003",
+  "guess": "PRIME NUMBER",
+  "label": "correct"
+ },
+ {
+  "card": "mat-0003",
+  "guess": " prime  number! ",
+  "label": "correct"
+ },
+ {
+  "card": "mat-0003",
+  "guess": "prqmq number",
+  "label": "close"
+ },
+ {
+  "card": "mat-0003",
+  "guess": "ohm's law",
+  "label": "wrong"
+ },
+ {
+  "card": "mat-0003",
+  "guess": "divisible",
+  "label": "wrong"
+ },
+ {
+  "card": "mat-0006",
+  "guess": "MATRIX",
+  "label": "correct"
+ },
+ {
+  "card": "mat-0006",
+  "guess": " matrix! ",
+  "label": "correct"
+ },
+ {
+  "card": "mat-0006",
+  "guess": "maqrix",
+  "label": "close"
+ },
+ {
+  "card": "mat-0006",
+  "guess": "newton",
+  "label": "wrong"
+ },
+ {
+  "card": "mat-0006",
+  "guess": "array",
+  "label": "wrong"
+ },
+ {
+  "card": "mat-0009",
+  "guess": "LOGARITHM",
+  "label": "correct"
+ },
+ {
+  "card": "mat-0009",
+  "guess": " logarithm! ",
+  "label": "correct"
+ },
+ {
+  "card": "mat-0009",
+  "guess": "loqaqithm",
+  "label": "close"
+ },
+ {
+  "card": "mat-0009",
+  "guess": "3x10^8",
+  "label": "wrong"
+ },
+ {
+  "card": "mat-0009",
+  "guess": "exponent",
+  "label": "wrong"
+ },
+ {
+  "card": "mat-0013",
+  "guess": "PROBABILITY",
+  "label": "correct"
+ },
+ {
+  "card": "mat-0013",
+  "guess": " probability! ",
+  "label": "correct"
+ },
+ {
+  "card": "mat-0013",
+  "guess": "prqbqbility",
+  "label": "close"
+ },
+ {
+  "card": "mat-0013",
+  "guess": "catalyst",
+  "label": "wrong"
+ },
+ {
+  "card": "mat-0013",
+  "guess": "chance",
+  "label": "wrong"
+ },
+ {
+  "card": "mat-0016",
+  "guess": "COS X",
+  "label": "correct"
+ },
+ {
+  "card": "mat-0016",
+  "guess": " cos  x! ",
+  "label": "correct"
+ },
+ {
+  "card": "mat-0016",
+  "guess": "coq x",
+  "label": "close"
+ },
+ {
+  "card": "mat-0016",
+  "guess": "oxidation",
+  "label": "wrong"
+ },
+ {
+  "card": "mat-0016",
+  "guess": "differentiate",
+  "label": "wrong"
+ },
+ {
+  "card": "mat-0019",
+  "guess": "SINE RULE",
+  "label": "correct"
+ },
+ {
+  "card": "mat-0019",
+  "guess": " sine  rule! ",
+  "label": "correct"
+ },
+ {
+  "card": "mat-0019",
+  "guess": "siqe qule",
+  "label": "close"
+ },
+ {
+  "card": "mat-0019",
+  "guess": "electrolysis",
+  "label": "wrong"
+ },
+ {
+  "card": "mat-0019",
+  "guess": "sine",
+  "label": "wrong"
+ },
+ {
+  "card": "phy-0002",
+  "guess": "NEWTON'S SECOND LAW",
+  "label": "correct"
+ },
+ {
+  "card": "phy-0002",
+  "guess": " newton's  second  law! ",
+  "label": "correct"
+ },
+ {
+  "card": "phy-0002",
+  "guess": "neqtqn's second law",
+  "label": "close"
+ },
+ {
+  "card": "phy-0002",
+  "guess": "osmosis",
+  "label": "wrong"
+ },
+ {
+  "card": "phy-0002",
+  "guess": "force",
+  "label": "wrong"
+ },
+ {
+  "card": "phy-0005",
+  "guess": "ENTROPY",
+  "label": "correct"
+ },
+ {
+  "card": "phy-0005",
+  "guess": " entropy! ",
+  "label": "correct"
+ },
+ {
+  "card": "phy-0005",
+  "guess": "enqropy",
+  "label": "close"
+ },
+ {
+  "card": "phy-0005",
+  "guess": "antibody",
+  "label": "wrong"
+ },
+ {
+  "card": "phy-0005",
+  "guess": "disorder",
+  "label": "wrong"
+ },
+ {
+  "card": "phy-0009",
+  "guess": "RESISTOR",
+  "label": "correct"
+ },
+ {
+  "card": "phy-0009",
+  "guess": " resistor! ",
+  "label": "correct"
+ },
+ {
+  "card": "phy-0009",
+  "guess": "reqiqtor",
+  "label": "close"
+ },
+ {
+  "card": "phy-0009",
+  "guess": "vaccination",
+  "label": "wrong"
+ },
+ {
+  "card": "phy-0009",
+  "guess": "resistance",
+  "label": "wrong"
+ },
+ {
+  "card": "phy-0012",
+  "guess": "HALF-LIFE",
+  "label": "correct"
+ },
+ {
+  "card": "phy-0012",
+  "guess": " half-life! ",
+  "label": "correct"
+ },
+ {
+  "card": "phy-0012",
+  "guess": "haqf-qife",
+  "label": "close"
+ },
+ {
+  "card": "phy-0012",
+  "guess": "hash table",
+  "label": "wrong"
+ },
+ {
+  "card": "phy-0012",
+  "guess": "decay",
+  "label": "wrong"
+ },
+ {
+  "card": "phy-0015",
+  "guess": "WAVE EQUATION",
+  "label": "correct"
+ },
+ {
+  "card": "phy-0015",
+  "guess": " wave  equation! ",
+  "label": "correct"
+ },
+ {
+  "card": "phy-0015",
+  "guess": "waqe qquation",
+  "label": "close"
+ },
+ {
+  "card": "phy-0015",
+  "guess": "encryption",
+  "label": "wrong"
+ },
+ {
+  "card": "phy-0015",
+  "guess": "frequency",
+  "label": "wrong"
+ },
+ {
+  "card": "phy-0019",
+  "guess": "CAPACITOR",
+  "label": "correct"
+ },
+ {
+  "card": "phy-0019",
+  "guess": " capacitor! ",
+  "label": "correct"
+ },
+ {
+  "card": "phy-0019",
+  "guess": "caqaqitor",
+  "label": "close"
+ },
+ {
+  "card": "phy-0019",
+  "guess": "derivative",
+  "label": "wrong"
+ },
+ {
+  "card": "phy-0019",
+  "guess": "charge",
+  "label": "wrong"
+ },
+ {
+  "card": "che-0002",
+  "guess": "COVALENT BOND",
+  "label": "correct"
+ },
+ {
+  "card": "che-0002",
+  "guess": " covalent  bond! ",
+  "label": "correct"
+ },
+ {
+  "card": "che-0002",
+  "guess": "coqaqent bond",
+  "label": "close"
+ },
+ {
+  "card": "che-0002",
+  "guess": "standard deviation",
+  "label": "wrong"
+ },
+ {
+  "card": "che-0002",
+  "guess": "share",
+  "label": "wrong"
+ },
+ {
+  "card": "che-0005",
+  "guess": "CATALYST",
+  "label": "correct"
+ },
+ {
+  "card": "che-0005",
+  "guess": " catalyst! ",
+  "label": "correct"
+ },
+ {
+  "card": "che-0005",
+  "guess": "caqaqyst",
+  "label": "close"
+ },
+ {
+  "card": "che-0005",
+  "guess": "median",
+  "label": "wrong"
+ },
+ {
+  "card": "che-0005",
+  "guess": "speed",
+  "label": "wrong"
+ },
+ {
+  "card": "che-0009",
+  "guess": "ELECTRONEGATIVITY",
+  "label": "correct"
+ },
+ {
+  "card": "che-0009",
+  "guess": " electronegativity! ",
+  "label": "correct"
+ },
+ {
+  "card": "che-0009",
+  "guess": "elqcqronegativity",
+  "label": "close"
+ },
+ {
+  "card": "che-0009",
+  "guess": "newton's second law",
+  "label": "wrong"
+ },
+ {
+  "card": "che-0009",
+  "guess": "attract",
+  "label": "wrong"
+ },
+ {
+  "card": "che-0012",
+  "guess": "OXIDATION",
+  "label": "correct"
+ },
+ {
+  "card": "che-0012",
+  "guess": " oxidation! ",
+  "label": "correct"
+ },
+ {
+  "card": "che-0012",
+  "guess": "oxqdqtion",
+  "label": "close"
+ },
+ {
+  "card": "che-0012",
+  "guess": "resistor",
+  "label": "wrong"
+ },
+ {
+  "card": "che-0012",
+  "guess": "electrons",
+  "label": "wrong"
+ },
+ {
+  "card": "che-0015",
+  "guess": "HELIUM",
+  "label": "correct"
+ },
+ {
+  "card": "che-0015",
+  "guess": " helium! ",
+  "label": "correct"
+ },
+ {
+  "card": "che-0015",
+  "guess": "heqium",
+  "label": "close"
+ },
+ {
+  "card": "che-0015",
+  "guess": "superconductor",
+  "label": "wrong"
+ },
+ {
+  "card": "che-0015",
+  "guess": "noble",
+  "label": "wrong"
+ },
+ {
+  "card": "che-0018",
+  "guess": "POLYMER",
+  "label": "correct"
+ },
+ {
+  "card": "che-0018",
+  "guess": " polymer! ",
+  "label": "correct"
+ },
+ {
+  "card": "che-0018",
+  "guess": "poqymer",
+  "label": "close"
+ },
+ {
+  "card": "che-0018",
+  "guess": "meiosis",
+  "label": "wrong"
+ },
+ {
+  "card": "che-0018",
+  "guess": "monomer",
+  "label": "wrong"
+ },
+ {
+  "card": "bio-0001",
+  "guess": "PHOTOSYNTHESIS",
+  "label": "correct"
+ },
+ {
+  "card": "bio-0001",
+  "guess": " photosynthesis! ",
+  "label": "correct"
+ },
+ {
+  "card": "bio-0001",
+  "guess": "phqtqsynthesis",
+  "label": "close"
+ },
+ {
+  "card": "bio-0001",
+  "guess": "le chatelier's principle",
+  "label": "wrong"
+ },
+ {
+  "card": "bio-0001",
+  "guess": "plants",
+  "label": "wrong"
+ },
+ {
+  "card": "bio-0005",
+  "guess": "ENZYME",
+  "label": "correct"
+ },
+ {
+  "card": "bio-0005",
+  "guess": " enzyme! ",
+  "label": "correct"
+ },
+ {
+  "card": "bio-0005",
+  "guess": "enqyme",
+  "label": "close"
+ },
+ {
+  "card": "bio-0005",
+  "guess": "titration",
+  "label": "wrong"
+ },
+ {
+  "card": "bio-0005",
+  "guess": "protein",
+  "label": "wrong"
+ },
+ {
+  "card": "bio-0008",
+  "guess": "MITOCHONDRIA",
+  "label": "correct"
+ },
+ {
+  "card": "bio-0008",
+  "guess": " mitochondria! ",
+  "label": "correct"
+ },
+ {
+  "card": "bio-0008",
+  "guess": "miqoqhondria",
+  "label": "close"
+ },
+ {
+  "card": "bio-0008",
+  "guess": "recursion",
+  "label": "wrong"
+ },
+ {
+  "card": "bio-0008",
+  "guess": "powerhouse",
+  "label": "wrong"
+ },
+ {
+  "card": "bio-0011",
+  "guess": "ECOSYSTEM",
+  "label": "correct"
+ },
+ {
+  "card": "bio-0011",
+  "guess": " ecosystem! ",
+  "label": "correct"
+ },
+ {
+  "card": "bio-0011",
+  "guess": "ecqsqstem",
+  "label": "close"
+ },
+ {
+  "card": "bio-0011",
+  "guess": "queue",
+  "label": "wrong"
+ },
+ {
+  "card": "bio-0011",
+  "guess": "organisms",
+  "label": "wrong"
+ },
+ {
+  "card": "bio-0014",
+  "guess": "CHLOROPLAST",
+  "label": "correct"
+ },
+ {
+  "card": "bio-0014",
+  "guess": " chloroplast! ",
+  "label": "correct"
+ },
+ {
+  "card": "bio-0014",
+  "guess": "chqoqoplast",
+  "label": "close"
+ },
+ {
+  "card": "bio-0014",
+  "guess": "ip address",
+  "label": "wrong"
+ },
+ {
+  "card": "bio-0014",
+  "guess": "green",
+  "label": "wrong"
+ },
+ {
+  "card": "bio-0017",
+  "guess": "BIODIVERSITY",
+  "label": "correct"
+ },
+ {
+  "card": "bio-0017",
+  "guess": " biodiversity! ",
+  "label": "correct"
+ },
+ {
+  "card": "bio-0017",
+  "guess": "biqdqversity",
+  "label": "close"
+ },
+ {
+  "card": "bio-0017",
+  "guess": "integral",
+  "label": "wrong"
+ },
+ {
+  "card": "bio-0017",
+  "guess": "species",
+  "label": "wrong"
+ },
+ {
+  "card": "bio-0020",
+  "guess": "VACCINATION",
+  "label": "correct"
+ },
+ {
+  "card": "bio-0020",
+  "guess": " vaccination! ",
+  "label": "correct"
+ },
+ {
+  "card": "bio-0020",
+  "guess": "vaqcqnation",
+  "label": "close"
+ },
+ {
+  "card": "bio-0020",
+  "guess": "eigenvalue",
+  "label": "wrong"
+ },
+ {
+  "card": "bio-0020",
+  "guess": "immunity",
+  "label": "wrong"
+ },
+ {
+  "card": "com-0003",
+  "guess": "VARIABLE",
+  "label": "correct"
+ },
+ {
+  "card": "com-0003",
+  "guess": " variable! ",
+  "label": "correct"
+ },
+ {
+  "card": "com-0003",
+  "guess": "vaqiqble",
+  "label": "close"
+ },
+ {
+  "card": "com-0003",
+  "guess": "sine rule",
+  "label": "wrong"
+ },
+ {
+  "card": "com-0003",
+  "guess": "store",
+  "label": "wrong"
+ },
+ {
+  "card": "com-0006",
+  "guess": "COMPILER",
+  "label": "correct"
+ },
+ {
+  "card": "com-0006",
+  "guess": " compiler! ",
+  "label": "correct"
+ },
+ {
+  "card": "com-0006",
+  "guess": "coqpqler",
+  "label": "close"
+ },
+ {
+  "card": "com-0006",
+  "guess": "refraction",
+  "label": "wrong"
+ },
+ {
+  "card": "com-0006",
+  "guess": "translate",
+  "label": "wrong"
+ },
+ {
+  "card": "com-0010",
+  "guess": "STACK",
+  "label": "correct"
+ },
+ {
+  "card": "com-0010",
+  "guess": " stack! ",
+  "label": "correct"
+ },
+ {
+  "card": "com-0010",
+  "guess": "stqck",
+  "label": "close"
+ },
+ {
+  "card": "com-0010",
+  "guess": "photoelectric effect",
+  "label": "wrong"
+ },
+ {
+  "card": "com-0010",
+  "guess": "lifo",
+  "label": "wrong"
+ },
+ {
+  "card": "com-0013",
+  "guess": "POINTER",
+  "label": "correct"
+ },
+ {
+  "card": "com-0013",
+  "guess": " pointer! ",
+  "label": "correct"
+ },
+ {
+  "card": "com-0013",
+  "guess": "poqnter",
+  "label": "close"
+ },
+ {
+  "card": "com-0013",
+  "guess": "black hole",
+  "label": "wrong"
+ },
+ {
+  "card": "com-0013",
+  "guess": "memory",
+  "label": "wrong"
+ },
+ {
+  "card": "com-0016",
+  "guess": "OBJECT-ORIENTED PROGRAMMING",
+  "label": "correct"
+ },
+ {
+  "card": "com-0016",
+  "guess": " object-oriented  programming! ",
+  "label": "correct"
+ },
+ {
+  "card": "com-0016",
+  "guess": "obqeqt-oriented programming",
+  "label": "close"
+ },
+ {
+  "card": "com-0016",
+  "guess": "isotope",
+  "label": "wrong"
+ },
+ {
+  "card": "com-0016",
+  "guess": "class",
+  "label": "wrong"
+ },
+ {
+  "card": "com-0019",
+  "guess": "BUBBLE SORT",
+  "label": "correct"
+ },
+ {
+  "card": "com-0019",
+  "guess": " bubble  sort! ",
+  "label": "correct"
+ },
+ {
+  "card": "com-0019",
+  "guess": "buqbqe sort",
+  "label": "close"
+ },
+ {
+  "card": "com-0019",
+  "guess": "enthalpy change",
+  "label": "wrong"
+ }
+]
