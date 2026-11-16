@@ -84,13 +84,20 @@ export async function startServer(port: number): Promise<TestServer> {
     stdio: "ignore",
   });
   const url = `http://localhost:${port}`;
-  for (let i = 0; i < 80; i++) {
+  // A busy or small machine can take a minute or more to boot. Wait for it, and fail loudly rather than carry on
+  // with a server that never came up.
+  let up = false;
+  for (let i = 0; i < 480 && !up; i++) {
     try {
-      if ((await fetch(`${url}/healthz`)).ok) break;
+      up = (await fetch(`${url}/healthz`)).ok;
     } catch {
       /* not up yet */
     }
-    await new Promise((r) => setTimeout(r, 250));
+    if (!up) await new Promise((r) => setTimeout(r, 250));
+  }
+  if (!up) {
+    child.kill("SIGKILL");
+    throw new Error(`test server on port ${port} did not become healthy within 2 minutes`);
   }
   return {
     url,

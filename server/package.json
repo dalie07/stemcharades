@@ -16,7 +16,7 @@
     "express": "^4.21.0",
     "socket.io": "^4.8.0",
     "tsx": "^4.19.0",
-    "drizzle-orm": "^0.38.0",
+    "drizzle-orm": "^0.45.4",
     "pg": "^8.13.0",
     "zod": "^4.6.7"
   },
@@ -26,7 +26,7 @@
     "socket.io-client": "^4.8.0",
     "vitest": "^2.1.0",
     "@types/pg": "^8.11.0",
-    "drizzle-kit": "^0.30.0",
+    "drizzle-kit": "^0.31.11",
     "@electric-sql/pglite": "^0.2.0"
   }
 }

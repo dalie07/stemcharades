@@ -2,6 +2,7 @@ import { expect, test } from "@playwright/test";
 import { createRoom, joinRoom, newPlayer, startServer } from "./helpers";
 
 test("when the server restarts mid-game, clients say so clearly and return to the home screen", async ({ browser }) => {
+  test.setTimeout(240_000); // boots two servers; slow machines need the room
   const port = 3153;
   let server = await startServer(port);
   const base = server.url;
@@ -29,6 +30,7 @@ test("when the server restarts mid-game, clients say so clearly and return to th
 });
 
 test("Party mode plays a whole turn with the server switched off", async ({ browser }) => {
+  test.setTimeout(180_000);
   const port = 3154;
   const server = await startServer(port);
   const base = server.url;

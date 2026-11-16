@@ -20,7 +20,7 @@ export default defineConfig({
     command: "npm run build && npm start",
     url: `http://localhost:${PORT}/healthz`,
     reuseExistingServer: !process.env.CI,
-    timeout: 120_000,
+    timeout: 240_000, // a busy or small machine can take well over a minute to build and boot
     env: { PORT: String(PORT), NODE_ENV: "production", ALLOW_DRAFT_CARDS: "1" },
   },
 });
