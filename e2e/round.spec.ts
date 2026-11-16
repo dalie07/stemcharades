@@ -1,6 +1,7 @@
 import { expect, test, type Page } from "@playwright/test";
 import { allCards, createRoom, joinRoom, newPlayer, type Player } from "./helpers";
 
+const SUBJECTS_LOWER = ["maths", "physics", "chemistry", "biology", "computing"];
 const escapeRe = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 const contains = (raw: string, word: string) => new RegExp(`(^|[^a-z0-9])${escapeRe(word.toLowerCase())}([^a-z0-9]|$)`).test(raw.toLowerCase());
 
@@ -44,7 +45,10 @@ test("a full round runs across devices and a guesser's browser never receives th
   expect(await promptOf(host!.page)).toBe(prompt);
 
   // Raw network traffic to guessers contains none of the card.
-  const secrets = [...new Set([secret.prompt, ...secret.answers, ...secret.forbidden].filter((w) => w.length >= 3))];
+  // Words the protocol itself sends to everyone (phase names, card types, subjects) are public by design, so a card
+  // that happens to contain one (a forbidden word "round", say) must not be reported as a leak.
+  const PUBLIC_WORDS = new Set(["lobby", "round", "reveal", "finished", "term", "formula", "question", ...SUBJECTS_LOWER]);
+  const secrets = [...new Set([secret.prompt, ...secret.answers, ...secret.forbidden].filter((w) => w.length >= 3 && !PUBLIC_WORDS.has(w.toLowerCase())))];
   for (const g of [ann!, ben!]) {
     const raw = g.frames.join("\n");
     expect(g.frames.length).toBeGreaterThan(0);
