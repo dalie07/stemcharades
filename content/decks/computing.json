@@ -1294,5 +1294,366 @@
     ],
     "explanation": "URL stands for uniform resource locator. It is the address that identifies a resource on the web.",
     "status": "draft"
+  },
+  {
+    "id": "com-0061",
+    "type": "term",
+    "subject": "Computing",
+    "course": "primary-computing",
+    "topic": "Using computers",
+    "level": 1,
+    "prompt": "Keyboard",
+    "answers": [
+      "keyboard"
+    ],
+    "forbidden": [
+      "keys",
+      "type",
+      "letters",
+      "computer"
+    ],
+    "explanation": "A keyboard is used to type letters, numbers and commands into a computer.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0062",
+    "type": "term",
+    "subject": "Computing",
+    "course": "primary-computing",
+    "topic": "Using computers",
+    "level": 1,
+    "prompt": "Computer mouse",
+    "answers": [
+      "computer mouse",
+      "mouse"
+    ],
+    "forbidden": [
+      "click",
+      "pointer",
+      "cursor",
+      "animal"
+    ],
+    "explanation": "A computer mouse moves a pointer on the screen and lets you click on things.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0063",
+    "type": "term",
+    "subject": "Computing",
+    "course": "primary-computing",
+    "topic": "Using computers",
+    "level": 1,
+    "prompt": "Password",
+    "answers": [
+      "password",
+      "passwords"
+    ],
+    "forbidden": [
+      "secret",
+      "login",
+      "safe",
+      "word",
+      "letters"
+    ],
+    "explanation": "A password is a secret word or phrase that keeps an account safe. Never share it with anyone except a trusted adult.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0064",
+    "type": "term",
+    "subject": "Computing",
+    "course": "primary-computing",
+    "topic": "Using computers",
+    "level": 1,
+    "prompt": "Save",
+    "answers": [
+      "save",
+      "saving"
+    ],
+    "forbidden": [
+      "keep",
+      "file",
+      "lose",
+      "store",
+      "later"
+    ],
+    "explanation": "Saving stores your work on a computer or online so you can open it again later.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0065",
+    "type": "term",
+    "subject": "Computing",
+    "course": "primary-computing",
+    "topic": "Using computers",
+    "level": 1,
+    "prompt": "Printer",
+    "answers": [
+      "printer"
+    ],
+    "forbidden": [
+      "paper",
+      "print",
+      "ink",
+      "copy"
+    ],
+    "explanation": "A printer puts words and pictures from a computer onto paper.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0066",
+    "type": "term",
+    "subject": "Computing",
+    "course": "primary-computing",
+    "topic": "Algorithms",
+    "level": 1,
+    "prompt": "Sequence",
+    "answers": [
+      "sequence"
+    ],
+    "forbidden": [
+      "order",
+      "steps",
+      "first",
+      "next"
+    ],
+    "explanation": "A sequence is a set of instructions that must happen in the right order, like the steps for brushing your teeth.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0067",
+    "type": "term",
+    "subject": "Computing",
+    "course": "primary-computing",
+    "topic": "Algorithms",
+    "level": 1,
+    "prompt": "Instructions",
+    "answers": [
+      "instructions",
+      "instruction"
+    ],
+    "forbidden": [
+      "steps",
+      "commands",
+      "order",
+      "follow",
+      "recipe"
+    ],
+    "explanation": "Instructions tell someone, or a computer, exactly what to do step by step. Computers follow them precisely.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0068",
+    "type": "term",
+    "subject": "Computing",
+    "course": "primary-computing",
+    "topic": "Algorithms",
+    "level": 1,
+    "prompt": "Repetition",
+    "answers": [
+      "repetition",
+      "repeat"
+    ],
+    "forbidden": [
+      "again",
+      "loop",
+      "times",
+      "over"
+    ],
+    "explanation": "Repetition means doing the same instructions again and again. In code, a repeat block saves writing the same steps many times.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0069",
+    "type": "question",
+    "subject": "Computing",
+    "course": "primary-computing",
+    "topic": "Algorithms",
+    "level": 1,
+    "prompt": "What do we call a mistake in a computer program?",
+    "answers": [
+      "bug",
+      "a bug"
+    ],
+    "forbidden": [
+      "error",
+      "wrong",
+      "fix",
+      "insect"
+    ],
+    "explanation": "A mistake in a program is called a bug. Finding and fixing bugs is called debugging.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0070",
+    "type": "term",
+    "subject": "Computing",
+    "course": "primary-computing",
+    "topic": "Coding",
+    "level": 1,
+    "prompt": "Sprite",
+    "answers": [
+      "sprite",
+      "sprites"
+    ],
+    "forbidden": [
+      "character",
+      "costume",
+      "move",
+      "game"
+    ],
+    "explanation": "A sprite is a character or object that you can program to move, talk and react in an animation or game.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0071",
+    "type": "term",
+    "subject": "Computing",
+    "course": "primary-computing",
+    "topic": "Coding",
+    "level": 1,
+    "prompt": "Input",
+    "answers": [
+      "input"
+    ],
+    "forbidden": [
+      "into",
+      "keyboard",
+      "enter",
+      "type",
+      "give"
+    ],
+    "explanation": "An input is information you put into a computer, like pressing a key, clicking or speaking into a microphone.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0072",
+    "type": "term",
+    "subject": "Computing",
+    "course": "primary-computing",
+    "topic": "Coding",
+    "level": 1,
+    "prompt": "Output",
+    "answers": [
+      "output"
+    ],
+    "forbidden": [
+      "out",
+      "screen",
+      "speaker",
+      "result",
+      "show"
+    ],
+    "explanation": "An output is what a computer gives back, like a picture on the screen or a sound from a speaker.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0073",
+    "type": "term",
+    "subject": "Computing",
+    "course": "primary-computing",
+    "topic": "Coding",
+    "level": 1,
+    "prompt": "Code",
+    "answers": [
+      "code",
+      "coding"
+    ],
+    "forbidden": [
+      "program",
+      "write",
+      "computer",
+      "language"
+    ],
+    "explanation": "Code is the set of instructions people write for a computer to follow. Writing it is called coding.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0074",
+    "type": "term",
+    "subject": "Computing",
+    "course": "primary-computing",
+    "topic": "Staying safe online",
+    "level": 1,
+    "prompt": "Personal information",
+    "answers": [
+      "personal information",
+      "personal details",
+      "private information"
+    ],
+    "forbidden": [
+      "name",
+      "address",
+      "private",
+      "share",
+      "school"
+    ],
+    "explanation": "Personal information is anything that identifies you, like your full name, address or school. Keep it private online.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0075",
+    "type": "term",
+    "subject": "Computing",
+    "course": "primary-computing",
+    "topic": "Staying safe online",
+    "level": 1,
+    "prompt": "Cyberbullying",
+    "answers": [
+      "cyberbullying",
+      "online bullying"
+    ],
+    "forbidden": [
+      "mean",
+      "online",
+      "bully",
+      "messages",
+      "hurt"
+    ],
+    "explanation": "Cyberbullying is being unkind to someone online, such as sending hurtful messages. Tell a trusted adult if it happens to you.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0076",
+    "type": "term",
+    "subject": "Computing",
+    "course": "primary-computing",
+    "topic": "Staying safe online",
+    "level": 1,
+    "prompt": "Trusted adult",
+    "answers": [
+      "trusted adult",
+      "a trusted adult"
+    ],
+    "forbidden": [
+      "tell",
+      "grown-up",
+      "parent",
+      "teacher",
+      "help"
+    ],
+    "explanation": "A trusted adult is a grown-up you can talk to if something online worries you, like a parent, carer or teacher.",
+    "status": "draft"
+  },
+  {
+    "id": "com-0077",
+    "type": "term",
+    "subject": "Computing",
+    "course": "primary-computing",
+    "topic": "Staying safe online",
+    "level": 1,
+    "prompt": "Screen time",
+    "answers": [
+      "screen time"
+    ],
+    "forbidden": [
+      "hours",
+      "tablet",
+      "phone",
+      "break",
+      "watch"
+    ],
+    "explanation": "Screen time is the time spent looking at screens like tablets, phones and TVs. Taking regular breaks is healthy.",
+    "status": "draft"
   }
 ]

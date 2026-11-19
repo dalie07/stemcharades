@@ -1304,5 +1304,176 @@
     ],
     "explanation": "Allotropes are different structural forms of the same element in the same physical state. Diamond and graphite are allotropes of carbon.",
     "status": "draft"
+  },
+  {
+    "id": "che-0061",
+    "type": "term",
+    "subject": "Chemistry",
+    "course": "primary-science",
+    "topic": "Materials",
+    "level": 1,
+    "prompt": "Absorbent",
+    "answers": [
+      "absorbent"
+    ],
+    "forbidden": [
+      "soak",
+      "water",
+      "sponge",
+      "towel"
+    ],
+    "explanation": "An absorbent material soaks up liquid. Paper towels and sponges are absorbent.",
+    "status": "draft"
+  },
+  {
+    "id": "che-0062",
+    "type": "term",
+    "subject": "Chemistry",
+    "course": "primary-science",
+    "topic": "Materials",
+    "level": 1,
+    "prompt": "Transparent",
+    "answers": [
+      "transparent",
+      "see-through"
+    ],
+    "forbidden": [
+      "see",
+      "glass",
+      "clear",
+      "light"
+    ],
+    "explanation": "A transparent material lets light pass straight through, so you can see clearly through it. Glass is transparent.",
+    "status": "draft"
+  },
+  {
+    "id": "che-0063",
+    "type": "term",
+    "subject": "Chemistry",
+    "course": "primary-science",
+    "topic": "Materials",
+    "level": 1,
+    "prompt": "Waterproof",
+    "answers": [
+      "waterproof"
+    ],
+    "forbidden": [
+      "rain",
+      "wet",
+      "coat",
+      "dry",
+      "umbrella"
+    ],
+    "explanation": "A waterproof material does not let water through. Raincoats and umbrellas are made of waterproof materials.",
+    "status": "draft"
+  },
+  {
+    "id": "che-0064",
+    "type": "term",
+    "subject": "Chemistry",
+    "course": "primary-science",
+    "topic": "Materials",
+    "level": 1,
+    "prompt": "Dissolve",
+    "answers": [
+      "dissolve",
+      "dissolving",
+      "dissolves"
+    ],
+    "forbidden": [
+      "sugar",
+      "water",
+      "disappear",
+      "mix",
+      "stir"
+    ],
+    "explanation": "Something dissolves when it mixes into a liquid so completely that you can no longer see it, like sugar stirred into tea.",
+    "status": "draft"
+  },
+  {
+    "id": "che-0065",
+    "type": "question",
+    "subject": "Chemistry",
+    "course": "primary-science",
+    "topic": "Materials",
+    "level": 1,
+    "prompt": "What does water turn into when it freezes?",
+    "answers": [
+      "ice"
+    ],
+    "forbidden": [
+      "cold",
+      "frozen",
+      "freezer",
+      "cube",
+      "solid"
+    ],
+    "explanation": "When water freezes it turns into ice, a solid. Water freezes at 0 degrees Celsius.",
+    "status": "draft"
+  },
+  {
+    "id": "che-0066",
+    "type": "term",
+    "subject": "Chemistry",
+    "course": "primary-science",
+    "topic": "Materials",
+    "level": 1,
+    "prompt": "Recycling",
+    "answers": [
+      "recycling",
+      "recycle"
+    ],
+    "forbidden": [
+      "bin",
+      "reuse",
+      "plastic",
+      "waste",
+      "again"
+    ],
+    "explanation": "Recycling means turning used materials, like paper, glass and plastic, into new things instead of throwing them away.",
+    "status": "draft"
+  },
+  {
+    "id": "che-0067",
+    "type": "term",
+    "subject": "Chemistry",
+    "course": "primary-science",
+    "topic": "Materials",
+    "level": 1,
+    "prompt": "Opaque",
+    "answers": [
+      "opaque"
+    ],
+    "forbidden": [
+      "light",
+      "see",
+      "through",
+      "block",
+      "dark"
+    ],
+    "explanation": "An opaque material does not let any light through, so you cannot see through it. Wood and metal are opaque.",
+    "status": "draft"
+  },
+  {
+    "id": "che-0068",
+    "type": "term",
+    "subject": "Chemistry",
+    "course": "primary-science",
+    "topic": "Materials",
+    "level": 1,
+    "prompt": "Flexible",
+    "answers": [
+      "flexible",
+      "bendy"
+    ],
+    "forbidden": [
+      "bend",
+      "stretch",
+      "rubber",
+      "snap",
+      "stiff"
+    ],
+    "explanation": "A flexible material can bend without breaking. Rubber and fabric are flexible.",
+    "status": "draft"
   }
 ]

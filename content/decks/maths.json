@@ -1301,5 +1301,848 @@
     ],
     "explanation": "Proof by induction shows a statement is true for every whole number by proving a base case and then showing that if it holds for one number it holds for the next.",
     "status": "draft"
+  },
+  {
+    "id": "mat-0061",
+    "type": "term",
+    "subject": "Maths",
+    "course": "primary-maths",
+    "topic": "Number",
+    "level": 1,
+    "prompt": "Even number",
+    "answers": [
+      "even number",
+      "even",
+      "even numbers"
+    ],
+    "forbidden": [
+      "two",
+      "divide",
+      "pairs",
+      "odd"
+    ],
+    "explanation": "An even number can be split into two equal groups with nothing left over. Even numbers end in 0, 2, 4, 6 or 8.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0062",
+    "type": "term",
+    "subject": "Maths",
+    "course": "primary-maths",
+    "topic": "Number",
+    "level": 1,
+    "prompt": "Odd number",
+    "answers": [
+      "odd number",
+      "odd",
+      "odd numbers"
+    ],
+    "forbidden": [
+      "even",
+      "two",
+      "left over",
+      "one"
+    ],
+    "explanation": "An odd number cannot be split into two equal groups: there is always one left over. Odd numbers end in 1, 3, 5, 7 or 9.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0063",
+    "type": "term",
+    "subject": "Maths",
+    "course": "primary-maths",
+    "topic": "Number",
+    "level": 1,
+    "prompt": "Place value",
+    "answers": [
+      "place value"
+    ],
+    "forbidden": [
+      "digit",
+      "tens",
+      "ones",
+      "hundreds",
+      "position"
+    ],
+    "explanation": "Place value is what a digit is worth because of where it sits in a number. In 352, the 5 is worth 50 because it is in the tens place.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0064",
+    "type": "term",
+    "subject": "Maths",
+    "course": "primary-maths",
+    "topic": "Number",
+    "level": 1,
+    "prompt": "Digit",
+    "answers": [
+      "digit",
+      "digits"
+    ],
+    "forbidden": [
+      "number",
+      "symbol",
+      "ten",
+      "place"
+    ],
+    "explanation": "A digit is one of the ten symbols 0 to 9 that we use to write numbers. The number 305 has three digits.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0065",
+    "type": "term",
+    "subject": "Maths",
+    "course": "primary-maths",
+    "topic": "Number",
+    "level": 1,
+    "prompt": "Rounding",
+    "answers": [
+      "rounding",
+      "round"
+    ],
+    "forbidden": [
+      "nearest",
+      "ten",
+      "up",
+      "down",
+      "estimate"
+    ],
+    "explanation": "Rounding means changing a number to a nearby, simpler one, such as the nearest ten. 47 rounded to the nearest ten is 50.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0066",
+    "type": "question",
+    "subject": "Maths",
+    "course": "primary-maths",
+    "topic": "Number",
+    "level": 1,
+    "prompt": "What number comes straight after 99?",
+    "answers": [
+      "100",
+      "one hundred",
+      "a hundred"
+    ],
+    "forbidden": [
+      "ninety",
+      "nine",
+      "century"
+    ],
+    "explanation": "After 99 comes 100. The ones and the tens are both full, so we move into a new place: the hundreds.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0067",
+    "type": "term",
+    "subject": "Maths",
+    "course": "primary-maths",
+    "topic": "Addition and subtraction",
+    "level": 1,
+    "prompt": "Sum",
+    "answers": [
+      "sum",
+      "total"
+    ],
+    "forbidden": [
+      "add",
+      "plus",
+      "altogether",
+      "answer"
+    ],
+    "explanation": "The sum is the answer you get when you add numbers together. The sum of 4 and 5 is 9.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0068",
+    "type": "term",
+    "subject": "Maths",
+    "course": "primary-maths",
+    "topic": "Addition and subtraction",
+    "level": 1,
+    "prompt": "Difference",
+    "answers": [
+      "difference"
+    ],
+    "forbidden": [
+      "subtract",
+      "minus",
+      "take away",
+      "between"
+    ],
+    "explanation": "The difference between two numbers is how much bigger one is than the other. You find it by subtracting: the difference between 9 and 4 is 5.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0069",
+    "type": "question",
+    "subject": "Maths",
+    "course": "primary-maths",
+    "topic": "Addition and subtraction",
+    "level": 1,
+    "prompt": "What is 7 + 8?",
+    "answers": [
+      "15",
+      "fifteen"
+    ],
+    "forbidden": [
+      "seven",
+      "eight",
+      "add",
+      "plus"
+    ],
+    "explanation": "7 + 8 = 15. One way to see it: 7 + 3 makes 10, and 5 more makes 15.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0070",
+    "type": "term",
+    "subject": "Maths",
+    "course": "primary-maths",
+    "topic": "Addition and subtraction",
+    "level": 1,
+    "prompt": "Number line",
+    "answers": [
+      "number line"
+    ],
+    "forbidden": [
+      "line",
+      "order",
+      "jump",
+      "count"
+    ],
+    "explanation": "A number line is a straight line with numbers marked in order along it. You can count on or back along it to add and subtract.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0071",
+    "type": "term",
+    "subject": "Maths",
+    "course": "primary-maths",
+    "topic": "Addition and subtraction",
+    "level": 1,
+    "prompt": "Inverse operation",
+    "answers": [
+      "inverse operation",
+      "inverse"
+    ],
+    "forbidden": [
+      "opposite",
+      "undo",
+      "reverse",
+      "check"
+    ],
+    "explanation": "An inverse operation undoes another one. Subtraction is the inverse of addition: 5 + 3 = 8, so 8 - 3 = 5.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0072",
+    "type": "question",
+    "subject": "Maths",
+    "course": "primary-maths",
+    "topic": "Addition and subtraction",
+    "level": 1,
+    "prompt": "What is 20 - 6?",
+    "answers": [
+      "14",
+      "fourteen"
+    ],
+    "forbidden": [
+      "twenty",
+      "six",
+      "take away",
+      "minus"
+    ],
+    "explanation": "20 - 6 = 14. Counting back 6 from 20 on a number line lands on 14.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0073",
+    "type": "term",
+    "subject": "Maths",
+    "course": "primary-maths",
+    "topic": "Multiplication and division",
+    "level": 1,
+    "prompt": "Times table",
+    "answers": [
+      "times table",
+      "times tables",
+      "multiplication table"
+    ],
+    "forbidden": [
+      "multiply",
+      "learn",
+      "list",
+      "facts"
+    ],
+    "explanation": "A times table lists the multiples of a number in order, such as 3, 6, 9, 12 for the three times table. Knowing them by heart makes multiplying quick.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0074",
+    "type": "term",
+    "subject": "Maths",
+    "course": "primary-maths",
+    "topic": "Multiplication and division",
+    "level": 1,
+    "prompt": "Remainder",
+    "answers": [
+      "remainder"
+    ],
+    "forbidden": [
+      "left over",
+      "divide",
+      "share",
+      "spare"
+    ],
+    "explanation": "A remainder is what is left over when a number cannot be shared equally. 13 shared between 4 is 3 each, remainder 1.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0075",
+    "type": "question",
+    "subject": "Maths",
+    "course": "primary-maths",
+    "topic": "Multiplication and division",
+    "level": 1,
+    "prompt": "What is 6 × 7?",
+    "answers": [
+      "42",
+      "forty-two",
+      "forty two"
+    ],
+    "forbidden": [
+      "six",
+      "seven",
+      "times",
+      "multiply"
+    ],
+    "explanation": "6 × 7 = 42. It is the same as 7 × 6: six lots of seven, or seven lots of six.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0076",
+    "type": "term",
+    "subject": "Maths",
+    "course": "primary-maths",
+    "topic": "Multiplication and division",
+    "level": 1,
+    "prompt": "Equal groups",
+    "answers": [
+      "equal groups"
+    ],
+    "forbidden": [
+      "same",
+      "share",
+      "divide",
+      "sets"
+    ],
+    "explanation": "Equal groups have the same number of things in each group. Making equal groups is how we share and divide: 12 sweets in 3 equal groups is 4 each.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0077",
+    "type": "term",
+    "subject": "Maths",
+    "course": "primary-maths",
+    "topic": "Multiplication and division",
+    "level": 1,
+    "prompt": "Multiple",
+    "answers": [
+      "multiple",
+      "multiples"
+    ],
+    "forbidden": [
+      "times table",
+      "multiply",
+      "times",
+      "factor"
+    ],
+    "explanation": "A multiple of a number is what you get when you multiply it by a whole number. 12, 18 and 24 are all multiples of 6.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0078",
+    "type": "term",
+    "subject": "Maths",
+    "course": "primary-maths",
+    "topic": "Fractions",
+    "level": 1,
+    "prompt": "Numerator",
+    "answers": [
+      "numerator"
+    ],
+    "forbidden": [
+      "top",
+      "fraction",
+      "bottom",
+      "parts"
+    ],
+    "explanation": "The numerator is the top number of a fraction. It says how many equal parts you have: in 3/4 the numerator is 3.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0079",
+    "type": "term",
+    "subject": "Maths",
+    "course": "primary-maths",
+    "topic": "Fractions",
+    "level": 1,
+    "prompt": "Denominator",
+    "answers": [
+      "denominator"
+    ],
+    "forbidden": [
+      "bottom",
+      "fraction",
+      "parts",
+      "top"
+    ],
+    "explanation": "The denominator is the bottom number of a fraction. It says how many equal parts the whole is split into: in 3/4 the denominator is 4.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0080",
+    "type": "term",
+    "subject": "Maths",
+    "course": "primary-maths",
+    "topic": "Fractions",
+    "level": 1,
+    "prompt": "Half",
+    "answers": [
+      "half",
+      "one half",
+      "a half"
+    ],
+    "forbidden": [
+      "two",
+      "equal",
+      "split",
+      "middle"
+    ],
+    "explanation": "A half is one of two equal parts of a whole. Half of 10 is 5.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0081",
+    "type": "term",
+    "subject": "Maths",
+    "course": "primary-maths",
+    "topic": "Fractions",
+    "level": 1,
+    "prompt": "Quarter",
+    "answers": [
+      "quarter",
+      "one quarter",
+      "a quarter",
+      "one fourth"
+    ],
+    "forbidden": [
+      "four",
+      "equal",
+      "parts",
+      "half"
+    ],
+    "explanation": "A quarter is one of four equal parts of a whole. Two quarters make a half, and a quarter of 20 is 5.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0082",
+    "type": "term",
+    "subject": "Maths",
+    "course": "primary-maths",
+    "topic": "Fractions",
+    "level": 1,
+    "prompt": "Equivalent fractions",
+    "answers": [
+      "equivalent fractions",
+      "equivalent fraction"
+    ],
+    "forbidden": [
+      "same",
+      "equal",
+      "value",
+      "worth"
+    ],
+    "explanation": "Equivalent fractions look different but are worth the same amount. 1/2, 2/4 and 4/8 are all equivalent.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0083",
+    "type": "term",
+    "subject": "Maths",
+    "course": "primary-maths",
+    "topic": "Fractions",
+    "level": 1,
+    "prompt": "Decimal point",
+    "answers": [
+      "decimal point"
+    ],
+    "forbidden": [
+      "dot",
+      "decimal",
+      "tenths",
+      "whole"
+    ],
+    "explanation": "The decimal point separates whole numbers from parts of a whole. In 3.5 it shows 3 wholes and 5 tenths.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0084",
+    "type": "term",
+    "subject": "Maths",
+    "course": "primary-maths",
+    "topic": "Measurement",
+    "level": 1,
+    "prompt": "Centimetre",
+    "answers": [
+      "centimetre",
+      "centimetres",
+      "centimeter",
+      "cm"
+    ],
+    "forbidden": [
+      "ruler",
+      "length",
+      "metre",
+      "short"
+    ],
+    "explanation": "A centimetre is a small unit of length. There are 100 centimetres in a metre, and a fingernail is about 1 centimetre wide.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0085",
+    "type": "term",
+    "subject": "Maths",
+    "course": "primary-maths",
+    "topic": "Measurement",
+    "level": 1,
+    "prompt": "Kilogram",
+    "answers": [
+      "kilogram",
+      "kilograms",
+      "kg",
+      "kilo"
+    ],
+    "forbidden": [
+      "mass",
+      "weight",
+      "heavy",
+      "grams"
+    ],
+    "explanation": "A kilogram is a unit of mass. A bag of sugar has a mass of about 1 kilogram, and 1 kilogram is 1000 grams.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0086",
+    "type": "term",
+    "subject": "Maths",
+    "course": "primary-maths",
+    "topic": "Measurement",
+    "level": 1,
+    "prompt": "Area",
+    "answers": [
+      "area"
+    ],
+    "forbidden": [
+      "space",
+      "inside",
+      "squares",
+      "surface"
+    ],
+    "explanation": "Area is the amount of flat space a shape covers. It is measured in squares, such as square centimetres.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0087",
+    "type": "formula",
+    "subject": "Maths",
+    "course": "primary-maths",
+    "topic": "Measurement",
+    "level": 1,
+    "prompt": "Area of a rectangle",
+    "latex": "\\text{area} = \\text{length} \\times \\text{width}",
+    "answers": [
+      "area of a rectangle"
+    ],
+    "forbidden": [
+      "length",
+      "width",
+      "multiply",
+      "times"
+    ],
+    "explanation": "To find the area of a rectangle, multiply its length by its width. A rectangle 3 cm by 4 cm has an area of 12 square centimetres.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0088",
+    "type": "question",
+    "subject": "Maths",
+    "course": "primary-maths",
+    "topic": "Measurement",
+    "level": 1,
+    "prompt": "How many minutes are there in one hour?",
+    "answers": [
+      "60",
+      "sixty"
+    ],
+    "forbidden": [
+      "clock",
+      "time",
+      "seconds"
+    ],
+    "explanation": "There are 60 minutes in an hour. The minute hand goes all the way round the clock once every hour.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0089",
+    "type": "term",
+    "subject": "Maths",
+    "course": "primary-maths",
+    "topic": "Measurement",
+    "level": 1,
+    "prompt": "Capacity",
+    "answers": [
+      "capacity"
+    ],
+    "forbidden": [
+      "hold",
+      "litres",
+      "container",
+      "fill"
+    ],
+    "explanation": "Capacity is how much a container can hold, such as a jug that holds 1 litre of water.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0090",
+    "type": "term",
+    "subject": "Maths",
+    "course": "primary-maths",
+    "topic": "Shapes",
+    "level": 1,
+    "prompt": "Triangle",
+    "answers": [
+      "triangle"
+    ],
+    "forbidden": [
+      "three",
+      "sides",
+      "corners",
+      "shape"
+    ],
+    "explanation": "A triangle is a flat shape with three straight sides and three corners.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0091",
+    "type": "term",
+    "subject": "Maths",
+    "course": "primary-maths",
+    "topic": "Shapes",
+    "level": 1,
+    "prompt": "Right angle",
+    "answers": [
+      "right angle",
+      "90 degrees"
+    ],
+    "forbidden": [
+      "corner",
+      "square",
+      "quarter",
+      "turn",
+      "ninety"
+    ],
+    "explanation": "A right angle is a quarter turn, exactly 90 degrees, like the corner of a book.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0092",
+    "type": "term",
+    "subject": "Maths",
+    "course": "primary-maths",
+    "topic": "Shapes",
+    "level": 1,
+    "prompt": "Cube",
+    "answers": [
+      "cube"
+    ],
+    "forbidden": [
+      "dice",
+      "faces",
+      "square",
+      "six",
+      "box"
+    ],
+    "explanation": "A cube is a 3D shape with six square faces that are all the same size, like a dice.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0093",
+    "type": "term",
+    "subject": "Maths",
+    "course": "primary-maths",
+    "topic": "Shapes",
+    "level": 1,
+    "prompt": "Line of symmetry",
+    "answers": [
+      "line of symmetry",
+      "symmetry",
+      "symmetrical"
+    ],
+    "forbidden": [
+      "mirror",
+      "half",
+      "fold",
+      "same",
+      "reflection"
+    ],
+    "explanation": "A shape is symmetrical when one half is a mirror image of the other. The line of symmetry is where you could fold it so both halves match exactly.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0094",
+    "type": "question",
+    "subject": "Maths",
+    "course": "primary-maths",
+    "topic": "Shapes",
+    "level": 1,
+    "prompt": "How many sides does a hexagon have?",
+    "answers": [
+      "6",
+      "six"
+    ],
+    "forbidden": [
+      "shape",
+      "honeycomb",
+      "bee"
+    ],
+    "explanation": "A hexagon has six sides and six corners. The cells of a honeycomb are hexagons.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0095",
+    "type": "term",
+    "subject": "Maths",
+    "course": "primary-maths",
+    "topic": "Shapes",
+    "level": 1,
+    "prompt": "Circle",
+    "answers": [
+      "circle"
+    ],
+    "forbidden": [
+      "round",
+      "ring",
+      "wheel",
+      "curve"
+    ],
+    "explanation": "A circle is a perfectly round flat shape. Every point on its edge is the same distance from the centre.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0096",
+    "type": "term",
+    "subject": "Maths",
+    "course": "primary-maths",
+    "topic": "Data handling",
+    "level": 1,
+    "prompt": "Tally chart",
+    "answers": [
+      "tally chart",
+      "tally",
+      "tallies"
+    ],
+    "forbidden": [
+      "marks",
+      "count",
+      "five",
+      "lines",
+      "gate"
+    ],
+    "explanation": "A tally chart records counts with marks, drawn in groups of five so they are quick to add up.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0097",
+    "type": "term",
+    "subject": "Maths",
+    "course": "primary-maths",
+    "topic": "Data handling",
+    "level": 1,
+    "prompt": "Bar chart",
+    "answers": [
+      "bar chart",
+      "bar graph"
+    ],
+    "forbidden": [
+      "bars",
+      "graph",
+      "tall",
+      "columns"
+    ],
+    "explanation": "A bar chart shows data with bars of different heights. The taller the bar, the bigger the number it stands for.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0098",
+    "type": "term",
+    "subject": "Maths",
+    "course": "primary-maths",
+    "topic": "Data handling",
+    "level": 1,
+    "prompt": "Pictogram",
+    "answers": [
+      "pictogram",
+      "pictograph"
+    ],
+    "forbidden": [
+      "pictures",
+      "symbols",
+      "key",
+      "chart"
+    ],
+    "explanation": "A pictogram shows data using pictures or symbols. A key tells you how many each picture stands for.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0099",
+    "type": "term",
+    "subject": "Maths",
+    "course": "primary-maths",
+    "topic": "Data handling",
+    "level": 1,
+    "prompt": "Survey",
+    "answers": [
+      "survey"
+    ],
+    "forbidden": [
+      "questions",
+      "ask",
+      "people",
+      "collect"
+    ],
+    "explanation": "A survey collects information by asking people the same questions, such as their favourite fruit.",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0100",
+    "type": "term",
+    "subject": "Maths",
+    "course": "primary-maths",
+    "topic": "Data handling",
+    "level": 1,
+    "prompt": "Venn diagram",
+    "answers": [
+      "venn diagram",
+      "venn"
+    ],
+    "forbidden": [
+      "circles",
+      "overlap",
+      "sort",
+      "sets"
+    ],
+    "explanation": "A Venn diagram sorts things into overlapping circles. Things that belong to both groups go in the middle, where the circles overlap.",
+    "status": "draft"
   }
 ]

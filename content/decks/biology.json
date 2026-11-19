@@ -1294,5 +1294,495 @@
     ],
     "explanation": "Plants take in carbon dioxide through their stomata and use it to make glucose. Oxygen is released as a by-product.",
     "status": "draft"
+  },
+  {
+    "id": "bio-0061",
+    "type": "term",
+    "subject": "Biology",
+    "course": "primary-science",
+    "topic": "Living things",
+    "level": 1,
+    "prompt": "Habitat",
+    "answers": [
+      "habitat",
+      "habitats"
+    ],
+    "forbidden": [
+      "home",
+      "live",
+      "environment",
+      "animals"
+    ],
+    "explanation": "A habitat is the natural home of a living thing, where it finds food, water and shelter. A pond is a habitat for frogs.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0062",
+    "type": "term",
+    "subject": "Biology",
+    "course": "primary-science",
+    "topic": "Living things",
+    "level": 1,
+    "prompt": "Life cycle",
+    "answers": [
+      "life cycle"
+    ],
+    "forbidden": [
+      "birth",
+      "grow",
+      "stages",
+      "egg",
+      "adult"
+    ],
+    "explanation": "A life cycle is the series of changes a living thing goes through as it grows, such as egg, caterpillar, pupa and butterfly.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0063",
+    "type": "term",
+    "subject": "Biology",
+    "course": "primary-science",
+    "topic": "Living things",
+    "level": 1,
+    "prompt": "Predator",
+    "answers": [
+      "predator",
+      "predators"
+    ],
+    "forbidden": [
+      "hunts",
+      "prey",
+      "eats",
+      "animal"
+    ],
+    "explanation": "A predator is an animal that hunts and eats other animals. Foxes are predators of rabbits.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0064",
+    "type": "term",
+    "subject": "Biology",
+    "course": "primary-science",
+    "topic": "Living things",
+    "level": 1,
+    "prompt": "Prey",
+    "answers": [
+      "prey"
+    ],
+    "forbidden": [
+      "hunted",
+      "eaten",
+      "predator",
+      "food"
+    ],
+    "explanation": "Prey is an animal that is hunted and eaten by another animal. Mice are prey for owls.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0065",
+    "type": "term",
+    "subject": "Biology",
+    "course": "primary-science",
+    "topic": "Living things",
+    "level": 1,
+    "prompt": "Classification",
+    "answers": [
+      "classification",
+      "classifying",
+      "classify"
+    ],
+    "forbidden": [
+      "groups",
+      "sort",
+      "sorting",
+      "key"
+    ],
+    "explanation": "Classification means sorting living things into groups by what they have in common, such as animals with backbones.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0066",
+    "type": "question",
+    "subject": "Biology",
+    "course": "primary-science",
+    "topic": "Living things",
+    "level": 1,
+    "prompt": "What do we call an animal that eats only plants?",
+    "answers": [
+      "herbivore",
+      "herbivores"
+    ],
+    "forbidden": [
+      "grass",
+      "leaves",
+      "vegetarian",
+      "cow"
+    ],
+    "explanation": "An animal that eats only plants is a herbivore. Cows and rabbits are herbivores.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0067",
+    "type": "term",
+    "subject": "Biology",
+    "course": "primary-science",
+    "topic": "Human body",
+    "level": 1,
+    "prompt": "Skeleton",
+    "answers": [
+      "skeleton"
+    ],
+    "forbidden": [
+      "bones",
+      "body",
+      "support",
+      "skull"
+    ],
+    "explanation": "The skeleton is the frame of bones inside your body. It holds you up, protects your organs and lets you move.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0068",
+    "type": "term",
+    "subject": "Biology",
+    "course": "primary-science",
+    "topic": "Human body",
+    "level": 1,
+    "prompt": "Lungs",
+    "answers": [
+      "lungs",
+      "lung"
+    ],
+    "forbidden": [
+      "breathe",
+      "air",
+      "oxygen",
+      "chest"
+    ],
+    "explanation": "The lungs are two organs in your chest that fill with air when you breathe in. They pass oxygen into your blood.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0069",
+    "type": "term",
+    "subject": "Biology",
+    "course": "primary-science",
+    "topic": "Human body",
+    "level": 1,
+    "prompt": "Incisor",
+    "answers": [
+      "incisor",
+      "incisors"
+    ],
+    "forbidden": [
+      "teeth",
+      "front",
+      "cut",
+      "bite"
+    ],
+    "explanation": "Incisors are the flat, sharp teeth at the front of your mouth. They cut and bite food.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0070",
+    "type": "term",
+    "subject": "Biology",
+    "course": "primary-science",
+    "topic": "Human body",
+    "level": 1,
+    "prompt": "Muscle",
+    "answers": [
+      "muscle",
+      "muscles"
+    ],
+    "forbidden": [
+      "move",
+      "strong",
+      "bones",
+      "pull",
+      "exercise"
+    ],
+    "explanation": "Muscles are body parts that pull on your bones to make you move. Your heart is a muscle too.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0071",
+    "type": "term",
+    "subject": "Biology",
+    "course": "primary-science",
+    "topic": "Human body",
+    "level": 1,
+    "prompt": "Balanced diet",
+    "answers": [
+      "balanced diet",
+      "healthy diet"
+    ],
+    "forbidden": [
+      "food",
+      "healthy",
+      "eat",
+      "vegetables",
+      "mix"
+    ],
+    "explanation": "A balanced diet means eating the right amounts of different foods, such as fruit, vegetables, grains and protein, to stay healthy.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0072",
+    "type": "term",
+    "subject": "Biology",
+    "course": "primary-science",
+    "topic": "Plants",
+    "level": 1,
+    "prompt": "Roots",
+    "answers": [
+      "roots"
+    ],
+    "forbidden": [
+      "soil",
+      "underground",
+      "water",
+      "anchor"
+    ],
+    "explanation": "Roots grow under the ground. They hold a plant in place and take in water and nutrients from the soil.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0073",
+    "type": "term",
+    "subject": "Biology",
+    "course": "primary-science",
+    "topic": "Plants",
+    "level": 1,
+    "prompt": "Seed",
+    "answers": [
+      "seed",
+      "seeds"
+    ],
+    "forbidden": [
+      "plant",
+      "grow",
+      "flower",
+      "new",
+      "bean"
+    ],
+    "explanation": "A seed contains a tiny new plant and a store of food. With water and warmth it can grow into a new plant.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0074",
+    "type": "term",
+    "subject": "Biology",
+    "course": "primary-science",
+    "topic": "Plants",
+    "level": 1,
+    "prompt": "Germination",
+    "answers": [
+      "germination",
+      "germinate"
+    ],
+    "forbidden": [
+      "seed",
+      "sprout",
+      "grow",
+      "water",
+      "start"
+    ],
+    "explanation": "Germination is when a seed starts to grow. It needs water, air and the right temperature.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0075",
+    "type": "term",
+    "subject": "Biology",
+    "course": "primary-science",
+    "topic": "Plants",
+    "level": 1,
+    "prompt": "Petal",
+    "answers": [
+      "petal",
+      "petals"
+    ],
+    "forbidden": [
+      "flower",
+      "colourful",
+      "insects",
+      "rose"
+    ],
+    "explanation": "Petals are the often brightly coloured parts of a flower. Their colour and scent attract insects.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0076",
+    "type": "question",
+    "subject": "Biology",
+    "course": "primary-science",
+    "topic": "Plants",
+    "level": 1,
+    "prompt": "What do plants need from the Sun to make their own food?",
+    "answers": [
+      "light",
+      "sunlight",
+      "light energy"
+    ],
+    "forbidden": [
+      "shine",
+      "day",
+      "bright",
+      "rays"
+    ],
+    "explanation": "Plants need light from the Sun to make their own food in their leaves. Without light, a plant cannot grow.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0077",
+    "type": "term",
+    "subject": "Biology",
+    "course": "primary-science",
+    "topic": "Plants",
+    "level": 1,
+    "prompt": "Stem",
+    "answers": [
+      "stem",
+      "stems"
+    ],
+    "forbidden": [
+      "stalk",
+      "plant",
+      "carry",
+      "water",
+      "flower"
+    ],
+    "explanation": "The stem holds a plant up and carries water from the roots to the leaves and flowers.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0078",
+    "type": "term",
+    "subject": "Biology",
+    "course": "primary-science",
+    "topic": "Animals",
+    "level": 1,
+    "prompt": "Mammal",
+    "answers": [
+      "mammal",
+      "mammals"
+    ],
+    "forbidden": [
+      "milk",
+      "fur",
+      "babies",
+      "hair"
+    ],
+    "explanation": "A mammal is an animal with hair or fur that feeds its young on milk. Humans, dogs and whales are mammals.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0079",
+    "type": "term",
+    "subject": "Biology",
+    "course": "primary-science",
+    "topic": "Animals",
+    "level": 1,
+    "prompt": "Reptile",
+    "answers": [
+      "reptile",
+      "reptiles"
+    ],
+    "forbidden": [
+      "scales",
+      "snake",
+      "lizard",
+      "eggs",
+      "cold"
+    ],
+    "explanation": "A reptile is an animal with dry, scaly skin that usually lays eggs. Snakes, lizards and crocodiles are reptiles.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0080",
+    "type": "term",
+    "subject": "Biology",
+    "course": "primary-science",
+    "topic": "Animals",
+    "level": 1,
+    "prompt": "Amphibian",
+    "answers": [
+      "amphibian",
+      "amphibians"
+    ],
+    "forbidden": [
+      "frog",
+      "water",
+      "land",
+      "eggs",
+      "toad"
+    ],
+    "explanation": "An amphibian lives part of its life in water and part on land. Frogs start life as tadpoles in water.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0081",
+    "type": "term",
+    "subject": "Biology",
+    "course": "primary-science",
+    "topic": "Animals",
+    "level": 1,
+    "prompt": "Vertebrate",
+    "answers": [
+      "vertebrate",
+      "vertebrates"
+    ],
+    "forbidden": [
+      "backbone",
+      "spine",
+      "skeleton",
+      "bones"
+    ],
+    "explanation": "A vertebrate is an animal with a backbone. Fish, birds and mammals are all vertebrates.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0082",
+    "type": "term",
+    "subject": "Biology",
+    "course": "primary-science",
+    "topic": "Animals",
+    "level": 1,
+    "prompt": "Hibernation",
+    "answers": [
+      "hibernation",
+      "hibernate"
+    ],
+    "forbidden": [
+      "sleep",
+      "winter",
+      "bear",
+      "cold",
+      "rest"
+    ],
+    "explanation": "Hibernation is a long, deep sleep some animals take through winter to save energy when food is scarce. Hedgehogs hibernate.",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0083",
+    "type": "question",
+    "subject": "Biology",
+    "course": "primary-science",
+    "topic": "Animals",
+    "level": 1,
+    "prompt": "What is a baby frog called?",
+    "answers": [
+      "tadpole",
+      "tadpoles"
+    ],
+    "forbidden": [
+      "pond",
+      "tail",
+      "swim",
+      "wriggle"
+    ],
+    "explanation": "A baby frog is called a tadpole. It lives in water, breathes with gills and slowly grows legs.",
+    "status": "draft"
   }
 ]

@@ -1289,5 +1289,414 @@
     ],
     "explanation": "Wave-particle duality is the idea that light and matter show both wave-like and particle-like behaviour. Which one appears depends on the experiment.",
     "status": "draft"
+  },
+  {
+    "id": "phy-0061",
+    "type": "term",
+    "subject": "Physics",
+    "course": "primary-science",
+    "topic": "Forces",
+    "level": 1,
+    "prompt": "Magnet",
+    "answers": [
+      "magnet",
+      "magnets"
+    ],
+    "forbidden": [
+      "attract",
+      "iron",
+      "fridge",
+      "poles",
+      "stick"
+    ],
+    "explanation": "A magnet pulls things made of iron or steel towards it. Every magnet has a north pole and a south pole.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0062",
+    "type": "term",
+    "subject": "Physics",
+    "course": "primary-science",
+    "topic": "Forces",
+    "level": 1,
+    "prompt": "Air resistance",
+    "answers": [
+      "air resistance"
+    ],
+    "forbidden": [
+      "air",
+      "slow",
+      "parachute",
+      "falling"
+    ],
+    "explanation": "Air resistance is a force that slows things down as they move through air. A parachute uses lots of air resistance to fall slowly.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0063",
+    "type": "term",
+    "subject": "Physics",
+    "course": "primary-science",
+    "topic": "Forces",
+    "level": 1,
+    "prompt": "Lever",
+    "answers": [
+      "lever",
+      "levers"
+    ],
+    "forbidden": [
+      "seesaw",
+      "lift",
+      "pivot",
+      "bar"
+    ],
+    "explanation": "A lever is a bar that turns on a pivot to make lifting or moving things easier. A seesaw is a lever.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0064",
+    "type": "question",
+    "subject": "Physics",
+    "course": "primary-science",
+    "topic": "Forces",
+    "level": 1,
+    "prompt": "What do we call a push or a pull?",
+    "answers": [
+      "force",
+      "a force",
+      "forces"
+    ],
+    "forbidden": [
+      "move",
+      "strength",
+      "energy",
+      "newton"
+    ],
+    "explanation": "A push or a pull is a force. Forces can make things start moving, stop, speed up, slow down or change shape.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0065",
+    "type": "term",
+    "subject": "Physics",
+    "course": "primary-science",
+    "topic": "Light and sound",
+    "level": 1,
+    "prompt": "Shadow",
+    "answers": [
+      "shadow",
+      "shadows"
+    ],
+    "forbidden": [
+      "dark",
+      "light",
+      "block",
+      "sun",
+      "shape"
+    ],
+    "explanation": "A shadow forms when an object blocks light. It is a dark area the same shape as the object.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0066",
+    "type": "term",
+    "subject": "Physics",
+    "course": "primary-science",
+    "topic": "Light and sound",
+    "level": 1,
+    "prompt": "Mirror",
+    "answers": [
+      "mirror",
+      "mirrors"
+    ],
+    "forbidden": [
+      "reflect",
+      "glass",
+      "see",
+      "face"
+    ],
+    "explanation": "A mirror is a very smooth, shiny surface that reflects light, so you can see an image of yourself in it.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0067",
+    "type": "term",
+    "subject": "Physics",
+    "course": "primary-science",
+    "topic": "Light and sound",
+    "level": 1,
+    "prompt": "Vibration",
+    "answers": [
+      "vibration",
+      "vibrations",
+      "vibrate"
+    ],
+    "forbidden": [
+      "shake",
+      "sound",
+      "wobble",
+      "move"
+    ],
+    "explanation": "A vibration is a quick back-and-forth movement. All sounds are made by something vibrating, like a guitar string.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0068",
+    "type": "term",
+    "subject": "Physics",
+    "course": "primary-science",
+    "topic": "Light and sound",
+    "level": 1,
+    "prompt": "Pitch",
+    "answers": [
+      "pitch"
+    ],
+    "forbidden": [
+      "high",
+      "low",
+      "note",
+      "sound",
+      "squeak"
+    ],
+    "explanation": "Pitch is how high or low a sound is. A whistle has a high pitch and a big drum has a low pitch.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0069",
+    "type": "term",
+    "subject": "Physics",
+    "course": "primary-science",
+    "topic": "Light and sound",
+    "level": 1,
+    "prompt": "Loudness",
+    "answers": [
+      "loudness",
+      "volume"
+    ],
+    "forbidden": [
+      "loud",
+      "quiet",
+      "sound",
+      "noise"
+    ],
+    "explanation": "Loudness, or volume, is how strong a sound is. Bigger vibrations make louder sounds.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0070",
+    "type": "term",
+    "subject": "Physics",
+    "course": "primary-science",
+    "topic": "Electricity",
+    "level": 1,
+    "prompt": "Battery",
+    "answers": [
+      "battery",
+      "batteries"
+    ],
+    "forbidden": [
+      "power",
+      "energy",
+      "torch",
+      "charge"
+    ],
+    "explanation": "A battery stores energy and pushes electricity around a circuit. Torches and remote controls use batteries.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0071",
+    "type": "term",
+    "subject": "Physics",
+    "course": "primary-science",
+    "topic": "Electricity",
+    "level": 1,
+    "prompt": "Switch",
+    "answers": [
+      "switch"
+    ],
+    "forbidden": [
+      "on",
+      "off",
+      "turn",
+      "button",
+      "light"
+    ],
+    "explanation": "A switch opens or closes a gap in a circuit. When it is closed, electricity flows and the bulb lights up.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0072",
+    "type": "term",
+    "subject": "Physics",
+    "course": "primary-science",
+    "topic": "Electricity",
+    "level": 1,
+    "prompt": "Electric circuit",
+    "answers": [
+      "electric circuit",
+      "circuit",
+      "electrical circuit"
+    ],
+    "forbidden": [
+      "wire",
+      "bulb",
+      "battery",
+      "loop",
+      "complete"
+    ],
+    "explanation": "An electric circuit is a complete loop that electricity can flow around, from a battery, through wires and a bulb, and back.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0073",
+    "type": "question",
+    "subject": "Physics",
+    "course": "primary-science",
+    "topic": "Electricity",
+    "level": 1,
+    "prompt": "Which part of a simple circuit gives out light?",
+    "answers": [
+      "bulb",
+      "light bulb",
+      "lamp"
+    ],
+    "forbidden": [
+      "glow",
+      "bright",
+      "shine",
+      "glass"
+    ],
+    "explanation": "The bulb gives out light when electricity flows through it. If the circuit is broken, the bulb goes out.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0074",
+    "type": "term",
+    "subject": "Physics",
+    "course": "primary-science",
+    "topic": "Electricity",
+    "level": 1,
+    "prompt": "Wire",
+    "answers": [
+      "wire",
+      "wires"
+    ],
+    "forbidden": [
+      "metal",
+      "copper",
+      "connect",
+      "cable"
+    ],
+    "explanation": "A wire is a thin strand of metal, usually copper, that carries electricity from one part of a circuit to another.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0075",
+    "type": "term",
+    "subject": "Physics",
+    "course": "primary-science",
+    "topic": "Earth and space",
+    "level": 1,
+    "prompt": "Planet",
+    "answers": [
+      "planet",
+      "planets"
+    ],
+    "forbidden": [
+      "sun",
+      "orbit",
+      "earth",
+      "mars",
+      "space"
+    ],
+    "explanation": "A planet is a large, round object that travels around a star. Earth is one of eight planets that orbit the Sun.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0076",
+    "type": "term",
+    "subject": "Physics",
+    "course": "primary-science",
+    "topic": "Earth and space",
+    "level": 1,
+    "prompt": "Moon",
+    "answers": [
+      "moon",
+      "the moon"
+    ],
+    "forbidden": [
+      "night",
+      "sky",
+      "earth",
+      "crescent",
+      "full"
+    ],
+    "explanation": "The Moon travels around the Earth about once a month. It does not make its own light: it reflects light from the Sun.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0077",
+    "type": "question",
+    "subject": "Physics",
+    "course": "primary-science",
+    "topic": "Earth and space",
+    "level": 1,
+    "prompt": "Which star is closest to Earth?",
+    "answers": [
+      "the sun",
+      "sun"
+    ],
+    "forbidden": [
+      "day",
+      "hot",
+      "light",
+      "bright",
+      "sky"
+    ],
+    "explanation": "The closest star to Earth is the Sun. It gives us light and heat.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0078",
+    "type": "term",
+    "subject": "Physics",
+    "course": "primary-science",
+    "topic": "Earth and space",
+    "level": 1,
+    "prompt": "Volcano",
+    "answers": [
+      "volcano",
+      "volcanoes"
+    ],
+    "forbidden": [
+      "lava",
+      "erupt",
+      "mountain",
+      "hot",
+      "magma"
+    ],
+    "explanation": "A volcano is an opening in the Earth's surface where hot melted rock, called lava, can burst out.",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0079",
+    "type": "term",
+    "subject": "Physics",
+    "course": "primary-science",
+    "topic": "Earth and space",
+    "level": 1,
+    "prompt": "Day and night",
+    "answers": [
+      "day and night"
+    ],
+    "forbidden": [
+      "sun",
+      "spin",
+      "dark",
+      "light",
+      "earth"
+    ],
+    "explanation": "We have day and night because the Earth spins. The side facing the Sun has day, and the side facing away has night.",
+    "status": "draft"
   }
 ]
