@@ -36,6 +36,9 @@ export function Home() {
         <TextLink href="#/cards" onClick={dismiss}>
           Browse cards
         </TextLink>
+        <TextLink href="#/privacy" onClick={dismiss}>
+          Privacy
+        </TextLink>
         {me?.authEnabled && (
           <TextLink href="#/me" onClick={dismiss}>
             {me.user ? `${me.user.displayName}'s account` : "Sign in (optional)"}

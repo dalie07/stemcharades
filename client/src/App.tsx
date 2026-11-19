@@ -1,11 +1,15 @@
-import { useEffect, useState, type ComponentType } from "react";
-import { Account } from "./screens/Account";
+import { lazy, Suspense, useEffect, useState, type ComponentType } from "react";
+import { Screen } from "./components/ui";
 import { Cards } from "./screens/Cards";
 import { Home } from "./screens/Home";
 import { Online } from "./screens/Online";
 import { Party } from "./screens/Party";
+import { Privacy } from "./screens/Privacy";
 import { Room } from "./screens/Room";
 import { Rules } from "./screens/Rules";
+
+// Accounts are optional and used by few players, so their screen is downloaded only when opened.
+const Account = lazy(() => import("./screens/Account").then((m) => ({ default: m.Account })));
 
 /** Hash routes: they need no server configuration and keep working offline. */
 const ROUTES: Record<string, ComponentType> = {
@@ -15,6 +19,7 @@ const ROUTES: Record<string, ComponentType> = {
   "#/rules": Rules,
   "#/cards": Cards,
   "#/me": Account,
+  "#/privacy": Privacy,
 };
 
 export function App() {
@@ -25,6 +30,16 @@ export function App() {
     return () => window.removeEventListener("hashchange", onChange);
   }, []);
 
-  const Screen = ROUTES[hash.split("?")[0] ?? ""] ?? Home;
-  return <Screen />;
+  const Route = ROUTES[hash.split("?")[0] ?? ""] ?? Home;
+  return (
+    <Suspense
+      fallback={
+        <Screen centered>
+          <p role="status">Loading…</p>
+        </Screen>
+      }
+    >
+      <Route />
+    </Suspense>
+  );
 }

@@ -10,7 +10,7 @@ export const users = pgTable(
     id: uuid("id").primaryKey().defaultRandom(),
     oauthProvider: text("oauth_provider").notNull(),
     oauthSubject: text("oauth_subject").notNull(),
-    /** A display name only. No email, no password, no real name is stored. */
+    /** A display name only (GitHub username or Google first name). No email or password is stored. */
     displayName: text("display_name").notNull(),
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
   },

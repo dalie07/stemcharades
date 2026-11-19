@@ -39,8 +39,9 @@ redirect URI never depends on request headers.
 ## What is stored
 
 A provider's id for you and a display name, and nothing else. We ask each provider only for your public profile
-(GitHub's `read:user`, Google's `openid profile`): **no email, no password, no real name.** GitHub users get their
-login handle as a display name; Google users get their given name, or "Player". Names are cleaned and screened.
+(GitHub's `read:user`, Google's `openid profile`): **no email and no password.** GitHub users get their login
+handle as a display name; Google users get their first (given) name, or "Player". Names are cleaned and screened.
+Players can delete their account from the account page, which erases everything stored with it.
 Finished games are saved for signed-in players only; guests are never stored.
 
 ## Local development with a database

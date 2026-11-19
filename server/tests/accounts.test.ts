@@ -178,6 +178,26 @@ describe("OAuth sign-in", () => {
 });
 
 describe("a signed-in user's own data", () => {
+  it("ignores a malformed cookie instead of crashing the server", async () => {
+    const r = await get("/api/me", "junk=%E0%A4; other=1");
+    expect(r.status).toBe(200);
+    expect((await r.json()).user).toBeNull();
+    expect((await get("/healthz")).status).toBe(200);
+  });
+
+  it("deletes the account and everything stored with it, and signs the browser out", async () => {
+    const session = await signIn();
+    const deck = await (await send("POST", "/api/me/decks", { name: "To delete" }, session)).json();
+    expect(deck.id).toBeTruthy();
+    expect((await send("DELETE", "/api/me", undefined)).status).toBe(401); // signed-in users only
+
+    const r = await send("DELETE", "/api/me", undefined, session);
+    expect(r.status).toBe(204);
+    expect(setCookies(r).find((c) => c.startsWith("sc_session="))).toMatch(/Max-Age=0/);
+    expect((await (await get("/api/me", session)).json()).user).toBeNull(); // the old cookie no longer finds anyone
+    expect((await get("/api/me/decks", session)).status).toBe(401);
+  });
+
   it("rejects missing, forged and expired sessions", async () => {
     expect((await get("/api/me/history")).status).toBe(401);
     expect((await get("/api/me/history", "sc_session=forged.value")).status).toBe(401);

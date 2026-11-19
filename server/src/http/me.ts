@@ -1,11 +1,11 @@
 import express, { type NextFunction, type Request, type Response, type Router } from "express";
 import { z } from "zod";
 import { customCardSchema, deckNameSchema, type Card, type CustomCard } from "@stemcharades/shared";
-import { userIdFromCookies } from "../auth/session.js";
+import { SESSION_COOKIE, setCookie, userIdFromCookies } from "../auth/session.js";
 import type { Provider } from "../auth/providers.js";
 import { isBlocked } from "../game/blocklist.js";
 import * as repo from "../db/repo.js";
-import type { Limits } from "../realtime/rateLimit.js";
+import { limitKey, type Limits } from "../realtime/rateLimit.js";
 
 export interface MeDeps {
   db?: repo.Db;
@@ -36,7 +36,7 @@ export function meRouter(d: MeDeps): Router {
 
   const requireUser = async (req: Request, res: Response, next: NextFunction) => {
     if (!authEnabled) return void res.status(404).json({ error: "auth_disabled" });
-    if (!d.limits.probe.take(req.ip ?? "unknown")) return void res.status(429).json({ error: "rate_limited" });
+    if (!d.limits.probe.take(limitKey(req.ip))) return void res.status(429).json({ error: "rate_limited" });
     const uid = userIdFromCookies(req.headers.cookie, d.secret);
     const user = uid ? await repo.getUser(d.db!, uid) : null;
     if (!user) return void res.status(401).json({ error: "unauthorized" });
@@ -48,6 +48,14 @@ export function meRouter(d: MeDeps): Router {
     fn(req, res).catch(next);
   };
   const me = (res: Response) => res.locals.user as repo.User;
+
+  // Erase the account and everything stored with it (results, revision list, decks). Cannot be undone.
+  router.delete("/", requireUser, h(async (req, res) => {
+    await repo.deleteUser(d.db!, me(res).id);
+    const secure = req.secure || req.headers["x-forwarded-proto"] === "https";
+    res.setHeader("Set-Cookie", setCookie(SESSION_COOKIE, "", { maxAgeS: 0, secure }));
+    res.status(204).end();
+  }));
 
   router.get("/history", requireUser, h(async (_req, res) => void res.json(await repo.history(d.db!, me(res).id))));
 

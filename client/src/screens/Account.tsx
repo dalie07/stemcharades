@@ -14,6 +14,7 @@ import {
 } from "../components/ui";
 import {
   api,
+  deleteAccount,
   refreshMe,
   signOut,
   type DeckDetail,
@@ -59,7 +60,10 @@ export function Account() {
             Sign in with {provider.label}
           </ButtonLink>
         ))}
-        <p className={`text-sm ${mutedClass}`}>We keep a display name only: no email, no password, no real name.</p>
+        <p className={`text-sm ${mutedClass}`}>
+          We keep an id and a display name (your GitHub username or Google first name), never an email or a password.{" "}
+          <TextLink href="#/privacy">Privacy</TextLink>
+        </p>
         <TextLink href="#/">Back</TextLink>
       </Screen>
     );
@@ -118,8 +122,35 @@ function SignedIn({ name }: { name: string }) {
       <Button variant="secondary" onClick={() => void signOut().then(() => (location.hash = "#/"))}>
         Sign out
       </Button>
+      <DeleteAccount />
       <TextLink href="#/">Back</TextLink>
     </Screen>
+  );
+}
+
+/** Two steps, because this cannot be undone. */
+function DeleteAccount() {
+  const [confirming, setConfirming] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  const erase = async () => {
+    const res = await deleteAccount();
+    if (res.ok) location.hash = "#/";
+    else setError(res.message);
+  };
+
+  if (!confirming) {
+    return <LinkButton danger onClick={() => setConfirming(true)}>Delete my account</LinkButton>;
+  }
+  return (
+    <div className="w-full space-y-2 rounded-xl border border-red-800 p-4 text-left">
+      <p>This erases your account, game history, revision list and private decks straight away. It cannot be undone.</p>
+      {error && <Notice tone="error">{error}</Notice>}
+      <div className="flex flex-wrap gap-4">
+        <Button onClick={() => void erase()}>Yes, delete everything</Button>
+        <LinkButton onClick={() => setConfirming(false)}>Keep my account</LinkButton>
+      </div>
+    </div>
   );
 }
 

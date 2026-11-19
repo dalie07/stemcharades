@@ -22,6 +22,13 @@ export async function signOut(): Promise<void> {
   }
 }
 
+/** Erase the account and everything stored with it, then carry on as a guest. */
+export async function deleteAccount(): Promise<ApiResult<void>> {
+  const res = await call<void>("DELETE", "/api/me");
+  if (res.ok) useGameStore.setState((s) => ({ me: s.me ? { ...s.me, user: null } : s.me }));
+  return res;
+}
+
 export interface HistoryRow {
   playedAt: string;
   score: number;
