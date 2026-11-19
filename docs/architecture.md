@@ -19,7 +19,7 @@ GitHub ──auto-deploy from main──▶ Render        GitHub Actions runs ev
 |---|---|---|
 | Client | React, Vite, Tailwind, Zustand, KaTeX | Presents the game and collects input. Never trusted with the answer or the score |
 | Offline | vite-plugin-pwa | Installable app; caches the app shell and decks so Party mode works with no network |
-| HTTP | Express | Serves the built app, room creation, deck routes, `/healthz`, security headers |
+| HTTP | Express | Serves the built app, room creation, deck routes, `/healthz`, security headers, optional account routes |
 | Real time | Socket.IO | Rooms, live events, reconnection. Handlers validate, rate-limit, then call the engine; no rules live there |
 | Engine | TypeScript, pure functions | `step(game, event, ctx) → { game, effects }`. No sockets, no clock, no randomness inside |
 | Shared | Zod | Event names, payload schemas, scoring, card picker and the text normaliser, used by client and server |
@@ -37,8 +37,29 @@ and the rules are tested in milliseconds with no network.
   round after the reveal pause.
 - **Effects:** messages that only one player may receive (a rejected clue, a guess result).
 - **Modules around it:** `roomManager` owns the in-memory room map, codes and session tokens; `gameRunner`
-  connects the engine to live rooms and builds each player's view; `clueFilter`, `guessMatcher`, `blocklist` are
-  pure helpers; `realtime/handlers.ts` and `rateLimit.ts` are plumbing.
+  connects the engine to live rooms and builds each player's view; `clueFilter`, `guessMatcher` and `blocklist`
+  are pure helpers; `realtime/handlers.ts` and `rateLimit.ts` are plumbing.
+
+## Where the code lives
+
+```
+server/src/
+  index.ts          process entry: loads decks, optional database, timers, graceful shutdown
+  app.ts            builds the HTTP server, routes and Socket.IO from injected parts (so tests can too)
+  config.ts         limits and timings
+  game/             roundEngine, gameRunner, roomManager, clueFilter, guessMatcher, blocklist
+  realtime/         socket handlers and rate limits
+  http/             decks, rooms, auth, me (account) routes and security headers
+  content/          deck loader
+  auth/ db/         optional accounts: OAuth providers, signed sessions, Drizzle schema and queries
+  persist.ts        turns a finished room into the durable result
+client/src/
+  screens/          one file per screen
+  components/       shared building blocks (ui, CardFrame, GameSettingsFields, WakeGate, ...)
+  state/            the Zustand store, the socket connection and the account API
+  party/            Party mode's engine, which runs in the browser
+shared/src/         schemas, events, scoring, card picker, text normalising
+```
 
 ## Card, round, result
 
@@ -46,7 +67,7 @@ These are three different things and are kept apart:
 
 - A **card** is reviewed content in Git. Its id is permanent, so statistics survive edits to its wording.
 - A **round** is live state in memory. It is allowed to vanish when the server restarts.
-- A **result** is the small durable summary of a finished game (Week 9, optional database).
+- A **result** is the small durable summary of a finished game, saved only when the optional database is configured.
 
 Live rooms are never written to a database, so the game needs none.
 

@@ -23,7 +23,7 @@ Every card is pitched the same way. A wrong card teaches the wrong thing, so **n
 - Question cards need short, unambiguous answers (a name, a number, a unit).
 
 ## Workflow
-1. Draft cards as `draft` (a person or Claude Code).
+1. Draft cards as `draft`. Drafts may be written by a person or generated; either way they are unreviewed.
 2. `npm run validate:cards` – checks schema, duplicate ids, duplicate answers, forbidden-equals-answer.
 3. A person checks each card against a trusted source, corrects it and sets `status: "reviewed"`.
 4. CI runs the validator again; production loads reviewed cards only.

@@ -1,12 +1,13 @@
 # Test plan
 
-Everything below runs in CI (`.github/workflows/ci.yml`): typecheck, lint, card validation, unit and integration
-tests, engine coverage, build, `npm audit`, and the Playwright browser tests.
+Everything below runs in CI on every push (`.github/workflows/ci.yml`): typecheck, lint, card validation, unit
+and integration tests, engine coverage, the production build, `npm audit`, and the Playwright browser tests.
+Locally, `npm run check` runs all of it except the browser tests, and `npm run test:e2e` runs those.
 
 | Layer | Where | How many |
 |---|---|---|
 | Shared rules (scoring, card picker) | `shared/src/shared.test.ts` | 8 |
-| Server: engine, filters, rooms, sockets, accounts, database | `server/tests/` | 186 |
+| Server: engine, filters, rooms, sockets, accounts, database | `server/tests/` | 189 |
 | Client: Party engine, flag links | `client/src/**/*.test.ts` | 11 |
 | Browser, several real browsers per test | `e2e/` (Playwright) | 8 |
 
@@ -14,7 +15,7 @@ Database tests run against a real Postgres in-process (PGlite) with the real mig
 
 ## The scenario matrix
 
-Each blueprint scenario has at least one automated test.
+Each scenario the design calls for has at least one automated test.
 
 | # | Scenario | Expected | Automated by |
 |---|---|---|---|
@@ -43,11 +44,11 @@ revision list (`accounts.socket.test.ts`), and that a database failure never bre
 
 ## Measured quality metrics
 
-Measured on 13 November 2026.
+Measured on 16 November 2026.
 
 | Metric | Target | Result | Notes |
 |---|---|---|---|
-| Guess-match accuracy | 95% or better on 200 labelled guesses | **99.0%** (198 of 200) | The labelled set was written by Claude, not by students. See limitations. The two misses are "half lives" and "one hundred and eighty", both deliberately included as hard cases |
+| Guess-match accuracy | 95% or better on 200 labelled guesses | **99.0%** (198 of 200) | The labelled set was machine-drafted, not collected from students; see limitations. The two misses are "half lives" and "one hundred and eighty", both included deliberately as hard cases |
 | Clue-filter leak rate | Zero | **0 leaks in 19,562 attempts** over all 300 cards | Every forbidden word, answer and prompt, in 6 or more disguises each (case, punctuation, plural, split words) |
 | Content review coverage | 100% reviewed in production | **0% (0 of 300 cards)** | Blocks production: with `NODE_ENV=production` and no cards reviewed, the server serves none |
 | Engine test coverage | 90% of lines in `server/src/game` | **98.8%** | `npm run test:coverage` fails below 90% |
@@ -56,9 +57,9 @@ Measured on 13 November 2026.
 ## Known limitations
 
 **Content**
-- All 300 cards are drafts written by Claude Code. A person must check each against a trusted source before it is set to `reviewed`.
-- The 200-guess set was written by Claude. Add real student guesses to `server/tests/fixtures/guess-labels.json`
-  before trusting the 99% figure.
+- All 300 cards are machine-drafted. A person must check each against a trusted source before it is set to `reviewed`.
+- The 200-guess labelled set was machine-drafted too. Add real student guesses to
+  `server/tests/fixtures/guess-labels.json` before trusting the 99% figure.
 
 **Rules**
 - The clue filter blocks whole words, plurals and words split with spaces or punctuation. It does not catch other
@@ -77,4 +78,4 @@ Measured on 13 November 2026.
 
 **Testing**
 - Browser tests run in desktop Chrome only. The install prompt and offline play have not been tried on a real phone.
-- No test has run against the deployed Render URL yet, and CI has not run on GitHub yet.
+- No test has run against a deployed Render URL yet.

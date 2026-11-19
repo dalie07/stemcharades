@@ -2,7 +2,7 @@
 
 Accounts, game history, the revision list and private decks need a database and a sign-in provider.
 **Without them the game works exactly as before:** guests play, nothing is stored, and the sign-in links
-simply do not appear. Set these up only when you want the Week 9 features.
+simply do not appear. Set these up only when you want those features.
 
 ## 1. A free Postgres database (Neon)
 
