@@ -29,6 +29,8 @@ guess it. Then the round ends with the right answer explained, so even a wrong g
 - **300 cards** across Maths, Physics, Chemistry, Biology and Computing at three levels, with formulas typeset by KaTeX.
 - **Optional accounts.** Sign in with GitHub or Google to keep your game history, a personal revision list, and
   private decks for your class. Guests play exactly the same game.
+- **Private by design.** No ads, analytics or trackers, and no email ever. Accounts can be deleted in one step;
+  the in-app privacy page says exactly what is kept.
 - **Runs for $0.** One Node process on a free Render web service. No database is needed to play.
 
 > [!NOTE]
@@ -105,8 +107,9 @@ Configuration is by environment variable; [`.env.example`](.env.example) lists e
 
 ## Contributing
 
-Bug reports and card corrections are welcome as issues. For code, run `npm run check` and `npm run test:e2e`
-before opening a pull request. The rules that never bend:
+Bug reports and card corrections are welcome as issues; see [CONTRIBUTING.md](CONTRIBUTING.md) for how to work on
+the code or the cards, and [SECURITY.md](SECURITY.md) to report a vulnerability privately. For code, run
+`npm run check` and `npm run test:e2e` before opening a pull request. The rules that never bend:
 
 1. The server is authoritative. If the client could decide it, a player could fake it.
 2. The answer never reaches a guesser's connection.
