@@ -22,6 +22,9 @@ export function flagText(card: FlaggableCard): { title: string; body: string } {
   };
 }
 
+/** AI-written cards are reported to the game itself (two reports remove one); library cards go to GitHub. */
+export const isAiCard = (card: FlaggableCard) => card.id.startsWith("ai-");
+
 /** A prefilled "new issue" link, or null when no repository is configured. Sends only the card, never player data. */
 export function flagIssueUrl(card: FlaggableCard, repo: string | undefined = REPO): string | null {
   if (!repo || !/^[\w.-]+\/[\w.-]+$/.test(repo)) return null;

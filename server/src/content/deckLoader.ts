@@ -18,6 +18,8 @@ export function loadDecks(dir: string, opts: { reviewedOnly: boolean }): Card[] 
     all.push(...parsed.data);
   }
   const problems = checkDeck(all);
+  // The library in Git is written and reviewed by people; AI cards live only in the running service.
+  for (const c of all) if (c.status === "generated") problems.push(`${c.id}: generated cards do not belong in the library`);
   if (problems.length) throw new Error(`Invalid decks:\n${problems.join("\n")}`);
   return opts.reviewedOnly ? all.filter((c) => c.status === "reviewed") : all;
 }

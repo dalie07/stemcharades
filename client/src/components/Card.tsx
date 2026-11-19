@@ -1,12 +1,17 @@
-import { LEVEL_LABELS, type Card as CardData } from "@stemcharades/shared";
+import { AI_CARD_PREFIX, LEVEL_LABELS, getCourse, type Card as CardData } from "@stemcharades/shared";
 import { CardFrame, DontSay } from "./CardFrame";
 import { FlagButton } from "./FlagButton";
 
 /** A whole deck card. With `reveal` it also shows the answer, the explanation and the flag button. */
 export function Card({ card, reveal = false }: { card: CardData; reveal?: boolean }) {
-  const eyebrow = `${card.subject} · ${card.topic} · ${LEVEL_LABELS[card.level]} · ${card.type}`;
+  const eyebrow = `${LEVEL_LABELS[card.level]} ${getCourse(card.course)?.name ?? card.subject} · ${card.topic} · ${card.type}`;
   return (
-    <CardFrame eyebrow={card.status === "draft" ? `${eyebrow} · draft` : eyebrow} title={card.prompt} latex={card.latex}>
+    <CardFrame
+      eyebrow={card.status === "draft" ? `${eyebrow} · draft` : eyebrow}
+      title={card.prompt}
+      latex={card.latex}
+      generated={card.id.startsWith(AI_CARD_PREFIX)}
+    >
       <DontSay words={card.forbidden} />
       {reveal && <Answer answer={questionAnswer(card)} explanation={card.explanation} card={card} />}
     </CardFrame>

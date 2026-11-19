@@ -11,6 +11,7 @@ const card = (id: string, subject: Card["subject"], level: Card["level"]): Card 
   id,
   type: "term",
   subject,
+  course: "secondary-physics",
   topic: "Mechanics",
   level,
   prompt: `Prompt ${id}`,
@@ -57,6 +58,7 @@ describe("http", () => {
         { level: 1, count: 1 },
         { level: 2, count: 0 },
         { level: 3, count: 1 },
+        { level: 4, count: 0 },
       ],
     });
     expect(decks.find((d) => d.subject === "Biology")?.count).toBe(0);

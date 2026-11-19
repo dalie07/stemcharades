@@ -1,4 +1,5 @@
 import type { Card } from "./schemas.js";
+import { inSelection, type Selection } from "./taxonomy.js";
 
 export interface Pick {
   card: Card;
@@ -28,12 +29,7 @@ export function pickCard(
   return { card, usedIds: [...used] };
 }
 
-export interface CardFilter {
-  subjects: readonly Card["subject"][];
-  levels: readonly (1 | 2 | 3)[];
-}
-
-/** The pool a room or party draws from. */
-export function filterCards(cards: readonly Card[], f: CardFilter): Card[] {
-  return cards.filter((c) => f.subjects.includes(c.subject) && f.levels.includes(c.level));
+/** The cards inside a selection (see `inSelection`). An empty selection is General: every card. */
+export function filterCards(cards: readonly Card[], s: Selection): Card[] {
+  return cards.filter((c) => inSelection(c, s));
 }

@@ -11,8 +11,8 @@ export interface MeDeps {
   db?: repo.Db;
   secret?: string;
   providers: Provider[];
-  /** Built-in cards, to turn missed card ids back into cards. */
-  cardsById: ReadonlyMap<string, Card>;
+  /** Looks a card up by id, to turn missed card ids back into cards. */
+  getCard: (id: string) => Card | undefined;
   limits: Limits;
 }
 
@@ -62,7 +62,7 @@ export function meRouter(d: MeDeps): Router {
   router.get("/missed-cards", requireUser, h(async (_req, res) => {
     const rows = await repo.missedList(d.db!, me(res).id);
     const cards = rows.flatMap((r) => {
-      const card = d.cardsById.get(r.cardId);
+      const card = d.getCard(r.cardId);
       return card ? [{ ...card, lastMissedAt: r.lastMissedAt }] : [];
     });
     res.json(cards);

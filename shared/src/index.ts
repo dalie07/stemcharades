@@ -1,4 +1,5 @@
 export * from "./events.js";
+export * from "./taxonomy.js";
 export * from "./schemas.js";
 export * from "./normalise.js";
 export * from "./cardChecks.js";

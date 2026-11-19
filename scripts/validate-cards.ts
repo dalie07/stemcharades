@@ -17,6 +17,11 @@ for (const file of readdirSync(dir).filter((f) => f.endsWith(".json")).sort()) {
     for (const i of parsed.error.issues) console.error(`${file}: ${i.path.join(".")}: ${i.message}`);
   } else cards.push(...parsed.data);
 }
+// The library in Git is written and reviewed by people; AI cards live only in the running service.
+for (const c of cards.filter((card) => card.status === "generated")) {
+  failed = true;
+  console.error(`${c.id}: generated cards do not belong in the library`);
+}
 for (const p of checkDeck(cards)) {
   failed = true;
   console.error(p);

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { ROOM_CODE_LENGTH } from "@stemcharades/shared";
 import { Button, Notice, Screen, TextLink, inputClass, mutedClass } from "../components/ui";
 import { useGameStore } from "../state/gameStore";
+import { savePresetFromHash } from "../state/preset";
 import { createRoom, joinRoom, type ActionResult } from "../state/socket";
 
 /** Create a room, or join one with its code. */
@@ -34,7 +35,15 @@ export function Online() {
         Your nickname
         <input className={inputClass} maxLength={20} value={nickname} onChange={(e) => setNickname(e.target.value)} />
       </label>
-      <Button wide disabled={!nameOk || busy} onClick={() => run(() => createRoom(name))}>
+      <Button
+        wide
+        disabled={!nameOk || busy}
+        onClick={() => {
+          // A link like #/online?courses=… carries a choice for the new room's lobby.
+          savePresetFromHash(location.hash);
+          void run(() => createRoom(name));
+        }}
+      >
         Create a room
       </Button>
 

@@ -10,6 +10,7 @@ const { users, gameResults, playerResults, cardStats, missedCards, customDecks, 
 
 /** Custom cards have no permanent id of their own, so they are marked to keep them out of global statistics. */
 export const CUSTOM_CARD_PREFIX = "cus-";
+export const CUSTOM_COURSE = "custom";
 
 export interface User {
   id: string;
@@ -176,6 +177,8 @@ export async function getDeck(db: Db, ownerId: string, deckId: string): Promise<
         id: `${CUSTOM_CARD_PREFIX}${r.id}`,
         type: r.type as Card["type"],
         subject: r.subject as Card["subject"],
+        // Custom cards sit outside the curriculum map: a room playing a custom deck ignores the choice.
+        course: CUSTOM_COURSE,
         topic: r.topic,
         level: r.level as Card["level"],
         prompt: r.prompt,

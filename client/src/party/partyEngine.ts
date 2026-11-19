@@ -1,16 +1,8 @@
-import {
-  explainerPoints,
-  filterCards,
-  pickCard,
-  type Card,
-  type Level,
-} from "@stemcharades/shared";
+import { explainerPoints, filterCards, pickCard, type Card, type Selection } from "@stemcharades/shared";
 
 
-export interface PartySettings {
+export interface PartySettings extends Selection {
   players: string[];
-  subjects: Card["subject"][];
-  levels: Level[];
   roundSeconds: 60 | 90;
   /** Full rotations: every player explains once per round. */
   rounds: number;
@@ -38,7 +30,7 @@ export interface PartyState {
 
 type Rng = () => number;
 
-export function filterPool(cards: Card[], s: Pick<PartySettings, "subjects" | "levels">): Card[] {
+export function filterPool(cards: readonly Card[], s: Selection): Card[] {
   return filterCards(cards, s);
 }
 

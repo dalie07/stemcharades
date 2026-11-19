@@ -12,10 +12,11 @@ import {
   type PartySettings,
 } from "./partyEngine";
 
-const mk = (n: number, subject: Card["subject"] = "Physics", level: 1 | 2 | 3 = 1): Card => ({
+const mk = (n: number, course = "secondary-physics", level: Card["level"] = 2): Card => ({
   id: `phy-${String(n).padStart(4, "0")}`,
   type: "term",
-  subject,
+  subject: "Physics",
+  course,
   topic: "Mechanics",
   level,
   prompt: `Card ${n}`,
@@ -28,8 +29,9 @@ const mk = (n: number, subject: Card["subject"] = "Physics", level: 1 | 2 | 3 = 
 const cards = [1, 2, 3, 4, 5, 6].map((n) => mk(n));
 const settings: PartySettings = {
   players: ["Ann", "Ben"],
-  subjects: ["Physics"],
-  levels: [1],
+  levels: [2],
+  courses: ["secondary-physics"],
+  topics: [],
   roundSeconds: 60,
   rounds: 1,
 };
@@ -38,12 +40,13 @@ const rng = () => 0;
 describe("party engine", () => {
   it("rejects fewer than two players or an empty pool", () => {
     expect(() => createParty({ ...settings, players: ["Ann"] }, cards)).toThrow();
-    expect(() => createParty({ ...settings, subjects: ["Maths"] }, cards)).toThrow();
+    expect(() => createParty({ ...settings, courses: ["secondary-maths"] }, cards)).toThrow();
   });
 
-  it("filters the pool by subject and level", () => {
-    const mixed = [...cards, mk(7, "Maths"), mk(8, "Physics", 2)];
+  it("filters the pool by the chosen level, course and topic", () => {
+    const mixed = [...cards, mk(7, "secondary-maths"), mk(8, "university-mechanics", 3)];
     expect(createParty(settings, mixed).pool).toHaveLength(6);
+    expect(createParty({ ...settings, levels: [], courses: [], topics: [] }, mixed).pool).toHaveLength(8); // General
   });
 
   it("scores explainer 5 per Got it and 0 for Skip", () => {

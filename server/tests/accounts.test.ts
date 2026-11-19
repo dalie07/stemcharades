@@ -9,7 +9,7 @@ import { testDb } from "./helpers/testDb.js";
 
 const SECRET = "test-secret-that-is-long-enough";
 const CARDS: Card[] = [
-  { id: "phy-0001", type: "term", subject: "Physics", topic: "Zorbology", level: 2, prompt: "Zorblaxium", answers: ["zorblaxium"], forbidden: ["alphaword", "betaword", "gammaword"], explanation: "Quuxplanation: a deliberately unusual explanation.", status: "reviewed" },
+  { id: "phy-0001", type: "term", subject: "Physics", course: "secondary-physics", topic: "Zorbology", level: 2, prompt: "Zorblaxium", answers: ["zorblaxium"], forbidden: ["alphaword", "betaword", "gammaword"], explanation: "Quuxplanation: a deliberately unusual explanation.", status: "reviewed" },
 ];
 const providers: Provider[] = loadProviders({ GITHUB_CLIENT_ID: "gh-id", GITHUB_CLIENT_SECRET: "gh-secret", GOOGLE_CLIENT_ID: "g-id", GOOGLE_CLIENT_SECRET: "g-secret" } as NodeJS.ProcessEnv);
 

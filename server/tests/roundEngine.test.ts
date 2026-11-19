@@ -14,8 +14,9 @@ const mk = (n: number): Card => ({
   id: `phy-${String(n).padStart(4, "0")}`,
   type: "term",
   subject: "Physics",
+  course: "secondary-physics",
   topic: "Mechanics",
-  level: 1,
+  level: 2,
   // Letters only: answers containing digits must be matched exactly, so they can never be "close".
   prompt: `Wordnumber${"abcdef"[n - 1]}`,
   answers: [`wordnumber${"abcdef"[n - 1]}`],

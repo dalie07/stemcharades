@@ -19,6 +19,7 @@ const SECRET_CARD: Card = {
   id: "phy-0001",
   type: "term",
   subject: "Physics",
+  course: "secondary-physics",
   topic: "Zorbology",
   level: 2,
   prompt: "Zorblaxium",
@@ -167,7 +168,7 @@ describe("a full round across devices", () => {
     expect((await e2).code).toBe("not_enough_players");
 
     const e3 = once<ErrorPayload>(host, EVENTS.error);
-    host.emit(EVENTS.configure, { subjects: ["Maths"], levels: [1], roundSeconds: 60, rounds: 2 });
+    host.emit(EVENTS.configure, { levels: [], courses: ["secondary-maths"], topics: [], roundSeconds: 60, rounds: 2 });
     await new Promise((r) => setTimeout(r, 50));
     host.emit(EVENTS.start);
     expect((await e3).code).toBe("no_cards");
@@ -223,7 +224,7 @@ describe("a full round across devices", () => {
     };
     const h = await mk("Host");
     await mk("Ann", h.code);
-    h.s.emit(EVENTS.configure, { subjects: ["Physics"], levels: [1, 2, 3], roundSeconds: 60, rounds: 2 });
+    h.s.emit(EVENTS.configure, { levels: [], courses: ["secondary-physics"], topics: [], roundSeconds: 60, rounds: 2 });
     await new Promise((r) => setTimeout(r, 50));
     h.s.emit(EVENTS.start);
     await state(h.s, (v) => v.phase === "round");

@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
 import { MAX_PLAYERS_PER_ROOM, type RoomSettings, type RoomView } from "@stemcharades/shared";
-import { DeckFilterFields, RoundFields } from "../components/GameSettingsFields";
+import { RoundFields } from "../components/GameSettingsFields";
+import { SelectionPicker } from "../components/SelectionPicker";
 import { Button, LinkButton, Notice, Screen, mutedClass, selectClass } from "../components/ui";
 import { api, type DeckSummary } from "../state/account";
+import { NO_COUNTS, fetchCatalog, type Catalog } from "../state/catalog";
+import { takePreset } from "../state/preset";
 import { useGameStore, type Session } from "../state/gameStore";
 import { configureRoom, kickPlayer, leaveRoom, selectDeck, startGame } from "../state/socket";
 
@@ -10,6 +13,7 @@ export function Lobby({ room, session }: { room: RoomView; session: Session }) {
   const actionError = useGameStore((s) => s.actionError);
   const signedIn = useGameStore((s) => Boolean(s.me?.user));
   const [decks, setDecks] = useState<DeckSummary[]>([]);
+  const [catalog, setCatalog] = useState<Catalog | null>(null);
 
   const isHost = room.hostId === session.playerId;
   const canUseDecks = isHost && signedIn;
@@ -20,11 +24,25 @@ export function Lobby({ room, session }: { room: RoomView; session: Session }) {
     if (canUseDecks) void api.decks().then((r) => r.ok && setDecks(r.data.filter((d) => d.cards > 0)));
   }, [canUseDecks]);
 
-  const update = (patch: Partial<RoomSettings>) => {
-    const next = { ...settings, ...patch };
-    // The server would refuse an empty filter, so do not send one.
-    if (next.subjects.length && next.levels.length) configureRoom(next);
-  };
+  // The counts on the picker, refreshed while the lobby is open: the AI may be adding cards as people wait.
+  useEffect(() => {
+    let live = true;
+    const load = () => void fetchCatalog().then((c) => live && c && setCatalog(c));
+    load();
+    const id = setInterval(load, 15_000);
+    return () => {
+      live = false;
+      clearInterval(id);
+    };
+  }, []);
+
+  // A host who arrived through a shared link (#/online?courses=…) starts with that choice.
+  useEffect(() => {
+    const preset = isHost ? takePreset() : null;
+    if (preset) configureRoom({ ...settings, levels: [...preset.levels], courses: [...preset.courses], topics: [...preset.topics] });
+  }, []); // once, on arrival
+
+  const update = (patch: Partial<RoomSettings>) => configureRoom({ ...settings, ...patch });
 
   return (
     <Screen>
@@ -89,13 +107,14 @@ export function Lobby({ room, session }: { room: RoomView; session: Session }) {
         <legend className="font-medium">
           Game settings {!isHost && <span className={`text-sm font-normal ${mutedClass}`}>(host only)</span>}
         </legend>
-        {/* A private deck replaces the built-in cards, so their subject and level filters do not apply. */}
+        {/* A private deck replaces the built-in cards, so the curriculum choice does not apply. */}
         {!room.customDeck && (
-          <DeckFilterFields
-            subjects={settings.subjects}
-            levels={settings.levels}
-            onSubjects={(subjects) => update({ subjects })}
-            onLevels={(levels) => update({ levels })}
+          <SelectionPicker
+            value={settings}
+            onChange={({ levels, courses, topics }) => update({ levels: [...levels], courses: [...courses], topics: [...topics] })}
+            counts={catalog ?? NO_COUNTS}
+            ai={Boolean(catalog?.ai)}
+            disabled={!isHost}
           />
         )}
         <RoundFields

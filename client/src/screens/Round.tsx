@@ -1,5 +1,5 @@
 import { useState, type FormEvent } from "react";
-import { MAX_CLUE_LENGTH, MAX_GUESS_LENGTH, type RoomView, type RoundView } from "@stemcharades/shared";
+import { LEVEL_LABELS, MAX_CLUE_LENGTH, MAX_GUESS_LENGTH, type RoomView, type RoundView } from "@stemcharades/shared";
 import { CardFrame, DontSay } from "../components/CardFrame";
 import { Timer } from "../components/Timer";
 import { Button, Notice, Screen, inputClass, mutedClass } from "../components/ui";
@@ -96,7 +96,13 @@ function Explain({ round }: { round: RoundView }) {
   return (
     <>
       <p className="font-medium text-indigo-300">You're explaining</p>
-      <CardFrame as="h1" eyebrow={`${card.subject} · ${card.topic} · ${card.type}`} title={card.prompt} latex={card.latex}>
+      <CardFrame
+        as="h1"
+        eyebrow={`${LEVEL_LABELS[card.level]} ${card.subject} · ${card.topic} · ${card.type}`}
+        title={card.prompt}
+        latex={card.latex}
+        generated={card.generated}
+      >
         <DontSay words={card.forbidden} />
       </CardFrame>
       <SendForm label="Type a clue" placeholder="Type a clue…" button="Send" maxLength={MAX_CLUE_LENGTH} onSend={sendClue} />

@@ -4,13 +4,16 @@ import path from "node:path";
 import express from "express";
 import { Server } from "socket.io";
 import type { Card, ClientToServerEvents, ServerToClientEvents } from "@stemcharades/shared";
+import { AiService, type AiConfig, type CardWriter } from "./ai/aiService.js";
+import { CardBank } from "./ai/cardBank.js";
+import type { AiCardStore } from "./ai/store.js";
 import { loadProviders, type FetchFn, type Provider } from "./auth/providers.js";
 import { MAX_CONNECTIONS, MAX_CONNECTIONS_PER_IP, MAX_MESSAGE_BYTES, TRUST_PROXY } from "./config.js";
 import { getDeck, type Db } from "./db/repo.js";
 import { GameRunner } from "./game/gameRunner.js";
 import { RoomManager } from "./game/roomManager.js";
 import { authRouter } from "./http/auth.js";
-import { decksRouter } from "./http/decks.js";
+import { catalogRouter, decksRouter } from "./http/decks.js";
 import { meRouter } from "./http/me.js";
 import { roomsRouter } from "./http/rooms.js";
 import { securityHeaders } from "./http/security.js";
@@ -35,6 +38,8 @@ export interface AppOptions {
   publicUrl?: string;
   /** Injectable for tests so the OAuth exchange never touches the network. */
   fetchFn?: FetchFn;
+  /** Optional AI card writing. Without it games use the library alone, exactly as before. */
+  ai?: { writer: CardWriter; config?: Partial<AiConfig>; store?: AiCardStore };
 }
 
 export interface App {
@@ -43,6 +48,8 @@ export interface App {
   rooms: RoomManager;
   runner: GameRunner;
   limits: Limits;
+  bank: CardBank;
+  ai?: AiService;
 }
 
 /** Build the whole server: static app, REST routes and the Socket.IO game, all on one HTTP server. */
@@ -50,7 +57,24 @@ export function createApp(options: AppOptions = {}): App {
   const cards = options.cards ?? [];
   const limits = options.limits ?? createLimits(options.clock);
   const rooms = options.rooms ?? new RoomManager({ now: options.clock });
-  const runner = new GameRunner(rooms, cards, options.clock, options.rng, createPersistence(options.db));
+  // The library, plus whatever the AI writes. Games, decks and the catalog all read from this one bank.
+  const bank = new CardBank(cards);
+  const store = options.ai?.store;
+  const ai = options.ai
+    ? new AiService(bank, options.ai.writer, {
+        now: options.clock,
+        config: options.ai.config,
+        onAdded: store ? (added) => void store.save(added).catch((err) => console.error("could not save AI cards", err)) : undefined,
+      })
+    : undefined;
+  const runner = new GameRunner(
+    rooms,
+    bank,
+    options.clock,
+    options.rng,
+    createPersistence(options.db),
+    ai ? (selection) => ai.warm(selection) : undefined,
+  );
 
   // Accounts need all three: a database, a session secret and at least one sign-in provider.
   const providers = options.providers ?? loadProviders(process.env);
@@ -66,7 +90,8 @@ export function createApp(options: AppOptions = {}): App {
   app.get("/healthz", (_req, res) => {
     res.json({ ok: true });
   });
-  app.use("/api/decks", decksRouter(cards));
+  app.use("/api/decks", decksRouter(bank));
+  app.use("/api", catalogRouter(bank, ai, limits));
   app.use("/api/rooms", roomsRouter(rooms, limits, authEnabled ? sessionSecret : undefined));
   if (authEnabled) {
     app.use(
@@ -87,7 +112,7 @@ export function createApp(options: AppOptions = {}): App {
       db: options.db,
       secret: sessionSecret,
       providers: authEnabled ? providers : [],
-      cardsById: new Map(cards.map((c) => [c.id, c])),
+      getCard: (id) => bank.get(id),
       limits,
     }),
   );
@@ -127,9 +152,11 @@ export function createApp(options: AppOptions = {}): App {
   registerHandlers(io, rooms, runner, limits, {
     sessionSecret: authEnabled ? sessionSecret : undefined,
     loadCustomDeck: options.db ? (userId, deckId) => getDeck(options.db!, userId, deckId) : undefined,
+    // A host picking what to play is the cue to start writing cards for it, before anyone presses Start.
+    onConfigure: ai ? (settings) => void ai.warm(settings) : undefined,
   });
 
-  return { httpServer, io, rooms, runner, limits };
+  return { httpServer, io, rooms, runner, limits, bank, ai };
 }
 
 /**

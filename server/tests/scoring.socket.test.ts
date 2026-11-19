@@ -17,6 +17,7 @@ import { REVEAL_MS } from "../src/game/roundEngine.js";
 const base = {
   type: "term" as const,
   subject: "Physics" as const,
+  course: "secondary-physics",
   topic: "Zorbology",
   level: 2 as const,
   forbidden: ["alphaword", "betaword", "gammaword"],
@@ -75,7 +76,7 @@ describe("scoring over sockets", () => {
     const ben = client();
     await join(ben, { code: created.code, nickname: "Ben" });
 
-    host.emit(EVENTS.configure, { subjects: ["Physics"], levels: [1, 2, 3], roundSeconds: 60, rounds: 3 });
+    host.emit(EVENTS.configure, { levels: [], courses: ["secondary-physics"], topics: [], roundSeconds: 60, rounds: 3 });
     await new Promise((r) => setTimeout(r, 50));
     host.emit(EVENTS.start);
     await state(host, (v) => v.phase === "round");

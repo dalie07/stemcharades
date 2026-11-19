@@ -1,5 +1,6 @@
 import { z } from "zod";
-import { SUBJECTS } from "./schemas.js";
+import { levelSchema } from "./schemas.js";
+import { COURSES, getCourse, isTopicKey, type Level } from "./taxonomy.js";
 
 /** 32 characters, no look-alikes (no I, O, 0, 1): 32^5 ≈ 33 million codes. */
 export const ROOM_CODE_ALPHABET = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
@@ -21,10 +22,21 @@ export const nicknameSchema = z
 
 export const sessionTokenSchema = z.string().regex(/^[0-9a-f]{32}$/);
 
+/**
+ * A room's settings: what to play (levels, then subjects or courses, then topics; an empty list means all,
+ * so all three empty is General) and how long to play for.
+ */
+const selectionFields = {
+  levels: z.array(levelSchema).max(4),
+  courses: z.array(z.string().refine((id) => getCourse(id) !== undefined, "unknown course")).max(COURSES.length),
+  topics: z.array(z.string().refine(isTopicKey, "unknown topic")).max(400),
+};
+/** Just the "what to play" part, e.g. for asking the AI to start on it. */
+export const selectionSchema = z.object(selectionFields).strict();
+
 export const settingsSchema = z
   .object({
-    subjects: z.array(z.enum(SUBJECTS)).min(1).max(SUBJECTS.length),
-    levels: z.array(z.union([z.literal(1), z.literal(2), z.literal(3)])).min(1).max(3),
+    ...selectionFields,
     roundSeconds: z.union([z.literal(60), z.literal(90)]),
     rounds: z.number().int().min(1).max(10),
   })
@@ -32,8 +44,9 @@ export const settingsSchema = z
 export type RoomSettings = z.infer<typeof settingsSchema>;
 
 export const DEFAULT_SETTINGS: RoomSettings = {
-  subjects: [...SUBJECTS],
-  levels: [1, 2, 3],
+  levels: [],
+  courses: [],
+  topics: [],
   roundSeconds: 60,
   rounds: 3,
 };
@@ -74,6 +87,7 @@ export const ERROR_CODES = [
   "kicked",
   "unauthorized",
   "unknown_deck",
+  "cards_preparing",
 ] as const;
 export type ErrorCode = (typeof ERROR_CODES)[number];
 
@@ -89,11 +103,12 @@ export const ERROR_MESSAGES: Record<ErrorCode, string> = {
   server_full: "The server is busy. Try again in a few minutes.",
   bad_session: "Your seat could not be restored.",
   not_enough_players: "You need at least two connected players to start.",
-  no_cards: "No cards match these settings. Pick more subjects or levels.",
+  no_cards: "No cards match this choice yet. Choose something wider.",
   blocked_content: "Please choose a different, friendlier name.",
   kicked: "The host removed you from the room.",
   unauthorized: "Sign in to do that.",
   unknown_deck: "That deck doesn't exist or isn't yours.",
+  cards_preparing: "Fresh cards for this choice are being written. Try again in a few seconds.",
 };
 
 // ---- Clues -----------------------------------------------------------------
@@ -146,7 +161,9 @@ export interface PublicCardView {
 /** What only the explainer sees. Never includes the accepted answers or the explanation. */
 export interface ExplainerCardView extends PublicCardView {
   topic: string;
-  level: 1 | 2 | 3;
+  level: Level;
+  /** Written by the AI during play rather than taken from the reviewed library. */
+  generated?: true;
   prompt: string;
   latex?: string;
   forbidden: string[];
@@ -169,6 +186,7 @@ export interface RoundView {
 export interface RevealView {
   outcome: RoundOutcome;
   cardId: string;
+  generated?: true;
   subject: string;
   topic: string;
   prompt: string;
@@ -182,6 +200,7 @@ export interface RevealView {
 }
 export interface MissedCardView {
   id: string;
+  generated?: true;
   type: "term" | "formula" | "question";
   subject: string;
   topic: string;

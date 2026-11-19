@@ -130,9 +130,9 @@ describe("lobby over sockets", () => {
     expect((await invalid).code).toBe("invalid_payload");
 
     const updated = nextState(guest, (v) => v.settings.rounds === 4);
-    hostSock.emit(EVENTS.configure, { ...DEFAULT_SETTINGS, rounds: 4, roundSeconds: 90, subjects: ["Physics"] });
+    hostSock.emit(EVENTS.configure, { ...DEFAULT_SETTINGS, rounds: 4, roundSeconds: 90, courses: ["secondary-physics"] });
     const view = await updated;
-    expect(view.settings).toMatchObject({ rounds: 4, roundSeconds: 90, subjects: ["Physics"] });
+    expect(view.settings).toMatchObject({ rounds: 4, roundSeconds: 90, courses: ["secondary-physics"] });
   });
 
   it("passes host to the next player when the host leaves", async () => {

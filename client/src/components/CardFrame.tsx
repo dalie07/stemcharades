@@ -11,14 +11,23 @@ interface CardFrameProps {
   /** Heading level, so each screen keeps a sensible outline. */
   as?: "h1" | "h2" | "h3";
   latex?: string;
+  /** Written by the AI during play rather than taken from the reviewed library. */
+  generated?: boolean;
   children?: ReactNode;
 }
 
 /** The card panel used wherever a card is shown: to the explainer, at the reveal and in revision lists. */
-export function CardFrame({ eyebrow, title, as: Heading = "h2", latex, children }: CardFrameProps) {
+export function CardFrame({ eyebrow, title, as: Heading = "h2", latex, generated = false, children }: CardFrameProps) {
   return (
     <article className="w-full rounded-xl border border-slate-700 bg-slate-800 p-4 text-left shadow-sm">
-      <p className="text-xs uppercase tracking-wide text-slate-400">{eyebrow}</p>
+      <p className="text-xs uppercase tracking-wide text-slate-400">
+        {eyebrow}
+        {generated && (
+          <span className="ml-2 rounded bg-violet-900 px-1.5 py-0.5 normal-case tracking-normal text-violet-200" title="Written by AI during play. Report it if anything looks wrong.">
+            AI-written
+          </span>
+        )}
+      </p>
       <Heading className="mt-1 text-xl font-semibold">{title}</Heading>
       {latex && (
         <Suspense fallback={<code className="block overflow-x-auto py-2 text-sm text-slate-300">{latex}</code>}>

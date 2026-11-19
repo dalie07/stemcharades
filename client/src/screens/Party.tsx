@@ -1,7 +1,15 @@
-import { useEffect, useState } from "react";
-import { SUBJECTS, explainerPoints, type Card as CardData, type Level } from "@stemcharades/shared";
+import { useCallback, useEffect, useMemo, useState } from "react";
+import {
+  SUBJECTS,
+  explainerPoints,
+  selectionFromQuery,
+  selectionToQuery,
+  type Card as CardData,
+  type Selection,
+} from "@stemcharades/shared";
 import { Card } from "../components/Card";
-import { DeckFilterFields, RoundFields } from "../components/GameSettingsFields";
+import { RoundFields } from "../components/GameSettingsFields";
+import { SelectionPicker } from "../components/SelectionPicker";
 import { Timer } from "../components/Timer";
 import { Button, LinkButton, Notice, ScoreList, Screen, TextLink, inputClass, mutedClass } from "../components/ui";
 import {
@@ -19,6 +27,7 @@ import {
   type PartySettings,
   type PartyState,
 } from "../party/partyEngine";
+import { countCards, fetchCatalog, warmAi } from "../state/catalog";
 
 const MAX_PLAYERS = 12;
 
@@ -45,6 +54,7 @@ async function fetchAllCards(): Promise<CardData[]> {
 /** One phone passed around the room. The rules run in the browser (see `partyEngine`), with no server. */
 export function Party() {
   const [load, setLoad] = useState<Load>({ status: "loading" });
+  const [ai, setAi] = useState(false);
   const [state, setState] = useState<PartyState | null>(null);
   const [now, setNow] = useState(() => Date.now());
 
@@ -52,6 +62,19 @@ export function Party() {
     fetchAllCards()
       .then((cards) => setLoad({ status: "ready", cards }))
       .catch(() => setLoad({ status: "error" }));
+    // Online, the AI may be writing cards too. Offline this quietly stays false.
+    void fetchCatalog().then((catalog) => setAi(Boolean(catalog?.ai)));
+  }, []);
+
+  /** Download the decks again, picking up cards the AI has written since. Keeps the old ones if offline. */
+  const refresh = useCallback(async (): Promise<CardData[] | null> => {
+    try {
+      const cards = await fetchAllCards();
+      setLoad({ status: "ready", cards });
+      return cards;
+    } catch {
+      return null;
+    }
   }, []);
 
   // Drive the timer. The engine itself never reads the clock: it is told the time.
@@ -75,7 +98,20 @@ export function Party() {
       </Screen>
     );
   }
-  if (!state) return <Setup cards={load.cards} onStart={(settings) => setState(createParty(settings, load.cards))} />;
+  if (!state) {
+    return (
+      <Setup
+        cards={load.cards}
+        ai={ai}
+        refresh={refresh}
+        onStart={async (settings) => {
+          // Pick up any cards written while the players were typing their names.
+          const latest = (ai && (await refresh())) || load.cards;
+          setState(createParty(settings, filterPool(latest, settings).length ? latest : load.cards));
+        }}
+      />
+    );
+  }
 
   const player = currentPlayer(state);
   const gotCount = state.turnResults.filter((r) => r.outcome === "got").length;
@@ -159,16 +195,47 @@ export function Party() {
   );
 }
 
-function Setup({ cards, onStart }: { cards: CardData[]; onStart: (settings: PartySettings) => void }) {
+interface SetupProps {
+  cards: CardData[];
+  ai: boolean;
+  refresh: () => Promise<CardData[] | null>;
+  onStart: (settings: PartySettings) => void;
+}
+
+function Setup({ cards, ai, refresh, onStart }: SetupProps) {
   const [players, setPlayers] = useState(["Player 1", "Player 2"]);
-  const [subjects, setSubjects] = useState<CardData["subject"][]>([...SUBJECTS]);
-  const [levels, setLevels] = useState<Level[]>([1, 2, 3]);
+  // A shared link (#/party?levels=2&courses=…) opens straight onto its choice.
+  const [selection, setSelection] = useState<Selection>(() => selectionFromQuery(location.hash.split("?")[1] ?? ""));
   const [roundSeconds, setRoundSeconds] = useState<60 | 90>(60);
   const [rounds, setRounds] = useState(1);
+  const [copied, setCopied] = useState(false);
 
   const names = players.map((p) => p.trim());
-  const matching = filterPool(cards, { subjects, levels }).length;
+  const counts = useMemo(() => countCards(cards), [cards]);
+  const matching = filterPool(cards, selection).length;
   const namesOk = names.length >= 2 && names.every(Boolean) && new Set(names).size === names.length;
+  const query = selectionToQuery(selection);
+  const link = `${location.origin}/#/party${query ? `?${query}` : ""}`;
+
+  // Keep the address bar in step with the choice, so it can be bookmarked or shared as it is.
+  useEffect(() => {
+    history.replaceState(null, "", `#/party${query ? `?${query}` : ""}`);
+    setCopied(false);
+  }, [query]);
+
+  // Ask the AI to start on this choice while the players are still getting ready.
+  useEffect(() => {
+    if (!ai) return;
+    const id = setTimeout(() => warmAi(selection), 600);
+    return () => clearTimeout(id);
+  }, [ai, selection]);
+
+  // Nothing to play yet but the AI is writing: look for the new cards every few seconds.
+  useEffect(() => {
+    if (!ai || matching > 0) return;
+    const id = setInterval(() => void refresh(), 4000);
+    return () => clearInterval(id);
+  }, [ai, matching, refresh]);
 
   return (
     <Screen>
@@ -203,7 +270,20 @@ function Setup({ cards, onStart }: { cards: CardData[]; onStart: (settings: Part
         )}
       </fieldset>
 
-      <DeckFilterFields subjects={subjects} levels={levels} onSubjects={setSubjects} onLevels={setLevels} />
+      <SelectionPicker value={selection} onChange={setSelection} counts={counts} ai={ai} />
+      <LinkButton
+        onClick={async () => {
+          try {
+            await navigator.clipboard.writeText(link);
+            setCopied(true);
+          } catch {
+            window.prompt("Copy this link:", link);
+          }
+        }}
+      >
+        {copied ? "Link copied" : "Copy a link to this choice"}
+      </LinkButton>
+
       <RoundFields
         roundSeconds={roundSeconds}
         rounds={rounds}
@@ -213,14 +293,11 @@ function Setup({ cards, onStart }: { cards: CardData[]; onStart: (settings: Part
       />
 
       <p className={`text-sm ${mutedClass}`}>
-        {matching} matching cards{matching === 0 && " – pick at least one subject and level"}
+        {matching} matching cards
+        {matching === 0 && (ai ? " – fresh ones are being written, give it a few seconds" : " – choose something wider")}
       </p>
       {!namesOk && <p className={`text-sm ${mutedClass}`}>Give every player a different name.</p>}
-      <Button
-        wide
-        disabled={!namesOk || matching === 0}
-        onClick={() => onStart({ players: names, subjects, levels, roundSeconds, rounds })}
-      >
+      <Button wide disabled={!namesOk || matching === 0} onClick={() => onStart({ players: names, ...selection, roundSeconds, rounds })}>
         Start game
       </Button>
       <TextLink href="#/">Back</TextLink>

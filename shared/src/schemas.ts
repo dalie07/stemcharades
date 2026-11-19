@@ -1,24 +1,24 @@
 import { z } from "zod";
+import { SUBJECTS, getCourse, type Subject } from "./taxonomy.js";
 
-export const SUBJECTS = ["Maths", "Physics", "Chemistry", "Biology", "Computing"] as const;
-export const SUBJECT_PREFIX = {
+export const SUBJECT_PREFIX: Record<Subject, string> = {
   Maths: "mat",
   Physics: "phy",
   Chemistry: "che",
   Biology: "bio",
   Computing: "com",
-} as const;
+};
+/** Cards written by the AI during play carry this id prefix, so they are never mistaken for reviewed content. */
+export const AI_CARD_PREFIX = "ai-";
 
-export const LEVELS = [1, 2, 3] as const;
-export type Level = (typeof LEVELS)[number];
-export const LEVEL_LABELS: Record<Level, string> = { 1: "School", 2: "University", 3: "Advanced" };
+export const levelSchema = z.union([z.literal(1), z.literal(2), z.literal(3), z.literal(4)]);
 
 /** The fields every card has, whether it is a built-in card or a user's custom card. */
 const cardFields = {
   type: z.enum(["term", "formula", "question"]),
   subject: z.enum(SUBJECTS),
   topic: z.string().min(2).max(60),
-  level: z.union([z.literal(1), z.literal(2), z.literal(3)]),
+  level: levelSchema,
   prompt: z.string().min(2).max(200),
   latex: z.string().min(1).max(300).optional(),
   answers: z.array(z.string().min(1).max(100)).min(1).max(10),
@@ -37,23 +37,46 @@ export const customCardSchema = z
   });
 export type CustomCard = z.infer<typeof customCardSchema>;
 
+/**
+ * A card served in games: from the reviewed library in Git (`mat-0001`, status draft or reviewed), or written
+ * by the AI during play (`ai-…`, status generated). Its course and topic must exist in the curriculum map.
+ */
 export const cardSchema = z
   .object({
-    id: z.string().regex(/^(mat|phy|che|bio|com)-\d{4}$/, "id must look like phy-0042"),
+    id: z.string().regex(/^((mat|phy|che|bio|com)-\d{4}|ai-[0-9a-f]{12})$/, "id must look like phy-0042"),
     ...cardFields,
-    status: z.enum(["draft", "reviewed"]),
+    course: z.string().min(2).max(60),
+    status: z.enum(["draft", "reviewed", "generated"]),
   })
   .strict()
   .superRefine((card, ctx) => {
     if (card.type === "formula" && !card.latex) {
       ctx.addIssue({ code: "custom", path: ["latex"], message: "formula cards need latex" });
     }
-    if (!card.id.startsWith(SUBJECT_PREFIX[card.subject])) {
+    const generated = card.id.startsWith(AI_CARD_PREFIX);
+    if (generated !== (card.status === "generated")) {
+      ctx.addIssue({ code: "custom", path: ["status"], message: "only ai- cards are generated, and they always are" });
+    }
+    if (!generated && !card.id.startsWith(SUBJECT_PREFIX[card.subject])) {
       ctx.addIssue({
         code: "custom",
         path: ["id"],
         message: `id prefix must be ${SUBJECT_PREFIX[card.subject]} for ${card.subject}`,
       });
+    }
+    const course = getCourse(card.course);
+    if (!course) {
+      ctx.addIssue({ code: "custom", path: ["course"], message: `unknown course "${card.course}"` });
+      return;
+    }
+    if (course.level !== card.level) {
+      ctx.addIssue({ code: "custom", path: ["level"], message: `${card.course} is a level ${course.level} course` });
+    }
+    if (!course.subjects.includes(card.subject)) {
+      ctx.addIssue({ code: "custom", path: ["subject"], message: `${card.course} does not cover ${card.subject}` });
+    }
+    if (!course.topics.includes(card.topic)) {
+      ctx.addIssue({ code: "custom", path: ["topic"], message: `"${card.topic}" is not a topic of ${card.course}` });
     }
   });
 

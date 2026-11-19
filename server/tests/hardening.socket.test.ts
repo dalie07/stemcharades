@@ -16,7 +16,7 @@ import { EXPLAINER_GRACE_MS, HOST_GRACE_MS } from "../src/config.js";
 import { REVEAL_MS } from "../src/game/roundEngine.js";
 
 const CARD: Card = {
-  id: "phy-0001", type: "term", subject: "Physics", topic: "Zorbology", level: 2, prompt: "Zorblaxium",
+  id: "phy-0001", type: "term", subject: "Physics", course: "secondary-physics", topic: "Zorbology", level: 2, prompt: "Zorblaxium",
   answers: ["zorblaxium"], forbidden: ["alphaword", "betaword", "gammaword"],
   explanation: "Quuxplanation: a deliberately unusual explanation sentence.", status: "reviewed",
 };

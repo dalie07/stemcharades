@@ -10,7 +10,7 @@ import { tickGames } from "../src/realtime/handlers.js";
 import { testDb } from "./helpers/testDb.js";
 
 const SECRET = "test-secret-that-is-long-enough";
-const BUILT_IN: Card = { id: "phy-0001", type: "term", subject: "Physics", topic: "Zorbology", level: 2, prompt: "Zorblaxium", answers: ["zorblaxium"], forbidden: ["alphaword", "betaword", "gammaword"], explanation: "Quuxplanation: a deliberately unusual explanation.", status: "reviewed" };
+const BUILT_IN: Card = { id: "phy-0001", type: "term", subject: "Physics", course: "secondary-physics", topic: "Zorbology", level: 2, prompt: "Zorblaxium", answers: ["zorblaxium"], forbidden: ["alphaword", "betaword", "gammaword"], explanation: "Quuxplanation: a deliberately unusual explanation.", status: "reviewed" };
 
 let db: repo.Db;
 let closeDb: () => Promise<void>;
@@ -94,7 +94,7 @@ describe("saving a finished game", () => {
     const hostUser = await newUser("host");
     const annUser = await newUser("ann");
     const { host, guests } = await openRoom(hostUser, [{ name: "Ann", userId: annUser.id }, { name: "Gus" }]); // Gus is a guest
-    host.emit(EVENTS.configure, { subjects: ["Physics"], levels: [1, 2, 3], roundSeconds: 60, rounds: 1 });
+    host.emit(EVENTS.configure, { levels: [], courses: ["secondary-physics"], topics: [], roundSeconds: 60, rounds: 1 });
     await new Promise((r) => setTimeout(r, 50));
     host.emit(EVENTS.start);
     await state(host, (v) => v.phase === "round");
@@ -147,7 +147,7 @@ describe("saving a finished game", () => {
     const hostUser = await repo.upsertUser(broken.db, { provider: "github", subject: "resilient", displayName: "R" });
     const annUser = await repo.upsertUser(broken.db, { provider: "github", subject: "annR", displayName: "A" });
     const { host, guests } = await openRoom(hostUser, [{ name: "Ann", userId: annUser.id }]);
-    host.emit(EVENTS.configure, { subjects: ["Physics"], levels: [1, 2, 3], roundSeconds: 60, rounds: 1 });
+    host.emit(EVENTS.configure, { levels: [], courses: ["secondary-physics"], topics: [], roundSeconds: 60, rounds: 1 });
     await new Promise((r) => setTimeout(r, 50));
     host.emit(EVENTS.start);
     await state(host, (v) => v.phase === "round");
@@ -207,7 +207,7 @@ describe("private custom decks in a live room", () => {
     const { host } = await openRoom(hostUser, [{ name: "Ann", userId: annUser.id }]);
     host.emit(EVENTS.deck, { deckId });
     await state(host, (v) => v.customDeck !== undefined);
-    host.emit(EVENTS.configure, { subjects: ["Physics"], levels: [1, 2, 3], roundSeconds: 60, rounds: 1 });
+    host.emit(EVENTS.configure, { levels: [], courses: ["secondary-physics"], topics: [], roundSeconds: 60, rounds: 1 });
     await new Promise((r) => setTimeout(r, 50));
     host.emit(EVENTS.start);
     await state(host, (v) => v.phase === "round");
