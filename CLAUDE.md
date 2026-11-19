@@ -29,6 +29,8 @@ Set `ALLOW_DRAFT_CARDS=1` locally: production serves only cards whose `status` i
 - `shared/src/rooms.ts` – payload schemas, error codes and the view types the client renders.
 - `client/src/screens/` – one file per screen; `client/src/components/ui.tsx` holds the shared building blocks.
 - `client/src/party/partyEngine.ts` – Party mode's rules, run in the browser.
+- `shared/src/taxonomy.ts` – the curriculum map: levels, subjects or courses, topics, and player selections.
+- `server/src/ai/` – optional AI card writing: `cardRules` (checks), `cardBank` (library + AI cards), `aiService`.
 
 ## Non-negotiables
 
@@ -37,7 +39,9 @@ Set `ALLOW_DRAFT_CARDS=1` locally: production serves only cards whose `status` i
 3. Every REST body and socket event is parsed against a schema in `shared/`.
 4. The round engine stays pure: no sockets, clocks or randomness inside. Tests come before rules.
 5. Card ≠ round ≠ result. Cards are reviewed content in Git; rounds live in memory; results are the small durable summary.
-6. No card moves from `draft` to `reviewed` until a person has checked it against a trusted source.
+6. No card moves from `draft` to `reviewed` until a person has checked it against a trusted source. AI-written cards
+   (`ai-…`) are never marked reviewed: they reach players only through `server/src/ai/cardRules.ts`, carry an
+   AI-written label, and are retired by player reports. A game must never wait on the AI.
 7. No paid services, one service only, and no new dependency without asking.
 8. Accounts are optional: with no `DATABASE_URL` the game must work exactly as it does for guests.
 

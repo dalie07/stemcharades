@@ -42,17 +42,31 @@ close to "180". Everything else is **wrong**. You can keep guessing until you ge
 Points are kept even if the explainer then skips. The explainer cannot guess their own card. A guesser scores
 once per round.
 
+## Choosing what to play
+Choose as broadly or as narrowly as you like, in both Party mode and online rooms:
+
+1. **General**: everything, across every level and subject.
+2. **Level**: Primary, Secondary, University or Advanced. Pick one, several or all.
+3. **Subject or course**: subjects at Primary and Secondary (Maths, Science, Physics…), courses at University and
+   Advanced (Calculus, Organic Chemistry, Data Structures and Algorithms…).
+4. **Topic**: inside a subject or course, e.g. Waves or Integration.
+
+Every step is optional and allows several choices; stop at any step and play. Each choice shows how many cards it
+holds. A choice can be shared as a link, e.g. `/#/party?levels=2&courses=secondary-physics`, which opens straight
+onto it. When AI writing is on, fresh cards are written for whatever you choose, so even a narrow topic keeps
+getting new cards; a choice with none yet says so and fills within seconds.
+
 ## Rooms
 - The host gets a **5-character code** to share. Players join with a nickname, 2 to 12 players per room.
-- The host picks subjects, difficulty, round length and the number of rounds, starts the game, and can remove a player.
+- The host picks what to play, the round length and the number of rounds, starts the game, and can remove a player.
 - If you refresh, you get your seat, score and role back. If the host leaves, the role passes to the player who has
   been there longest.
 - If the explainer is disconnected for **20 seconds**, the round is skipped and the next explainer starts.
 - A room nobody touches for **30 minutes** is removed. If the server restarts, every game ends and you are told.
 
 ## Party mode
-One phone, passed around. No account and no internet needed after the first load. Pick players, subjects,
-difficulty, round length and rounds. Each turn the explainer sees the card and taps **Got it** or **Skip** as
+One phone, passed around. No account and no internet needed after the first load. Pick players, what to play,
+round length and rounds. Each turn the explainer sees the card and taps **Got it** or **Skip** as
 others guess aloud; the explainer earns 5 points for every **Got it**. After each turn you see the answers and
 explanations, and at the end the scores plus the cards to revise.
 
