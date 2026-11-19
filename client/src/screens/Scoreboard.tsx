@@ -28,7 +28,7 @@ export function Scoreboard({ room, session }: { room: RoomView; session: Session
       <ul className="w-full space-y-3">
         {summary.missed.map((card) => (
           <li key={card.id}>
-            <CardFrame as="h3" eyebrow={`${card.subject} · ${card.topic}`} title={card.prompt} latex={card.latex} generated={card.generated}>
+            <CardFrame as="h3" eyebrow={`${card.subject} · ${card.topic}`} title={card.prompt} latex={card.latex}>
               <Answer answer={questionAnswer(card)} explanation={card.explanation} card={card} />
             </CardFrame>
           </li>

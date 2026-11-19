@@ -1,18 +1,14 @@
 import {
-  AI_CARD_PREFIX,
   explainerPoints,
   filterCards,
   type Card,
   type ErrorCode,
   type RoomView,
-  type Selection,
   type SummaryView,
 } from "@stemcharades/shared";
-import { staticSource, type CardSource } from "../ai/cardBank.js";
 import type { RoomManager, Room } from "./roomManager.js";
 import { step, type Ctx, type Effect, type GameEvent } from "./roundEngine.js";
 
-const generated = (card: Card) => (card.id.startsWith(AI_CARD_PREFIX) ? { generated: true as const } : {});
 
 export type RunResult = { ok: true; effects: Effect[] } | { ok: false; error: ErrorCode };
 
@@ -21,27 +17,22 @@ export type RunResult = { ok: true; effects: Effect[] } | { ok: false; error: Er
  * stores the new state, and builds the role-specific view each player is allowed to see.
  */
 export class GameRunner {
-  private source: CardSource;
+  private byId: Map<string, Card>;
 
   constructor(
     private rooms: RoomManager,
-    cards: readonly Card[] | CardSource,
+    private cards: readonly Card[],
     private clock: () => number = Date.now,
     private rng: () => number = Math.random,
     /** Called once when a game reaches "finished". Best-effort: a failure here must never affect play. */
     private onFinished?: (room: Room) => void,
-    /**
-     * Asked when a game cannot start because nothing matches its selection. True means cards for it are
-     * being written (the AI), so players are told to try again shortly rather than that there are none.
-     */
-    private onEmptyPool?: (selection: Selection) => boolean,
   ) {
-    this.source = "all" in cards ? cards : staticSource(cards);
+    this.byId = new Map(cards.map((c) => [c.id, c]));
   }
 
   /** A room's own custom cards take priority over the built-in deck. */
   private cardFor(room: Room, id: string): Card | undefined {
-    return room.customDeck?.cards.find((c) => c.id === id) ?? this.source.get(id);
+    return room.customDeck?.cards.find((c) => c.id === id) ?? this.byId.get(id);
   }
 
   private ctx(room: Room): Ctx {
@@ -55,32 +46,19 @@ export class GameRunner {
         .sort((a, b) => a.joinedAt - b.joinedAt)
         .map((p) => ({ id: p.id, connected: p.connected, disconnectedAt: p.connected ? undefined : p.lastSeenAt })),
       hostId: room.hostId,
-      pool: custom ? custom.cards : filterCards(this.source.all(), room.settings),
+      pool: custom ? custom.cards : filterCards(this.cards, room.settings),
       getCard: (id) => this.cardFor(room, id),
     };
-  }
-
-  /** Tell the card source when a new card is dealt, so it knows which topics are being played through. */
-  private noteDealt(room: Room, before: string | undefined) {
-    const id = room.game.round?.cardId;
-    if (id && id !== before && !room.customDeck) this.source.served?.(id);
   }
 
   apply(code: string, event: GameEvent): RunResult {
     const room = this.rooms.get(code);
     if (!room) return { ok: false, error: "unknown_room" };
     const res = step(room.game, event, this.ctx(room));
-    if (!res.ok) {
-      if (res.error === "no_cards" && !room.customDeck && this.onEmptyPool?.(room.settings)) {
-        return { ok: false, error: "cards_preparing" };
-      }
-      return res;
-    }
+    if (!res.ok) return res;
     const before = room.game.phase;
-    const cardBefore = room.game.round?.cardId;
     room.game = res.game;
     if (event.type !== "tick") room.lastActivityAt = this.clock();
-    this.noteDealt(room, cardBefore);
     this.notifyIfFinished(room, before);
     return { ok: true, effects: res.effects };
   }
@@ -93,7 +71,6 @@ export class GameRunner {
     const res = step(before, { type: "tick" }, this.ctx(room));
     if (!res.ok || res.game === before) return false;
     room.game = res.game;
-    this.noteDealt(room, before.round?.cardId);
     this.notifyIfFinished(room, before.phase);
     return true;
   }
@@ -143,7 +120,6 @@ export class GameRunner {
         subject: card.subject,
         topic: card.topic,
         level: card.level,
-        ...generated(card),
         prompt: card.prompt,
         ...(card.latex ? { latex: card.latex } : {}),
         forbidden: [...card.forbidden],
@@ -156,7 +132,6 @@ export class GameRunner {
       view.reveal = {
         outcome: round.outcome,
         cardId: card.id,
-        ...generated(card),
         subject: card.subject,
         topic: card.topic,
         prompt: card.prompt,
@@ -189,7 +164,6 @@ export class GameRunner {
       seen.add(card.id);
       missed.push({
         id: card.id,
-        ...generated(card),
         type: card.type,
         subject: card.subject,
         topic: card.topic,

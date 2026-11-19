@@ -10,7 +10,6 @@ import {
   settingsSchema,
   type ClientToServerEvents,
   type ErrorCode,
-  type RoomSettings,
   type ServerToClientEvents,
 } from "@stemcharades/shared";
 import { HOST_GRACE_MS, TRUST_PROXY } from "../config.js";
@@ -33,8 +32,6 @@ export interface HandlerServices {
   sessionSecret?: string;
   /** The owner's own private deck, or null if it does not exist or is not theirs. */
   loadCustomDeck?: (userId: string, deckId: string) => Promise<{ id: string; name: string; cards: Card[] } | null>;
-  /** Told when a host changes the room's settings (the AI starts writing cards for the new choice). */
-  onConfigure?: (settings: RoomSettings) => void;
 }
 export type GameServer = Server<ClientToServerEvents, ServerToClientEvents, Record<string, never>, SocketData>;
 
@@ -141,7 +138,6 @@ export function registerHandlers(
         if (!parsed.success) return sendError("invalid_payload");
         const res = rooms.configure(code, playerId, parsed.data);
         if (!res.ok) return sendError(res.error);
-        services.onConfigure?.(parsed.data);
         broadcast(code);
       }),
     );

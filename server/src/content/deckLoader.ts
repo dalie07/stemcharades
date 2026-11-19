@@ -1,6 +1,7 @@
 import { readdirSync, readFileSync } from "node:fs";
 import path from "node:path";
 import { checkDeck, deckSchema, type Card } from "@stemcharades/shared";
+import { contentProblems } from "./contentChecks.js";
 
 /**
  * Load and validate every deck file. Throws on any problem so the server
@@ -17,9 +18,7 @@ export function loadDecks(dir: string, opts: { reviewedOnly: boolean }): Card[] 
     }
     all.push(...parsed.data);
   }
-  const problems = checkDeck(all);
-  // The library in Git is written and reviewed by people; AI cards live only in the running service.
-  for (const c of all) if (c.status === "generated") problems.push(`${c.id}: generated cards do not belong in the library`);
+  const problems = [...checkDeck(all), ...contentProblems(all)];
   if (problems.length) throw new Error(`Invalid decks:\n${problems.join("\n")}`);
   return opts.reviewedOnly ? all.filter((c) => c.status === "reviewed") : all;
 }

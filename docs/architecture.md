@@ -9,8 +9,7 @@ Player browsers ──HTTPS / WebSocket──▶ Render free web service (one No
  React app, PWA                         ├─ Express       static app, REST, security headers
  Party mode runs offline                ├─ Socket.IO     validates and rate-limits every event
                                         ├─ Game engine   pure rules: rooms, rounds, scores, in memory
-                                        ├─ Card bank     reviewed library from Git + checked AI cards
-                                        └─ AI writer     optional, in the background, capped per day
+                                        └─ Deck loader   reviewed cards from JSON in Git, checked at start
 GitHub ──auto-deploy from main──▶ Render        GitHub Actions runs every check first
 ```
 
@@ -26,7 +25,6 @@ GitHub ──auto-deploy from main──▶ Render        GitHub Actions runs ev
 | Shared | Zod | Event names, payload schemas, scoring, card picker and the text normaliser, used by client and server |
 | Content | JSON in Git | Version-controlled, reviewable cards. The server refuses to start on an invalid deck |
 | Curriculum | `shared/src/taxonomy.ts` | Levels, subjects or courses, and topics. Cards must sit in it; players choose from it |
-| AI cards | `server/src/ai/` | Optional. Writes cards for what players choose, in the background, behind strict checks |
 
 ## The engine
 
@@ -68,30 +66,14 @@ shared/src/         schemas, events, scoring, card picker, text normalising
 
 These are three different things and are kept apart:
 
-- A **card** is reviewed content in Git (its id is permanent, so statistics survive edits to its wording), or an
-  AI-written card that passed the checks in `server/src/ai/cardRules.ts` (id `ai-…`, labelled in the game).
+- A **card** is reviewed content in Git. Its id is permanent, so statistics survive edits to its wording.
 - A **round** is live state in memory. It is allowed to vanish when the server restarts.
 - A **result** is the small durable summary of a finished game, saved only when the optional database is configured.
 
 Live rooms are never written to a database, so the game needs none.
 
-## AI-written cards
-
-When switched on, the AI supplements the library; games never depend on it.
-
-- **Never in the way.** Games deal only from cards that already exist. A choice is "warmed" when someone picks
-  it (in the lobby or Party setup), and `AiService` writes its thinnest topics in the background, one call at a
-  time. A slow or failing API cannot delay a round.
-- **Checked before anyone sees it.** `cardRules.toCard` applies the library's schema and deck checks, the
-  curriculum map, the blocklist on every word, no links, and no question that gives away its answer. `CardBank`
-  then refuses repeats and answers already owned by another card, so guess matching stays unambiguous.
-- **Contained.** A daily request cap bounds the cost; three failures in a row pause writing for ten minutes; a
-  rejected key switches it off; a topic that only yields repeats is left alone for an hour; each topic stops
-  growing at a ceiling, and is refreshed once its AI cards have each been played a couple of times.
-- **Corrected by players.** AI cards are labelled; two players' reports retire one at once.
-- **Kept, if there is a database.** With `DATABASE_URL` set, AI cards survive restarts (`generated_cards`).
-  Retired ones are kept too, so the same bad card is never written again.
-- **Private.** The AI is sent the topic and the prompts already used in it. Nothing about players.
+Cards are written ahead of time and reviewed, not generated during play: see
+[decision 0002](decisions/0002-reviewed-cards-not-live-ai.md).
 
 ## Secrecy and fairness
 

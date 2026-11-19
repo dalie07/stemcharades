@@ -7,7 +7,7 @@ Locally, `npm run check` runs all of it except the browser tests, and `npm run t
 | Layer | Where | How many |
 |---|---|---|
 | Shared rules (scoring, card picker, curriculum map, selections) | `shared/src/*.test.ts` | 14 |
-| Server: engine, filters, rooms, sockets, accounts, database, AI card checks and limits | `server/tests/` | 220 |
+| Server: engine, filters, rooms, sockets, accounts, database, content checks | `server/tests/` | 203 |
 | Client: Party engine, flag links | `client/src/**/*.test.ts` | 11 |
 | Browser, several real browsers per test | `e2e/` (Playwright) | 10 |
 
@@ -40,9 +40,7 @@ Also covered: room codes and session tokens (`roomManager.test.ts`), nickname an
 and per-IP rate limits (IPv6 counted per /64), the per-address connection cap, the socket origin check, expiry of rooms
 nobody joins, explainer rotation when players leave or join mid-game, malformed cookies, account deletion, the
 curriculum map and selections (including tampered share links), the picker in Party mode and online rooms
-(`e2e/picker.spec.ts`), every check an AI-written card must pass, the AI's daily cap, circuit breaker, timeouts and
-switch-off, "cards are being written" instead of "no cards", player reports retiring AI cards, and AI cards
-surviving a restart (`ai.test.ts`, `ai.app.test.ts`), security headers, no console or CSP errors during a game (`e2e/round.spec.ts`), the wake
+(`e2e/picker.spec.ts`), the content checks on every card (`contentChecks.test.ts`), security headers, no console or CSP errors during a game (`e2e/round.spec.ts`), the wake
 screen and Party mode with the server off (`e2e/resilience.spec.ts`), sign-in and its CSRF protection, session
 forgery, private decks and their ownership (`accounts.test.ts`, `db.test.ts`), saving a finished game and the
 revision list (`accounts.socket.test.ts`), and that a database failure never breaks a live game.
@@ -77,8 +75,6 @@ Measured on 19 November 2026.
 - The built-in decks are public (Party mode needs them offline), so a determined guesser who knows the card's type
   and subject can narrow it down by browsing. It is a party game; nobody is graded on it.
 - Custom decks must use one of the five built-in subjects. Custom cards are not review-gated, since they are private.
-- AI-written cards are checked automatically, not by a person. The checks catch malformed, unsafe, duplicate and
-  self-answering cards, not a subtly wrong fact; that is what the AI-written label and player reports are for.
 - The old three levels were re-mapped to four by hand: former "School" cards are Secondary, and former University
   and Advanced cards were placed one by one (many are really secondary-school content). Primary has no library
   cards yet. Check the placement during card review.

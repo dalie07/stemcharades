@@ -31,7 +31,7 @@ const selectionFields = {
   courses: z.array(z.string().refine((id) => getCourse(id) !== undefined, "unknown course")).max(COURSES.length),
   topics: z.array(z.string().refine(isTopicKey, "unknown topic")).max(400),
 };
-/** Just the "what to play" part, e.g. for asking the AI to start on it. */
+/** Just the "what to play" part. */
 export const selectionSchema = z.object(selectionFields).strict();
 
 export const settingsSchema = z
@@ -87,7 +87,6 @@ export const ERROR_CODES = [
   "kicked",
   "unauthorized",
   "unknown_deck",
-  "cards_preparing",
 ] as const;
 export type ErrorCode = (typeof ERROR_CODES)[number];
 
@@ -108,7 +107,6 @@ export const ERROR_MESSAGES: Record<ErrorCode, string> = {
   kicked: "The host removed you from the room.",
   unauthorized: "Sign in to do that.",
   unknown_deck: "That deck doesn't exist or isn't yours.",
-  cards_preparing: "Fresh cards for this choice are being written. Try again in a few seconds.",
 };
 
 // ---- Clues -----------------------------------------------------------------
@@ -162,8 +160,6 @@ export interface PublicCardView {
 export interface ExplainerCardView extends PublicCardView {
   topic: string;
   level: Level;
-  /** Written by the AI during play rather than taken from the reviewed library. */
-  generated?: true;
   prompt: string;
   latex?: string;
   forbidden: string[];
@@ -186,7 +182,6 @@ export interface RoundView {
 export interface RevealView {
   outcome: RoundOutcome;
   cardId: string;
-  generated?: true;
   subject: string;
   topic: string;
   prompt: string;
@@ -200,7 +195,6 @@ export interface RevealView {
 }
 export interface MissedCardView {
   id: string;
-  generated?: true;
   type: "term" | "formula" | "question";
   subject: string;
   topic: string;

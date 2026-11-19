@@ -49,11 +49,6 @@ export function Privacy() {
           too many rooms from one address) and may appear in our hosting provider's short-lived logs.
         </p>
         <p>
-          Some cards may be written by AI and are labelled “AI-written”. To write them, the server sends an AI
-          provider only the topic and the cards already in it, never anything about you. Reporting an AI card sends
-          the game a one-way code in place of your address, so each person counts once.
-        </p>
-        <p>
           The “Flag this card” button opens GitHub in a new tab. What you write there is public, and
           GitHub's own privacy policy applies.
         </p>

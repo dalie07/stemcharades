@@ -35,12 +35,15 @@ Every card is pitched the same way. A wrong card teaches the wrong thing, so **n
 `shared/src/taxonomy.ts` lists every level, subject or course, and topic. It is generic rather than tied to one
 country's syllabus. The validator rejects a card whose course or topic is not in the map, so new parts of the
 curriculum start there: add the course or topic, then cards for it. Never rename an id that cards already use;
-add a new one instead. Anything in the map can be chosen in the game, and the AI (when it is switched on) can
-write cards for it.
+add a new one instead. Anything in the map with at least one card can be chosen in the game.
 
-## AI-written cards
-When AI writing is switched on, the game also writes cards during play for whatever players choose. They are not
-in Git and are never marked `reviewed`. Instead every one must pass the same checks as the library (schema,
-curriculum map, answers versus forbidden words, no answer shared with another card) plus the blocklist, no links,
-and no question that contains its own answer. They carry an **AI-written** label, and two players' reports take
-one out of the game at once. They supplement the reviewed library; they never replace it.
+## Machine checks
+`npm run validate:cards` (and the server, at start) rejects a deck if any card breaks the schema, sits outside the
+curriculum map, shares an accepted answer with another card, forbids one of its own answers, contains blocked
+language or a link, or is a question that prints its own answer. These checks catch mistakes of form, never a
+wrong fact: that is what review is for.
+
+## Drafting cards with AI
+Drafting is allowed, serving unreviewed drafts is not. A batch of drafted cards goes into the decks as `draft`,
+passes the machine checks, and is then checked by a person like any other card. See
+[decision 0002](decisions/0002-reviewed-cards-not-live-ai.md) for why cards are not generated during play.

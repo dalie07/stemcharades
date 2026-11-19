@@ -3,8 +3,8 @@
  * Advanced), then topics. It is generic rather than tied to one country's syllabus.
  *
  * Every card points at one course and one of that course's topics, and the deck validator rejects any that
- * do not. Adding a course or topic here is all it takes to make it selectable and to let the AI write cards
- * for it. Never rename an id once cards use it: add a new one instead.
+ * do not. Adding a course or topic here is all it takes to make it selectable. Never rename an id once cards
+ * use it: add a new one instead.
  */
 
 export const LEVELS = [1, 2, 3, 4] as const;
@@ -214,7 +214,7 @@ export function inSelection(card: Placed, s: Selection): boolean {
   return true;
 }
 
-/** Every topic key a selection covers: the units the AI writes cards for. */
+/** Every topic key a selection covers. */
 export function selectedTopicKeys(s: Selection): string[] {
   return COURSES.filter((c) => (!s.levels.length || s.levels.includes(c.level)) && (!s.courses.length || s.courses.includes(c.id)))
     .flatMap((c) => c.topics.map((t) => topicKey(c.id, t)))

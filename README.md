@@ -29,9 +29,8 @@ guess it. Then the round ends with the right answer explained, so even a wrong g
 - **Choose exactly what to revise.** General (everything), or narrow it down: Primary, Secondary, University or
   Advanced, then a subject or course, then topics. Every step is optional, shows its card count, and can be shared
   as a link.
-- **A growing library.** 300 cards (being checked by hand) across Maths, Physics, Chemistry, Biology and Computing, with
-  formulas typeset by KaTeX. Optionally, an AI writes fresh cards for whatever players choose, behind strict checks,
-  labelled, and removable by player reports.
+- **300 cards and growing** across Maths, Physics, Chemistry, Biology and Computing, with formulas typeset by KaTeX.
+  Every card is checked by machine (schema, curriculum map, unambiguous answers, safe language) and then by a person.
 - **Optional accounts.** Sign in with GitHub or Google to keep your game history, a personal revision list, and
   private decks for your class. Guests play exactly the same game.
 - **Private by design.** No ads, analytics or trackers, and no email ever. Accounts can be deleted in one step;

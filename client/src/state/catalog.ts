@@ -1,14 +1,10 @@
-import { topicKey, type Card, type Selection } from "@stemcharades/shared";
+import { topicKey, type Card } from "@stemcharades/shared";
 
 /** Playable cards per level, course and topic key: the numbers on the curriculum picker. */
 export interface Counts {
   levels: Record<string, number>;
   courses: Record<string, number>;
   topics: Record<string, number>;
-}
-export interface Catalog extends Counts {
-  /** Whether the AI is writing cards, so any part of the map can be chosen. */
-  ai: boolean;
 }
 
 export const NO_COUNTS: Counts = { levels: {}, courses: {}, topics: {} };
@@ -25,30 +21,12 @@ export function countCards(cards: readonly Card[]): Counts {
   return counts;
 }
 
-/** What the server can offer. Offline or asleep, it says "no AI" and no counts, and the game goes on. */
-export async function fetchCatalog(): Promise<Catalog | null> {
+/** The server's card counts. Offline or asleep it returns null, and the picker simply shows no numbers. */
+export async function fetchCatalog(): Promise<Counts | null> {
   try {
     const res = await fetch("/api/catalog");
-    return res.ok ? ((await res.json()) as Catalog) : null;
+    return res.ok ? ((await res.json()) as Counts) : null;
   } catch {
     return null;
-  }
-}
-
-/** Ask the AI to start on a choice before anyone presses Start. Fire and forget. */
-export function warmAi(selection: Selection): void {
-  fetch("/api/ai/warm", {
-    method: "POST",
-    headers: { "content-type": "application/json" },
-    body: JSON.stringify({ levels: selection.levels, courses: selection.courses, topics: selection.topics }),
-  }).catch(() => undefined);
-}
-
-/** Report an AI-written card as wrong. Two people's reports take it out of the game. */
-export async function flagAiCard(id: string): Promise<boolean> {
-  try {
-    return (await fetch(`/api/cards/${encodeURIComponent(id)}/flag`, { method: "POST" })).ok;
-  } catch {
-    return false;
   }
 }

@@ -57,8 +57,6 @@ interface Props {
   value: Selection;
   onChange: (next: Selection) => void;
   counts: Counts;
-  /** When the AI is writing cards every part of the map is offered, even parts with no cards yet. */
-  ai: boolean;
   disabled?: boolean;
 }
 
@@ -66,10 +64,10 @@ interface Props {
  * Choose what to play, as narrowly as you like: General (everything), then levels, then subjects or courses,
  * then topics. Each step is optional and allows several choices. Shared by Party mode and the online lobby.
  */
-export function SelectionPicker({ value, onChange, counts, ai, disabled = false }: Props) {
+export function SelectionPicker({ value, onChange, counts, disabled = false }: Props) {
   const set = (next: Selection) => !disabled && onChange(tidySelection(next));
-  // Without the AI, parts of the map with no cards are hidden, unless already chosen (e.g. from a link).
-  const offered = (count: number | undefined, chosen: boolean) => ai || chosen || (count ?? 0) > 0;
+  // Parts of the map with no cards yet are hidden, unless already chosen (e.g. from a link).
+  const offered = (count: number | undefined, chosen: boolean) => chosen || (count ?? 0) > 0;
   const general = !value.levels.length && !value.courses.length && !value.topics.length;
   const matching = matchingCount(value, counts);
 
@@ -128,7 +126,6 @@ export function SelectionPicker({ value, onChange, counts, ai, disabled = false 
 
       <p className={`text-sm ${mutedClass}`} aria-live="polite">
         {describeSelection(value)} · {matching} {matching === 1 ? "card" : "cards"}
-        {ai && (matching === 0 ? " · fresh cards are being written for this" : " · the AI adds fresh ones as you play")}
       </p>
     </fieldset>
   );

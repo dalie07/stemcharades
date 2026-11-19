@@ -4,7 +4,7 @@ import { RoundFields } from "../components/GameSettingsFields";
 import { SelectionPicker } from "../components/SelectionPicker";
 import { Button, LinkButton, Notice, Screen, mutedClass, selectClass } from "../components/ui";
 import { api, type DeckSummary } from "../state/account";
-import { NO_COUNTS, fetchCatalog, type Catalog } from "../state/catalog";
+import { NO_COUNTS, fetchCatalog, type Counts } from "../state/catalog";
 import { takePreset } from "../state/preset";
 import { useGameStore, type Session } from "../state/gameStore";
 import { configureRoom, kickPlayer, leaveRoom, selectDeck, startGame } from "../state/socket";
@@ -13,7 +13,7 @@ export function Lobby({ room, session }: { room: RoomView; session: Session }) {
   const actionError = useGameStore((s) => s.actionError);
   const signedIn = useGameStore((s) => Boolean(s.me?.user));
   const [decks, setDecks] = useState<DeckSummary[]>([]);
-  const [catalog, setCatalog] = useState<Catalog | null>(null);
+  const [counts, setCounts] = useState<Counts>(NO_COUNTS);
 
   const isHost = room.hostId === session.playerId;
   const canUseDecks = isHost && signedIn;
@@ -24,15 +24,12 @@ export function Lobby({ room, session }: { room: RoomView; session: Session }) {
     if (canUseDecks) void api.decks().then((r) => r.ok && setDecks(r.data.filter((d) => d.cards > 0)));
   }, [canUseDecks]);
 
-  // The counts on the picker, refreshed while the lobby is open: the AI may be adding cards as people wait.
+  // The card counts shown on the picker.
   useEffect(() => {
     let live = true;
-    const load = () => void fetchCatalog().then((c) => live && c && setCatalog(c));
-    load();
-    const id = setInterval(load, 15_000);
+    void fetchCatalog().then((c) => live && c && setCounts(c));
     return () => {
       live = false;
-      clearInterval(id);
     };
   }, []);
 
@@ -112,8 +109,7 @@ export function Lobby({ room, session }: { room: RoomView; session: Session }) {
           <SelectionPicker
             value={settings}
             onChange={({ levels, courses, topics }) => update({ levels: [...levels], courses: [...courses], topics: [...topics] })}
-            counts={catalog ?? NO_COUNTS}
-            ai={Boolean(catalog?.ai)}
+            counts={counts}
             disabled={!isHost}
           />
         )}

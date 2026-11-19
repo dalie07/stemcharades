@@ -101,7 +101,6 @@ function Explain({ round }: { round: RoundView }) {
         eyebrow={`${LEVEL_LABELS[card.level]} ${card.subject} · ${card.topic} · ${card.type}`}
         title={card.prompt}
         latex={card.latex}
-        generated={card.generated}
       >
         <DontSay words={card.forbidden} />
       </CardFrame>

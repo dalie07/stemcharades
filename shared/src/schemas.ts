@@ -8,8 +8,6 @@ export const SUBJECT_PREFIX: Record<Subject, string> = {
   Biology: "bio",
   Computing: "com",
 };
-/** Cards written by the AI during play carry this id prefix, so they are never mistaken for reviewed content. */
-export const AI_CARD_PREFIX = "ai-";
 
 export const levelSchema = z.union([z.literal(1), z.literal(2), z.literal(3), z.literal(4)]);
 
@@ -37,27 +35,20 @@ export const customCardSchema = z
   });
 export type CustomCard = z.infer<typeof customCardSchema>;
 
-/**
- * A card served in games: from the reviewed library in Git (`mat-0001`, status draft or reviewed), or written
- * by the AI during play (`ai-…`, status generated). Its course and topic must exist in the curriculum map.
- */
+/** A card in the library in Git. Its course and topic must exist in the curriculum map. */
 export const cardSchema = z
   .object({
-    id: z.string().regex(/^((mat|phy|che|bio|com)-\d{4}|ai-[0-9a-f]{12})$/, "id must look like phy-0042"),
+    id: z.string().regex(/^(mat|phy|che|bio|com)-\d{4}$/, "id must look like phy-0042"),
     ...cardFields,
     course: z.string().min(2).max(60),
-    status: z.enum(["draft", "reviewed", "generated"]),
+    status: z.enum(["draft", "reviewed"]),
   })
   .strict()
   .superRefine((card, ctx) => {
     if (card.type === "formula" && !card.latex) {
       ctx.addIssue({ code: "custom", path: ["latex"], message: "formula cards need latex" });
     }
-    const generated = card.id.startsWith(AI_CARD_PREFIX);
-    if (generated !== (card.status === "generated")) {
-      ctx.addIssue({ code: "custom", path: ["status"], message: "only ai- cards are generated, and they always are" });
-    }
-    if (!generated && !card.id.startsWith(SUBJECT_PREFIX[card.subject])) {
+    if (!card.id.startsWith(SUBJECT_PREFIX[card.subject])) {
       ctx.addIssue({
         code: "custom",
         path: ["id"],

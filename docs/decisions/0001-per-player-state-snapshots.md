@@ -10,6 +10,7 @@ It also makes refresh and reconnect free: rejoining just receives the current vi
 "refresh mid-round returns the same role" scenario with no replay logic. Payloads are small (12 players, at
 most 30 clues), so the cost is negligible on the free tier.
 
-**Rotation.** The explainer rotates by an incrementing counter over the seating order, skipping disconnected
-players, so it stays fair when players join or leave. Rounds are counted as total rounds, not full rotations
+**Rotation.** The engine remembers who has explained in the current cycle and picks the first connected player in
+seating order who has not, so nobody is skipped when someone leaves and a late joiner gets a turn at the end of
+the cycle. Rounds are counted as total rounds, not full rotations
 (Party mode counts rotations because one phone has no server).

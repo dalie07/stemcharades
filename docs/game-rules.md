@@ -52,9 +52,8 @@ Choose as broadly or as narrowly as you like, in both Party mode and online room
 4. **Topic**: inside a subject or course, e.g. Waves or Integration.
 
 Every step is optional and allows several choices; stop at any step and play. Each choice shows how many cards it
-holds. A choice can be shared as a link, e.g. `/#/party?levels=2&courses=secondary-physics`, which opens straight
-onto it. When AI writing is on, fresh cards are written for whatever you choose, so even a narrow topic keeps
-getting new cards; a choice with none yet says so and fills within seconds.
+holds, and parts with no cards yet are hidden. A choice can be shared as a link, e.g.
+`/#/party?levels=2&courses=secondary-physics`, which opens straight onto it.
 
 ## Rooms
 - The host gets a **5-character code** to share. Players join with a nickname, 2 to 12 players per room.

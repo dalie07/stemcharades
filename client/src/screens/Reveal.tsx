@@ -32,7 +32,6 @@ export function Reveal({ room }: { room: RoomView }) {
         eyebrow={isQuestion ? reveal.prompt : "The answer"}
         title={isQuestion ? reveal.answers[0]! : reveal.prompt}
         latex={reveal.latex}
-        generated={reveal.generated}
       >
         <p className="mt-2 text-slate-300">{reveal.explanation}</p>
         <FlagButton card={{ id: reveal.cardId, prompt: reveal.prompt, subject: reveal.subject, topic: reveal.topic }} />

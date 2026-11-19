@@ -64,6 +64,15 @@ describe("http", () => {
     expect(decks.find((d) => d.subject === "Biology")?.count).toBe(0);
   });
 
+  it("counts the cards per level, course and topic for the picker", async () => {
+    const catalog = await (await fetch(`${await start()}/api/catalog`)).json();
+    expect(catalog).toEqual({
+      levels: { 1: 1, 2: 1, 3: 1 },
+      courses: { "secondary-physics": 3 },
+      topics: { "secondary-physics/Mechanics": 3 },
+    });
+  });
+
   it("returns one subject's cards, whatever the capitalisation, and 404 for an unknown subject", async () => {
     const url = await start();
     const cards = (await (await fetch(`${url}/api/decks/PHYSICS/cards`)).json()) as Card[];

@@ -2,6 +2,7 @@ import { readdirSync, readFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { checkDeck, deckSchema, type Card } from "../shared/src/index.js";
+import { contentProblems } from "../server/src/content/contentChecks.js";
 
 // An optional directory argument lets tests point the validator at a deliberately broken deck.
 const dir = process.argv[2]
@@ -17,12 +18,7 @@ for (const file of readdirSync(dir).filter((f) => f.endsWith(".json")).sort()) {
     for (const i of parsed.error.issues) console.error(`${file}: ${i.path.join(".")}: ${i.message}`);
   } else cards.push(...parsed.data);
 }
-// The library in Git is written and reviewed by people; AI cards live only in the running service.
-for (const c of cards.filter((card) => card.status === "generated")) {
-  failed = true;
-  console.error(`${c.id}: generated cards do not belong in the library`);
-}
-for (const p of checkDeck(cards)) {
+for (const p of [...checkDeck(cards), ...contentProblems(cards)]) {
   failed = true;
   console.error(p);
 }
