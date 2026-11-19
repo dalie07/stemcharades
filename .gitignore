@@ -1,10 +1,20 @@
+# Dependencies and build output
 node_modules/
 dist/
+coverage/
+
+# Test artefacts
+test-results/
+playwright-report/
+
+# Local environment and logs
 .env
 .env.*
 !.env.example
 *.log
-coverage/
-test-results/
-playwright-report/
-.install.log
+
+# Editors and operating systems
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
