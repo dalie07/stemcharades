@@ -26,11 +26,6 @@ export function checkDeck(cards: Card[]): string[] {
         problems.push(`${card.id}: forbidden word "${word}" is itself an accepted answer`);
       }
     }
-
-    const prompt = normalise(card.prompt);
-    if (prompt && answers.includes(prompt) && card.type === "term") {
-      // A term card shows the answer as the prompt by design; nothing to flag.
-    }
   }
 
   for (const [id, n] of ids) if (n > 1) problems.push(`${id}: duplicate id (${n} cards)`);

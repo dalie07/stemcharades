@@ -9,6 +9,10 @@ export const SUBJECT_PREFIX = {
   Computing: "com",
 } as const;
 
+export const LEVELS = [1, 2, 3] as const;
+export type Level = (typeof LEVELS)[number];
+export const LEVEL_LABELS: Record<Level, string> = { 1: "School", 2: "University", 3: "Advanced" };
+
 /** The fields every card has, whether it is a built-in card or a user's custom card. */
 const cardFields = {
   type: z.enum(["term", "formula", "question"]),

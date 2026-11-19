@@ -48,7 +48,13 @@ export function broadcastRoom(io: GameServer, rooms: RoomManager, runner: GameRu
 }
 
 /** Validation, rate limiting and plumbing only. No game rules live here. */
-export function registerHandlers(io: GameServer, rooms: RoomManager, runner: GameRunner, limits: Limits, services: HandlerServices = {}): void {
+export function registerHandlers(
+  io: GameServer,
+  rooms: RoomManager,
+  runner: GameRunner,
+  limits: Limits,
+  services: HandlerServices = {},
+): void {
   io.on("connection", (socket) => {
     // The session cookie travels with the WebSocket handshake. It is signed, so it cannot be forged.
     const uid = userIdFromCookies(socket.handshake.headers.cookie, services.sessionSecret);
@@ -90,14 +96,6 @@ export function registerHandlers(io: GameServer, rooms: RoomManager, runner: Gam
       }
       broadcast(code);
     };
-
-    socket.on(EVENTS.ping, (payload) =>
-      safely(() => {
-        if (!allowed("event")) return;
-        const message = typeof payload?.message === "string" ? payload.message.slice(0, 200) : "";
-        socket.emit(EVENTS.pong, { message, serverTime: Date.now() });
-      }),
-    );
 
     socket.on(EVENTS.join, (raw, ack) =>
       safely(() => {

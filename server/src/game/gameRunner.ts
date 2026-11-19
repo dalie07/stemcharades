@@ -157,6 +157,7 @@ export class GameRunner {
       seen.add(card.id);
       missed.push({
         id: card.id,
+        type: card.type,
         subject: card.subject,
         topic: card.topic,
         prompt: card.prompt,

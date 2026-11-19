@@ -8,6 +8,9 @@ import * as schema from "./schema.js";
 export type Db = PgDatabase<any, typeof schema>;
 const { users, gameResults, playerResults, cardStats, missedCards, customDecks, customCards } = schema;
 
+/** Custom cards have no permanent id of their own, so they are marked to keep them out of global statistics. */
+export const CUSTOM_CARD_PREFIX = "cus-";
+
 export interface User {
   id: string;
   displayName: string;
@@ -55,7 +58,9 @@ export async function saveFinishedGame(db: Db, g: FinishedGame): Promise<string>
     const gameId = game!.id;
 
     if (g.players.length) {
-      await tx.insert(playerResults).values(g.players.map((p) => ({ gameResultId: gameId, userId: p.userId, score: p.score, rank: p.rank })));
+      await tx
+        .insert(playerResults)
+        .values(g.players.map((p) => ({ gameResultId: gameId, userId: p.userId, score: p.score, rank: p.rank })));
     }
 
     for (const c of g.cards) {
@@ -125,13 +130,27 @@ export async function statsFor(db: Db, cardId: string) {
 }
 
 // ---- Private custom decks ----------------------------------------------------------------------
+// Every query below is scoped by owner: a deck that is not yours behaves exactly like one that does not exist.
 
 export type DeckError = "limit" | "not_found";
+
+const ownedDeck = (ownerId: string, deckId: string) => and(eq(customDecks.id, deckId), eq(customDecks.ownerId, ownerId));
+
+async function findOwnedDeck(db: Db, ownerId: string, deckId: string): Promise<{ id: string; name: string } | null> {
+  const [deck] = await db
+    .select({ id: customDecks.id, name: customDecks.name })
+    .from(customDecks)
+    .where(ownedDeck(ownerId, deckId));
+  return deck ?? null;
+}
 
 export async function createDeck(db: Db, ownerId: string, name: string): Promise<{ id: string; name: string } | DeckError> {
   const [{ n } = { n: 0 }] = await db.select({ n: count() }).from(customDecks).where(eq(customDecks.ownerId, ownerId));
   if (n >= MAX_DECKS_PER_USER) return "limit";
-  const [row] = await db.insert(customDecks).values({ ownerId, name }).returning({ id: customDecks.id, name: customDecks.name });
+  const [row] = await db
+    .insert(customDecks)
+    .values({ ownerId, name })
+    .returning({ id: customDecks.id, name: customDecks.name });
   return row!;
 }
 
@@ -145,19 +164,16 @@ export async function listDecks(db: Db, ownerId: string) {
     .orderBy(desc(customDecks.createdAt));
 }
 
-/** Only the owner can read a deck: every query is scoped by owner. */
+/** A deck with its cards in the shape the game engine plays. Custom card ids are prefixed "cus-". */
 export async function getDeck(db: Db, ownerId: string, deckId: string): Promise<{ id: string; name: string; cards: Card[] } | null> {
-  const [deck] = await db
-    .select({ id: customDecks.id, name: customDecks.name })
-    .from(customDecks)
-    .where(and(eq(customDecks.id, deckId), eq(customDecks.ownerId, ownerId)));
+  const deck = await findOwnedDeck(db, ownerId, deckId);
   if (!deck) return null;
   const rows = await db.select().from(customCards).where(eq(customCards.deckId, deckId)).orderBy(customCards.createdAt);
   return {
     ...deck,
     cards: rows.map(
       (r): Card => ({
-        id: `cus-${r.id}`,
+        id: `${CUSTOM_CARD_PREFIX}${r.id}`,
         type: r.type as Card["type"],
         subject: r.subject as Card["subject"],
         topic: r.topic,
@@ -167,30 +183,34 @@ export async function getDeck(db: Db, ownerId: string, deckId: string): Promise<
         answers: r.answers,
         forbidden: r.forbidden,
         explanation: r.explanation,
-        status: "reviewed", // the owner wrote it for their own group: no review gate applies to private decks
+        status: "reviewed", // the owner wrote it for their own group: the review gate is for the built-in decks
       }),
     ),
   };
 }
 
 export async function addCard(db: Db, ownerId: string, deckId: string, card: CustomCard): Promise<{ id: string } | DeckError> {
-  const [deck] = await db.select({ id: customDecks.id }).from(customDecks).where(and(eq(customDecks.id, deckId), eq(customDecks.ownerId, ownerId)));
-  if (!deck) return "not_found";
+  if (!(await findOwnedDeck(db, ownerId, deckId))) return "not_found";
   const [{ n } = { n: 0 }] = await db.select({ n: count() }).from(customCards).where(eq(customCards.deckId, deckId));
   if (n >= MAX_CARDS_PER_DECK) return "limit";
-  const [row] = await db.insert(customCards).values({ deckId, ...card, latex: card.latex ?? null }).returning({ id: customCards.id });
-  return { id: `cus-${row!.id}` };
+  const [row] = await db
+    .insert(customCards)
+    .values({ deckId, ...card, latex: card.latex ?? null })
+    .returning({ id: customCards.id });
+  return { id: `${CUSTOM_CARD_PREFIX}${row!.id}` };
 }
 
 export async function deleteCard(db: Db, ownerId: string, deckId: string, cardId: string): Promise<boolean> {
-  const rawId = cardId.replace(/^cus-/, "");
-  const [deck] = await db.select({ id: customDecks.id }).from(customDecks).where(and(eq(customDecks.id, deckId), eq(customDecks.ownerId, ownerId)));
-  if (!deck) return false;
-  const gone = await db.delete(customCards).where(and(eq(customCards.id, rawId), eq(customCards.deckId, deckId))).returning({ id: customCards.id });
+  if (!(await findOwnedDeck(db, ownerId, deckId))) return false;
+  const rawId = cardId.startsWith(CUSTOM_CARD_PREFIX) ? cardId.slice(CUSTOM_CARD_PREFIX.length) : cardId;
+  const gone = await db
+    .delete(customCards)
+    .where(and(eq(customCards.id, rawId), eq(customCards.deckId, deckId)))
+    .returning({ id: customCards.id });
   return gone.length > 0;
 }
 
 export async function deleteDeck(db: Db, ownerId: string, deckId: string): Promise<boolean> {
-  const gone = await db.delete(customDecks).where(and(eq(customDecks.id, deckId), eq(customDecks.ownerId, ownerId))).returning({ id: customDecks.id });
+  const gone = await db.delete(customDecks).where(ownedDeck(ownerId, deckId)).returning({ id: customDecks.id });
   return gone.length > 0;
 }

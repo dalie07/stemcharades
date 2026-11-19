@@ -182,6 +182,7 @@ export interface RevealView {
 }
 export interface MissedCardView {
   id: string;
+  type: "term" | "formula" | "question";
   subject: string;
   topic: string;
   prompt: string;

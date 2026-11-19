@@ -1,7 +1,7 @@
-import { saveFinishedGame, type Db, type FinishedGame } from "./db/repo.js";
+import { CUSTOM_CARD_PREFIX, saveFinishedGame, type Db, type FinishedGame } from "./db/repo.js";
 import type { Room } from "./game/roomManager.js";
 
-const isCustom = (cardId: string) => cardId.startsWith("cus-");
+const isCustom = (cardId: string) => cardId.startsWith(CUSTOM_CARD_PREFIX);
 
 /**
  * Turn a finished room into the small durable summary: the "result", kept apart from the live round.
@@ -54,6 +54,8 @@ export function createPersistence(db: Db | undefined): ((room: Room) => void) | 
     const snapshot = snapshotFinished(room);
     if (!snapshot) return;
     // Fire and forget: a slow or failing database must never delay or break the game.
-    void saveFinishedGame(db, snapshot).catch((err) => console.error("could not save game result", err instanceof Error ? err.message : err));
+    void saveFinishedGame(db, snapshot).catch((err) => {
+      console.error("could not save game result", err instanceof Error ? err.message : err);
+    });
   };
 }

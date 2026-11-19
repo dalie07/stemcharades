@@ -1,7 +1,7 @@
 import type {
   CluePayload,
-  DeckSelectPayload,
   ClueRejection,
+  DeckSelectPayload,
   ErrorPayload,
   GuessPayload,
   GuessResultPayload,
@@ -12,10 +12,9 @@ import type {
   RoomView,
 } from "./rooms.js";
 
-// Event names shared by client and server.
+/** Socket.IO event names. Every payload has a schema or type in `rooms.ts`. */
 export const EVENTS = {
-  ping: "ping:send",
-  pong: "ping:reply",
+  // client -> server
   join: "room:join",
   configure: "room:configure",
   leave: "room:leave",
@@ -25,23 +24,14 @@ export const EVENTS = {
   clue: "clue:send",
   skip: "round:skip",
   guess: "guess:send",
-  guessResult: "guess:result",
-  clueRejected: "clue:rejected",
+  // server -> client
   state: "room:state",
+  clueRejected: "clue:rejected",
+  guessResult: "guess:result",
   error: "error",
 } as const;
 
-export interface PingPayload {
-  message: string;
-}
-
-export interface PongPayload {
-  message: string;
-  serverTime: number;
-}
-
 export interface ClientToServerEvents {
-  [EVENTS.ping]: (payload: PingPayload) => void;
   [EVENTS.join]: (payload: JoinPayload, ack: (res: JoinAck) => void) => void;
   [EVENTS.configure]: (payload: RoomSettings) => void;
   [EVENTS.leave]: () => void;
@@ -54,9 +44,11 @@ export interface ClientToServerEvents {
 }
 
 export interface ServerToClientEvents {
-  [EVENTS.pong]: (payload: PongPayload) => void;
+  /** The whole room as this one player may see it. Sent after every change. */
   [EVENTS.state]: (view: RoomView) => void;
-  [EVENTS.error]: (payload: ErrorPayload) => void;
+  /** To the explainer alone. */
   [EVENTS.clueRejected]: (rejection: ClueRejection) => void;
+  /** To the guesser alone. */
   [EVENTS.guessResult]: (payload: GuessResultPayload) => void;
+  [EVENTS.error]: (payload: ErrorPayload) => void;
 }

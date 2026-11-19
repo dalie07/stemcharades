@@ -1,63 +1,98 @@
-import { afterEach, beforeEach, describe, expect, it } from "vitest";
+import { mkdtempSync, rmSync, writeFileSync } from "node:fs";
 import type { AddressInfo } from "node:net";
-import { io as connect, type Socket } from "socket.io-client";
-import { EVENTS, type Card } from "@stemcharades/shared";
-import { createApp } from "../src/app.js";
+import { tmpdir } from "node:os";
+import path from "node:path";
+import { afterEach, describe, expect, it } from "vitest";
+import { io as connect } from "socket.io-client";
+import type { Card } from "@stemcharades/shared";
+import { createApp, type App, type AppOptions } from "../src/app.js";
 
-const testCard: Card = {
-  id: "phy-0001",
+const card = (id: string, subject: Card["subject"], level: Card["level"]): Card => ({
+  id,
   type: "term",
-  subject: "Physics",
+  subject,
   topic: "Mechanics",
-  level: 1,
-  prompt: "Velocity",
-  answers: ["velocity"],
-  forbidden: ["speed", "direction", "metres", "time"],
-  explanation: "Velocity is the rate of change of displacement with time.",
+  level,
+  prompt: `Prompt ${id}`,
+  answers: [`answer ${id}`],
+  forbidden: ["speed", "direction", "metres"],
+  explanation: "An explanation that is long enough.",
   status: "reviewed",
-};
-
-let close: () => Promise<void>;
-let url: string;
-let client: Socket | undefined;
-
-beforeEach(async () => {
-  const { httpServer, io } = createApp({ cards: [testCard] });
-  await new Promise<void>((resolve) => httpServer.listen(0, resolve));
-  url = `http://localhost:${(httpServer.address() as AddressInfo).port}`;
-  close = () =>
-    new Promise<void>((resolve) => {
-      void io.close(() => resolve());
-    });
 });
+const CARDS = [card("phy-0001", "Physics", 1), card("phy-0002", "Physics", 3), card("mat-0001", "Maths", 2)];
+
+let app: App | undefined;
+let clientDir: string | undefined;
+
+async function start(options: AppOptions = {}): Promise<string> {
+  app = createApp({ cards: CARDS, ...options });
+  await new Promise<void>((resolve) => app!.httpServer.listen(0, resolve));
+  return `http://localhost:${(app.httpServer.address() as AddressInfo).port}`;
+}
 
 afterEach(async () => {
-  client?.disconnect();
-  await close();
+  await new Promise<void>((resolve) => void app?.io.close(() => resolve()));
+  if (clientDir) rmSync(clientDir, { recursive: true, force: true });
+  app = clientDir = undefined;
 });
 
-describe("server", () => {
-  it("answers /healthz", async () => {
-    const res = await fetch(`${url}/healthz`);
+describe("http", () => {
+  it("answers the health check", async () => {
+    const res = await fetch(`${await start()}/healthz`);
     expect(res.status).toBe(200);
     expect(await res.json()).toEqual({ ok: true });
   });
 
-  it("lists deck counts and cards by subject", async () => {
-    const decks = (await (await fetch(`${url}/api/decks`)).json()) as { subject: string; count: number }[];
-    expect(decks.find((d) => d.subject === "Physics")?.count).toBe(1);
-    const cards = (await (await fetch(`${url}/api/decks/physics/cards`)).json()) as Card[];
-    expect(cards).toHaveLength(1);
-    expect((await fetch(`${url}/api/decks/nope/cards`)).status).toBe(404);
+  it("summarises the decks by subject and level", async () => {
+    const decks = (await (await fetch(`${await start()}/api/decks`)).json()) as {
+      subject: string;
+      count: number;
+      levels: { level: number; count: number }[];
+    }[];
+    expect(decks.map((d) => d.subject)).toEqual(["Maths", "Physics", "Chemistry", "Biology", "Computing"]);
+    expect(decks.find((d) => d.subject === "Physics")).toEqual({
+      subject: "Physics",
+      count: 2,
+      levels: [
+        { level: 1, count: 1 },
+        { level: 2, count: 0 },
+        { level: 3, count: 1 },
+      ],
+    });
+    expect(decks.find((d) => d.subject === "Biology")?.count).toBe(0);
   });
 
-  it("echoes a ping over Socket.IO", async () => {
-    client = connect(url, { transports: ["websocket"] });
-    const reply = await new Promise<{ message: string; serverTime: number }>((resolve) => {
-      client!.on(EVENTS.pong, resolve);
-      client!.on("connect", () => client!.emit(EVENTS.ping, { message: "hello" }));
-    });
-    expect(reply.message).toBe("hello");
-    expect(typeof reply.serverTime).toBe("number");
+  it("returns one subject's cards, whatever the capitalisation, and 404 for an unknown subject", async () => {
+    const url = await start();
+    const cards = (await (await fetch(`${url}/api/decks/PHYSICS/cards`)).json()) as Card[];
+    expect(cards.map((c) => c.id)).toEqual(["phy-0001", "phy-0002"]);
+    const missing = await fetch(`${url}/api/decks/alchemy/cards`);
+    expect(missing.status).toBe(404);
+    expect(await missing.json()).toEqual({ error: "unknown_subject" });
+  });
+
+  it("serves the built client, and the app shell for any other path", async () => {
+    clientDir = mkdtempSync(path.join(tmpdir(), "client-"));
+    writeFileSync(path.join(clientDir, "index.html"), "<!doctype html><title>shell</title>");
+    writeFileSync(path.join(clientDir, "asset.txt"), "static file");
+    const url = await start({ clientDir });
+    expect(await (await fetch(`${url}/asset.txt`)).text()).toBe("static file");
+    expect(await (await fetch(`${url}/some/deep/link`)).text()).toContain("<title>shell</title>");
+    expect((await fetch(`${url}/healthz`)).headers.get("content-type")).toContain("application/json");
+  });
+
+  it("works without a built client (API and sockets only)", async () => {
+    const url = await start({ clientDir: "/definitely/not/here" });
+    expect((await fetch(`${url}/`)).status).toBe(404);
+    expect((await fetch(`${url}/healthz`)).status).toBe(200);
+  });
+});
+
+describe("sockets", () => {
+  it("accept a connection on the same server", async () => {
+    const socket = connect(await start(), { transports: ["websocket"] });
+    await new Promise<void>((resolve) => socket.on("connect", () => resolve()));
+    expect(socket.connected).toBe(true);
+    socket.disconnect();
   });
 });

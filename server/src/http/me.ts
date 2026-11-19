@@ -1,6 +1,6 @@
 import express, { type NextFunction, type Request, type Response, type Router } from "express";
 import { z } from "zod";
-import { customCardSchema, deckNameSchema, type Card } from "@stemcharades/shared";
+import { customCardSchema, deckNameSchema, type Card, type CustomCard } from "@stemcharades/shared";
 import { userIdFromCookies } from "../auth/session.js";
 import type { Provider } from "../auth/providers.js";
 import { isBlocked } from "../game/blocklist.js";
@@ -17,7 +17,8 @@ export interface MeDeps {
 }
 
 const idParam = z.string().uuid();
-const customText = (c: z.infer<typeof customCardSchema>) => [c.prompt, c.topic, c.explanation, ...c.answers, ...c.forbidden, c.latex ?? ""].join(" ");
+/** Everything on a custom card that other players will read, for the blocklist check. */
+const customText = (c: CustomCard) => [c.prompt, c.topic, c.explanation, ...c.answers, ...c.forbidden].join(" ");
 
 /** The signed-in user's own data. Guests are unaffected: nothing here is needed to play. */
 export function meRouter(d: MeDeps): Router {
@@ -96,7 +97,7 @@ export function meRouter(d: MeDeps): Router {
 
   router.delete("/decks/:id/cards/:cardId", requireUser, h(async (req, res) => {
     const id = idParam.safeParse(req.params.id);
-    const cardId = idParam.safeParse(String(req.params.cardId).replace(/^cus-/, ""));
+    const cardId = idParam.safeParse(String(req.params.cardId).replace(repo.CUSTOM_CARD_PREFIX, ""));
     if (!id.success || !cardId.success || !(await repo.deleteCard(d.db!, me(res).id, id.data, cardId.data))) {
       return void res.status(404).json({ error: "unknown_card" });
     }
