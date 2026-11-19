@@ -1167,7 +1167,7 @@
     "course": "secondary-physics",
     "topic": "Waves",
     "level": 2,
-    "prompt": "What type of wave is sound: transverse or longitudinal?",
+    "prompt": "What type of wave is sound, judged by the direction its particles vibrate?",
     "answers": [
       "longitudinal",
       "longitudinal wave"

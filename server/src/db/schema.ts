@@ -1,4 +1,4 @@
-import { boolean, index, integer, jsonb, pgTable, primaryKey, real, text, timestamp, uniqueIndex, uuid } from "drizzle-orm/pg-core";
+import { index, integer, jsonb, pgTable, primaryKey, real, text, timestamp, uniqueIndex, uuid } from "drizzle-orm/pg-core";
 
 /**
  * Durable tables (Neon Postgres). Live rooms and rounds are never stored here: only the small summary
@@ -84,22 +84,4 @@ export const customCards = pgTable(
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
   },
   (t) => [index("custom_cards_deck_idx").on(t.deckId)],
-);
-
-/**
- * Cards the AI wrote during play, kept so the bank keeps growing across restarts instead of being rewritten.
- * Reporters are stored only as one-way hashes, never as addresses.
- */
-export const generatedCards = pgTable(
-  "generated_cards",
-  {
-    id: text("id").primaryKey(),
-    topicKey: text("topic_key").notNull(),
-    card: jsonb("card").notNull(),
-    served: integer("served").notNull().default(0),
-    reporters: jsonb("reporters").$type<string[]>().notNull().default([]),
-    retired: boolean("retired").notNull().default(false),
-    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
-  },
-  (t) => [index("generated_cards_topic_idx").on(t.topicKey)],
 );
