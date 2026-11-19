@@ -290,6 +290,33 @@ describe("rotation and the card picker", () => {
     const ps = [{ id: "p1", connected: true }, { id: "p2", connected: false }, { id: "p3", connected: true }];
     expect(playRounds(4, { players: ps }).map((s) => s.explainer)).toEqual(["p1", "p3", "p1", "p3"]);
   });
+  it("skips nobody when an earlier player leaves mid-cycle", () => {
+    const settings = { ...DEFAULT_SETTINGS, rounds: 10, roundSeconds: 60 as const };
+    const four = players(4);
+    let g = ok(newGame(), { type: "start", playerId: "p1" }, ctx({ settings, players: four })).game;
+    expect(g.round!.explainerId).toBe("p1");
+    // p1 leaves during their own round; p2 must still be next, not p3.
+    const three = four.slice(1);
+    g = ok(g, { type: "playerLeft", playerId: "p1" }, ctx({ now: 1000, settings, players: three })).game;
+    g = ok(g, { type: "tick" }, ctx({ now: 1000 + REVEAL_MS, settings, players: three })).game;
+    expect(g.round!.explainerId).toBe("p2");
+  });
+  it("gives a late joiner a turn at the end of the current cycle", () => {
+    const settings = { ...DEFAULT_SETTINGS, rounds: 10, roundSeconds: 60 as const };
+    let now = 0;
+    let ps = players(2);
+    let g = ok(newGame(), { type: "start", playerId: "p1" }, ctx({ settings, players: ps })).game;
+    const order = [g.round!.explainerId];
+    for (let i = 0; i < 4; i++) {
+      if (i === 0) ps = players(3); // p3 joins during the first round
+      now += 60_000;
+      g = ok(g, { type: "tick" }, ctx({ now, settings, players: ps })).game;
+      now += REVEAL_MS;
+      g = ok(g, { type: "tick" }, ctx({ now, settings, players: ps })).game;
+      order.push(g.round!.explainerId);
+    }
+    expect(order).toEqual(["p1", "p2", "p3", "p1", "p2"]);
+  });
   it("never repeats a card until the pool is exhausted", () => {
     const first = playRounds(6, { rng: Math.random }).map((s) => s.card);
     expect(new Set(first).size).toBe(6);

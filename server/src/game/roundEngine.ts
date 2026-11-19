@@ -53,8 +53,11 @@ export interface Game {
   phase: RoomPhase;
   round: Round | null;
   usedCardIds: string[];
-  /** Counts explainer picks so rotation survives players joining and leaving. */
-  rotation: number;
+  /**
+   * Who has explained in the current cycle. Tracking ids rather than a seat index keeps the order fair when
+   * players leave (nobody is skipped) or join (they take a turn at the end of this cycle).
+   */
+  explained: string[];
   roundNumber: number;
   revealEndsAt: number | null;
   scores: Record<string, number>;
@@ -92,7 +95,7 @@ export const newGame = (): Game => ({
   phase: "lobby",
   round: null,
   usedCardIds: [],
-  rotation: 0,
+  explained: [],
   roundNumber: 0,
   revealEndsAt: null,
   scores: {},
@@ -102,13 +105,12 @@ export const newGame = (): Game => ({
 const ok = (game: Game, effects: Effect[] = []): Step => ({ ok: true, game, effects });
 const fail = (error: ErrorCode): Step => ({ ok: false, error });
 
-function chooseExplainer(game: Game, ctx: Ctx): { id: string; rotation: number } {
-  const n = ctx.players.length;
-  for (let k = 0; k < n; k++) {
-    const idx = (game.rotation + k) % n;
-    if (ctx.players[idx]!.connected) return { id: ctx.players[idx]!.id, rotation: idx + 1 };
-  }
-  return { id: ctx.players[game.rotation % n]!.id, rotation: game.rotation + 1 };
+function chooseExplainer(game: Game, ctx: Ctx): { id: string; explained: string[] } {
+  const due = ctx.players.find((p) => p.connected && !game.explained.includes(p.id));
+  if (due) return { id: due.id, explained: [...game.explained, due.id] };
+  // Everyone present has had a turn: a new cycle starts from the first seat.
+  const first = ctx.players.find((p) => p.connected) ?? ctx.players[0]!;
+  return { id: first.id, explained: [first.id] };
 }
 
 function beginRound(game: Game, ctx: Ctx): Game {
@@ -119,7 +121,7 @@ function beginRound(game: Game, ctx: Ctx): Game {
     ...game,
     phase: "round",
     usedCardIds: pick.usedIds,
-    rotation: explainer.rotation,
+    explained: explainer.explained,
     roundNumber: number,
     revealEndsAt: null,
     round: {
