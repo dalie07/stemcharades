@@ -54,7 +54,8 @@ export function createLimits(now: () => number = Date.now): Limits {
     guess: new RateLimiter(5, 3, now), // a burst of 5, then 3 a second
     clue: new RateLimiter(5, 3, now),
     event: new RateLimiter(30, 15, now),
-    join: new RateLimiter(10, 10 / 60, now), // 10 attempts, then 10 a minute
+    // A whole class on school Wi-Fi shares one public address and joins at once, so the burst is a classroom.
+    join: new RateLimiter(40, 20 / 60, now),
     create: new RateLimiter(5, 5 / 60, now), // 5 rooms, then 5 a minute
     probe: new RateLimiter(30, 30 / 60, now), // room-code lookups
   };
@@ -76,4 +77,21 @@ export function clientIp(headers: Record<string, string | string[] | undefined>,
     if (last) return last;
   }
   return address;
+}
+
+/**
+ * The key per-address limits are counted under. One IPv6 subscriber is usually handed a whole /64, so
+ * counting single IPv6 addresses would let one person rotate through billions of them: the /64 is the unit.
+ * IPv4 (including IPv4-mapped IPv6 such as ::ffff:1.2.3.4) is used as it is.
+ */
+export function limitKey(ip: string | undefined): string {
+  if (!ip) return "unknown";
+  const mapped = /^::ffff:(\d+\.\d+\.\d+\.\d+)$/i.exec(ip);
+  if (mapped) return mapped[1]!;
+  if (!ip.includes(":")) return ip;
+  const [head = "", tail = ""] = ip.split("%")[0]!.toLowerCase().split("::");
+  const left = head ? head.split(":") : [];
+  const right = tail ? tail.split(":") : [];
+  const groups = ip.includes("::") ? [...left, ...Array<string>(Math.max(0, 8 - left.length - right.length)).fill("0"), ...right] : left;
+  return `${groups.slice(0, 4).map((g) => g.replace(/^0+(?=.)/, "")).join(":")}::/64`;
 }

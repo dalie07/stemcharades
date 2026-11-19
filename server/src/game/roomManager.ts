@@ -10,7 +10,7 @@ import {
 } from "@stemcharades/shared";
 import type { Card } from "@stemcharades/shared";
 import { newGame, type Game } from "./roundEngine.js";
-import { MAX_ROOMS, ROOM_IDLE_MS } from "../config.js";
+import { MAX_ROOMS, ROOM_IDLE_MS, UNCLAIMED_ROOM_MS } from "../config.js";
 
 export interface Player {
   id: string;
@@ -34,6 +34,8 @@ export interface Room {
   kicked: Set<string>;
   /** The host's private deck, used instead of the built-in cards. Held in memory like the rest of the room. */
   customDeck?: { id: string; name: string; cards: Card[] };
+  /** Whether any socket has ever taken a seat. Unclaimed rooms expire quickly. */
+  claimed: boolean;
   createdAt: number;
   lastActivityAt: number;
 }
@@ -58,6 +60,7 @@ export interface RoomManagerOptions {
   maxRooms?: number;
   maxPlayers?: number;
   idleMs?: number;
+  unclaimedMs?: number;
 }
 
 /** Owns the in-memory room map. No sockets in here: callers pass socket ids in. */
@@ -67,12 +70,14 @@ export class RoomManager {
   private maxRooms: number;
   private maxPlayers: number;
   private idleMs: number;
+  private unclaimedMs: number;
 
   constructor(opts: RoomManagerOptions = {}) {
     this.now = opts.now ?? Date.now;
     this.maxRooms = opts.maxRooms ?? MAX_ROOMS;
     this.maxPlayers = opts.maxPlayers ?? MAX_PLAYERS_PER_ROOM;
     this.idleMs = opts.idleMs ?? ROOM_IDLE_MS;
+    this.unclaimedMs = opts.unclaimedMs ?? UNCLAIMED_ROOM_MS;
   }
 
   get size() {
@@ -127,6 +132,7 @@ export class RoomManager {
       game: newGame(),
       players: [player],
       kicked: new Set(),
+      claimed: false,
       createdAt: t,
       lastActivityAt: t,
     };
@@ -171,6 +177,7 @@ export class RoomManager {
     player.connected = true;
     player.socketId = socketId;
     player.lastSeenAt = this.now();
+    room.claimed = true;
     room.lastActivityAt = this.now();
   }
 
@@ -252,11 +259,12 @@ export class RoomManager {
     return room;
   }
 
-  /** Remove rooms idle past the limit. Returns the removed codes. */
+  /** Remove rooms idle past the limit, and rooms nobody ever joined. Returns the removed codes. */
   sweep(): string[] {
     const removed: string[] = [];
     for (const [code, room] of this.rooms) {
-      if (this.now() - room.lastActivityAt > this.idleMs) {
+      const idle = this.now() - room.lastActivityAt;
+      if (idle > this.idleMs || (!room.claimed && idle > this.unclaimedMs)) {
         this.rooms.delete(code);
         removed.push(code);
       }

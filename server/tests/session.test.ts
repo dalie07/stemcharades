@@ -42,6 +42,11 @@ describe("cookies", () => {
     expect(parseCookies(undefined)).toEqual({});
     expect(parseCookies("garbage")).toEqual({});
   });
+  it("skip a malformed value instead of throwing (a forged header must not crash the server)", () => {
+    expect(parseCookies("bad=%E0; good=1")).toEqual({ good: "1" });
+    const token = createSessionToken(USER, SECRET);
+    expect(userIdFromCookies(`x=%E0%A4; sc_session=${encodeURIComponent(token)}`, SECRET)).toBe(USER);
+  });
   it("find the signed-in user, and ignore everything when no secret is configured", () => {
     const token = createSessionToken(USER, SECRET);
     const header = `other=1; sc_session=${encodeURIComponent(token)}`;

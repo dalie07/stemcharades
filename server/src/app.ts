@@ -5,7 +5,7 @@ import express from "express";
 import { Server } from "socket.io";
 import type { Card, ClientToServerEvents, ServerToClientEvents } from "@stemcharades/shared";
 import { loadProviders, type FetchFn, type Provider } from "./auth/providers.js";
-import { MAX_CONNECTIONS, MAX_MESSAGE_BYTES, TRUST_PROXY } from "./config.js";
+import { MAX_CONNECTIONS, MAX_CONNECTIONS_PER_IP, MAX_MESSAGE_BYTES, TRUST_PROXY } from "./config.js";
 import { getDeck, type Db } from "./db/repo.js";
 import { GameRunner } from "./game/gameRunner.js";
 import { RoomManager } from "./game/roomManager.js";
@@ -16,7 +16,7 @@ import { roomsRouter } from "./http/rooms.js";
 import { securityHeaders } from "./http/security.js";
 import { createPersistence } from "./persist.js";
 import { registerHandlers, type GameServer, type SocketData } from "./realtime/handlers.js";
-import { createLimits, type Limits } from "./realtime/rateLimit.js";
+import { clientIp, createLimits, limitKey, type Limits } from "./realtime/rateLimit.js";
 
 export interface AppOptions {
   /** Directory holding the built client. Omit to skip static hosting. */
@@ -102,15 +102,27 @@ export function createApp(options: AppOptions = {}): App {
   }
 
   const httpServer = createServer(app);
-  const io: GameServer = new Server<ClientToServerEvents, ServerToClientEvents, Record<string, never>, SocketData>(
-    httpServer,
+  const io: GameServer = new Server<ClientToServerEvents, ServerToClientEvents, Record<string, never>, SocketData>(httpServer, {
     // Oversized messages close the connection instead of being buffered.
-    { maxHttpBufferSize: MAX_MESSAGE_BYTES },
-  );
-  // Resource cap: a hard ceiling on simultaneous connections for the 512 MB instance.
-  io.use((_socket, next) => {
-    if (io.engine.clientsCount > MAX_CONNECTIONS) next(new Error("server_full"));
-    else next();
+    maxHttpBufferSize: MAX_MESSAGE_BYTES,
+    // A page on another site must not open a game connection that carries this site's session cookie.
+    allowRequest: (req, callback) => callback(null, sameOrigin(req.headers.origin, req.headers.host)),
+  });
+
+  // Resource caps for the 512 MB instance: a ceiling on connections overall, and per address so one client
+  // cannot take them all.
+  const perIp = new Map<string, number>();
+  io.use((socket, next) => {
+    const key = limitKey(clientIp(socket.handshake.headers, socket.handshake.address, TRUST_PROXY));
+    const open = perIp.get(key) ?? 0;
+    if (io.engine.clientsCount > MAX_CONNECTIONS || open >= MAX_CONNECTIONS_PER_IP) return next(new Error("server_full"));
+    perIp.set(key, open + 1);
+    socket.once("disconnect", () => {
+      const left = (perIp.get(key) ?? 1) - 1;
+      if (left > 0) perIp.set(key, left);
+      else perIp.delete(key);
+    });
+    next();
   });
   registerHandlers(io, rooms, runner, limits, {
     sessionSecret: authEnabled ? sessionSecret : undefined,
@@ -118,4 +130,17 @@ export function createApp(options: AppOptions = {}): App {
   });
 
   return { httpServer, io, rooms, runner, limits };
+}
+
+/**
+ * Browsers always send Origin on a WebSocket or polling request, so a mismatch means another site's page.
+ * Clients that are not browsers send none and are let through: they carry no victim's cookies.
+ */
+export function sameOrigin(origin: string | undefined, host: string | undefined): boolean {
+  if (!origin) return true;
+  try {
+    return new URL(origin).host === host;
+  } catch {
+    return false;
+  }
 }

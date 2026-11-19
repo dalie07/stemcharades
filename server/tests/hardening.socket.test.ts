@@ -99,16 +99,13 @@ describe("rate limits", () => {
     expect((await result).result).toBe("wrong");
   });
 
-  it("caps fresh joins per IP address", async () => {
-    const created = (await (await post({ nickname: "Host" })).json()) as CreateRoomResponse;
+  it("lets a whole class on one address join at once, then caps fresh joins per address", async () => {
+    const pool = Array.from({ length: 5 }, () => client());
     const results: JoinAck[] = [];
-    for (let i = 0; i < 12; i++) {
-      const s = client();
-      results.push(await join(s, { code: created.code, nickname: `Guest${i}` }));
-    }
-    const limited = results.filter((r) => !r.ok && r.error === "rate_limited");
-    expect(limited.length).toBeGreaterThanOrEqual(1);
-    expect(results.filter((r) => r.ok).length).toBeLessThanOrEqual(10);
+    for (let i = 0; i < 45; i++) results.push(await join(pool[i % 5]!, { code: "ZZZZZ", nickname: `Guest${i}` }));
+    const errors = results.map((r) => (r.ok ? "ok" : r.error));
+    expect(errors.slice(0, 40).every((e) => e === "unknown_room")).toBe(true); // a classroom burst is never limited
+    expect(errors.slice(40)).toContain("rate_limited");
   });
 
   it("caps room creation per IP, with a Retry-After header", async () => {
@@ -132,6 +129,38 @@ describe("rate limits", () => {
 });
 
 describe("resource caps and malformed input", () => {
+  it("refuses a socket from another site's page, but not one with no Origin or the same origin", async () => {
+    const handshake = (origin?: string) =>
+      fetch(`${url}/socket.io/?EIO=4&transport=polling`, { headers: origin ? { origin } : {} }).then((r) => r.status);
+    expect(await handshake("https://evil.example")).toBe(403);
+    expect(await handshake("not a url")).toBe(403);
+    expect(await handshake()).toBe(200);
+    expect(await handshake(url)).toBe(200);
+  });
+
+  it("caps open connections per address and frees the slot on disconnect", async () => {
+    await new Promise<void>((r) => void app.io.close(() => r()));
+    const { MAX_CONNECTIONS_PER_IP } = await import("../src/config.js");
+    app = createApp({ cards: [CARD], clock: () => now, rng: () => 0 });
+    await new Promise<void>((r) => app.httpServer.listen(0, r));
+    url = `http://localhost:${(app.httpServer.address() as AddressInfo).port}`;
+    const opened = await Promise.all(
+      Array.from({ length: MAX_CONNECTIONS_PER_IP }, () => {
+        const s = client();
+        return new Promise<void>((r) => s.once("connect", () => r()));
+      }),
+    );
+    expect(opened.length).toBe(MAX_CONNECTIONS_PER_IP);
+    const extra = client();
+    const refused = await new Promise<string>((r) => extra.once("connect_error", (e) => r(e.message)));
+    expect(refused).toBe("server_full");
+    sockets[0]!.disconnect();
+    await sleep(100);
+    const again = client();
+    await new Promise<void>((r) => again.once("connect", () => r()));
+    expect(again.connected).toBe(true);
+  });
+
   it("closes a connection that sends an oversized message, and the server keeps running", async () => {
     const big = client();
     await once(big, "connect");

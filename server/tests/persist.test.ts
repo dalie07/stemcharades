@@ -7,7 +7,7 @@ import { snapshotFinished } from "../src/persist.js";
 const player = (id: string, userId?: string): Player => ({ id, nickname: id, ...(userId ? { userId } : {}), sessionTokenHash: "h", connected: true, joinedAt: 0, lastSeenAt: 0, socketId: null });
 
 function room(players: Player[], game: Partial<Game>, customDeck?: Room["customDeck"]): Room {
-  return { code: "ABCDE", hostId: players[0]!.id, settings: DEFAULT_SETTINGS, game: { ...newGame(), phase: "finished", ...game }, players, kicked: new Set(), createdAt: 0, lastActivityAt: 0, ...(customDeck ? { customDeck } : {}) };
+  return { code: "ABCDE", hostId: players[0]!.id, settings: DEFAULT_SETTINGS, game: { ...newGame(), phase: "finished", ...game }, players, kicked: new Set(), claimed: true, createdAt: 0, lastActivityAt: 0, ...(customDeck ? { customDeck } : {}) };
 }
 const rec = (n: number, cardId: string, explainerId: string, correct: string[], fastestMs: number | null) => ({ number: n, cardId, explainerId, outcome: "timeout" as const, correct, fastestMs });
 

@@ -8,7 +8,7 @@ import {
 import { isBlocked } from "../game/blocklist.js";
 import type { RoomManager } from "../game/roomManager.js";
 import { userIdFromCookies } from "../auth/session.js";
-import type { Limits } from "../realtime/rateLimit.js";
+import { limitKey, type Limits } from "../realtime/rateLimit.js";
 
 export function roomsRouter(rooms: RoomManager, limits: Limits, sessionSecret?: string): Router {
   const router = express.Router();
@@ -20,7 +20,7 @@ export function roomsRouter(rooms: RoomManager, limits: Limits, sessionSecret?: 
   };
 
   router.post("/", (req, res) => {
-    if (!limits.create.take(req.ip ?? "unknown")) return tooMany(res);
+    if (!limits.create.take(limitKey(req.ip))) return tooMany(res);
     const body = createRoomBodySchema.safeParse(req.body);
     if (!body.success) {
       res.status(400).json({ error: "invalid_payload" });
@@ -44,7 +44,7 @@ export function roomsRouter(rooms: RoomManager, limits: Limits, sessionSecret?: 
   });
 
   router.get("/:code", (req, res) => {
-    if (!limits.probe.take(req.ip ?? "unknown")) return tooMany(res);
+    if (!limits.probe.take(limitKey(req.ip))) return tooMany(res);
     const code = roomCodeSchema.safeParse(req.params.code);
     if (!code.success) {
       res.status(400).json({ error: "invalid_payload" });

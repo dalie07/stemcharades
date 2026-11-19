@@ -34,11 +34,17 @@ export function readSessionToken(token: string | undefined, secret: string, now 
   return userId;
 }
 
+/** Anyone can send any Cookie header, so a malformed value is skipped rather than thrown. */
 export function parseCookies(header: string | undefined): Record<string, string> {
   const out: Record<string, string> = {};
   for (const part of (header ?? "").split(";")) {
     const i = part.indexOf("=");
-    if (i > 0) out[part.slice(0, i).trim()] = decodeURIComponent(part.slice(i + 1).trim());
+    if (i <= 0) continue;
+    try {
+      out[part.slice(0, i).trim()] = decodeURIComponent(part.slice(i + 1).trim());
+    } catch {
+      /* not valid percent-encoding: ignore this cookie */
+    }
   }
   return out;
 }

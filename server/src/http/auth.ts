@@ -4,7 +4,7 @@ import { exchangeCode, type FetchFn, type Provider } from "../auth/providers.js"
 import { createSessionToken, parseCookies, SESSION_COOKIE, SESSION_TTL_S, setCookie, STATE_COOKIE } from "../auth/session.js";
 import type { Db } from "../db/repo.js";
 import { upsertUser } from "../db/repo.js";
-import type { Limits } from "../realtime/rateLimit.js";
+import { limitKey, type Limits } from "../realtime/rateLimit.js";
 
 export interface AuthDeps {
   db: Db;
@@ -25,7 +25,7 @@ export function authRouter(d: AuthDeps): Router {
   const find = (id: string) => d.providers.find((p) => p.id === id);
 
   router.get("/:provider", (req, res) => {
-    if (!d.limits.probe.take(req.ip ?? "unknown")) return void res.status(429).json({ error: "rate_limited" });
+    if (!d.limits.probe.take(limitKey(req.ip))) return void res.status(429).json({ error: "rate_limited" });
     const p = find(req.params.provider ?? "");
     if (!p) return void res.status(404).json({ error: "unknown_provider" });
     const state = randomBytes(16).toString("hex");
@@ -41,7 +41,7 @@ export function authRouter(d: AuthDeps): Router {
   });
 
   router.get("/:provider/callback", async (req, res) => {
-    if (!d.limits.probe.take(req.ip ?? "unknown")) return void res.status(429).json({ error: "rate_limited" });
+    if (!d.limits.probe.take(limitKey(req.ip))) return void res.status(429).json({ error: "rate_limited" });
     const p = find(req.params.provider ?? "");
     if (!p) return void res.status(404).json({ error: "unknown_provider" });
 

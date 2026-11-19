@@ -114,12 +114,20 @@ describe("host controls and leaving", () => {
 
 describe("idle expiry", () => {
   it("removes a room idle for more than 30 minutes", () => {
-    const { rooms, room, clock } = setup();
+    const { rooms, room, clock, player } = setup();
+    rooms.attach(room.code, player.id, "s");
     clock.advance(29 * 60_000);
     expect(rooms.sweep()).toEqual([]);
     clock.advance(2 * 60_000);
     expect(rooms.sweep()).toEqual([room.code]);
     expect(rooms.get(room.code)).toBeUndefined();
+  });
+  it("removes a room nobody ever joined after 2 minutes, so the room cap cannot be filled with empty rooms", () => {
+    const { rooms, room, clock } = setup();
+    clock.advance(119_000);
+    expect(rooms.sweep()).toEqual([]);
+    clock.advance(2_000);
+    expect(rooms.sweep()).toEqual([room.code]);
   });
   it("activity keeps a room alive", () => {
     const { rooms, room, clock, player } = setup();

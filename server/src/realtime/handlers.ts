@@ -18,7 +18,7 @@ import type { Card } from "@stemcharades/shared";
 import { userIdFromCookies } from "../auth/session.js";
 import type { RoomManager, Seat } from "../game/roomManager.js";
 import type { GameRunner, RunResult } from "../game/gameRunner.js";
-import { clientIp, type Limits } from "./rateLimit.js";
+import { clientIp, limitKey, type Limits } from "./rateLimit.js";
 
 export interface SocketData {
   code?: string;
@@ -59,7 +59,7 @@ export function registerHandlers(
     // The session cookie travels with the WebSocket handshake. It is signed, so it cannot be forged.
     const uid = userIdFromCookies(socket.handshake.headers.cookie, services.sessionSecret);
     if (uid) socket.data.userId = uid;
-    const ip = clientIp(socket.handshake.headers, socket.handshake.address, TRUST_PROXY);
+    const ip = limitKey(clientIp(socket.handshake.headers, socket.handshake.address, TRUST_PROXY));
     const sendError = (code: ErrorCode) => socket.emit(EVENTS.error, { code, message: ERROR_MESSAGES[code] });
     const broadcast = (code: string) => broadcastRoom(io, rooms, runner, code);
 
