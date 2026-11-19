@@ -3,8 +3,9 @@
     "id": "phy-0001",
     "type": "term",
     "subject": "Physics",
+    "course": "secondary-physics",
     "topic": "Mechanics",
-    "level": 1,
+    "level": 2,
     "prompt": "Velocity",
     "answers": [
       "velocity"
@@ -22,8 +23,9 @@
     "id": "phy-0002",
     "type": "formula",
     "subject": "Physics",
+    "course": "secondary-physics",
     "topic": "Mechanics",
-    "level": 1,
+    "level": 2,
     "prompt": "Newton's second law",
     "latex": "F=ma",
     "answers": [
@@ -45,8 +47,9 @@
     "id": "phy-0003",
     "type": "term",
     "subject": "Physics",
+    "course": "secondary-physics",
     "topic": "Energy",
-    "level": 1,
+    "level": 2,
     "prompt": "Kinetic energy",
     "answers": [
       "kinetic energy",
@@ -65,8 +68,9 @@
     "id": "phy-0004",
     "type": "formula",
     "subject": "Physics",
+    "course": "secondary-physics",
     "topic": "Electricity",
-    "level": 1,
+    "level": 2,
     "prompt": "Ohm's law",
     "latex": "V=IR",
     "answers": [
@@ -86,7 +90,8 @@
     "id": "phy-0005",
     "type": "term",
     "subject": "Physics",
-    "topic": "Thermodynamics",
+    "course": "university-thermodynamics",
+    "topic": "Laws of thermodynamics",
     "level": 3,
     "prompt": "Entropy",
     "answers": [
@@ -105,8 +110,9 @@
     "id": "phy-0006",
     "type": "term",
     "subject": "Physics",
+    "course": "secondary-physics",
     "topic": "Waves",
-    "level": 1,
+    "level": 2,
     "prompt": "Refraction",
     "answers": [
       "refraction"
@@ -124,8 +130,9 @@
     "id": "phy-0007",
     "type": "formula",
     "subject": "Physics",
+    "course": "university-modern-physics",
     "topic": "Relativity",
-    "level": 2,
+    "level": 3,
     "prompt": "Mass-energy equivalence",
     "latex": "E=mc^2",
     "answers": [
@@ -148,6 +155,7 @@
     "id": "phy-0008",
     "type": "term",
     "subject": "Physics",
+    "course": "secondary-physics",
     "topic": "Waves",
     "level": 2,
     "prompt": "Doppler effect",
@@ -169,8 +177,9 @@
     "id": "phy-0009",
     "type": "term",
     "subject": "Physics",
+    "course": "secondary-physics",
     "topic": "Electricity",
-    "level": 1,
+    "level": 2,
     "prompt": "Resistor",
     "answers": [
       "resistor"
@@ -188,8 +197,9 @@
     "id": "phy-0010",
     "type": "formula",
     "subject": "Physics",
+    "course": "university-mechanics",
     "topic": "Gravitation",
-    "level": 2,
+    "level": 3,
     "prompt": "Newton's law of gravitation",
     "latex": "F=G\\frac{m_1 m_2}{r^2}",
     "answers": [
@@ -211,8 +221,9 @@
     "id": "phy-0011",
     "type": "question",
     "subject": "Physics",
+    "course": "secondary-physics",
     "topic": "Mechanics",
-    "level": 1,
+    "level": 2,
     "prompt": "What is the SI unit of force?",
     "answers": [
       "newton",
@@ -231,7 +242,8 @@
     "id": "phy-0012",
     "type": "term",
     "subject": "Physics",
-    "topic": "Nuclear",
+    "course": "secondary-physics",
+    "topic": "Atoms",
     "level": 2,
     "prompt": "Half-life",
     "answers": [
@@ -251,7 +263,8 @@
     "id": "phy-0013",
     "type": "term",
     "subject": "Physics",
-    "topic": "Quantum",
+    "course": "university-modern-physics",
+    "topic": "Quantum physics",
     "level": 3,
     "prompt": "Photoelectric effect",
     "answers": [
@@ -271,8 +284,9 @@
     "id": "phy-0014",
     "type": "term",
     "subject": "Physics",
+    "course": "secondary-physics",
     "topic": "Mechanics",
-    "level": 1,
+    "level": 2,
     "prompt": "Momentum",
     "answers": [
       "momentum"
@@ -290,8 +304,9 @@
     "id": "phy-0015",
     "type": "formula",
     "subject": "Physics",
+    "course": "secondary-physics",
     "topic": "Waves",
-    "level": 1,
+    "level": 2,
     "prompt": "Wave equation",
     "latex": "v=f\\lambda",
     "answers": [
@@ -311,8 +326,9 @@
     "id": "phy-0016",
     "type": "term",
     "subject": "Physics",
-    "topic": "Materials",
-    "level": 3,
+    "course": "advanced-condensed-matter",
+    "topic": "Superconductivity",
+    "level": 4,
     "prompt": "Superconductor",
     "answers": [
       "superconductor",
@@ -331,7 +347,8 @@
     "id": "phy-0017",
     "type": "term",
     "subject": "Physics",
-    "topic": "Thermodynamics",
+    "course": "secondary-physics",
+    "topic": "Energy",
     "level": 2,
     "prompt": "Specific heat capacity",
     "answers": [
@@ -352,8 +369,9 @@
     "id": "phy-0018",
     "type": "question",
     "subject": "Physics",
-    "topic": "Relativity",
-    "level": 1,
+    "course": "secondary-physics",
+    "topic": "Space",
+    "level": 2,
     "prompt": "Roughly what is the speed of light in a vacuum, in metres per second?",
     "answers": [
       "3x10^8",
@@ -375,8 +393,9 @@
     "id": "phy-0019",
     "type": "term",
     "subject": "Physics",
-    "topic": "Electricity",
-    "level": 2,
+    "course": "university-electromagnetism",
+    "topic": "Circuits",
+    "level": 3,
     "prompt": "Capacitor",
     "answers": [
       "capacitor"
@@ -395,8 +414,9 @@
     "id": "phy-0020",
     "type": "term",
     "subject": "Physics",
+    "course": "university-modern-physics",
     "topic": "Astrophysics",
-    "level": 2,
+    "level": 3,
     "prompt": "Black hole",
     "answers": [
       "black hole"
@@ -414,8 +434,9 @@
     "id": "phy-0021",
     "type": "term",
     "subject": "Physics",
+    "course": "secondary-physics",
     "topic": "Mechanics",
-    "level": 1,
+    "level": 2,
     "prompt": "Acceleration",
     "answers": [
       "acceleration"
@@ -434,8 +455,9 @@
     "id": "phy-0022",
     "type": "formula",
     "subject": "Physics",
+    "course": "secondary-physics",
     "topic": "Energy",
-    "level": 1,
+    "level": 2,
     "prompt": "Work done",
     "latex": "W=Fs",
     "answers": [
@@ -456,8 +478,9 @@
     "id": "phy-0023",
     "type": "term",
     "subject": "Physics",
+    "course": "secondary-physics",
     "topic": "Energy",
-    "level": 1,
+    "level": 2,
     "prompt": "Power",
     "answers": [
       "power"
@@ -476,8 +499,9 @@
     "id": "phy-0024",
     "type": "formula",
     "subject": "Physics",
+    "course": "secondary-physics",
     "topic": "Energy",
-    "level": 1,
+    "level": 2,
     "prompt": "Gravitational potential energy",
     "latex": "E_p=mgh",
     "answers": [
@@ -497,8 +521,9 @@
     "id": "phy-0025",
     "type": "formula",
     "subject": "Physics",
+    "course": "secondary-physics",
     "topic": "Matter",
-    "level": 1,
+    "level": 2,
     "prompt": "Pressure",
     "latex": "p=\\frac{F}{A}",
     "answers": [
@@ -517,8 +542,9 @@
     "id": "phy-0026",
     "type": "formula",
     "subject": "Physics",
+    "course": "secondary-physics",
     "topic": "Matter",
-    "level": 1,
+    "level": 2,
     "prompt": "Density",
     "latex": "\\rho=\\frac{m}{V}",
     "answers": [
@@ -537,8 +563,9 @@
     "id": "phy-0027",
     "type": "term",
     "subject": "Physics",
+    "course": "secondary-physics",
     "topic": "Waves",
-    "level": 1,
+    "level": 2,
     "prompt": "Frequency",
     "answers": [
       "frequency"
@@ -557,8 +584,9 @@
     "id": "phy-0028",
     "type": "term",
     "subject": "Physics",
+    "course": "secondary-physics",
     "topic": "Waves",
-    "level": 1,
+    "level": 2,
     "prompt": "Wavelength",
     "answers": [
       "wavelength"
@@ -577,8 +605,9 @@
     "id": "phy-0029",
     "type": "term",
     "subject": "Physics",
+    "course": "secondary-physics",
     "topic": "Waves",
-    "level": 1,
+    "level": 2,
     "prompt": "Reflection",
     "answers": [
       "reflection"
@@ -597,6 +626,7 @@
     "id": "phy-0030",
     "type": "term",
     "subject": "Physics",
+    "course": "secondary-physics",
     "topic": "Waves",
     "level": 2,
     "prompt": "Total internal reflection",
@@ -618,6 +648,7 @@
     "id": "phy-0031",
     "type": "term",
     "subject": "Physics",
+    "course": "secondary-physics",
     "topic": "Waves",
     "level": 2,
     "prompt": "Diffraction",
@@ -638,8 +669,9 @@
     "id": "phy-0032",
     "type": "term",
     "subject": "Physics",
-    "topic": "Waves",
-    "level": 2,
+    "course": "university-electromagnetism",
+    "topic": "Optics",
+    "level": 3,
     "prompt": "Interference",
     "answers": [
       "interference"
@@ -658,8 +690,9 @@
     "id": "phy-0033",
     "type": "term",
     "subject": "Physics",
-    "topic": "Waves",
-    "level": 2,
+    "course": "university-mechanics",
+    "topic": "Oscillations",
+    "level": 3,
     "prompt": "Standing wave",
     "answers": [
       "standing wave",
@@ -679,8 +712,9 @@
     "id": "phy-0034",
     "type": "term",
     "subject": "Physics",
-    "topic": "Fields",
-    "level": 2,
+    "course": "university-electromagnetism",
+    "topic": "Electric fields",
+    "level": 3,
     "prompt": "Electric field",
     "answers": [
       "electric field"
@@ -698,8 +732,9 @@
     "id": "phy-0035",
     "type": "term",
     "subject": "Physics",
+    "course": "secondary-physics",
     "topic": "Fields",
-    "level": 1,
+    "level": 2,
     "prompt": "Magnetic field",
     "answers": [
       "magnetic field"
@@ -718,7 +753,8 @@
     "id": "phy-0036",
     "type": "term",
     "subject": "Physics",
-    "topic": "Fields",
+    "course": "university-electromagnetism",
+    "topic": "Induction",
     "level": 3,
     "prompt": "Electromagnetic induction",
     "answers": [
@@ -739,6 +775,7 @@
     "id": "phy-0037",
     "type": "term",
     "subject": "Physics",
+    "course": "secondary-physics",
     "topic": "Electricity",
     "level": 2,
     "prompt": "Transformer",
@@ -759,8 +796,9 @@
     "id": "phy-0038",
     "type": "term",
     "subject": "Physics",
+    "course": "secondary-physics",
     "topic": "Electricity",
-    "level": 1,
+    "level": 2,
     "prompt": "Alternating current",
     "answers": [
       "alternating current",
@@ -779,8 +817,9 @@
     "id": "phy-0039",
     "type": "term",
     "subject": "Physics",
+    "course": "secondary-physics",
     "topic": "Electricity",
-    "level": 1,
+    "level": 2,
     "prompt": "Series circuit",
     "answers": [
       "series circuit",
@@ -799,8 +838,9 @@
     "id": "phy-0040",
     "type": "term",
     "subject": "Physics",
+    "course": "secondary-physics",
     "topic": "Electricity",
-    "level": 1,
+    "level": 2,
     "prompt": "Parallel circuit",
     "answers": [
       "parallel circuit"
@@ -819,6 +859,7 @@
     "id": "phy-0041",
     "type": "term",
     "subject": "Physics",
+    "course": "secondary-physics",
     "topic": "Mechanics",
     "level": 2,
     "prompt": "Terminal velocity",
@@ -839,8 +880,9 @@
     "id": "phy-0042",
     "type": "term",
     "subject": "Physics",
-    "topic": "Mechanics",
-    "level": 2,
+    "course": "university-mechanics",
+    "topic": "Kinematics",
+    "level": 3,
     "prompt": "Projectile motion",
     "answers": [
       "projectile motion",
@@ -860,8 +902,9 @@
     "id": "phy-0043",
     "type": "term",
     "subject": "Physics",
-    "topic": "Mechanics",
-    "level": 2,
+    "course": "university-mechanics",
+    "topic": "Circular motion",
+    "level": 3,
     "prompt": "Centripetal force",
     "answers": [
       "centripetal force"
@@ -880,8 +923,9 @@
     "id": "phy-0044",
     "type": "term",
     "subject": "Physics",
+    "course": "secondary-physics",
     "topic": "Mechanics",
-    "level": 1,
+    "level": 2,
     "prompt": "Moment",
     "answers": [
       "moment",
@@ -902,8 +946,9 @@
     "id": "phy-0045",
     "type": "formula",
     "subject": "Physics",
+    "course": "secondary-physics",
     "topic": "Materials",
-    "level": 1,
+    "level": 2,
     "prompt": "Hooke's law",
     "latex": "F=kx",
     "answers": [
@@ -924,8 +969,9 @@
     "id": "phy-0046",
     "type": "term",
     "subject": "Physics",
+    "course": "secondary-physics",
     "topic": "Energy",
-    "level": 1,
+    "level": 2,
     "prompt": "Conservation of energy",
     "answers": [
       "conservation of energy",
@@ -944,7 +990,8 @@
     "id": "phy-0047",
     "type": "term",
     "subject": "Physics",
-    "topic": "Nuclear",
+    "course": "secondary-physics",
+    "topic": "Atoms",
     "level": 2,
     "prompt": "Radioactive decay",
     "answers": [
@@ -965,7 +1012,8 @@
     "id": "phy-0048",
     "type": "term",
     "subject": "Physics",
-    "topic": "Nuclear",
+    "course": "secondary-physics",
+    "topic": "Atoms",
     "level": 2,
     "prompt": "Nuclear fission",
     "answers": [
@@ -986,7 +1034,8 @@
     "id": "phy-0049",
     "type": "term",
     "subject": "Physics",
-    "topic": "Nuclear",
+    "course": "secondary-physics",
+    "topic": "Atoms",
     "level": 2,
     "prompt": "Nuclear fusion",
     "answers": [
@@ -1007,7 +1056,8 @@
     "id": "phy-0050",
     "type": "term",
     "subject": "Physics",
-    "topic": "Nuclear",
+    "course": "secondary-physics",
+    "topic": "Atoms",
     "level": 2,
     "prompt": "Alpha particle",
     "answers": [
@@ -1029,7 +1079,8 @@
     "id": "phy-0051",
     "type": "term",
     "subject": "Physics",
-    "topic": "Nuclear",
+    "course": "secondary-physics",
+    "topic": "Atoms",
     "level": 2,
     "prompt": "Gamma ray",
     "answers": [
@@ -1051,7 +1102,8 @@
     "id": "phy-0052",
     "type": "term",
     "subject": "Physics",
-    "topic": "Thermodynamics",
+    "course": "secondary-physics",
+    "topic": "Matter",
     "level": 2,
     "prompt": "Absolute zero",
     "answers": [
@@ -1070,7 +1122,8 @@
     "id": "phy-0053",
     "type": "term",
     "subject": "Physics",
-    "topic": "Thermodynamics",
+    "course": "university-thermodynamics",
+    "topic": "Kinetic theory",
     "level": 3,
     "prompt": "Brownian motion",
     "answers": [
@@ -1090,8 +1143,9 @@
     "id": "phy-0054",
     "type": "question",
     "subject": "Physics",
+    "course": "secondary-physics",
     "topic": "Electricity",
-    "level": 1,
+    "level": 2,
     "prompt": "What is the unit of electrical resistance?",
     "answers": [
       "ohm",
@@ -1110,8 +1164,9 @@
     "id": "phy-0055",
     "type": "question",
     "subject": "Physics",
+    "course": "secondary-physics",
     "topic": "Waves",
-    "level": 1,
+    "level": 2,
     "prompt": "What type of wave is sound: transverse or longitudinal?",
     "answers": [
       "longitudinal",
@@ -1131,8 +1186,9 @@
     "id": "phy-0056",
     "type": "question",
     "subject": "Physics",
+    "course": "secondary-physics",
     "topic": "Energy",
-    "level": 1,
+    "level": 2,
     "prompt": "What is the SI unit of energy?",
     "answers": [
       "joule",
@@ -1151,8 +1207,9 @@
     "id": "phy-0057",
     "type": "question",
     "subject": "Physics",
+    "course": "secondary-physics",
     "topic": "Atoms",
-    "level": 1,
+    "level": 2,
     "prompt": "What particle carries a negative charge in an atom?",
     "answers": [
       "electron",
@@ -1172,8 +1229,9 @@
     "id": "phy-0058",
     "type": "question",
     "subject": "Physics",
+    "course": "secondary-physics",
     "topic": "Waves",
-    "level": 1,
+    "level": 2,
     "prompt": "Which colour of visible light has the longest wavelength?",
     "answers": [
       "red"
@@ -1191,8 +1249,9 @@
     "id": "phy-0059",
     "type": "term",
     "subject": "Physics",
-    "topic": "Quantum",
-    "level": 2,
+    "course": "university-modern-physics",
+    "topic": "Quantum physics",
+    "level": 3,
     "prompt": "Photon",
     "answers": [
       "photon",
@@ -1212,7 +1271,8 @@
     "id": "phy-0060",
     "type": "term",
     "subject": "Physics",
-    "topic": "Quantum",
+    "course": "university-modern-physics",
+    "topic": "Quantum physics",
     "level": 3,
     "prompt": "Wave-particle duality",
     "answers": [
