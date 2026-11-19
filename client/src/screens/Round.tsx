@@ -1,145 +1,138 @@
-import { useState } from "react";
-import { MAX_CLUE_LENGTH, type RoomView, type RoundView } from "@stemcharades/shared";
-import { Formula } from "../components/Formula";
-import { useCountdown } from "../components/useCountdown";
+import { useState, type FormEvent } from "react";
+import { MAX_CLUE_LENGTH, MAX_GUESS_LENGTH, type RoomView, type RoundView } from "@stemcharades/shared";
+import { CardFrame, DontSay } from "../components/CardFrame";
+import { Timer } from "../components/Timer";
+import { Button, Notice, Screen, inputClass, mutedClass } from "../components/ui";
+import { useCountdown } from "../hooks/useCountdown";
 import { useGameStore, type Session } from "../state/gameStore";
 import { sendClue, sendGuess, skipRound } from "../state/socket";
 
-const Shell = ({ children }: { children: React.ReactNode }) => (
-  <main className="mx-auto flex min-h-dvh max-w-md flex-col items-center gap-4 p-4 text-center">{children}</main>
-);
+/** A live round. The explainer and the guessers get different screens, built from different server views. */
+export function Round({ room, session }: { room: RoomView; session: Session }) {
+  const round = room.round!;
+  const nameOf = (id: string) => room.players.find((p) => p.id === id)?.nickname;
+  const gotIt = round.guessedCorrect.map(nameOf).filter(Boolean).join(", ");
+  const secondsLeft = useCountdown(round.endsAt);
 
-function Header({ round }: { round: RoundView }) {
-  const left = useCountdown(round.endsAt);
   return (
-    <div className="flex w-full items-center justify-between">
-      <span className="text-sm text-slate-400">
-        Round {round.number}/{round.totalRounds}
-      </span>
-      <span className={`text-3xl font-bold tabular-nums ${left <= 10 ? "text-red-400" : ""}`} role="timer">
-        {left}s
-      </span>
-    </div>
+    <Screen>
+      <div className="flex w-full items-center justify-between">
+        <span className={`text-sm ${mutedClass}`}>
+          Round {round.number}/{round.totalRounds}
+        </span>
+        <Timer seconds={secondsLeft} />
+      </div>
+
+      {session.playerId === round.explainerId ? (
+        <Explain round={round} />
+      ) : (
+        <Guess round={round} explainer={nameOf(round.explainerId) ?? "Someone"} hasIt={round.guessedCorrect.includes(session.playerId)} />
+      )}
+
+      {gotIt ? (
+        <p className="text-green-400" aria-live="polite">
+          ✓ Got it: {gotIt}
+        </p>
+      ) : (
+        <p className={mutedClass}>Nobody has it yet.</p>
+      )}
+    </Screen>
   );
 }
 
-function GotIt({ round, room }: { round: RoundView; room: RoomView }) {
-  const names = round.guessedCorrect.map((id) => room.players.find((p) => p.id === id)?.nickname).filter(Boolean);
-  return names.length ? (
-    <p className="text-green-400" aria-live="polite">✓ Got it: {names.join(", ")}</p>
-  ) : (
-    <p className="text-slate-400">Nobody has it yet.</p>
+/** A one-line text form that clears itself after sending. */
+interface SendFormProps {
+  label: string;
+  placeholder: string;
+  button: string;
+  maxLength: number;
+  onSend: (text: string) => void;
+}
+
+function SendForm({ label, placeholder, button, maxLength, onSend }: SendFormProps) {
+  const [text, setText] = useState("");
+  function submit(e: FormEvent) {
+    e.preventDefault();
+    const trimmed = text.trim();
+    if (!trimmed) return;
+    onSend(trimmed);
+    setText("");
+  }
+  return (
+    <form onSubmit={submit} className="flex w-full gap-2">
+      <input
+        aria-label={label}
+        className={inputClass}
+        maxLength={maxLength}
+        value={text}
+        onChange={(e) => setText(e.target.value)}
+        placeholder={placeholder}
+        autoComplete="off"
+        autoFocus
+      />
+      <Button type="submit">{button}</Button>
+    </form>
   );
 }
 
 function ClueFeed({ round }: { round: RoundView }) {
   return (
     <ol className="w-full space-y-2 text-left" aria-label="Clues so far">
-      {round.clues.length === 0 && <li className="text-slate-400">No clues yet.</li>}
-      {round.clues.map((c) => (
-        <li key={c.id} className="rounded bg-slate-800 px-3 py-2">{c.text}</li>
+      {round.clues.length === 0 && <li className={mutedClass}>No clues yet.</li>}
+      {round.clues.map((clue) => (
+        <li key={clue.id} className="rounded bg-slate-800 px-3 py-2">
+          {clue.text}
+        </li>
       ))}
     </ol>
   );
 }
 
-export function Round({ room, session }: { room: RoomView; session: Session }) {
-  const round = room.round!;
-  const explainer = room.players.find((p) => p.id === round.explainerId);
-  return session.playerId === round.explainerId ? (
-    <Explain round={round} room={room} />
-  ) : (
-    <Guess round={round} room={room} session={session} explainerName={explainer?.nickname ?? "Someone"} />
-  );
-}
-
-function Explain({ round, room }: { round: RoundView; room: RoomView }) {
+function Explain({ round }: { round: RoundView }) {
   const clueNotice = useGameStore((s) => s.clueNotice);
-  const [text, setText] = useState("");
   const card = round.explainerCard;
   if (!card) return null;
 
-  function submit(e: React.FormEvent) {
-    e.preventDefault();
-    const t = text.trim();
-    if (!t) return;
-    sendClue(t);
-    setText("");
-  }
-
   return (
-    <Shell>
-      <Header round={round} />
+    <>
       <p className="font-medium text-indigo-300">You're explaining</p>
-      <article className="w-full rounded-xl border border-slate-700 bg-slate-800 p-4 text-left shadow-sm">
-        <p className="text-xs uppercase tracking-wide text-slate-400">{card.subject} · {card.topic} · {card.type}</p>
-        <h1 className="mt-1 text-2xl font-semibold">{card.prompt}</h1>
-        {card.latex && <Formula latex={card.latex} />}
-        <p className="mt-2 text-sm text-red-400"><span className="font-medium">Don't say:</span> {card.forbidden.join(", ")}</p>
-      </article>
-      <form onSubmit={submit} className="flex w-full gap-2">
-        <input
-          aria-label="Type a clue"
-          className="w-full rounded border border-slate-600 px-3 py-3"
-          maxLength={MAX_CLUE_LENGTH}
-          value={text}
-          onChange={(e) => setText(e.target.value)}
-          placeholder="Type a clue…"
-          autoFocus
-        />
-        <button className="rounded-lg bg-indigo-600 px-4 py-3 font-medium text-white" type="submit">Send</button>
-      </form>
-      {clueNotice && <p role="alert" className="w-full text-left text-red-400">{clueNotice}</p>}
-      <GotIt round={round} room={room} />
+      <CardFrame as="h1" eyebrow={`${card.subject} · ${card.topic} · ${card.type}`} title={card.prompt} latex={card.latex}>
+        <DontSay words={card.forbidden} />
+      </CardFrame>
+      <SendForm label="Type a clue" placeholder="Type a clue…" button="Send" maxLength={MAX_CLUE_LENGTH} onSend={sendClue} />
+      {clueNotice && (
+        <Notice tone="error" align="left">
+          {clueNotice}
+        </Notice>
+      )}
       <ClueFeed round={round} />
-      <button className="rounded-lg bg-slate-700 px-4 py-3" onClick={skipRound}>Skip this card</button>
-    </Shell>
+      <Button variant="secondary" onClick={skipRound}>
+        Skip this card
+      </Button>
+    </>
   );
 }
 
-function Guess({ round, room, session, explainerName }: { round: RoundView; room: RoomView; session: Session; explainerName: string }) {
+function Guess({ round, explainer, hasIt }: { round: RoundView; explainer: string; hasIt: boolean }) {
   const feedback = useGameStore((s) => s.guessFeedback);
-  const [text, setText] = useState("");
-  const hasIt = round.guessedCorrect.includes(session.playerId);
-
-  function submit(e: React.FormEvent) {
-    e.preventDefault();
-    const t = text.trim();
-    if (!t) return;
-    sendGuess(t);
-    setText("");
-  }
 
   return (
-    <Shell>
-      <Header round={round} />
-      <h1 className="text-2xl font-bold">{explainerName} is explaining</h1>
-      <p className="text-slate-400">A {round.card.type} from {round.card.subject}</p>
+    <>
+      <h1 className="text-2xl font-bold">{explainer} is explaining</h1>
+      <p className={mutedClass}>
+        A {round.card.type} from {round.card.subject}
+      </p>
       <ClueFeed round={round} />
       {hasIt ? (
-        <p role="status" className="w-full rounded bg-green-900 px-3 py-3 font-medium text-green-100">
-          You got it! Waiting for the others…
-        </p>
+        <Notice tone="success">You got it! Waiting for the others…</Notice>
       ) : (
-        <form onSubmit={submit} className="flex w-full gap-2">
-          <input
-            aria-label="Type your guess"
-            className="w-full rounded border border-slate-600 px-3 py-3"
-            maxLength={100}
-            value={text}
-            onChange={(e) => setText(e.target.value)}
-            placeholder="Your guess…"
-            autoFocus
-          />
-          <button className="rounded-lg bg-indigo-600 px-4 py-3 font-medium text-white" type="submit">Guess</button>
-        </form>
+        <SendForm label="Type your guess" placeholder="Your guess…" button="Guess" maxLength={MAX_GUESS_LENGTH} onSend={sendGuess} />
       )}
       {!hasIt && feedback && (
-        <p role="status" className={feedback.result === "close" ? "text-amber-400" : "text-slate-400"}>
+        <p role="status" className={feedback.result === "close" ? "text-amber-400" : mutedClass}>
           {feedback.result === "close" ? `"${feedback.guess}" is close! Check your spelling.` : `"${feedback.guess}" isn't it.`}
         </p>
       )}
-      <GotIt round={round} room={room} />
-    </Shell>
+    </>
   );
 }

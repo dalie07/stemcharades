@@ -1,38 +1,49 @@
 import { useEffect, useState } from "react";
 import { SUBJECTS, type Card as CardData } from "@stemcharades/shared";
-import { Card } from "./components/Card";
+import { Card } from "../components/Card";
+import { Notice, Screen, TextLink, mutedClass } from "../components/ui";
 
-export function CardPreview() {
-  const [subject, setSubject] = useState<(typeof SUBJECTS)[number]>("Maths");
-  const [cards, setCards] = useState<CardData[]>([]);
-  const [error, setError] = useState(false);
+type Subject = (typeof SUBJECTS)[number];
+
+/** Browse a subject's cards with their answers and explanations: a revision view. */
+export function Cards() {
+  const [subject, setSubject] = useState<Subject>("Maths");
+  const [cards, setCards] = useState<CardData[] | null>(null);
+  const [failed, setFailed] = useState(false);
 
   useEffect(() => {
-    setError(false);
+    let current = true;
+    setCards(null);
+    setFailed(false);
     fetch(`/api/decks/${subject.toLowerCase()}/cards`)
-      .then((r) => (r.ok ? (r.json() as Promise<CardData[]>) : Promise.reject(new Error("bad"))))
-      .then(setCards)
-      .catch(() => setError(true));
+      .then((res) => (res.ok ? (res.json() as Promise<CardData[]>) : Promise.reject(new Error(String(res.status)))))
+      .then((loaded) => current && setCards(loaded))
+      .catch(() => current && setFailed(true));
+    return () => {
+      current = false; // a slow response for a subject the user has left must not overwrite the new one
+    };
   }, [subject]);
 
   return (
-    <section className="mx-auto max-w-xl space-y-3 p-4">
-      <div className="flex flex-wrap gap-2">
+    <Screen>
+      <h1 className="text-3xl font-bold">Cards</h1>
+      <div className="flex flex-wrap justify-center gap-2" role="group" aria-label="Subject">
         {SUBJECTS.map((s) => (
           <button
             key={s}
+            type="button"
+            aria-pressed={s === subject}
             onClick={() => setSubject(s)}
-            className={`rounded-full px-3 py-1 text-sm ${s === subject ? "bg-indigo-600 text-white" : "bg-slate-800"}`}
+            className={`min-h-11 rounded-full px-4 text-sm ${s === subject ? "bg-indigo-600 text-white" : "bg-slate-800"}`}
           >
             {s}
           </button>
         ))}
       </div>
-      {error && <p role="alert">Could not load cards.</p>}
-      <p className="text-sm text-slate-400">{cards.length} cards</p>
-      {cards.map((c) => (
-        <Card key={c.id} card={c} reveal />
-      ))}
-    </section>
+      {failed && <Notice tone="error">Could not load the cards.</Notice>}
+      {cards && <p className={`text-sm ${mutedClass}`}>{cards.length} cards</p>}
+      {cards?.map((card) => <Card key={card.id} card={card} reveal />)}
+      <TextLink href="#/">Back</TextLink>
+    </Screen>
   );
 }

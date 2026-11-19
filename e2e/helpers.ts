@@ -45,12 +45,15 @@ export async function newPlayer(browser: Browser, name: string, origin = ""): Pr
   return { name, context, page, frames, problems };
 }
 
+/** A freshly booted server on a busy machine can take a while to answer its first requests. */
+const JOIN_TIMEOUT = { timeout: 30_000 };
+
 export async function createRoom(p: Player, base = ""): Promise<string> {
   await p.page.goto(`${base}/#/online`);
   await p.page.getByLabel("Your nickname").fill(p.name);
   await p.page.getByRole("button", { name: "Create a room" }).click();
   const heading = p.page.getByRole("heading", { name: /^Room code/ });
-  await expect(heading).toBeVisible();
+  await expect(heading).toBeVisible(JOIN_TIMEOUT);
   return ((await heading.textContent()) ?? "").trim();
 }
 
@@ -59,7 +62,7 @@ export async function joinRoom(p: Player, code: string, base = ""): Promise<void
   await p.page.getByLabel("Your nickname").fill(p.name);
   await p.page.getByLabel("Room code").fill(code);
   await p.page.getByRole("button", { name: "Join room" }).click();
-  await expect(p.page.getByRole("heading", { name: /^Room code/ })).toBeVisible();
+  await expect(p.page.getByRole("heading", { name: /^Room code/ })).toBeVisible(JOIN_TIMEOUT);
 }
 
 export async function roster(p: Player): Promise<string[]> {

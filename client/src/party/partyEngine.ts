@@ -3,9 +3,9 @@ import {
   filterCards,
   pickCard,
   type Card,
+  type Level,
 } from "@stemcharades/shared";
 
-export type Level = 1 | 2 | 3;
 
 export interface PartySettings {
   players: string[];

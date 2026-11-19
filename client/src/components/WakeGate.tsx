@@ -1,13 +1,14 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, type ReactNode } from "react";
+import { ButtonLink, Screen, mutedClass } from "./ui";
 
 type Phase = "checking" | "waking" | "ready";
 
-/** Ask the server if it is awake. Resolves true/false; never throws. */
-async function ping(timeoutMs: number): Promise<boolean> {
-  const ctl = new AbortController();
-  const timer = setTimeout(() => ctl.abort(), timeoutMs);
+/** Ask the server if it is awake. Resolves true or false; never throws. */
+async function isAwake(timeoutMs: number): Promise<boolean> {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
   try {
-    const res = await fetch("/healthz", { cache: "no-store", signal: ctl.signal });
+    const res = await fetch("/healthz", { cache: "no-store", signal: controller.signal });
     return res.ok;
   } catch {
     return false;
@@ -21,7 +22,7 @@ async function ping(timeoutMs: number): Promise<boolean> {
  * Instead of a blank page, show progress until /healthz answers. Party mode needs no server,
  * so it is never blocked.
  */
-export function WakeGate({ children }: { children: React.ReactNode }) {
+export function WakeGate({ children }: { children: ReactNode }) {
   const [phase, setPhase] = useState<Phase>("checking");
   const [seconds, setSeconds] = useState(0);
   const [hash, setHash] = useState(location.hash);
@@ -32,23 +33,23 @@ export function WakeGate({ children }: { children: React.ReactNode }) {
     return () => window.removeEventListener("hashchange", onHash);
   }, []);
 
-  const offlineOk = hash === "#/party";
+  const worksOffline = hash === "#/party" || hash === "#/rules";
 
   useEffect(() => {
-    if (offlineOk) return;
+    if (worksOffline) return;
     let stopped = false;
     const started = Date.now();
     const clock = setInterval(() => setSeconds(Math.floor((Date.now() - started) / 1000)), 500);
 
-    (async () => {
+    void (async () => {
       // A healthy server answers almost instantly: only show the wake screen if it does not.
-      if (await ping(1500)) return !stopped && setPhase("ready");
+      if (await isAwake(1500)) return !stopped && setPhase("ready");
       if (stopped) return;
       setPhase("waking");
       // Keep asking until it answers. Each ask may itself hang while the instance boots.
       while (!stopped) {
-        if (await ping(5000)) return !stopped && setPhase("ready");
-        await new Promise((r) => setTimeout(r, 2000));
+        if (await isAwake(5000)) return !stopped && setPhase("ready");
+        await new Promise((resolve) => setTimeout(resolve, 2000));
       }
     })();
 
@@ -57,22 +58,20 @@ export function WakeGate({ children }: { children: React.ReactNode }) {
       clearInterval(clock);
     };
     // Deliberately not depending on `phase`: changing it must not restart the loop.
-  }, [offlineOk]);
+  }, [worksOffline]);
 
-  if (phase === "ready" || offlineOk) return <>{children}</>;
+  if (phase === "ready" || worksOffline) return <>{children}</>;
   if (phase === "checking") return null;
 
   const offline = !navigator.onLine;
   return (
-    <main className="mx-auto flex min-h-dvh max-w-md flex-col items-center justify-center gap-4 p-4 text-center">
+    <Screen centered>
       <h1 className="text-2xl font-bold">{offline ? "You're offline" : "Waking the server…"}</h1>
       {offline ? (
-        <p className="text-slate-400">Online rooms need a connection. Party mode still works.</p>
+        <p className={mutedClass}>Online rooms need a connection. Party mode still works.</p>
       ) : (
         <>
-          <p className="text-slate-400">
-            The free server naps when nobody is playing. It usually wakes in under a minute.
-          </p>
+          <p className={mutedClass}>The free server naps when nobody is playing. It usually wakes in under a minute.</p>
           <div
             className="h-2 w-full overflow-hidden rounded bg-slate-700"
             role="progressbar"
@@ -83,12 +82,12 @@ export function WakeGate({ children }: { children: React.ReactNode }) {
           >
             <div className="h-full bg-indigo-600 transition-all" style={{ width: `${Math.min(100, (seconds / 60) * 100)}%` }} />
           </div>
-          <p className="tabular-nums text-sm text-slate-400" role="status">{seconds}s</p>
+          <p className={`text-sm tabular-nums ${mutedClass}`} role="status">
+            {seconds}s
+          </p>
         </>
       )}
-      <a className="rounded-lg bg-indigo-600 px-4 py-3 font-medium text-white" href="#/party">
-        Play Party mode meanwhile
-      </a>
-    </main>
+      <ButtonLink href="#/party">Play Party mode meanwhile</ButtonLink>
+    </Screen>
   );
 }

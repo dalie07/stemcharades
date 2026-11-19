@@ -22,9 +22,23 @@ export async function signOut(): Promise<void> {
   }
 }
 
-export interface HistoryRow { playedAt: string; score: number; rank: number; roomSize: number; rounds: number }
-export interface DeckSummary { id: string; name: string; cards: number }
-export interface DeckDetail { id: string; name: string; cards: (Card & { id: string })[] }
+export interface HistoryRow {
+  playedAt: string;
+  score: number;
+  rank: number;
+  roomSize: number;
+  rounds: number;
+}
+export interface DeckSummary {
+  id: string;
+  name: string;
+  cards: number;
+}
+export interface DeckDetail {
+  id: string;
+  name: string;
+  cards: Card[];
+}
 export type MissedCard = Card & { lastMissedAt: string };
 
 export type ApiResult<T> = { ok: true; data: T } | { ok: false; message: string };

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="STEMCHARADES">
+  <rect width="512" height="512" rx="112" fill="#4f46e5"/>
+  <path fill="#fff" d="M144 104h224a48 48 0 0 1 48 48v144a48 48 0 0 1-48 48H232l-82 76v-76h-6a48 48 0 0 1-48-48V152a48 48 0 0 1 48-48z"/>
+  <path fill="none" stroke="#4f46e5" stroke-width="30" stroke-linecap="round" stroke-linejoin="round" d="M312 168H208l60 56-60 56h104"/>
+</svg>

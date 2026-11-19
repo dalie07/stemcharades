@@ -3,10 +3,12 @@ import {
   ERROR_MESSAGES,
   EVENTS,
   type ClientToServerEvents,
+  type ClueRejection,
   type CreateRoomResponse,
   type ErrorCode,
   type JoinAck,
   type RoomSettings,
+  type RoomView,
   type ServerToClientEvents,
 } from "@stemcharades/shared";
 import { loadSession, saveSession, useGameStore } from "./gameStore";
@@ -38,6 +40,9 @@ function rejoin() {
   });
 }
 
+/** Per-round messages (a rejected clue, guess feedback) are dropped when the round or phase changes. */
+const sameRound = (a: RoomView | null, b: RoomView) => a?.phase === b.phase && a.round?.number === b.round?.number;
+
 socket.on("connect", () => {
   setState({ connection: "connected" });
   rejoin();
@@ -48,20 +53,18 @@ socket.on(EVENTS.state, (room) =>
     room,
     actionError: null,
     // A new round or phase clears the explainer's old rejection message.
-    clueNotice: prev.room?.phase === room.phase && prev.room.round?.number === room.round?.number ? prev.clueNotice : null,
-    guessFeedback: prev.room?.round?.number === room.round?.number ? prev.guessFeedback : null,
+    clueNotice: sameRound(prev.room, room) ? prev.clueNotice : null,
+    guessFeedback: sameRound(prev.room, room) ? prev.guessFeedback : null,
     clockOffset: room.round ? room.round.serverNow - Date.now() : prev.clockOffset,
   })),
 );
 socket.on(EVENTS.guessResult, (g) => setState({ guessFeedback: g }));
-socket.on(EVENTS.clueRejected, (r) =>
-  setState({
-    clueNotice:
-      r.reason === "contains_answer"
-        ? `Not allowed: that gives away the answer ("${r.word}").`
-        : `Not allowed: "${r.word}" is a forbidden word.`,
-  }),
-);
+const CLUE_REJECTIONS: Record<ClueRejection["reason"], (word: string) => string> = {
+  contains_answer: (word) => `Not allowed: that gives away the answer ("${word}").`,
+  forbidden_word: (word) => `Not allowed: "${word}" is a forbidden word.`,
+  inappropriate: () => "Not allowed: please keep clues friendly.",
+};
+socket.on(EVENTS.clueRejected, (r) => setState({ clueNotice: CLUE_REJECTIONS[r.reason](r.word) }));
 socket.on(EVENTS.error, (e) => {
   // The room vanished under us (expired). Other errors are transient and handled by the caller.
   if (e.code === "unknown_room" || e.code === "kicked") leaveToHome(e.message);
@@ -101,19 +104,19 @@ export async function createRoom(nickname: string): Promise<ActionResult> {
   }
   const created = (await res.json()) as CreateRoomResponse;
   saveSession({ code: created.code, playerId: created.playerId, sessionToken: created.sessionToken });
-  // Connecting triggers rejoin(), which seats the host.
-  await whenConnected();
+  // Take the host's seat. A fresh connection does this itself (see the "connect" handler above).
   if (socket.connected) rejoin();
+  else await whenConnected();
   return { ok: true };
 }
 
 export async function joinRoom(code: string, nickname: string): Promise<ActionResult> {
   await whenConnected();
-  const res = await new Promise<JoinAck>((resolve) =>
-    socket.emit(EVENTS.join, { code, nickname }, resolve),
-  );
+  const res = await new Promise<JoinAck>((resolve) => socket.emit(EVENTS.join, { code, nickname }, resolve));
   if (!res.ok) return failure(res.error);
-  if (res.sessionToken) saveSession({ code: code.trim().toUpperCase(), playerId: res.playerId, sessionToken: res.sessionToken });
+  if (res.sessionToken) {
+    saveSession({ code: code.trim().toUpperCase(), playerId: res.playerId, sessionToken: res.sessionToken });
+  }
   return { ok: true };
 }
 
