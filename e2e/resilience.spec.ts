@@ -70,17 +70,19 @@ test("Party mode plays a whole turn with the server switched off", async ({ brow
 test("a sleeping server shows a wake screen with progress, then the app", async ({ browser }) => {
   const context = await browser.newContext();
   const page = await context.newPage();
-  // The instance is asleep: every health check hangs until it has finished booting, 6 seconds from now.
-  const awakeAt = Date.now() + 6000;
+  // The instance is asleep: every health check hangs until the test says it has finished booting. (A fixed delay
+  // would race the page load on a slow machine, and the server could be "awake" before the page even asked.)
+  let wake!: () => void;
+  const awake = new Promise<void>((resolve) => (wake = resolve));
   await page.route("**/healthz", async (route) => {
-    const wait = awakeAt - Date.now();
-    if (wait > 0) await new Promise((r) => setTimeout(r, wait));
+    await awake;
     await route.continue().catch(() => undefined); // the page may have given up on this request already
   });
   await page.goto("/");
-  await expect(page.getByRole("heading", { name: "Waking the server…" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Waking the server…" })).toBeVisible({ timeout: 30_000 });
   await expect(page.getByRole("progressbar", { name: "Waking the server" })).toBeVisible();
   await expect(page.getByRole("link", { name: "Play Party mode meanwhile" })).toBeVisible();
+  wake();
   await expect(page.getByRole("heading", { name: "STEMCHARADES" })).toBeVisible({ timeout: 30_000 });
   await context.close();
 });

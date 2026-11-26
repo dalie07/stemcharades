@@ -22,10 +22,15 @@ test("four browsers join one room, survive a refresh and see the same lobby", as
   expect(await roster(players[2]!)).toHaveLength(4);
   await expect.poll(async () => (await roster(players[0]!)).filter((x) => x.includes("Ben")).length).toBe(1);
 
-  // Only the host can change settings; guests see them disabled, and the change reaches everyone.
-  await expect(players[1]!.page.getByLabel("Rounds")).toBeDisabled();
-  await players[0]!.page.getByLabel("Rounds").selectOption("5");
-  for (const p of players) await expect(p.page.getByLabel("Rounds")).toHaveValue("5");
+  // Only the host can change settings; guests see what was chosen, and the change reaches everyone.
+  await expect(players[1]!.page.getByRole("button", { name: "Change what to play" })).toHaveCount(0);
+  await expect(players[1]!.page.getByText("The host chooses what to play.")).toBeVisible();
+  const host = players[0]!.page;
+  await host.getByRole("button", { name: "Change what to play" }).click();
+  await host.getByRole("button", { name: "Next", exact: true }).click(); // Everything
+  await host.getByRole("radio", { name: /^Standard/ }).click(); // 5 rounds
+  await host.getByRole("button", { name: "Done" }).click();
+  for (const p of players) await expect(p.page.getByText("Standard", { exact: true })).toBeVisible();
   await expect(players[1]!.page.getByRole("button", { name: "Start game" })).toBeDisabled();
   for (const p of players) expect(p.problems).toEqual([]);
 });
