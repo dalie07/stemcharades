@@ -25,6 +25,11 @@ export function Privacy() {
           ends. Your browser keeps a random seat token for this tab only, so a refresh puts you back in your seat.
         </p>
         <p>Party mode runs entirely on your device and sends nothing anywhere.</p>
+        <p>
+          Your browser also remembers your settings (board, sound, vibration), which cards you got or missed, and the
+          days you played. That is what fills your stars, your revision deck and your streak. It never leaves your
+          device, and clearing this site's data in your browser removes it.
+        </p>
       </Section>
 
       <Section title="If you sign in (optional)">

@@ -56,11 +56,19 @@ server/src/
   persist.ts        turns a finished room into the durable result
 client/src/
   screens/          one file per screen
-  components/       shared building blocks (ui, CardFrame, GameSettingsFields, WakeGate, ...)
+  components/       shared building blocks (ui, Tile, Steps, ChooseSteps, CardFrame, Timer, QrCode, WakeGate, ...)
   state/            the Zustand store, the socket connection and the account API
   party/            Party mode's engine, which runs in the browser
 shared/src/         schemas, events, scoring, card picker, text normalising
 ```
+
+## On the device
+
+Some state belongs to the player's device, not the server, and lives in the browser's storage:
+`client/src/state/settings.ts` (board theme, sound, vibration) and `client/src/state/progress.ts` (each card's latest
+result and the days played, which drive mastery stars, the revision deck and the streak). It works offline and for
+guests, and never leaves the device. Design tokens for the chalkboard and whiteboard themes are CSS variables in
+`client/src/index.css`; every colour in the app comes from them.
 
 ## Card, round, result
 

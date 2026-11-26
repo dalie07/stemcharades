@@ -51,12 +51,25 @@ Choose as broadly or as narrowly as you like, in both Party mode and online room
    Advanced (Calculus, Organic Chemistry, Data Structures and Algorithms…).
 4. **Topic**: inside a subject or course, e.g. Waves or Integration.
 
-Every step is optional and allows several choices; stop at any step and play. Each choice shows how many cards it
-holds, and parts with no cards yet are hidden. A choice can be shared as a link, e.g.
+Each step is its own screen, with Back and Next. Every step is optional and allows several choices: "All of
+them" and "All topics" are the defaults. Each choice shows how many cards it holds and your mastery stars, and
+parts with no cards yet are hidden. A choice can be shared as a link, e.g.
 `/#/party?levels=2&courses=secondary-physics`, which opens straight onto it.
 
+## Learn as you play
+- **Mastery stars.** Each topic (and each subject or course) has three stars: one for learning any of its cards, two
+  for half of them, three for all. Missing a card again takes its credit away until you relearn it.
+- **Revise my misses.** Every card you miss is saved. In Party mode, choose "Revise my misses" to play only those;
+  in any Party game, about half the cards dealt are earlier misses while there are some left.
+- **Daily streak.** Play on consecutive days to build it. Missing a day simply starts it again.
+- **On fire.** Three or more correct in a row gets a celebration. It earns no extra points, so newer players are not
+  left behind.
+- **Highlights.** Every game ends with the fastest guess, the best explainer, and the cards you learned.
+
+All of this is stored on the device in the browser, works offline, and needs no account.
+
 ## Rooms
-- The host gets a **5-character code** to share. Players join with a nickname, 2 to 12 players per room.
+- The host gets a **5-character code** and a **QR code** to share. Players join with a nickname, 2 to 12 players per room.
 - The host picks what to play, the round length and the number of rounds, starts the game, and can remove a player.
 - If you refresh, you get your seat, score and role back. If the host leaves, the role passes to the player who has
   been there longest.

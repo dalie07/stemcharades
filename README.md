@@ -27,8 +27,13 @@ guess it. Then the round ends with the right answer explained, so even a wrong g
 - **Fair by construction.** The server picks cards, runs the timer, judges guesses and keeps score. The answer is
   never sent to a guesser's device, so there is nothing to find in the network traffic.
 - **Choose exactly what to revise.** General (everything), or narrow it down: Primary, Secondary, University or
-  Advanced, then a subject or course, then topics. Every step is optional, shows its card count, and can be shared
-  as a link.
+  Advanced, then a subject or course, then topics. One decision per screen; every step is optional, shows its card
+  count, and can be shared as a link. Online rooms add a QR code to join.
+- **Learn as you play.** Mastery stars for every topic, a "revise my misses" deck (missed cards also come back in
+  later games until you get them), a daily streak, and highlights at the end of each game. Kept on the device: no
+  account needed.
+- **A classroom look.** A green chalkboard at night, a whiteboard by day, following the device. Fonts chosen for
+  young readers, a colour per subject, gentle animations and optional sound and vibration.
 - **400+ cards and growing** across Maths, Physics, Chemistry, Biology and Computing, with formulas typeset by KaTeX.
   Every card is checked by machine (schema, curriculum map, unambiguous answers, safe language) and then by a person.
 - **Optional accounts.** Sign in with GitHub or Google to keep your game history, a personal revision list, and
