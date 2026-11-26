@@ -18,7 +18,7 @@
       "problem"
     ],
     "explanation": "An algorithm is a finite, ordered set of steps for solving a problem or completing a task. A computer program implements an algorithm in a programming language.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0002",
@@ -40,7 +40,7 @@
       "base"
     ],
     "explanation": "Binary is a number system that uses only the digits 0 and 1. Computers use it because electronic circuits easily represent two states.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0003",
@@ -61,7 +61,7 @@
       "memory"
     ],
     "explanation": "A variable is a named location in memory that holds a value which can change while a program runs. Each variable usually has a data type.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0004",
@@ -82,7 +82,7 @@
       "repeat"
     ],
     "explanation": "Recursion is when a function solves a problem by calling itself on smaller versions of the problem. It needs a base case to stop.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0005",
@@ -105,7 +105,7 @@
       "algorithm"
     ],
     "explanation": "Big O notation describes how an algorithm's running time or memory use grows as the input size grows. It ignores constant factors and focuses on the dominant term.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0006",
@@ -126,7 +126,7 @@
       "convert"
     ],
     "explanation": "A compiler translates the whole of a program written in a high-level language into machine code before it is run. The resulting executable runs without the compiler.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0007",
@@ -148,7 +148,7 @@
       "bucket"
     ],
     "explanation": "A hash table stores key-value pairs and uses a hash function to decide where each pair is placed. This gives lookups in constant time on average.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0008",
@@ -170,7 +170,7 @@
       "programming"
     ],
     "explanation": "An API is a defined set of rules that lets one piece of software ask another for data or actions. Web APIs usually respond to HTTP requests.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0009",
@@ -192,7 +192,7 @@
       "two"
     ],
     "explanation": "A Boolean is a data type with only two possible values, true or false. Conditions in if statements and loops evaluate to Booleans.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0010",
@@ -213,7 +213,7 @@
       "plates"
     ],
     "explanation": "A stack is a data structure where the last item added is the first one removed. Items are added with push and removed with pop.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0011",
@@ -234,7 +234,7 @@
       "front"
     ],
     "explanation": "A queue is a data structure where the first item added is the first one removed. It models a waiting line.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0012",
@@ -254,7 +254,7 @@
       "computer"
     ],
     "explanation": "CPU stands for central processing unit. It fetches, decodes and executes the instructions of a program.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0013",
@@ -275,7 +275,7 @@
       "dereference"
     ],
     "explanation": "A pointer is a variable whose value is the memory address of another value. Languages such as C use pointers for direct memory access.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0014",
@@ -297,7 +297,7 @@
       "scramble"
     ],
     "explanation": "Encryption transforms readable data into unreadable ciphertext using an algorithm and a key. Only someone with the correct key can turn it back into the original.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0015",
@@ -318,7 +318,7 @@
       "records"
     ],
     "explanation": "A database is an organised collection of data that can be searched and updated. Relational databases store data in linked tables.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0016",
@@ -340,7 +340,7 @@
       "encapsulation"
     ],
     "explanation": "Object-oriented programming organises code into objects that combine data and the methods that act on it. Its core ideas include encapsulation, inheritance and polymorphism.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0017",
@@ -362,7 +362,7 @@
       "patterns"
     ],
     "explanation": "Machine learning is a way of building programs that improve at a task by learning patterns from data rather than following hand-written rules. The result is a trained model.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0018",
@@ -383,7 +383,7 @@
       "device"
     ],
     "explanation": "An IP address is a numerical label that identifies a device on a network and lets data be routed to it. IPv4 addresses have four numbers from 0 to 255.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0019",
@@ -404,7 +404,7 @@
       "repeatedly"
     ],
     "explanation": "Bubble sort repeatedly steps through a list and swaps neighbouring items that are in the wrong order. It is simple but slow, with O(n^2) time in the worst case.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0020",
@@ -426,7 +426,7 @@
       "manage"
     ],
     "explanation": "An operating system is the software that manages a computer's hardware and provides services for other programs. Windows, macOS and Linux are examples.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0021",
@@ -448,7 +448,7 @@
       "code"
     ],
     "explanation": "A loop repeats a block of code until a condition changes or a set number of repeats is done. For and while loops are common types.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0022",
@@ -471,7 +471,7 @@
       "decision"
     ],
     "explanation": "An if statement runs a block of code only when a condition is true. It lets a program make decisions.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0023",
@@ -494,7 +494,7 @@
       "code"
     ],
     "explanation": "A subroutine is a named block of code that does a specific job and can be called from elsewhere. Using subroutines avoids repeating code.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0024",
@@ -516,7 +516,7 @@
       "items"
     ],
     "explanation": "An array is a collection of items stored in order and accessed by an index number. All items usually have the same data type.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0025",
@@ -538,7 +538,7 @@
       "words"
     ],
     "explanation": "A string is a data type for text: a sequence of characters. It is usually written inside quotation marks.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0026",
@@ -560,7 +560,7 @@
       "positive"
     ],
     "explanation": "An integer is a data type for whole numbers with no fractional part. It can be positive, negative or zero.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0027",
@@ -583,7 +583,7 @@
       "point"
     ],
     "explanation": "A float is a data type for numbers with a fractional part, stored in a form of scientific notation. Calculations with floats can have small rounding errors.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0028",
@@ -604,7 +604,7 @@
       "compile"
     ],
     "explanation": "A syntax error is a mistake that breaks the grammar rules of a programming language. The program cannot run until it is fixed.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0029",
@@ -626,7 +626,7 @@
       "code"
     ],
     "explanation": "Debugging is the process of finding and fixing errors in a program. Tools such as breakpoints and print statements help.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0030",
@@ -647,7 +647,7 @@
       "compiler"
     ],
     "explanation": "An interpreter translates and runs a program one statement at a time instead of producing a separate executable. Python is commonly run this way.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0031",
@@ -669,7 +669,7 @@
       "visible"
     ],
     "explanation": "Scope is the part of a program where a variable can be used. A variable declared inside a function is usually only visible there.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0032",
@@ -691,7 +691,7 @@
       "accessible"
     ],
     "explanation": "A global variable is declared outside any function and can be used throughout the program. Overusing them can make code harder to understand.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0033",
@@ -714,7 +714,7 @@
       "call"
     ],
     "explanation": "A parameter is a value passed into a subroutine when it is called. It lets one subroutine work with different data.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0034",
@@ -735,7 +735,7 @@
       "elements"
     ],
     "explanation": "A linked list is a sequence of nodes, each holding a value and a reference to the next node. Items can be inserted without shifting the others.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0035",
@@ -756,7 +756,7 @@
       "list"
     ],
     "explanation": "Binary search finds an item in a sorted list by repeatedly comparing with the middle item and discarding half the list. It takes about log n steps.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0036",
@@ -778,7 +778,7 @@
       "start"
     ],
     "explanation": "A linear search checks each item in a list in turn until it finds the target or reaches the end. It works on unsorted lists but is slow for large ones.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0037",
@@ -800,7 +800,7 @@
       "recursion"
     ],
     "explanation": "Merge sort splits a list in half repeatedly, sorts the pieces and merges them back together in order. It takes about n log n steps.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0038",
@@ -822,7 +822,7 @@
       "hierarchy"
     ],
     "explanation": "A tree is a hierarchical data structure of nodes with a single root and branches to child nodes. Each node has one parent except the root.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0039",
@@ -844,7 +844,7 @@
       "network"
     ],
     "explanation": "A graph is a data structure of nodes joined by edges. It models networks such as roads, friendships or the internet.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0040",
@@ -865,7 +865,7 @@
       "essential"
     ],
     "explanation": "Abstraction means hiding unnecessary detail and keeping only what matters to solve a problem. A map is an abstraction of a landscape.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0041",
@@ -886,7 +886,7 @@
       "manageable"
     ],
     "explanation": "Decomposition is breaking a large problem into smaller, easier parts that can be solved separately. It makes complex programs manageable.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0042",
@@ -907,7 +907,7 @@
       "structure"
     ],
     "explanation": "Pseudocode is a way of writing an algorithm in structured, plain language that is not tied to any programming language. It is used to plan code.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0043",
@@ -929,7 +929,7 @@
       "boxes"
     ],
     "explanation": "A flowchart is a diagram that shows the steps of an algorithm using standard symbols joined by arrows. Diamonds show decisions.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0044",
@@ -950,7 +950,7 @@
       "true"
     ],
     "explanation": "A truth table lists every possible combination of inputs to a logic expression and the resulting output. It fully describes how a logic gate behaves.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0045",
@@ -971,7 +971,7 @@
       "output"
     ],
     "explanation": "An AND gate outputs true only when both of its inputs are true. Otherwise its output is false.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0046",
@@ -993,7 +993,7 @@
       "output"
     ],
     "explanation": "A NOT gate has one input and outputs the opposite value. True becomes false and false becomes true.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0047",
@@ -1015,7 +1015,7 @@
       "one"
     ],
     "explanation": "A bit is a single binary digit, either 0 or 1. It is the smallest unit of data in a computer.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0048",
@@ -1037,7 +1037,7 @@
       "memory"
     ],
     "explanation": "A byte is a group of eight bits. It is the standard unit for measuring storage and can represent 256 different values.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0049",
@@ -1059,7 +1059,7 @@
       "base"
     ],
     "explanation": "Hexadecimal is a number system with 16 digits, 0 to 9 and A to F. It is a compact way of writing binary values.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0050",
@@ -1080,7 +1080,7 @@
       "numbers"
     ],
     "explanation": "ASCII is a character encoding that gives each letter, digit and symbol a number. The original version uses 7 bits to represent 128 characters.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0051",
@@ -1102,7 +1102,7 @@
       "resolution"
     ],
     "explanation": "A pixel is the smallest single point of a digital image or screen. Many pixels together form the picture.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0052",
@@ -1124,7 +1124,7 @@
       "computer"
     ],
     "explanation": "RAM is the computer's fast, temporary working memory. It holds the programs and data in use and is cleared when power is switched off.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0053",
@@ -1145,7 +1145,7 @@
       "copy"
     ],
     "explanation": "A cache is a small, very fast store that keeps copies of frequently used data. It reduces the time spent fetching data from slower memory.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0054",
@@ -1166,7 +1166,7 @@
       "directs"
     ],
     "explanation": "A router forwards data packets between networks, such as from a home network to the internet. It decides the best route for each packet.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0055",
@@ -1187,7 +1187,7 @@
       "filter"
     ],
     "explanation": "A firewall monitors network traffic and blocks anything that breaks its security rules. It protects a computer or network from unauthorised access.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0056",
@@ -1208,7 +1208,7 @@
       "trick"
     ],
     "explanation": "Phishing is sending fake messages that pretend to be from a trusted source to trick people into giving away passwords or other private information.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0057",
@@ -1229,7 +1229,7 @@
       "computer"
     ],
     "explanation": "Malware is software designed to damage a computer or steal information. Viruses, worms and ransomware are all types of malware.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0058",
@@ -1251,7 +1251,7 @@
       "repository"
     ],
     "explanation": "Version control is a system that records changes to files over time so earlier versions can be recovered. It also lets many people work on the same code.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0059",
@@ -1273,7 +1273,7 @@
       "server"
     ],
     "explanation": "HTTP is the protocol browsers and servers use to exchange web pages and data. A browser sends a request and the server sends back a response.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0060",
@@ -1293,7 +1293,7 @@
       "browser"
     ],
     "explanation": "URL stands for uniform resource locator. It is the address that identifies a resource on the web.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0061",
@@ -1313,7 +1313,7 @@
       "computer"
     ],
     "explanation": "A keyboard is used to type letters, numbers and commands into a computer.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0062",
@@ -1334,7 +1334,7 @@
       "animal"
     ],
     "explanation": "A computer mouse moves a pointer on the screen and lets you click on things.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0063",
@@ -1356,7 +1356,7 @@
       "letters"
     ],
     "explanation": "A password is a secret word or phrase that keeps an account safe. Never share it with anyone except a trusted adult.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0064",
@@ -1378,7 +1378,7 @@
       "later"
     ],
     "explanation": "Saving stores your work on a computer or online so you can open it again later.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0065",
@@ -1398,7 +1398,7 @@
       "copy"
     ],
     "explanation": "A printer puts words and pictures from a computer onto paper.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0066",
@@ -1418,7 +1418,7 @@
       "next"
     ],
     "explanation": "A sequence is a set of instructions that must happen in the right order, like the steps for brushing your teeth.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0067",
@@ -1440,7 +1440,7 @@
       "recipe"
     ],
     "explanation": "Instructions tell someone, or a computer, exactly what to do step by step. Computers follow them precisely.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0068",
@@ -1461,7 +1461,7 @@
       "over"
     ],
     "explanation": "Repetition means doing the same instructions again and again. In code, a repeat block saves writing the same steps many times.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0069",
@@ -1482,7 +1482,7 @@
       "insect"
     ],
     "explanation": "A mistake in a program is called a bug. Finding and fixing bugs is called debugging.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0070",
@@ -1503,7 +1503,7 @@
       "game"
     ],
     "explanation": "A sprite is a character or object that you can program to move, talk and react in an animation or game.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0071",
@@ -1524,7 +1524,7 @@
       "give"
     ],
     "explanation": "An input is information you put into a computer, like pressing a key, clicking or speaking into a microphone.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0072",
@@ -1545,7 +1545,7 @@
       "show"
     ],
     "explanation": "An output is what a computer gives back, like a picture on the screen or a sound from a speaker.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0073",
@@ -1566,7 +1566,7 @@
       "language"
     ],
     "explanation": "Code is the set of instructions people write for a computer to follow. Writing it is called coding.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0074",
@@ -1589,7 +1589,7 @@
       "school"
     ],
     "explanation": "Personal information is anything that identifies you, like your full name, address or school. Keep it private online.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0075",
@@ -1611,7 +1611,7 @@
       "hurt"
     ],
     "explanation": "Cyberbullying is being unkind to someone online, such as sending hurtful messages. Tell a trusted adult if it happens to you.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0076",
@@ -1633,7 +1633,7 @@
       "help"
     ],
     "explanation": "A trusted adult is a grown-up you can talk to if something online worries you, like a parent, carer or teacher.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "com-0077",
@@ -1654,6 +1654,6 @@
       "watch"
     ],
     "explanation": "Screen time is the time spent looking at screens like tablets, phones and TVs. Taking regular breaks is healthy.",
-    "status": "draft"
+    "status": "reviewed"
   }
 ]

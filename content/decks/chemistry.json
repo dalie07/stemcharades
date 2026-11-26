@@ -18,7 +18,7 @@
       "6.02"
     ],
     "explanation": "A mole is the amount of substance containing 6.02 x 10^23 particles. The mass of one mole of a substance in grams equals its relative formula mass.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0002",
@@ -39,7 +39,7 @@
       "nonmetals"
     ],
     "explanation": "A covalent bond forms when two atoms share a pair of electrons. It usually occurs between non-metal atoms.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0003",
@@ -61,7 +61,7 @@
       "charge"
     ],
     "explanation": "An ionic bond is the strong electrostatic attraction between oppositely charged ions. It typically forms between a metal and a non-metal.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0004",
@@ -84,7 +84,7 @@
       "moles"
     ],
     "explanation": "The ideal gas law relates the pressure, volume, amount and temperature of an ideal gas. R is the gas constant and the temperature must be in kelvin.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0005",
@@ -104,7 +104,7 @@
       "consumed"
     ],
     "explanation": "A catalyst increases the rate of a reaction by providing a pathway with a lower activation energy. It is not used up in the reaction.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0006",
@@ -125,7 +125,7 @@
       "acidity"
     ],
     "explanation": "pH is a scale that measures how acidic or alkaline a solution is, based on its hydrogen ion concentration. A pH of 7 is neutral, below 7 is acidic and above 7 is alkaline.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0007",
@@ -146,7 +146,7 @@
       "element"
     ],
     "explanation": "Isotopes are atoms of the same element with different numbers of neutrons. They have the same chemical properties but different masses.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0008",
@@ -169,7 +169,7 @@
       "dm3"
     ],
     "explanation": "The concentration of a solution is the amount of solute in moles divided by the volume of the solution in cubic decimetres. It is measured in mol per dm^3.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0009",
@@ -190,7 +190,7 @@
       "atom"
     ],
     "explanation": "Electronegativity is a measure of how strongly an atom attracts the shared electrons in a bond. Fluorine has the highest value on the Pauling scale.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0010",
@@ -213,7 +213,7 @@
       "pressure"
     ],
     "explanation": "If a system at dynamic equilibrium is disturbed, the position of equilibrium shifts to oppose the change. It predicts the effect of changing temperature, pressure or concentration.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0011",
@@ -234,7 +234,7 @@
       "ionic"
     ],
     "explanation": "Table salt is sodium chloride, NaCl. It is an ionic compound made of sodium ions and chloride ions in a 1:1 ratio.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0012",
@@ -256,7 +256,7 @@
       "reduction"
     ],
     "explanation": "Oxidation is the loss of electrons, which raises an element's oxidation state. It always happens together with reduction in a redox reaction.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0013",
@@ -278,7 +278,7 @@
       "carbon"
     ],
     "explanation": "Alkanes are saturated hydrocarbons that contain only single carbon-carbon bonds. Their general formula is C_nH_(2n+2).",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0014",
@@ -300,7 +300,7 @@
       "reaction"
     ],
     "explanation": "Enthalpy change is the heat energy transferred in a reaction at constant pressure. It is negative for exothermic reactions and positive for endothermic ones.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0015",
@@ -321,7 +321,7 @@
       "lightest"
     ],
     "explanation": "Helium has atomic number 2, meaning its atoms have two protons. It is a noble gas and is unreactive.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0016",
@@ -343,7 +343,7 @@
       "reaction"
     ],
     "explanation": "A rate equation links the rate of a reaction to the concentrations of the reactants raised to their orders. The orders must be found by experiment, not from the balanced equation.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0017",
@@ -364,7 +364,7 @@
       "indicator"
     ],
     "explanation": "A titration is a method for finding the concentration of a solution by adding another solution of known concentration until the reaction is complete. The end point is usually shown by an indicator.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0018",
@@ -385,7 +385,7 @@
       "repeating"
     ],
     "explanation": "A polymer is a very large molecule made from many small repeating units called monomers joined together. Poly(ethene) is a common example.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0019",
@@ -406,7 +406,7 @@
       "current"
     ],
     "explanation": "Electrolysis uses an electric current to drive a non-spontaneous chemical reaction in a molten or dissolved ionic compound. Metals form at the cathode and non-metals at the anode.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0020",
@@ -429,7 +429,7 @@
       "atoms"
     ],
     "explanation": "The Avogadro constant is 6.022 x 10^23 per mole. It is the number of particles in one mole of a substance.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0021",
@@ -451,7 +451,7 @@
       "electrons"
     ],
     "explanation": "An atom is the smallest unit of an element that keeps its chemical properties. It has a nucleus of protons and neutrons surrounded by electrons.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0022",
@@ -472,7 +472,7 @@
       "kind"
     ],
     "explanation": "An element is a pure substance made of only one kind of atom. Elements are arranged in the periodic table by atomic number.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0023",
@@ -494,7 +494,7 @@
       "two"
     ],
     "explanation": "A compound is a substance made of two or more different elements chemically bonded together. Its properties differ from those of the elements in it.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0024",
@@ -515,7 +515,7 @@
       "combined"
     ],
     "explanation": "A mixture is two or more substances that are together but not chemically bonded. They can be separated by physical methods such as filtering or distillation.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0025",
@@ -537,7 +537,7 @@
       "smallest"
     ],
     "explanation": "A molecule is a group of two or more atoms held together by covalent bonds. Water and oxygen are both molecules.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0026",
@@ -559,7 +559,7 @@
       "particle"
     ],
     "explanation": "A proton is a positively charged particle found in the nucleus. The number of protons defines which element an atom is.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0027",
@@ -581,7 +581,7 @@
       "particle"
     ],
     "explanation": "A neutron is an uncharged particle found in the nucleus, with about the same mass as a proton. Different numbers of neutrons give different isotopes.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0028",
@@ -604,7 +604,7 @@
       "configuration"
     ],
     "explanation": "An electron shell is an energy level around the nucleus that can hold a limited number of electrons. The outer shell largely decides how an atom reacts.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0029",
@@ -626,7 +626,7 @@
       "elements"
     ],
     "explanation": "A group is a vertical column of the periodic table. Elements in a group have the same number of outer electrons and so react in similar ways.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0030",
@@ -648,7 +648,7 @@
       "table"
     ],
     "explanation": "A period is a horizontal row of the periodic table. Across a period the atomic number rises by one each time and the elements fill the same outer shell.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0031",
@@ -671,7 +671,7 @@
       "potassium"
     ],
     "explanation": "The alkali metals are the soft, very reactive metals in group 1. They react with water to form an alkaline solution and hydrogen.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0032",
@@ -694,7 +694,7 @@
       "diatomic"
     ],
     "explanation": "The halogens are the reactive non-metals in group 7, such as fluorine and chlorine. They exist as two-atom molecules and become less reactive down the group.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0033",
@@ -718,7 +718,7 @@
       "full outer shell"
     ],
     "explanation": "The noble gases are the very unreactive elements in the last group, such as helium and argon. Their outer shells are full, so they rarely form bonds.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0034",
@@ -740,7 +740,7 @@
       "solution"
     ],
     "explanation": "In a displacement reaction a more reactive element takes the place of a less reactive one in a compound. For example, chlorine displaces bromine from potassium bromide.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0035",
@@ -762,7 +762,7 @@
       "temperature rise"
     ],
     "explanation": "An exothermic reaction transfers energy to its surroundings, so the temperature rises. Burning fuels is an example.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0036",
@@ -784,7 +784,7 @@
       "cold"
     ],
     "explanation": "An endothermic reaction takes in energy from its surroundings, so the temperature falls. Photosynthesis is an example.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0037",
@@ -805,7 +805,7 @@
       "barrier"
     ],
     "explanation": "Activation energy is the minimum energy colliding particles need for a reaction to happen. Catalysts lower it.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0038",
@@ -827,7 +827,7 @@
       "reversible"
     ],
     "explanation": "A reversible reaction reaches dynamic equilibrium when the forward and reverse reactions occur at the same rate. The amounts of reactants and products then stay constant.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0039",
@@ -848,7 +848,7 @@
       "below seven"
     ],
     "explanation": "An acid is a substance that releases hydrogen ions in water, giving a pH below 7. It can donate a proton to a base.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0040",
@@ -870,7 +870,7 @@
       "neutralise"
     ],
     "explanation": "An alkali is a base that dissolves in water to give hydroxide ions, with a pH above 7. Sodium hydroxide is an example.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0041",
@@ -892,7 +892,7 @@
       "react"
     ],
     "explanation": "Neutralisation is the reaction of an acid with a base to form a salt and water. The pH of the mixture moves towards 7.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0042",
@@ -914,7 +914,7 @@
       "neutralisation"
     ],
     "explanation": "In chemistry a salt is an ionic compound formed when the hydrogen of an acid is replaced by a metal or ammonium ion. Sodium chloride is a salt.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0043",
@@ -935,7 +935,7 @@
       "redox"
     ],
     "explanation": "Reduction is the gain of electrons, which lowers an element's oxidation state. It happens together with oxidation.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0044",
@@ -957,7 +957,7 @@
       "both"
     ],
     "explanation": "A redox reaction is one in which electrons are transferred, so one substance is oxidised and another reduced. Rusting and combustion are examples.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0045",
@@ -979,7 +979,7 @@
       "current"
     ],
     "explanation": "An electrode is a conductor through which current enters or leaves an electrolyte. Electrolysis uses two: an anode and a cathode.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0046",
@@ -1000,7 +1000,7 @@
       "loses"
     ],
     "explanation": "The anode is the positive electrode in electrolysis, where oxidation happens. Negative ions move towards it.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0047",
@@ -1021,7 +1021,7 @@
       "gains"
     ],
     "explanation": "The cathode is the negative electrode in electrolysis, where reduction happens. Positive ions move towards it.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0048",
@@ -1042,7 +1042,7 @@
       "fractions"
     ],
     "explanation": "Fractional distillation separates a liquid mixture into fractions by boiling point. Crude oil is separated this way in a tall column that is hotter at the bottom.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0049",
@@ -1064,7 +1064,7 @@
       "hydrocarbons"
     ],
     "explanation": "Cracking breaks long hydrocarbon chains into shorter, more useful ones, producing alkenes as well as alkanes. It uses heat and a catalyst.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0050",
@@ -1086,7 +1086,7 @@
       "bromine water"
     ],
     "explanation": "Alkenes are unsaturated hydrocarbons with a carbon-carbon double bond. They decolourise bromine water, which is the test for them.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0051",
@@ -1108,7 +1108,7 @@
       "molecule"
     ],
     "explanation": "A functional group is a specific group of atoms in a molecule that decides its characteristic reactions. The hydroxyl group of alcohols is an example.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0052",
@@ -1131,7 +1131,7 @@
       "molecular"
     ],
     "explanation": "Isomers are compounds with the same molecular formula but different arrangements of atoms. They often have different physical and chemical properties.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0053",
@@ -1153,7 +1153,7 @@
       "condensation"
     ],
     "explanation": "Esterification is the reaction of an alcohol with a carboxylic acid to form an ester and water. It is reversible and usually catalysed by a strong acid.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0054",
@@ -1174,7 +1174,7 @@
       "atmosphere"
     ],
     "explanation": "Nitrogen makes up about 78% of Earth's atmosphere. Oxygen is the next most abundant at about 21%.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0055",
@@ -1194,7 +1194,7 @@
       "precious"
     ],
     "explanation": "The symbol for gold is Au, from the Latin name aurum. Gold is an unreactive metal with atomic number 79.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0056",
@@ -1215,7 +1215,7 @@
       "water"
     ],
     "explanation": "Pure water is neutral and has a pH of 7 at 25 degrees Celsius. Acids have a lower pH and alkalis a higher one.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0057",
@@ -1236,7 +1236,7 @@
       "flammable"
     ],
     "explanation": "Acids react with reactive metals to form a salt and hydrogen gas. Hydrogen is confirmed by a squeaky pop with a lit splint.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0058",
@@ -1256,7 +1256,7 @@
       "drink"
     ],
     "explanation": "Water has the formula H2O: each molecule has two hydrogen atoms bonded to one oxygen atom. It is a bent, polar molecule.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0059",
@@ -1281,7 +1281,7 @@
       "electrons"
     ],
     "explanation": "London dispersion forces arise from temporary uneven distributions of electrons that create short-lived dipoles. They exist between all molecules and grow stronger with more electrons.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0060",
@@ -1303,7 +1303,7 @@
       "graphite"
     ],
     "explanation": "Allotropes are different structural forms of the same element in the same physical state. Diamond and graphite are allotropes of carbon.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0061",
@@ -1323,7 +1323,7 @@
       "towel"
     ],
     "explanation": "An absorbent material soaks up liquid. Paper towels and sponges are absorbent.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0062",
@@ -1344,7 +1344,7 @@
       "light"
     ],
     "explanation": "A transparent material lets light pass straight through, so you can see clearly through it. Glass is transparent.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0063",
@@ -1365,7 +1365,7 @@
       "umbrella"
     ],
     "explanation": "A waterproof material does not let water through. Raincoats and umbrellas are made of waterproof materials.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0064",
@@ -1388,7 +1388,7 @@
       "stir"
     ],
     "explanation": "Something dissolves when it mixes into a liquid so completely that you can no longer see it, like sugar stirred into tea.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0065",
@@ -1409,7 +1409,7 @@
       "solid"
     ],
     "explanation": "When water freezes it turns into ice, a solid. Water freezes at 0 degrees Celsius.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0066",
@@ -1431,7 +1431,7 @@
       "again"
     ],
     "explanation": "Recycling means turning used materials, like paper, glass and plastic, into new things instead of throwing them away.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0067",
@@ -1452,7 +1452,7 @@
       "dark"
     ],
     "explanation": "An opaque material does not let any light through, so you cannot see through it. Wood and metal are opaque.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "che-0068",
@@ -1474,6 +1474,6 @@
       "stiff"
     ],
     "explanation": "A flexible material can bend without breaking. Rubber and fabric are flexible.",
-    "status": "draft"
+    "status": "reviewed"
   }
 ]

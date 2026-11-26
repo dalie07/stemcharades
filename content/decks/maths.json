@@ -19,7 +19,7 @@
       "tangent"
     ],
     "explanation": "The derivative of a function measures how fast its output changes as its input changes. Geometrically it is the gradient of the tangent to the graph at a point.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0002",
@@ -40,7 +40,7 @@
       "equation"
     ],
     "explanation": "The formula gives the solutions of any equation of the form ax^2 + bx + c = 0. The part under the square root, b^2 - 4ac, is the discriminant and tells you how many real roots there are.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0003",
@@ -63,7 +63,7 @@
       "integer"
     ],
     "explanation": "A prime number is a whole number greater than 1 whose only positive factors are 1 and itself. The number 2 is the only even prime.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0004",
@@ -87,7 +87,7 @@
       "sides"
     ],
     "explanation": "In a right-angled triangle the square of the hypotenuse equals the sum of the squares of the other two sides. It lets you find a missing side length from the other two.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0005",
@@ -108,7 +108,7 @@
       "sum"
     ],
     "explanation": "Integration is the reverse of differentiation. A definite integral gives the signed area under a curve between two limits.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0006",
@@ -129,7 +129,7 @@
       "grid"
     ],
     "explanation": "A matrix is a rectangular arrangement of numbers in rows and columns. Matrices represent linear transformations and systems of linear equations.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0007",
@@ -151,7 +151,7 @@
       "round"
     ],
     "explanation": "The area of a circle is pi times the radius squared. Doubling the radius makes the area four times larger.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0008",
@@ -173,7 +173,7 @@
       "average"
     ],
     "explanation": "Standard deviation measures how widely data values are spread around the mean. It is the square root of the variance.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0009",
@@ -194,7 +194,7 @@
       "inverse"
     ],
     "explanation": "A logarithm answers the question: to what power must the base be raised to give this number? It is the inverse operation of exponentiation.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0010",
@@ -218,7 +218,7 @@
       "complex"
     ],
     "explanation": "Euler's identity links five fundamental constants: e, i, pi, 1 and 0. It is a special case of Euler's formula, e^(ix) = cos x + i sin x.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0011",
@@ -239,7 +239,7 @@
       "add"
     ],
     "explanation": "The interior angles of any triangle in a flat plane add up to 180 degrees. This follows from the properties of parallel lines.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0012",
@@ -261,7 +261,7 @@
       "eigen"
     ],
     "explanation": "An eigenvalue is a scalar lambda for which Av = lambda v has a non-zero solution v. It tells you how a linear transformation stretches along its eigenvector direction.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0013",
@@ -281,7 +281,7 @@
       "random"
     ],
     "explanation": "Probability is a number from 0 to 1 that measures how likely an event is. For equally likely outcomes it is favourable outcomes divided by total outcomes.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0014",
@@ -302,7 +302,7 @@
       "differentiate"
     ],
     "explanation": "The chain rule gives the derivative of a function of a function. You differentiate the outer function and multiply by the derivative of the inner function.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0015",
@@ -322,7 +322,7 @@
       "ordered"
     ],
     "explanation": "The median is the middle value of a data set once it is put in order. With an even number of values it is the mean of the two middle values.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0016",
@@ -345,7 +345,7 @@
       "trigonometric"
     ],
     "explanation": "The derivative of sin x with respect to x is cos x, when x is measured in radians. Similarly the derivative of cos x is -sin x.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0017",
@@ -366,7 +366,7 @@
       "scalar"
     ],
     "explanation": "A vector is a quantity with both a size and a direction. Displacement and velocity are vectors, while distance and speed are not.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0018",
@@ -387,7 +387,7 @@
       "value"
     ],
     "explanation": "A limit is the value that a function gets arbitrarily close to as its input approaches some point. Limits are the foundation of derivatives and integrals.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0019",
@@ -409,7 +409,7 @@
       "angles"
     ],
     "explanation": "The sine rule says that each side of a triangle divided by the sine of its opposite angle gives the same ratio. It is used to solve triangles that are not right-angled.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0020",
@@ -430,7 +430,7 @@
       "golden"
     ],
     "explanation": "In the Fibonacci sequence each term is the sum of the two terms before it, starting 0, 1, 1, 2, 3, 5. The ratio of consecutive terms approaches the golden ratio.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0021",
@@ -453,7 +453,7 @@
       "add"
     ],
     "explanation": "The mean is found by adding all the values and dividing by how many there are. It is the most common measure of the centre of a data set.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0022",
@@ -473,7 +473,7 @@
       "often"
     ],
     "explanation": "The mode is the value that occurs most often in a data set. A data set can have more than one mode, or none.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0023",
@@ -493,7 +493,7 @@
       "spread"
     ],
     "explanation": "The range is the difference between the largest and smallest values in a data set. It is a simple measure of how spread out the data is.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0024",
@@ -515,7 +515,7 @@
       "proportion"
     ],
     "explanation": "A percentage expresses an amount as a fraction of 100. For example, 25% means 25 out of every 100, or one quarter.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0025",
@@ -537,7 +537,7 @@
       "divide"
     ],
     "explanation": "A fraction represents part of a whole, written as one number over another. The top number counts the parts taken and the bottom number says how many equal parts make the whole.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0026",
@@ -559,7 +559,7 @@
       "parts"
     ],
     "explanation": "A ratio compares the sizes of two or more quantities, such as 2:3. Ratios can be simplified by dividing every part by a common factor.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0027",
@@ -581,7 +581,7 @@
       "number"
     ],
     "explanation": "The square root of a number is a value that gives the number when multiplied by itself. For example, the square root of 49 is 7.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0028",
@@ -604,7 +604,7 @@
       "multiply"
     ],
     "explanation": "Prime factorisation writes a whole number as a product of prime numbers. Every integer above 1 has exactly one such factorisation, apart from the order of the factors.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0029",
@@ -625,7 +625,7 @@
       "run"
     ],
     "explanation": "The gradient of a straight line measures how steep it is. It equals the change in y divided by the change in x between any two points on the line.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0030",
@@ -647,7 +647,7 @@
       "direction"
     ],
     "explanation": "Parallel lines lie in the same plane and never meet, however far they are extended. They stay the same distance apart and have equal gradients.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0031",
@@ -668,7 +668,7 @@
       "pi"
     ],
     "explanation": "The circumference is the distance around the edge of a circle. It equals pi times the diameter, or 2 times pi times the radius.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0032",
@@ -690,7 +690,7 @@
       "ball"
     ],
     "explanation": "The volume of a sphere is four-thirds times pi times the radius cubed. Doubling the radius increases the volume eightfold.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0033",
@@ -712,7 +712,7 @@
       "same"
     ],
     "explanation": "In an arithmetic sequence each term is found by adding the same fixed amount to the previous one. That fixed amount is called the common difference.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0034",
@@ -734,7 +734,7 @@
       "each"
     ],
     "explanation": "In a geometric sequence each term is found by multiplying the previous one by the same fixed number. That number is called the common ratio.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0035",
@@ -757,7 +757,7 @@
       "brackets"
     ],
     "explanation": "The binomial theorem gives the expansion of (a + b) raised to a whole-number power n as a sum of terms. The coefficients are the binomial coefficients, which also appear in Pascal's triangle.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0036",
@@ -779,7 +779,7 @@
       "histogram"
     ],
     "explanation": "The normal distribution is a symmetric, bell-shaped probability distribution centred on the mean. About 68% of values lie within one standard deviation of the mean.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0037",
@@ -800,7 +800,7 @@
       "causation"
     ],
     "explanation": "Correlation measures how strongly two variables are linearly related. A strong correlation does not by itself show that one variable causes the other.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0038",
@@ -823,7 +823,7 @@
       "sample"
     ],
     "explanation": "A hypothesis test uses sample data to decide whether there is enough evidence to reject a null hypothesis. The result is judged against a chosen significance level.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0039",
@@ -844,7 +844,7 @@
       "zero"
     ],
     "explanation": "The determinant is a single number calculated from a square matrix. A matrix has an inverse only if its determinant is not zero.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0040",
@@ -866,7 +866,7 @@
       "angle"
     ],
     "explanation": "The dot product of two vectors is a single number equal to the product of their magnitudes and the cosine of the angle between them. It is zero when the vectors are perpendicular.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0041",
@@ -888,7 +888,7 @@
       "right-hand"
     ],
     "explanation": "The cross product of two vectors in three dimensions is a vector perpendicular to both. Its magnitude equals the area of the parallelogram the two vectors form.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0042",
@@ -910,7 +910,7 @@
       "gradient"
     ],
     "explanation": "A tangent to a curve is a straight line that touches the curve at one point and has the same gradient as the curve there. Its gradient is the derivative at that point.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0043",
@@ -932,7 +932,7 @@
       "infinity"
     ],
     "explanation": "An asymptote is a line that a curve gets closer and closer to without ever reaching it. The graph of y = 1/x has asymptotes along both axes.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0044",
@@ -954,7 +954,7 @@
       "relation"
     ],
     "explanation": "A function is a rule that gives exactly one output for each input. It is often written as f(x).",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0045",
@@ -976,7 +976,7 @@
       "equation"
     ],
     "explanation": "An inequality compares two expressions using symbols such as less than or greater than. Its solution is usually a range of values rather than a single number.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0046",
@@ -998,7 +998,7 @@
       "both"
     ],
     "explanation": "Simultaneous equations are two or more equations that must all be true at the same time. Solving them means finding values of the unknowns that satisfy every equation.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0047",
@@ -1019,7 +1019,7 @@
       "sides"
     ],
     "explanation": "The perimeter of a shape is the total distance around its boundary. For a polygon it is the sum of the side lengths.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0048",
@@ -1041,7 +1041,7 @@
       "shape"
     ],
     "explanation": "The area of a triangle is half of its base multiplied by its perpendicular height. It works for every triangle, not only right-angled ones.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0049",
@@ -1063,7 +1063,7 @@
       "triangles"
     ],
     "explanation": "Two shapes are congruent if one can be moved onto the other by sliding, turning or flipping, with no change of size. Congruent shapes have equal corresponding sides and angles.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0050",
@@ -1085,7 +1085,7 @@
       "matters"
     ],
     "explanation": "A permutation is an arrangement of items in a particular order. The number of ways to arrange n different items is n factorial.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0051",
@@ -1106,7 +1106,7 @@
       "subset"
     ],
     "explanation": "A combination is a selection of items where the order does not matter. The number of ways to choose r items from n is written nCr.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0052",
@@ -1127,7 +1127,7 @@
       "decimal"
     ],
     "explanation": "Pi is the ratio of a circle's circumference to its diameter, about 3.14159. It is irrational, so its decimal expansion never ends or repeats.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0053",
@@ -1147,7 +1147,7 @@
       "gradient"
     ],
     "explanation": "The derivative of x squared with respect to x is 2x. This follows from the power rule: bring the power down and reduce it by one.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0054",
@@ -1170,7 +1170,7 @@
       "antiderivative"
     ],
     "explanation": "The integral of 1/x is the natural logarithm of the absolute value of x, plus a constant. It is the one exception to the usual power rule for integration.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0055",
@@ -1192,7 +1192,7 @@
       "full"
     ],
     "explanation": "A full turn is 360 degrees. This is why the angles around a point add up to 360 degrees.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0056",
@@ -1213,7 +1213,7 @@
       "minus one"
     ],
     "explanation": "A complex number has a real part and an imaginary part, written a + bi where i squared equals minus one. They let every polynomial equation have a solution.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0057",
@@ -1235,7 +1235,7 @@
       "degree"
     ],
     "explanation": "A polynomial is an expression made of terms that are whole-number powers of a variable multiplied by coefficients. The highest power is called its degree.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0058",
@@ -1255,7 +1255,7 @@
       "allowed"
     ],
     "explanation": "The domain of a function is the set of all input values for which it is defined. For f(x) = 1/x the domain excludes zero.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0059",
@@ -1277,7 +1277,7 @@
       "self-evident"
     ],
     "explanation": "An axiom is a statement accepted as true without proof, used as a starting point for reasoning. Theorems are then proved from axioms.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0060",
@@ -1300,7 +1300,7 @@
       "integers"
     ],
     "explanation": "Proof by induction shows a statement is true for every whole number by proving a base case and then showing that if it holds for one number it holds for the next.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0061",
@@ -1322,7 +1322,7 @@
       "odd"
     ],
     "explanation": "An even number can be split into two equal groups with nothing left over. Even numbers end in 0, 2, 4, 6 or 8.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0062",
@@ -1344,7 +1344,7 @@
       "one"
     ],
     "explanation": "An odd number cannot be split into two equal groups: there is always one left over. Odd numbers end in 1, 3, 5, 7 or 9.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0063",
@@ -1365,7 +1365,7 @@
       "position"
     ],
     "explanation": "Place value is what a digit is worth because of where it sits in a number. In 352, the 5 is worth 50 because it is in the tens place.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0064",
@@ -1386,7 +1386,7 @@
       "place"
     ],
     "explanation": "A digit is one of the ten symbols 0 to 9 that we use to write numbers. The number 305 has three digits.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0065",
@@ -1408,7 +1408,7 @@
       "estimate"
     ],
     "explanation": "Rounding means changing a number to a nearby, simpler one, such as the nearest ten. 47 rounded to the nearest ten is 50.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0066",
@@ -1429,7 +1429,7 @@
       "century"
     ],
     "explanation": "After 99 comes 100. The ones and the tens are both full, so we move into a new place: the hundreds.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0067",
@@ -1450,7 +1450,7 @@
       "answer"
     ],
     "explanation": "The sum is the answer you get when you add numbers together. The sum of 4 and 5 is 9.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0068",
@@ -1470,7 +1470,7 @@
       "between"
     ],
     "explanation": "The difference between two numbers is how much bigger one is than the other. You find it by subtracting: the difference between 9 and 4 is 5.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0069",
@@ -1491,7 +1491,7 @@
       "plus"
     ],
     "explanation": "7 + 8 = 15. One way to see it: 7 + 3 makes 10, and 5 more makes 15.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0070",
@@ -1511,7 +1511,7 @@
       "count"
     ],
     "explanation": "A number line is a straight line with numbers marked in order along it. You can count on or back along it to add and subtract.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0071",
@@ -1532,7 +1532,7 @@
       "check"
     ],
     "explanation": "An inverse operation undoes another one. Subtraction is the inverse of addition: 5 + 3 = 8, so 8 - 3 = 5.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0072",
@@ -1553,7 +1553,7 @@
       "minus"
     ],
     "explanation": "20 - 6 = 14. Counting back 6 from 20 on a number line lands on 14.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0073",
@@ -1575,7 +1575,7 @@
       "facts"
     ],
     "explanation": "A times table lists the multiples of a number in order, such as 3, 6, 9, 12 for the three times table. Knowing them by heart makes multiplying quick.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0074",
@@ -1595,7 +1595,7 @@
       "spare"
     ],
     "explanation": "A remainder is what is left over when a number cannot be shared equally. 13 shared between 4 is 3 each, remainder 1.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0075",
@@ -1617,7 +1617,7 @@
       "multiply"
     ],
     "explanation": "6 × 7 = 42. It is the same as 7 × 6: six lots of seven, or seven lots of six.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0076",
@@ -1637,7 +1637,7 @@
       "sets"
     ],
     "explanation": "Equal groups have the same number of things in each group. Making equal groups is how we share and divide: 12 sweets in 3 equal groups is 4 each.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0077",
@@ -1658,7 +1658,7 @@
       "factor"
     ],
     "explanation": "A multiple of a number is what you get when you multiply it by a whole number. 12, 18 and 24 are all multiples of 6.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0078",
@@ -1678,7 +1678,7 @@
       "parts"
     ],
     "explanation": "The numerator is the top number of a fraction. It says how many equal parts you have: in 3/4 the numerator is 3.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0079",
@@ -1698,7 +1698,7 @@
       "top"
     ],
     "explanation": "The denominator is the bottom number of a fraction. It says how many equal parts the whole is split into: in 3/4 the denominator is 4.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0080",
@@ -1720,7 +1720,7 @@
       "middle"
     ],
     "explanation": "A half is one of two equal parts of a whole. Half of 10 is 5.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0081",
@@ -1743,7 +1743,7 @@
       "half"
     ],
     "explanation": "A quarter is one of four equal parts of a whole. Two quarters make a half, and a quarter of 20 is 5.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0082",
@@ -1764,7 +1764,7 @@
       "worth"
     ],
     "explanation": "Equivalent fractions look different but are worth the same amount. 1/2, 2/4 and 4/8 are all equivalent.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0083",
@@ -1784,7 +1784,7 @@
       "whole"
     ],
     "explanation": "The decimal point separates whole numbers from parts of a whole. In 3.5 it shows 3 wholes and 5 tenths.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0084",
@@ -1807,7 +1807,7 @@
       "short"
     ],
     "explanation": "A centimetre is a small unit of length. There are 100 centimetres in a metre, and a fingernail is about 1 centimetre wide.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0085",
@@ -1830,7 +1830,7 @@
       "grams"
     ],
     "explanation": "A kilogram is a unit of mass. A bag of sugar has a mass of about 1 kilogram, and 1 kilogram is 1000 grams.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0086",
@@ -1850,7 +1850,7 @@
       "surface"
     ],
     "explanation": "Area is the amount of flat space a shape covers. It is measured in squares, such as square centimetres.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0087",
@@ -1871,7 +1871,7 @@
       "times"
     ],
     "explanation": "To find the area of a rectangle, multiply its length by its width. A rectangle 3 cm by 4 cm has an area of 12 square centimetres.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0088",
@@ -1891,7 +1891,7 @@
       "seconds"
     ],
     "explanation": "There are 60 minutes in an hour. The minute hand goes all the way round the clock once every hour.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0089",
@@ -1911,7 +1911,7 @@
       "fill"
     ],
     "explanation": "Capacity is how much a container can hold, such as a jug that holds 1 litre of water.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0090",
@@ -1931,7 +1931,7 @@
       "shape"
     ],
     "explanation": "A triangle is a flat shape with three straight sides and three corners.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0091",
@@ -1953,7 +1953,7 @@
       "ninety"
     ],
     "explanation": "A right angle is a quarter turn, exactly 90 degrees, like the corner of a book.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0092",
@@ -1974,7 +1974,7 @@
       "box"
     ],
     "explanation": "A cube is a 3D shape with six square faces that are all the same size, like a dice.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0093",
@@ -1997,7 +1997,7 @@
       "reflection"
     ],
     "explanation": "A shape is symmetrical when one half is a mirror image of the other. The line of symmetry is where you could fold it so both halves match exactly.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0094",
@@ -2017,7 +2017,7 @@
       "bee"
     ],
     "explanation": "A hexagon has six sides and six corners. The cells of a honeycomb are hexagons.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0095",
@@ -2037,7 +2037,7 @@
       "curve"
     ],
     "explanation": "A circle is a perfectly round flat shape. Every point on its edge is the same distance from the centre.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0096",
@@ -2060,7 +2060,7 @@
       "gate"
     ],
     "explanation": "A tally chart records counts with marks, drawn in groups of five so they are quick to add up.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0097",
@@ -2081,7 +2081,7 @@
       "columns"
     ],
     "explanation": "A bar chart shows data with bars of different heights. The taller the bar, the bigger the number it stands for.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0098",
@@ -2102,7 +2102,7 @@
       "chart"
     ],
     "explanation": "A pictogram shows data using pictures or symbols. A key tells you how many each picture stands for.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0099",
@@ -2122,7 +2122,7 @@
       "collect"
     ],
     "explanation": "A survey collects information by asking people the same questions, such as their favourite fruit.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "mat-0100",
@@ -2143,6 +2143,6 @@
       "sets"
     ],
     "explanation": "A Venn diagram sorts things into overlapping circles. Things that belong to both groups go in the middle, where the circles overlap.",
-    "status": "draft"
+    "status": "reviewed"
   }
 ]

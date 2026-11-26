@@ -18,7 +18,7 @@
       "oxygen"
     ],
     "explanation": "Photosynthesis is the process by which plants and algae use light energy to make glucose from carbon dioxide and water. Oxygen is released as a by-product.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0002",
@@ -39,7 +39,7 @@
       "growth"
     ],
     "explanation": "Mitosis is cell division that produces two genetically identical daughter cells. It is used for growth and repair.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0003",
@@ -60,7 +60,7 @@
       "division"
     ],
     "explanation": "Meiosis is a type of cell division that produces four genetically different cells with half the normal number of chromosomes. It is how gametes are made.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0004",
@@ -82,7 +82,7 @@
       "nucleotide"
     ],
     "explanation": "DNA is the molecule that carries genetic information in most living things. It is a double helix whose sequence of bases codes for proteins.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0005",
@@ -103,7 +103,7 @@
       "reaction"
     ],
     "explanation": "Enzymes are biological catalysts, made of protein, that speed up chemical reactions in living things. Each enzyme has an active site that fits a specific substrate.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0006",
@@ -123,7 +123,7 @@
       "semipermeable"
     ],
     "explanation": "Osmosis is the net movement of water molecules across a partially permeable membrane from a region of higher water potential to lower water potential. It does not need energy from the cell.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0007",
@@ -144,7 +144,7 @@
       "adapted"
     ],
     "explanation": "Natural selection is the process by which individuals with advantageous inherited traits survive and reproduce more than others. Over generations the population changes.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0008",
@@ -166,7 +166,7 @@
       "organelle"
     ],
     "explanation": "Mitochondria are the organelles where most aerobic respiration takes place. They release energy by making ATP.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0009",
@@ -190,7 +190,7 @@
       "breathing"
     ],
     "explanation": "In aerobic respiration glucose reacts with oxygen to produce carbon dioxide and water, releasing energy. Most of the energy is captured in ATP.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0010",
@@ -211,7 +211,7 @@
       "recessive"
     ],
     "explanation": "An allele is one of the different versions of a gene. You inherit one allele of each gene from each parent.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0011",
@@ -232,7 +232,7 @@
       "community"
     ],
     "explanation": "An ecosystem is a community of living organisms interacting with each other and with the non-living parts of their environment. Examples include ponds and woodlands.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0012",
@@ -253,7 +253,7 @@
       "regulate"
     ],
     "explanation": "Homeostasis is the maintenance of a stable internal environment despite changes outside. Body temperature and blood glucose are both controlled this way.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0013",
@@ -274,7 +274,7 @@
       "lymphocyte"
     ],
     "explanation": "An antibody is a protein made by white blood cells that binds to a specific antigen on a pathogen. This marks the pathogen for destruction.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0014",
@@ -295,7 +295,7 @@
       "organelle"
     ],
     "explanation": "Chlorophyll is found in chloroplasts, where photosynthesis takes place. It absorbs mainly red and blue light and reflects green.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0015",
@@ -316,7 +316,7 @@
       "makeup"
     ],
     "explanation": "A genotype is the combination of alleles an organism has for a gene. Together with the environment it determines the phenotype.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0016",
@@ -337,7 +337,7 @@
       "mrna"
     ],
     "explanation": "Ribosomes are the small structures where proteins are made by translating messenger RNA. They are found free in the cytoplasm and on rough endoplasmic reticulum.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0017",
@@ -358,7 +358,7 @@
       "habitats"
     ],
     "explanation": "Biodiversity is the variety of living things in an area, including the number of species and the genetic variation within them. High biodiversity makes ecosystems more resilient.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0018",
@@ -379,7 +379,7 @@
       "divide"
     ],
     "explanation": "A stem cell is an unspecialised cell that can divide and differentiate into other cell types. They are used in research into treating disease.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0019",
@@ -400,7 +400,7 @@
       "weak"
     ],
     "explanation": "Complementary base pairs, A with T and C with G, are held together by hydrogen bonds. These bonds are weak individually but strong in total, and they can be broken to unzip the DNA.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0020",
@@ -422,7 +422,7 @@
       "antibodies"
     ],
     "explanation": "Vaccination introduces a harmless form of a pathogen so the body makes memory cells. If the real pathogen appears later, the immune response is fast.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0021",
@@ -444,7 +444,7 @@
       "outside"
     ],
     "explanation": "The cell membrane surrounds the cell and controls which substances enter and leave. It is made of a double layer of phospholipids with embedded proteins.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0022",
@@ -465,7 +465,7 @@
       "membrane"
     ],
     "explanation": "The nucleus is the organelle that contains the cell's DNA and controls its activities. It is surrounded by a double membrane with pores.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0023",
@@ -486,7 +486,7 @@
       "outside"
     ],
     "explanation": "A cell wall is a rigid layer outside the cell membrane of plant cells, made mainly of cellulose. It supports the cell and stops it bursting.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0024",
@@ -508,7 +508,7 @@
       "cell"
     ],
     "explanation": "A vacuole is a fluid-filled organelle that stores substances. In plant cells a large permanent vacuole holds cell sap and helps keep the cell firm.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0025",
@@ -529,7 +529,7 @@
       "fluid"
     ],
     "explanation": "Cytoplasm is the jelly-like fluid inside a cell in which the organelles sit. Many of the cell's chemical reactions happen in it.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0026",
@@ -550,7 +550,7 @@
       "spread"
     ],
     "explanation": "Diffusion is the net movement of particles from a region of higher concentration to a region of lower concentration. It does not need energy from the cell.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0027",
@@ -571,7 +571,7 @@
       "atp"
     ],
     "explanation": "Active transport moves substances across a membrane against their concentration gradient. It needs energy from respiration and carrier proteins.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0028",
@@ -593,7 +593,7 @@
       "organ"
     ],
     "explanation": "A tissue is a group of similar cells that work together to do the same job. Muscle tissue is an example.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0029",
@@ -615,7 +615,7 @@
       "system"
     ],
     "explanation": "An organ is a group of different tissues that work together to carry out a particular function. The stomach and the heart are organs.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0030",
@@ -636,7 +636,7 @@
       "breaks"
     ],
     "explanation": "Amylase is an enzyme that breaks down starch into sugars. It is made in the salivary glands and the pancreas.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0031",
@@ -658,7 +658,7 @@
       "projections"
     ],
     "explanation": "Villi are tiny finger-like projections lining the small intestine. They greatly increase the surface area for absorbing digested food.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0032",
@@ -681,7 +681,7 @@
       "carry"
     ],
     "explanation": "Red blood cells carry oxygen around the body using haemoglobin. They are shaped like biconcave discs and have no nucleus.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0033",
@@ -705,7 +705,7 @@
       "antibodies"
     ],
     "explanation": "White blood cells defend the body against infection. Some engulf pathogens and others make antibodies.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0034",
@@ -727,7 +727,7 @@
       "cut"
     ],
     "explanation": "Platelets are small cell fragments in the blood that help it clot at a wound. The clot forms a scab that seals the cut.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0035",
@@ -749,7 +749,7 @@
       "blood vessel"
     ],
     "explanation": "An artery is a blood vessel that carries blood away from the heart under high pressure. Its walls are thick and elastic.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0036",
@@ -771,7 +771,7 @@
       "blood vessel"
     ],
     "explanation": "A vein is a blood vessel that carries blood back towards the heart. Its walls are thinner than an artery's and it has valves to stop backflow.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0037",
@@ -793,7 +793,7 @@
       "wall"
     ],
     "explanation": "Capillaries are the smallest blood vessels, with walls only one cell thick. Substances pass between the blood and the body's cells through them.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0038",
@@ -814,7 +814,7 @@
       "organ"
     ],
     "explanation": "The heart is a muscular organ that pumps blood around the body. In humans it has four chambers and a double circulation.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0039",
@@ -837,7 +837,7 @@
       "synapse"
     ],
     "explanation": "A neuron is a nerve cell that carries electrical impulses. It has a long axon to carry signals over distance.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0040",
@@ -859,7 +859,7 @@
       "junction"
     ],
     "explanation": "A synapse is the tiny gap between two neurons. The signal crosses it as a chemical, called a neurotransmitter.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0041",
@@ -881,7 +881,7 @@
       "response"
     ],
     "explanation": "A reflex is a fast, automatic response to a stimulus that does not involve conscious thought. The nerve pathway for it is called a reflex arc.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0042",
@@ -903,7 +903,7 @@
       "target"
     ],
     "explanation": "A hormone is a chemical messenger made in a gland and carried in the blood to target organs. Hormones control processes such as growth and blood sugar.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0043",
@@ -924,7 +924,7 @@
       "hormone"
     ],
     "explanation": "Insulin is a hormone made by the pancreas that lowers blood glucose by helping cells take it up. People with type 1 diabetes cannot make enough of it.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0044",
@@ -945,7 +945,7 @@
       "control"
     ],
     "explanation": "Negative feedback is a control system in which a change triggers a response that reverses the change. It keeps conditions such as temperature near a set point.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0045",
@@ -966,7 +966,7 @@
       "appearance"
     ],
     "explanation": "A phenotype is the set of observable characteristics of an organism. It results from the genotype and the environment.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0046",
@@ -988,7 +988,7 @@
       "capital letter"
     ],
     "explanation": "A dominant allele is expressed in the phenotype even when only one copy is present. It is usually written with a capital letter.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0047",
@@ -1010,7 +1010,7 @@
       "masked"
     ],
     "explanation": "A recessive allele only shows in the phenotype when two copies are present. With one copy it is masked by a dominant allele.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0048",
@@ -1031,7 +1031,7 @@
       "carrier"
     ],
     "explanation": "A heterozygous organism has two different alleles of a gene. If one allele is recessive, the organism is a carrier of it.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0049",
@@ -1052,7 +1052,7 @@
       "identical"
     ],
     "explanation": "A homozygous organism has two identical alleles of a gene. It can be homozygous dominant or homozygous recessive.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0050",
@@ -1074,7 +1074,7 @@
       "variation"
     ],
     "explanation": "A mutation is a change in the DNA sequence. Most have little effect, but some alter a protein and can be harmful or helpful.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0051",
@@ -1096,7 +1096,7 @@
       "section"
     ],
     "explanation": "A gene is a section of DNA that codes for a particular protein. Genes are inherited from parents and determine characteristics.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0052",
@@ -1118,7 +1118,7 @@
       "forty-six"
     ],
     "explanation": "A chromosome is a long, coiled molecule of DNA that carries many genes. Human body cells have 23 pairs, or 46 in total.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0053",
@@ -1140,7 +1140,7 @@
       "farmers"
     ],
     "explanation": "Selective breeding is when humans choose organisms with desirable traits to breed from, over many generations. It has produced high-yield crops and dairy cattle.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0054",
@@ -1163,7 +1163,7 @@
       "crispr"
     ],
     "explanation": "Genetic engineering is changing an organism's genes, often by transferring a gene from one species to another. It is used to make insulin and pest-resistant crops.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0055",
@@ -1185,7 +1185,7 @@
       "evidence"
     ],
     "explanation": "A fossil is the preserved remains or traces of an organism from long ago, usually found in rock. Fossils provide evidence for evolution.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0056",
@@ -1207,7 +1207,7 @@
       "population"
     ],
     "explanation": "Extinction is when every individual of a species has died, so the species no longer exists. It can be caused by climate change, disease or loss of habitat.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0057",
@@ -1228,7 +1228,7 @@
       "predator"
     ],
     "explanation": "A food chain shows the transfer of energy from one organism to the next as they feed. It starts with a producer such as a plant.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0058",
@@ -1249,7 +1249,7 @@
       "combustion"
     ],
     "explanation": "The carbon cycle is the movement of carbon between the atmosphere, living things and the Earth. Photosynthesis removes carbon dioxide while respiration and burning return it.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0059",
@@ -1271,7 +1271,7 @@
       "nutrients"
     ],
     "explanation": "Decomposers, such as fungi and bacteria, break down dead plants and animals. This returns nutrients to the soil.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0060",
@@ -1293,7 +1293,7 @@
       "absorb"
     ],
     "explanation": "Plants take in carbon dioxide through their stomata and use it to make glucose. Oxygen is released as a by-product.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0061",
@@ -1314,7 +1314,7 @@
       "animals"
     ],
     "explanation": "A habitat is the natural home of a living thing, where it finds food, water and shelter. A pond is a habitat for frogs.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0062",
@@ -1335,7 +1335,7 @@
       "adult"
     ],
     "explanation": "A life cycle is the series of changes a living thing goes through as it grows, such as egg, caterpillar, pupa and butterfly.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0063",
@@ -1356,7 +1356,7 @@
       "animal"
     ],
     "explanation": "A predator is an animal that hunts and eats other animals. Foxes are predators of rabbits.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0064",
@@ -1376,7 +1376,7 @@
       "food"
     ],
     "explanation": "Prey is an animal that is hunted and eaten by another animal. Mice are prey for owls.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0065",
@@ -1398,7 +1398,7 @@
       "key"
     ],
     "explanation": "Classification means sorting living things into groups by what they have in common, such as animals with backbones.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0066",
@@ -1419,7 +1419,7 @@
       "cow"
     ],
     "explanation": "An animal that eats only plants is a herbivore. Cows and rabbits are herbivores.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0067",
@@ -1439,7 +1439,7 @@
       "skull"
     ],
     "explanation": "The skeleton is the frame of bones inside your body. It holds you up, protects your organs and lets you move.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0068",
@@ -1460,7 +1460,7 @@
       "chest"
     ],
     "explanation": "The lungs are two organs in your chest that fill with air when you breathe in. They pass oxygen into your blood.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0069",
@@ -1481,7 +1481,7 @@
       "bite"
     ],
     "explanation": "Incisors are the flat, sharp teeth at the front of your mouth. They cut and bite food.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0070",
@@ -1503,7 +1503,7 @@
       "exercise"
     ],
     "explanation": "Muscles are body parts that pull on your bones to make you move. Your heart is a muscle too.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0071",
@@ -1525,7 +1525,7 @@
       "mix"
     ],
     "explanation": "A balanced diet means eating the right amounts of different foods, such as fruit, vegetables, grains and protein, to stay healthy.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0072",
@@ -1545,7 +1545,7 @@
       "anchor"
     ],
     "explanation": "Roots grow under the ground. They hold a plant in place and take in water and nutrients from the soil.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0073",
@@ -1567,7 +1567,7 @@
       "bean"
     ],
     "explanation": "A seed contains a tiny new plant and a store of food. With water and warmth it can grow into a new plant.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0074",
@@ -1589,7 +1589,7 @@
       "start"
     ],
     "explanation": "Germination is when a seed starts to grow. It needs water, air and the right temperature.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0075",
@@ -1610,7 +1610,7 @@
       "rose"
     ],
     "explanation": "Petals are the often brightly coloured parts of a flower. Their colour and scent attract insects.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0076",
@@ -1632,7 +1632,7 @@
       "rays"
     ],
     "explanation": "Plants need light from the Sun to make their own food in their leaves. Without light, a plant cannot grow.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0077",
@@ -1654,7 +1654,7 @@
       "flower"
     ],
     "explanation": "The stem holds a plant up and carries water from the roots to the leaves and flowers.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0078",
@@ -1675,7 +1675,7 @@
       "hair"
     ],
     "explanation": "A mammal is an animal with hair or fur that feeds its young on milk. Humans, dogs and whales are mammals.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0079",
@@ -1697,7 +1697,7 @@
       "cold"
     ],
     "explanation": "A reptile is an animal with dry, scaly skin that usually lays eggs. Snakes, lizards and crocodiles are reptiles.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0080",
@@ -1719,7 +1719,7 @@
       "toad"
     ],
     "explanation": "An amphibian lives part of its life in water and part on land. Frogs start life as tadpoles in water.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0081",
@@ -1740,7 +1740,7 @@
       "bones"
     ],
     "explanation": "A vertebrate is an animal with a backbone. Fish, birds and mammals are all vertebrates.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0082",
@@ -1762,7 +1762,7 @@
       "rest"
     ],
     "explanation": "Hibernation is a long, deep sleep some animals take through winter to save energy when food is scarce. Hedgehogs hibernate.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "bio-0083",
@@ -1783,6 +1783,6 @@
       "wriggle"
     ],
     "explanation": "A baby frog is called a tadpole. It lives in water, breathes with gills and slowly grows legs.",
-    "status": "draft"
+    "status": "reviewed"
   }
 ]

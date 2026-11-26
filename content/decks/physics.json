@@ -17,7 +17,7 @@
       "vector"
     ],
     "explanation": "Velocity is the rate of change of displacement with time. It is a vector, so it has both a magnitude and a direction.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0002",
@@ -41,7 +41,7 @@
       "newton"
     ],
     "explanation": "The resultant force on an object equals its mass multiplied by its acceleration. For a given force, a larger mass accelerates less.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0003",
@@ -62,7 +62,7 @@
       "speed"
     ],
     "explanation": "Kinetic energy is the energy an object has because of its motion. It equals one half times mass times speed squared.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0004",
@@ -84,7 +84,7 @@
       "ohm"
     ],
     "explanation": "For an ohmic conductor at constant temperature, the potential difference across it is proportional to the current through it. The constant of proportionality is the resistance.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0005",
@@ -104,7 +104,7 @@
       "microstates"
     ],
     "explanation": "Entropy measures the number of microscopic arrangements that correspond to a system's overall state. The second law of thermodynamics says the total entropy of an isolated system never decreases.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0006",
@@ -124,7 +124,7 @@
       "medium"
     ],
     "explanation": "Refraction is the change in direction of a wave when it passes from one medium into another. It happens because the wave's speed changes in the new medium.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0007",
@@ -149,7 +149,7 @@
       "speed"
     ],
     "explanation": "Mass and energy are equivalent: a mass m has a rest energy of m times the speed of light squared. This explains how nuclear reactions release energy as mass is converted.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0008",
@@ -171,7 +171,7 @@
       "wave"
     ],
     "explanation": "The Doppler effect is the change in observed frequency of a wave when the source and observer move relative to each other. Approaching sources sound higher pitched, receding ones lower.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0009",
@@ -191,7 +191,7 @@
       "component"
     ],
     "explanation": "A resistor is a component that opposes the flow of electric current. It is used to limit current or to divide a voltage in a circuit.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0010",
@@ -215,7 +215,7 @@
       "inverse"
     ],
     "explanation": "Every two masses attract each other with a force proportional to the product of their masses and inversely proportional to the square of the distance between them. G is the gravitational constant.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0011",
@@ -236,7 +236,7 @@
       "acceleration"
     ],
     "explanation": "The SI unit of force is the newton. One newton is the force needed to give a mass of one kilogram an acceleration of one metre per second squared.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0012",
@@ -257,7 +257,7 @@
       "halve"
     ],
     "explanation": "The half-life is the time taken for half of the nuclei in a radioactive sample to decay. It is constant for a given isotope, whatever the sample size.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0013",
@@ -278,7 +278,7 @@
       "frequency"
     ],
     "explanation": "The photoelectric effect is the emission of electrons from a metal surface when light above a threshold frequency shines on it. It showed that light comes in quanta, called photons.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0014",
@@ -298,7 +298,7 @@
       "impulse"
     ],
     "explanation": "Momentum is mass multiplied by velocity. In a closed system the total momentum is conserved.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0015",
@@ -320,7 +320,7 @@
       "velocity"
     ],
     "explanation": "The speed of a wave equals its frequency multiplied by its wavelength. For a fixed speed, a higher frequency means a shorter wavelength.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0016",
@@ -341,7 +341,7 @@
       "temperature"
     ],
     "explanation": "A superconductor is a material that has exactly zero electrical resistance below a critical temperature. It also expels magnetic fields from its interior.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0017",
@@ -363,7 +363,7 @@
       "raise"
     ],
     "explanation": "Specific heat capacity is the energy needed to raise the temperature of one kilogram of a substance by one kelvin. Water has an unusually high value.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0018",
@@ -387,7 +387,7 @@
       "einstein"
     ],
     "explanation": "Light travels at about 3 x 10^8 metres per second in a vacuum, or exactly 299,792,458 m/s. Nothing with mass can reach this speed.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0019",
@@ -408,7 +408,7 @@
       "dielectric"
     ],
     "explanation": "A capacitor stores energy in an electric field between two conducting plates separated by an insulator. Its capacitance is the charge stored per unit potential difference.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0020",
@@ -428,7 +428,7 @@
       "singularity"
     ],
     "explanation": "A black hole is a region of space where gravity is so strong that nothing, not even light, can escape from inside the event horizon. They form when very massive stars collapse.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0021",
@@ -449,7 +449,7 @@
       "faster"
     ],
     "explanation": "Acceleration is the rate of change of velocity with time. It is measured in metres per second squared.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0022",
@@ -472,7 +472,7 @@
       "moved"
     ],
     "explanation": "Work done is the energy transferred when a force moves an object, equal to the force times the distance moved in the direction of the force. It is measured in joules.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0023",
@@ -493,7 +493,7 @@
       "work"
     ],
     "explanation": "Power is the rate at which energy is transferred or work is done. It is measured in watts, where one watt is one joule per second.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0024",
@@ -515,7 +515,7 @@
       "stored"
     ],
     "explanation": "Gravitational potential energy is the energy an object stores because of its height in a gravitational field. Near Earth's surface it equals mass times g times height.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0025",
@@ -536,7 +536,7 @@
       "per"
     ],
     "explanation": "Pressure is the force acting per unit area on a surface. It is measured in pascals, where one pascal is one newton per square metre.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0026",
@@ -557,7 +557,7 @@
       "packed"
     ],
     "explanation": "Density is the mass of a substance per unit volume. A material floats in a fluid if its density is lower than the fluid's.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0027",
@@ -578,7 +578,7 @@
       "oscillations"
     ],
     "explanation": "Frequency is the number of complete waves or oscillations that pass a point each second. It is measured in hertz.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0028",
@@ -599,7 +599,7 @@
       "metres"
     ],
     "explanation": "Wavelength is the distance between two matching points on neighbouring waves, such as crest to crest. It is usually given the symbol lambda.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0029",
@@ -620,7 +620,7 @@
       "surface"
     ],
     "explanation": "Reflection is when a wave bounces off a surface. The angle of incidence equals the angle of reflection.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0030",
@@ -642,7 +642,7 @@
       "optical fibre"
     ],
     "explanation": "Total internal reflection happens when light in a denser medium hits the boundary at more than the critical angle and is reflected entirely. It is how optical fibres carry signals.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0031",
@@ -663,7 +663,7 @@
       "slit"
     ],
     "explanation": "Diffraction is the spreading of waves as they pass through a gap or around an obstacle. It is most noticeable when the gap is about the size of the wavelength.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0032",
@@ -684,7 +684,7 @@
       "overlap"
     ],
     "explanation": "Interference occurs when two waves meet and their displacements add together. The result is a bigger wave where crests meet crests and cancellation where crests meet troughs.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0033",
@@ -706,7 +706,7 @@
       "fixed"
     ],
     "explanation": "A standing wave forms when two waves of the same frequency travel in opposite directions and overlap. It has fixed points of no movement, called nodes.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0034",
@@ -726,7 +726,7 @@
       "lines"
     ],
     "explanation": "An electric field is a region where a charged object experiences a force. Its strength is the force per unit charge.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0035",
@@ -747,7 +747,7 @@
       "compass"
     ],
     "explanation": "A magnetic field is the region around a magnet or current where magnetic materials feel a force. Field lines run from the north pole to the south pole.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0036",
@@ -769,7 +769,7 @@
       "magnet"
     ],
     "explanation": "Electromagnetic induction is the production of a voltage in a conductor when the magnetic flux through it changes. Faraday's law says the voltage is proportional to the rate of change of flux.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0037",
@@ -790,7 +790,7 @@
       "primary"
     ],
     "explanation": "A transformer changes the voltage of an alternating supply using two coils wound on an iron core. The ratio of turns on the coils sets the ratio of the voltages.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0038",
@@ -811,7 +811,7 @@
       "sinusoidal"
     ],
     "explanation": "Alternating current repeatedly reverses its direction. Mains electricity is alternating current.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0039",
@@ -832,7 +832,7 @@
       "path"
     ],
     "explanation": "In a series circuit the components are connected one after another in a single loop. The same current flows through every component.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0040",
@@ -853,7 +853,7 @@
       "paths"
     ],
     "explanation": "In a parallel circuit the components are on separate branches. Each branch has the same voltage and the currents add where branches join.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0041",
@@ -874,7 +874,7 @@
       "weight"
     ],
     "explanation": "Terminal velocity is the constant speed a falling object reaches when the drag force equals its weight. After that, there is no resultant force and no more acceleration.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0042",
@@ -896,7 +896,7 @@
       "horizontal"
     ],
     "explanation": "A projectile moves under gravity alone. Its horizontal velocity stays constant while its vertical velocity changes, so its path is a parabola.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0043",
@@ -917,7 +917,7 @@
       "acceleration"
     ],
     "explanation": "Centripetal force is the resultant force that keeps an object moving in a circle, directed towards the centre. It is not a separate force but is provided by tension, gravity or friction.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0044",
@@ -940,7 +940,7 @@
       "rotate"
     ],
     "explanation": "The moment of a force is its turning effect about a pivot, equal to the force times the perpendicular distance from the pivot. A balanced object has equal clockwise and anticlockwise moments.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0045",
@@ -963,7 +963,7 @@
       "stretch"
     ],
     "explanation": "Hooke's law says the extension of a spring is proportional to the force applied, up to the limit of proportionality. The constant k is the spring constant.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0046",
@@ -984,7 +984,7 @@
       "total"
     ],
     "explanation": "Energy cannot be created or destroyed, only transferred from one store to another. The total energy of a closed system stays constant.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0047",
@@ -1006,7 +1006,7 @@
       "particles"
     ],
     "explanation": "Radioactive decay is the random process by which an unstable nucleus emits radiation to become more stable. It cannot be sped up or slowed down by heating or chemical change.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0048",
@@ -1028,7 +1028,7 @@
       "uranium"
     ],
     "explanation": "Nuclear fission is the splitting of a large nucleus into two smaller ones, releasing energy and neutrons. It is used in nuclear power stations.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0049",
@@ -1050,7 +1050,7 @@
       "helium"
     ],
     "explanation": "Nuclear fusion is the joining of two light nuclei to form a heavier one, releasing energy. It powers the Sun and other stars.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0050",
@@ -1073,7 +1073,7 @@
       "stopped"
     ],
     "explanation": "An alpha particle is a helium nucleus, made of two protons and two neutrons. It is strongly ionising but is stopped by a sheet of paper.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0051",
@@ -1096,7 +1096,7 @@
       "lead"
     ],
     "explanation": "Gamma rays are high-energy electromagnetic waves emitted by unstable nuclei. They are very penetrating and need thick lead or concrete to reduce them.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0052",
@@ -1116,7 +1116,7 @@
       "273"
     ],
     "explanation": "Absolute zero is the lowest possible temperature, 0 kelvin or about minus 273 degrees Celsius. At this point particles have the minimum possible energy.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0053",
@@ -1137,7 +1137,7 @@
       "molecules"
     ],
     "explanation": "Brownian motion is the random jiggling of tiny visible particles in a fluid. It is caused by collisions with fast-moving, invisible molecules and is evidence for particle theory.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0054",
@@ -1158,7 +1158,7 @@
       "ampere"
     ],
     "explanation": "Electrical resistance is measured in ohms. One ohm is the resistance that lets one ampere flow when one volt is applied.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0055",
@@ -1180,7 +1180,7 @@
       "vibrate"
     ],
     "explanation": "Sound is a longitudinal wave: the particles vibrate backwards and forwards in the direction the wave travels. It needs a medium and cannot travel through a vacuum.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0056",
@@ -1201,7 +1201,7 @@
       "calorie"
     ],
     "explanation": "The SI unit of energy is the joule. One joule is the work done when a force of one newton moves an object one metre.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0057",
@@ -1223,7 +1223,7 @@
       "charge"
     ],
     "explanation": "Electrons carry a negative charge and surround the nucleus of an atom. Their number equals the number of protons in a neutral atom.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0058",
@@ -1243,7 +1243,7 @@
       "longest"
     ],
     "explanation": "Red light has the longest wavelength of visible light, about 700 nanometres. Violet has the shortest, about 400 nanometres.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0059",
@@ -1265,7 +1265,7 @@
       "particle"
     ],
     "explanation": "A photon is a single packet of electromagnetic energy. Its energy is proportional to the frequency of the radiation.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0060",
@@ -1288,7 +1288,7 @@
       "quantum"
     ],
     "explanation": "Wave-particle duality is the idea that light and matter show both wave-like and particle-like behaviour. Which one appears depends on the experiment.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0061",
@@ -1310,7 +1310,7 @@
       "stick"
     ],
     "explanation": "A magnet pulls things made of iron or steel towards it. Every magnet has a north pole and a south pole.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0062",
@@ -1330,7 +1330,7 @@
       "falling"
     ],
     "explanation": "Air resistance is a force that slows things down as they move through air. A parachute uses lots of air resistance to fall slowly.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0063",
@@ -1351,7 +1351,7 @@
       "bar"
     ],
     "explanation": "A lever is a bar that turns on a pivot to make lifting or moving things easier. A seesaw is a lever.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0064",
@@ -1373,7 +1373,7 @@
       "newton"
     ],
     "explanation": "A push or a pull is a force. Forces can make things start moving, stop, speed up, slow down or change shape.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0065",
@@ -1395,7 +1395,7 @@
       "shape"
     ],
     "explanation": "A shadow forms when an object blocks light. It is a dark area the same shape as the object.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0066",
@@ -1416,7 +1416,7 @@
       "face"
     ],
     "explanation": "A mirror is a very smooth, shiny surface that reflects light, so you can see an image of yourself in it.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0067",
@@ -1438,7 +1438,7 @@
       "move"
     ],
     "explanation": "A vibration is a quick back-and-forth movement. All sounds are made by something vibrating, like a guitar string.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0068",
@@ -1459,7 +1459,7 @@
       "squeak"
     ],
     "explanation": "Pitch is how high or low a sound is. A whistle has a high pitch and a big drum has a low pitch.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0069",
@@ -1480,7 +1480,7 @@
       "noise"
     ],
     "explanation": "Loudness, or volume, is how strong a sound is. Bigger vibrations make louder sounds.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0070",
@@ -1501,7 +1501,7 @@
       "charge"
     ],
     "explanation": "A battery stores energy and pushes electricity around a circuit. Torches and remote controls use batteries.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0071",
@@ -1522,7 +1522,7 @@
       "light"
     ],
     "explanation": "A switch opens or closes a gap in a circuit. When it is closed, electricity flows and the bulb lights up.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0072",
@@ -1545,7 +1545,7 @@
       "complete"
     ],
     "explanation": "An electric circuit is a complete loop that electricity can flow around, from a battery, through wires and a bulb, and back.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0073",
@@ -1567,7 +1567,7 @@
       "glass"
     ],
     "explanation": "The bulb gives out light when electricity flows through it. If the circuit is broken, the bulb goes out.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0074",
@@ -1588,7 +1588,7 @@
       "cable"
     ],
     "explanation": "A wire is a thin strand of metal, usually copper, that carries electricity from one part of a circuit to another.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0075",
@@ -1610,7 +1610,7 @@
       "space"
     ],
     "explanation": "A planet is a large, round object that travels around a star. Earth is one of eight planets that orbit the Sun.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0076",
@@ -1632,7 +1632,7 @@
       "full"
     ],
     "explanation": "The Moon travels around the Earth about once a month. It does not make its own light: it reflects light from the Sun.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0077",
@@ -1654,7 +1654,7 @@
       "sky"
     ],
     "explanation": "The closest star to Earth is the Sun. It gives us light and heat.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0078",
@@ -1676,7 +1676,7 @@
       "magma"
     ],
     "explanation": "A volcano is an opening in the Earth's surface where hot melted rock, called lava, can burst out.",
-    "status": "draft"
+    "status": "reviewed"
   },
   {
     "id": "phy-0079",
@@ -1697,6 +1697,6 @@
       "earth"
     ],
     "explanation": "We have day and night because the Earth spins. The side facing the Sun has day, and the side facing away has night.",
-    "status": "draft"
+    "status": "reviewed"
   }
 ]
