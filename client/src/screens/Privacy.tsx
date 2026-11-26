@@ -4,8 +4,8 @@ import { Screen, TextLink } from "../components/ui";
 function Section({ title, children }: { title: string; children: ReactNode }) {
   return (
     <section className="w-full space-y-2 text-left">
-      <h2 className="text-xl font-semibold">{title}</h2>
-      <div className="space-y-2 text-slate-300">{children}</div>
+      <h2 className="font-chalk text-2xl">{title}</h2>
+      <div className="space-y-2 text-ink-muted">{children}</div>
     </section>
   );
 }
@@ -14,8 +14,8 @@ function Section({ title, children }: { title: string; children: ReactNode }) {
 export function Privacy() {
   return (
     <Screen>
-      <h1 className="text-3xl font-bold">Privacy</h1>
-      <p className="w-full text-left text-slate-300">
+      <h1 className="font-chalk text-4xl">Privacy</h1>
+      <p className="w-full text-left text-ink-muted">
         STEMCHARADES collects as little as it can. There are no ads, no analytics and no third-party trackers.
       </p>
 

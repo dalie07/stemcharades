@@ -32,14 +32,14 @@ export function Room() {
   return (
     <>
       {connection !== "connected" && (
-        <p role="status" className="sticky top-0 z-10 bg-amber-900 px-3 py-2 text-center text-sm text-amber-100">
+        <p role="status" className="sticky top-0 z-10 border-b-2 border-warn bg-surface px-3 py-2 text-center text-sm text-ink">
           Connection lost. Reconnecting…
         </p>
       )}
       {room.phase === "round" && room.round ? (
         <Round room={room} session={session} />
       ) : room.phase === "reveal" && room.round && room.reveal ? (
-        <Reveal room={room} />
+        <Reveal room={room} session={session} />
       ) : room.phase === "finished" && room.summary ? (
         <Scoreboard room={room} session={session} />
       ) : (

@@ -3,6 +3,8 @@ import type { Card } from "@stemcharades/shared";
 import {
   createParty,
   currentPlayer,
+  currentRun,
+  highlights,
   gotIt,
   missedCards,
   nextTurn,
@@ -99,5 +101,28 @@ describe("party engine", () => {
     s = skip(s, 2, rng); // card 2 skipped
     s = tick(s, 60_000); // card 3 times out
     expect(missedCards(s).map((c) => c.id)).toEqual(["phy-0001", "phy-0002", "phy-0003"]);
+  });
+
+  it("brings back cards this device missed before, so they get revised", () => {
+    const priority = ["phy-0005"];
+    // rng 0 always takes the priority branch while a missed card is still unseen this game.
+    const s = startTurn(createParty(settings, cards, priority), 0, () => 0);
+    expect(s.currentCard?.id).toBe("phy-0005");
+    const after = gotIt(s, 1000, () => 0);
+    expect(after.currentCard?.id).not.toBe("phy-0005"); // once seen, it is not forced again
+  });
+
+  it("times each card and reports the end-of-game highlights", () => {
+    let s = startTurn(createParty(settings, cards, ["phy-0001"]), 0, rng);
+    s = gotIt(s, 4000, rng);
+    s = gotIt(s, 6500, rng);
+    s = gotIt(s, 9000, rng);
+    expect(currentRun(s)).toBe(3);
+    s = skip(s, 12000, rng);
+    expect(currentRun(s)).toBe(0);
+    const h = highlights(s);
+    expect(h.fastest).toEqual({ player: "Ann", prompt: s.history[1]!.card.prompt, seconds: 3 });
+    expect(h.longestRun).toEqual({ player: "Ann", count: 3 });
+    expect(h.learned.map((c) => c.id)).toEqual(s.history[0]!.card.id === "phy-0001" ? ["phy-0001"] : []);
   });
 });

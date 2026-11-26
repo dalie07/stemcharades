@@ -26,7 +26,7 @@ export function Cards() {
 
   return (
     <Screen>
-      <h1 className="text-3xl font-bold">Cards</h1>
+      <h1 className="font-chalk text-4xl">Cards</h1>
       <div className="flex flex-wrap justify-center gap-2" role="group" aria-label="Subject">
         {SUBJECTS.map((s) => (
           <button
@@ -34,7 +34,7 @@ export function Cards() {
             type="button"
             aria-pressed={s === subject}
             onClick={() => setSubject(s)}
-            className={`min-h-11 rounded-full px-4 text-sm ${s === subject ? "bg-indigo-600 text-white" : "bg-slate-800"}`}
+            className={`min-h-11 rounded-full px-4 text-sm ${s === subject ? "bg-accent text-accent-ink" : "bg-surface"}`}
           >
             {s}
           </button>

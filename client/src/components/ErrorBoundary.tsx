@@ -24,7 +24,7 @@ export class ErrorBoundary extends Component<{ children: ReactNode }, State> {
     if (!this.state.failed) return this.props.children;
     return (
       <Screen centered>
-        <h1 className="text-2xl font-bold">Something went wrong</h1>
+        <h1 className="font-chalk text-3xl">Something went wrong</h1>
         <p className={mutedClass}>Reloading usually fixes it. If you were in an online room, you will keep your seat.</p>
         <Button onClick={() => location.reload()}>Reload</Button>
         <TextLink href="#/" onClick={() => this.setState({ failed: false })}>

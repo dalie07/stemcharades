@@ -9,13 +9,13 @@ export default defineConfig({
     tailwindcss(),
     VitePWA({
       registerType: "autoUpdate",
-      includeAssets: ["favicon.svg", "icon-192.png", "icon-512.png"],
+      includeAssets: ["favicon.svg", "icon-192.png", "icon-512.png", "fonts/*.woff2"],
       manifest: {
         name: "STEMCHARADES",
         short_name: "STEMCHARADES",
         description: "A party game for STEM revision: explain it without saying the forbidden words.",
-        theme_color: "#0f172a",
-        background_color: "#0f172a",
+        theme_color: "#1e3a2f",
+        background_color: "#1e3a2f",
         display: "standalone",
         start_url: "/",
         icons: [
@@ -25,6 +25,8 @@ export default defineConfig({
         ],
       },
       workbox: {
+        // The chalkboard fonts are part of the app: cache them so Party mode looks right offline too.
+        globPatterns: ["**/*.{js,css,html,woff2,svg,png}"],
         // Never let the SPA fallback swallow API or socket requests.
         navigateFallbackDenylist: [/^\/api\//, /^\/socket\.io\//, /^\/healthz/],
         runtimeCaching: [

@@ -41,7 +41,7 @@ export function Account() {
   if (!me.authEnabled) {
     return (
       <Screen centered>
-        <h1 className="text-2xl font-bold">Accounts</h1>
+        <h1 className="font-chalk text-3xl">Accounts</h1>
         <p className={mutedClass}>Accounts are not switched on for this game. You can still play as a guest.</p>
         <TextLink href="#/">Back</TextLink>
       </Screen>
@@ -50,7 +50,7 @@ export function Account() {
   if (!me.user) {
     return (
       <Screen centered>
-        <h1 className="text-2xl font-bold">Sign in</h1>
+        <h1 className="font-chalk text-3xl">Sign in</h1>
         <p className={mutedClass}>
           Optional. Sign in to keep your game history, a revision list of the cards you missed, and private decks for
           your class.
@@ -83,11 +83,11 @@ function SignedIn({ name }: { name: string }) {
 
   return (
     <Screen>
-      <h1 className="text-2xl font-bold">Hi, {name}</h1>
+      <h1 className="font-chalk text-3xl">Hi, {name}</h1>
       {error && <Notice tone="error">{error}</Notice>}
 
       <section className="w-full space-y-2 text-left" aria-labelledby="history">
-        <h2 id="history" className="text-xl font-semibold">
+        <h2 id="history" className="font-chalk text-2xl">
           Your games
         </h2>
         {history?.length === 0 && (
@@ -95,7 +95,7 @@ function SignedIn({ name }: { name: string }) {
         )}
         <ul className="space-y-1">
           {history?.map((game) => (
-            <li key={game.playedAt} className="flex justify-between rounded bg-slate-800 px-3 py-2">
+            <li key={game.playedAt} className="flex justify-between rounded bg-surface px-3 py-2">
               <span>
                 {new Date(game.playedAt).toLocaleDateString()} · {game.roomSize} players
               </span>
@@ -108,7 +108,7 @@ function SignedIn({ name }: { name: string }) {
       </section>
 
       <section className="w-full space-y-3 text-left" aria-labelledby="revise">
-        <h2 id="revise" className="text-xl font-semibold">
+        <h2 id="revise" className="font-chalk text-2xl">
           Cards to revise ({missed?.length ?? 0})
         </h2>
         {missed?.length === 0 && (
@@ -143,7 +143,7 @@ function DeleteAccount() {
     return <LinkButton danger onClick={() => setConfirming(true)}>Delete my account</LinkButton>;
   }
   return (
-    <div className="w-full space-y-2 rounded-xl border border-red-800 p-4 text-left">
+    <div className="w-full space-y-2 rounded-xl border border-bad p-4 text-left">
       <p>This erases your account, game history, revision list and private decks straight away. It cannot be undone.</p>
       {error && <Notice tone="error">{error}</Notice>}
       <div className="flex flex-wrap gap-4">
@@ -187,7 +187,7 @@ function Decks() {
 
   return (
     <section className="w-full space-y-3 text-left" aria-labelledby="decks">
-      <h2 id="decks" className="text-xl font-semibold">
+      <h2 id="decks" className="font-chalk text-2xl">
         Your private decks
       </h2>
       <p className={`text-sm ${mutedClass}`}>
@@ -211,7 +211,7 @@ function Decks() {
 
       <ul className="space-y-2">
         {decks.map((deck) => (
-          <li key={deck.id} className="rounded border border-slate-700 p-3">
+          <li key={deck.id} className="rounded border border-line p-3">
             <div className="flex items-center justify-between gap-2">
               <button
                 type="button"
@@ -324,7 +324,7 @@ function DeckEditor({ deckId, onChange }: { deckId: string; onChange: () => Prom
       <ul className="space-y-1">
         {deck?.cards.length === 0 && <li className={mutedClass}>No cards yet. Add your first below.</li>}
         {deck?.cards.map((card) => (
-          <li key={card.id} className="flex items-center justify-between rounded bg-slate-800 px-3">
+          <li key={card.id} className="flex items-center justify-between rounded bg-surface px-3">
             <span>{card.prompt}</span>
             <LinkButton danger aria-label={`Remove card ${card.prompt}`} onClick={() => void remove(card.id)}>
               Remove

@@ -13,6 +13,8 @@ export interface PlayedCard {
   card: Card;
   outcome: Outcome;
   player: string;
+  /** How long the card was on screen before it was got or skipped. */
+  ms?: number;
 }
 
 export interface PartyState {
@@ -23,7 +25,11 @@ export interface PartyState {
   turnIndex: number;
   scores: number[];
   currentCard: Card | null;
+  /** When the current card appeared, to time how fast it was got. */
+  shownAt: number | null;
   endsAt: number | null;
+  /** Cards this device missed before: they come back first, so they get revised. */
+  priority: string[];
   turnResults: PlayedCard[];
   history: PlayedCard[];
 }
@@ -42,8 +48,22 @@ export function currentPlayer(state: PartyState): string {
   return state.settings.players[state.turnIndex % state.settings.players.length]!;
 }
 
+/**
+ * The next card. Half the time, while the pool still holds cards this device missed before and has not seen
+ * this game, it is one of those: that is how misses get revised. Otherwise any unused card.
+ */
+function next(state: Pick<PartyState, "pool" | "usedIds" | "priority">, rng: Rng, lastId?: string) {
+  const used = new Set(state.usedIds);
+  const due = state.pool.filter((c) => state.priority.includes(c.id) && !used.has(c.id) && c.id !== lastId);
+  if (due.length && rng() < 0.5) {
+    const card = due[Math.min(Math.floor(rng() * due.length), due.length - 1)]!;
+    return { card, usedIds: [...state.usedIds, card.id] };
+  }
+  return pickCard(state.pool, state.usedIds, rng, lastId);
+}
+
 /** Pure: the caller supplies the clock (`now`, in ms) and the random source. */
-export function createParty(settings: PartySettings, allCards: Card[]): PartyState {
+export function createParty(settings: PartySettings, allCards: Card[], priority: string[] = []): PartyState {
   if (settings.players.length < 2) throw new Error("need at least 2 players");
   const pool = filterPool(allCards, settings);
   if (pool.length === 0) throw new Error("no cards match the filters");
@@ -55,7 +75,9 @@ export function createParty(settings: PartySettings, allCards: Card[]): PartySta
     turnIndex: 0,
     scores: settings.players.map(() => 0),
     currentCard: null,
+    shownAt: null,
     endsAt: null,
+    priority,
     turnResults: [],
     history: [],
   };
@@ -63,11 +85,12 @@ export function createParty(settings: PartySettings, allCards: Card[]): PartySta
 
 export function startTurn(state: PartyState, now: number, rng: Rng = Math.random): PartyState {
   if (state.phase !== "ready") return state;
-  const pick = pickCard(state.pool, state.usedIds, rng);
+  const pick = next(state, rng);
   return {
     ...state,
     phase: "playing",
     currentCard: pick.card,
+    shownAt: now,
     usedIds: pick.usedIds,
     endsAt: now + state.settings.roundSeconds * 1000,
     turnResults: [],
@@ -83,6 +106,7 @@ function endTurn(state: PartyState): PartyState {
     ...state,
     phase: "reveal",
     currentCard: null,
+    shownAt: null,
     endsAt: null,
     turnResults: results,
     history: [...state.history, ...(state.currentCard ? [results[results.length - 1]!] : [])],
@@ -104,17 +128,18 @@ function resolve(
   const expired = tick(state, now);
   if (expired.phase !== "playing" || !expired.currentCard) return expired;
   const player = currentPlayer(expired);
-  const played: PlayedCard = { card: expired.currentCard, outcome, player };
+  const played: PlayedCard = { card: expired.currentCard, outcome, player, ms: now - (expired.shownAt ?? now) };
   const scores = [...expired.scores];
   if (outcome === "got") {
     const i = expired.turnIndex % expired.settings.players.length;
     scores[i] = (scores[i] ?? 0) + explainerPoints(1);
   }
-  const pick = pickCard(expired.pool, expired.usedIds, rng, expired.currentCard.id);
+  const pick = next(expired, rng, expired.currentCard.id);
   return {
     ...expired,
     scores,
     currentCard: pick.card,
+    shownAt: now,
     usedIds: pick.usedIds,
     turnResults: [...expired.turnResults, played],
     history: [...expired.history, played],
@@ -144,4 +169,41 @@ export function missedCards(state: PartyState): Card[] {
     }
   }
   return out;
+}
+
+/** Got-its in a row at the end of the current turn: what the "On fire" banner counts. */
+export function currentRun(state: PartyState): number {
+  let n = 0;
+  for (let i = state.turnResults.length - 1; i >= 0 && state.turnResults[i]!.outcome === "got"; i--) n++;
+  return n;
+}
+
+export interface Highlights {
+  fastest: { player: string; prompt: string; seconds: number } | null;
+  longestRun: { player: string; count: number } | null;
+  /** Cards this device had missed before and got this game. */
+  learned: Card[];
+}
+
+/** The end-of-game moments worth showing, beyond the scores. */
+export function highlights(state: PartyState): Highlights {
+  let best: PlayedCard | null = null;
+  for (const h of state.history) {
+    if (h.outcome === "got" && h.ms !== undefined && (!best || h.ms < best.ms!)) best = h;
+  }
+  const fastest = best && { player: best.player, prompt: best.card.prompt, seconds: Math.max(1, Math.round(best.ms! / 1000)) };
+  let longestRun: Highlights["longestRun"] = null;
+  let run = 0;
+  let prev: PlayedCard | undefined;
+  for (const h of state.history) {
+    run = h.outcome === "got" && prev?.outcome === "got" && prev.player === h.player ? run + 1 : h.outcome === "got" ? 1 : 0;
+    if (run >= 2 && (!longestRun || run > longestRun.count)) longestRun = { player: h.player, count: run };
+    prev = h;
+  }
+  const seen = new Set<string>();
+  const learned = state.history
+    .filter((h) => h.outcome === "got" && state.priority.includes(h.card.id))
+    .map((h) => h.card)
+    .filter((c) => !seen.has(c.id) && seen.add(c.id));
+  return { fastest, longestRun, learned };
 }

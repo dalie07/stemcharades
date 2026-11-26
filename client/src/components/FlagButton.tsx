@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { flagIssueUrl, flagText, type FlaggableCard } from "../lib/flag";
 
-const style = "mt-1 inline-flex min-h-11 items-center rounded text-sm text-slate-400 underline";
+const style = "mt-1 inline-flex min-h-11 items-center rounded text-sm text-ink-muted underline";
 
 /** Report a wrong or unclear card. Opens a prefilled GitHub issue, or copies the details if none is configured. */
 export function FlagButton({ card }: { card: FlaggableCard }) {

@@ -11,23 +11,23 @@ const steps = [
 export function Rules() {
   return (
     <Screen>
-      <h1 className="text-3xl font-bold">How to play</h1>
+      <h1 className="font-chalk text-4xl">How to play</h1>
       <ol className="w-full space-y-3 text-left">
         {steps.map(([title, detail], i) => (
-          <li key={title} className="rounded-xl border border-slate-700 bg-slate-800 p-4">
+          <li key={title} className="rounded-xl border border-line bg-surface p-4">
             <p className="font-semibold">
               {i + 1}. {title}
             </p>
-            <p className="mt-1 text-sm text-slate-300">{detail}</p>
+            <p className="mt-1 text-sm text-ink-muted">{detail}</p>
           </li>
         ))}
       </ol>
 
       <section className="w-full text-left" aria-labelledby="points">
-        <h2 id="points" className="text-xl font-semibold">
+        <h2 id="points" className="font-chalk text-2xl">
           Points
         </h2>
-        <ul className="mt-2 list-disc space-y-1 pl-5 text-slate-300">
+        <ul className="mt-2 list-disc space-y-1 pl-5 text-ink-muted">
           <li>
             A correct guess scores {GUESSER_BASE_POINTS}, plus up to {MAX_SPEED_BONUS} more for speed.
           </li>
@@ -37,13 +37,25 @@ export function Rules() {
       </section>
 
       <section className="w-full text-left" aria-labelledby="clues">
-        <h2 id="clues" className="text-xl font-semibold">
+        <h2 id="clues" className="font-chalk text-2xl">
           Clues
         </h2>
-        <p className="mt-2 text-slate-300">
+        <p className="mt-2 text-ink-muted">
           A typed clue is refused if it contains the answer or a forbidden word, in any capitals, as a plural, or split
           up to dodge the check. In Party mode you talk instead, and the room keeps you honest.
         </p>
+      </section>
+
+      <section className="w-full text-left" aria-labelledby="learn">
+        <h2 id="learn" className="font-chalk text-2xl">
+          Learn as you play
+        </h2>
+        <ul className="mt-2 list-disc space-y-1 pl-5 text-ink-muted">
+          <li>Every topic has three stars. Get its cards right to fill them; miss one again and you lose that star until you relearn it.</li>
+          <li>Cards you miss are saved. Choose “Revise my misses” in Party mode, and they also come back in later games until you get them.</li>
+          <li>Play on consecutive days to build a streak.</li>
+          <li>All of this stays on your device: no account needed.</li>
+        </ul>
       </section>
 
       <TextLink href="#/">Back</TextLink>

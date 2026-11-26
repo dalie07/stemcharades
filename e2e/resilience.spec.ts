@@ -39,14 +39,20 @@ test("Party mode plays a whole turn with the server switched off", async ({ brow
   try {
     // Downloading every deck through a newly installed service worker can be slow on a small machine.
     const ready = { timeout: 45_000 };
+    // Players, what to play (Everything), length, then the Ready screen with its Start button.
+    const toReady = async () => {
+      for (let i = 0; i < 3; i++) await page.getByRole("button", { name: "Next", exact: true }).click(i === 0 ? ready : undefined);
+      await expect(page.getByRole("button", { name: "Start game" })).toBeEnabled(ready);
+    };
     await page.goto("/#/party");
-    await expect(page.getByRole("button", { name: "Start game" })).toBeEnabled(ready);
+    await toReady();
     await page.evaluate(() => navigator.serviceWorker.ready.then(() => true));
     await page.reload(); // now controlled by the service worker, so this load is what fills the cache
-    await expect(page.getByRole("button", { name: "Start game" })).toBeEnabled(ready);
+    await toReady();
 
     await server.stop();
     await page.reload();
+    await toReady();
     await expect(page.getByText(/\d+ matching cards/)).toBeVisible();
     await page.getByRole("button", { name: "Start game" }).click();
     await page.getByRole("button", { name: "I'm ready – start" }).click();

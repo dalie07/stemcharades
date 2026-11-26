@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { ROOM_CODE_LENGTH } from "@stemcharades/shared";
-import { Button, Notice, Screen, TextLink, inputClass, mutedClass } from "../components/ui";
+import { Button, Heading, Notice, Screen, TextLink, inputClass, mutedClass } from "../components/ui";
 import { useGameStore } from "../state/gameStore";
 import { savePresetFromHash } from "../state/preset";
 import { createRoom, joinRoom, type ActionResult } from "../state/socket";
@@ -9,7 +9,11 @@ import { createRoom, joinRoom, type ActionResult } from "../state/socket";
 export function Online() {
   const notice = useGameStore((s) => s.notice);
   const [nickname, setNickname] = useState("");
-  const [code, setCode] = useState("");
+  // An invite link or QR code (#/online?join=ABCDE) arrives with the room code filled in.
+  const [code, setCode] = useState(() => {
+    const join = new URLSearchParams(location.hash.split("?")[1] ?? "").get("join") ?? "";
+    return join.toUpperCase().slice(0, ROOM_CODE_LENGTH);
+  });
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -28,10 +32,10 @@ export function Online() {
 
   return (
     <Screen centered>
-      <h1 className="text-3xl font-bold">Online room</h1>
+      <Heading sub="Everyone plays on their own phone.">Online room</Heading>
       {notice && <Notice tone="warning">{notice}</Notice>}
 
-      <label className="w-full text-left">
+      <label className="w-full text-left font-hand text-xl">
         Your nickname
         <input className={inputClass} maxLength={20} value={nickname} onChange={(e) => setNickname(e.target.value)} />
       </label>
@@ -47,11 +51,11 @@ export function Online() {
         Create a room
       </Button>
 
-      <p className={mutedClass}>or join a friend's room</p>
-      <label className="w-full text-left">
+      <p className={`font-hand text-xl ${mutedClass}`}>or join a friend's room</p>
+      <label className="w-full text-left font-hand text-xl">
         Room code
         <input
-          className={`${inputClass} text-center text-2xl uppercase tracking-widest`}
+          className={`${inputClass} text-center font-chalk text-3xl uppercase tracking-[0.3em]`}
           maxLength={ROOM_CODE_LENGTH}
           autoCapitalize="characters"
           autoComplete="off"

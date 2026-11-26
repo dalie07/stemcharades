@@ -66,21 +66,21 @@ export function WakeGate({ children }: { children: ReactNode }) {
   const offline = !navigator.onLine;
   return (
     <Screen centered>
-      <h1 className="text-2xl font-bold">{offline ? "You're offline" : "Waking the server…"}</h1>
+      <h1 className="font-chalk text-3xl">{offline ? "You're offline" : "Waking the server…"}</h1>
       {offline ? (
         <p className={mutedClass}>Online rooms need a connection. Party mode still works.</p>
       ) : (
         <>
           <p className={mutedClass}>The free server naps when nobody is playing. It usually wakes in under a minute.</p>
           <div
-            className="h-2 w-full overflow-hidden rounded bg-slate-700"
+            className="h-2 w-full overflow-hidden rounded bg-surface-2"
             role="progressbar"
             aria-label="Waking the server"
             aria-valuemin={0}
             aria-valuemax={60}
             aria-valuenow={Math.min(seconds, 60)}
           >
-            <div className="h-full bg-indigo-600 transition-all" style={{ width: `${Math.min(100, (seconds / 60) * 100)}%` }} />
+            <div className="h-full bg-accent transition-all" style={{ width: `${Math.min(100, (seconds / 60) * 100)}%` }} />
           </div>
           <p className={`text-sm tabular-nums ${mutedClass}`} role="status">
             {seconds}s

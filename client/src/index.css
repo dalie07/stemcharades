@@ -1,25 +1,253 @@
 @import "tailwindcss";
 
-/* Dark theme: a deep slate page with light text. Form controls and scrollbars follow it. */
-:root {
-  color-scheme: dark;
+/*
+ * The classroom board. Dark is a green chalkboard, light is a whiteboard; the device's setting chooses, and the
+ * theme toggle can override it (html[data-theme]). Every colour in the app comes from these tokens.
+ */
+
+@font-face {
+  font-family: "Cabin Sketch";
+  src: url("/fonts/cabin-sketch-700.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
 }
+@font-face {
+  font-family: "Patrick Hand";
+  src: url("/fonts/patrick-hand-400.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Andika";
+  src: url("/fonts/andika-400.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Andika";
+  src: url("/fonts/andika-700.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+/* Chalkboard (dark). */
+:root,
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --board: #1e3a2f;
+  --board-deep: #172e25;
+  --surface: #26473a;
+  --surface-2: #2f5546;
+  --ink: #f4f2e9;
+  --ink-muted: #c3d0c5;
+  --line: rgb(244 242 233 / 0.28);
+  --accent: #f6d860; /* yellow chalk */
+  --accent-ink: #1e3a2f;
+  --good: #98e6a2;
+  --bad: #ffa597;
+  --warn: #ffd88a;
+  --maths: #8ccbff;
+  --physics: #ffb877;
+  --chemistry: #98e6a2;
+  --biology: #ffa8c8;
+  --computing: #cdb2ff;
+  --focus: #f6d860;
+  --dust: rgb(255 255 255 / 0.035);
+}
+
+/* Whiteboard (light): the device asks for light and nothing overrides it, or the toggle chose light. */
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    color-scheme: light;
+    --board: #f6f6f1;
+    --board-deep: #e9eae3;
+    --surface: #ffffff;
+    --surface-2: #eef0ea;
+    --ink: #1c2530;
+    --ink-muted: #4d5966;
+    --line: #c7ccd3;
+    --accent: #1d4ed8; /* blue marker */
+    --accent-ink: #ffffff;
+    --good: #15803d;
+    --bad: #b91c1c;
+    --warn: #b45309;
+    --maths: #1d4ed8;
+    --physics: #c2410c;
+    --chemistry: #15803d;
+    --biology: #be185d;
+    --computing: #6d28d9;
+    --focus: #1d4ed8;
+    --dust: rgb(0 0 0 / 0.025);
+  }
+}
+:root[data-theme="light"] {
+  color-scheme: light;
+  --board: #f6f6f1;
+  --board-deep: #e9eae3;
+  --surface: #ffffff;
+  --surface-2: #eef0ea;
+  --ink: #1c2530;
+  --ink-muted: #4d5966;
+  --line: #c7ccd3;
+  --accent: #1d4ed8;
+  --accent-ink: #ffffff;
+  --good: #15803d;
+  --bad: #b91c1c;
+  --warn: #b45309;
+  --maths: #1d4ed8;
+  --physics: #c2410c;
+  --chemistry: #15803d;
+  --biology: #be185d;
+  --computing: #6d28d9;
+  --focus: #1d4ed8;
+  --dust: rgb(0 0 0 / 0.025);
+}
+
+/* The tokens as Tailwind colours and fonts: bg-board, text-ink, border-line, font-chalk, ... */
+@theme inline {
+  --color-board: var(--board);
+  --color-board-deep: var(--board-deep);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-good: var(--good);
+  --color-bad: var(--bad);
+  --color-warn: var(--warn);
+  --color-maths: var(--maths);
+  --color-physics: var(--physics);
+  --color-chemistry: var(--chemistry);
+  --color-biology: var(--biology);
+  --color-computing: var(--computing);
+  --font-chalk: "Cabin Sketch", "Patrick Hand", ui-rounded, system-ui, sans-serif;
+  --font-hand: "Patrick Hand", ui-rounded, system-ui, sans-serif;
+  --font-sans: "Andika", ui-sans-serif, system-ui, sans-serif;
+}
+
 html,
 body {
-  background-color: #0f172a; /* slate-900 */
-  color: #e2e8f0; /* slate-200 */
+  background-color: var(--board);
+  color: var(--ink);
+  font-family: var(--font-sans);
+}
+
+/* A board is never perfectly clean: a faint wash of old chalk dust (or whiteboard ghosting). */
+body {
+  background-image:
+    radial-gradient(ellipse at 20% 10%, var(--dust), transparent 60%),
+    radial-gradient(ellipse at 80% 70%, var(--dust), transparent 55%),
+    radial-gradient(ellipse at 40% 90%, var(--dust), transparent 50%);
+  background-attachment: fixed;
 }
 
 /* Keyboard users must always see where focus is. */
 :where(a, button, input, select, textarea, summary):focus-visible {
-  outline: 3px solid #818cf8; /* indigo-400: 6:1 on the page */
+  outline: 3px solid var(--focus);
   outline-offset: 2px;
 }
 
-/* Respect the system setting for reduced motion. */
+/* A hand-drawn underline under headings, drawn in as the screen appears. */
+.chalk-underline {
+  background-image: linear-gradient(transparent 82%, color-mix(in srgb, var(--accent) 70%, transparent) 82%, color-mix(in srgb, var(--accent) 70%, transparent) 92%, transparent 92%);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  animation: underline-draw 0.6s ease-out both;
+}
+@keyframes underline-draw {
+  from {
+    background-size: 0% 100%;
+  }
+}
+
+/* Screens and cards arrive like a card being dealt. */
+.deal-in {
+  animation: deal-in 0.35s cubic-bezier(0.2, 0.9, 0.3, 1.2) both;
+}
+@keyframes deal-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px) rotate(-1.5deg) scale(0.98);
+  }
+}
+.step-in {
+  animation: step-in 0.25s ease-out both;
+}
+@keyframes step-in {
+  from {
+    opacity: 0;
+    transform: translateX(16px);
+  }
+}
+
+/* A correct guess, a combo, a reveal: a little pop and a puff of chalk dust. */
+.pop {
+  animation: pop 0.45s cubic-bezier(0.2, 0.9, 0.3, 1.4) both;
+}
+@keyframes pop {
+  0% {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.08);
+    opacity: 1;
+  }
+}
+.shake {
+  animation: shake 0.35s ease-in-out both;
+}
+@keyframes shake {
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-3px);
+  }
+}
+.dust {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+.dust i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 7px;
+  height: 7px;
+  border-radius: 9999px;
+  background: var(--accent);
+  opacity: 0;
+  animation: dust 0.9s ease-out forwards;
+}
+@keyframes dust {
+  0% {
+    opacity: 0.9;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(calc(-50% + var(--dx)), calc(-50% + var(--dy))) scale(0.4);
+  }
+}
+
+/* Respect the system setting for reduced motion: no movement at all, only instant state changes. */
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
+  *,
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+  .dust {
+    display: none;
   }
 }

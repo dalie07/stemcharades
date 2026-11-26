@@ -1,9 +1,11 @@
-import { useState, type FormEvent } from "react";
+import { useEffect, useRef, useState, type FormEvent } from "react";
 import { LEVEL_LABELS, MAX_CLUE_LENGTH, MAX_GUESS_LENGTH, type RoomView, type RoundView } from "@stemcharades/shared";
 import { CardFrame, DontSay } from "../components/CardFrame";
+import { Dust } from "../components/Dust";
 import { Timer } from "../components/Timer";
-import { Button, Notice, Screen, inputClass, mutedClass } from "../components/ui";
+import { Button, Heading, Notice, Screen, inputClass, mutedClass } from "../components/ui";
 import { useCountdown } from "../hooks/useCountdown";
+import { cue } from "../lib/feedback";
 import { useGameStore, type Session } from "../state/gameStore";
 import { sendClue, sendGuess, skipRound } from "../state/socket";
 
@@ -13,24 +15,32 @@ export function Round({ room, session }: { room: RoomView; session: Session }) {
   const nameOf = (id: string) => room.players.find((p) => p.id === id)?.nickname;
   const gotIt = round.guessedCorrect.map(nameOf).filter(Boolean).join(", ");
   const secondsLeft = useCountdown(round.endsAt);
+  const isExplainer = session.playerId === round.explainerId;
+
+  // The explainer hears a chime each time someone gets it.
+  const seen = useRef(round.guessedCorrect.length);
+  useEffect(() => {
+    if (isExplainer && round.guessedCorrect.length > seen.current) cue("correct");
+    seen.current = round.guessedCorrect.length;
+  }, [isExplainer, round.guessedCorrect.length]);
 
   return (
     <Screen>
       <div className="flex w-full items-center justify-between">
-        <span className={`text-sm ${mutedClass}`}>
+        <span className={`font-hand text-xl ${mutedClass}`}>
           Round {round.number}/{round.totalRounds}
         </span>
-        <Timer seconds={secondsLeft} />
+        <Timer seconds={secondsLeft} total={room.settings.roundSeconds} />
       </div>
 
-      {session.playerId === round.explainerId ? (
+      {isExplainer ? (
         <Explain round={round} />
       ) : (
         <Guess round={round} explainer={nameOf(round.explainerId) ?? "Someone"} hasIt={round.guessedCorrect.includes(session.playerId)} />
       )}
 
       {gotIt ? (
-        <p className="text-green-400" aria-live="polite">
+        <p className="font-hand text-xl text-good" aria-live="polite">
           ✓ Got it: {gotIt}
         </p>
       ) : (
@@ -75,12 +85,13 @@ function SendForm({ label, placeholder, button, maxLength, onSend }: SendFormPro
   );
 }
 
+/** The clues so far, as notes chalked on the board, newest at the bottom. */
 function ClueFeed({ round }: { round: RoundView }) {
   return (
     <ol className="w-full space-y-2 text-left" aria-label="Clues so far">
-      {round.clues.length === 0 && <li className={mutedClass}>No clues yet.</li>}
+      {round.clues.length === 0 && <li className={`font-hand text-lg ${mutedClass}`}>No clues yet…</li>}
       {round.clues.map((clue) => (
-        <li key={clue.id} className="rounded bg-slate-800 px-3 py-2">
+        <li key={clue.id} className="deal-in rounded-xl border-l-4 border-accent bg-surface px-4 py-2 font-hand text-xl">
           {clue.text}
         </li>
       ))}
@@ -95,20 +106,23 @@ function Explain({ round }: { round: RoundView }) {
 
   return (
     <>
-      <p className="font-medium text-indigo-300">You're explaining</p>
+      <p className="font-chalk text-2xl text-accent">You're explaining</p>
       <CardFrame
         as="h1"
         eyebrow={`${LEVEL_LABELS[card.level]} ${card.subject} · ${card.topic} · ${card.type}`}
         title={card.prompt}
         latex={card.latex}
+        subject={card.subject}
       >
         <DontSay words={card.forbidden} />
       </CardFrame>
       <SendForm label="Type a clue" placeholder="Type a clue…" button="Send" maxLength={MAX_CLUE_LENGTH} onSend={sendClue} />
       {clueNotice && (
-        <Notice tone="error" align="left">
-          {clueNotice}
-        </Notice>
+        <div key={clueNotice} className="shake w-full">
+          <Notice tone="error" align="left">
+            {clueNotice}
+          </Notice>
+        </div>
       )}
       <ClueFeed round={round} />
       <Button variant="secondary" onClick={skipRound}>
@@ -121,20 +135,27 @@ function Explain({ round }: { round: RoundView }) {
 function Guess({ round, explainer, hasIt }: { round: RoundView; explainer: string; hasIt: boolean }) {
   const feedback = useGameStore((s) => s.guessFeedback);
 
+  // Each guess result gets its own sound; a correct one also gets the success screen below.
+  useEffect(() => {
+    if (feedback) cue(feedback.result);
+  }, [feedback]);
+
   return (
     <>
-      <h1 className="text-2xl font-bold">{explainer} is explaining</h1>
-      <p className={mutedClass}>
-        A {round.card.type} from {round.card.subject}
-      </p>
+      <Heading as="h1" sub={`A ${round.card.type} from ${round.card.subject}`}>
+        {explainer} is explaining
+      </Heading>
       <ClueFeed round={round} />
       {hasIt ? (
-        <Notice tone="success">You got it! Waiting for the others…</Notice>
+        <div className="pop relative w-full">
+          <Notice tone="success">You got it! Waiting for the others…</Notice>
+          <Dust />
+        </div>
       ) : (
         <SendForm label="Type your guess" placeholder="Your guess…" button="Guess" maxLength={MAX_GUESS_LENGTH} onSend={sendGuess} />
       )}
       {!hasIt && feedback && (
-        <p role="status" className={feedback.result === "close" ? "text-amber-400" : mutedClass}>
+        <p key={`${feedback.guess}-${feedback.result}`} role="status" className={`shake font-hand text-xl ${feedback.result === "close" ? "text-warn" : mutedClass}`}>
           {feedback.result === "close" ? `"${feedback.guess}" is close! Check your spelling.` : `"${feedback.guess}" isn't it.`}
         </p>
       )}
