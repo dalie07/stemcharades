@@ -38,8 +38,8 @@ guess it. Then the round ends with the right answer explained, so even a wrong g
 - **Runs for $0.** One Node process on a free Render web service. No database is needed to play.
 
 > [!NOTE]
-> **Content status.** The cards are machine-drafted and are being reviewed by hand against course material.
-> Production serves only cards marked `reviewed`; see the [content guide](docs/content-guide.md). Spotted a mistake?
+> **Content status.** All 407 cards were drafted with AI help and then checked by hand against course material.
+> Only cards marked `reviewed` are ever served; see the [content guide](docs/content-guide.md). Spotted a mistake?
 > Every card has a **Flag this card** button.
 
 ## Quick start
