@@ -5,6 +5,22 @@ const SUBJECTS_LOWER = ["maths", "physics", "chemistry", "biology", "computing"]
 const escapeRe = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 const contains = (raw: string, word: string) => new RegExp(`(^|[^a-z0-9])${escapeRe(word.toLowerCase())}([^a-z0-9]|$)`).test(raw.toLowerCase());
 
+/** Every string value in a Socket.IO frame (`42["state",{...}]`), without its keys or numbers. */
+function textValues(frame: string): string[] {
+  const out: string[] = [];
+  const walk = (v: unknown): void => {
+    if (typeof v === "string") out.push(v);
+    else if (Array.isArray(v)) v.forEach(walk);
+    else if (v && typeof v === "object") Object.values(v).forEach(walk);
+  };
+  try {
+    walk(JSON.parse(frame.replace(/^\d+/, "") || "null"));
+    return out;
+  } catch {
+    return [frame]; // not JSON: search all of it
+  }
+}
+
 async function promptOf(page: Page): Promise<string> {
   return ((await page.locator("article h1").textContent()) ?? "").trim();
 }
@@ -29,14 +45,17 @@ test("a full round runs across devices and a guesser's browser never receives th
   await expect(ann!.page.getByText(`A ${secret.type} from ${secret.subject}`)).toBeVisible();
   await expect(ann!.page.locator("body")).not.toContainText(prompt);
 
-  // A clue giving the answer away is refused for the explainer alone.
-  await host!.page.getByLabel("Type a clue").fill(`it is ${prompt}`);
+  // A clue giving the answer away is refused for the explainer alone. (On a question card the prompt is the
+  // question, not the answer, so the clue uses an accepted answer the filter enforces, or else a forbidden word.)
+  const enforced = secret.answers.find((a) => a.replace(/[^a-z0-9]/gi, "").length >= 3 || /^\d+$/.test(a));
+  const giveaway = `it is ${secret.type === "question" ? (enforced ?? secret.forbidden[0]) : prompt}`;
+  await host!.page.getByLabel("Type a clue").fill(giveaway);
   await host!.page.getByRole("button", { name: "Send" }).click();
   await expect(host!.page.getByRole("alert")).toContainText("Not allowed");
   await host!.page.getByLabel("Type a clue").fill("a perfectly harmless opening hint");
   await host!.page.getByRole("button", { name: "Send" }).click();
   for (const g of [ann!, ben!]) await expect(g.page.getByText("a perfectly harmless opening hint")).toBeVisible();
-  for (const g of [ann!, ben!]) await expect(g.page.locator("body")).not.toContainText(`it is ${prompt}`);
+  for (const g of [ann!, ben!]) await expect(g.page.locator("body")).not.toContainText(giveaway);
 
   // The explainer's refresh restores role, card and clues.
   await host!.page.reload();
@@ -44,13 +63,14 @@ test("a full round runs across devices and a guesser's browser never receives th
   await expect(host!.page.getByText("a perfectly harmless opening hint")).toBeVisible();
   expect(await promptOf(host!.page)).toBe(prompt);
 
-  // Raw network traffic to guessers contains none of the card.
-  // Words the protocol itself sends to everyone (phase names, card types, subjects) are public by design, so a card
-  // that happens to contain one (a forbidden word "round", say) must not be reported as a leak.
+  // Raw network traffic to guessers contains none of the card. Only the text values sent are searched: field names
+  // ("type", "code", "number") and numbers (timestamps, settings) are protocol, and a card that happens to use one
+  // (a card about "Code", say) must not be reported as a leak. Words the protocol sends to everyone as values
+  // (phase names, card types, subjects) are public by design for the same reason.
   const PUBLIC_WORDS = new Set(["lobby", "round", "reveal", "finished", "term", "formula", "question", ...SUBJECTS_LOWER]);
   const secrets = [...new Set([secret.prompt, ...secret.answers, ...secret.forbidden].filter((w) => w.length >= 3 && !PUBLIC_WORDS.has(w.toLowerCase())))];
   for (const g of [ann!, ben!]) {
-    const raw = g.frames.join("\n");
+    const raw = g.frames.flatMap(textValues).join("\n");
     expect(g.frames.length).toBeGreaterThan(0);
     for (const word of secrets) expect(contains(raw, word), `${g.name} received "${word}"`).toBe(false);
     expect(raw.toLowerCase()).not.toContain(secret.explanation.toLowerCase().slice(0, 30));

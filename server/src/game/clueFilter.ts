@@ -23,7 +23,11 @@ function blockedTerms(card: Card): Blocked[] {
   if (card.type !== "question") add(card.prompt, "contains_answer");
   // One- and two-letter answers ("he", "ml") are aliases for guessers. As clue words they would
   // reject ordinary English, so they are not enforced here (the prompt and forbidden list still are).
-  for (const a of card.answers) if (normalise(a).replace(/ /g, "").length >= 3) add(a, "contains_answer");
+  // Numbers are the exception: "15" or "6" is never ordinary English, and typing it would hand over the answer.
+  for (const a of card.answers) {
+    const key = normalise(a).replace(/ /g, "");
+    if (key.length >= 3 || /^\d+$/.test(key)) add(a, "contains_answer");
+  }
   for (const f of card.forbidden) add(f, "forbidden_word");
   return out;
 }

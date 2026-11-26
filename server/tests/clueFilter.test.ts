@@ -90,6 +90,13 @@ describe("clue filter", () => {
     const tri = card({ type: "question", prompt: "Sum of interior angles of a triangle?", answers: ["180", "180 degrees"], forbidden: ["triangle", "angles", "degrees"] });
     expect(checkClue("it is 180", tri)).toMatchObject({ ok: false });
   });
+  it("blocks one- and two-digit numeric answers too, which no ordinary clue needs", () => {
+    const sum = card({ type: "question", prompt: "What is 7 + 8?", answers: ["15", "fifteen"], forbidden: ["seven", "eight", "add"] });
+    expect(checkClue("15", sum)).toEqual({ ok: false, reason: "contains_answer", word: "15" });
+    expect(checkClue("one more than 14", sum)).toEqual({ ok: true });
+    const hex = card({ type: "question", prompt: "How many sides does a hexagon have?", answers: ["6", "six"], forbidden: ["shape", "bee", "honeycomb"] });
+    expect(checkClue("it is 6", hex)).toMatchObject({ ok: false, reason: "contains_answer" });
+  });
   it("is silent about what it matched beyond the single word", () => {
     const res = checkClue("glucose", photo);
     expect(Object.keys(res).sort()).toEqual(["ok", "reason", "word"]);

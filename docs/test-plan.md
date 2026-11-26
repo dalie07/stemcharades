@@ -7,7 +7,7 @@ Locally, `npm run check` runs all of it except the browser tests, and `npm run t
 | Layer | Where | How many |
 |---|---|---|
 | Shared rules (scoring, card picker, curriculum map, selections) | `shared/src/*.test.ts` | 14 |
-| Server: engine, filters, rooms, sockets, accounts, database, content checks | `server/tests/` | 203 |
+| Server: engine, filters, rooms, sockets, accounts, database, content checks | `server/tests/` | 205 |
 | Client: Party engine, flag links | `client/src/**/*.test.ts` | 11 |
 | Browser, several real browsers per test | `e2e/` (Playwright) | 10 |
 
@@ -40,7 +40,8 @@ Also covered: room codes and session tokens (`roomManager.test.ts`), nickname an
 and per-IP rate limits (IPv6 counted per /64), the per-address connection cap, the socket origin check, expiry of rooms
 nobody joins, explainer rotation when players leave or join mid-game, malformed cookies, account deletion, the
 curriculum map and selections (including tampered share links), the picker in Party mode and online rooms
-(`e2e/picker.spec.ts`), the content checks on every card (`contentChecks.test.ts`), security headers, no console or CSP errors during a game (`e2e/round.spec.ts`), the wake
+(`e2e/picker.spec.ts`), the content checks on every card (`contentChecks.test.ts`), that every card in every deck is
+playable (its answers accepted, a giveaway clue refused, an ordinary clue allowed: `clueLeak.test.ts`), security headers, no console or CSP errors during a game (`e2e/round.spec.ts`), the wake
 screen and Party mode with the server off (`e2e/resilience.spec.ts`), sign-in and its CSRF protection, session
 forgery, private decks and their ownership (`accounts.test.ts`, `db.test.ts`), saving a finished game and the
 revision list (`accounts.socket.test.ts`), and that a database failure never breaks a live game.
@@ -52,7 +53,7 @@ Measured on 19 November 2026.
 | Metric | Target | Result | Notes |
 |---|---|---|---|
 | Guess-match accuracy | 95% or better on 200 labelled guesses | **99.0%** (198 of 200) | The labelled set was machine-drafted, not collected from students; see limitations. The two misses are "half lives" and "one hundred and eighty", both included deliberately as hard cases |
-| Clue-filter leak rate | Zero | **0 leaks in 26,005 attempts** over all 407 cards | Every forbidden word, answer and prompt, in 6 or more disguises each (case, punctuation, plural, split words) |
+| Clue-filter leak rate | Zero | **0 leaks in 26,047 attempts** over all 407 cards | Every forbidden word, answer and prompt, in 6 or more disguises each (case, punctuation, plural, split words) |
 | Content review coverage | 100% reviewed in production | **0% (0 of 407 cards)** | Blocks production: with `NODE_ENV=production` and no cards reviewed, the server serves none |
 | Engine test coverage | 90% of lines in `server/src/game` | **99.1%** | `npm run test:coverage` fails below 90% |
 | Flag rate, round completion, reconnect success | Measure at the playtest | Not measured | There is deliberately no analytics. Count them by hand at the playtest, or from the flag issues |
