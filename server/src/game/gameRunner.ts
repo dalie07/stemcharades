@@ -133,6 +133,8 @@ export class GameRunner {
         outcome: round.outcome,
         cardId: card.id,
         subject: card.subject,
+        course: card.course,
+        level: card.level,
         topic: card.topic,
         prompt: card.prompt,
         ...(card.latex ? { latex: card.latex } : {}),
@@ -173,6 +175,24 @@ export class GameRunner {
         explanation: card.explanation,
       });
     }
-    return { standings, missed };
+    return { standings, missed, highlights: this.highlights(room, view) };
+  }
+
+  /** Fastest correct guess of the game, and who explained the most cards that got guessed. */
+  private highlights(room: Room, view: RoomView): SummaryView["highlights"] {
+    const nickname = (id: string) => view.players.find((p) => p.id === id)?.nickname ?? "A player";
+    let fastest: SummaryView["highlights"]["fastest"] = null;
+    let fastestMs = Infinity;
+    const explained = new Map<string, number>();
+    for (const r of room.game.history) {
+      if (r.fastestMs !== null && r.correct.length && r.fastestMs < fastestMs) {
+        fastestMs = r.fastestMs;
+        const card = this.cardFor(room, r.cardId);
+        fastest = { nickname: nickname(r.correct[0]!), prompt: card?.prompt ?? "a card", seconds: Math.max(1, Math.round(r.fastestMs / 1000)) };
+      }
+      if (r.correct.length) explained.set(r.explainerId, (explained.get(r.explainerId) ?? 0) + 1);
+    }
+    const top = [...explained].sort((a, b) => b[1] - a[1])[0];
+    return { fastest, topExplainer: top ? { nickname: nickname(top[0]), cards: top[1] } : null };
   }
 }

@@ -183,6 +183,9 @@ export interface RevealView {
   outcome: RoundOutcome;
   cardId: string;
   subject: string;
+  /** With the topic, lets each device record what it learned (mastery and revision live on the device). */
+  course: string;
+  level: Level;
   topic: string;
   prompt: string;
   latex?: string;
@@ -205,6 +208,11 @@ export interface MissedCardView {
 }
 export interface SummaryView {
   standings: { rank: number; playerId: string; nickname: string; score: number }[];
+  /** The moments worth showing beyond the scores. Null when nobody guessed anything. */
+  highlights: {
+    fastest: { nickname: string; prompt: string; seconds: number } | null;
+    topExplainer: { nickname: string; cards: number } | null;
+  };
   /** Cards nobody in the room guessed, for revision. */
   missed: MissedCardView[];
 }

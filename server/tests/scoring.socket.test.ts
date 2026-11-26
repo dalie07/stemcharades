@@ -144,6 +144,10 @@ describe("scoring over sockets", () => {
     ]);
     expect(end.summary!.missed.map((m) => m.prompt)).toEqual(["Wibblefrop"]); // round 2's card: nobody got it
     expect(end.summary!.missed[0]).toMatchObject({ answers: ["wibblefrop"], explanation: "Frobnication: the second unusual explanation." });
+    // Highlights: the quickest correct guess of the game and the explainer whose cards got guessed most.
+    expect(end.summary!.highlights.fastest).toMatchObject({ nickname: expect.stringMatching(/^(Ann|Ben)$/), prompt: "Zorblaxium" });
+    expect(end.summary!.highlights.fastest!.seconds).toBeGreaterThanOrEqual(1);
+    expect(end.summary!.highlights.topExplainer).toEqual({ nickname: "Host", cards: 1 });
 
     // Play again resets everything.
     const again = state(host, (v) => v.phase === "round" && v.round?.number === 1);
