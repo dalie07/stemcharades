@@ -120,3 +120,7 @@ the code or the cards, and [SECURITY.md](SECURITY.md) to report a vulnerability 
 3. Every REST body and socket event is validated against a shared schema.
 4. The round engine stays pure.
 5. No paid services, and one service only.
+
+## License
+
+[MIT](LICENSE) © 2026 Dalie_07
