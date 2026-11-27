@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { EMPTY, missedIds, stars, streak, today, withDayPlayed, withResult } from "./progress";
+import { EMPTY, bestStreak, daysToNextTier, flameTier, lastWeek, missedIds, stars, streak, today, withDayPlayed, withResult } from "./progress";
 
 const waves = (id: string) => ({ id, course: "secondary-physics", topic: "Waves" });
 const TOPIC = "secondary-physics/Waves";
@@ -44,5 +44,17 @@ describe("learning progress", () => {
     for (const d of ["2026-12-30", "2026-12-31", "2027-01-01"]) p = withDayPlayed(p, d);
     expect(streak(p, "2027-01-01")).toBe(3);
     expect(today(new Date(2027, 0, 5))).toBe("2027-01-05");
+  });
+
+  it("remembers the best streak, shows the last seven days, and grows the flame as the streak runs", () => {
+    let p = EMPTY;
+    for (const d of ["2026-11-01", "2026-11-02", "2026-11-03", "2026-11-04", "2026-11-10", "2026-11-11"]) p = withDayPlayed(p, d);
+    expect(bestStreak(p)).toBe(4);
+    expect(lastWeek(p, "2026-11-12").map((d) => d.played)).toEqual([false, false, false, false, true, true, false]);
+    expect(lastWeek(p, "2026-11-12")[6]!.day).toBe("2026-11-12");
+    expect([0, 1, 2, 3, 6, 7, 13, 14, 29, 30, 100].map(flameTier)).toEqual([
+      "out", "spark", "spark", "flame", "flame", "blaze", "blaze", "inferno", "inferno", "legend", "legend",
+    ]);
+    expect([0, 1, 5, 7, 20, 30].map(daysToNextTier)).toEqual([1, 2, 2, 7, 10, null]);
   });
 });

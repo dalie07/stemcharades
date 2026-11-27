@@ -9,19 +9,29 @@ export default defineConfig({
     tailwindcss(),
     VitePWA({
       registerType: "autoUpdate",
-      includeAssets: ["favicon.svg", "icon-192.png", "icon-512.png", "fonts/*.woff2"],
+      includeAssets: ["favicon.svg", "icon-192.png", "icon-512.png", "icon-maskable-512.png", "apple-touch-icon.png", "fonts/*.woff2"],
+      // Installable on phones: opens full screen from the home screen, in portrait, offline for Party mode.
       manifest: {
+        id: "/",
         name: "STEMCHARADES",
         short_name: "STEMCHARADES",
         description: "A party game for STEM revision: explain it without saying the forbidden words.",
+        lang: "en",
         theme_color: "#1e3a2f",
         background_color: "#1e3a2f",
         display: "standalone",
+        orientation: "portrait",
         start_url: "/",
+        scope: "/",
+        categories: ["education", "games"],
         icons: [
-          { src: "icon-192.png", sizes: "192x192", type: "image/png" },
-          { src: "icon-512.png", sizes: "512x512", type: "image/png" },
-          { src: "icon-512.png", sizes: "512x512", type: "image/png", purpose: "maskable" },
+          { src: "icon-192.png", sizes: "192x192", type: "image/png", purpose: "any" },
+          { src: "icon-512.png", sizes: "512x512", type: "image/png", purpose: "any" },
+          { src: "icon-maskable-512.png", sizes: "512x512", type: "image/png", purpose: "maskable" },
+        ],
+        shortcuts: [
+          { name: "Party mode", short_name: "Party", url: "/#/party", icons: [{ src: "icon-192.png", sizes: "192x192" }] },
+          { name: "Online room", short_name: "Online", url: "/#/online", icons: [{ src: "icon-192.png", sizes: "192x192" }] },
         ],
       },
       workbox: {

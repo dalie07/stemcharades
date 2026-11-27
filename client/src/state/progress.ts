@@ -67,6 +67,50 @@ export function streak(p: Progress, day: string): number {
   return n;
 }
 
+/** The longest run of consecutive days ever played on this device. */
+export function bestStreak(p: Progress): number {
+  const days = [...new Set(p.days)].sort();
+  let best = 0;
+  let run = 0;
+  let prev = "";
+  for (const d of days) {
+    run = prev && dayBefore(d) === prev ? run + 1 : 1;
+    best = Math.max(best, run);
+    prev = d;
+  }
+  return best;
+}
+
+/** The last seven days, oldest first, and whether each was played: the dots under the flame. */
+export function lastWeek(p: Progress, day: string): { day: string; played: boolean }[] {
+  const played = new Set(p.days);
+  const out: { day: string; played: boolean }[] = [];
+  let cursor = day;
+  for (let i = 0; i < 7; i++) {
+    out.unshift({ day: cursor, played: played.has(cursor) });
+    cursor = dayBefore(cursor);
+  }
+  return out;
+}
+
+export type FlameTier = "out" | "spark" | "flame" | "blaze" | "inferno" | "legend";
+
+/** How the flame looks: it grows and changes colour the longer the streak runs. */
+export function flameTier(days: number): FlameTier {
+  if (days <= 0) return "out";
+  if (days < 3) return "spark";
+  if (days < 7) return "flame";
+  if (days < 14) return "blaze";
+  if (days < 30) return "inferno";
+  return "legend";
+}
+
+/** Days still to play to reach the next look, or null at the top. */
+export function daysToNextTier(days: number): number | null {
+  for (const step of [1, 3, 7, 14, 30]) if (days < step) return step - days;
+  return null;
+}
+
 /** Cards whose latest result is a miss: the revision deck. */
 export function missedIds(p: Progress): string[] {
   return Object.entries(p.cards)

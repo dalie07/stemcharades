@@ -38,7 +38,7 @@ export function SettingsButton() {
         type="button"
         aria-label="Settings"
         onClick={() => setOpen(true)}
-        className="fixed top-3 right-3 z-20 grid h-11 w-11 place-items-center rounded-full bg-surface text-xl text-ink shadow"
+        className="corner-top fixed right-3 z-20 grid h-11 w-11 place-items-center rounded-full bg-surface text-xl text-ink shadow"
       >
         ⚙
       </button>

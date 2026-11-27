@@ -1,5 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="STEMCHARADES">
-  <rect width="512" height="512" rx="112" fill="#4f46e5"/>
-  <path fill="#fff" d="M144 104h224a48 48 0 0 1 48 48v144a48 48 0 0 1-48 48H232l-82 76v-76h-6a48 48 0 0 1-48-48V152a48 48 0 0 1 48-48z"/>
-  <path fill="none" stroke="#4f46e5" stroke-width="30" stroke-linecap="round" stroke-linejoin="round" d="M312 168H208l60 56-60 56h104"/>
+  <rect width="512" height="512" rx="112" fill="#1e3a2f"/>
+  <rect x="20" y="20" width="472" height="472" rx="96" fill="none" stroke="#2f5546" stroke-width="10"/>
+  <path fill="none" stroke="#f4f2e9" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" d="M150 112h212a46 46 0 0 1 46 46v138a46 46 0 0 1-46 46H238l-80 70v-70h-8a46 46 0 0 1-46-46V158a46 46 0 0 1 46-46z"/>
+  <path fill="none" stroke="#f6d860" stroke-width="28" stroke-linecap="round" stroke-linejoin="round" d="M306 170H210l54 57-54 57h96"/>
 </svg>

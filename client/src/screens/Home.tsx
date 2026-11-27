@@ -1,10 +1,12 @@
 import { useEffect, type ReactNode } from "react";
 import { Doodle } from "../components/Doodle";
+import { InstallPrompt } from "../components/InstallPrompt";
 import { SettingsButton } from "../components/Settings";
+import { StreakFlame } from "../components/StreakFlame";
 import { Notice, Screen, TextLink, mutedClass } from "../components/ui";
 import { refreshMe } from "../state/account";
 import { useGameStore } from "../state/gameStore";
-import { missedIds, streak, today, useProgress } from "../state/progress";
+import { missedIds, useProgress } from "../state/progress";
 
 function ModeCard({ href, title, sub, icon, onClick }: { href: string; title: string; sub: string; icon: ReactNode; onClick: () => void }) {
   return (
@@ -29,8 +31,6 @@ export function Home() {
   // The notice is shown once: it is cleared as soon as the player moves on.
   const dismiss = () => useGameStore.setState({ notice: null });
   const signInFailed = location.hash.includes("signin=failed");
-  const days = streak(progress, today());
-  const playedToday = progress.days.at(-1) === today();
   const toRevise = missedIds(progress).length;
 
   useEffect(() => {
@@ -39,6 +39,7 @@ export function Home() {
 
   return (
     <Screen centered>
+      <StreakFlame />
       <SettingsButton />
       <div className="space-y-2">
         <h1 className="font-chalk text-5xl tracking-wide sm:text-6xl">
@@ -46,12 +47,6 @@ export function Home() {
         </h1>
         <p className="font-hand text-2xl text-ink-muted">Explain it without saying it.</p>
       </div>
-
-      {days > 0 && (
-        <p className="pop rounded-full border-2 border-accent px-4 py-1 font-hand text-xl" role="status">
-          {days}-day streak{playedToday ? " · see you tomorrow!" : " · play today to keep it!"}
-        </p>
-      )}
 
       <div className="w-full space-y-4">
         <ModeCard href="#/party" onClick={dismiss} title="Party mode" sub="One phone, passed around. Works offline." icon={<Doodle subject="party" className="h-8 w-8" />} />
@@ -66,6 +61,8 @@ export function Home() {
           <span className={`block text-sm ${mutedClass}`}>Choose “Revise my misses” in Party mode to master them.</span>
         </a>
       )}
+
+      <InstallPrompt />
 
       {notice && <Notice tone="warning">{notice}</Notice>}
       {signInFailed && <Notice tone="warning">Sign-in did not work. You can try again, or just play as a guest.</Notice>}

@@ -1,6 +1,6 @@
 {
   "name": "@stemcharades/shared",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "description": "Schemas, event names and rules shared by the client and the server.",
   "type": "module",

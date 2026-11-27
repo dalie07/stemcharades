@@ -134,6 +134,14 @@ body {
   font-family: var(--font-sans);
 }
 
+/* Installed on a phone, the app draws under the status bar and home indicator: keep content clear of them. */
+body {
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+.corner-top {
+  top: calc(0.75rem + env(safe-area-inset-top));
+}
+
 /* A board is never perfectly clean: a faint wash of old chalk dust (or whiteboard ghosting). */
 body {
   background-image:
@@ -179,6 +187,26 @@ body {
   from {
     opacity: 0;
     transform: translateX(16px);
+  }
+}
+
+/* The streak flame flickers gently, like a real one. */
+.flicker {
+  transform-origin: 50% 90%;
+  animation: flicker 1.6s ease-in-out infinite alternate;
+}
+@keyframes flicker {
+  0% {
+    rotate: -2deg;
+    scale: 1 1;
+  }
+  50% {
+    rotate: 1.5deg;
+    scale: 0.97 1.04;
+  }
+  100% {
+    rotate: -1deg;
+    scale: 1.02 0.98;
   }
 }
 

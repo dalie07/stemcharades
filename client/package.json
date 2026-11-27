@@ -1,6 +1,6 @@
 {
   "name": "@stemcharades/client",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "description": "React client: Party mode, online rooms and the installable app shell.",
   "type": "module",
