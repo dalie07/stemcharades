@@ -13,7 +13,7 @@ Every card is pitched the same way. A wrong card teaches the wrong thing, so **n
 | `topic` | One of that course's topics in the map, spelled exactly, e.g. `Waves`. |
 | `subject` | The broad discipline (Maths, Physics, Chemistry, Biology, Computing). Sets the id prefix and must be one the course covers. |
 | `prompt` | What the explainer sees: the term, the formula's name, or the question. |
-| `answers` | Every accepted answer: abbreviations, alternative spellings, common aliases. Not shared with any other card. |
+| `answers` | Every accepted answer: abbreviations, alternative spellings, common aliases. Not shared with any other card at the same level (the same concept may have a card at each level). |
 | `forbidden` | 3–6 words the explainer may not use. The obvious giveaways: the main words in the answer's definition. Never an accepted answer itself. |
 | `explanation` | Two or three sentences shown at reveal. Accurate, plain, no jokes. |
 | `status` | `draft` until reviewed; only `reviewed` cards load in production. |

@@ -19,8 +19,7 @@ Topics, and how many new cards each needs (75 in all):
 
 Nothing is in the library for this course yet.
 
-Answers already used by other Chemistry cards. Do not use any of these as an answer:
-7, absorbent, acid, activation energy, alkali, alkali metal, alkane, alkene, allotrope, anode, atom, au, avogadro constant, catalyst, cathode, compound, concentration, covalent bond, cracking, displacement reaction, dissolve, dynamic equilibrium, electrode, electrolysis, electron shell, electronegativity, element, endothermic reaction, enthalpy change, esterification, exothermic reaction, flexible, fractional distillation, functional group, h2o, halogen, helium, hydrogen, ice, ideal gas law, ionic bond, isomer, isotope, le chatelier's principle, london forces, mixture, mole, molecule, nacl, neutralisation, neutron, nitrogen, noble gas, opaque, oxidation, period, periodic table group, ph, polymer, proton, rate equation, recycling, redox, reduction, salt, titration, transparent, waterproof
+
 
 Work through the topics in the order listed, two topics per reply, each reply one complete JSON object with
 "course": "advanced-organic-chemistry". After each reply I will say "next". When every topic is done, say "All topics done."

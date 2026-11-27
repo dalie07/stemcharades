@@ -19,8 +19,7 @@ Topics, and how many new cards each needs (75 in all):
 
 Nothing is in the library for this course yet.
 
-Answers already used by other Biology cards. Do not use any of these as an answer:
-active transport, aerobic respiration, allele, amphibian, amylase, antibody, artery, balanced diet, biodiversity, capillary, carbon cycle, carbon dioxide, cell membrane, cell wall, chloroplast, chromosome, classification, cytoplasm, decomposer, diffusion, dna, dominant allele, ecosystem, enzyme, extinction, food chain, fossil, gene, genetic engineering, genotype, germination, habitat, heart, herbivore, heterozygous, hibernation, homeostasis, homozygous, hormone, hydrogen bond, incisor, insulin, life cycle, light, lungs, mammal, meiosis, mitochondria, mitosis, muscle, mutation, natural selection, negative feedback, neuron, nucleus, organ, osmosis, petal, phenotype, photosynthesis, platelet, predator, prey, recessive allele, red blood cell, reflex arc, reptile, ribosome, roots, seed, selective breeding, skeleton, stem, stem cell, synapse, tadpole, tissue, vaccination, vacuole, vein, vertebrate, villi, white blood cell
+
 
 Work through the topics in the order listed, two topics per reply, each reply one complete JSON object with
 "course": "advanced-biotechnology". After each reply I will say "next". When every topic is done, say "All topics done."

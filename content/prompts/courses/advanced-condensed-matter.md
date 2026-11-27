@@ -20,8 +20,8 @@ Topics, and how many new cards each needs (74 in all):
 Already in the library for this course. Do not repeat these:
 - Superconductor (Superconductivity)
 
-Answers already used by other Physics cards. Do not use any of these as an answer:
-3x10^8, absolute zero, acceleration, air resistance, alpha particle, alternating current, battery, black hole, brownian motion, bulb, capacitor, centripetal force, conservation of energy, day and night, density, diffraction, doppler effect, e=mc^2, electric circuit, electric field, electromagnetic induction, electron, entropy, force, frequency, gamma ray, gravitational potential energy, half-life, hooke's law, interference, joule, kinetic energy, lever, longitudinal, loudness, magnet, magnetic field, mirror, moment, momentum, moon, newton, newton's law of gravitation, newton's second law, nuclear fission, nuclear fusion, ohm, ohm's law, parallel circuit, photoelectric effect, photon, pitch, planet, power, pressure, projectile motion, radioactive decay, red, reflection, refraction, resistor, series circuit, shadow, specific heat capacity, standing wave, superconductor, switch, terminal velocity, the sun, total internal reflection, transformer, velocity, vibration, volcano, wave equation, wave-particle duality, wavelength, wire, work done
+Answers already used by other Advanced Physics cards. Do not use any of these as an answer:
+superconductor
 
 Work through the topics in the order listed, two topics per reply, each reply one complete JSON object with
 "course": "advanced-condensed-matter". After each reply I will say "next". When every topic is done, say "All topics done."

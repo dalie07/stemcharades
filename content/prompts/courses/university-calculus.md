@@ -31,8 +31,8 @@ Already in the library for this course. Do not repeat these:
 - What is the derivative of x squared? (Differentiation)
 - What is the integral of 1 over x? (Integration)
 
-Answers already used by other Maths cards. Do not use any of these as an answer:
-100, 14, 15, 180, 2x, 3.14, 360, 42, 6, 60, area, area of a circle, area of a rectangle, area of a triangle, arithmetic sequence, asymptote, axiom, bar chart, binomial theorem, capacity, centimetre, chain rule, circle, circumference, combination, complex number, congruent, correlation, cos x, cross product, cube, decimal point, denominator, derivative, determinant, difference, digit, domain, dot product, eigenvalue, equal groups, equivalent fractions, euler's identity, even number, fibonacci sequence, fraction, function, geometric sequence, gradient, half, hypothesis test, inequality, integral, inverse operation, kilogram, limit, line of symmetry, ln x, logarithm, matrix, mean, median, mode, multiple, normal distribution, number line, numerator, odd number, parallel lines, percentage, perimeter, permutation, pictogram, place value, polynomial, prime factorisation, prime number, probability, proof by induction, pythagoras theorem, quadratic formula, quarter, range, ratio, remainder, right angle, rounding, simultaneous equations, sine rule, square root, standard deviation, sum, survey, tally chart, tangent line, times table, triangle, vector, venn diagram, volume of a sphere
+Answers already used by other University Maths cards. Do not use any of these as an answer:
+2x, asymptote, axiom, binomial theorem, chain rule, combination, complex number, cos x, cross product, derivative, determinant, dot product, eigenvalue, hypothesis test, integral, limit, ln x, matrix, normal distribution, permutation, proof by induction, tangent line
 
 Work through the topics in the order listed, two topics per reply, each reply one complete JSON object with
 "course": "university-calculus". After each reply I will say "next". When every topic is done, say "All topics done."

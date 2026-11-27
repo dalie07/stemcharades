@@ -56,7 +56,10 @@ for (const course of COURSES) {
     .sort((a, b) => b.need - a.need);
   const total = needs.reduce((n, t) => n + t.need, 0);
   const existing = cards.filter((c) => c.course === course.id);
-  const subjectAnswers = [...new Set(cards.filter((c) => course.subjects.includes(c.subject)).map((c) => c.answers[0]!))].sort((a, b) => a.localeCompare(b));
+  // Answers only need to be unique within a level, so list those already used at this level, in these subjects.
+  const subjectAnswers = [...new Set(cards.filter((c) => c.level === course.level && course.subjects.includes(c.subject)).map((c) => c.answers[0]!))].sort((a, b) =>
+    a.localeCompare(b),
+  );
   const file = `${course.id}.md`;
 
   const text = `# Cards for ${LEVEL_LABELS[course.level]} ${course.name}
@@ -78,7 +81,7 @@ ${needs.map((t) => `- ${t.topic}: ${t.need === 0 ? "none needed (it has enough)"
 
 ${existing.length ? `Already in the library for this ${LEVEL_UNIT[course.level]}. Do not repeat these:\n${existing.map((c) => `- ${c.prompt} (${c.topic})`).join("\n")}` : `Nothing is in the library for this ${LEVEL_UNIT[course.level]} yet.`}
 
-${subjectAnswers.length ? `Answers already used by other ${course.subjects.join(" and ")} cards. Do not use any of these as an answer:\n${subjectAnswers.join(", ")}` : ""}
+${subjectAnswers.length ? `Answers already used by other ${LEVEL_LABELS[course.level]} ${course.subjects.join(" and ")} cards. Do not use any of these as an answer:\n${subjectAnswers.join(", ")}` : ""}
 
 Work through the topics in the order listed, two topics per reply, each reply one complete JSON object with
 "course": "${course.id}". After each reply I will say "next". When every topic is done, say "All topics done."

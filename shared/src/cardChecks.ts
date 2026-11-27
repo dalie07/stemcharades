@@ -1,7 +1,12 @@
 import { normalise } from "./normalise.js";
 import type { Card } from "./schemas.js";
 
-/** Problems with a set of cards beyond what the schema can express. Empty array = valid. */
+/**
+ * Problems with a set of cards beyond what the schema can express. Empty array = valid.
+ *
+ * Accepted answers are unique within a level: the same concept may have a Primary card and a Secondary card,
+ * explained at each level's depth, but two cards at one level never share an answer.
+ */
 export function checkDeck(cards: Card[]): string[] {
   const problems: string[] = [];
   const ids = new Map<string, number>();
@@ -12,11 +17,12 @@ export function checkDeck(cards: Card[]): string[] {
 
     const answers = card.answers.map(normalise);
     for (const a of answers) {
-      const owner = answerOwner.get(a);
+      const key = `${card.level}:${a}`;
+      const owner = answerOwner.get(key);
       if (owner && owner !== card.id) {
-        problems.push(`${card.id}: answer "${a}" is also an answer of ${owner}`);
+        problems.push(`${card.id}: answer "${a}" is also an answer of ${owner} at the same level`);
       } else {
-        answerOwner.set(a, card.id);
+        answerOwner.set(key, card.id);
       }
     }
 

@@ -68,6 +68,15 @@ describe("importing an AI-drafted batch", () => {
     ]);
   });
 
+  it("accepts a concept the library has at another level, but not twice at one level", () => {
+    const uni = importBatch(
+      { course: "university-electromagnetism", cards: [draft({ topic: "Optics", prompt: "Frequency", answers: ["frequency"], forbidden: ["hertz", "oscillation", "period"] })] },
+      library,
+    );
+    expect(uni.rejected).toEqual([]);
+    expect(uni.accepted[0]).toMatchObject({ prompt: "Frequency", level: 3 });
+  });
+
   it("needs the subject only for courses that span several, and rejects an unknown course or shape", () => {
     const science = importBatch(
       {

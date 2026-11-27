@@ -36,7 +36,7 @@ One course per chat keeps Claude focused. Start a new chat (and paste Prompt B a
 
 Every card must fit the curriculum map (a real course and topic), have 3 to 6 forbidden words, 1 to 10 answers,
 an explanation of 20 to 500 characters and LaTeX for formulas. It must not repeat a prompt in its topic, share an
-answer with any other card, forbid one of its own answers, contain rude words or links, or be a question that
+answer with another card at the same level, forbid one of its own answers, contain rude words or links, or be a question that
 prints its own answer. The import fills in the id, level and status itself.
 
 ### How much is left
@@ -136,7 +136,7 @@ RULES FOR EVERY CARD
 6. explanation: 2 or 3 plain sentences, 20 to 400 characters: what it is, and one key fact or why it matters.
 7. A question must not contain its own answer.
 8. No two cards may share an answer, in your reply or across the chat. Do not reuse anything I list as already in
-   the library.
+   the library. (The same concept may exist at another level; that is fine.)
 9. No links, no emoji, no markdown inside the text fields.
 
 OUTPUT FORMAT

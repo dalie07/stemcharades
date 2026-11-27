@@ -63,8 +63,8 @@ Already in the library for this subject. Do not repeat these:
 - Survey (Data handling)
 - Venn diagram (Data handling)
 
-Answers already used by other Maths cards. Do not use any of these as an answer:
-100, 14, 15, 180, 2x, 3.14, 360, 42, 6, 60, area, area of a circle, area of a rectangle, area of a triangle, arithmetic sequence, asymptote, axiom, bar chart, binomial theorem, capacity, centimetre, chain rule, circle, circumference, combination, complex number, congruent, correlation, cos x, cross product, cube, decimal point, denominator, derivative, determinant, difference, digit, domain, dot product, eigenvalue, equal groups, equivalent fractions, euler's identity, even number, fibonacci sequence, fraction, function, geometric sequence, gradient, half, hypothesis test, inequality, integral, inverse operation, kilogram, limit, line of symmetry, ln x, logarithm, matrix, mean, median, mode, multiple, normal distribution, number line, numerator, odd number, parallel lines, percentage, perimeter, permutation, pictogram, place value, polynomial, prime factorisation, prime number, probability, proof by induction, pythagoras theorem, quadratic formula, quarter, range, ratio, remainder, right angle, rounding, simultaneous equations, sine rule, square root, standard deviation, sum, survey, tally chart, tangent line, times table, triangle, vector, venn diagram, volume of a sphere
+Answers already used by other Primary Maths cards. Do not use any of these as an answer:
+100, 14, 15, 42, 6, 60, area, area of a rectangle, bar chart, capacity, centimetre, circle, cube, decimal point, denominator, difference, digit, equal groups, equivalent fractions, even number, half, inverse operation, kilogram, line of symmetry, multiple, number line, numerator, odd number, pictogram, place value, quarter, remainder, right angle, rounding, sum, survey, tally chart, times table, triangle, venn diagram
 
 Work through the topics in the order listed, two topics per reply, each reply one complete JSON object with
 "course": "primary-maths". After each reply I will say "next". When every topic is done, say "All topics done."

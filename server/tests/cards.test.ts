@@ -33,8 +33,10 @@ describe("card schema", () => {
 describe("checkDeck", () => {
   it("flags duplicate ids", () =>
     expect(checkDeck([base, { ...base, answers: ["other"] }]).join()).toContain("duplicate id"));
-  it("flags shared answers", () =>
+  it("flags answers shared at the same level", () =>
     expect(checkDeck([base, { ...base, id: "phy-0002" }]).join()).toContain("also an answer"));
+  it("allows the same answer at different levels: one concept, explained at each level's depth", () =>
+    expect(checkDeck([base, { ...base, id: "phy-0002", level: 3, course: "university-mechanics", topic: "Kinematics" }])).toEqual([]));
   it("flags a forbidden word that is an answer", () =>
     expect(checkDeck([{ ...base, forbidden: ["velocity", "x1", "y2"] }]).join()).toContain("forbidden"));
 });

@@ -54,7 +54,8 @@ const unique = (items: string[]) => {
 /**
  * Turn a drafted batch into library cards: assigns each a permanent id and `status: "draft"`, fills in the level
  * from the course, tidies answers and forbidden words, and runs every check the library itself must pass, plus
- * no repeated prompt in a topic and no answer already owned by another card. Pure: the caller writes the result.
+ * no repeated prompt in a topic and no answer already owned by another card at the same level. Pure: the caller
+ * writes the result.
  */
 export function importBatch(raw: unknown, library: readonly Card[]): ImportResult {
   const batch = batchSchema.safeParse(raw);
@@ -73,7 +74,8 @@ export function importBatch(raw: unknown, library: readonly Card[]): ImportResul
   const promptsByTopic = new Map<string, Set<string>>();
   const nextNumber = new Map<string, number>();
   const remember = (card: Card) => {
-    for (const a of card.answers) if (!answerOwner.has(normalise(a))) answerOwner.set(normalise(a), card.id);
+    // Answers are unique within a level, so the same concept can be explained at Primary and at Secondary.
+    for (const a of card.answers) if (!answerOwner.has(`${card.level}:${normalise(a)}`)) answerOwner.set(`${card.level}:${normalise(a)}`, card.id);
     const key = topicKey(card.course, card.topic);
     promptsByTopic.set(key, (promptsByTopic.get(key) ?? new Set()).add(normalise(card.prompt)));
     const [prefix, n] = card.id.split("-");
@@ -140,9 +142,9 @@ export function importBatch(raw: unknown, library: readonly Card[]): ImportResul
       reject(`"${prompt}" is already a card in ${topic}`);
       continue;
     }
-    const taken = answers.find((a) => answerOwner.has(normalise(a)));
+    const taken = answers.find((a) => answerOwner.has(`${course.level}:${normalise(a)}`));
     if (taken) {
-      reject(`answer "${taken}" already belongs to ${answerOwner.get(normalise(taken))}`);
+      reject(`answer "${taken}" already belongs to ${answerOwner.get(`${course.level}:${normalise(taken)}`)}`);
       continue;
     }
     accepted.push(valid.data);

@@ -25,8 +25,8 @@ Already in the library for this course. Do not repeat these:
 - Object-oriented programming (Object-oriented programming)
 - Version control (Software engineering)
 
-Answers already used by other Computing cards. Do not use any of these as an answer:
-abstraction, algorithm, and gate, api, array, ascii, big o notation, binary, binary search, bit, boolean, bubble sort, bug, byte, cache, central processing unit, code, compiler, computer mouse, cyberbullying, database, debugging, decomposition, encryption, firewall, float, flowchart, global variable, graph, hash table, hexadecimal, http, if statement, input, instructions, integer, interpreter, ip address, keyboard, linear search, linked list, loop, machine learning, malware, merge sort, not gate, object-oriented programming, operating system, output, parameter, password, personal information, phishing, pixel, pointer, printer, pseudocode, queue, ram, recursion, repetition, router, save, scope, screen time, sequence, sprite, stack, string, subroutine, syntax error, tree, trusted adult, truth table, uniform resource locator, variable, version control
+Answers already used by other University Computing cards. Do not use any of these as an answer:
+api, big o notation, cache, compiler, graph, hash table, linked list, machine learning, object-oriented programming, pointer, recursion, tree, version control
 
 Work through the topics in the order listed, two topics per reply, each reply one complete JSON object with
 "course": "university-programming". After each reply I will say "next". When every topic is done, say "All topics done."
