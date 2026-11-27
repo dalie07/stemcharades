@@ -44,6 +44,8 @@ language or a link, or is a question that prints its own answer. These checks ca
 wrong fact: that is what review is for.
 
 ## Drafting cards with AI
-Drafting is allowed, serving unreviewed drafts is not. A batch of drafted cards goes into the decks as `draft`,
+The step-by-step workflow, the prompts and a ready-made request for every subject and course are in
+[content/prompts/](../content/prompts/README.md); `npm run cards:import` checks Claude's replies and adds the good
+cards as drafts. Drafting is allowed, serving unreviewed drafts is not. A batch of drafted cards goes into the decks as `draft`,
 passes the machine checks, and is then checked by a person like any other card. See
 [decision 0002](decisions/0002-reviewed-cards-not-live-ai.md) for why cards are not generated during play.

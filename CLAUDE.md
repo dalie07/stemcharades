@@ -17,6 +17,8 @@ optional Postgres (Neon) through Drizzle · Vitest + Playwright · GitHub Action
 - `npm run test:e2e` – Playwright, several real browsers per test (uses the installed Chrome locally)
 - `npm run test:coverage` – game-engine coverage; fails under 90%
 - `npm run validate:cards` – schema, duplicate ids, shared answers
+- `npm run cards:prompts` / `npm run cards:import -- <file>` – draft cards with Claude, then import them as drafts
+  (see `content/prompts/README.md`)
 - `npm run db:generate -w server` – a new SQL migration after editing `server/src/db/schema.ts`
 
 Set `ALLOW_DRAFT_CARDS=1` locally: production serves only cards whose `status` is `reviewed`.
