@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Card review · STEMCHARADES</title>
+<link rel="icon" href="data:," />
+<link rel="stylesheet" href="/katex/katex.min.css" />
+<script src="/katex/katex.min.js"></script>
+<style>
+  @font-face { font-family: "Cabin Sketch"; src: url("/fonts/cabin-sketch-700.woff2") format("woff2"); font-weight: 700; }
+  @font-face { font-family: "Patrick Hand"; src: url("/fonts/patrick-hand-400.woff2") format("woff2"); }
+  @font-face { font-family: "Andika"; src: url("/fonts/andika-400.woff2") format("woff2"); }
+  @font-face { font-family: "Andika"; src: url("/fonts/andika-700.woff2") format("woff2"); font-weight: 700; }
+  :root {
+    --board: #1e3a2f; --surface: #26473a; --surface-2: #2f5546; --ink: #f4f2e9; --muted: #c3d0c5; --line: rgb(244 242 233 / 0.28);
+    --accent: #f6d860; --good: #98e6a2; --bad: #ffa597; --warn: #ffd88a;
+    --maths: #8ccbff; --physics: #ffb877; --chemistry: #98e6a2; --biology: #ffa8c8; --computing: #cdb2ff;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--board); color: var(--ink); font: 16px/1.5 Andika, system-ui, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 20px 16px 120px; }
+  h1 { font: 700 2.4rem "Cabin Sketch", system-ui; margin: 0 0 4px; }
+  .hand { font-family: "Patrick Hand", system-ui; }
+  .muted { color: var(--muted); }
+  .filters { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin: 16px 0; }
+  label { display: block; font: 1.05rem "Patrick Hand", system-ui; }
+  select, input, textarea { width: 100%; margin-top: 2px; padding: 8px 10px; border-radius: 10px; border: 2px solid var(--line); background: var(--surface); color: var(--ink); font: inherit; }
+  textarea { resize: vertical; min-height: 70px; }
+  .progress { height: 10px; border-radius: 99px; background: var(--surface); overflow: hidden; }
+  .progress > span { display: block; height: 100%; background: var(--accent); transition: width .3s; }
+  .card { margin-top: 16px; border: 2px solid var(--line); border-radius: 22px; background: var(--surface); overflow: hidden; box-shadow: 0 6px 0 #172e25; }
+  .band { display: flex; justify-content: space-between; gap: 12px; padding: 10px 18px; background: color-mix(in srgb, var(--subject) 18%, transparent); border-bottom: 4px solid var(--subject); font-size: .8rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }
+  .body { padding: 16px 18px 20px; }
+  .prompt { font-size: 1.7rem; font-weight: 700; margin: 0 0 6px; }
+  .row { margin-top: 12px; }
+  .row b { font: 1.2rem "Patrick Hand", system-ui; color: var(--accent); font-weight: 400; margin-right: 6px; }
+  .chips span { display: inline-block; margin: 3px 4px 0 0; padding: 2px 9px; border-radius: 8px; border: 2px solid var(--line); }
+  .chips.bad span { border-color: color-mix(in srgb, var(--bad) 60%, transparent); color: var(--bad); text-decoration: line-through; }
+  .status { padding: 2px 10px; border-radius: 99px; background: var(--surface-2); }
+  .status.reviewed { background: var(--good); color: var(--board); }
+  .bar { position: fixed; left: 0; right: 0; bottom: 0; background: color-mix(in srgb, var(--board) 92%, transparent); backdrop-filter: blur(4px); border-top: 2px solid var(--line); }
+  .bar > div { max-width: 760px; margin: 0 auto; padding: 12px 16px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  button { min-height: 46px; padding: 0 18px; border-radius: 14px; border: 2px solid var(--line); background: transparent; color: var(--ink); font: 1.25rem "Patrick Hand", system-ui; cursor: pointer; }
+  button.primary { background: var(--accent); color: var(--board); border-color: var(--accent); }
+  button.good { background: var(--good); color: var(--board); border-color: var(--good); }
+  button.danger { color: var(--bad); border-color: color-mix(in srgb, var(--bad) 50%, transparent); }
+  button:disabled { opacity: .4; cursor: default; }
+  kbd { font: .8rem system-ui; padding: 1px 5px; border: 1px solid var(--line); border-radius: 4px; margin-left: 4px; opacity: .8; }
+  .problems { margin-top: 12px; padding: 10px 14px; border: 2px solid var(--bad); border-radius: 12px; color: var(--bad); }
+  .saved { color: var(--good); }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .empty { margin-top: 40px; text-align: center; font: 1.6rem "Patrick Hand", system-ui; }
+  .katex-display { margin: .4em 0; overflow-x: auto; }
+  :focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Card review</h1>
+  <p class="hand muted" style="font-size:1.2rem;margin:0">Check each card against a textbook. Approve it, fix it, or delete a draft that is not worth fixing.</p>
+
+  <div class="filters">
+    <label>Show <select id="status"><option value="draft">Drafts</option><option value="reviewed">Reviewed</option><option value="all">All cards</option></select></label>
+    <label>Level <select id="level"></select></label>
+    <label>Subject or course <select id="course"></select></label>
+    <label>Topic <select id="topic"></select></label>
+  </div>
+  <p id="count" class="hand" style="font-size:1.2rem;margin:4px 0"></p>
+  <div class="progress" aria-hidden="true"><span id="bar"></span></div>
+
+  <div id="view"></div>
+  <p id="message" role="status" class="hand" style="font-size:1.2rem"></p>
+</main>
+
+<div class="bar"><div id="actions"></div></div>
+
+<script>
+const SUBJECT_COLOR = { Maths: "var(--maths)", Physics: "var(--physics)", Chemistry: "var(--chemistry)", Biology: "var(--biology)", Computing: "var(--computing)" };
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+let all = [], courses = [], levels = {}, list = [], index = 0, editing = false, approvedThisSession = 0;
+
+function option(value, label, selected) { return `<option value="${esc(value)}"${selected ? " selected" : ""}>${esc(label)}</option>`; }
+
+function fillFilters() {
+  const lv = $("level").value, co = $("course").value, tp = $("topic").value;
+  $("level").innerHTML = option("", "All levels") + Object.entries(levels).map(([k, v]) => option(k, v, k === lv)).join("");
+  const cs = courses.filter((c) => !$("level").value || String(c.level) === $("level").value);
+  $("course").innerHTML = option("", "All") + cs.map((c) => option(c.id, `${levels[c.level]} ${c.name}`, c.id === co)).join("");
+  const course = courses.find((c) => c.id === $("course").value);
+  $("topic").innerHTML = option("", "All topics") + (course ? course.topics.map((t) => option(t, t, t === tp)).join("") : "");
+}
+
+function applyFilters(keepId) {
+  const st = $("status").value, lv = $("level").value, co = $("course").value, tp = $("topic").value;
+  list = all.filter((c) => (st === "all" || c.status === st) && (!lv || String(c.level) === lv) && (!co || c.course === co) && (!tp || c.topic === tp));
+  index = keepId ? Math.max(0, list.findIndex((c) => c.id === keepId)) : 0;
+  if (index >= list.length) index = Math.max(0, list.length - 1);
+  editing = false;
+  render();
+}
+
+function stats() {
+  const inScope = all.filter((c) => (!$("level").value || String(c.level) === $("level").value) && (!$("course").value || c.course === $("course").value) && (!$("topic").value || c.topic === $("topic").value));
+  const reviewed = inScope.filter((c) => c.status === "reviewed").length;
+  $("count").textContent = `${list.length ? `Card ${index + 1} of ${list.length}` : "No cards here"} · ${reviewed} of ${inScope.length} reviewed in this selection · ${approvedThisSession} approved this session`;
+  $("bar").style.width = inScope.length ? `${(100 * reviewed) / inScope.length}%` : "0";
+}
+
+function math(latex) {
+  if (!latex) return "";
+  try { return katex.renderToString(latex, { displayMode: true, throwOnError: false, trust: false }); } catch { return `<code>${esc(latex)}</code>`; }
+}
+
+function render() {
+  stats();
+  const c = list[index];
+  if (!c) { $("view").innerHTML = `<p class="empty">Nothing left to review here. Well done!</p>`; $("actions").innerHTML = ""; return; }
+  const course = courses.find((x) => x.id === c.course);
+  const band = `<div class="band"><span>${esc(levels[c.level])} ${esc(course ? course.name : c.course)} · ${esc(c.topic)} · ${esc(c.type)}</span><span>${esc(c.id)} · <span class="status ${c.status}">${c.status}</span></span></div>`;
+  if (!editing) {
+    $("view").innerHTML = `<article class="card" style="--subject:${SUBJECT_COLOR[c.subject]}">${band}<div class="body">
+      <h2 class="prompt">${esc(c.prompt)}</h2>${math(c.latex)}
+      <div class="row"><b>Answers</b><span class="chips">${c.answers.map((a) => `<span>${esc(a)}</span>`).join("")}</span></div>
+      <div class="row"><b>Don't say</b><span class="chips bad">${c.forbidden.map((a) => `<span>${esc(a)}</span>`).join("")}</span></div>
+      <div class="row"><b>Explanation</b>${esc(c.explanation)}</div></div></article>`;
+    $("actions").innerHTML = `
+      <button id="back" ${index === 0 ? "disabled" : ""}>← Back<kbd>←</kbd></button>
+      ${c.status === "draft" ? `<button class="good" id="approve">Approve<kbd>A</kbd></button>` : `<button id="unapprove">Back to draft</button>`}
+      <button class="primary" id="edit">Edit<kbd>E</kbd></button>
+      <button id="skip">Skip<kbd>→</kbd></button>
+      ${c.status === "draft" ? `<button class="danger" id="delete">Delete draft</button>` : ""}`;
+    on("back", () => move(-1)); on("skip", () => move(1)); on("edit", startEdit);
+    on("approve", () => save(c.id, { status: "reviewed" }, true)); on("unapprove", () => save(c.id, { status: "draft" }, false));
+    on("delete", () => confirm(`Delete draft ${c.id} ("${c.prompt}")? This cannot be undone.`) && remove(c.id));
+  } else {
+    const topics = course ? course.topics : [c.topic];
+    $("view").innerHTML = `<article class="card" style="--subject:${SUBJECT_COLOR[c.subject]}">${band}<form class="body" id="form">
+      <div class="grid2">
+        <label>Type <select name="type">${["term", "formula", "question"].map((t) => option(t, t, t === c.type)).join("")}</select></label>
+        <label>Topic <select name="topic">${topics.map((t) => option(t, t, t === c.topic)).join("")}</select></label>
+      </div>
+      <label class="row">Prompt <input name="prompt" value="${esc(c.prompt)}" maxlength="200" /></label>
+      <label class="row">LaTeX (formula cards) <input name="latex" value="${esc(c.latex || "")}" /></label><div id="preview">${math(c.latex)}</div>
+      <label class="row">Answers, one per line (main answer first) <textarea name="answers" rows="3">${esc(c.answers.join("\n"))}</textarea></label>
+      <label class="row">Forbidden words, one per line (3 to 6) <textarea name="forbidden" rows="4">${esc(c.forbidden.join("\n"))}</textarea></label>
+      <label class="row">Explanation <textarea name="explanation" rows="3">${esc(c.explanation)}</textarea></label>
+    </form></article>`;
+    $("form").latex.addEventListener("input", (e) => ($("preview").innerHTML = math(e.target.value)));
+    $("actions").innerHTML = `<button class="good" id="saveApprove">Save and approve</button><button class="primary" id="saveDraft">Save as draft</button><button id="cancel">Cancel<kbd>Esc</kbd></button>`;
+    on("saveApprove", () => save(c.id, formEdit("reviewed"), true)); on("saveDraft", () => save(c.id, formEdit("draft"), false)); on("cancel", () => { editing = false; render(); });
+    $("form").prompt.focus();
+  }
+}
+
+function on(id, fn) { const el = $(id); if (el) el.addEventListener("click", fn); }
+function move(d) { index = Math.min(Math.max(index + d, 0), Math.max(list.length - 1, 0)); editing = false; $("message").textContent = ""; render(); }
+function startEdit() { editing = true; $("message").textContent = ""; render(); }
+function lines(text) { return text.split("\n").map((s) => s.trim()).filter(Boolean); }
+function formEdit(status) {
+  const f = $("form");
+  return { type: f.type.value, topic: f.topic.value, prompt: f.prompt.value, latex: f.latex.value, answers: lines(f.answers.value), forbidden: lines(f.forbidden.value), explanation: f.explanation.value, status };
+}
+
+async function save(id, edit, approving) {
+  const res = await fetch(`/api/cards/${encodeURIComponent(id)}`, { method: "PATCH", headers: { "content-type": "application/json" }, body: JSON.stringify(edit) });
+  const out = await res.json();
+  if (!out.ok) return showProblems(out.problems);
+  all = all.map((c) => (c.id === id ? out.card : c));
+  if (approving) approvedThisSession++;
+  $("message").innerHTML = `<span class="saved">Saved ${esc(id)}${approving ? " as reviewed" : ""}.</span>`;
+  // Approved cards leave the drafts list; stay at the same position, which is now the next card.
+  const keep = $("status").value === "draft" && out.card.status !== "draft" ? list[index + 1]?.id : id;
+  applyFilters(keep);
+}
+
+async function remove(id) {
+  const out = await (await fetch(`/api/cards/${encodeURIComponent(id)}`, { method: "DELETE" })).json();
+  if (!out.ok) return showProblems(out.problems);
+  const next = list[index + 1]?.id;
+  all = all.filter((c) => c.id !== id);
+  $("message").innerHTML = `<span class="saved">Deleted ${esc(id)}.</span>`;
+  applyFilters(next);
+}
+
+function showProblems(problems) {
+  $("message").innerHTML = `<div class="problems" role="alert"><b>Not saved:</b><ul>${problems.map((p) => `<li>${esc(p)}</li>`).join("")}</ul></div>`;
+  $("message").scrollIntoView({ block: "center", behavior: "smooth" });
+}
+
+document.addEventListener("keydown", (e) => {
+  const typing = ["INPUT", "TEXTAREA", "SELECT"].includes(document.activeElement?.tagName);
+  if (e.key === "Escape" && editing) { editing = false; render(); return; }
+  if (typing || e.ctrlKey || e.metaKey || e.altKey) return;
+  const c = list[index];
+  if (!c) return;
+  const key = e.key.toLowerCase();
+  if (!["arrowright", "arrowleft", "e", "a"].includes(key)) return;
+  // Swallow the key, or the "e" that opens the editor would be typed into its first box.
+  e.preventDefault();
+  if (key === "arrowright") move(1);
+  else if (key === "arrowleft") move(-1);
+  else if (key === "e") startEdit();
+  else if (key === "a" && c.status === "draft") save(c.id, { status: "reviewed" }, true);
+});
+
+["status", "level", "course", "topic"].forEach((id) => $(id).addEventListener("change", () => { fillFilters(); applyFilters(); }));
+
+fetch("/api/cards").then((r) => r.json()).then((data) => {
+  all = data.cards; courses = data.courses; levels = data.levels;
+  fillFilters(); applyFilters();
+});
+</script>
+</body>
+</html>

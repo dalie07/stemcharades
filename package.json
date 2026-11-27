@@ -29,7 +29,8 @@
     "test:e2e": "playwright test",
     "validate:cards": "tsx scripts/validate-cards.ts",
     "cards:prompts": "tsx scripts/card-prompts.ts",
-    "cards:import": "tsx scripts/import-cards.ts"
+    "cards:import": "tsx scripts/import-cards.ts",
+    "review": "tsx scripts/review.ts"
   },
   "devDependencies": {
     "@eslint/js": "^9.0.0",
