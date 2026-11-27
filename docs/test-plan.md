@@ -8,8 +8,8 @@ Locally, `npm run check` runs all of it except the browser tests, and `npm run t
 |---|---|---|
 | Shared rules (scoring, card picker, curriculum map, selections) | `shared/src/*.test.ts` | 14 |
 | Server: engine, filters, rooms, sockets, accounts, database, content checks | `server/tests/` | 205 |
-| Client: Party engine, revision priority and highlights, learning progress, flag links | `client/src/**/*.test.ts` | 17 |
-| Browser, several real browsers per test | `e2e/` (Playwright) | 11 |
+| Client: Party engine, revision priority and highlights, learning progress and streaks, room codes, flag links | `client/src/**/*.test.ts` | 20 |
+| Browser, several real browsers per test | `e2e/` (Playwright) | 15 |
 
 Database tests run against a real Postgres in-process (PGlite) with the real migrations, so they need no account.
 

@@ -4,7 +4,12 @@
 <h1 align="center">STEMCHARADES</h1>
 <p align="center"><strong>Explain it without saying it.</strong> A multiplayer party game for STEM revision.</p>
 <p align="center">
+  <a href="https://stemcharades.onrender.com"><strong>Play now: stemcharades.onrender.com</strong></a>
+</p>
+<p align="center">
   <a href="https://github.com/dalie07/stemcharades/actions/workflows/ci.yml"><img src="https://github.com/dalie07/stemcharades/actions/workflows/ci.yml/badge.svg" alt="CI status" /></a>
+  <a href="https://github.com/dalie07/stemcharades/releases/tag/v1.0.0"><img src="https://img.shields.io/badge/version-1.0.0-1e3a2f" alt="Version 1.0.0" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-f6d860" alt="MIT licence" /></a>
 </p>
 
 One player explains a term, a formula or a question without using the forbidden words. Everyone else races to
@@ -20,7 +25,9 @@ guess it. Then the round ends with the right answer explained, so even a wrong g
 
 ## What it does
 
-- **Party mode.** One phone passed around the room. Works offline after the first load and installs like an app.
+- **Party mode.** One phone passed around the room. Works offline after the first load.
+- **Install it like an app.** On Android tap **Install** on the home screen; on iPhone use Share → **Add to Home
+  Screen**. It opens full screen, with its own icon.
 - **Online rooms.** 2 to 12 players on their own devices, joined with a 5-character code. No account needed.
 - **A teaching loop.** Every card carries forbidden words, accepted answers and a model explanation. Games end with
   a revision list of the cards the group missed.
@@ -30,7 +37,8 @@ guess it. Then the round ends with the right answer explained, so even a wrong g
   Advanced, then a subject or course, then topics. One decision per screen; every step is optional, shows its card
   count, and can be shared as a link. Online rooms add a QR code to join.
 - **Learn as you play.** Mastery stars for every topic, a "revise my misses" deck (missed cards also come back in
-  later games until you get them), a daily streak, and highlights at the end of each game. Kept on the device: no
+  later games until you get them), a daily streak flame that grows from Spark to Legend, and highlights at the end
+  of each game. Kept on the device: no
   account needed.
 - **A classroom look.** A green chalkboard at night, a whiteboard by day, following the device. Fonts chosen for
   young readers, a colour per subject, gentle animations and optional sound and vibration.

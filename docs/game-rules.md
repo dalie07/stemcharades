@@ -61,7 +61,10 @@ parts with no cards yet are hidden. A choice can be shared as a link, e.g.
   for half of them, three for all. Missing a card again takes its credit away until you relearn it.
 - **Revise my misses.** Every card you miss is saved. In Party mode, choose "Revise my misses" to play only those;
   in any Party game, about half the cards dealt are earlier misses while there are some left.
-- **Daily streak.** Play on consecutive days to build it. Missing a day simply starts it again.
+- **Daily streak.** The flame in the top-left corner counts the days in a row you have played (a day counts when you
+  play a game). It grows as the streak runs: Spark (1 to 2 days), Flame (3 to 6), Blaze (7 to 13), a blue Inferno
+  (14 to 29) and a purple Legend (30 and over). Tap it for your best streak and the last seven days. Missing a day
+  simply starts it again.
 - **On fire.** Three or more correct in a row gets a celebration. It earns no extra points, so newer players are not
   left behind.
 - **Highlights.** Every game ends with the fastest guess, the best explainer, and the cards you learned.
@@ -86,3 +89,10 @@ explanations, and at the end the scores plus the cards to revise.
 ## Fair play
 The game decides the cards, the clock and the scores on the server. The answer is never sent to the guessers'
 devices, so there is nothing to find by looking at the network traffic.
+
+## Install it on your phone
+- **Android** (Chrome, Edge, Samsung Internet): tap **Install** on the home screen card, or use the browser menu's
+  **Install app**.
+- **iPhone and iPad** (Safari): tap **Share**, then **Add to Home Screen**.
+
+Installed, it opens full screen from its own icon, and Party mode works with no internet. It updates itself.
