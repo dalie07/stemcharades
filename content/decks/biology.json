@@ -1784,5 +1784,1622 @@
     "explanation": "A baby frog is called a tadpole. It lives in water, breathes with gills and slowly grows legs.",
     "course": "primary-science",
     "status": "reviewed"
+  },
+  {
+    "id": "bio-0084",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Living things",
+    "level": 1,
+    "prompt": "Carnivore",
+    "answers": [
+      "carnivore",
+      "carnivores"
+    ],
+    "forbidden": [
+      "meat",
+      "eats",
+      "lion",
+      "hunter"
+    ],
+    "explanation": "A carnivore is an animal that eats only other animals. Lions and sharks are carnivores.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0085",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Living things",
+    "level": 1,
+    "prompt": "Omnivore",
+    "answers": [
+      "omnivore",
+      "omnivores"
+    ],
+    "forbidden": [
+      "plants",
+      "meat",
+      "both",
+      "eats"
+    ],
+    "explanation": "An omnivore eats both plants and animals. Bears, pigs and most humans are omnivores.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0086",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Living things",
+    "level": 1,
+    "prompt": "Food chain",
+    "answers": [
+      "food chain",
+      "food chains"
+    ],
+    "forbidden": [
+      "eats",
+      "arrows",
+      "energy",
+      "predator"
+    ],
+    "explanation": "A food chain shows what eats what, with arrows showing where the energy goes. For example: grass, then rabbit, then fox.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0087",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Living things",
+    "level": 1,
+    "prompt": "Producer",
+    "answers": [
+      "producer",
+      "producers"
+    ],
+    "forbidden": [
+      "plant",
+      "makes",
+      "food",
+      "start",
+      "sunlight"
+    ],
+    "explanation": "A producer makes its own food, usually a green plant using sunlight. Every food chain starts with a producer.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0088",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Living things",
+    "level": 1,
+    "prompt": "Consumer",
+    "answers": [
+      "consumer",
+      "consumers"
+    ],
+    "forbidden": [
+      "eats",
+      "animal",
+      "food chain",
+      "other"
+    ],
+    "explanation": "A consumer is a living thing that gets its food by eating plants or other animals. A rabbit eating grass is a consumer.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0089",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Living things",
+    "level": 1,
+    "prompt": "Microorganism",
+    "answers": [
+      "microorganism",
+      "microorganisms",
+      "microbe",
+      "microbes",
+      "germs"
+    ],
+    "forbidden": [
+      "tiny",
+      "microscope",
+      "bacteria",
+      "small"
+    ],
+    "explanation": "A microorganism is a living thing too small to see without a microscope. Some cause illness, and some help us, like the yeast in bread.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0090",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Living things",
+    "level": 1,
+    "prompt": "Extinct",
+    "answers": [
+      "extinct",
+      "extinction"
+    ],
+    "forbidden": [
+      "dinosaurs",
+      "gone",
+      "none left",
+      "died out"
+    ],
+    "explanation": "A kind of living thing is extinct when none of it are left alive anywhere. Dinosaurs and the dodo are extinct.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0091",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Living things",
+    "level": 1,
+    "prompt": "Endangered",
+    "answers": [
+      "endangered",
+      "endangered species"
+    ],
+    "forbidden": [
+      "danger",
+      "few",
+      "risk",
+      "protect"
+    ],
+    "explanation": "An endangered animal or plant has so few left that it could die out. Tigers and pandas are endangered.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0092",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Living things",
+    "level": 1,
+    "prompt": "Environment",
+    "answers": [
+      "environment",
+      "surroundings"
+    ],
+    "forbidden": [
+      "around",
+      "nature",
+      "world",
+      "place"
+    ],
+    "explanation": "The environment is everything around a living thing: the air, water, land and other living things.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0093",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Living things",
+    "level": 1,
+    "prompt": "Adaptation",
+    "answers": [
+      "adaptation",
+      "adapted",
+      "adaptations"
+    ],
+    "forbidden": [
+      "survive",
+      "suited",
+      "feature",
+      "change"
+    ],
+    "explanation": "An adaptation is a feature that helps a living thing survive where it lives, like a camel's hump or a polar bear's thick fur.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0094",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Living things",
+    "level": 1,
+    "prompt": "Life processes",
+    "answers": [
+      "life processes",
+      "life process"
+    ],
+    "forbidden": [
+      "seven",
+      "alive",
+      "grow",
+      "move",
+      "breathe"
+    ],
+    "explanation": "Life processes are the things all living things do, such as moving, growing, feeding, breathing and having young.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0095",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Living things",
+    "level": 1,
+    "prompt": "Fungus",
+    "answers": [
+      "fungus",
+      "fungi"
+    ],
+    "forbidden": [
+      "mushroom",
+      "mould",
+      "toadstool",
+      "spores"
+    ],
+    "explanation": "A fungus is a living thing that is neither a plant nor an animal. Mushrooms, toadstools and mould are fungi.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0096",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Living things",
+    "level": 1,
+    "prompt": "Pollution",
+    "answers": [
+      "pollution"
+    ],
+    "forbidden": [
+      "dirty",
+      "harmful",
+      "smoke",
+      "litter"
+    ],
+    "explanation": "Pollution is harmful waste in the air, water or land, such as smoke, litter or oil. It can hurt plants, animals and people.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0097",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Living things",
+    "level": 1,
+    "prompt": "Deforestation",
+    "answers": [
+      "deforestation"
+    ],
+    "forbidden": [
+      "trees",
+      "cutting",
+      "forest",
+      "chop"
+    ],
+    "explanation": "Deforestation is cutting down large areas of forest. It destroys the habitats of many animals and plants.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0098",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Living things",
+    "level": 1,
+    "prompt": "Decomposer",
+    "answers": [
+      "decomposer",
+      "decomposers"
+    ],
+    "forbidden": [
+      "rot",
+      "break down",
+      "dead",
+      "worms"
+    ],
+    "explanation": "A decomposer breaks down dead plants and animals and returns their goodness to the soil. Worms and many fungi are decomposers.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0099",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Living things",
+    "level": 1,
+    "prompt": "Evolution",
+    "answers": [
+      "evolution",
+      "evolve"
+    ],
+    "forbidden": [
+      "change",
+      "darwin",
+      "time",
+      "generations"
+    ],
+    "explanation": "Evolution is how living things slowly change over many, many generations. Charles Darwin explained how it happens.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0100",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Living things",
+    "level": 1,
+    "prompt": "Inheritance",
+    "answers": [
+      "inheritance",
+      "inherited",
+      "inherit"
+    ],
+    "forbidden": [
+      "parents",
+      "passed",
+      "offspring",
+      "features"
+    ],
+    "explanation": "Inheritance is when features are passed from parents to their young. That is why children often look like their parents.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0101",
+    "type": "question",
+    "subject": "Biology",
+    "topic": "Living things",
+    "level": 1,
+    "prompt": "What do we call a group of living things of the same kind that can breed together?",
+    "answers": [
+      "species"
+    ],
+    "forbidden": [
+      "kind",
+      "type",
+      "animals",
+      "group"
+    ],
+    "explanation": "A species is one kind of living thing whose members can breed together, such as lions or oak trees.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0102",
+    "type": "question",
+    "subject": "Biology",
+    "topic": "Living things",
+    "level": 1,
+    "prompt": "What sweet liquid do bees collect from flowers to make honey?",
+    "answers": [
+      "nectar"
+    ],
+    "forbidden": [
+      "sugar",
+      "juice",
+      "sweet",
+      "pollen"
+    ],
+    "explanation": "Bees collect nectar, a sugary liquid made by flowers, and turn it into honey in their hives.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0103",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Human body",
+    "level": 1,
+    "prompt": "Heart",
+    "answers": [
+      "heart"
+    ],
+    "forbidden": [
+      "pump",
+      "blood",
+      "beat",
+      "chest",
+      "love"
+    ],
+    "explanation": "The heart is a muscle in your chest that pumps blood around your body. It beats faster when you exercise.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0104",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Human body",
+    "level": 1,
+    "prompt": "Brain",
+    "answers": [
+      "brain"
+    ],
+    "forbidden": [
+      "think",
+      "head",
+      "skull",
+      "nerves",
+      "control"
+    ],
+    "explanation": "The brain is inside your skull. It controls your body and lets you think, feel and remember.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0105",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Human body",
+    "level": 1,
+    "prompt": "Stomach",
+    "answers": [
+      "stomach",
+      "tummy"
+    ],
+    "forbidden": [
+      "food",
+      "digest",
+      "belly",
+      "acid"
+    ],
+    "explanation": "The stomach is a stretchy bag where food is mixed with juices and broken down after you swallow it.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0106",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Human body",
+    "level": 1,
+    "prompt": "Blood",
+    "answers": [
+      "blood"
+    ],
+    "forbidden": [
+      "red",
+      "veins",
+      "heart",
+      "cut"
+    ],
+    "explanation": "Blood is the red liquid that carries oxygen and food around your body. Your heart pumps it through tubes called blood vessels.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0107",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Human body",
+    "level": 1,
+    "prompt": "Skull",
+    "answers": [
+      "skull"
+    ],
+    "forbidden": [
+      "head",
+      "bone",
+      "brain",
+      "protect"
+    ],
+    "explanation": "The skull is the bony case of your head. It protects your brain.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0108",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Human body",
+    "level": 1,
+    "prompt": "Ribs",
+    "answers": [
+      "ribs",
+      "rib cage",
+      "ribcage"
+    ],
+    "forbidden": [
+      "chest",
+      "bones",
+      "lungs",
+      "cage"
+    ],
+    "explanation": "The ribs are curved bones around your chest. They form a cage that protects your heart and lungs.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0109",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Human body",
+    "level": 1,
+    "prompt": "Molar",
+    "answers": [
+      "molar",
+      "molars"
+    ],
+    "forbidden": [
+      "teeth",
+      "back",
+      "grind",
+      "chew"
+    ],
+    "explanation": "Molars are the wide, flat teeth at the back of your mouth. They grind and chew food.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0110",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Human body",
+    "level": 1,
+    "prompt": "Canine",
+    "answers": [
+      "canine",
+      "canines",
+      "canine teeth"
+    ],
+    "forbidden": [
+      "teeth",
+      "pointed",
+      "tear",
+      "dog"
+    ],
+    "explanation": "Canines are the pointed teeth next to your front teeth. They grip and tear food.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0111",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Human body",
+    "level": 1,
+    "prompt": "Senses",
+    "answers": [
+      "senses",
+      "five senses"
+    ],
+    "forbidden": [
+      "see",
+      "hear",
+      "smell",
+      "taste",
+      "touch"
+    ],
+    "explanation": "Your senses tell you about the world around you. The five senses are sight, hearing, smell, taste and touch.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0112",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Human body",
+    "level": 1,
+    "prompt": "Exercise",
+    "answers": [
+      "exercise"
+    ],
+    "forbidden": [
+      "running",
+      "sport",
+      "fit",
+      "healthy",
+      "move"
+    ],
+    "explanation": "Exercise is moving your body to keep fit, such as running, swimming or dancing. It makes your heart and muscles stronger.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0113",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Human body",
+    "level": 1,
+    "prompt": "Hygiene",
+    "answers": [
+      "hygiene"
+    ],
+    "forbidden": [
+      "clean",
+      "wash",
+      "germs",
+      "hands"
+    ],
+    "explanation": "Hygiene means keeping yourself clean to stop germs spreading, like washing your hands and brushing your teeth.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0114",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Human body",
+    "level": 1,
+    "prompt": "Pulse",
+    "answers": [
+      "pulse",
+      "heartbeat"
+    ],
+    "forbidden": [
+      "wrist",
+      "heart",
+      "beat",
+      "count"
+    ],
+    "explanation": "Your pulse is the beat of your heart that you can feel in your wrist or neck. It gets faster when you exercise.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0115",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Human body",
+    "level": 1,
+    "prompt": "Digestion",
+    "answers": [
+      "digestion",
+      "digestive system"
+    ],
+    "forbidden": [
+      "food",
+      "stomach",
+      "break down",
+      "eat"
+    ],
+    "explanation": "Digestion is how your body breaks food down into tiny pieces it can use for energy and growth.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0116",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Human body",
+    "level": 1,
+    "prompt": "Oesophagus",
+    "answers": [
+      "oesophagus",
+      "esophagus",
+      "food pipe",
+      "gullet"
+    ],
+    "forbidden": [
+      "throat",
+      "swallow",
+      "tube",
+      "stomach"
+    ],
+    "explanation": "The oesophagus is the tube that carries food from your mouth to your stomach when you swallow.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0117",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Human body",
+    "level": 1,
+    "prompt": "Intestines",
+    "answers": [
+      "intestines",
+      "intestine",
+      "small intestine",
+      "guts"
+    ],
+    "forbidden": [
+      "tube",
+      "digest",
+      "long",
+      "stomach"
+    ],
+    "explanation": "The intestines are long, coiled tubes after the stomach. Food is broken down further there and its goodness passes into the blood.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0118",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Human body",
+    "level": 1,
+    "prompt": "Vitamins",
+    "answers": [
+      "vitamins",
+      "vitamin"
+    ],
+    "forbidden": [
+      "healthy",
+      "fruit",
+      "vegetables",
+      "food"
+    ],
+    "explanation": "Vitamins are substances in food that your body needs in small amounts to stay healthy. Fruit and vegetables are full of them.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0119",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Human body",
+    "level": 1,
+    "prompt": "Protein",
+    "answers": [
+      "protein",
+      "proteins"
+    ],
+    "forbidden": [
+      "meat",
+      "eggs",
+      "beans",
+      "muscles",
+      "growth"
+    ],
+    "explanation": "Protein is a nutrient that helps your body grow and repair itself. Meat, fish, eggs and beans are rich in protein.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0120",
+    "type": "question",
+    "subject": "Biology",
+    "topic": "Human body",
+    "level": 1,
+    "prompt": "Which gas does your body need from the air you breathe in?",
+    "answers": [
+      "oxygen"
+    ],
+    "forbidden": [
+      "air",
+      "lungs",
+      "breathe",
+      "gas"
+    ],
+    "explanation": "Your body needs oxygen. Your lungs take it from the air and your blood carries it all around your body.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0121",
+    "type": "question",
+    "subject": "Biology",
+    "topic": "Human body",
+    "level": 1,
+    "prompt": "Which gas do you breathe out as waste?",
+    "answers": [
+      "carbon dioxide",
+      "co2"
+    ],
+    "forbidden": [
+      "breathe",
+      "lungs",
+      "plants",
+      "waste"
+    ],
+    "explanation": "You breathe out carbon dioxide, a waste gas made by your body. Plants take it in to make their food.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0122",
+    "type": "question",
+    "subject": "Biology",
+    "topic": "Human body",
+    "level": 1,
+    "prompt": "How many teeth does an adult usually have?",
+    "answers": [
+      "32",
+      "thirty-two"
+    ],
+    "forbidden": [
+      "teeth",
+      "wisdom",
+      "adult",
+      "mouth"
+    ],
+    "explanation": "An adult usually has 32 teeth, including four wisdom teeth. Children have 20 baby teeth.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0123",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Plants",
+    "level": 1,
+    "prompt": "Leaf",
+    "answers": [
+      "leaf",
+      "leaves"
+    ],
+    "forbidden": [
+      "green",
+      "tree",
+      "flat",
+      "autumn"
+    ],
+    "explanation": "A leaf is the flat, usually green part of a plant. Leaves use sunlight to make food for the plant.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0124",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Plants",
+    "level": 1,
+    "prompt": "Flower",
+    "answers": [
+      "flower",
+      "flowers"
+    ],
+    "forbidden": [
+      "petals",
+      "bloom",
+      "colourful",
+      "bees"
+    ],
+    "explanation": "A flower is the part of a plant that makes seeds. Its colours and scent attract insects that carry pollen.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0125",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Plants",
+    "level": 1,
+    "prompt": "Pollen",
+    "answers": [
+      "pollen"
+    ],
+    "forbidden": [
+      "yellow",
+      "dust",
+      "bees",
+      "flowers",
+      "sneeze"
+    ],
+    "explanation": "Pollen is a fine yellow dust made by flowers. It must reach another flower so that seeds can form.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0126",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Plants",
+    "level": 1,
+    "prompt": "Pollination",
+    "answers": [
+      "pollination",
+      "pollinate"
+    ],
+    "forbidden": [
+      "pollen",
+      "bees",
+      "insects",
+      "flowers"
+    ],
+    "explanation": "Pollination is when pollen moves from one flower to another, often carried by bees or the wind. It lets the plant make seeds.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0127",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Plants",
+    "level": 1,
+    "prompt": "Photosynthesis",
+    "answers": [
+      "photosynthesis"
+    ],
+    "forbidden": [
+      "sunlight",
+      "food",
+      "leaves",
+      "green",
+      "light"
+    ],
+    "explanation": "Photosynthesis is how plants make their own food, using sunlight, water and carbon dioxide. It happens in their green leaves.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0128",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Plants",
+    "level": 1,
+    "prompt": "Seed dispersal",
+    "answers": [
+      "seed dispersal",
+      "dispersal"
+    ],
+    "forbidden": [
+      "spread",
+      "wind",
+      "animals",
+      "seeds"
+    ],
+    "explanation": "Seed dispersal is how seeds spread away from the parent plant, carried by the wind, water or animals, so new plants have space to grow.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0129",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Plants",
+    "level": 1,
+    "prompt": "Fruit",
+    "answers": [
+      "fruit",
+      "fruits"
+    ],
+    "forbidden": [
+      "apple",
+      "seeds",
+      "eat",
+      "sweet"
+    ],
+    "explanation": "A fruit is the part of a plant that holds its seeds. Apples, tomatoes and peas in their pods are all fruits.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0130",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Plants",
+    "level": 1,
+    "prompt": "Trunk",
+    "answers": [
+      "trunk"
+    ],
+    "forbidden": [
+      "tree",
+      "wood",
+      "bark",
+      "thick"
+    ],
+    "explanation": "The trunk is the thick, woody stem of a tree. It holds the tree up and carries water to the branches.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0131",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Plants",
+    "level": 1,
+    "prompt": "Deciduous",
+    "answers": [
+      "deciduous"
+    ],
+    "forbidden": [
+      "leaves",
+      "autumn",
+      "fall",
+      "winter"
+    ],
+    "explanation": "A deciduous tree loses all its leaves in autumn and grows new ones in spring. Oak and maple trees are deciduous.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0132",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Plants",
+    "level": 1,
+    "prompt": "Evergreen",
+    "answers": [
+      "evergreen"
+    ],
+    "forbidden": [
+      "leaves",
+      "all year",
+      "pine",
+      "winter"
+    ],
+    "explanation": "An evergreen plant keeps its leaves all year round. Pine and holly trees are evergreen.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0133",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Plants",
+    "level": 1,
+    "prompt": "Chlorophyll",
+    "answers": [
+      "chlorophyll"
+    ],
+    "forbidden": [
+      "green",
+      "leaves",
+      "sunlight",
+      "colour"
+    ],
+    "explanation": "Chlorophyll is the green substance in leaves. It traps sunlight so the plant can make its food.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0134",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Plants",
+    "level": 1,
+    "prompt": "Soil",
+    "answers": [
+      "soil"
+    ],
+    "forbidden": [
+      "earth",
+      "ground",
+      "dirt",
+      "mud"
+    ],
+    "explanation": "Soil is the top layer of the ground, where plants grow. It gives them water, nutrients and a place to anchor their roots.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0135",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Plants",
+    "level": 1,
+    "prompt": "Cactus",
+    "answers": [
+      "cactus",
+      "cacti"
+    ],
+    "forbidden": [
+      "desert",
+      "spikes",
+      "prickly",
+      "dry"
+    ],
+    "explanation": "A cactus is a desert plant that stores water in its thick stem. Its spines protect it and lose less water than leaves.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0136",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Plants",
+    "level": 1,
+    "prompt": "Bark",
+    "answers": [
+      "bark"
+    ],
+    "forbidden": [
+      "tree",
+      "outside",
+      "rough",
+      "trunk"
+    ],
+    "explanation": "Bark is the tough outer layer of a tree's trunk and branches. It protects the tree, like skin.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0137",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Plants",
+    "level": 1,
+    "prompt": "Nutrients",
+    "answers": [
+      "nutrients",
+      "nutrient",
+      "minerals"
+    ],
+    "forbidden": [
+      "food",
+      "soil",
+      "healthy",
+      "goodness"
+    ],
+    "explanation": "Nutrients are the substances plants and animals need to grow and stay healthy. Plants take minerals from the soil through their roots.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0138",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Plants",
+    "level": 1,
+    "prompt": "Seedling",
+    "answers": [
+      "seedling",
+      "seedlings"
+    ],
+    "forbidden": [
+      "young",
+      "baby",
+      "plant",
+      "sprout"
+    ],
+    "explanation": "A seedling is a very young plant that has just grown from a seed.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0139",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Plants",
+    "level": 1,
+    "prompt": "Sepal",
+    "answers": [
+      "sepal",
+      "sepals"
+    ],
+    "forbidden": [
+      "green",
+      "flower",
+      "bud",
+      "protect"
+    ],
+    "explanation": "Sepals are the small green leaf-like parts under a flower. They protect the flower when it is still a bud.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0140",
+    "type": "question",
+    "subject": "Biology",
+    "topic": "Plants",
+    "level": 1,
+    "prompt": "What colour is chlorophyll?",
+    "answers": [
+      "green"
+    ],
+    "forbidden": [
+      "grass",
+      "leaves",
+      "colour",
+      "plants"
+    ],
+    "explanation": "Chlorophyll is green, which is why most leaves look green.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0141",
+    "type": "question",
+    "subject": "Biology",
+    "topic": "Plants",
+    "level": 1,
+    "prompt": "In which part of a flower are the seeds made?",
+    "answers": [
+      "ovary"
+    ],
+    "forbidden": [
+      "seeds",
+      "inside",
+      "flower",
+      "eggs"
+    ],
+    "explanation": "Seeds are made in the ovary, at the base of the flower, after pollination.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0142",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Animals",
+    "level": 1,
+    "prompt": "Bird",
+    "answers": [
+      "bird",
+      "birds"
+    ],
+    "forbidden": [
+      "feathers",
+      "fly",
+      "beak",
+      "wings",
+      "eggs"
+    ],
+    "explanation": "A bird is an animal with feathers, wings and a beak that lays eggs. Most birds can fly.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0143",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Animals",
+    "level": 1,
+    "prompt": "Fish",
+    "answers": [
+      "fish"
+    ],
+    "forbidden": [
+      "water",
+      "swim",
+      "gills",
+      "fins",
+      "scales"
+    ],
+    "explanation": "A fish is an animal that lives in water, breathes with gills and swims using fins.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0144",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Animals",
+    "level": 1,
+    "prompt": "Insect",
+    "answers": [
+      "insect",
+      "insects"
+    ],
+    "forbidden": [
+      "six legs",
+      "bug",
+      "ant",
+      "beetle"
+    ],
+    "explanation": "An insect is a small animal with six legs and a body in three parts. Ants, bees and butterflies are insects.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0145",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Animals",
+    "level": 1,
+    "prompt": "Invertebrate",
+    "answers": [
+      "invertebrate",
+      "invertebrates"
+    ],
+    "forbidden": [
+      "backbone",
+      "spine",
+      "worm",
+      "no bones"
+    ],
+    "explanation": "An invertebrate is an animal without a backbone, such as a worm, a snail or an insect.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0146",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Animals",
+    "level": 1,
+    "prompt": "Migration",
+    "answers": [
+      "migration",
+      "migrate"
+    ],
+    "forbidden": [
+      "travel",
+      "birds",
+      "winter",
+      "journey",
+      "south"
+    ],
+    "explanation": "Migration is when animals travel a long way at certain times of year to find food or warmth, like swallows flying south for winter.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0147",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Animals",
+    "level": 1,
+    "prompt": "Camouflage",
+    "answers": [
+      "camouflage"
+    ],
+    "forbidden": [
+      "hide",
+      "blend",
+      "colours",
+      "disguise"
+    ],
+    "explanation": "Camouflage is colouring or patterns that help an animal blend in with its surroundings so it is hard to see.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0148",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Animals",
+    "level": 1,
+    "prompt": "Nocturnal",
+    "answers": [
+      "nocturnal"
+    ],
+    "forbidden": [
+      "night",
+      "owl",
+      "dark",
+      "sleep",
+      "day"
+    ],
+    "explanation": "A nocturnal animal is active at night and sleeps during the day. Owls, bats and hedgehogs are nocturnal.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0149",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Animals",
+    "level": 1,
+    "prompt": "Feathers",
+    "answers": [
+      "feathers",
+      "feather"
+    ],
+    "forbidden": [
+      "birds",
+      "soft",
+      "fly",
+      "pillow"
+    ],
+    "explanation": "Feathers cover a bird's body. They keep it warm and help it fly.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0150",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Animals",
+    "level": 1,
+    "prompt": "Gills",
+    "answers": [
+      "gills"
+    ],
+    "forbidden": [
+      "fish",
+      "breathe",
+      "water",
+      "oxygen"
+    ],
+    "explanation": "Gills are the parts a fish uses to breathe. They take oxygen out of the water.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0151",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Animals",
+    "level": 1,
+    "prompt": "Metamorphosis",
+    "answers": [
+      "metamorphosis"
+    ],
+    "forbidden": [
+      "change",
+      "butterfly",
+      "caterpillar",
+      "frog"
+    ],
+    "explanation": "Metamorphosis is a big change in body shape as an animal grows, like a caterpillar becoming a butterfly or a tadpole becoming a frog.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0152",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Animals",
+    "level": 1,
+    "prompt": "Caterpillar",
+    "answers": [
+      "caterpillar",
+      "caterpillars"
+    ],
+    "forbidden": [
+      "butterfly",
+      "leaves",
+      "crawl",
+      "larva"
+    ],
+    "explanation": "A caterpillar is the young form of a butterfly or moth. It eats leaves and grows before changing inside a chrysalis.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0153",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Animals",
+    "level": 1,
+    "prompt": "Egg",
+    "answers": [
+      "egg",
+      "eggs"
+    ],
+    "forbidden": [
+      "chicken",
+      "shell",
+      "hatch",
+      "lay"
+    ],
+    "explanation": "An egg is laid by many animals, such as birds, reptiles and fish. A baby animal grows inside it until it hatches.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0154",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Animals",
+    "level": 1,
+    "prompt": "Spider",
+    "answers": [
+      "spider",
+      "spiders",
+      "arachnid"
+    ],
+    "forbidden": [
+      "web",
+      "eight legs",
+      "silk",
+      "insect"
+    ],
+    "explanation": "A spider has eight legs and spins silk webs to catch food. Spiders are not insects: they are arachnids.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0155",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Animals",
+    "level": 1,
+    "prompt": "Herd",
+    "answers": [
+      "herd"
+    ],
+    "forbidden": [
+      "group",
+      "cows",
+      "together",
+      "many"
+    ],
+    "explanation": "A herd is a large group of animals, such as cows or elephants, that live and move together.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0156",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Animals",
+    "level": 1,
+    "prompt": "Shell",
+    "answers": [
+      "shell",
+      "shells"
+    ],
+    "forbidden": [
+      "snail",
+      "hard",
+      "tortoise",
+      "beach",
+      "protect"
+    ],
+    "explanation": "A shell is a hard outer covering that protects an animal, such as a snail, a crab or a tortoise.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0157",
+    "type": "term",
+    "subject": "Biology",
+    "topic": "Animals",
+    "level": 1,
+    "prompt": "Wings",
+    "answers": [
+      "wings",
+      "wing"
+    ],
+    "forbidden": [
+      "fly",
+      "birds",
+      "flap",
+      "feathers"
+    ],
+    "explanation": "Wings are the body parts that birds, bats and many insects use to fly.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0158",
+    "type": "question",
+    "subject": "Biology",
+    "topic": "Animals",
+    "level": 1,
+    "prompt": "What is a baby cat called?",
+    "answers": [
+      "kitten",
+      "kittens"
+    ],
+    "forbidden": [
+      "cat",
+      "baby",
+      "young",
+      "meow"
+    ],
+    "explanation": "A baby cat is called a kitten.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0159",
+    "type": "question",
+    "subject": "Biology",
+    "topic": "Animals",
+    "level": 1,
+    "prompt": "What is a young sheep called?",
+    "answers": [
+      "lamb",
+      "lambs"
+    ],
+    "forbidden": [
+      "sheep",
+      "baby",
+      "spring",
+      "wool"
+    ],
+    "explanation": "A young sheep is called a lamb. Lambs are often born in spring.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "bio-0160",
+    "type": "question",
+    "subject": "Biology",
+    "topic": "Animals",
+    "level": 1,
+    "prompt": "Which is the only mammal that can truly fly?",
+    "answers": [
+      "bat",
+      "bats"
+    ],
+    "forbidden": [
+      "night",
+      "wings",
+      "cave",
+      "mammal"
+    ],
+    "explanation": "The bat is the only mammal that can truly fly. Its wings are made of skin stretched over long finger bones.",
+    "course": "primary-science",
+    "status": "draft"
   }
 ]

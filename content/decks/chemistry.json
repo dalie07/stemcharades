@@ -1475,5 +1475,370 @@
     "explanation": "A flexible material can bend without breaking. Rubber and fabric are flexible.",
     "course": "primary-science",
     "status": "reviewed"
+  },
+  {
+    "id": "che-0069",
+    "type": "term",
+    "subject": "Chemistry",
+    "topic": "Materials",
+    "level": 1,
+    "prompt": "Solid",
+    "answers": [
+      "solid",
+      "solids"
+    ],
+    "forbidden": [
+      "hard",
+      "shape",
+      "liquid",
+      "gas",
+      "ice"
+    ],
+    "explanation": "A solid keeps its own shape and does not flow, like wood, ice or a stone.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "che-0070",
+    "type": "term",
+    "subject": "Chemistry",
+    "topic": "Materials",
+    "level": 1,
+    "prompt": "Liquid",
+    "answers": [
+      "liquid",
+      "liquids"
+    ],
+    "forbidden": [
+      "flow",
+      "pour",
+      "water",
+      "runny"
+    ],
+    "explanation": "A liquid flows and takes the shape of its container, like water, milk or juice.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "che-0071",
+    "type": "term",
+    "subject": "Chemistry",
+    "topic": "Materials",
+    "level": 1,
+    "prompt": "Gas",
+    "answers": [
+      "gas",
+      "gases"
+    ],
+    "forbidden": [
+      "air",
+      "spread",
+      "invisible",
+      "balloon"
+    ],
+    "explanation": "A gas spreads out to fill any space it is in. Air is a mixture of gases.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "che-0072",
+    "type": "term",
+    "subject": "Chemistry",
+    "topic": "Materials",
+    "level": 1,
+    "prompt": "Melting",
+    "answers": [
+      "melting",
+      "melt",
+      "melts"
+    ],
+    "forbidden": [
+      "ice",
+      "heat",
+      "liquid",
+      "warm",
+      "solid"
+    ],
+    "explanation": "Melting is when a solid turns into a liquid as it warms up, like ice cream on a hot day.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "che-0073",
+    "type": "term",
+    "subject": "Chemistry",
+    "topic": "Materials",
+    "level": 1,
+    "prompt": "Freezing",
+    "answers": [
+      "freezing",
+      "freeze",
+      "freezes"
+    ],
+    "forbidden": [
+      "cold",
+      "ice",
+      "solid",
+      "freezer"
+    ],
+    "explanation": "Freezing is when a liquid turns into a solid as it cools, like water becoming ice.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "che-0074",
+    "type": "term",
+    "subject": "Chemistry",
+    "topic": "Materials",
+    "level": 1,
+    "prompt": "Evaporation",
+    "answers": [
+      "evaporation",
+      "evaporate",
+      "evaporates"
+    ],
+    "forbidden": [
+      "water",
+      "gas",
+      "puddle",
+      "dry",
+      "steam"
+    ],
+    "explanation": "Evaporation is when a liquid turns into a gas, like a puddle drying up in the sunshine.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "che-0075",
+    "type": "term",
+    "subject": "Chemistry",
+    "topic": "Materials",
+    "level": 1,
+    "prompt": "Condensation",
+    "answers": [
+      "condensation",
+      "condense"
+    ],
+    "forbidden": [
+      "droplets",
+      "window",
+      "cold",
+      "steam",
+      "water"
+    ],
+    "explanation": "Condensation is when a gas cools and turns back into a liquid, like water droplets forming on a cold window.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "che-0076",
+    "type": "term",
+    "subject": "Chemistry",
+    "topic": "Materials",
+    "level": 1,
+    "prompt": "Wood",
+    "answers": [
+      "wood",
+      "wooden"
+    ],
+    "forbidden": [
+      "tree",
+      "table",
+      "timber",
+      "brown"
+    ],
+    "explanation": "Wood is a natural material that comes from trees. It is strong and used to make furniture and houses.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "che-0077",
+    "type": "term",
+    "subject": "Chemistry",
+    "topic": "Materials",
+    "level": 1,
+    "prompt": "Metal",
+    "answers": [
+      "metal",
+      "metals"
+    ],
+    "forbidden": [
+      "shiny",
+      "iron",
+      "steel",
+      "hard"
+    ],
+    "explanation": "Metals are usually hard, shiny materials, such as iron, copper and gold. Many let heat and electricity pass through them.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "che-0078",
+    "type": "term",
+    "subject": "Chemistry",
+    "topic": "Materials",
+    "level": 1,
+    "prompt": "Plastic",
+    "answers": [
+      "plastic",
+      "plastics"
+    ],
+    "forbidden": [
+      "bottle",
+      "bag",
+      "man-made",
+      "recycle"
+    ],
+    "explanation": "Plastic is a man-made material that is light and waterproof and can be moulded into any shape, like bottles and toys.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "che-0079",
+    "type": "term",
+    "subject": "Chemistry",
+    "topic": "Materials",
+    "level": 1,
+    "prompt": "Fabric",
+    "answers": [
+      "fabric",
+      "cloth",
+      "textile"
+    ],
+    "forbidden": [
+      "clothes",
+      "material",
+      "sewing",
+      "wool",
+      "cotton"
+    ],
+    "explanation": "Fabric is a soft, bendy material made by weaving or knitting threads. Clothes are made from fabric.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "che-0080",
+    "type": "term",
+    "subject": "Chemistry",
+    "topic": "Materials",
+    "level": 1,
+    "prompt": "Rigid",
+    "answers": [
+      "rigid",
+      "stiff"
+    ],
+    "forbidden": [
+      "bend",
+      "hard",
+      "flexible",
+      "firm"
+    ],
+    "explanation": "A rigid material does not bend easily. Wood and metal are rigid; rubber is not.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "che-0081",
+    "type": "term",
+    "subject": "Chemistry",
+    "topic": "Materials",
+    "level": 1,
+    "prompt": "Translucent",
+    "answers": [
+      "translucent"
+    ],
+    "forbidden": [
+      "light",
+      "through",
+      "blurry",
+      "see",
+      "frosted"
+    ],
+    "explanation": "A translucent material lets some light through, but you cannot see clearly through it, like frosted glass or tissue paper.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "che-0082",
+    "type": "term",
+    "subject": "Chemistry",
+    "topic": "Materials",
+    "level": 1,
+    "prompt": "Mixture",
+    "answers": [
+      "mixture",
+      "mixtures"
+    ],
+    "forbidden": [
+      "mix",
+      "together",
+      "stir",
+      "separate"
+    ],
+    "explanation": "A mixture is two or more materials mixed together but not joined, like sand and water. Mixtures can often be separated again.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "che-0083",
+    "type": "term",
+    "subject": "Chemistry",
+    "topic": "Materials",
+    "level": 1,
+    "prompt": "Sieve",
+    "answers": [
+      "sieve",
+      "sieving"
+    ],
+    "forbidden": [
+      "holes",
+      "separate",
+      "flour",
+      "mesh"
+    ],
+    "explanation": "A sieve has small holes that let small pieces through but stop bigger ones. It can separate sand from gravel.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "che-0084",
+    "type": "term",
+    "subject": "Chemistry",
+    "topic": "Materials",
+    "level": 1,
+    "prompt": "Natural material",
+    "answers": [
+      "natural material",
+      "natural materials"
+    ],
+    "forbidden": [
+      "nature",
+      "wood",
+      "made",
+      "man-made"
+    ],
+    "explanation": "A natural material comes from nature rather than a factory, such as wood, wool, cotton or stone.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "che-0085",
+    "type": "question",
+    "subject": "Chemistry",
+    "topic": "Materials",
+    "level": 1,
+    "prompt": "What does ice turn into when it melts?",
+    "answers": [
+      "water"
+    ],
+    "forbidden": [
+      "liquid",
+      "drink",
+      "wet",
+      "tap"
+    ],
+    "explanation": "Ice is frozen water. When it warms up and melts, it turns back into liquid water.",
+    "course": "primary-science",
+    "status": "draft"
   }
 ]

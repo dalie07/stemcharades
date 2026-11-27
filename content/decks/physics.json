@@ -1698,5 +1698,1698 @@
     "explanation": "We have day and night because the Earth spins. The side facing the Sun has day, and the side facing away has night.",
     "course": "primary-science",
     "status": "reviewed"
+  },
+  {
+    "id": "phy-0080",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Forces",
+    "level": 1,
+    "prompt": "Float",
+    "answers": [
+      "float",
+      "floating",
+      "floats"
+    ],
+    "forbidden": [
+      "water",
+      "sink",
+      "boat",
+      "top"
+    ],
+    "explanation": "An object floats when it stays on the surface of water instead of sinking. Wood and boats float.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0081",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Forces",
+    "level": 1,
+    "prompt": "Sink",
+    "answers": [
+      "sink",
+      "sinking",
+      "sinks"
+    ],
+    "forbidden": [
+      "bottom",
+      "water",
+      "float",
+      "heavy"
+    ],
+    "explanation": "An object sinks when it goes down to the bottom of the water, like a stone or a coin.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0082",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Forces",
+    "level": 1,
+    "prompt": "Gravity",
+    "answers": [
+      "gravity"
+    ],
+    "forbidden": [
+      "fall",
+      "down",
+      "earth",
+      "pull",
+      "weight"
+    ],
+    "explanation": "Gravity is the force that pulls things down towards the Earth. It is why a dropped ball falls to the ground.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0083",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Forces",
+    "level": 1,
+    "prompt": "Friction",
+    "answers": [
+      "friction"
+    ],
+    "forbidden": [
+      "rub",
+      "slow",
+      "grip",
+      "rough"
+    ],
+    "explanation": "Friction is a force that slows things down when surfaces rub together. It helps your shoes grip the ground.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0084",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Forces",
+    "level": 1,
+    "prompt": "Push",
+    "answers": [
+      "push",
+      "pushing"
+    ],
+    "forbidden": [
+      "pull",
+      "force",
+      "away",
+      "shove"
+    ],
+    "explanation": "A push is a force that moves something away from you, like pushing a door open.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0085",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Forces",
+    "level": 1,
+    "prompt": "Pull",
+    "answers": [
+      "pull",
+      "pulling"
+    ],
+    "forbidden": [
+      "push",
+      "force",
+      "towards",
+      "tug"
+    ],
+    "explanation": "A pull is a force that moves something towards you, like pulling a drawer open.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0086",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Forces",
+    "level": 1,
+    "prompt": "Attract",
+    "answers": [
+      "attract",
+      "attraction",
+      "attracts"
+    ],
+    "forbidden": [
+      "magnet",
+      "pull",
+      "together",
+      "stick"
+    ],
+    "explanation": "To attract means to pull towards. Opposite poles of two magnets attract each other.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0087",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Forces",
+    "level": 1,
+    "prompt": "Repel",
+    "answers": [
+      "repel",
+      "repels",
+      "repulsion"
+    ],
+    "forbidden": [
+      "push",
+      "apart",
+      "magnets",
+      "away"
+    ],
+    "explanation": "To repel means to push away. Two magnets repel when the same poles face each other.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0088",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Forces",
+    "level": 1,
+    "prompt": "Poles",
+    "answers": [
+      "poles",
+      "magnetic poles"
+    ],
+    "forbidden": [
+      "north",
+      "south",
+      "ends",
+      "magnet"
+    ],
+    "explanation": "Every magnet has two poles, north and south, at its ends. Its pull is strongest at the poles.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0089",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Forces",
+    "level": 1,
+    "prompt": "Water resistance",
+    "answers": [
+      "water resistance"
+    ],
+    "forbidden": [
+      "water",
+      "slow",
+      "swim",
+      "drag"
+    ],
+    "explanation": "Water resistance is a force that slows things down as they move through water. Fish have smooth shapes to reduce it.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0090",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Forces",
+    "level": 1,
+    "prompt": "Pulley",
+    "answers": [
+      "pulley",
+      "pulleys"
+    ],
+    "forbidden": [
+      "rope",
+      "wheel",
+      "lift",
+      "crane"
+    ],
+    "explanation": "A pulley is a wheel with a rope around it. It makes lifting heavy things easier, like on a crane or a flagpole.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0091",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Forces",
+    "level": 1,
+    "prompt": "Gear",
+    "answers": [
+      "gear",
+      "gears"
+    ],
+    "forbidden": [
+      "teeth",
+      "wheel",
+      "bike",
+      "turn"
+    ],
+    "explanation": "Gears are wheels with teeth that fit together. Turning one turns the other, like the gears on a bicycle.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0092",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Forces",
+    "level": 1,
+    "prompt": "Spring",
+    "answers": [
+      "spring",
+      "springs"
+    ],
+    "forbidden": [
+      "coil",
+      "bounce",
+      "stretch",
+      "squash"
+    ],
+    "explanation": "A spring is a coil of metal that stretches or squashes and then goes back to its shape. It pushes or pulls back when you change it.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0093",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Forces",
+    "level": 1,
+    "prompt": "Weight",
+    "answers": [
+      "weight"
+    ],
+    "forbidden": [
+      "heavy",
+      "gravity",
+      "newtons",
+      "scales"
+    ],
+    "explanation": "Weight is the pull of gravity on an object. It is a force, measured in newtons.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0094",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Forces",
+    "level": 1,
+    "prompt": "Newton",
+    "answers": [
+      "newton",
+      "newtons"
+    ],
+    "forbidden": [
+      "unit",
+      "force",
+      "measure",
+      "apple"
+    ],
+    "explanation": "The newton is the unit used to measure forces. It is named after the scientist Isaac Newton.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0095",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Forces",
+    "level": 1,
+    "prompt": "Speed",
+    "answers": [
+      "speed"
+    ],
+    "forbidden": [
+      "fast",
+      "slow",
+      "quick",
+      "miles"
+    ],
+    "explanation": "Speed is how fast something moves, such as how many metres it travels each second.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0096",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Forces",
+    "level": 1,
+    "prompt": "Ramp",
+    "answers": [
+      "ramp",
+      "slope"
+    ],
+    "forbidden": [
+      "slide",
+      "up",
+      "down",
+      "tilted"
+    ],
+    "explanation": "A ramp is a sloping surface. Things roll down it faster when it is steeper.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0097",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Forces",
+    "level": 1,
+    "prompt": "Upthrust",
+    "answers": [
+      "upthrust",
+      "buoyancy"
+    ],
+    "forbidden": [
+      "float",
+      "up",
+      "water",
+      "push"
+    ],
+    "explanation": "Upthrust is the upward push of water on an object. It is what makes things float.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0098",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Forces",
+    "level": 1,
+    "prompt": "Streamlined",
+    "answers": [
+      "streamlined"
+    ],
+    "forbidden": [
+      "smooth",
+      "shape",
+      "fast",
+      "drag",
+      "fish"
+    ],
+    "explanation": "A streamlined shape is smooth and pointed, so air or water flows past it easily. Fish, rockets and racing cars are streamlined.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0099",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Forces",
+    "level": 1,
+    "prompt": "Balanced forces",
+    "answers": [
+      "balanced forces",
+      "balanced"
+    ],
+    "forbidden": [
+      "equal",
+      "same",
+      "still",
+      "tug of war"
+    ],
+    "explanation": "Forces are balanced when they are equal and opposite, like in a tug of war where nobody moves.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0100",
+    "type": "question",
+    "subject": "Physics",
+    "topic": "Forces",
+    "level": 1,
+    "prompt": "Which common metal is attracted to a magnet?",
+    "answers": [
+      "iron"
+    ],
+    "forbidden": [
+      "steel",
+      "nails",
+      "metal",
+      "rust"
+    ],
+    "explanation": "Iron is attracted to magnets, and so is steel, which is mostly iron. Most other metals, like copper and aluminium, are not.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0101",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Light and sound",
+    "level": 1,
+    "prompt": "Light source",
+    "answers": [
+      "light source",
+      "light sources"
+    ],
+    "forbidden": [
+      "sun",
+      "torch",
+      "gives",
+      "makes",
+      "glow"
+    ],
+    "explanation": "A light source gives out its own light, like the Sun, a torch or a candle. The Moon is not one: it reflects sunlight.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0102",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Light and sound",
+    "level": 1,
+    "prompt": "Reflection",
+    "answers": [
+      "reflection",
+      "reflect",
+      "reflects"
+    ],
+    "forbidden": [
+      "mirror",
+      "bounce",
+      "shiny",
+      "see"
+    ],
+    "explanation": "Reflection is when light bounces off a surface. Mirrors reflect light very well, so you can see yourself.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0103",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Light and sound",
+    "level": 1,
+    "prompt": "Torch",
+    "answers": [
+      "torch",
+      "flashlight"
+    ],
+    "forbidden": [
+      "battery",
+      "light",
+      "dark",
+      "beam"
+    ],
+    "explanation": "A torch is a small, battery-powered light you can carry to see in the dark.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0104",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Light and sound",
+    "level": 1,
+    "prompt": "Rainbow",
+    "answers": [
+      "rainbow"
+    ],
+    "forbidden": [
+      "colours",
+      "rain",
+      "sun",
+      "arch"
+    ],
+    "explanation": "A rainbow appears when sunlight shines through raindrops and splits into colours: red, orange, yellow, green, blue, indigo and violet.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0105",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Light and sound",
+    "level": 1,
+    "prompt": "Prism",
+    "answers": [
+      "prism"
+    ],
+    "forbidden": [
+      "glass",
+      "rainbow",
+      "split",
+      "triangle"
+    ],
+    "explanation": "A prism is a block of clear glass or plastic that splits white light into the colours of the rainbow.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0106",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Light and sound",
+    "level": 1,
+    "prompt": "Eye",
+    "answers": [
+      "eye",
+      "eyes"
+    ],
+    "forbidden": [
+      "see",
+      "look",
+      "sight",
+      "blink"
+    ],
+    "explanation": "Your eyes let you see. Light enters through the pupil and the eye sends messages to your brain.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0107",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Light and sound",
+    "level": 1,
+    "prompt": "Ear",
+    "answers": [
+      "ear",
+      "ears"
+    ],
+    "forbidden": [
+      "hear",
+      "sound",
+      "listen",
+      "head"
+    ],
+    "explanation": "Your ears let you hear. Sound vibrations travel into your ear and are passed to your brain.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0108",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Light and sound",
+    "level": 1,
+    "prompt": "Echo",
+    "answers": [
+      "echo",
+      "echoes"
+    ],
+    "forbidden": [
+      "repeat",
+      "sound",
+      "bounce",
+      "cave"
+    ],
+    "explanation": "An echo is a sound you hear again after it bounces off a hard surface, like a wall or the inside of a cave.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0109",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Light and sound",
+    "level": 1,
+    "prompt": "Sound wave",
+    "answers": [
+      "sound wave",
+      "sound waves"
+    ],
+    "forbidden": [
+      "vibrations",
+      "travel",
+      "air",
+      "hear"
+    ],
+    "explanation": "A sound wave is a vibration that travels through air, water or solids until it reaches your ear.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0110",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Light and sound",
+    "level": 1,
+    "prompt": "Darkness",
+    "answers": [
+      "darkness",
+      "dark"
+    ],
+    "forbidden": [
+      "night",
+      "no light",
+      "black",
+      "see"
+    ],
+    "explanation": "Darkness is the absence of light. Without light we cannot see anything at all.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0111",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Light and sound",
+    "level": 1,
+    "prompt": "Sunglasses",
+    "answers": [
+      "sunglasses"
+    ],
+    "forbidden": [
+      "eyes",
+      "sun",
+      "protect",
+      "glasses"
+    ],
+    "explanation": "Sunglasses protect your eyes from bright sunlight. You should never look straight at the Sun, even with them on.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0112",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Light and sound",
+    "level": 1,
+    "prompt": "Periscope",
+    "answers": [
+      "periscope"
+    ],
+    "forbidden": [
+      "mirrors",
+      "submarine",
+      "see over",
+      "tube"
+    ],
+    "explanation": "A periscope is a tube with two mirrors that lets you see over walls or around corners. Submarines use them.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0113",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Light and sound",
+    "level": 1,
+    "prompt": "Drum",
+    "answers": [
+      "drum",
+      "drums"
+    ],
+    "forbidden": [
+      "hit",
+      "beat",
+      "bang",
+      "instrument"
+    ],
+    "explanation": "A drum makes sound when you hit its skin, which vibrates. Hitting it harder makes a louder sound.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0114",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Light and sound",
+    "level": 1,
+    "prompt": "Decibel",
+    "answers": [
+      "decibel",
+      "decibels",
+      "db"
+    ],
+    "forbidden": [
+      "loud",
+      "measure",
+      "sound",
+      "unit"
+    ],
+    "explanation": "The decibel is the unit used to measure how loud a sound is. A whisper is about 30 decibels.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0115",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Light and sound",
+    "level": 1,
+    "prompt": "Vacuum",
+    "answers": [
+      "vacuum"
+    ],
+    "forbidden": [
+      "empty",
+      "space",
+      "air",
+      "nothing"
+    ],
+    "explanation": "A vacuum is a space with no air at all. Sound cannot travel through a vacuum, so space is silent.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0116",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Light and sound",
+    "level": 1,
+    "prompt": "Ear defenders",
+    "answers": [
+      "ear defenders",
+      "ear muffs",
+      "earmuffs"
+    ],
+    "forbidden": [
+      "noise",
+      "protect",
+      "ears",
+      "loud"
+    ],
+    "explanation": "Ear defenders cover your ears to block out loud noise and protect your hearing.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0117",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Light and sound",
+    "level": 1,
+    "prompt": "Speaker",
+    "answers": [
+      "speaker",
+      "loudspeaker"
+    ],
+    "forbidden": [
+      "sound",
+      "music",
+      "loud",
+      "box"
+    ],
+    "explanation": "A speaker turns electrical signals into sound by making the air vibrate.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0118",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Light and sound",
+    "level": 1,
+    "prompt": "Microphone",
+    "answers": [
+      "microphone",
+      "mic"
+    ],
+    "forbidden": [
+      "sing",
+      "record",
+      "voice",
+      "speak"
+    ],
+    "explanation": "A microphone picks up sound and turns it into an electrical signal so it can be recorded or made louder.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0119",
+    "type": "question",
+    "subject": "Physics",
+    "topic": "Light and sound",
+    "level": 1,
+    "prompt": "What colour is at the top of a rainbow?",
+    "answers": [
+      "red"
+    ],
+    "forbidden": [
+      "colour",
+      "first",
+      "rainbow",
+      "orange"
+    ],
+    "explanation": "Red is at the top of a rainbow and violet is at the bottom.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0120",
+    "type": "question",
+    "subject": "Physics",
+    "topic": "Light and sound",
+    "level": 1,
+    "prompt": "Which part of the eye lets light in?",
+    "answers": [
+      "pupil"
+    ],
+    "forbidden": [
+      "black",
+      "hole",
+      "eye",
+      "middle"
+    ],
+    "explanation": "The pupil is the black hole in the middle of your eye. It gets bigger in the dark to let more light in.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0121",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Electricity",
+    "level": 1,
+    "prompt": "Conductor",
+    "answers": [
+      "conductor",
+      "electrical conductor"
+    ],
+    "forbidden": [
+      "electricity",
+      "flow",
+      "metal",
+      "through"
+    ],
+    "explanation": "A conductor lets electricity flow through it easily. Most metals, like copper, are good conductors.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0122",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Electricity",
+    "level": 1,
+    "prompt": "Insulator",
+    "answers": [
+      "insulator",
+      "electrical insulator"
+    ],
+    "forbidden": [
+      "electricity",
+      "stop",
+      "plastic",
+      "rubber"
+    ],
+    "explanation": "An insulator does not let electricity flow through it. Plastic and rubber are insulators, which is why wires are covered in plastic.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0123",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Electricity",
+    "level": 1,
+    "prompt": "Electricity",
+    "answers": [
+      "electricity"
+    ],
+    "forbidden": [
+      "power",
+      "plug",
+      "energy",
+      "lights"
+    ],
+    "explanation": "Electricity is a kind of energy that flows through wires to power lights, televisions and other machines.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0124",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Electricity",
+    "level": 1,
+    "prompt": "Plug",
+    "answers": [
+      "plug"
+    ],
+    "forbidden": [
+      "wall",
+      "socket",
+      "pins",
+      "cable"
+    ],
+    "explanation": "A plug connects an appliance's cable to the electricity supply when you push it into a socket.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0125",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Electricity",
+    "level": 1,
+    "prompt": "Socket",
+    "answers": [
+      "socket",
+      "plug socket"
+    ],
+    "forbidden": [
+      "wall",
+      "plug",
+      "holes",
+      "power"
+    ],
+    "explanation": "A socket is the place in the wall where you plug things in to get mains electricity.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0126",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Electricity",
+    "level": 1,
+    "prompt": "Buzzer",
+    "answers": [
+      "buzzer"
+    ],
+    "forbidden": [
+      "noise",
+      "buzz",
+      "sound",
+      "alarm"
+    ],
+    "explanation": "A buzzer makes a buzzing sound when electricity flows through it. It can be used as an alarm in a circuit.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0127",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Electricity",
+    "level": 1,
+    "prompt": "Motor",
+    "answers": [
+      "motor",
+      "electric motor"
+    ],
+    "forbidden": [
+      "spin",
+      "turn",
+      "fan",
+      "engine"
+    ],
+    "explanation": "A motor turns electricity into movement. Motors spin the blades of fans and the wheels of toy cars.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0128",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Electricity",
+    "level": 1,
+    "prompt": "Mains electricity",
+    "answers": [
+      "mains electricity",
+      "mains"
+    ],
+    "forbidden": [
+      "wall",
+      "socket",
+      "house",
+      "dangerous"
+    ],
+    "explanation": "Mains electricity comes into buildings through wires and sockets. It is much more powerful than a battery and can be dangerous.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0129",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Electricity",
+    "level": 1,
+    "prompt": "Cell",
+    "answers": [
+      "cell"
+    ],
+    "forbidden": [
+      "battery",
+      "power",
+      "energy",
+      "circuit"
+    ],
+    "explanation": "A cell is a single battery unit that stores energy and pushes electricity around a circuit. Several cells joined together make a battery.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0130",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Electricity",
+    "level": 1,
+    "prompt": "Circuit diagram",
+    "answers": [
+      "circuit diagram",
+      "circuit diagrams"
+    ],
+    "forbidden": [
+      "symbols",
+      "drawing",
+      "plan",
+      "wires"
+    ],
+    "explanation": "A circuit diagram is a drawing of a circuit using simple symbols for each part, such as cells, bulbs and switches.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0131",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Electricity",
+    "level": 1,
+    "prompt": "Broken circuit",
+    "answers": [
+      "broken circuit",
+      "open circuit",
+      "incomplete circuit"
+    ],
+    "forbidden": [
+      "gap",
+      "break",
+      "not work",
+      "off"
+    ],
+    "explanation": "A broken circuit has a gap in it, so electricity cannot flow and the bulb stays off.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0132",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Electricity",
+    "level": 1,
+    "prompt": "Copper",
+    "answers": [
+      "copper"
+    ],
+    "forbidden": [
+      "metal",
+      "wire",
+      "orange",
+      "coin"
+    ],
+    "explanation": "Copper is an orange-brown metal that conducts electricity very well. Most electrical wires are made of copper.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0133",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Electricity",
+    "level": 1,
+    "prompt": "Solar panel",
+    "answers": [
+      "solar panel",
+      "solar panels"
+    ],
+    "forbidden": [
+      "sun",
+      "roof",
+      "energy",
+      "light"
+    ],
+    "explanation": "A solar panel turns sunlight into electricity. You often see them on roofs.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0134",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Electricity",
+    "level": 1,
+    "prompt": "Static electricity",
+    "answers": [
+      "static electricity",
+      "static"
+    ],
+    "forbidden": [
+      "balloon",
+      "hair",
+      "rub",
+      "spark"
+    ],
+    "explanation": "Static electricity builds up when things rub together. Rub a balloon on your hair and it will stick to a wall.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0135",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Electricity",
+    "level": 1,
+    "prompt": "Lightning",
+    "answers": [
+      "lightning"
+    ],
+    "forbidden": [
+      "storm",
+      "thunder",
+      "flash",
+      "sky"
+    ],
+    "explanation": "Lightning is a giant spark of electricity in a storm. The thunder you hear afterwards is the sound it makes.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0136",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Electricity",
+    "level": 1,
+    "prompt": "Wind turbine",
+    "answers": [
+      "wind turbine",
+      "wind turbines"
+    ],
+    "forbidden": [
+      "wind",
+      "blades",
+      "spin",
+      "energy"
+    ],
+    "explanation": "A wind turbine has blades that the wind turns. It changes the wind's movement into electricity.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0137",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Electricity",
+    "level": 1,
+    "prompt": "Fuse",
+    "answers": [
+      "fuse",
+      "fuses"
+    ],
+    "forbidden": [
+      "safety",
+      "plug",
+      "melt",
+      "blow"
+    ],
+    "explanation": "A fuse is a safety device in a plug. If too much electricity flows, a thin wire inside melts and breaks the circuit.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0138",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Electricity",
+    "level": 1,
+    "prompt": "Volt",
+    "answers": [
+      "volt",
+      "volts",
+      "voltage"
+    ],
+    "forbidden": [
+      "battery",
+      "unit",
+      "push",
+      "measure"
+    ],
+    "explanation": "The volt is the unit for how hard a battery pushes electricity around a circuit. A small battery is about 1.5 volts.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0139",
+    "type": "question",
+    "subject": "Physics",
+    "topic": "Electricity",
+    "level": 1,
+    "prompt": "What is the unit of electrical power?",
+    "answers": [
+      "watt",
+      "watts"
+    ],
+    "forbidden": [
+      "unit",
+      "power",
+      "bulb",
+      "energy"
+    ],
+    "explanation": "Electrical power is measured in watts. A brighter bulb usually uses more watts.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0140",
+    "type": "question",
+    "subject": "Physics",
+    "topic": "Electricity",
+    "level": 1,
+    "prompt": "What do we call the flow of electricity around a circuit?",
+    "answers": [
+      "current",
+      "electric current"
+    ],
+    "forbidden": [
+      "flow",
+      "river",
+      "amps",
+      "moving"
+    ],
+    "explanation": "The flow of electricity around a circuit is called the current. It is measured in amps.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0141",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Earth and space",
+    "level": 1,
+    "prompt": "Fossil",
+    "answers": [
+      "fossil",
+      "fossils"
+    ],
+    "forbidden": [
+      "rock",
+      "dinosaur",
+      "bones",
+      "ancient",
+      "stone"
+    ],
+    "explanation": "A fossil is the remains or shape of a living thing from long ago, preserved in rock.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0142",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Earth and space",
+    "level": 1,
+    "prompt": "Star",
+    "answers": [
+      "star",
+      "stars"
+    ],
+    "forbidden": [
+      "night",
+      "sky",
+      "twinkle",
+      "shine",
+      "sun"
+    ],
+    "explanation": "A star is a huge ball of hot, glowing gas. The Sun is our nearest star; the others look tiny because they are so far away.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0143",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Earth and space",
+    "level": 1,
+    "prompt": "Earth",
+    "answers": [
+      "earth",
+      "planet earth"
+    ],
+    "forbidden": [
+      "planet",
+      "home",
+      "world",
+      "live"
+    ],
+    "explanation": "Earth is the planet we live on. It is the third planet from the Sun and the only one we know has life.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0144",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Earth and space",
+    "level": 1,
+    "prompt": "Orbit",
+    "answers": [
+      "orbit",
+      "orbits"
+    ],
+    "forbidden": [
+      "around",
+      "circle",
+      "path",
+      "travel"
+    ],
+    "explanation": "An orbit is the path one object takes around another in space, like the Earth travelling around the Sun.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0145",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Earth and space",
+    "level": 1,
+    "prompt": "Solar system",
+    "answers": [
+      "solar system"
+    ],
+    "forbidden": [
+      "sun",
+      "planets",
+      "space",
+      "eight"
+    ],
+    "explanation": "The solar system is the Sun and everything that travels around it, including eight planets and their moons.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0146",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Earth and space",
+    "level": 1,
+    "prompt": "Astronaut",
+    "answers": [
+      "astronaut",
+      "astronauts",
+      "cosmonaut"
+    ],
+    "forbidden": [
+      "space",
+      "rocket",
+      "spacesuit",
+      "moon"
+    ],
+    "explanation": "An astronaut is a person trained to travel into space. Astronauts first walked on the Moon in 1969.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0147",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Earth and space",
+    "level": 1,
+    "prompt": "Telescope",
+    "answers": [
+      "telescope"
+    ],
+    "forbidden": [
+      "stars",
+      "see",
+      "far",
+      "lens"
+    ],
+    "explanation": "A telescope makes faraway things look bigger and clearer. Astronomers use telescopes to study stars and planets.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0148",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Earth and space",
+    "level": 1,
+    "prompt": "Rock",
+    "answers": [
+      "rock",
+      "rocks"
+    ],
+    "forbidden": [
+      "stone",
+      "hard",
+      "ground",
+      "pebble"
+    ],
+    "explanation": "Rock is the hard, natural material that makes up the ground beneath us and mountains above it.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0149",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Earth and space",
+    "level": 1,
+    "prompt": "Earthquake",
+    "answers": [
+      "earthquake",
+      "earthquakes"
+    ],
+    "forbidden": [
+      "shake",
+      "ground",
+      "quake",
+      "crack"
+    ],
+    "explanation": "An earthquake is a sudden shaking of the ground, caused by huge pieces of the Earth's crust moving.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0150",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Earth and space",
+    "level": 1,
+    "prompt": "Season",
+    "answers": [
+      "season",
+      "seasons"
+    ],
+    "forbidden": [
+      "spring",
+      "summer",
+      "winter",
+      "autumn"
+    ],
+    "explanation": "The seasons are the four parts of the year: spring, summer, autumn and winter. They happen because the Earth is tilted.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0151",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Earth and space",
+    "level": 1,
+    "prompt": "Crater",
+    "answers": [
+      "crater",
+      "craters"
+    ],
+    "forbidden": [
+      "hole",
+      "moon",
+      "rock",
+      "hit"
+    ],
+    "explanation": "A crater is a round hole made when a rock from space crashes into a planet or moon. The Moon is covered in craters.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0152",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Earth and space",
+    "level": 1,
+    "prompt": "Comet",
+    "answers": [
+      "comet",
+      "comets"
+    ],
+    "forbidden": [
+      "tail",
+      "ice",
+      "space",
+      "dust"
+    ],
+    "explanation": "A comet is a ball of ice and dust that travels around the Sun. Near the Sun it grows a long, glowing tail.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0153",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Earth and space",
+    "level": 1,
+    "prompt": "Constellation",
+    "answers": [
+      "constellation",
+      "constellations"
+    ],
+    "forbidden": [
+      "stars",
+      "pattern",
+      "picture",
+      "sky"
+    ],
+    "explanation": "A constellation is a group of stars that forms a pattern in the night sky, such as the Plough or Orion.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0154",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Earth and space",
+    "level": 1,
+    "prompt": "Mars",
+    "answers": [
+      "mars"
+    ],
+    "forbidden": [
+      "red",
+      "planet",
+      "rover",
+      "fourth"
+    ],
+    "explanation": "Mars is the fourth planet from the Sun. It is called the Red Planet because of its rusty red dust.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0155",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Earth and space",
+    "level": 1,
+    "prompt": "Phases of the Moon",
+    "answers": [
+      "phases of the moon",
+      "moon phases",
+      "lunar phases"
+    ],
+    "forbidden": [
+      "shape",
+      "full",
+      "crescent",
+      "change"
+    ],
+    "explanation": "The phases of the Moon are the changing shapes we see each month, from new moon to full moon and back, as sunlight lights different parts of it.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0156",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Earth and space",
+    "level": 1,
+    "prompt": "Sedimentary rock",
+    "answers": [
+      "sedimentary rock",
+      "sedimentary"
+    ],
+    "forbidden": [
+      "layers",
+      "sand",
+      "fossils",
+      "sandstone"
+    ],
+    "explanation": "Sedimentary rock forms from layers of sand, mud and shells pressed together over millions of years. Fossils are often found in it.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0157",
+    "type": "term",
+    "subject": "Physics",
+    "topic": "Earth and space",
+    "level": 1,
+    "prompt": "Rocket",
+    "answers": [
+      "rocket",
+      "rockets"
+    ],
+    "forbidden": [
+      "space",
+      "launch",
+      "fly",
+      "fuel"
+    ],
+    "explanation": "A rocket burns fuel to push itself upwards fast enough to reach space.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0158",
+    "type": "question",
+    "subject": "Physics",
+    "topic": "Earth and space",
+    "level": 1,
+    "prompt": "Which is the largest planet in our solar system?",
+    "answers": [
+      "jupiter"
+    ],
+    "forbidden": [
+      "biggest",
+      "giant",
+      "gas",
+      "fifth"
+    ],
+    "explanation": "Jupiter is the largest planet. It is a giant ball of gas, more than 11 times wider than the Earth.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0159",
+    "type": "question",
+    "subject": "Physics",
+    "topic": "Earth and space",
+    "level": 1,
+    "prompt": "Which planet is closest to the Sun?",
+    "answers": [
+      "mercury"
+    ],
+    "forbidden": [
+      "closest",
+      "hot",
+      "small",
+      "first"
+    ],
+    "explanation": "Mercury is the closest planet to the Sun. It is also the smallest planet.",
+    "course": "primary-science",
+    "status": "draft"
+  },
+  {
+    "id": "phy-0160",
+    "type": "question",
+    "subject": "Physics",
+    "topic": "Earth and space",
+    "level": 1,
+    "prompt": "How long does the Earth take to travel once around the Sun?",
+    "answers": [
+      "a year",
+      "one year",
+      "year"
+    ],
+    "forbidden": [
+      "days",
+      "months",
+      "365",
+      "birthday"
+    ],
+    "explanation": "The Earth takes one year, about 365 days, to travel once around the Sun.",
+    "course": "primary-science",
+    "status": "draft"
   }
 ]
