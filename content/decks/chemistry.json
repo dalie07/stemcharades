@@ -3,7 +3,6 @@
     "id": "che-0001",
     "type": "term",
     "subject": "Chemistry",
-    "course": "secondary-chemistry",
     "topic": "Quantities",
     "level": 2,
     "prompt": "Mole",
@@ -18,13 +17,13 @@
       "6.02"
     ],
     "explanation": "A mole is the amount of substance containing 6.02 x 10^23 particles. The mass of one mole of a substance in grams equals its relative formula mass.",
+    "course": "secondary-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0002",
     "type": "term",
     "subject": "Chemistry",
-    "course": "secondary-chemistry",
     "topic": "Bonding",
     "level": 2,
     "prompt": "Covalent bond",
@@ -39,13 +38,13 @@
       "nonmetals"
     ],
     "explanation": "A covalent bond forms when two atoms share a pair of electrons. It usually occurs between non-metal atoms.",
+    "course": "secondary-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0003",
     "type": "term",
     "subject": "Chemistry",
-    "course": "secondary-chemistry",
     "topic": "Bonding",
     "level": 2,
     "prompt": "Ionic bond",
@@ -61,13 +60,13 @@
       "charge"
     ],
     "explanation": "An ionic bond is the strong electrostatic attraction between oppositely charged ions. It typically forms between a metal and a non-metal.",
+    "course": "secondary-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0004",
     "type": "formula",
     "subject": "Chemistry",
-    "course": "university-physical-chemistry",
     "topic": "Gases",
     "level": 3,
     "prompt": "Ideal gas law",
@@ -84,13 +83,13 @@
       "moles"
     ],
     "explanation": "The ideal gas law relates the pressure, volume, amount and temperature of an ideal gas. R is the gas constant and the temperature must be in kelvin.",
+    "course": "university-physical-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0005",
     "type": "term",
     "subject": "Chemistry",
-    "course": "secondary-chemistry",
     "topic": "Kinetics",
     "level": 2,
     "prompt": "Catalyst",
@@ -104,13 +103,13 @@
       "consumed"
     ],
     "explanation": "A catalyst increases the rate of a reaction by providing a pathway with a lower activation energy. It is not used up in the reaction.",
+    "course": "secondary-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0006",
     "type": "term",
     "subject": "Chemistry",
-    "course": "secondary-chemistry",
     "topic": "Acids and bases",
     "level": 2,
     "prompt": "pH",
@@ -125,13 +124,13 @@
       "acidity"
     ],
     "explanation": "pH is a scale that measures how acidic or alkaline a solution is, based on its hydrogen ion concentration. A pH of 7 is neutral, below 7 is acidic and above 7 is alkaline.",
+    "course": "secondary-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0007",
     "type": "term",
     "subject": "Chemistry",
-    "course": "secondary-chemistry",
     "topic": "Atoms",
     "level": 2,
     "prompt": "Isotope",
@@ -146,13 +145,13 @@
       "element"
     ],
     "explanation": "Isotopes are atoms of the same element with different numbers of neutrons. They have the same chemical properties but different masses.",
+    "course": "secondary-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0008",
     "type": "formula",
     "subject": "Chemistry",
-    "course": "secondary-chemistry",
     "topic": "Quantities",
     "level": 2,
     "prompt": "Molar concentration",
@@ -169,13 +168,13 @@
       "dm3"
     ],
     "explanation": "The concentration of a solution is the amount of solute in moles divided by the volume of the solution in cubic decimetres. It is measured in mol per dm^3.",
+    "course": "secondary-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0009",
     "type": "term",
     "subject": "Chemistry",
-    "course": "university-inorganic-chemistry",
     "topic": "Bonding",
     "level": 3,
     "prompt": "Electronegativity",
@@ -190,13 +189,13 @@
       "atom"
     ],
     "explanation": "Electronegativity is a measure of how strongly an atom attracts the shared electrons in a bond. Fluorine has the highest value on the Pauling scale.",
+    "course": "university-inorganic-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0010",
     "type": "term",
     "subject": "Chemistry",
-    "course": "university-physical-chemistry",
     "topic": "Equilibria",
     "level": 3,
     "prompt": "Le Chatelier's principle",
@@ -213,13 +212,13 @@
       "pressure"
     ],
     "explanation": "If a system at dynamic equilibrium is disturbed, the position of equilibrium shifts to oppose the change. It predicts the effect of changing temperature, pressure or concentration.",
+    "course": "university-physical-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0011",
     "type": "question",
     "subject": "Chemistry",
-    "course": "secondary-chemistry",
     "topic": "Inorganic",
     "level": 2,
     "prompt": "What is the chemical formula of table salt?",
@@ -234,13 +233,13 @@
       "ionic"
     ],
     "explanation": "Table salt is sodium chloride, NaCl. It is an ionic compound made of sodium ions and chloride ions in a 1:1 ratio.",
+    "course": "secondary-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0012",
     "type": "term",
     "subject": "Chemistry",
-    "course": "secondary-chemistry",
     "topic": "Redox",
     "level": 2,
     "prompt": "Oxidation",
@@ -256,13 +255,13 @@
       "reduction"
     ],
     "explanation": "Oxidation is the loss of electrons, which raises an element's oxidation state. It always happens together with reduction in a redox reaction.",
+    "course": "secondary-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0013",
     "type": "term",
     "subject": "Chemistry",
-    "course": "secondary-chemistry",
     "topic": "Organic",
     "level": 2,
     "prompt": "Alkane",
@@ -278,13 +277,13 @@
       "carbon"
     ],
     "explanation": "Alkanes are saturated hydrocarbons that contain only single carbon-carbon bonds. Their general formula is C_nH_(2n+2).",
+    "course": "secondary-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0014",
     "type": "term",
     "subject": "Chemistry",
-    "course": "university-physical-chemistry",
     "topic": "Thermochemistry",
     "level": 3,
     "prompt": "Enthalpy change",
@@ -300,13 +299,13 @@
       "reaction"
     ],
     "explanation": "Enthalpy change is the heat energy transferred in a reaction at constant pressure. It is negative for exothermic reactions and positive for endothermic ones.",
+    "course": "university-physical-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0015",
     "type": "question",
     "subject": "Chemistry",
-    "course": "secondary-chemistry",
     "topic": "Periodic table",
     "level": 2,
     "prompt": "Which element has atomic number 2?",
@@ -321,13 +320,13 @@
       "lightest"
     ],
     "explanation": "Helium has atomic number 2, meaning its atoms have two protons. It is a noble gas and is unreactive.",
+    "course": "secondary-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0016",
     "type": "formula",
     "subject": "Chemistry",
-    "course": "university-physical-chemistry",
     "topic": "Kinetics",
     "level": 3,
     "prompt": "Rate equation",
@@ -343,13 +342,13 @@
       "reaction"
     ],
     "explanation": "A rate equation links the rate of a reaction to the concentrations of the reactants raised to their orders. The orders must be found by experiment, not from the balanced equation.",
+    "course": "university-physical-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0017",
     "type": "term",
     "subject": "Chemistry",
-    "course": "secondary-chemistry",
     "topic": "Acids and bases",
     "level": 2,
     "prompt": "Titration",
@@ -364,13 +363,13 @@
       "indicator"
     ],
     "explanation": "A titration is a method for finding the concentration of a solution by adding another solution of known concentration until the reaction is complete. The end point is usually shown by an indicator.",
+    "course": "secondary-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0018",
     "type": "term",
     "subject": "Chemistry",
-    "course": "secondary-chemistry",
     "topic": "Organic",
     "level": 2,
     "prompt": "Polymer",
@@ -385,13 +384,13 @@
       "repeating"
     ],
     "explanation": "A polymer is a very large molecule made from many small repeating units called monomers joined together. Poly(ethene) is a common example.",
+    "course": "secondary-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0019",
     "type": "term",
     "subject": "Chemistry",
-    "course": "secondary-chemistry",
     "topic": "Electrolysis",
     "level": 2,
     "prompt": "Electrolysis",
@@ -406,13 +405,13 @@
       "current"
     ],
     "explanation": "Electrolysis uses an electric current to drive a non-spontaneous chemical reaction in a molten or dissolved ionic compound. Metals form at the cathode and non-metals at the anode.",
+    "course": "secondary-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0020",
     "type": "term",
     "subject": "Chemistry",
-    "course": "secondary-chemistry",
     "topic": "Quantities",
     "level": 2,
     "prompt": "Avogadro constant",
@@ -429,13 +428,13 @@
       "atoms"
     ],
     "explanation": "The Avogadro constant is 6.022 x 10^23 per mole. It is the number of particles in one mole of a substance.",
+    "course": "secondary-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0021",
     "type": "term",
     "subject": "Chemistry",
-    "course": "secondary-chemistry",
     "topic": "Atoms",
     "level": 2,
     "prompt": "Atom",
@@ -451,13 +450,13 @@
       "electrons"
     ],
     "explanation": "An atom is the smallest unit of an element that keeps its chemical properties. It has a nucleus of protons and neutrons surrounded by electrons.",
+    "course": "secondary-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0022",
     "type": "term",
     "subject": "Chemistry",
-    "course": "secondary-chemistry",
     "topic": "Atoms",
     "level": 2,
     "prompt": "Element",
@@ -472,13 +471,13 @@
       "kind"
     ],
     "explanation": "An element is a pure substance made of only one kind of atom. Elements are arranged in the periodic table by atomic number.",
+    "course": "secondary-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0023",
     "type": "term",
     "subject": "Chemistry",
-    "course": "secondary-chemistry",
     "topic": "Matter",
     "level": 2,
     "prompt": "Compound",
@@ -494,13 +493,13 @@
       "two"
     ],
     "explanation": "A compound is a substance made of two or more different elements chemically bonded together. Its properties differ from those of the elements in it.",
+    "course": "secondary-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0024",
     "type": "term",
     "subject": "Chemistry",
-    "course": "secondary-chemistry",
     "topic": "Matter",
     "level": 2,
     "prompt": "Mixture",
@@ -515,13 +514,13 @@
       "combined"
     ],
     "explanation": "A mixture is two or more substances that are together but not chemically bonded. They can be separated by physical methods such as filtering or distillation.",
+    "course": "secondary-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0025",
     "type": "term",
     "subject": "Chemistry",
-    "course": "secondary-chemistry",
     "topic": "Matter",
     "level": 2,
     "prompt": "Molecule",
@@ -537,13 +536,13 @@
       "smallest"
     ],
     "explanation": "A molecule is a group of two or more atoms held together by covalent bonds. Water and oxygen are both molecules.",
+    "course": "secondary-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0026",
     "type": "term",
     "subject": "Chemistry",
-    "course": "secondary-chemistry",
     "topic": "Atoms",
     "level": 2,
     "prompt": "Proton",
@@ -559,13 +558,13 @@
       "particle"
     ],
     "explanation": "A proton is a positively charged particle found in the nucleus. The number of protons defines which element an atom is.",
+    "course": "secondary-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0027",
     "type": "term",
     "subject": "Chemistry",
-    "course": "secondary-chemistry",
     "topic": "Atoms",
     "level": 2,
     "prompt": "Neutron",
@@ -581,13 +580,13 @@
       "particle"
     ],
     "explanation": "A neutron is an uncharged particle found in the nucleus, with about the same mass as a proton. Different numbers of neutrons give different isotopes.",
+    "course": "secondary-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0028",
     "type": "term",
     "subject": "Chemistry",
-    "course": "secondary-chemistry",
     "topic": "Atoms",
     "level": 2,
     "prompt": "Electron shell",
@@ -604,13 +603,13 @@
       "configuration"
     ],
     "explanation": "An electron shell is an energy level around the nucleus that can hold a limited number of electrons. The outer shell largely decides how an atom reacts.",
+    "course": "secondary-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0029",
     "type": "term",
     "subject": "Chemistry",
-    "course": "secondary-chemistry",
     "topic": "Periodic table",
     "level": 2,
     "prompt": "Group",
@@ -626,13 +625,13 @@
       "elements"
     ],
     "explanation": "A group is a vertical column of the periodic table. Elements in a group have the same number of outer electrons and so react in similar ways.",
+    "course": "secondary-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0030",
     "type": "term",
     "subject": "Chemistry",
-    "course": "secondary-chemistry",
     "topic": "Periodic table",
     "level": 2,
     "prompt": "Period",
@@ -648,13 +647,13 @@
       "table"
     ],
     "explanation": "A period is a horizontal row of the periodic table. Across a period the atomic number rises by one each time and the elements fill the same outer shell.",
+    "course": "secondary-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0031",
     "type": "term",
     "subject": "Chemistry",
-    "course": "secondary-chemistry",
     "topic": "Periodic table",
     "level": 2,
     "prompt": "Alkali metal",
@@ -671,13 +670,13 @@
       "potassium"
     ],
     "explanation": "The alkali metals are the soft, very reactive metals in group 1. They react with water to form an alkaline solution and hydrogen.",
+    "course": "secondary-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0032",
     "type": "term",
     "subject": "Chemistry",
-    "course": "secondary-chemistry",
     "topic": "Periodic table",
     "level": 2,
     "prompt": "Halogen",
@@ -694,13 +693,13 @@
       "diatomic"
     ],
     "explanation": "The halogens are the reactive non-metals in group 7, such as fluorine and chlorine. They exist as two-atom molecules and become less reactive down the group.",
+    "course": "secondary-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0033",
     "type": "term",
     "subject": "Chemistry",
-    "course": "secondary-chemistry",
     "topic": "Periodic table",
     "level": 2,
     "prompt": "Noble gas",
@@ -718,13 +717,13 @@
       "full outer shell"
     ],
     "explanation": "The noble gases are the very unreactive elements in the last group, such as helium and argon. Their outer shells are full, so they rarely form bonds.",
+    "course": "secondary-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0034",
     "type": "term",
     "subject": "Chemistry",
-    "course": "secondary-chemistry",
     "topic": "Reactions",
     "level": 2,
     "prompt": "Displacement reaction",
@@ -740,13 +739,13 @@
       "solution"
     ],
     "explanation": "In a displacement reaction a more reactive element takes the place of a less reactive one in a compound. For example, chlorine displaces bromine from potassium bromide.",
+    "course": "secondary-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0035",
     "type": "term",
     "subject": "Chemistry",
-    "course": "secondary-chemistry",
     "topic": "Energetics",
     "level": 2,
     "prompt": "Exothermic reaction",
@@ -762,13 +761,13 @@
       "temperature rise"
     ],
     "explanation": "An exothermic reaction transfers energy to its surroundings, so the temperature rises. Burning fuels is an example.",
+    "course": "secondary-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0036",
     "type": "term",
     "subject": "Chemistry",
-    "course": "secondary-chemistry",
     "topic": "Energetics",
     "level": 2,
     "prompt": "Endothermic reaction",
@@ -784,13 +783,13 @@
       "cold"
     ],
     "explanation": "An endothermic reaction takes in energy from its surroundings, so the temperature falls. Photosynthesis is an example.",
+    "course": "secondary-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0037",
     "type": "term",
     "subject": "Chemistry",
-    "course": "secondary-chemistry",
     "topic": "Kinetics",
     "level": 2,
     "prompt": "Activation energy",
@@ -805,13 +804,13 @@
       "barrier"
     ],
     "explanation": "Activation energy is the minimum energy colliding particles need for a reaction to happen. Catalysts lower it.",
+    "course": "secondary-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0038",
     "type": "term",
     "subject": "Chemistry",
-    "course": "university-physical-chemistry",
     "topic": "Equilibria",
     "level": 3,
     "prompt": "Dynamic equilibrium",
@@ -827,13 +826,13 @@
       "reversible"
     ],
     "explanation": "A reversible reaction reaches dynamic equilibrium when the forward and reverse reactions occur at the same rate. The amounts of reactants and products then stay constant.",
+    "course": "university-physical-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0039",
     "type": "term",
     "subject": "Chemistry",
-    "course": "secondary-chemistry",
     "topic": "Acids and bases",
     "level": 2,
     "prompt": "Acid",
@@ -848,13 +847,13 @@
       "below seven"
     ],
     "explanation": "An acid is a substance that releases hydrogen ions in water, giving a pH below 7. It can donate a proton to a base.",
+    "course": "secondary-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0040",
     "type": "term",
     "subject": "Chemistry",
-    "course": "secondary-chemistry",
     "topic": "Acids and bases",
     "level": 2,
     "prompt": "Alkali",
@@ -870,13 +869,13 @@
       "neutralise"
     ],
     "explanation": "An alkali is a base that dissolves in water to give hydroxide ions, with a pH above 7. Sodium hydroxide is an example.",
+    "course": "secondary-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0041",
     "type": "term",
     "subject": "Chemistry",
-    "course": "secondary-chemistry",
     "topic": "Acids and bases",
     "level": 2,
     "prompt": "Neutralisation",
@@ -892,13 +891,13 @@
       "react"
     ],
     "explanation": "Neutralisation is the reaction of an acid with a base to form a salt and water. The pH of the mixture moves towards 7.",
+    "course": "secondary-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0042",
     "type": "term",
     "subject": "Chemistry",
-    "course": "secondary-chemistry",
     "topic": "Acids and bases",
     "level": 2,
     "prompt": "Salt",
@@ -914,13 +913,13 @@
       "neutralisation"
     ],
     "explanation": "In chemistry a salt is an ionic compound formed when the hydrogen of an acid is replaced by a metal or ammonium ion. Sodium chloride is a salt.",
+    "course": "secondary-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0043",
     "type": "term",
     "subject": "Chemistry",
-    "course": "secondary-chemistry",
     "topic": "Redox",
     "level": 2,
     "prompt": "Reduction",
@@ -935,13 +934,13 @@
       "redox"
     ],
     "explanation": "Reduction is the gain of electrons, which lowers an element's oxidation state. It happens together with oxidation.",
+    "course": "secondary-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0044",
     "type": "term",
     "subject": "Chemistry",
-    "course": "secondary-chemistry",
     "topic": "Redox",
     "level": 2,
     "prompt": "Redox reaction",
@@ -957,13 +956,13 @@
       "both"
     ],
     "explanation": "A redox reaction is one in which electrons are transferred, so one substance is oxidised and another reduced. Rusting and combustion are examples.",
+    "course": "secondary-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0045",
     "type": "term",
     "subject": "Chemistry",
-    "course": "secondary-chemistry",
     "topic": "Electrolysis",
     "level": 2,
     "prompt": "Electrode",
@@ -979,13 +978,13 @@
       "current"
     ],
     "explanation": "An electrode is a conductor through which current enters or leaves an electrolyte. Electrolysis uses two: an anode and a cathode.",
+    "course": "secondary-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0046",
     "type": "term",
     "subject": "Chemistry",
-    "course": "secondary-chemistry",
     "topic": "Electrolysis",
     "level": 2,
     "prompt": "Anode",
@@ -1000,13 +999,13 @@
       "loses"
     ],
     "explanation": "The anode is the positive electrode in electrolysis, where oxidation happens. Negative ions move towards it.",
+    "course": "secondary-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0047",
     "type": "term",
     "subject": "Chemistry",
-    "course": "secondary-chemistry",
     "topic": "Electrolysis",
     "level": 2,
     "prompt": "Cathode",
@@ -1021,13 +1020,13 @@
       "gains"
     ],
     "explanation": "The cathode is the negative electrode in electrolysis, where reduction happens. Positive ions move towards it.",
+    "course": "secondary-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0048",
     "type": "term",
     "subject": "Chemistry",
-    "course": "secondary-chemistry",
     "topic": "Organic",
     "level": 2,
     "prompt": "Fractional distillation",
@@ -1042,13 +1041,13 @@
       "fractions"
     ],
     "explanation": "Fractional distillation separates a liquid mixture into fractions by boiling point. Crude oil is separated this way in a tall column that is hotter at the bottom.",
+    "course": "secondary-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0049",
     "type": "term",
     "subject": "Chemistry",
-    "course": "secondary-chemistry",
     "topic": "Organic",
     "level": 2,
     "prompt": "Cracking",
@@ -1064,13 +1063,13 @@
       "hydrocarbons"
     ],
     "explanation": "Cracking breaks long hydrocarbon chains into shorter, more useful ones, producing alkenes as well as alkanes. It uses heat and a catalyst.",
+    "course": "secondary-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0050",
     "type": "term",
     "subject": "Chemistry",
-    "course": "secondary-chemistry",
     "topic": "Organic",
     "level": 2,
     "prompt": "Alkene",
@@ -1086,13 +1085,13 @@
       "bromine water"
     ],
     "explanation": "Alkenes are unsaturated hydrocarbons with a carbon-carbon double bond. They decolourise bromine water, which is the test for them.",
+    "course": "secondary-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0051",
     "type": "term",
     "subject": "Chemistry",
-    "course": "university-organic-chemistry",
     "topic": "Functional groups",
     "level": 3,
     "prompt": "Functional group",
@@ -1108,13 +1107,13 @@
       "molecule"
     ],
     "explanation": "A functional group is a specific group of atoms in a molecule that decides its characteristic reactions. The hydroxyl group of alcohols is an example.",
+    "course": "university-organic-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0052",
     "type": "term",
     "subject": "Chemistry",
-    "course": "university-organic-chemistry",
     "topic": "Isomerism",
     "level": 3,
     "prompt": "Isomer",
@@ -1131,13 +1130,13 @@
       "molecular"
     ],
     "explanation": "Isomers are compounds with the same molecular formula but different arrangements of atoms. They often have different physical and chemical properties.",
+    "course": "university-organic-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0053",
     "type": "term",
     "subject": "Chemistry",
-    "course": "university-organic-chemistry",
     "topic": "Reactions",
     "level": 3,
     "prompt": "Esterification",
@@ -1153,13 +1152,13 @@
       "condensation"
     ],
     "explanation": "Esterification is the reaction of an alcohol with a carboxylic acid to form an ester and water. It is reversible and usually catalysed by a strong acid.",
+    "course": "university-organic-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0054",
     "type": "question",
     "subject": "Chemistry",
-    "course": "secondary-chemistry",
     "topic": "Inorganic",
     "level": 2,
     "prompt": "What is the most abundant gas in Earth's atmosphere?",
@@ -1174,13 +1173,13 @@
       "atmosphere"
     ],
     "explanation": "Nitrogen makes up about 78% of Earth's atmosphere. Oxygen is the next most abundant at about 21%.",
+    "course": "secondary-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0055",
     "type": "question",
     "subject": "Chemistry",
-    "course": "secondary-chemistry",
     "topic": "Periodic table",
     "level": 2,
     "prompt": "What is the chemical symbol for gold?",
@@ -1194,13 +1193,13 @@
       "precious"
     ],
     "explanation": "The symbol for gold is Au, from the Latin name aurum. Gold is an unreactive metal with atomic number 79.",
+    "course": "secondary-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0056",
     "type": "question",
     "subject": "Chemistry",
-    "course": "secondary-chemistry",
     "topic": "Acids and bases",
     "level": 2,
     "prompt": "What is the pH of pure water at 25 degrees Celsius?",
@@ -1215,13 +1214,13 @@
       "water"
     ],
     "explanation": "Pure water is neutral and has a pH of 7 at 25 degrees Celsius. Acids have a lower pH and alkalis a higher one.",
+    "course": "secondary-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0057",
     "type": "question",
     "subject": "Chemistry",
-    "course": "secondary-chemistry",
     "topic": "Reactions",
     "level": 2,
     "prompt": "Which gas is produced when an acid reacts with a metal?",
@@ -1236,13 +1235,13 @@
       "flammable"
     ],
     "explanation": "Acids react with reactive metals to form a salt and hydrogen gas. Hydrogen is confirmed by a squeaky pop with a lit splint.",
+    "course": "secondary-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0058",
     "type": "question",
     "subject": "Chemistry",
-    "course": "secondary-chemistry",
     "topic": "Formulae",
     "level": 2,
     "prompt": "What is the chemical formula of water?",
@@ -1256,13 +1255,13 @@
       "drink"
     ],
     "explanation": "Water has the formula H2O: each molecule has two hydrogen atoms bonded to one oxygen atom. It is a bent, polar molecule.",
+    "course": "secondary-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0059",
     "type": "question",
     "subject": "Chemistry",
-    "course": "university-inorganic-chemistry",
     "topic": "Bonding",
     "level": 3,
     "prompt": "Which intermolecular force acts between all molecules, even non-polar ones?",
@@ -1281,13 +1280,13 @@
       "electrons"
     ],
     "explanation": "London dispersion forces arise from temporary uneven distributions of electrons that create short-lived dipoles. They exist between all molecules and grow stronger with more electrons.",
+    "course": "university-inorganic-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0060",
     "type": "term",
     "subject": "Chemistry",
-    "course": "secondary-chemistry",
     "topic": "Bonding",
     "level": 2,
     "prompt": "Allotrope",
@@ -1303,13 +1302,13 @@
       "graphite"
     ],
     "explanation": "Allotropes are different structural forms of the same element in the same physical state. Diamond and graphite are allotropes of carbon.",
+    "course": "secondary-chemistry",
     "status": "reviewed"
   },
   {
     "id": "che-0061",
     "type": "term",
     "subject": "Chemistry",
-    "course": "primary-science",
     "topic": "Materials",
     "level": 1,
     "prompt": "Absorbent",
@@ -1323,13 +1322,13 @@
       "towel"
     ],
     "explanation": "An absorbent material soaks up liquid. Paper towels and sponges are absorbent.",
+    "course": "primary-science",
     "status": "reviewed"
   },
   {
     "id": "che-0062",
     "type": "term",
     "subject": "Chemistry",
-    "course": "primary-science",
     "topic": "Materials",
     "level": 1,
     "prompt": "Transparent",
@@ -1344,13 +1343,13 @@
       "light"
     ],
     "explanation": "A transparent material lets light pass straight through, so you can see clearly through it. Glass is transparent.",
+    "course": "primary-science",
     "status": "reviewed"
   },
   {
     "id": "che-0063",
     "type": "term",
     "subject": "Chemistry",
-    "course": "primary-science",
     "topic": "Materials",
     "level": 1,
     "prompt": "Waterproof",
@@ -1365,13 +1364,13 @@
       "umbrella"
     ],
     "explanation": "A waterproof material does not let water through. Raincoats and umbrellas are made of waterproof materials.",
+    "course": "primary-science",
     "status": "reviewed"
   },
   {
     "id": "che-0064",
     "type": "term",
     "subject": "Chemistry",
-    "course": "primary-science",
     "topic": "Materials",
     "level": 1,
     "prompt": "Dissolve",
@@ -1388,13 +1387,13 @@
       "stir"
     ],
     "explanation": "Something dissolves when it mixes into a liquid so completely that you can no longer see it, like sugar stirred into tea.",
+    "course": "primary-science",
     "status": "reviewed"
   },
   {
     "id": "che-0065",
     "type": "question",
     "subject": "Chemistry",
-    "course": "primary-science",
     "topic": "Materials",
     "level": 1,
     "prompt": "What does water turn into when it freezes?",
@@ -1409,13 +1408,13 @@
       "solid"
     ],
     "explanation": "When water freezes it turns into ice, a solid. Water freezes at 0 degrees Celsius.",
+    "course": "primary-science",
     "status": "reviewed"
   },
   {
     "id": "che-0066",
     "type": "term",
     "subject": "Chemistry",
-    "course": "primary-science",
     "topic": "Materials",
     "level": 1,
     "prompt": "Recycling",
@@ -1431,13 +1430,13 @@
       "again"
     ],
     "explanation": "Recycling means turning used materials, like paper, glass and plastic, into new things instead of throwing them away.",
+    "course": "primary-science",
     "status": "reviewed"
   },
   {
     "id": "che-0067",
     "type": "term",
     "subject": "Chemistry",
-    "course": "primary-science",
     "topic": "Materials",
     "level": 1,
     "prompt": "Opaque",
@@ -1452,13 +1451,13 @@
       "dark"
     ],
     "explanation": "An opaque material does not let any light through, so you cannot see through it. Wood and metal are opaque.",
+    "course": "primary-science",
     "status": "reviewed"
   },
   {
     "id": "che-0068",
     "type": "term",
     "subject": "Chemistry",
-    "course": "primary-science",
     "topic": "Materials",
     "level": 1,
     "prompt": "Flexible",
@@ -1474,6 +1473,7 @@
       "stiff"
     ],
     "explanation": "A flexible material can bend without breaking. Rubber and fabric are flexible.",
+    "course": "primary-science",
     "status": "reviewed"
   }
 ]

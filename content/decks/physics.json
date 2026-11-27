@@ -3,7 +3,6 @@
     "id": "phy-0001",
     "type": "term",
     "subject": "Physics",
-    "course": "secondary-physics",
     "topic": "Mechanics",
     "level": 2,
     "prompt": "Velocity",
@@ -17,13 +16,13 @@
       "vector"
     ],
     "explanation": "Velocity is the rate of change of displacement with time. It is a vector, so it has both a magnitude and a direction.",
+    "course": "secondary-physics",
     "status": "reviewed"
   },
   {
     "id": "phy-0002",
     "type": "formula",
     "subject": "Physics",
-    "course": "secondary-physics",
     "topic": "Mechanics",
     "level": 2,
     "prompt": "Newton's second law",
@@ -41,13 +40,13 @@
       "newton"
     ],
     "explanation": "The resultant force on an object equals its mass multiplied by its acceleration. For a given force, a larger mass accelerates less.",
+    "course": "secondary-physics",
     "status": "reviewed"
   },
   {
     "id": "phy-0003",
     "type": "term",
     "subject": "Physics",
-    "course": "secondary-physics",
     "topic": "Energy",
     "level": 2,
     "prompt": "Kinetic energy",
@@ -62,13 +61,13 @@
       "speed"
     ],
     "explanation": "Kinetic energy is the energy an object has because of its motion. It equals one half times mass times speed squared.",
+    "course": "secondary-physics",
     "status": "reviewed"
   },
   {
     "id": "phy-0004",
     "type": "formula",
     "subject": "Physics",
-    "course": "secondary-physics",
     "topic": "Electricity",
     "level": 2,
     "prompt": "Ohm's law",
@@ -84,13 +83,13 @@
       "ohm"
     ],
     "explanation": "For an ohmic conductor at constant temperature, the potential difference across it is proportional to the current through it. The constant of proportionality is the resistance.",
+    "course": "secondary-physics",
     "status": "reviewed"
   },
   {
     "id": "phy-0005",
     "type": "term",
     "subject": "Physics",
-    "course": "university-thermodynamics",
     "topic": "Laws of thermodynamics",
     "level": 3,
     "prompt": "Entropy",
@@ -104,13 +103,13 @@
       "microstates"
     ],
     "explanation": "Entropy measures the number of microscopic arrangements that correspond to a system's overall state. The second law of thermodynamics says the total entropy of an isolated system never decreases.",
+    "course": "university-thermodynamics",
     "status": "reviewed"
   },
   {
     "id": "phy-0006",
     "type": "term",
     "subject": "Physics",
-    "course": "secondary-physics",
     "topic": "Waves",
     "level": 2,
     "prompt": "Refraction",
@@ -124,13 +123,13 @@
       "medium"
     ],
     "explanation": "Refraction is the change in direction of a wave when it passes from one medium into another. It happens because the wave's speed changes in the new medium.",
+    "course": "secondary-physics",
     "status": "reviewed"
   },
   {
     "id": "phy-0007",
     "type": "formula",
     "subject": "Physics",
-    "course": "university-modern-physics",
     "topic": "Relativity",
     "level": 3,
     "prompt": "Mass-energy equivalence",
@@ -149,13 +148,13 @@
       "speed"
     ],
     "explanation": "Mass and energy are equivalent: a mass m has a rest energy of m times the speed of light squared. This explains how nuclear reactions release energy as mass is converted.",
+    "course": "university-modern-physics",
     "status": "reviewed"
   },
   {
     "id": "phy-0008",
     "type": "term",
     "subject": "Physics",
-    "course": "secondary-physics",
     "topic": "Waves",
     "level": 2,
     "prompt": "Doppler effect",
@@ -171,13 +170,13 @@
       "wave"
     ],
     "explanation": "The Doppler effect is the change in observed frequency of a wave when the source and observer move relative to each other. Approaching sources sound higher pitched, receding ones lower.",
+    "course": "secondary-physics",
     "status": "reviewed"
   },
   {
     "id": "phy-0009",
     "type": "term",
     "subject": "Physics",
-    "course": "secondary-physics",
     "topic": "Electricity",
     "level": 2,
     "prompt": "Resistor",
@@ -191,13 +190,13 @@
       "component"
     ],
     "explanation": "A resistor is a component that opposes the flow of electric current. It is used to limit current or to divide a voltage in a circuit.",
+    "course": "secondary-physics",
     "status": "reviewed"
   },
   {
     "id": "phy-0010",
     "type": "formula",
     "subject": "Physics",
-    "course": "university-mechanics",
     "topic": "Gravitation",
     "level": 3,
     "prompt": "Newton's law of gravitation",
@@ -215,13 +214,13 @@
       "inverse"
     ],
     "explanation": "Every two masses attract each other with a force proportional to the product of their masses and inversely proportional to the square of the distance between them. G is the gravitational constant.",
+    "course": "university-mechanics",
     "status": "reviewed"
   },
   {
     "id": "phy-0011",
     "type": "question",
     "subject": "Physics",
-    "course": "secondary-physics",
     "topic": "Mechanics",
     "level": 2,
     "prompt": "What is the SI unit of force?",
@@ -236,13 +235,13 @@
       "acceleration"
     ],
     "explanation": "The SI unit of force is the newton. One newton is the force needed to give a mass of one kilogram an acceleration of one metre per second squared.",
+    "course": "secondary-physics",
     "status": "reviewed"
   },
   {
     "id": "phy-0012",
     "type": "term",
     "subject": "Physics",
-    "course": "secondary-physics",
     "topic": "Atoms",
     "level": 2,
     "prompt": "Half-life",
@@ -257,13 +256,13 @@
       "halve"
     ],
     "explanation": "The half-life is the time taken for half of the nuclei in a radioactive sample to decay. It is constant for a given isotope, whatever the sample size.",
+    "course": "secondary-physics",
     "status": "reviewed"
   },
   {
     "id": "phy-0013",
     "type": "term",
     "subject": "Physics",
-    "course": "university-modern-physics",
     "topic": "Quantum physics",
     "level": 3,
     "prompt": "Photoelectric effect",
@@ -278,13 +277,13 @@
       "frequency"
     ],
     "explanation": "The photoelectric effect is the emission of electrons from a metal surface when light above a threshold frequency shines on it. It showed that light comes in quanta, called photons.",
+    "course": "university-modern-physics",
     "status": "reviewed"
   },
   {
     "id": "phy-0014",
     "type": "term",
     "subject": "Physics",
-    "course": "secondary-physics",
     "topic": "Mechanics",
     "level": 2,
     "prompt": "Momentum",
@@ -298,13 +297,13 @@
       "impulse"
     ],
     "explanation": "Momentum is mass multiplied by velocity. In a closed system the total momentum is conserved.",
+    "course": "secondary-physics",
     "status": "reviewed"
   },
   {
     "id": "phy-0015",
     "type": "formula",
     "subject": "Physics",
-    "course": "secondary-physics",
     "topic": "Waves",
     "level": 2,
     "prompt": "Wave equation",
@@ -320,13 +319,13 @@
       "velocity"
     ],
     "explanation": "The speed of a wave equals its frequency multiplied by its wavelength. For a fixed speed, a higher frequency means a shorter wavelength.",
+    "course": "secondary-physics",
     "status": "reviewed"
   },
   {
     "id": "phy-0016",
     "type": "term",
     "subject": "Physics",
-    "course": "advanced-condensed-matter",
     "topic": "Superconductivity",
     "level": 4,
     "prompt": "Superconductor",
@@ -341,13 +340,13 @@
       "temperature"
     ],
     "explanation": "A superconductor is a material that has exactly zero electrical resistance below a critical temperature. It also expels magnetic fields from its interior.",
+    "course": "advanced-condensed-matter",
     "status": "reviewed"
   },
   {
     "id": "phy-0017",
     "type": "term",
     "subject": "Physics",
-    "course": "secondary-physics",
     "topic": "Energy",
     "level": 2,
     "prompt": "Specific heat capacity",
@@ -363,13 +362,13 @@
       "raise"
     ],
     "explanation": "Specific heat capacity is the energy needed to raise the temperature of one kilogram of a substance by one kelvin. Water has an unusually high value.",
+    "course": "secondary-physics",
     "status": "reviewed"
   },
   {
     "id": "phy-0018",
     "type": "question",
     "subject": "Physics",
-    "course": "secondary-physics",
     "topic": "Space",
     "level": 2,
     "prompt": "Roughly what is the speed of light in a vacuum, in metres per second?",
@@ -387,13 +386,13 @@
       "einstein"
     ],
     "explanation": "Light travels at about 3 x 10^8 metres per second in a vacuum, or exactly 299,792,458 m/s. Nothing with mass can reach this speed.",
+    "course": "secondary-physics",
     "status": "reviewed"
   },
   {
     "id": "phy-0019",
     "type": "term",
     "subject": "Physics",
-    "course": "university-electromagnetism",
     "topic": "Circuits",
     "level": 3,
     "prompt": "Capacitor",
@@ -408,13 +407,13 @@
       "dielectric"
     ],
     "explanation": "A capacitor stores energy in an electric field between two conducting plates separated by an insulator. Its capacitance is the charge stored per unit potential difference.",
+    "course": "university-electromagnetism",
     "status": "reviewed"
   },
   {
     "id": "phy-0020",
     "type": "term",
     "subject": "Physics",
-    "course": "university-modern-physics",
     "topic": "Astrophysics",
     "level": 3,
     "prompt": "Black hole",
@@ -428,13 +427,13 @@
       "singularity"
     ],
     "explanation": "A black hole is a region of space where gravity is so strong that nothing, not even light, can escape from inside the event horizon. They form when very massive stars collapse.",
+    "course": "university-modern-physics",
     "status": "reviewed"
   },
   {
     "id": "phy-0021",
     "type": "term",
     "subject": "Physics",
-    "course": "secondary-physics",
     "topic": "Mechanics",
     "level": 2,
     "prompt": "Acceleration",
@@ -449,13 +448,13 @@
       "faster"
     ],
     "explanation": "Acceleration is the rate of change of velocity with time. It is measured in metres per second squared.",
+    "course": "secondary-physics",
     "status": "reviewed"
   },
   {
     "id": "phy-0022",
     "type": "formula",
     "subject": "Physics",
-    "course": "secondary-physics",
     "topic": "Energy",
     "level": 2,
     "prompt": "Work done",
@@ -472,13 +471,13 @@
       "moved"
     ],
     "explanation": "Work done is the energy transferred when a force moves an object, equal to the force times the distance moved in the direction of the force. It is measured in joules.",
+    "course": "secondary-physics",
     "status": "reviewed"
   },
   {
     "id": "phy-0023",
     "type": "term",
     "subject": "Physics",
-    "course": "secondary-physics",
     "topic": "Energy",
     "level": 2,
     "prompt": "Power",
@@ -493,13 +492,13 @@
       "work"
     ],
     "explanation": "Power is the rate at which energy is transferred or work is done. It is measured in watts, where one watt is one joule per second.",
+    "course": "secondary-physics",
     "status": "reviewed"
   },
   {
     "id": "phy-0024",
     "type": "formula",
     "subject": "Physics",
-    "course": "secondary-physics",
     "topic": "Energy",
     "level": 2,
     "prompt": "Gravitational potential energy",
@@ -515,13 +514,13 @@
       "stored"
     ],
     "explanation": "Gravitational potential energy is the energy an object stores because of its height in a gravitational field. Near Earth's surface it equals mass times g times height.",
+    "course": "secondary-physics",
     "status": "reviewed"
   },
   {
     "id": "phy-0025",
     "type": "formula",
     "subject": "Physics",
-    "course": "secondary-physics",
     "topic": "Matter",
     "level": 2,
     "prompt": "Pressure",
@@ -536,13 +535,13 @@
       "per"
     ],
     "explanation": "Pressure is the force acting per unit area on a surface. It is measured in pascals, where one pascal is one newton per square metre.",
+    "course": "secondary-physics",
     "status": "reviewed"
   },
   {
     "id": "phy-0026",
     "type": "formula",
     "subject": "Physics",
-    "course": "secondary-physics",
     "topic": "Matter",
     "level": 2,
     "prompt": "Density",
@@ -557,13 +556,13 @@
       "packed"
     ],
     "explanation": "Density is the mass of a substance per unit volume. A material floats in a fluid if its density is lower than the fluid's.",
+    "course": "secondary-physics",
     "status": "reviewed"
   },
   {
     "id": "phy-0027",
     "type": "term",
     "subject": "Physics",
-    "course": "secondary-physics",
     "topic": "Waves",
     "level": 2,
     "prompt": "Frequency",
@@ -578,13 +577,13 @@
       "oscillations"
     ],
     "explanation": "Frequency is the number of complete waves or oscillations that pass a point each second. It is measured in hertz.",
+    "course": "secondary-physics",
     "status": "reviewed"
   },
   {
     "id": "phy-0028",
     "type": "term",
     "subject": "Physics",
-    "course": "secondary-physics",
     "topic": "Waves",
     "level": 2,
     "prompt": "Wavelength",
@@ -599,13 +598,13 @@
       "metres"
     ],
     "explanation": "Wavelength is the distance between two matching points on neighbouring waves, such as crest to crest. It is usually given the symbol lambda.",
+    "course": "secondary-physics",
     "status": "reviewed"
   },
   {
     "id": "phy-0029",
     "type": "term",
     "subject": "Physics",
-    "course": "secondary-physics",
     "topic": "Waves",
     "level": 2,
     "prompt": "Reflection",
@@ -620,13 +619,13 @@
       "surface"
     ],
     "explanation": "Reflection is when a wave bounces off a surface. The angle of incidence equals the angle of reflection.",
+    "course": "secondary-physics",
     "status": "reviewed"
   },
   {
     "id": "phy-0030",
     "type": "term",
     "subject": "Physics",
-    "course": "secondary-physics",
     "topic": "Waves",
     "level": 2,
     "prompt": "Total internal reflection",
@@ -642,13 +641,13 @@
       "optical fibre"
     ],
     "explanation": "Total internal reflection happens when light in a denser medium hits the boundary at more than the critical angle and is reflected entirely. It is how optical fibres carry signals.",
+    "course": "secondary-physics",
     "status": "reviewed"
   },
   {
     "id": "phy-0031",
     "type": "term",
     "subject": "Physics",
-    "course": "secondary-physics",
     "topic": "Waves",
     "level": 2,
     "prompt": "Diffraction",
@@ -663,13 +662,13 @@
       "slit"
     ],
     "explanation": "Diffraction is the spreading of waves as they pass through a gap or around an obstacle. It is most noticeable when the gap is about the size of the wavelength.",
+    "course": "secondary-physics",
     "status": "reviewed"
   },
   {
     "id": "phy-0032",
     "type": "term",
     "subject": "Physics",
-    "course": "university-electromagnetism",
     "topic": "Optics",
     "level": 3,
     "prompt": "Interference",
@@ -684,13 +683,13 @@
       "overlap"
     ],
     "explanation": "Interference occurs when two waves meet and their displacements add together. The result is a bigger wave where crests meet crests and cancellation where crests meet troughs.",
+    "course": "university-electromagnetism",
     "status": "reviewed"
   },
   {
     "id": "phy-0033",
     "type": "term",
     "subject": "Physics",
-    "course": "university-mechanics",
     "topic": "Oscillations",
     "level": 3,
     "prompt": "Standing wave",
@@ -706,13 +705,13 @@
       "fixed"
     ],
     "explanation": "A standing wave forms when two waves of the same frequency travel in opposite directions and overlap. It has fixed points of no movement, called nodes.",
+    "course": "university-mechanics",
     "status": "reviewed"
   },
   {
     "id": "phy-0034",
     "type": "term",
     "subject": "Physics",
-    "course": "university-electromagnetism",
     "topic": "Electric fields",
     "level": 3,
     "prompt": "Electric field",
@@ -726,13 +725,13 @@
       "lines"
     ],
     "explanation": "An electric field is a region where a charged object experiences a force. Its strength is the force per unit charge.",
+    "course": "university-electromagnetism",
     "status": "reviewed"
   },
   {
     "id": "phy-0035",
     "type": "term",
     "subject": "Physics",
-    "course": "secondary-physics",
     "topic": "Fields",
     "level": 2,
     "prompt": "Magnetic field",
@@ -747,13 +746,13 @@
       "compass"
     ],
     "explanation": "A magnetic field is the region around a magnet or current where magnetic materials feel a force. Field lines run from the north pole to the south pole.",
+    "course": "secondary-physics",
     "status": "reviewed"
   },
   {
     "id": "phy-0036",
     "type": "term",
     "subject": "Physics",
-    "course": "university-electromagnetism",
     "topic": "Induction",
     "level": 3,
     "prompt": "Electromagnetic induction",
@@ -769,13 +768,13 @@
       "magnet"
     ],
     "explanation": "Electromagnetic induction is the production of a voltage in a conductor when the magnetic flux through it changes. Faraday's law says the voltage is proportional to the rate of change of flux.",
+    "course": "university-electromagnetism",
     "status": "reviewed"
   },
   {
     "id": "phy-0037",
     "type": "term",
     "subject": "Physics",
-    "course": "secondary-physics",
     "topic": "Electricity",
     "level": 2,
     "prompt": "Transformer",
@@ -790,13 +789,13 @@
       "primary"
     ],
     "explanation": "A transformer changes the voltage of an alternating supply using two coils wound on an iron core. The ratio of turns on the coils sets the ratio of the voltages.",
+    "course": "secondary-physics",
     "status": "reviewed"
   },
   {
     "id": "phy-0038",
     "type": "term",
     "subject": "Physics",
-    "course": "secondary-physics",
     "topic": "Electricity",
     "level": 2,
     "prompt": "Alternating current",
@@ -811,13 +810,13 @@
       "sinusoidal"
     ],
     "explanation": "Alternating current repeatedly reverses its direction. Mains electricity is alternating current.",
+    "course": "secondary-physics",
     "status": "reviewed"
   },
   {
     "id": "phy-0039",
     "type": "term",
     "subject": "Physics",
-    "course": "secondary-physics",
     "topic": "Electricity",
     "level": 2,
     "prompt": "Series circuit",
@@ -832,13 +831,13 @@
       "path"
     ],
     "explanation": "In a series circuit the components are connected one after another in a single loop. The same current flows through every component.",
+    "course": "secondary-physics",
     "status": "reviewed"
   },
   {
     "id": "phy-0040",
     "type": "term",
     "subject": "Physics",
-    "course": "secondary-physics",
     "topic": "Electricity",
     "level": 2,
     "prompt": "Parallel circuit",
@@ -853,13 +852,13 @@
       "paths"
     ],
     "explanation": "In a parallel circuit the components are on separate branches. Each branch has the same voltage and the currents add where branches join.",
+    "course": "secondary-physics",
     "status": "reviewed"
   },
   {
     "id": "phy-0041",
     "type": "term",
     "subject": "Physics",
-    "course": "secondary-physics",
     "topic": "Mechanics",
     "level": 2,
     "prompt": "Terminal velocity",
@@ -874,13 +873,13 @@
       "weight"
     ],
     "explanation": "Terminal velocity is the constant speed a falling object reaches when the drag force equals its weight. After that, there is no resultant force and no more acceleration.",
+    "course": "secondary-physics",
     "status": "reviewed"
   },
   {
     "id": "phy-0042",
     "type": "term",
     "subject": "Physics",
-    "course": "university-mechanics",
     "topic": "Kinematics",
     "level": 3,
     "prompt": "Projectile motion",
@@ -896,13 +895,13 @@
       "horizontal"
     ],
     "explanation": "A projectile moves under gravity alone. Its horizontal velocity stays constant while its vertical velocity changes, so its path is a parabola.",
+    "course": "university-mechanics",
     "status": "reviewed"
   },
   {
     "id": "phy-0043",
     "type": "term",
     "subject": "Physics",
-    "course": "university-mechanics",
     "topic": "Circular motion",
     "level": 3,
     "prompt": "Centripetal force",
@@ -917,13 +916,13 @@
       "acceleration"
     ],
     "explanation": "Centripetal force is the resultant force that keeps an object moving in a circle, directed towards the centre. It is not a separate force but is provided by tension, gravity or friction.",
+    "course": "university-mechanics",
     "status": "reviewed"
   },
   {
     "id": "phy-0044",
     "type": "term",
     "subject": "Physics",
-    "course": "secondary-physics",
     "topic": "Mechanics",
     "level": 2,
     "prompt": "Moment",
@@ -940,13 +939,13 @@
       "rotate"
     ],
     "explanation": "The moment of a force is its turning effect about a pivot, equal to the force times the perpendicular distance from the pivot. A balanced object has equal clockwise and anticlockwise moments.",
+    "course": "secondary-physics",
     "status": "reviewed"
   },
   {
     "id": "phy-0045",
     "type": "formula",
     "subject": "Physics",
-    "course": "secondary-physics",
     "topic": "Materials",
     "level": 2,
     "prompt": "Hooke's law",
@@ -963,13 +962,13 @@
       "stretch"
     ],
     "explanation": "Hooke's law says the extension of a spring is proportional to the force applied, up to the limit of proportionality. The constant k is the spring constant.",
+    "course": "secondary-physics",
     "status": "reviewed"
   },
   {
     "id": "phy-0046",
     "type": "term",
     "subject": "Physics",
-    "course": "secondary-physics",
     "topic": "Energy",
     "level": 2,
     "prompt": "Conservation of energy",
@@ -984,13 +983,13 @@
       "total"
     ],
     "explanation": "Energy cannot be created or destroyed, only transferred from one store to another. The total energy of a closed system stays constant.",
+    "course": "secondary-physics",
     "status": "reviewed"
   },
   {
     "id": "phy-0047",
     "type": "term",
     "subject": "Physics",
-    "course": "secondary-physics",
     "topic": "Atoms",
     "level": 2,
     "prompt": "Radioactive decay",
@@ -1006,13 +1005,13 @@
       "particles"
     ],
     "explanation": "Radioactive decay is the random process by which an unstable nucleus emits radiation to become more stable. It cannot be sped up or slowed down by heating or chemical change.",
+    "course": "secondary-physics",
     "status": "reviewed"
   },
   {
     "id": "phy-0048",
     "type": "term",
     "subject": "Physics",
-    "course": "secondary-physics",
     "topic": "Atoms",
     "level": 2,
     "prompt": "Nuclear fission",
@@ -1028,13 +1027,13 @@
       "uranium"
     ],
     "explanation": "Nuclear fission is the splitting of a large nucleus into two smaller ones, releasing energy and neutrons. It is used in nuclear power stations.",
+    "course": "secondary-physics",
     "status": "reviewed"
   },
   {
     "id": "phy-0049",
     "type": "term",
     "subject": "Physics",
-    "course": "secondary-physics",
     "topic": "Atoms",
     "level": 2,
     "prompt": "Nuclear fusion",
@@ -1050,13 +1049,13 @@
       "helium"
     ],
     "explanation": "Nuclear fusion is the joining of two light nuclei to form a heavier one, releasing energy. It powers the Sun and other stars.",
+    "course": "secondary-physics",
     "status": "reviewed"
   },
   {
     "id": "phy-0050",
     "type": "term",
     "subject": "Physics",
-    "course": "secondary-physics",
     "topic": "Atoms",
     "level": 2,
     "prompt": "Alpha particle",
@@ -1073,13 +1072,13 @@
       "stopped"
     ],
     "explanation": "An alpha particle is a helium nucleus, made of two protons and two neutrons. It is strongly ionising but is stopped by a sheet of paper.",
+    "course": "secondary-physics",
     "status": "reviewed"
   },
   {
     "id": "phy-0051",
     "type": "term",
     "subject": "Physics",
-    "course": "secondary-physics",
     "topic": "Atoms",
     "level": 2,
     "prompt": "Gamma ray",
@@ -1096,13 +1095,13 @@
       "lead"
     ],
     "explanation": "Gamma rays are high-energy electromagnetic waves emitted by unstable nuclei. They are very penetrating and need thick lead or concrete to reduce them.",
+    "course": "secondary-physics",
     "status": "reviewed"
   },
   {
     "id": "phy-0052",
     "type": "term",
     "subject": "Physics",
-    "course": "secondary-physics",
     "topic": "Matter",
     "level": 2,
     "prompt": "Absolute zero",
@@ -1116,13 +1115,13 @@
       "273"
     ],
     "explanation": "Absolute zero is the lowest possible temperature, 0 kelvin or about minus 273 degrees Celsius. At this point particles have the minimum possible energy.",
+    "course": "secondary-physics",
     "status": "reviewed"
   },
   {
     "id": "phy-0053",
     "type": "term",
     "subject": "Physics",
-    "course": "university-thermodynamics",
     "topic": "Kinetic theory",
     "level": 3,
     "prompt": "Brownian motion",
@@ -1137,13 +1136,13 @@
       "molecules"
     ],
     "explanation": "Brownian motion is the random jiggling of tiny visible particles in a fluid. It is caused by collisions with fast-moving, invisible molecules and is evidence for particle theory.",
+    "course": "university-thermodynamics",
     "status": "reviewed"
   },
   {
     "id": "phy-0054",
     "type": "question",
     "subject": "Physics",
-    "course": "secondary-physics",
     "topic": "Electricity",
     "level": 2,
     "prompt": "What is the unit of electrical resistance?",
@@ -1158,13 +1157,13 @@
       "ampere"
     ],
     "explanation": "Electrical resistance is measured in ohms. One ohm is the resistance that lets one ampere flow when one volt is applied.",
+    "course": "secondary-physics",
     "status": "reviewed"
   },
   {
     "id": "phy-0055",
     "type": "question",
     "subject": "Physics",
-    "course": "secondary-physics",
     "topic": "Waves",
     "level": 2,
     "prompt": "What type of wave is sound, judged by the direction its particles vibrate?",
@@ -1180,13 +1179,13 @@
       "vibrate"
     ],
     "explanation": "Sound is a longitudinal wave: the particles vibrate backwards and forwards in the direction the wave travels. It needs a medium and cannot travel through a vacuum.",
+    "course": "secondary-physics",
     "status": "reviewed"
   },
   {
     "id": "phy-0056",
     "type": "question",
     "subject": "Physics",
-    "course": "secondary-physics",
     "topic": "Energy",
     "level": 2,
     "prompt": "What is the SI unit of energy?",
@@ -1201,13 +1200,13 @@
       "calorie"
     ],
     "explanation": "The SI unit of energy is the joule. One joule is the work done when a force of one newton moves an object one metre.",
+    "course": "secondary-physics",
     "status": "reviewed"
   },
   {
     "id": "phy-0057",
     "type": "question",
     "subject": "Physics",
-    "course": "secondary-physics",
     "topic": "Atoms",
     "level": 2,
     "prompt": "What particle carries a negative charge in an atom?",
@@ -1223,13 +1222,13 @@
       "charge"
     ],
     "explanation": "Electrons carry a negative charge and surround the nucleus of an atom. Their number equals the number of protons in a neutral atom.",
+    "course": "secondary-physics",
     "status": "reviewed"
   },
   {
     "id": "phy-0058",
     "type": "question",
     "subject": "Physics",
-    "course": "secondary-physics",
     "topic": "Waves",
     "level": 2,
     "prompt": "Which colour of visible light has the longest wavelength?",
@@ -1243,13 +1242,13 @@
       "longest"
     ],
     "explanation": "Red light has the longest wavelength of visible light, about 700 nanometres. Violet has the shortest, about 400 nanometres.",
+    "course": "secondary-physics",
     "status": "reviewed"
   },
   {
     "id": "phy-0059",
     "type": "term",
     "subject": "Physics",
-    "course": "university-modern-physics",
     "topic": "Quantum physics",
     "level": 3,
     "prompt": "Photon",
@@ -1265,13 +1264,13 @@
       "particle"
     ],
     "explanation": "A photon is a single packet of electromagnetic energy. Its energy is proportional to the frequency of the radiation.",
+    "course": "university-modern-physics",
     "status": "reviewed"
   },
   {
     "id": "phy-0060",
     "type": "term",
     "subject": "Physics",
-    "course": "university-modern-physics",
     "topic": "Quantum physics",
     "level": 3,
     "prompt": "Wave-particle duality",
@@ -1288,13 +1287,13 @@
       "quantum"
     ],
     "explanation": "Wave-particle duality is the idea that light and matter show both wave-like and particle-like behaviour. Which one appears depends on the experiment.",
+    "course": "university-modern-physics",
     "status": "reviewed"
   },
   {
     "id": "phy-0061",
     "type": "term",
     "subject": "Physics",
-    "course": "primary-science",
     "topic": "Forces",
     "level": 1,
     "prompt": "Magnet",
@@ -1310,13 +1309,13 @@
       "stick"
     ],
     "explanation": "A magnet pulls things made of iron or steel towards it. Every magnet has a north pole and a south pole.",
+    "course": "primary-science",
     "status": "reviewed"
   },
   {
     "id": "phy-0062",
     "type": "term",
     "subject": "Physics",
-    "course": "primary-science",
     "topic": "Forces",
     "level": 1,
     "prompt": "Air resistance",
@@ -1330,13 +1329,13 @@
       "falling"
     ],
     "explanation": "Air resistance is a force that slows things down as they move through air. A parachute uses lots of air resistance to fall slowly.",
+    "course": "primary-science",
     "status": "reviewed"
   },
   {
     "id": "phy-0063",
     "type": "term",
     "subject": "Physics",
-    "course": "primary-science",
     "topic": "Forces",
     "level": 1,
     "prompt": "Lever",
@@ -1351,13 +1350,13 @@
       "bar"
     ],
     "explanation": "A lever is a bar that turns on a pivot to make lifting or moving things easier. A seesaw is a lever.",
+    "course": "primary-science",
     "status": "reviewed"
   },
   {
     "id": "phy-0064",
     "type": "question",
     "subject": "Physics",
-    "course": "primary-science",
     "topic": "Forces",
     "level": 1,
     "prompt": "What do we call a push or a pull?",
@@ -1373,13 +1372,13 @@
       "newton"
     ],
     "explanation": "A push or a pull is a force. Forces can make things start moving, stop, speed up, slow down or change shape.",
+    "course": "primary-science",
     "status": "reviewed"
   },
   {
     "id": "phy-0065",
     "type": "term",
     "subject": "Physics",
-    "course": "primary-science",
     "topic": "Light and sound",
     "level": 1,
     "prompt": "Shadow",
@@ -1395,13 +1394,13 @@
       "shape"
     ],
     "explanation": "A shadow forms when an object blocks light. It is a dark area the same shape as the object.",
+    "course": "primary-science",
     "status": "reviewed"
   },
   {
     "id": "phy-0066",
     "type": "term",
     "subject": "Physics",
-    "course": "primary-science",
     "topic": "Light and sound",
     "level": 1,
     "prompt": "Mirror",
@@ -1416,13 +1415,13 @@
       "face"
     ],
     "explanation": "A mirror is a very smooth, shiny surface that reflects light, so you can see an image of yourself in it.",
+    "course": "primary-science",
     "status": "reviewed"
   },
   {
     "id": "phy-0067",
     "type": "term",
     "subject": "Physics",
-    "course": "primary-science",
     "topic": "Light and sound",
     "level": 1,
     "prompt": "Vibration",
@@ -1438,13 +1437,13 @@
       "move"
     ],
     "explanation": "A vibration is a quick back-and-forth movement. All sounds are made by something vibrating, like a guitar string.",
+    "course": "primary-science",
     "status": "reviewed"
   },
   {
     "id": "phy-0068",
     "type": "term",
     "subject": "Physics",
-    "course": "primary-science",
     "topic": "Light and sound",
     "level": 1,
     "prompt": "Pitch",
@@ -1459,13 +1458,13 @@
       "squeak"
     ],
     "explanation": "Pitch is how high or low a sound is. A whistle has a high pitch and a big drum has a low pitch.",
+    "course": "primary-science",
     "status": "reviewed"
   },
   {
     "id": "phy-0069",
     "type": "term",
     "subject": "Physics",
-    "course": "primary-science",
     "topic": "Light and sound",
     "level": 1,
     "prompt": "Loudness",
@@ -1480,13 +1479,13 @@
       "noise"
     ],
     "explanation": "Loudness, or volume, is how strong a sound is. Bigger vibrations make louder sounds.",
+    "course": "primary-science",
     "status": "reviewed"
   },
   {
     "id": "phy-0070",
     "type": "term",
     "subject": "Physics",
-    "course": "primary-science",
     "topic": "Electricity",
     "level": 1,
     "prompt": "Battery",
@@ -1501,13 +1500,13 @@
       "charge"
     ],
     "explanation": "A battery stores energy and pushes electricity around a circuit. Torches and remote controls use batteries.",
+    "course": "primary-science",
     "status": "reviewed"
   },
   {
     "id": "phy-0071",
     "type": "term",
     "subject": "Physics",
-    "course": "primary-science",
     "topic": "Electricity",
     "level": 1,
     "prompt": "Switch",
@@ -1522,13 +1521,13 @@
       "light"
     ],
     "explanation": "A switch opens or closes a gap in a circuit. When it is closed, electricity flows and the bulb lights up.",
+    "course": "primary-science",
     "status": "reviewed"
   },
   {
     "id": "phy-0072",
     "type": "term",
     "subject": "Physics",
-    "course": "primary-science",
     "topic": "Electricity",
     "level": 1,
     "prompt": "Electric circuit",
@@ -1545,13 +1544,13 @@
       "complete"
     ],
     "explanation": "An electric circuit is a complete loop that electricity can flow around, from a battery, through wires and a bulb, and back.",
+    "course": "primary-science",
     "status": "reviewed"
   },
   {
     "id": "phy-0073",
     "type": "question",
     "subject": "Physics",
-    "course": "primary-science",
     "topic": "Electricity",
     "level": 1,
     "prompt": "Which part of a simple circuit gives out light?",
@@ -1567,13 +1566,13 @@
       "glass"
     ],
     "explanation": "The bulb gives out light when electricity flows through it. If the circuit is broken, the bulb goes out.",
+    "course": "primary-science",
     "status": "reviewed"
   },
   {
     "id": "phy-0074",
     "type": "term",
     "subject": "Physics",
-    "course": "primary-science",
     "topic": "Electricity",
     "level": 1,
     "prompt": "Wire",
@@ -1588,13 +1587,13 @@
       "cable"
     ],
     "explanation": "A wire is a thin strand of metal, usually copper, that carries electricity from one part of a circuit to another.",
+    "course": "primary-science",
     "status": "reviewed"
   },
   {
     "id": "phy-0075",
     "type": "term",
     "subject": "Physics",
-    "course": "primary-science",
     "topic": "Earth and space",
     "level": 1,
     "prompt": "Planet",
@@ -1610,13 +1609,13 @@
       "space"
     ],
     "explanation": "A planet is a large, round object that travels around a star. Earth is one of eight planets that orbit the Sun.",
+    "course": "primary-science",
     "status": "reviewed"
   },
   {
     "id": "phy-0076",
     "type": "term",
     "subject": "Physics",
-    "course": "primary-science",
     "topic": "Earth and space",
     "level": 1,
     "prompt": "Moon",
@@ -1632,13 +1631,13 @@
       "full"
     ],
     "explanation": "The Moon travels around the Earth about once a month. It does not make its own light: it reflects light from the Sun.",
+    "course": "primary-science",
     "status": "reviewed"
   },
   {
     "id": "phy-0077",
     "type": "question",
     "subject": "Physics",
-    "course": "primary-science",
     "topic": "Earth and space",
     "level": 1,
     "prompt": "Which star is closest to Earth?",
@@ -1654,13 +1653,13 @@
       "sky"
     ],
     "explanation": "The closest star to Earth is the Sun. It gives us light and heat.",
+    "course": "primary-science",
     "status": "reviewed"
   },
   {
     "id": "phy-0078",
     "type": "term",
     "subject": "Physics",
-    "course": "primary-science",
     "topic": "Earth and space",
     "level": 1,
     "prompt": "Volcano",
@@ -1676,13 +1675,13 @@
       "magma"
     ],
     "explanation": "A volcano is an opening in the Earth's surface where hot melted rock, called lava, can burst out.",
+    "course": "primary-science",
     "status": "reviewed"
   },
   {
     "id": "phy-0079",
     "type": "term",
     "subject": "Physics",
-    "course": "primary-science",
     "topic": "Earth and space",
     "level": 1,
     "prompt": "Day and night",
@@ -1697,6 +1696,7 @@
       "earth"
     ],
     "explanation": "We have day and night because the Earth spins. The side facing the Sun has day, and the side facing away has night.",
+    "course": "primary-science",
     "status": "reviewed"
   }
 ]

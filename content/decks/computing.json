@@ -3,7 +3,6 @@
     "id": "com-0001",
     "type": "term",
     "subject": "Computing",
-    "course": "secondary-computer-science",
     "topic": "Fundamentals",
     "level": 2,
     "prompt": "Algorithm",
@@ -18,13 +17,13 @@
       "problem"
     ],
     "explanation": "An algorithm is a finite, ordered set of steps for solving a problem or completing a task. A computer program implements an algorithm in a programming language.",
+    "course": "secondary-computer-science",
     "status": "reviewed"
   },
   {
     "id": "com-0002",
     "type": "term",
     "subject": "Computing",
-    "course": "secondary-computer-science",
     "topic": "Data representation",
     "level": 2,
     "prompt": "Binary",
@@ -40,13 +39,13 @@
       "base"
     ],
     "explanation": "Binary is a number system that uses only the digits 0 and 1. Computers use it because electronic circuits easily represent two states.",
+    "course": "secondary-computer-science",
     "status": "reviewed"
   },
   {
     "id": "com-0003",
     "type": "term",
     "subject": "Computing",
-    "course": "secondary-computer-science",
     "topic": "Programming",
     "level": 2,
     "prompt": "Variable",
@@ -61,13 +60,13 @@
       "memory"
     ],
     "explanation": "A variable is a named location in memory that holds a value which can change while a program runs. Each variable usually has a data type.",
+    "course": "secondary-computer-science",
     "status": "reviewed"
   },
   {
     "id": "com-0004",
     "type": "term",
     "subject": "Computing",
-    "course": "university-algorithms",
     "topic": "Recursion",
     "level": 3,
     "prompt": "Recursion",
@@ -82,13 +81,13 @@
       "repeat"
     ],
     "explanation": "Recursion is when a function solves a problem by calling itself on smaller versions of the problem. It needs a base case to stop.",
+    "course": "university-algorithms",
     "status": "reviewed"
   },
   {
     "id": "com-0005",
     "type": "term",
     "subject": "Computing",
-    "course": "university-algorithms",
     "topic": "Complexity",
     "level": 3,
     "prompt": "Big O notation",
@@ -105,13 +104,13 @@
       "algorithm"
     ],
     "explanation": "Big O notation describes how an algorithm's running time or memory use grows as the input size grows. It ignores constant factors and focuses on the dominant term.",
+    "course": "university-algorithms",
     "status": "reviewed"
   },
   {
     "id": "com-0006",
     "type": "term",
     "subject": "Computing",
-    "course": "university-programming",
     "topic": "Languages and compilers",
     "level": 3,
     "prompt": "Compiler",
@@ -126,13 +125,13 @@
       "convert"
     ],
     "explanation": "A compiler translates the whole of a program written in a high-level language into machine code before it is run. The resulting executable runs without the compiler.",
+    "course": "university-programming",
     "status": "reviewed"
   },
   {
     "id": "com-0007",
     "type": "term",
     "subject": "Computing",
-    "course": "university-algorithms",
     "topic": "Data structures",
     "level": 3,
     "prompt": "Hash table",
@@ -148,13 +147,13 @@
       "bucket"
     ],
     "explanation": "A hash table stores key-value pairs and uses a hash function to decide where each pair is placed. This gives lookups in constant time on average.",
+    "course": "university-algorithms",
     "status": "reviewed"
   },
   {
     "id": "com-0008",
     "type": "term",
     "subject": "Computing",
-    "course": "university-programming",
     "topic": "Software engineering",
     "level": 3,
     "prompt": "API",
@@ -170,13 +169,13 @@
       "programming"
     ],
     "explanation": "An API is a defined set of rules that lets one piece of software ask another for data or actions. Web APIs usually respond to HTTP requests.",
+    "course": "university-programming",
     "status": "reviewed"
   },
   {
     "id": "com-0009",
     "type": "term",
     "subject": "Computing",
-    "course": "secondary-computer-science",
     "topic": "Programming",
     "level": 2,
     "prompt": "Boolean",
@@ -192,13 +191,13 @@
       "two"
     ],
     "explanation": "A Boolean is a data type with only two possible values, true or false. Conditions in if statements and loops evaluate to Booleans.",
+    "course": "secondary-computer-science",
     "status": "reviewed"
   },
   {
     "id": "com-0010",
     "type": "term",
     "subject": "Computing",
-    "course": "secondary-computer-science",
     "topic": "Data structures",
     "level": 2,
     "prompt": "Stack",
@@ -213,13 +212,13 @@
       "plates"
     ],
     "explanation": "A stack is a data structure where the last item added is the first one removed. Items are added with push and removed with pop.",
+    "course": "secondary-computer-science",
     "status": "reviewed"
   },
   {
     "id": "com-0011",
     "type": "term",
     "subject": "Computing",
-    "course": "secondary-computer-science",
     "topic": "Data structures",
     "level": 2,
     "prompt": "Queue",
@@ -234,13 +233,13 @@
       "front"
     ],
     "explanation": "A queue is a data structure where the first item added is the first one removed. It models a waiting line.",
+    "course": "secondary-computer-science",
     "status": "reviewed"
   },
   {
     "id": "com-0012",
     "type": "question",
     "subject": "Computing",
-    "course": "secondary-computer-science",
     "topic": "Hardware",
     "level": 2,
     "prompt": "What does CPU stand for?",
@@ -254,13 +253,13 @@
       "computer"
     ],
     "explanation": "CPU stands for central processing unit. It fetches, decodes and executes the instructions of a program.",
+    "course": "secondary-computer-science",
     "status": "reviewed"
   },
   {
     "id": "com-0013",
     "type": "term",
     "subject": "Computing",
-    "course": "university-programming",
     "topic": "Programming concepts",
     "level": 3,
     "prompt": "Pointer",
@@ -275,13 +274,13 @@
       "dereference"
     ],
     "explanation": "A pointer is a variable whose value is the memory address of another value. Languages such as C use pointers for direct memory access.",
+    "course": "university-programming",
     "status": "reviewed"
   },
   {
     "id": "com-0014",
     "type": "term",
     "subject": "Computing",
-    "course": "secondary-computer-science",
     "topic": "Security",
     "level": 2,
     "prompt": "Encryption",
@@ -297,13 +296,13 @@
       "scramble"
     ],
     "explanation": "Encryption transforms readable data into unreadable ciphertext using an algorithm and a key. Only someone with the correct key can turn it back into the original.",
+    "course": "secondary-computer-science",
     "status": "reviewed"
   },
   {
     "id": "com-0015",
     "type": "term",
     "subject": "Computing",
-    "course": "secondary-computer-science",
     "topic": "Data",
     "level": 2,
     "prompt": "Database",
@@ -318,13 +317,13 @@
       "records"
     ],
     "explanation": "A database is an organised collection of data that can be searched and updated. Relational databases store data in linked tables.",
+    "course": "secondary-computer-science",
     "status": "reviewed"
   },
   {
     "id": "com-0016",
     "type": "term",
     "subject": "Computing",
-    "course": "university-programming",
     "topic": "Object-oriented programming",
     "level": 3,
     "prompt": "Object-oriented programming",
@@ -340,13 +339,13 @@
       "encapsulation"
     ],
     "explanation": "Object-oriented programming organises code into objects that combine data and the methods that act on it. Its core ideas include encapsulation, inheritance and polymorphism.",
+    "course": "university-programming",
     "status": "reviewed"
   },
   {
     "id": "com-0017",
     "type": "term",
     "subject": "Computing",
-    "course": "university-ai",
     "topic": "Machine learning",
     "level": 3,
     "prompt": "Machine learning",
@@ -362,13 +361,13 @@
       "patterns"
     ],
     "explanation": "Machine learning is a way of building programs that improve at a task by learning patterns from data rather than following hand-written rules. The result is a trained model.",
+    "course": "university-ai",
     "status": "reviewed"
   },
   {
     "id": "com-0018",
     "type": "term",
     "subject": "Computing",
-    "course": "secondary-computer-science",
     "topic": "Networks",
     "level": 2,
     "prompt": "IP address",
@@ -383,13 +382,13 @@
       "device"
     ],
     "explanation": "An IP address is a numerical label that identifies a device on a network and lets data be routed to it. IPv4 addresses have four numbers from 0 to 255.",
+    "course": "secondary-computer-science",
     "status": "reviewed"
   },
   {
     "id": "com-0019",
     "type": "question",
     "subject": "Computing",
-    "course": "secondary-computer-science",
     "topic": "Algorithms",
     "level": 2,
     "prompt": "Which sorting algorithm repeatedly swaps adjacent elements that are out of order?",
@@ -404,13 +403,13 @@
       "repeatedly"
     ],
     "explanation": "Bubble sort repeatedly steps through a list and swaps neighbouring items that are in the wrong order. It is simple but slow, with O(n^2) time in the worst case.",
+    "course": "secondary-computer-science",
     "status": "reviewed"
   },
   {
     "id": "com-0020",
     "type": "term",
     "subject": "Computing",
-    "course": "secondary-computer-science",
     "topic": "Software",
     "level": 2,
     "prompt": "Operating system",
@@ -426,13 +425,13 @@
       "manage"
     ],
     "explanation": "An operating system is the software that manages a computer's hardware and provides services for other programs. Windows, macOS and Linux are examples.",
+    "course": "secondary-computer-science",
     "status": "reviewed"
   },
   {
     "id": "com-0021",
     "type": "term",
     "subject": "Computing",
-    "course": "secondary-computer-science",
     "topic": "Programming",
     "level": 2,
     "prompt": "Loop",
@@ -448,13 +447,13 @@
       "code"
     ],
     "explanation": "A loop repeats a block of code until a condition changes or a set number of repeats is done. For and while loops are common types.",
+    "course": "secondary-computer-science",
     "status": "reviewed"
   },
   {
     "id": "com-0022",
     "type": "term",
     "subject": "Computing",
-    "course": "secondary-computer-science",
     "topic": "Programming",
     "level": 2,
     "prompt": "If statement",
@@ -471,13 +470,13 @@
       "decision"
     ],
     "explanation": "An if statement runs a block of code only when a condition is true. It lets a program make decisions.",
+    "course": "secondary-computer-science",
     "status": "reviewed"
   },
   {
     "id": "com-0023",
     "type": "term",
     "subject": "Computing",
-    "course": "secondary-computer-science",
     "topic": "Programming",
     "level": 2,
     "prompt": "Subroutine",
@@ -494,13 +493,13 @@
       "code"
     ],
     "explanation": "A subroutine is a named block of code that does a specific job and can be called from elsewhere. Using subroutines avoids repeating code.",
+    "course": "secondary-computer-science",
     "status": "reviewed"
   },
   {
     "id": "com-0024",
     "type": "term",
     "subject": "Computing",
-    "course": "secondary-computer-science",
     "topic": "Data structures",
     "level": 2,
     "prompt": "Array",
@@ -516,13 +515,13 @@
       "items"
     ],
     "explanation": "An array is a collection of items stored in order and accessed by an index number. All items usually have the same data type.",
+    "course": "secondary-computer-science",
     "status": "reviewed"
   },
   {
     "id": "com-0025",
     "type": "term",
     "subject": "Computing",
-    "course": "secondary-computer-science",
     "topic": "Data types",
     "level": 2,
     "prompt": "String",
@@ -538,13 +537,13 @@
       "words"
     ],
     "explanation": "A string is a data type for text: a sequence of characters. It is usually written inside quotation marks.",
+    "course": "secondary-computer-science",
     "status": "reviewed"
   },
   {
     "id": "com-0026",
     "type": "term",
     "subject": "Computing",
-    "course": "secondary-computer-science",
     "topic": "Data types",
     "level": 2,
     "prompt": "Integer",
@@ -560,13 +559,13 @@
       "positive"
     ],
     "explanation": "An integer is a data type for whole numbers with no fractional part. It can be positive, negative or zero.",
+    "course": "secondary-computer-science",
     "status": "reviewed"
   },
   {
     "id": "com-0027",
     "type": "term",
     "subject": "Computing",
-    "course": "secondary-computer-science",
     "topic": "Data types",
     "level": 2,
     "prompt": "Floating point number",
@@ -583,13 +582,13 @@
       "point"
     ],
     "explanation": "A float is a data type for numbers with a fractional part, stored in a form of scientific notation. Calculations with floats can have small rounding errors.",
+    "course": "secondary-computer-science",
     "status": "reviewed"
   },
   {
     "id": "com-0028",
     "type": "term",
     "subject": "Computing",
-    "course": "secondary-computer-science",
     "topic": "Debugging",
     "level": 2,
     "prompt": "Syntax error",
@@ -604,13 +603,13 @@
       "compile"
     ],
     "explanation": "A syntax error is a mistake that breaks the grammar rules of a programming language. The program cannot run until it is fixed.",
+    "course": "secondary-computer-science",
     "status": "reviewed"
   },
   {
     "id": "com-0029",
     "type": "term",
     "subject": "Computing",
-    "course": "secondary-computer-science",
     "topic": "Debugging",
     "level": 2,
     "prompt": "Debugging",
@@ -626,13 +625,13 @@
       "code"
     ],
     "explanation": "Debugging is the process of finding and fixing errors in a program. Tools such as breakpoints and print statements help.",
+    "course": "secondary-computer-science",
     "status": "reviewed"
   },
   {
     "id": "com-0030",
     "type": "term",
     "subject": "Computing",
-    "course": "secondary-computer-science",
     "topic": "Software",
     "level": 2,
     "prompt": "Interpreter",
@@ -647,13 +646,13 @@
       "compiler"
     ],
     "explanation": "An interpreter translates and runs a program one statement at a time instead of producing a separate executable. Python is commonly run this way.",
+    "course": "secondary-computer-science",
     "status": "reviewed"
   },
   {
     "id": "com-0031",
     "type": "term",
     "subject": "Computing",
-    "course": "secondary-computer-science",
     "topic": "Programming",
     "level": 2,
     "prompt": "Variable scope",
@@ -669,13 +668,13 @@
       "visible"
     ],
     "explanation": "Scope is the part of a program where a variable can be used. A variable declared inside a function is usually only visible there.",
+    "course": "secondary-computer-science",
     "status": "reviewed"
   },
   {
     "id": "com-0032",
     "type": "term",
     "subject": "Computing",
-    "course": "secondary-computer-science",
     "topic": "Programming",
     "level": 2,
     "prompt": "Global variable",
@@ -691,13 +690,13 @@
       "accessible"
     ],
     "explanation": "A global variable is declared outside any function and can be used throughout the program. Overusing them can make code harder to understand.",
+    "course": "secondary-computer-science",
     "status": "reviewed"
   },
   {
     "id": "com-0033",
     "type": "term",
     "subject": "Computing",
-    "course": "secondary-computer-science",
     "topic": "Programming",
     "level": 2,
     "prompt": "Parameter",
@@ -714,13 +713,13 @@
       "call"
     ],
     "explanation": "A parameter is a value passed into a subroutine when it is called. It lets one subroutine work with different data.",
+    "course": "secondary-computer-science",
     "status": "reviewed"
   },
   {
     "id": "com-0034",
     "type": "term",
     "subject": "Computing",
-    "course": "university-algorithms",
     "topic": "Data structures",
     "level": 3,
     "prompt": "Linked list",
@@ -735,13 +734,13 @@
       "elements"
     ],
     "explanation": "A linked list is a sequence of nodes, each holding a value and a reference to the next node. Items can be inserted without shifting the others.",
+    "course": "university-algorithms",
     "status": "reviewed"
   },
   {
     "id": "com-0035",
     "type": "term",
     "subject": "Computing",
-    "course": "secondary-computer-science",
     "topic": "Algorithms",
     "level": 2,
     "prompt": "Binary search",
@@ -756,13 +755,13 @@
       "list"
     ],
     "explanation": "Binary search finds an item in a sorted list by repeatedly comparing with the middle item and discarding half the list. It takes about log n steps.",
+    "course": "secondary-computer-science",
     "status": "reviewed"
   },
   {
     "id": "com-0036",
     "type": "term",
     "subject": "Computing",
-    "course": "secondary-computer-science",
     "topic": "Algorithms",
     "level": 2,
     "prompt": "Linear search",
@@ -778,13 +777,13 @@
       "start"
     ],
     "explanation": "A linear search checks each item in a list in turn until it finds the target or reaches the end. It works on unsorted lists but is slow for large ones.",
+    "course": "secondary-computer-science",
     "status": "reviewed"
   },
   {
     "id": "com-0037",
     "type": "term",
     "subject": "Computing",
-    "course": "secondary-computer-science",
     "topic": "Algorithms",
     "level": 2,
     "prompt": "Merge sort",
@@ -800,13 +799,13 @@
       "recursion"
     ],
     "explanation": "Merge sort splits a list in half repeatedly, sorts the pieces and merges them back together in order. It takes about n log n steps.",
+    "course": "secondary-computer-science",
     "status": "reviewed"
   },
   {
     "id": "com-0038",
     "type": "term",
     "subject": "Computing",
-    "course": "university-algorithms",
     "topic": "Graphs and trees",
     "level": 3,
     "prompt": "Tree",
@@ -822,13 +821,13 @@
       "hierarchy"
     ],
     "explanation": "A tree is a hierarchical data structure of nodes with a single root and branches to child nodes. Each node has one parent except the root.",
+    "course": "university-algorithms",
     "status": "reviewed"
   },
   {
     "id": "com-0039",
     "type": "term",
     "subject": "Computing",
-    "course": "university-algorithms",
     "topic": "Graphs and trees",
     "level": 3,
     "prompt": "Graph",
@@ -844,13 +843,13 @@
       "network"
     ],
     "explanation": "A graph is a data structure of nodes joined by edges. It models networks such as roads, friendships or the internet.",
+    "course": "university-algorithms",
     "status": "reviewed"
   },
   {
     "id": "com-0040",
     "type": "term",
     "subject": "Computing",
-    "course": "secondary-computer-science",
     "topic": "Computational thinking",
     "level": 2,
     "prompt": "Abstraction",
@@ -865,13 +864,13 @@
       "essential"
     ],
     "explanation": "Abstraction means hiding unnecessary detail and keeping only what matters to solve a problem. A map is an abstraction of a landscape.",
+    "course": "secondary-computer-science",
     "status": "reviewed"
   },
   {
     "id": "com-0041",
     "type": "term",
     "subject": "Computing",
-    "course": "secondary-computer-science",
     "topic": "Computational thinking",
     "level": 2,
     "prompt": "Decomposition",
@@ -886,13 +885,13 @@
       "manageable"
     ],
     "explanation": "Decomposition is breaking a large problem into smaller, easier parts that can be solved separately. It makes complex programs manageable.",
+    "course": "secondary-computer-science",
     "status": "reviewed"
   },
   {
     "id": "com-0042",
     "type": "term",
     "subject": "Computing",
-    "course": "secondary-computer-science",
     "topic": "Algorithms",
     "level": 2,
     "prompt": "Pseudocode",
@@ -907,13 +906,13 @@
       "structure"
     ],
     "explanation": "Pseudocode is a way of writing an algorithm in structured, plain language that is not tied to any programming language. It is used to plan code.",
+    "course": "secondary-computer-science",
     "status": "reviewed"
   },
   {
     "id": "com-0043",
     "type": "term",
     "subject": "Computing",
-    "course": "secondary-computer-science",
     "topic": "Algorithms",
     "level": 2,
     "prompt": "Flowchart",
@@ -929,13 +928,13 @@
       "boxes"
     ],
     "explanation": "A flowchart is a diagram that shows the steps of an algorithm using standard symbols joined by arrows. Diamonds show decisions.",
+    "course": "secondary-computer-science",
     "status": "reviewed"
   },
   {
     "id": "com-0044",
     "type": "term",
     "subject": "Computing",
-    "course": "secondary-computer-science",
     "topic": "Logic",
     "level": 2,
     "prompt": "Truth table",
@@ -950,13 +949,13 @@
       "true"
     ],
     "explanation": "A truth table lists every possible combination of inputs to a logic expression and the resulting output. It fully describes how a logic gate behaves.",
+    "course": "secondary-computer-science",
     "status": "reviewed"
   },
   {
     "id": "com-0045",
     "type": "term",
     "subject": "Computing",
-    "course": "secondary-computer-science",
     "topic": "Logic",
     "level": 2,
     "prompt": "AND gate",
@@ -971,13 +970,13 @@
       "output"
     ],
     "explanation": "An AND gate outputs true only when both of its inputs are true. Otherwise its output is false.",
+    "course": "secondary-computer-science",
     "status": "reviewed"
   },
   {
     "id": "com-0046",
     "type": "term",
     "subject": "Computing",
-    "course": "secondary-computer-science",
     "topic": "Logic",
     "level": 2,
     "prompt": "NOT gate",
@@ -993,13 +992,13 @@
       "output"
     ],
     "explanation": "A NOT gate has one input and outputs the opposite value. True becomes false and false becomes true.",
+    "course": "secondary-computer-science",
     "status": "reviewed"
   },
   {
     "id": "com-0047",
     "type": "term",
     "subject": "Computing",
-    "course": "secondary-computer-science",
     "topic": "Data representation",
     "level": 2,
     "prompt": "Bit",
@@ -1015,13 +1014,13 @@
       "one"
     ],
     "explanation": "A bit is a single binary digit, either 0 or 1. It is the smallest unit of data in a computer.",
+    "course": "secondary-computer-science",
     "status": "reviewed"
   },
   {
     "id": "com-0048",
     "type": "term",
     "subject": "Computing",
-    "course": "secondary-computer-science",
     "topic": "Data representation",
     "level": 2,
     "prompt": "Byte",
@@ -1037,13 +1036,13 @@
       "memory"
     ],
     "explanation": "A byte is a group of eight bits. It is the standard unit for measuring storage and can represent 256 different values.",
+    "course": "secondary-computer-science",
     "status": "reviewed"
   },
   {
     "id": "com-0049",
     "type": "term",
     "subject": "Computing",
-    "course": "secondary-computer-science",
     "topic": "Data representation",
     "level": 2,
     "prompt": "Hexadecimal",
@@ -1059,13 +1058,13 @@
       "base"
     ],
     "explanation": "Hexadecimal is a number system with 16 digits, 0 to 9 and A to F. It is a compact way of writing binary values.",
+    "course": "secondary-computer-science",
     "status": "reviewed"
   },
   {
     "id": "com-0050",
     "type": "term",
     "subject": "Computing",
-    "course": "secondary-computer-science",
     "topic": "Data representation",
     "level": 2,
     "prompt": "ASCII",
@@ -1080,13 +1079,13 @@
       "numbers"
     ],
     "explanation": "ASCII is a character encoding that gives each letter, digit and symbol a number. The original version uses 7 bits to represent 128 characters.",
+    "course": "secondary-computer-science",
     "status": "reviewed"
   },
   {
     "id": "com-0051",
     "type": "term",
     "subject": "Computing",
-    "course": "secondary-computer-science",
     "topic": "Data representation",
     "level": 2,
     "prompt": "Pixel",
@@ -1102,13 +1101,13 @@
       "resolution"
     ],
     "explanation": "A pixel is the smallest single point of a digital image or screen. Many pixels together form the picture.",
+    "course": "secondary-computer-science",
     "status": "reviewed"
   },
   {
     "id": "com-0052",
     "type": "term",
     "subject": "Computing",
-    "course": "secondary-computer-science",
     "topic": "Hardware",
     "level": 2,
     "prompt": "RAM",
@@ -1124,13 +1123,13 @@
       "computer"
     ],
     "explanation": "RAM is the computer's fast, temporary working memory. It holds the programs and data in use and is cleared when power is switched off.",
+    "course": "secondary-computer-science",
     "status": "reviewed"
   },
   {
     "id": "com-0053",
     "type": "term",
     "subject": "Computing",
-    "course": "university-systems",
     "topic": "Hardware",
     "level": 3,
     "prompt": "Cache",
@@ -1145,13 +1144,13 @@
       "copy"
     ],
     "explanation": "A cache is a small, very fast store that keeps copies of frequently used data. It reduces the time spent fetching data from slower memory.",
+    "course": "university-systems",
     "status": "reviewed"
   },
   {
     "id": "com-0054",
     "type": "term",
     "subject": "Computing",
-    "course": "secondary-computer-science",
     "topic": "Networks",
     "level": 2,
     "prompt": "Router",
@@ -1166,13 +1165,13 @@
       "directs"
     ],
     "explanation": "A router forwards data packets between networks, such as from a home network to the internet. It decides the best route for each packet.",
+    "course": "secondary-computer-science",
     "status": "reviewed"
   },
   {
     "id": "com-0055",
     "type": "term",
     "subject": "Computing",
-    "course": "secondary-computer-science",
     "topic": "Security",
     "level": 2,
     "prompt": "Firewall",
@@ -1187,13 +1186,13 @@
       "filter"
     ],
     "explanation": "A firewall monitors network traffic and blocks anything that breaks its security rules. It protects a computer or network from unauthorised access.",
+    "course": "secondary-computer-science",
     "status": "reviewed"
   },
   {
     "id": "com-0056",
     "type": "term",
     "subject": "Computing",
-    "course": "secondary-computer-science",
     "topic": "Security",
     "level": 2,
     "prompt": "Phishing",
@@ -1208,13 +1207,13 @@
       "trick"
     ],
     "explanation": "Phishing is sending fake messages that pretend to be from a trusted source to trick people into giving away passwords or other private information.",
+    "course": "secondary-computer-science",
     "status": "reviewed"
   },
   {
     "id": "com-0057",
     "type": "term",
     "subject": "Computing",
-    "course": "secondary-computer-science",
     "topic": "Security",
     "level": 2,
     "prompt": "Malware",
@@ -1229,13 +1228,13 @@
       "computer"
     ],
     "explanation": "Malware is software designed to damage a computer or steal information. Viruses, worms and ransomware are all types of malware.",
+    "course": "secondary-computer-science",
     "status": "reviewed"
   },
   {
     "id": "com-0058",
     "type": "term",
     "subject": "Computing",
-    "course": "university-programming",
     "topic": "Software engineering",
     "level": 3,
     "prompt": "Version control",
@@ -1251,13 +1250,13 @@
       "repository"
     ],
     "explanation": "Version control is a system that records changes to files over time so earlier versions can be recovered. It also lets many people work on the same code.",
+    "course": "university-programming",
     "status": "reviewed"
   },
   {
     "id": "com-0059",
     "type": "term",
     "subject": "Computing",
-    "course": "secondary-computer-science",
     "topic": "Networks",
     "level": 2,
     "prompt": "HTTP",
@@ -1273,13 +1272,13 @@
       "server"
     ],
     "explanation": "HTTP is the protocol browsers and servers use to exchange web pages and data. A browser sends a request and the server sends back a response.",
+    "course": "secondary-computer-science",
     "status": "reviewed"
   },
   {
     "id": "com-0060",
     "type": "question",
     "subject": "Computing",
-    "course": "secondary-computer-science",
     "topic": "Networks",
     "level": 2,
     "prompt": "What does URL stand for?",
@@ -1293,13 +1292,13 @@
       "browser"
     ],
     "explanation": "URL stands for uniform resource locator. It is the address that identifies a resource on the web.",
+    "course": "secondary-computer-science",
     "status": "reviewed"
   },
   {
     "id": "com-0061",
     "type": "term",
     "subject": "Computing",
-    "course": "primary-computing",
     "topic": "Using computers",
     "level": 1,
     "prompt": "Keyboard",
@@ -1313,13 +1312,13 @@
       "computer"
     ],
     "explanation": "A keyboard is used to type letters, numbers and commands into a computer.",
+    "course": "primary-computing",
     "status": "reviewed"
   },
   {
     "id": "com-0062",
     "type": "term",
     "subject": "Computing",
-    "course": "primary-computing",
     "topic": "Using computers",
     "level": 1,
     "prompt": "Computer mouse",
@@ -1334,13 +1333,13 @@
       "animal"
     ],
     "explanation": "A computer mouse moves a pointer on the screen and lets you click on things.",
+    "course": "primary-computing",
     "status": "reviewed"
   },
   {
     "id": "com-0063",
     "type": "term",
     "subject": "Computing",
-    "course": "primary-computing",
     "topic": "Using computers",
     "level": 1,
     "prompt": "Password",
@@ -1356,13 +1355,13 @@
       "letters"
     ],
     "explanation": "A password is a secret word or phrase that keeps an account safe. Never share it with anyone except a trusted adult.",
+    "course": "primary-computing",
     "status": "reviewed"
   },
   {
     "id": "com-0064",
     "type": "term",
     "subject": "Computing",
-    "course": "primary-computing",
     "topic": "Using computers",
     "level": 1,
     "prompt": "Save",
@@ -1378,13 +1377,13 @@
       "later"
     ],
     "explanation": "Saving stores your work on a computer or online so you can open it again later.",
+    "course": "primary-computing",
     "status": "reviewed"
   },
   {
     "id": "com-0065",
     "type": "term",
     "subject": "Computing",
-    "course": "primary-computing",
     "topic": "Using computers",
     "level": 1,
     "prompt": "Printer",
@@ -1398,13 +1397,13 @@
       "copy"
     ],
     "explanation": "A printer puts words and pictures from a computer onto paper.",
+    "course": "primary-computing",
     "status": "reviewed"
   },
   {
     "id": "com-0066",
     "type": "term",
     "subject": "Computing",
-    "course": "primary-computing",
     "topic": "Algorithms",
     "level": 1,
     "prompt": "Sequence",
@@ -1418,13 +1417,13 @@
       "next"
     ],
     "explanation": "A sequence is a set of instructions that must happen in the right order, like the steps for brushing your teeth.",
+    "course": "primary-computing",
     "status": "reviewed"
   },
   {
     "id": "com-0067",
     "type": "term",
     "subject": "Computing",
-    "course": "primary-computing",
     "topic": "Algorithms",
     "level": 1,
     "prompt": "Instructions",
@@ -1440,13 +1439,13 @@
       "recipe"
     ],
     "explanation": "Instructions tell someone, or a computer, exactly what to do step by step. Computers follow them precisely.",
+    "course": "primary-computing",
     "status": "reviewed"
   },
   {
     "id": "com-0068",
     "type": "term",
     "subject": "Computing",
-    "course": "primary-computing",
     "topic": "Algorithms",
     "level": 1,
     "prompt": "Repetition",
@@ -1461,13 +1460,13 @@
       "over"
     ],
     "explanation": "Repetition means doing the same instructions again and again. In code, a repeat block saves writing the same steps many times.",
+    "course": "primary-computing",
     "status": "reviewed"
   },
   {
     "id": "com-0069",
     "type": "question",
     "subject": "Computing",
-    "course": "primary-computing",
     "topic": "Algorithms",
     "level": 1,
     "prompt": "What do we call a mistake in a computer program?",
@@ -1482,13 +1481,13 @@
       "insect"
     ],
     "explanation": "A mistake in a program is called a bug. Finding and fixing bugs is called debugging.",
+    "course": "primary-computing",
     "status": "reviewed"
   },
   {
     "id": "com-0070",
     "type": "term",
     "subject": "Computing",
-    "course": "primary-computing",
     "topic": "Coding",
     "level": 1,
     "prompt": "Sprite",
@@ -1503,13 +1502,13 @@
       "game"
     ],
     "explanation": "A sprite is a character or object that you can program to move, talk and react in an animation or game.",
+    "course": "primary-computing",
     "status": "reviewed"
   },
   {
     "id": "com-0071",
     "type": "term",
     "subject": "Computing",
-    "course": "primary-computing",
     "topic": "Coding",
     "level": 1,
     "prompt": "Input",
@@ -1524,13 +1523,13 @@
       "give"
     ],
     "explanation": "An input is information you put into a computer, like pressing a key, clicking or speaking into a microphone.",
+    "course": "primary-computing",
     "status": "reviewed"
   },
   {
     "id": "com-0072",
     "type": "term",
     "subject": "Computing",
-    "course": "primary-computing",
     "topic": "Coding",
     "level": 1,
     "prompt": "Output",
@@ -1545,13 +1544,13 @@
       "show"
     ],
     "explanation": "An output is what a computer gives back, like a picture on the screen or a sound from a speaker.",
+    "course": "primary-computing",
     "status": "reviewed"
   },
   {
     "id": "com-0073",
     "type": "term",
     "subject": "Computing",
-    "course": "primary-computing",
     "topic": "Coding",
     "level": 1,
     "prompt": "Code",
@@ -1566,13 +1565,13 @@
       "language"
     ],
     "explanation": "Code is the set of instructions people write for a computer to follow. Writing it is called coding.",
+    "course": "primary-computing",
     "status": "reviewed"
   },
   {
     "id": "com-0074",
     "type": "term",
     "subject": "Computing",
-    "course": "primary-computing",
     "topic": "Staying safe online",
     "level": 1,
     "prompt": "Personal information",
@@ -1589,13 +1588,13 @@
       "school"
     ],
     "explanation": "Personal information is anything that identifies you, like your full name, address or school. Keep it private online.",
+    "course": "primary-computing",
     "status": "reviewed"
   },
   {
     "id": "com-0075",
     "type": "term",
     "subject": "Computing",
-    "course": "primary-computing",
     "topic": "Staying safe online",
     "level": 1,
     "prompt": "Cyberbullying",
@@ -1611,13 +1610,13 @@
       "hurt"
     ],
     "explanation": "Cyberbullying is being unkind to someone online, such as sending hurtful messages. Tell a trusted adult if it happens to you.",
+    "course": "primary-computing",
     "status": "reviewed"
   },
   {
     "id": "com-0076",
     "type": "term",
     "subject": "Computing",
-    "course": "primary-computing",
     "topic": "Staying safe online",
     "level": 1,
     "prompt": "Trusted adult",
@@ -1633,13 +1632,13 @@
       "help"
     ],
     "explanation": "A trusted adult is a grown-up you can talk to if something online worries you, like a parent, carer or teacher.",
+    "course": "primary-computing",
     "status": "reviewed"
   },
   {
     "id": "com-0077",
     "type": "term",
     "subject": "Computing",
-    "course": "primary-computing",
     "topic": "Staying safe online",
     "level": 1,
     "prompt": "Screen time",
@@ -1654,6 +1653,7 @@
       "watch"
     ],
     "explanation": "Screen time is the time spent looking at screens like tablets, phones and TVs. Taking regular breaks is healthy.",
+    "course": "primary-computing",
     "status": "reviewed"
   }
 ]

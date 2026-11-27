@@ -3,7 +3,6 @@
     "id": "bio-0001",
     "type": "term",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Plants",
     "level": 2,
     "prompt": "Photosynthesis",
@@ -18,13 +17,13 @@
       "oxygen"
     ],
     "explanation": "Photosynthesis is the process by which plants and algae use light energy to make glucose from carbon dioxide and water. Oxygen is released as a by-product.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0002",
     "type": "term",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Cell division",
     "level": 2,
     "prompt": "Mitosis",
@@ -39,13 +38,13 @@
       "growth"
     ],
     "explanation": "Mitosis is cell division that produces two genetically identical daughter cells. It is used for growth and repair.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0003",
     "type": "term",
     "subject": "Biology",
-    "course": "university-cell-biology",
     "topic": "Cell division",
     "level": 3,
     "prompt": "Meiosis",
@@ -60,13 +59,13 @@
       "division"
     ],
     "explanation": "Meiosis is a type of cell division that produces four genetically different cells with half the normal number of chromosomes. It is how gametes are made.",
+    "course": "university-cell-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0004",
     "type": "term",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Genetics",
     "level": 2,
     "prompt": "DNA",
@@ -82,13 +81,13 @@
       "nucleotide"
     ],
     "explanation": "DNA is the molecule that carries genetic information in most living things. It is a double helix whose sequence of bases codes for proteins.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0005",
     "type": "term",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Proteins",
     "level": 2,
     "prompt": "Enzyme",
@@ -103,13 +102,13 @@
       "reaction"
     ],
     "explanation": "Enzymes are biological catalysts, made of protein, that speed up chemical reactions in living things. Each enzyme has an active site that fits a specific substrate.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0006",
     "type": "term",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Transport",
     "level": 2,
     "prompt": "Osmosis",
@@ -123,13 +122,13 @@
       "semipermeable"
     ],
     "explanation": "Osmosis is the net movement of water molecules across a partially permeable membrane from a region of higher water potential to lower water potential. It does not need energy from the cell.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0007",
     "type": "term",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Evolution",
     "level": 2,
     "prompt": "Natural selection",
@@ -144,13 +143,13 @@
       "adapted"
     ],
     "explanation": "Natural selection is the process by which individuals with advantageous inherited traits survive and reproduce more than others. Over generations the population changes.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0008",
     "type": "term",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Cells",
     "level": 2,
     "prompt": "Mitochondria",
@@ -166,13 +165,13 @@
       "organelle"
     ],
     "explanation": "Mitochondria are the organelles where most aerobic respiration takes place. They release energy by making ATP.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0009",
     "type": "formula",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Respiration",
     "level": 2,
     "prompt": "Aerobic respiration equation",
@@ -190,13 +189,13 @@
       "breathing"
     ],
     "explanation": "In aerobic respiration glucose reacts with oxygen to produce carbon dioxide and water, releasing energy. Most of the energy is captured in ATP.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0010",
     "type": "term",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Genetics",
     "level": 2,
     "prompt": "Allele",
@@ -211,13 +210,13 @@
       "recessive"
     ],
     "explanation": "An allele is one of the different versions of a gene. You inherit one allele of each gene from each parent.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0011",
     "type": "term",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Ecology",
     "level": 2,
     "prompt": "Ecosystem",
@@ -232,13 +231,13 @@
       "community"
     ],
     "explanation": "An ecosystem is a community of living organisms interacting with each other and with the non-living parts of their environment. Examples include ponds and woodlands.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0012",
     "type": "term",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Homeostasis",
     "level": 2,
     "prompt": "Homeostasis",
@@ -253,13 +252,13 @@
       "regulate"
     ],
     "explanation": "Homeostasis is the maintenance of a stable internal environment despite changes outside. Body temperature and blood glucose are both controlled this way.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0013",
     "type": "term",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Immunity",
     "level": 2,
     "prompt": "Antibody",
@@ -274,13 +273,13 @@
       "lymphocyte"
     ],
     "explanation": "An antibody is a protein made by white blood cells that binds to a specific antigen on a pathogen. This marks the pathogen for destruction.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0014",
     "type": "question",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Cells",
     "level": 2,
     "prompt": "Which organelle contains chlorophyll?",
@@ -295,13 +294,13 @@
       "organelle"
     ],
     "explanation": "Chlorophyll is found in chloroplasts, where photosynthesis takes place. It absorbs mainly red and blue light and reflects green.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0015",
     "type": "term",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Genetics",
     "level": 2,
     "prompt": "Genotype",
@@ -316,13 +315,13 @@
       "makeup"
     ],
     "explanation": "A genotype is the combination of alleles an organism has for a gene. Together with the environment it determines the phenotype.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0016",
     "type": "term",
     "subject": "Biology",
-    "course": "university-cell-biology",
     "topic": "Cells",
     "level": 3,
     "prompt": "Ribosome",
@@ -337,13 +336,13 @@
       "mrna"
     ],
     "explanation": "Ribosomes are the small structures where proteins are made by translating messenger RNA. They are found free in the cytoplasm and on rough endoplasmic reticulum.",
+    "course": "university-cell-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0017",
     "type": "term",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Ecology",
     "level": 2,
     "prompt": "Biodiversity",
@@ -358,13 +357,13 @@
       "habitats"
     ],
     "explanation": "Biodiversity is the variety of living things in an area, including the number of species and the genetic variation within them. High biodiversity makes ecosystems more resilient.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0018",
     "type": "term",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Cells",
     "level": 2,
     "prompt": "Stem cell",
@@ -379,13 +378,13 @@
       "divide"
     ],
     "explanation": "A stem cell is an unspecialised cell that can divide and differentiate into other cell types. They are used in research into treating disease.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0019",
     "type": "question",
     "subject": "Biology",
-    "course": "university-cell-biology",
     "topic": "Molecular biology",
     "level": 3,
     "prompt": "What type of bond holds the two strands of DNA together?",
@@ -400,13 +399,13 @@
       "weak"
     ],
     "explanation": "Complementary base pairs, A with T and C with G, are held together by hydrogen bonds. These bonds are weak individually but strong in total, and they can be broken to unzip the DNA.",
+    "course": "university-cell-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0020",
     "type": "term",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Immunity",
     "level": 2,
     "prompt": "Vaccination",
@@ -422,13 +421,13 @@
       "antibodies"
     ],
     "explanation": "Vaccination introduces a harmless form of a pathogen so the body makes memory cells. If the real pathogen appears later, the immune response is fast.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0021",
     "type": "term",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Cells",
     "level": 2,
     "prompt": "Cell membrane",
@@ -444,13 +443,13 @@
       "outside"
     ],
     "explanation": "The cell membrane surrounds the cell and controls which substances enter and leave. It is made of a double layer of phospholipids with embedded proteins.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0022",
     "type": "term",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Cells",
     "level": 2,
     "prompt": "Nucleus",
@@ -465,13 +464,13 @@
       "membrane"
     ],
     "explanation": "The nucleus is the organelle that contains the cell's DNA and controls its activities. It is surrounded by a double membrane with pores.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0023",
     "type": "term",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Cells",
     "level": 2,
     "prompt": "Cell wall",
@@ -486,13 +485,13 @@
       "outside"
     ],
     "explanation": "A cell wall is a rigid layer outside the cell membrane of plant cells, made mainly of cellulose. It supports the cell and stops it bursting.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0024",
     "type": "term",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Cells",
     "level": 2,
     "prompt": "Vacuole",
@@ -508,13 +507,13 @@
       "cell"
     ],
     "explanation": "A vacuole is a fluid-filled organelle that stores substances. In plant cells a large permanent vacuole holds cell sap and helps keep the cell firm.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0025",
     "type": "term",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Cells",
     "level": 2,
     "prompt": "Cytoplasm",
@@ -529,13 +528,13 @@
       "fluid"
     ],
     "explanation": "Cytoplasm is the jelly-like fluid inside a cell in which the organelles sit. Many of the cell's chemical reactions happen in it.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0026",
     "type": "term",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Transport",
     "level": 2,
     "prompt": "Diffusion",
@@ -550,13 +549,13 @@
       "spread"
     ],
     "explanation": "Diffusion is the net movement of particles from a region of higher concentration to a region of lower concentration. It does not need energy from the cell.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0027",
     "type": "term",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Transport",
     "level": 2,
     "prompt": "Active transport",
@@ -571,13 +570,13 @@
       "atp"
     ],
     "explanation": "Active transport moves substances across a membrane against their concentration gradient. It needs energy from respiration and carrier proteins.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0028",
     "type": "term",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Organisation",
     "level": 2,
     "prompt": "Tissue",
@@ -593,13 +592,13 @@
       "organ"
     ],
     "explanation": "A tissue is a group of similar cells that work together to do the same job. Muscle tissue is an example.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0029",
     "type": "term",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Organisation",
     "level": 2,
     "prompt": "Organ",
@@ -615,13 +614,13 @@
       "system"
     ],
     "explanation": "An organ is a group of different tissues that work together to carry out a particular function. The stomach and the heart are organs.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0030",
     "type": "term",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Digestion",
     "level": 2,
     "prompt": "Amylase",
@@ -636,13 +635,13 @@
       "breaks"
     ],
     "explanation": "Amylase is an enzyme that breaks down starch into sugars. It is made in the salivary glands and the pancreas.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0031",
     "type": "term",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Digestion",
     "level": 2,
     "prompt": "Villi",
@@ -658,13 +657,13 @@
       "projections"
     ],
     "explanation": "Villi are tiny finger-like projections lining the small intestine. They greatly increase the surface area for absorbing digested food.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0032",
     "type": "term",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Blood",
     "level": 2,
     "prompt": "Red blood cell",
@@ -681,13 +680,13 @@
       "carry"
     ],
     "explanation": "Red blood cells carry oxygen around the body using haemoglobin. They are shaped like biconcave discs and have no nucleus.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0033",
     "type": "term",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Blood",
     "level": 2,
     "prompt": "White blood cell",
@@ -705,13 +704,13 @@
       "antibodies"
     ],
     "explanation": "White blood cells defend the body against infection. Some engulf pathogens and others make antibodies.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0034",
     "type": "term",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Blood",
     "level": 2,
     "prompt": "Platelet",
@@ -727,13 +726,13 @@
       "cut"
     ],
     "explanation": "Platelets are small cell fragments in the blood that help it clot at a wound. The clot forms a scab that seals the cut.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0035",
     "type": "term",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Circulation",
     "level": 2,
     "prompt": "Artery",
@@ -749,13 +748,13 @@
       "blood vessel"
     ],
     "explanation": "An artery is a blood vessel that carries blood away from the heart under high pressure. Its walls are thick and elastic.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0036",
     "type": "term",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Circulation",
     "level": 2,
     "prompt": "Vein",
@@ -771,13 +770,13 @@
       "blood vessel"
     ],
     "explanation": "A vein is a blood vessel that carries blood back towards the heart. Its walls are thinner than an artery's and it has valves to stop backflow.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0037",
     "type": "term",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Circulation",
     "level": 2,
     "prompt": "Capillary",
@@ -793,13 +792,13 @@
       "wall"
     ],
     "explanation": "Capillaries are the smallest blood vessels, with walls only one cell thick. Substances pass between the blood and the body's cells through them.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0038",
     "type": "term",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Circulation",
     "level": 2,
     "prompt": "Heart",
@@ -814,13 +813,13 @@
       "organ"
     ],
     "explanation": "The heart is a muscular organ that pumps blood around the body. In humans it has four chambers and a double circulation.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0039",
     "type": "term",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Nervous system",
     "level": 2,
     "prompt": "Neuron",
@@ -837,13 +836,13 @@
       "synapse"
     ],
     "explanation": "A neuron is a nerve cell that carries electrical impulses. It has a long axon to carry signals over distance.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0040",
     "type": "term",
     "subject": "Biology",
-    "course": "university-physiology",
     "topic": "Nervous system",
     "level": 3,
     "prompt": "Synapse",
@@ -859,13 +858,13 @@
       "junction"
     ],
     "explanation": "A synapse is the tiny gap between two neurons. The signal crosses it as a chemical, called a neurotransmitter.",
+    "course": "university-physiology",
     "status": "reviewed"
   },
   {
     "id": "bio-0041",
     "type": "term",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Nervous system",
     "level": 2,
     "prompt": "Reflex arc",
@@ -881,13 +880,13 @@
       "response"
     ],
     "explanation": "A reflex is a fast, automatic response to a stimulus that does not involve conscious thought. The nerve pathway for it is called a reflex arc.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0042",
     "type": "term",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Hormones",
     "level": 2,
     "prompt": "Hormone",
@@ -903,13 +902,13 @@
       "target"
     ],
     "explanation": "A hormone is a chemical messenger made in a gland and carried in the blood to target organs. Hormones control processes such as growth and blood sugar.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0043",
     "type": "term",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Hormones",
     "level": 2,
     "prompt": "Insulin",
@@ -924,13 +923,13 @@
       "hormone"
     ],
     "explanation": "Insulin is a hormone made by the pancreas that lowers blood glucose by helping cells take it up. People with type 1 diabetes cannot make enough of it.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0044",
     "type": "term",
     "subject": "Biology",
-    "course": "university-physiology",
     "topic": "Homeostasis",
     "level": 3,
     "prompt": "Negative feedback",
@@ -945,13 +944,13 @@
       "control"
     ],
     "explanation": "Negative feedback is a control system in which a change triggers a response that reverses the change. It keeps conditions such as temperature near a set point.",
+    "course": "university-physiology",
     "status": "reviewed"
   },
   {
     "id": "bio-0045",
     "type": "term",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Genetics",
     "level": 2,
     "prompt": "Phenotype",
@@ -966,13 +965,13 @@
       "appearance"
     ],
     "explanation": "A phenotype is the set of observable characteristics of an organism. It results from the genotype and the environment.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0046",
     "type": "term",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Genetics",
     "level": 2,
     "prompt": "Dominant allele",
@@ -988,13 +987,13 @@
       "capital letter"
     ],
     "explanation": "A dominant allele is expressed in the phenotype even when only one copy is present. It is usually written with a capital letter.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0047",
     "type": "term",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Genetics",
     "level": 2,
     "prompt": "Recessive allele",
@@ -1010,13 +1009,13 @@
       "masked"
     ],
     "explanation": "A recessive allele only shows in the phenotype when two copies are present. With one copy it is masked by a dominant allele.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0048",
     "type": "term",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Genetics",
     "level": 2,
     "prompt": "Heterozygous",
@@ -1031,13 +1030,13 @@
       "carrier"
     ],
     "explanation": "A heterozygous organism has two different alleles of a gene. If one allele is recessive, the organism is a carrier of it.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0049",
     "type": "term",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Genetics",
     "level": 2,
     "prompt": "Homozygous",
@@ -1052,13 +1051,13 @@
       "identical"
     ],
     "explanation": "A homozygous organism has two identical alleles of a gene. It can be homozygous dominant or homozygous recessive.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0050",
     "type": "term",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Genetics",
     "level": 2,
     "prompt": "Mutation",
@@ -1074,13 +1073,13 @@
       "variation"
     ],
     "explanation": "A mutation is a change in the DNA sequence. Most have little effect, but some alter a protein and can be harmful or helpful.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0051",
     "type": "term",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Genetics",
     "level": 2,
     "prompt": "Gene",
@@ -1096,13 +1095,13 @@
       "section"
     ],
     "explanation": "A gene is a section of DNA that codes for a particular protein. Genes are inherited from parents and determine characteristics.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0052",
     "type": "term",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Genetics",
     "level": 2,
     "prompt": "Chromosome",
@@ -1118,13 +1117,13 @@
       "forty-six"
     ],
     "explanation": "A chromosome is a long, coiled molecule of DNA that carries many genes. Human body cells have 23 pairs, or 46 in total.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0053",
     "type": "term",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Evolution",
     "level": 2,
     "prompt": "Selective breeding",
@@ -1140,13 +1139,13 @@
       "farmers"
     ],
     "explanation": "Selective breeding is when humans choose organisms with desirable traits to breed from, over many generations. It has produced high-yield crops and dairy cattle.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0054",
     "type": "term",
     "subject": "Biology",
-    "course": "university-cell-biology",
     "topic": "Molecular biology",
     "level": 3,
     "prompt": "Genetic engineering",
@@ -1163,13 +1162,13 @@
       "crispr"
     ],
     "explanation": "Genetic engineering is changing an organism's genes, often by transferring a gene from one species to another. It is used to make insulin and pest-resistant crops.",
+    "course": "university-cell-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0055",
     "type": "term",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Evolution",
     "level": 2,
     "prompt": "Fossil",
@@ -1185,13 +1184,13 @@
       "evidence"
     ],
     "explanation": "A fossil is the preserved remains or traces of an organism from long ago, usually found in rock. Fossils provide evidence for evolution.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0056",
     "type": "term",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Evolution",
     "level": 2,
     "prompt": "Extinction",
@@ -1207,13 +1206,13 @@
       "population"
     ],
     "explanation": "Extinction is when every individual of a species has died, so the species no longer exists. It can be caused by climate change, disease or loss of habitat.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0057",
     "type": "term",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Ecology",
     "level": 2,
     "prompt": "Food chain",
@@ -1228,13 +1227,13 @@
       "predator"
     ],
     "explanation": "A food chain shows the transfer of energy from one organism to the next as they feed. It starts with a producer such as a plant.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0058",
     "type": "term",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Ecology",
     "level": 2,
     "prompt": "Carbon cycle",
@@ -1249,13 +1248,13 @@
       "combustion"
     ],
     "explanation": "The carbon cycle is the movement of carbon between the atmosphere, living things and the Earth. Photosynthesis removes carbon dioxide while respiration and burning return it.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0059",
     "type": "term",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Ecology",
     "level": 2,
     "prompt": "Decomposer",
@@ -1271,13 +1270,13 @@
       "nutrients"
     ],
     "explanation": "Decomposers, such as fungi and bacteria, break down dead plants and animals. This returns nutrients to the soil.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0060",
     "type": "question",
     "subject": "Biology",
-    "course": "secondary-biology",
     "topic": "Plants",
     "level": 2,
     "prompt": "What gas do plants absorb from the air for photosynthesis?",
@@ -1293,13 +1292,13 @@
       "absorb"
     ],
     "explanation": "Plants take in carbon dioxide through their stomata and use it to make glucose. Oxygen is released as a by-product.",
+    "course": "secondary-biology",
     "status": "reviewed"
   },
   {
     "id": "bio-0061",
     "type": "term",
     "subject": "Biology",
-    "course": "primary-science",
     "topic": "Living things",
     "level": 1,
     "prompt": "Habitat",
@@ -1314,13 +1313,13 @@
       "animals"
     ],
     "explanation": "A habitat is the natural home of a living thing, where it finds food, water and shelter. A pond is a habitat for frogs.",
+    "course": "primary-science",
     "status": "reviewed"
   },
   {
     "id": "bio-0062",
     "type": "term",
     "subject": "Biology",
-    "course": "primary-science",
     "topic": "Living things",
     "level": 1,
     "prompt": "Life cycle",
@@ -1335,13 +1334,13 @@
       "adult"
     ],
     "explanation": "A life cycle is the series of changes a living thing goes through as it grows, such as egg, caterpillar, pupa and butterfly.",
+    "course": "primary-science",
     "status": "reviewed"
   },
   {
     "id": "bio-0063",
     "type": "term",
     "subject": "Biology",
-    "course": "primary-science",
     "topic": "Living things",
     "level": 1,
     "prompt": "Predator",
@@ -1356,13 +1355,13 @@
       "animal"
     ],
     "explanation": "A predator is an animal that hunts and eats other animals. Foxes are predators of rabbits.",
+    "course": "primary-science",
     "status": "reviewed"
   },
   {
     "id": "bio-0064",
     "type": "term",
     "subject": "Biology",
-    "course": "primary-science",
     "topic": "Living things",
     "level": 1,
     "prompt": "Prey",
@@ -1376,13 +1375,13 @@
       "food"
     ],
     "explanation": "Prey is an animal that is hunted and eaten by another animal. Mice are prey for owls.",
+    "course": "primary-science",
     "status": "reviewed"
   },
   {
     "id": "bio-0065",
     "type": "term",
     "subject": "Biology",
-    "course": "primary-science",
     "topic": "Living things",
     "level": 1,
     "prompt": "Classification",
@@ -1398,13 +1397,13 @@
       "key"
     ],
     "explanation": "Classification means sorting living things into groups by what they have in common, such as animals with backbones.",
+    "course": "primary-science",
     "status": "reviewed"
   },
   {
     "id": "bio-0066",
     "type": "question",
     "subject": "Biology",
-    "course": "primary-science",
     "topic": "Living things",
     "level": 1,
     "prompt": "What do we call an animal that eats only plants?",
@@ -1419,13 +1418,13 @@
       "cow"
     ],
     "explanation": "An animal that eats only plants is a herbivore. Cows and rabbits are herbivores.",
+    "course": "primary-science",
     "status": "reviewed"
   },
   {
     "id": "bio-0067",
     "type": "term",
     "subject": "Biology",
-    "course": "primary-science",
     "topic": "Human body",
     "level": 1,
     "prompt": "Skeleton",
@@ -1439,13 +1438,13 @@
       "skull"
     ],
     "explanation": "The skeleton is the frame of bones inside your body. It holds you up, protects your organs and lets you move.",
+    "course": "primary-science",
     "status": "reviewed"
   },
   {
     "id": "bio-0068",
     "type": "term",
     "subject": "Biology",
-    "course": "primary-science",
     "topic": "Human body",
     "level": 1,
     "prompt": "Lungs",
@@ -1460,13 +1459,13 @@
       "chest"
     ],
     "explanation": "The lungs are two organs in your chest that fill with air when you breathe in. They pass oxygen into your blood.",
+    "course": "primary-science",
     "status": "reviewed"
   },
   {
     "id": "bio-0069",
     "type": "term",
     "subject": "Biology",
-    "course": "primary-science",
     "topic": "Human body",
     "level": 1,
     "prompt": "Incisor",
@@ -1481,13 +1480,13 @@
       "bite"
     ],
     "explanation": "Incisors are the flat, sharp teeth at the front of your mouth. They cut and bite food.",
+    "course": "primary-science",
     "status": "reviewed"
   },
   {
     "id": "bio-0070",
     "type": "term",
     "subject": "Biology",
-    "course": "primary-science",
     "topic": "Human body",
     "level": 1,
     "prompt": "Muscle",
@@ -1503,13 +1502,13 @@
       "exercise"
     ],
     "explanation": "Muscles are body parts that pull on your bones to make you move. Your heart is a muscle too.",
+    "course": "primary-science",
     "status": "reviewed"
   },
   {
     "id": "bio-0071",
     "type": "term",
     "subject": "Biology",
-    "course": "primary-science",
     "topic": "Human body",
     "level": 1,
     "prompt": "Balanced diet",
@@ -1525,13 +1524,13 @@
       "mix"
     ],
     "explanation": "A balanced diet means eating the right amounts of different foods, such as fruit, vegetables, grains and protein, to stay healthy.",
+    "course": "primary-science",
     "status": "reviewed"
   },
   {
     "id": "bio-0072",
     "type": "term",
     "subject": "Biology",
-    "course": "primary-science",
     "topic": "Plants",
     "level": 1,
     "prompt": "Roots",
@@ -1545,13 +1544,13 @@
       "anchor"
     ],
     "explanation": "Roots grow under the ground. They hold a plant in place and take in water and nutrients from the soil.",
+    "course": "primary-science",
     "status": "reviewed"
   },
   {
     "id": "bio-0073",
     "type": "term",
     "subject": "Biology",
-    "course": "primary-science",
     "topic": "Plants",
     "level": 1,
     "prompt": "Seed",
@@ -1567,13 +1566,13 @@
       "bean"
     ],
     "explanation": "A seed contains a tiny new plant and a store of food. With water and warmth it can grow into a new plant.",
+    "course": "primary-science",
     "status": "reviewed"
   },
   {
     "id": "bio-0074",
     "type": "term",
     "subject": "Biology",
-    "course": "primary-science",
     "topic": "Plants",
     "level": 1,
     "prompt": "Germination",
@@ -1589,13 +1588,13 @@
       "start"
     ],
     "explanation": "Germination is when a seed starts to grow. It needs water, air and the right temperature.",
+    "course": "primary-science",
     "status": "reviewed"
   },
   {
     "id": "bio-0075",
     "type": "term",
     "subject": "Biology",
-    "course": "primary-science",
     "topic": "Plants",
     "level": 1,
     "prompt": "Petal",
@@ -1610,13 +1609,13 @@
       "rose"
     ],
     "explanation": "Petals are the often brightly coloured parts of a flower. Their colour and scent attract insects.",
+    "course": "primary-science",
     "status": "reviewed"
   },
   {
     "id": "bio-0076",
     "type": "question",
     "subject": "Biology",
-    "course": "primary-science",
     "topic": "Plants",
     "level": 1,
     "prompt": "What do plants need from the Sun to make their own food?",
@@ -1632,13 +1631,13 @@
       "rays"
     ],
     "explanation": "Plants need light from the Sun to make their own food in their leaves. Without light, a plant cannot grow.",
+    "course": "primary-science",
     "status": "reviewed"
   },
   {
     "id": "bio-0077",
     "type": "term",
     "subject": "Biology",
-    "course": "primary-science",
     "topic": "Plants",
     "level": 1,
     "prompt": "Stem",
@@ -1654,13 +1653,13 @@
       "flower"
     ],
     "explanation": "The stem holds a plant up and carries water from the roots to the leaves and flowers.",
+    "course": "primary-science",
     "status": "reviewed"
   },
   {
     "id": "bio-0078",
     "type": "term",
     "subject": "Biology",
-    "course": "primary-science",
     "topic": "Animals",
     "level": 1,
     "prompt": "Mammal",
@@ -1675,13 +1674,13 @@
       "hair"
     ],
     "explanation": "A mammal is an animal with hair or fur that feeds its young on milk. Humans, dogs and whales are mammals.",
+    "course": "primary-science",
     "status": "reviewed"
   },
   {
     "id": "bio-0079",
     "type": "term",
     "subject": "Biology",
-    "course": "primary-science",
     "topic": "Animals",
     "level": 1,
     "prompt": "Reptile",
@@ -1697,13 +1696,13 @@
       "cold"
     ],
     "explanation": "A reptile is an animal with dry, scaly skin that usually lays eggs. Snakes, lizards and crocodiles are reptiles.",
+    "course": "primary-science",
     "status": "reviewed"
   },
   {
     "id": "bio-0080",
     "type": "term",
     "subject": "Biology",
-    "course": "primary-science",
     "topic": "Animals",
     "level": 1,
     "prompt": "Amphibian",
@@ -1719,13 +1718,13 @@
       "toad"
     ],
     "explanation": "An amphibian lives part of its life in water and part on land. Frogs start life as tadpoles in water.",
+    "course": "primary-science",
     "status": "reviewed"
   },
   {
     "id": "bio-0081",
     "type": "term",
     "subject": "Biology",
-    "course": "primary-science",
     "topic": "Animals",
     "level": 1,
     "prompt": "Vertebrate",
@@ -1740,13 +1739,13 @@
       "bones"
     ],
     "explanation": "A vertebrate is an animal with a backbone. Fish, birds and mammals are all vertebrates.",
+    "course": "primary-science",
     "status": "reviewed"
   },
   {
     "id": "bio-0082",
     "type": "term",
     "subject": "Biology",
-    "course": "primary-science",
     "topic": "Animals",
     "level": 1,
     "prompt": "Hibernation",
@@ -1762,13 +1761,13 @@
       "rest"
     ],
     "explanation": "Hibernation is a long, deep sleep some animals take through winter to save energy when food is scarce. Hedgehogs hibernate.",
+    "course": "primary-science",
     "status": "reviewed"
   },
   {
     "id": "bio-0083",
     "type": "question",
     "subject": "Biology",
-    "course": "primary-science",
     "topic": "Animals",
     "level": 1,
     "prompt": "What is a baby frog called?",
@@ -1783,6 +1782,7 @@
       "wriggle"
     ],
     "explanation": "A baby frog is called a tadpole. It lives in water, breathes with gills and slowly grows legs.",
+    "course": "primary-science",
     "status": "reviewed"
   }
 ]

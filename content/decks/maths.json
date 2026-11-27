@@ -3,7 +3,6 @@
     "id": "mat-0001",
     "type": "term",
     "subject": "Maths",
-    "course": "university-calculus",
     "topic": "Differentiation",
     "level": 3,
     "prompt": "Derivative",
@@ -19,13 +18,13 @@
       "tangent"
     ],
     "explanation": "The derivative of a function measures how fast its output changes as its input changes. Geometrically it is the gradient of the tangent to the graph at a point.",
+    "course": "university-calculus",
     "status": "reviewed"
   },
   {
     "id": "mat-0002",
     "type": "formula",
     "subject": "Maths",
-    "course": "secondary-maths",
     "topic": "Algebra",
     "level": 2,
     "prompt": "Quadratic formula",
@@ -40,13 +39,13 @@
       "equation"
     ],
     "explanation": "The formula gives the solutions of any equation of the form ax^2 + bx + c = 0. The part under the square root, b^2 - 4ac, is the discriminant and tells you how many real roots there are.",
+    "course": "secondary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0003",
     "type": "term",
     "subject": "Maths",
-    "course": "secondary-maths",
     "topic": "Number",
     "level": 2,
     "prompt": "Prime number",
@@ -63,13 +62,13 @@
       "integer"
     ],
     "explanation": "A prime number is a whole number greater than 1 whose only positive factors are 1 and itself. The number 2 is the only even prime.",
+    "course": "secondary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0004",
     "type": "formula",
     "subject": "Maths",
-    "course": "secondary-maths",
     "topic": "Geometry",
     "level": 2,
     "prompt": "Pythagoras' theorem",
@@ -87,13 +86,13 @@
       "sides"
     ],
     "explanation": "In a right-angled triangle the square of the hypotenuse equals the sum of the squares of the other two sides. It lets you find a missing side length from the other two.",
+    "course": "secondary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0005",
     "type": "term",
     "subject": "Maths",
-    "course": "university-calculus",
     "topic": "Integration",
     "level": 3,
     "prompt": "Integral",
@@ -108,13 +107,13 @@
       "sum"
     ],
     "explanation": "Integration is the reverse of differentiation. A definite integral gives the signed area under a curve between two limits.",
+    "course": "university-calculus",
     "status": "reviewed"
   },
   {
     "id": "mat-0006",
     "type": "term",
     "subject": "Maths",
-    "course": "university-linear-algebra",
     "topic": "Matrices",
     "level": 3,
     "prompt": "Matrix",
@@ -129,13 +128,13 @@
       "grid"
     ],
     "explanation": "A matrix is a rectangular arrangement of numbers in rows and columns. Matrices represent linear transformations and systems of linear equations.",
+    "course": "university-linear-algebra",
     "status": "reviewed"
   },
   {
     "id": "mat-0007",
     "type": "formula",
     "subject": "Maths",
-    "course": "secondary-maths",
     "topic": "Geometry",
     "level": 2,
     "prompt": "Area of a circle",
@@ -151,13 +150,13 @@
       "round"
     ],
     "explanation": "The area of a circle is pi times the radius squared. Doubling the radius makes the area four times larger.",
+    "course": "secondary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0008",
     "type": "term",
     "subject": "Maths",
-    "course": "secondary-maths",
     "topic": "Statistics",
     "level": 2,
     "prompt": "Standard deviation",
@@ -173,13 +172,13 @@
       "average"
     ],
     "explanation": "Standard deviation measures how widely data values are spread around the mean. It is the square root of the variance.",
+    "course": "secondary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0009",
     "type": "term",
     "subject": "Maths",
-    "course": "secondary-maths",
     "topic": "Algebra",
     "level": 2,
     "prompt": "Logarithm",
@@ -194,13 +193,13 @@
       "inverse"
     ],
     "explanation": "A logarithm answers the question: to what power must the base be raised to give this number? It is the inverse operation of exponentiation.",
+    "course": "secondary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0010",
     "type": "formula",
     "subject": "Maths",
-    "course": "advanced-pure-maths",
     "topic": "Complex analysis",
     "level": 4,
     "prompt": "Euler's identity",
@@ -218,13 +217,13 @@
       "complex"
     ],
     "explanation": "Euler's identity links five fundamental constants: e, i, pi, 1 and 0. It is a special case of Euler's formula, e^(ix) = cos x + i sin x.",
+    "course": "advanced-pure-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0011",
     "type": "question",
     "subject": "Maths",
-    "course": "secondary-maths",
     "topic": "Geometry",
     "level": 2,
     "prompt": "What is the sum of the interior angles of a triangle?",
@@ -239,13 +238,13 @@
       "add"
     ],
     "explanation": "The interior angles of any triangle in a flat plane add up to 180 degrees. This follows from the properties of parallel lines.",
+    "course": "secondary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0012",
     "type": "term",
     "subject": "Maths",
-    "course": "university-linear-algebra",
     "topic": "Eigenvalues",
     "level": 3,
     "prompt": "Eigenvalue",
@@ -261,13 +260,13 @@
       "eigen"
     ],
     "explanation": "An eigenvalue is a scalar lambda for which Av = lambda v has a non-zero solution v. It tells you how a linear transformation stretches along its eigenvector direction.",
+    "course": "university-linear-algebra",
     "status": "reviewed"
   },
   {
     "id": "mat-0013",
     "type": "term",
     "subject": "Maths",
-    "course": "secondary-maths",
     "topic": "Probability",
     "level": 2,
     "prompt": "Probability",
@@ -281,13 +280,13 @@
       "random"
     ],
     "explanation": "Probability is a number from 0 to 1 that measures how likely an event is. For equally likely outcomes it is favourable outcomes divided by total outcomes.",
+    "course": "secondary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0014",
     "type": "formula",
     "subject": "Maths",
-    "course": "university-calculus",
     "topic": "Differentiation",
     "level": 3,
     "prompt": "Chain rule",
@@ -302,13 +301,13 @@
       "differentiate"
     ],
     "explanation": "The chain rule gives the derivative of a function of a function. You differentiate the outer function and multiply by the derivative of the inner function.",
+    "course": "university-calculus",
     "status": "reviewed"
   },
   {
     "id": "mat-0015",
     "type": "term",
     "subject": "Maths",
-    "course": "secondary-maths",
     "topic": "Statistics",
     "level": 2,
     "prompt": "Median",
@@ -322,13 +321,13 @@
       "ordered"
     ],
     "explanation": "The median is the middle value of a data set once it is put in order. With an even number of values it is the mean of the two middle values.",
+    "course": "secondary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0016",
     "type": "question",
     "subject": "Maths",
-    "course": "university-calculus",
     "topic": "Differentiation",
     "level": 3,
     "prompt": "What is the derivative of sin x?",
@@ -345,13 +344,13 @@
       "trigonometric"
     ],
     "explanation": "The derivative of sin x with respect to x is cos x, when x is measured in radians. Similarly the derivative of cos x is -sin x.",
+    "course": "university-calculus",
     "status": "reviewed"
   },
   {
     "id": "mat-0017",
     "type": "term",
     "subject": "Maths",
-    "course": "secondary-maths",
     "topic": "Vectors",
     "level": 2,
     "prompt": "Vector",
@@ -366,13 +365,13 @@
       "scalar"
     ],
     "explanation": "A vector is a quantity with both a size and a direction. Displacement and velocity are vectors, while distance and speed are not.",
+    "course": "secondary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0018",
     "type": "term",
     "subject": "Maths",
-    "course": "university-calculus",
     "topic": "Limits",
     "level": 3,
     "prompt": "Limit",
@@ -387,13 +386,13 @@
       "value"
     ],
     "explanation": "A limit is the value that a function gets arbitrarily close to as its input approaches some point. Limits are the foundation of derivatives and integrals.",
+    "course": "university-calculus",
     "status": "reviewed"
   },
   {
     "id": "mat-0019",
     "type": "formula",
     "subject": "Maths",
-    "course": "secondary-maths",
     "topic": "Trigonometry",
     "level": 2,
     "prompt": "Sine rule",
@@ -409,13 +408,13 @@
       "angles"
     ],
     "explanation": "The sine rule says that each side of a triangle divided by the sine of its opposite angle gives the same ratio. It is used to solve triangles that are not right-angled.",
+    "course": "secondary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0020",
     "type": "term",
     "subject": "Maths",
-    "course": "secondary-maths",
     "topic": "Sequences",
     "level": 2,
     "prompt": "Fibonacci sequence",
@@ -430,13 +429,13 @@
       "golden"
     ],
     "explanation": "In the Fibonacci sequence each term is the sum of the two terms before it, starting 0, 1, 1, 2, 3, 5. The ratio of consecutive terms approaches the golden ratio.",
+    "course": "secondary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0021",
     "type": "term",
     "subject": "Maths",
-    "course": "secondary-maths",
     "topic": "Statistics",
     "level": 2,
     "prompt": "Mean",
@@ -453,13 +452,13 @@
       "add"
     ],
     "explanation": "The mean is found by adding all the values and dividing by how many there are. It is the most common measure of the centre of a data set.",
+    "course": "secondary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0022",
     "type": "term",
     "subject": "Maths",
-    "course": "secondary-maths",
     "topic": "Statistics",
     "level": 2,
     "prompt": "Mode",
@@ -473,13 +472,13 @@
       "often"
     ],
     "explanation": "The mode is the value that occurs most often in a data set. A data set can have more than one mode, or none.",
+    "course": "secondary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0023",
     "type": "term",
     "subject": "Maths",
-    "course": "secondary-maths",
     "topic": "Statistics",
     "level": 2,
     "prompt": "Range",
@@ -493,13 +492,13 @@
       "spread"
     ],
     "explanation": "The range is the difference between the largest and smallest values in a data set. It is a simple measure of how spread out the data is.",
+    "course": "secondary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0024",
     "type": "term",
     "subject": "Maths",
-    "course": "secondary-maths",
     "topic": "Number",
     "level": 2,
     "prompt": "Percentage",
@@ -515,13 +514,13 @@
       "proportion"
     ],
     "explanation": "A percentage expresses an amount as a fraction of 100. For example, 25% means 25 out of every 100, or one quarter.",
+    "course": "secondary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0025",
     "type": "term",
     "subject": "Maths",
-    "course": "secondary-maths",
     "topic": "Number",
     "level": 2,
     "prompt": "Fraction",
@@ -537,13 +536,13 @@
       "divide"
     ],
     "explanation": "A fraction represents part of a whole, written as one number over another. The top number counts the parts taken and the bottom number says how many equal parts make the whole.",
+    "course": "secondary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0026",
     "type": "term",
     "subject": "Maths",
-    "course": "secondary-maths",
     "topic": "Number",
     "level": 2,
     "prompt": "Ratio",
@@ -559,13 +558,13 @@
       "parts"
     ],
     "explanation": "A ratio compares the sizes of two or more quantities, such as 2:3. Ratios can be simplified by dividing every part by a common factor.",
+    "course": "secondary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0027",
     "type": "term",
     "subject": "Maths",
-    "course": "secondary-maths",
     "topic": "Number",
     "level": 2,
     "prompt": "Square root",
@@ -581,13 +580,13 @@
       "number"
     ],
     "explanation": "The square root of a number is a value that gives the number when multiplied by itself. For example, the square root of 49 is 7.",
+    "course": "secondary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0028",
     "type": "term",
     "subject": "Maths",
-    "course": "secondary-maths",
     "topic": "Number",
     "level": 2,
     "prompt": "Prime factorisation",
@@ -604,13 +603,13 @@
       "multiply"
     ],
     "explanation": "Prime factorisation writes a whole number as a product of prime numbers. Every integer above 1 has exactly one such factorisation, apart from the order of the factors.",
+    "course": "secondary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0029",
     "type": "term",
     "subject": "Maths",
-    "course": "secondary-maths",
     "topic": "Coordinate geometry",
     "level": 2,
     "prompt": "Gradient",
@@ -625,13 +624,13 @@
       "run"
     ],
     "explanation": "The gradient of a straight line measures how steep it is. It equals the change in y divided by the change in x between any two points on the line.",
+    "course": "secondary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0030",
     "type": "term",
     "subject": "Maths",
-    "course": "secondary-maths",
     "topic": "Geometry",
     "level": 2,
     "prompt": "Parallel lines",
@@ -647,13 +646,13 @@
       "direction"
     ],
     "explanation": "Parallel lines lie in the same plane and never meet, however far they are extended. They stay the same distance apart and have equal gradients.",
+    "course": "secondary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0031",
     "type": "term",
     "subject": "Maths",
-    "course": "secondary-maths",
     "topic": "Geometry",
     "level": 2,
     "prompt": "Circumference",
@@ -668,13 +667,13 @@
       "pi"
     ],
     "explanation": "The circumference is the distance around the edge of a circle. It equals pi times the diameter, or 2 times pi times the radius.",
+    "course": "secondary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0032",
     "type": "formula",
     "subject": "Maths",
-    "course": "secondary-maths",
     "topic": "Geometry",
     "level": 2,
     "prompt": "Volume of a sphere",
@@ -690,13 +689,13 @@
       "ball"
     ],
     "explanation": "The volume of a sphere is four-thirds times pi times the radius cubed. Doubling the radius increases the volume eightfold.",
+    "course": "secondary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0033",
     "type": "term",
     "subject": "Maths",
-    "course": "secondary-maths",
     "topic": "Sequences",
     "level": 2,
     "prompt": "Arithmetic sequence",
@@ -712,13 +711,13 @@
       "same"
     ],
     "explanation": "In an arithmetic sequence each term is found by adding the same fixed amount to the previous one. That fixed amount is called the common difference.",
+    "course": "secondary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0034",
     "type": "term",
     "subject": "Maths",
-    "course": "secondary-maths",
     "topic": "Sequences",
     "level": 2,
     "prompt": "Geometric sequence",
@@ -734,13 +733,13 @@
       "each"
     ],
     "explanation": "In a geometric sequence each term is found by multiplying the previous one by the same fixed number. That number is called the common ratio.",
+    "course": "secondary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0035",
     "type": "formula",
     "subject": "Maths",
-    "course": "university-discrete-maths",
     "topic": "Combinatorics",
     "level": 3,
     "prompt": "Binomial theorem",
@@ -757,13 +756,13 @@
       "brackets"
     ],
     "explanation": "The binomial theorem gives the expansion of (a + b) raised to a whole-number power n as a sum of terms. The coefficients are the binomial coefficients, which also appear in Pascal's triangle.",
+    "course": "university-discrete-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0036",
     "type": "term",
     "subject": "Maths",
-    "course": "university-statistics",
     "topic": "Distributions",
     "level": 3,
     "prompt": "Normal distribution",
@@ -779,13 +778,13 @@
       "histogram"
     ],
     "explanation": "The normal distribution is a symmetric, bell-shaped probability distribution centred on the mean. About 68% of values lie within one standard deviation of the mean.",
+    "course": "university-statistics",
     "status": "reviewed"
   },
   {
     "id": "mat-0037",
     "type": "term",
     "subject": "Maths",
-    "course": "secondary-maths",
     "topic": "Statistics",
     "level": 2,
     "prompt": "Correlation",
@@ -800,13 +799,13 @@
       "causation"
     ],
     "explanation": "Correlation measures how strongly two variables are linearly related. A strong correlation does not by itself show that one variable causes the other.",
+    "course": "secondary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0038",
     "type": "term",
     "subject": "Maths",
-    "course": "university-statistics",
     "topic": "Inference",
     "level": 3,
     "prompt": "Hypothesis test",
@@ -823,13 +822,13 @@
       "sample"
     ],
     "explanation": "A hypothesis test uses sample data to decide whether there is enough evidence to reject a null hypothesis. The result is judged against a chosen significance level.",
+    "course": "university-statistics",
     "status": "reviewed"
   },
   {
     "id": "mat-0039",
     "type": "term",
     "subject": "Maths",
-    "course": "university-linear-algebra",
     "topic": "Determinants",
     "level": 3,
     "prompt": "Determinant",
@@ -844,13 +843,13 @@
       "zero"
     ],
     "explanation": "The determinant is a single number calculated from a square matrix. A matrix has an inverse only if its determinant is not zero.",
+    "course": "university-linear-algebra",
     "status": "reviewed"
   },
   {
     "id": "mat-0040",
     "type": "term",
     "subject": "Maths",
-    "course": "university-linear-algebra",
     "topic": "Vectors",
     "level": 3,
     "prompt": "Dot product",
@@ -866,13 +865,13 @@
       "angle"
     ],
     "explanation": "The dot product of two vectors is a single number equal to the product of their magnitudes and the cosine of the angle between them. It is zero when the vectors are perpendicular.",
+    "course": "university-linear-algebra",
     "status": "reviewed"
   },
   {
     "id": "mat-0041",
     "type": "term",
     "subject": "Maths",
-    "course": "university-linear-algebra",
     "topic": "Vectors",
     "level": 3,
     "prompt": "Cross product",
@@ -888,13 +887,13 @@
       "right-hand"
     ],
     "explanation": "The cross product of two vectors in three dimensions is a vector perpendicular to both. Its magnitude equals the area of the parallelogram the two vectors form.",
+    "course": "university-linear-algebra",
     "status": "reviewed"
   },
   {
     "id": "mat-0042",
     "type": "term",
     "subject": "Maths",
-    "course": "university-calculus",
     "topic": "Differentiation",
     "level": 3,
     "prompt": "Tangent line",
@@ -910,13 +909,13 @@
       "gradient"
     ],
     "explanation": "A tangent to a curve is a straight line that touches the curve at one point and has the same gradient as the curve there. Its gradient is the derivative at that point.",
+    "course": "university-calculus",
     "status": "reviewed"
   },
   {
     "id": "mat-0043",
     "type": "term",
     "subject": "Maths",
-    "course": "university-calculus",
     "topic": "Functions and graphs",
     "level": 3,
     "prompt": "Asymptote",
@@ -932,13 +931,13 @@
       "infinity"
     ],
     "explanation": "An asymptote is a line that a curve gets closer and closer to without ever reaching it. The graph of y = 1/x has asymptotes along both axes.",
+    "course": "university-calculus",
     "status": "reviewed"
   },
   {
     "id": "mat-0044",
     "type": "term",
     "subject": "Maths",
-    "course": "secondary-maths",
     "topic": "Functions",
     "level": 2,
     "prompt": "Function",
@@ -954,13 +953,13 @@
       "relation"
     ],
     "explanation": "A function is a rule that gives exactly one output for each input. It is often written as f(x).",
+    "course": "secondary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0045",
     "type": "term",
     "subject": "Maths",
-    "course": "secondary-maths",
     "topic": "Algebra",
     "level": 2,
     "prompt": "Inequality",
@@ -976,13 +975,13 @@
       "equation"
     ],
     "explanation": "An inequality compares two expressions using symbols such as less than or greater than. Its solution is usually a range of values rather than a single number.",
+    "course": "secondary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0046",
     "type": "term",
     "subject": "Maths",
-    "course": "secondary-maths",
     "topic": "Algebra",
     "level": 2,
     "prompt": "Simultaneous equations",
@@ -998,13 +997,13 @@
       "both"
     ],
     "explanation": "Simultaneous equations are two or more equations that must all be true at the same time. Solving them means finding values of the unknowns that satisfy every equation.",
+    "course": "secondary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0047",
     "type": "term",
     "subject": "Maths",
-    "course": "secondary-maths",
     "topic": "Geometry",
     "level": 2,
     "prompt": "Perimeter",
@@ -1019,13 +1018,13 @@
       "sides"
     ],
     "explanation": "The perimeter of a shape is the total distance around its boundary. For a polygon it is the sum of the side lengths.",
+    "course": "secondary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0048",
     "type": "formula",
     "subject": "Maths",
-    "course": "secondary-maths",
     "topic": "Geometry",
     "level": 2,
     "prompt": "Area of a triangle",
@@ -1041,13 +1040,13 @@
       "shape"
     ],
     "explanation": "The area of a triangle is half of its base multiplied by its perpendicular height. It works for every triangle, not only right-angled ones.",
+    "course": "secondary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0049",
     "type": "term",
     "subject": "Maths",
-    "course": "secondary-maths",
     "topic": "Geometry",
     "level": 2,
     "prompt": "Congruent shapes",
@@ -1063,13 +1062,13 @@
       "triangles"
     ],
     "explanation": "Two shapes are congruent if one can be moved onto the other by sliding, turning or flipping, with no change of size. Congruent shapes have equal corresponding sides and angles.",
+    "course": "secondary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0050",
     "type": "term",
     "subject": "Maths",
-    "course": "university-discrete-maths",
     "topic": "Combinatorics",
     "level": 3,
     "prompt": "Permutation",
@@ -1085,13 +1084,13 @@
       "matters"
     ],
     "explanation": "A permutation is an arrangement of items in a particular order. The number of ways to arrange n different items is n factorial.",
+    "course": "university-discrete-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0051",
     "type": "term",
     "subject": "Maths",
-    "course": "university-discrete-maths",
     "topic": "Combinatorics",
     "level": 3,
     "prompt": "Combination",
@@ -1106,13 +1105,13 @@
       "subset"
     ],
     "explanation": "A combination is a selection of items where the order does not matter. The number of ways to choose r items from n is written nCr.",
+    "course": "university-discrete-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0052",
     "type": "question",
     "subject": "Maths",
-    "course": "secondary-maths",
     "topic": "Number",
     "level": 2,
     "prompt": "What is the value of pi to two decimal places?",
@@ -1127,13 +1126,13 @@
       "decimal"
     ],
     "explanation": "Pi is the ratio of a circle's circumference to its diameter, about 3.14159. It is irrational, so its decimal expansion never ends or repeats.",
+    "course": "secondary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0053",
     "type": "question",
     "subject": "Maths",
-    "course": "university-calculus",
     "topic": "Differentiation",
     "level": 3,
     "prompt": "What is the derivative of x squared?",
@@ -1147,13 +1146,13 @@
       "gradient"
     ],
     "explanation": "The derivative of x squared with respect to x is 2x. This follows from the power rule: bring the power down and reduce it by one.",
+    "course": "university-calculus",
     "status": "reviewed"
   },
   {
     "id": "mat-0054",
     "type": "question",
     "subject": "Maths",
-    "course": "university-calculus",
     "topic": "Integration",
     "level": 3,
     "prompt": "What is the integral of 1 over x?",
@@ -1170,13 +1169,13 @@
       "antiderivative"
     ],
     "explanation": "The integral of 1/x is the natural logarithm of the absolute value of x, plus a constant. It is the one exception to the usual power rule for integration.",
+    "course": "university-calculus",
     "status": "reviewed"
   },
   {
     "id": "mat-0055",
     "type": "question",
     "subject": "Maths",
-    "course": "secondary-maths",
     "topic": "Geometry",
     "level": 2,
     "prompt": "How many degrees are in a full turn?",
@@ -1192,13 +1191,13 @@
       "full"
     ],
     "explanation": "A full turn is 360 degrees. This is why the angles around a point add up to 360 degrees.",
+    "course": "secondary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0056",
     "type": "term",
     "subject": "Maths",
-    "course": "university-discrete-maths",
     "topic": "Complex numbers",
     "level": 3,
     "prompt": "Complex number",
@@ -1213,13 +1212,13 @@
       "minus one"
     ],
     "explanation": "A complex number has a real part and an imaginary part, written a + bi where i squared equals minus one. They let every polynomial equation have a solution.",
+    "course": "university-discrete-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0057",
     "type": "term",
     "subject": "Maths",
-    "course": "secondary-maths",
     "topic": "Algebra",
     "level": 2,
     "prompt": "Polynomial",
@@ -1235,13 +1234,13 @@
       "degree"
     ],
     "explanation": "A polynomial is an expression made of terms that are whole-number powers of a variable multiplied by coefficients. The highest power is called its degree.",
+    "course": "secondary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0058",
     "type": "term",
     "subject": "Maths",
-    "course": "secondary-maths",
     "topic": "Functions",
     "level": 2,
     "prompt": "Domain",
@@ -1255,13 +1254,13 @@
       "allowed"
     ],
     "explanation": "The domain of a function is the set of all input values for which it is defined. For f(x) = 1/x the domain excludes zero.",
+    "course": "secondary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0059",
     "type": "term",
     "subject": "Maths",
-    "course": "university-discrete-maths",
     "topic": "Logic and proof",
     "level": 3,
     "prompt": "Axiom",
@@ -1277,13 +1276,13 @@
       "self-evident"
     ],
     "explanation": "An axiom is a statement accepted as true without proof, used as a starting point for reasoning. Theorems are then proved from axioms.",
+    "course": "university-discrete-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0060",
     "type": "term",
     "subject": "Maths",
-    "course": "university-discrete-maths",
     "topic": "Logic and proof",
     "level": 3,
     "prompt": "Proof by induction",
@@ -1300,13 +1299,13 @@
       "integers"
     ],
     "explanation": "Proof by induction shows a statement is true for every whole number by proving a base case and then showing that if it holds for one number it holds for the next.",
+    "course": "university-discrete-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0061",
     "type": "term",
     "subject": "Maths",
-    "course": "primary-maths",
     "topic": "Number",
     "level": 1,
     "prompt": "Even number",
@@ -1322,13 +1321,13 @@
       "odd"
     ],
     "explanation": "An even number can be split into two equal groups with nothing left over. Even numbers end in 0, 2, 4, 6 or 8.",
+    "course": "primary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0062",
     "type": "term",
     "subject": "Maths",
-    "course": "primary-maths",
     "topic": "Number",
     "level": 1,
     "prompt": "Odd number",
@@ -1344,13 +1343,13 @@
       "one"
     ],
     "explanation": "An odd number cannot be split into two equal groups: there is always one left over. Odd numbers end in 1, 3, 5, 7 or 9.",
+    "course": "primary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0063",
     "type": "term",
     "subject": "Maths",
-    "course": "primary-maths",
     "topic": "Number",
     "level": 1,
     "prompt": "Place value",
@@ -1365,13 +1364,13 @@
       "position"
     ],
     "explanation": "Place value is what a digit is worth because of where it sits in a number. In 352, the 5 is worth 50 because it is in the tens place.",
+    "course": "primary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0064",
     "type": "term",
     "subject": "Maths",
-    "course": "primary-maths",
     "topic": "Number",
     "level": 1,
     "prompt": "Digit",
@@ -1386,13 +1385,13 @@
       "place"
     ],
     "explanation": "A digit is one of the ten symbols 0 to 9 that we use to write numbers. The number 305 has three digits.",
+    "course": "primary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0065",
     "type": "term",
     "subject": "Maths",
-    "course": "primary-maths",
     "topic": "Number",
     "level": 1,
     "prompt": "Rounding",
@@ -1408,13 +1407,13 @@
       "estimate"
     ],
     "explanation": "Rounding means changing a number to a nearby, simpler one, such as the nearest ten. 47 rounded to the nearest ten is 50.",
+    "course": "primary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0066",
     "type": "question",
     "subject": "Maths",
-    "course": "primary-maths",
     "topic": "Number",
     "level": 1,
     "prompt": "What number comes straight after 99?",
@@ -1429,13 +1428,13 @@
       "century"
     ],
     "explanation": "After 99 comes 100. The ones and the tens are both full, so we move into a new place: the hundreds.",
+    "course": "primary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0067",
     "type": "term",
     "subject": "Maths",
-    "course": "primary-maths",
     "topic": "Addition and subtraction",
     "level": 1,
     "prompt": "Sum",
@@ -1450,13 +1449,13 @@
       "answer"
     ],
     "explanation": "The sum is the answer you get when you add numbers together. The sum of 4 and 5 is 9.",
+    "course": "primary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0068",
     "type": "term",
     "subject": "Maths",
-    "course": "primary-maths",
     "topic": "Addition and subtraction",
     "level": 1,
     "prompt": "Difference",
@@ -1470,13 +1469,13 @@
       "between"
     ],
     "explanation": "The difference between two numbers is how much bigger one is than the other. You find it by subtracting: the difference between 9 and 4 is 5.",
+    "course": "primary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0069",
     "type": "question",
     "subject": "Maths",
-    "course": "primary-maths",
     "topic": "Addition and subtraction",
     "level": 1,
     "prompt": "What is 7 + 8?",
@@ -1491,13 +1490,13 @@
       "plus"
     ],
     "explanation": "7 + 8 = 15. One way to see it: 7 + 3 makes 10, and 5 more makes 15.",
+    "course": "primary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0070",
     "type": "term",
     "subject": "Maths",
-    "course": "primary-maths",
     "topic": "Addition and subtraction",
     "level": 1,
     "prompt": "Number line",
@@ -1511,13 +1510,13 @@
       "count"
     ],
     "explanation": "A number line is a straight line with numbers marked in order along it. You can count on or back along it to add and subtract.",
+    "course": "primary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0071",
     "type": "term",
     "subject": "Maths",
-    "course": "primary-maths",
     "topic": "Addition and subtraction",
     "level": 1,
     "prompt": "Inverse operation",
@@ -1532,13 +1531,13 @@
       "check"
     ],
     "explanation": "An inverse operation undoes another one. Subtraction is the inverse of addition: 5 + 3 = 8, so 8 - 3 = 5.",
+    "course": "primary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0072",
     "type": "question",
     "subject": "Maths",
-    "course": "primary-maths",
     "topic": "Addition and subtraction",
     "level": 1,
     "prompt": "What is 20 - 6?",
@@ -1553,13 +1552,13 @@
       "minus"
     ],
     "explanation": "20 - 6 = 14. Counting back 6 from 20 on a number line lands on 14.",
+    "course": "primary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0073",
     "type": "term",
     "subject": "Maths",
-    "course": "primary-maths",
     "topic": "Multiplication and division",
     "level": 1,
     "prompt": "Times table",
@@ -1575,13 +1574,13 @@
       "facts"
     ],
     "explanation": "A times table lists the multiples of a number in order, such as 3, 6, 9, 12 for the three times table. Knowing them by heart makes multiplying quick.",
+    "course": "primary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0074",
     "type": "term",
     "subject": "Maths",
-    "course": "primary-maths",
     "topic": "Multiplication and division",
     "level": 1,
     "prompt": "Remainder",
@@ -1595,13 +1594,13 @@
       "spare"
     ],
     "explanation": "A remainder is what is left over when a number cannot be shared equally. 13 shared between 4 is 3 each, remainder 1.",
+    "course": "primary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0075",
     "type": "question",
     "subject": "Maths",
-    "course": "primary-maths",
     "topic": "Multiplication and division",
     "level": 1,
     "prompt": "What is 6 × 7?",
@@ -1617,13 +1616,13 @@
       "multiply"
     ],
     "explanation": "6 × 7 = 42. It is the same as 7 × 6: six lots of seven, or seven lots of six.",
+    "course": "primary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0076",
     "type": "term",
     "subject": "Maths",
-    "course": "primary-maths",
     "topic": "Multiplication and division",
     "level": 1,
     "prompt": "Equal groups",
@@ -1637,13 +1636,13 @@
       "sets"
     ],
     "explanation": "Equal groups have the same number of things in each group. Making equal groups is how we share and divide: 12 sweets in 3 equal groups is 4 each.",
+    "course": "primary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0077",
     "type": "term",
     "subject": "Maths",
-    "course": "primary-maths",
     "topic": "Multiplication and division",
     "level": 1,
     "prompt": "Multiple",
@@ -1658,13 +1657,13 @@
       "factor"
     ],
     "explanation": "A multiple of a number is what you get when you multiply it by a whole number. 12, 18 and 24 are all multiples of 6.",
+    "course": "primary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0078",
     "type": "term",
     "subject": "Maths",
-    "course": "primary-maths",
     "topic": "Fractions",
     "level": 1,
     "prompt": "Numerator",
@@ -1678,13 +1677,13 @@
       "parts"
     ],
     "explanation": "The numerator is the top number of a fraction. It says how many equal parts you have: in 3/4 the numerator is 3.",
+    "course": "primary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0079",
     "type": "term",
     "subject": "Maths",
-    "course": "primary-maths",
     "topic": "Fractions",
     "level": 1,
     "prompt": "Denominator",
@@ -1698,13 +1697,13 @@
       "top"
     ],
     "explanation": "The denominator is the bottom number of a fraction. It says how many equal parts the whole is split into: in 3/4 the denominator is 4.",
+    "course": "primary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0080",
     "type": "term",
     "subject": "Maths",
-    "course": "primary-maths",
     "topic": "Fractions",
     "level": 1,
     "prompt": "Half",
@@ -1720,13 +1719,13 @@
       "middle"
     ],
     "explanation": "A half is one of two equal parts of a whole. Half of 10 is 5.",
+    "course": "primary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0081",
     "type": "term",
     "subject": "Maths",
-    "course": "primary-maths",
     "topic": "Fractions",
     "level": 1,
     "prompt": "Quarter",
@@ -1743,13 +1742,13 @@
       "half"
     ],
     "explanation": "A quarter is one of four equal parts of a whole. Two quarters make a half, and a quarter of 20 is 5.",
+    "course": "primary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0082",
     "type": "term",
     "subject": "Maths",
-    "course": "primary-maths",
     "topic": "Fractions",
     "level": 1,
     "prompt": "Equivalent fractions",
@@ -1764,13 +1763,13 @@
       "worth"
     ],
     "explanation": "Equivalent fractions look different but are worth the same amount. 1/2, 2/4 and 4/8 are all equivalent.",
+    "course": "primary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0083",
     "type": "term",
     "subject": "Maths",
-    "course": "primary-maths",
     "topic": "Fractions",
     "level": 1,
     "prompt": "Decimal point",
@@ -1784,13 +1783,13 @@
       "whole"
     ],
     "explanation": "The decimal point separates whole numbers from parts of a whole. In 3.5 it shows 3 wholes and 5 tenths.",
+    "course": "primary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0084",
     "type": "term",
     "subject": "Maths",
-    "course": "primary-maths",
     "topic": "Measurement",
     "level": 1,
     "prompt": "Centimetre",
@@ -1807,13 +1806,13 @@
       "short"
     ],
     "explanation": "A centimetre is a small unit of length. There are 100 centimetres in a metre, and a fingernail is about 1 centimetre wide.",
+    "course": "primary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0085",
     "type": "term",
     "subject": "Maths",
-    "course": "primary-maths",
     "topic": "Measurement",
     "level": 1,
     "prompt": "Kilogram",
@@ -1830,13 +1829,13 @@
       "grams"
     ],
     "explanation": "A kilogram is a unit of mass. A bag of sugar has a mass of about 1 kilogram, and 1 kilogram is 1000 grams.",
+    "course": "primary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0086",
     "type": "term",
     "subject": "Maths",
-    "course": "primary-maths",
     "topic": "Measurement",
     "level": 1,
     "prompt": "Area",
@@ -1850,13 +1849,13 @@
       "surface"
     ],
     "explanation": "Area is the amount of flat space a shape covers. It is measured in squares, such as square centimetres.",
+    "course": "primary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0087",
     "type": "formula",
     "subject": "Maths",
-    "course": "primary-maths",
     "topic": "Measurement",
     "level": 1,
     "prompt": "Area of a rectangle",
@@ -1871,13 +1870,13 @@
       "times"
     ],
     "explanation": "To find the area of a rectangle, multiply its length by its width. A rectangle 3 cm by 4 cm has an area of 12 square centimetres.",
+    "course": "primary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0088",
     "type": "question",
     "subject": "Maths",
-    "course": "primary-maths",
     "topic": "Measurement",
     "level": 1,
     "prompt": "How many minutes are there in one hour?",
@@ -1891,13 +1890,13 @@
       "seconds"
     ],
     "explanation": "There are 60 minutes in an hour. The minute hand goes all the way round the clock once every hour.",
+    "course": "primary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0089",
     "type": "term",
     "subject": "Maths",
-    "course": "primary-maths",
     "topic": "Measurement",
     "level": 1,
     "prompt": "Capacity",
@@ -1911,13 +1910,13 @@
       "fill"
     ],
     "explanation": "Capacity is how much a container can hold, such as a jug that holds 1 litre of water.",
+    "course": "primary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0090",
     "type": "term",
     "subject": "Maths",
-    "course": "primary-maths",
     "topic": "Shapes",
     "level": 1,
     "prompt": "Triangle",
@@ -1931,13 +1930,13 @@
       "shape"
     ],
     "explanation": "A triangle is a flat shape with three straight sides and three corners.",
+    "course": "primary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0091",
     "type": "term",
     "subject": "Maths",
-    "course": "primary-maths",
     "topic": "Shapes",
     "level": 1,
     "prompt": "Right angle",
@@ -1953,13 +1952,13 @@
       "ninety"
     ],
     "explanation": "A right angle is a quarter turn, exactly 90 degrees, like the corner of a book.",
+    "course": "primary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0092",
     "type": "term",
     "subject": "Maths",
-    "course": "primary-maths",
     "topic": "Shapes",
     "level": 1,
     "prompt": "Cube",
@@ -1974,13 +1973,13 @@
       "box"
     ],
     "explanation": "A cube is a 3D shape with six square faces that are all the same size, like a dice.",
+    "course": "primary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0093",
     "type": "term",
     "subject": "Maths",
-    "course": "primary-maths",
     "topic": "Shapes",
     "level": 1,
     "prompt": "Line of symmetry",
@@ -1997,13 +1996,13 @@
       "reflection"
     ],
     "explanation": "A shape is symmetrical when one half is a mirror image of the other. The line of symmetry is where you could fold it so both halves match exactly.",
+    "course": "primary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0094",
     "type": "question",
     "subject": "Maths",
-    "course": "primary-maths",
     "topic": "Shapes",
     "level": 1,
     "prompt": "How many sides does a hexagon have?",
@@ -2017,13 +2016,13 @@
       "bee"
     ],
     "explanation": "A hexagon has six sides and six corners. The cells of a honeycomb are hexagons.",
+    "course": "primary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0095",
     "type": "term",
     "subject": "Maths",
-    "course": "primary-maths",
     "topic": "Shapes",
     "level": 1,
     "prompt": "Circle",
@@ -2037,13 +2036,13 @@
       "curve"
     ],
     "explanation": "A circle is a perfectly round flat shape. Every point on its edge is the same distance from the centre.",
+    "course": "primary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0096",
     "type": "term",
     "subject": "Maths",
-    "course": "primary-maths",
     "topic": "Data handling",
     "level": 1,
     "prompt": "Tally chart",
@@ -2060,13 +2059,13 @@
       "gate"
     ],
     "explanation": "A tally chart records counts with marks, drawn in groups of five so they are quick to add up.",
+    "course": "primary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0097",
     "type": "term",
     "subject": "Maths",
-    "course": "primary-maths",
     "topic": "Data handling",
     "level": 1,
     "prompt": "Bar chart",
@@ -2081,13 +2080,13 @@
       "columns"
     ],
     "explanation": "A bar chart shows data with bars of different heights. The taller the bar, the bigger the number it stands for.",
+    "course": "primary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0098",
     "type": "term",
     "subject": "Maths",
-    "course": "primary-maths",
     "topic": "Data handling",
     "level": 1,
     "prompt": "Pictogram",
@@ -2102,13 +2101,13 @@
       "chart"
     ],
     "explanation": "A pictogram shows data using pictures or symbols. A key tells you how many each picture stands for.",
+    "course": "primary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0099",
     "type": "term",
     "subject": "Maths",
-    "course": "primary-maths",
     "topic": "Data handling",
     "level": 1,
     "prompt": "Survey",
@@ -2122,13 +2121,13 @@
       "collect"
     ],
     "explanation": "A survey collects information by asking people the same questions, such as their favourite fruit.",
+    "course": "primary-maths",
     "status": "reviewed"
   },
   {
     "id": "mat-0100",
     "type": "term",
     "subject": "Maths",
-    "course": "primary-maths",
     "topic": "Data handling",
     "level": 1,
     "prompt": "Venn diagram",
@@ -2143,6 +2142,2842 @@
       "sets"
     ],
     "explanation": "A Venn diagram sorts things into overlapping circles. Things that belong to both groups go in the middle, where the circles overlap.",
+    "course": "primary-maths",
     "status": "reviewed"
+  },
+  {
+    "id": "mat-0101",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Number",
+    "level": 1,
+    "prompt": "Tens",
+    "answers": [
+      "tens"
+    ],
+    "forbidden": [
+      "ones",
+      "hundreds",
+      "place",
+      "digit",
+      "ten"
+    ],
+    "explanation": "The tens column shows how many groups of ten a number has. In 47, the 4 means four tens, which is forty.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0102",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Number",
+    "level": 1,
+    "prompt": "Thousand",
+    "answers": [
+      "thousand",
+      "one thousand"
+    ],
+    "forbidden": [
+      "hundred",
+      "zeros",
+      "big",
+      "ten"
+    ],
+    "explanation": "A thousand is ten hundreds. It is written 1000, with three zeros.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0103",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Number",
+    "level": 1,
+    "prompt": "Ordinal number",
+    "answers": [
+      "ordinal number",
+      "ordinal numbers",
+      "ordinal"
+    ],
+    "forbidden": [
+      "first",
+      "second",
+      "third",
+      "position",
+      "order"
+    ],
+    "explanation": "An ordinal number tells you a position in order, such as first, second or third. Counting numbers like one, two and three tell you how many.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0104",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Number",
+    "level": 1,
+    "prompt": "Negative number",
+    "answers": [
+      "negative number",
+      "negative numbers"
+    ],
+    "forbidden": [
+      "minus",
+      "below",
+      "zero",
+      "less",
+      "cold"
+    ],
+    "explanation": "A negative number is less than zero. Temperatures below freezing, like -3 degrees, are negative numbers.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0105",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Number",
+    "level": 1,
+    "prompt": "Square number",
+    "answers": [
+      "square number",
+      "square numbers"
+    ],
+    "forbidden": [
+      "multiply",
+      "itself",
+      "times",
+      "squared"
+    ],
+    "explanation": "A square number is a number multiplied by itself. 1, 4, 9, 16 and 25 are square numbers, because 5 × 5 = 25.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0106",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Number",
+    "level": 1,
+    "prompt": "Prime number",
+    "answers": [
+      "prime number",
+      "prime numbers",
+      "prime"
+    ],
+    "forbidden": [
+      "divide",
+      "factors",
+      "only",
+      "itself",
+      "one"
+    ],
+    "explanation": "A prime number has exactly two factors: 1 and itself. 2, 3, 5, 7 and 11 are prime numbers.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0107",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Number",
+    "level": 1,
+    "prompt": "Factor",
+    "answers": [
+      "factor",
+      "factors"
+    ],
+    "forbidden": [
+      "divide",
+      "exactly",
+      "multiply",
+      "pair"
+    ],
+    "explanation": "A factor is a number that divides into another number exactly, with nothing left over. The factors of 6 are 1, 2, 3 and 6.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0108",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Number",
+    "level": 1,
+    "prompt": "Estimate",
+    "answers": [
+      "estimate",
+      "estimation",
+      "estimating"
+    ],
+    "forbidden": [
+      "guess",
+      "about",
+      "roughly",
+      "close"
+    ],
+    "explanation": "An estimate is a sensible guess at an answer, often found by rounding. 49 + 31 is about 50 + 30, so the answer is roughly 80.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0109",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Number",
+    "level": 1,
+    "prompt": "Greater than",
+    "answers": [
+      "greater than",
+      "more than"
+    ],
+    "forbidden": [
+      "bigger",
+      "larger",
+      "symbol",
+      "less"
+    ],
+    "explanation": "Greater than means bigger. The symbol > shows it: 7 > 3 means seven is greater than three.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0110",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Number",
+    "level": 1,
+    "prompt": "Less than",
+    "answers": [
+      "less than",
+      "fewer than"
+    ],
+    "forbidden": [
+      "smaller",
+      "symbol",
+      "greater",
+      "under"
+    ],
+    "explanation": "Less than means smaller. The symbol < shows it: 2 < 9 means two is less than nine.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0111",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Number",
+    "level": 1,
+    "prompt": "Roman numerals",
+    "answers": [
+      "roman numerals",
+      "roman numeral"
+    ],
+    "forbidden": [
+      "rome",
+      "letters",
+      "ancient",
+      "clock"
+    ],
+    "explanation": "Roman numerals use letters to write numbers: I is 1, V is 5 and X is 10. You can still see them on some clocks.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0112",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Number",
+    "level": 1,
+    "prompt": "Zero",
+    "answers": [
+      "zero",
+      "nought",
+      "nothing"
+    ],
+    "forbidden": [
+      "none",
+      "empty",
+      "nil",
+      "oh"
+    ],
+    "explanation": "Zero means none at all. It also holds a place in numbers like 105, so the 1 still means one hundred.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0113",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Number",
+    "level": 1,
+    "prompt": "Partitioning",
+    "answers": [
+      "partitioning",
+      "partition"
+    ],
+    "forbidden": [
+      "split",
+      "parts",
+      "tens",
+      "ones",
+      "break"
+    ],
+    "explanation": "Partitioning means splitting a number into parts, like 46 = 40 + 6. It makes adding and subtracting easier.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0114",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Number",
+    "level": 1,
+    "prompt": "Number bond",
+    "answers": [
+      "number bond",
+      "number bonds"
+    ],
+    "forbidden": [
+      "pairs",
+      "add",
+      "make",
+      "ten",
+      "together"
+    ],
+    "explanation": "A number bond is a pair of numbers that add to make another number. 3 and 7 are a number bond to 10.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0115",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Number",
+    "level": 1,
+    "prompt": "Whole number",
+    "answers": [
+      "whole number",
+      "whole numbers",
+      "integer"
+    ],
+    "forbidden": [
+      "fraction",
+      "decimal",
+      "counting",
+      "no parts"
+    ],
+    "explanation": "A whole number has no fractions or decimals, like 0, 1, 2 and 3. 2.5 is not a whole number.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0116",
+    "type": "question",
+    "subject": "Maths",
+    "topic": "Number",
+    "level": 1,
+    "prompt": "What is the next odd number after 7?",
+    "answers": [
+      "9",
+      "nine"
+    ],
+    "forbidden": [
+      "eight",
+      "even",
+      "count",
+      "odd"
+    ],
+    "explanation": "Odd numbers go up in twos: 5, 7, 9. So the next odd number after 7 is 9.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0117",
+    "type": "question",
+    "subject": "Maths",
+    "topic": "Number",
+    "level": 1,
+    "prompt": "How many fingers do most people have on two hands?",
+    "answers": [
+      "10",
+      "ten"
+    ],
+    "forbidden": [
+      "hands",
+      "five",
+      "count",
+      "thumbs"
+    ],
+    "explanation": "Most people have five fingers on each hand, and 5 + 5 = 10. That is why we often count in tens.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0118",
+    "type": "question",
+    "subject": "Maths",
+    "topic": "Number",
+    "level": 1,
+    "prompt": "What is double 12?",
+    "answers": [
+      "24",
+      "twenty-four"
+    ],
+    "forbidden": [
+      "twelve",
+      "two",
+      "twice",
+      "add"
+    ],
+    "explanation": "Doubling means adding a number to itself: 12 + 12 = 24.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0119",
+    "type": "question",
+    "subject": "Maths",
+    "topic": "Number",
+    "level": 1,
+    "prompt": "What is half of 50?",
+    "answers": [
+      "25",
+      "twenty-five"
+    ],
+    "forbidden": [
+      "fifty",
+      "two",
+      "halve",
+      "split"
+    ],
+    "explanation": "Half of 50 is 25, because 25 + 25 = 50.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0120",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Addition and subtraction",
+    "level": 1,
+    "prompt": "Addition",
+    "answers": [
+      "addition",
+      "add",
+      "adding"
+    ],
+    "forbidden": [
+      "plus",
+      "sum",
+      "total",
+      "together",
+      "more"
+    ],
+    "explanation": "Addition means putting amounts together to find a total. 4 + 3 = 7 is an addition.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0121",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Addition and subtraction",
+    "level": 1,
+    "prompt": "Subtraction",
+    "answers": [
+      "subtraction",
+      "subtract",
+      "take away"
+    ],
+    "forbidden": [
+      "minus",
+      "less",
+      "difference",
+      "remove"
+    ],
+    "explanation": "Subtraction means taking one amount away from another. 9 - 4 = 5 is a subtraction.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0122",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Addition and subtraction",
+    "level": 1,
+    "prompt": "Plus sign",
+    "answers": [
+      "plus sign",
+      "plus"
+    ],
+    "forbidden": [
+      "add",
+      "cross",
+      "symbol",
+      "addition"
+    ],
+    "explanation": "The plus sign + tells you to add. In 5 + 2, it means put 5 and 2 together.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0123",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Addition and subtraction",
+    "level": 1,
+    "prompt": "Minus sign",
+    "answers": [
+      "minus sign",
+      "minus"
+    ],
+    "forbidden": [
+      "subtract",
+      "take away",
+      "dash",
+      "line"
+    ],
+    "explanation": "The minus sign - tells you to subtract. In 8 - 3, it means take 3 away from 8.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0124",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Addition and subtraction",
+    "level": 1,
+    "prompt": "Equals sign",
+    "answers": [
+      "equals sign",
+      "equals",
+      "equal sign"
+    ],
+    "forbidden": [
+      "same",
+      "lines",
+      "answer",
+      "balance"
+    ],
+    "explanation": "The equals sign = means both sides have the same value. In 3 + 4 = 7, each side is worth seven.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0125",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Addition and subtraction",
+    "level": 1,
+    "prompt": "Column addition",
+    "answers": [
+      "column addition"
+    ],
+    "forbidden": [
+      "columns",
+      "line up",
+      "tens",
+      "ones",
+      "written"
+    ],
+    "explanation": "Column addition is a written way of adding where numbers are lined up by place value. You add the ones first, then the tens.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0126",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Addition and subtraction",
+    "level": 1,
+    "prompt": "Carrying",
+    "answers": [
+      "carrying",
+      "carry over",
+      "carry"
+    ],
+    "forbidden": [
+      "move",
+      "next column",
+      "ten",
+      "over"
+    ],
+    "explanation": "Carrying happens in column addition when a column adds up to ten or more. The extra ten moves into the next column.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0127",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Addition and subtraction",
+    "level": 1,
+    "prompt": "Borrowing",
+    "answers": [
+      "borrowing",
+      "exchanging",
+      "exchange"
+    ],
+    "forbidden": [
+      "subtract",
+      "column",
+      "take",
+      "ten"
+    ],
+    "explanation": "Borrowing, or exchanging, happens in column subtraction when the top digit is too small. You swap one ten for ten ones.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0128",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Addition and subtraction",
+    "level": 1,
+    "prompt": "Mental maths",
+    "answers": [
+      "mental maths",
+      "mental math",
+      "mental arithmetic"
+    ],
+    "forbidden": [
+      "head",
+      "brain",
+      "without",
+      "paper"
+    ],
+    "explanation": "Mental maths means working out answers in your head, without writing them down. Rounding and number bonds help.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0129",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Addition and subtraction",
+    "level": 1,
+    "prompt": "Number sentence",
+    "answers": [
+      "number sentence",
+      "number sentences"
+    ],
+    "forbidden": [
+      "equals",
+      "sum",
+      "written",
+      "symbols"
+    ],
+    "explanation": "A number sentence uses numbers and symbols to say something true, such as 6 + 2 = 8.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0130",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Addition and subtraction",
+    "level": 1,
+    "prompt": "Counting on",
+    "answers": [
+      "counting on",
+      "count on"
+    ],
+    "forbidden": [
+      "forwards",
+      "add",
+      "number line",
+      "up"
+    ],
+    "explanation": "Counting on is adding by starting at one number and counting forwards. To work out 8 + 3, start at 8 and count 9, 10, 11.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0131",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Addition and subtraction",
+    "level": 1,
+    "prompt": "Counting back",
+    "answers": [
+      "counting back",
+      "count back"
+    ],
+    "forbidden": [
+      "backwards",
+      "subtract",
+      "down",
+      "number line"
+    ],
+    "explanation": "Counting back is subtracting by counting backwards. To work out 12 - 3, start at 12 and count 11, 10, 9.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0132",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Addition and subtraction",
+    "level": 1,
+    "prompt": "Doubling",
+    "answers": [
+      "doubling",
+      "double"
+    ],
+    "forbidden": [
+      "twice",
+      "two times",
+      "itself",
+      "add"
+    ],
+    "explanation": "Doubling means adding a number to itself, or multiplying it by two. Double 6 is 12.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0133",
+    "type": "question",
+    "subject": "Maths",
+    "topic": "Addition and subtraction",
+    "level": 1,
+    "prompt": "What is 9 + 9?",
+    "answers": [
+      "18",
+      "eighteen"
+    ],
+    "forbidden": [
+      "nine",
+      "double",
+      "add",
+      "plus"
+    ],
+    "explanation": "9 + 9 = 18. It is the same as double nine.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0134",
+    "type": "question",
+    "subject": "Maths",
+    "topic": "Addition and subtraction",
+    "level": 1,
+    "prompt": "What is 50 - 20?",
+    "answers": [
+      "30",
+      "thirty"
+    ],
+    "forbidden": [
+      "fifty",
+      "twenty",
+      "take away",
+      "minus"
+    ],
+    "explanation": "50 - 20 = 30. Five tens take away two tens leaves three tens.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0135",
+    "type": "question",
+    "subject": "Maths",
+    "topic": "Addition and subtraction",
+    "level": 1,
+    "prompt": "What is 100 - 1?",
+    "answers": [
+      "99",
+      "ninety-nine"
+    ],
+    "forbidden": [
+      "hundred",
+      "one",
+      "less",
+      "take away"
+    ],
+    "explanation": "100 - 1 = 99. It is the number just before one hundred.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0136",
+    "type": "question",
+    "subject": "Maths",
+    "topic": "Addition and subtraction",
+    "level": 1,
+    "prompt": "What is 13 + 7?",
+    "answers": [
+      "20",
+      "twenty"
+    ],
+    "forbidden": [
+      "thirteen",
+      "seven",
+      "add",
+      "plus"
+    ],
+    "explanation": "13 + 7 = 20. The 3 and the 7 make a ten, so you get two tens.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0137",
+    "type": "question",
+    "subject": "Maths",
+    "topic": "Addition and subtraction",
+    "level": 1,
+    "prompt": "What is 36 + 4?",
+    "answers": [
+      "40",
+      "forty"
+    ],
+    "forbidden": [
+      "thirty",
+      "four",
+      "add",
+      "plus"
+    ],
+    "explanation": "36 + 4 = 40. Adding 4 to 6 ones makes another ten.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0138",
+    "type": "question",
+    "subject": "Maths",
+    "topic": "Addition and subtraction",
+    "level": 1,
+    "prompt": "What is 11 + 11?",
+    "answers": [
+      "22",
+      "twenty-two"
+    ],
+    "forbidden": [
+      "eleven",
+      "double",
+      "add",
+      "plus"
+    ],
+    "explanation": "11 + 11 = 22. Double eleven is twenty-two.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0139",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Multiplication and division",
+    "level": 1,
+    "prompt": "Multiplication",
+    "answers": [
+      "multiplication",
+      "multiply",
+      "times"
+    ],
+    "forbidden": [
+      "lots of",
+      "groups",
+      "product",
+      "table"
+    ],
+    "explanation": "Multiplication is adding equal groups quickly. 3 × 4 means three groups of four, which is 12.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0140",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Multiplication and division",
+    "level": 1,
+    "prompt": "Division",
+    "answers": [
+      "division",
+      "divide",
+      "sharing"
+    ],
+    "forbidden": [
+      "share",
+      "equal",
+      "groups",
+      "split"
+    ],
+    "explanation": "Division means sharing or grouping equally. 12 ÷ 3 = 4 means 12 shared into 3 equal groups gives 4 in each.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0141",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Multiplication and division",
+    "level": 1,
+    "prompt": "Product",
+    "answers": [
+      "product"
+    ],
+    "forbidden": [
+      "multiply",
+      "answer",
+      "times",
+      "result"
+    ],
+    "explanation": "The product is the answer when you multiply. The product of 3 and 5 is 15.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0142",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Multiplication and division",
+    "level": 1,
+    "prompt": "Quotient",
+    "answers": [
+      "quotient"
+    ],
+    "forbidden": [
+      "divide",
+      "answer",
+      "division",
+      "result"
+    ],
+    "explanation": "The quotient is the answer when you divide. In 20 ÷ 4 = 5, the quotient is 5.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0143",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Multiplication and division",
+    "level": 1,
+    "prompt": "Halving",
+    "answers": [
+      "halving",
+      "halve"
+    ],
+    "forbidden": [
+      "half",
+      "two",
+      "split",
+      "divide"
+    ],
+    "explanation": "Halving means splitting into two equal parts, or dividing by two. Half of 18 is 9.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0144",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Multiplication and division",
+    "level": 1,
+    "prompt": "Grouping",
+    "answers": [
+      "grouping"
+    ],
+    "forbidden": [
+      "groups",
+      "divide",
+      "sets",
+      "how many"
+    ],
+    "explanation": "Grouping is a way of dividing by asking how many equal groups fit. 15 ÷ 5 asks how many groups of 5 are in 15: three.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0145",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Multiplication and division",
+    "level": 1,
+    "prompt": "Repeated addition",
+    "answers": [
+      "repeated addition"
+    ],
+    "forbidden": [
+      "again",
+      "same",
+      "add",
+      "multiply",
+      "times"
+    ],
+    "explanation": "Repeated addition means adding the same number again and again. 4 + 4 + 4 is the same as 3 × 4.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0146",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Multiplication and division",
+    "level": 1,
+    "prompt": "Short division",
+    "answers": [
+      "short division",
+      "bus stop method"
+    ],
+    "forbidden": [
+      "bus",
+      "written",
+      "divide",
+      "method"
+    ],
+    "explanation": "Short division is a written way of dividing, often called the bus stop method. You divide each digit in turn, carrying any remainder.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0147",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Multiplication and division",
+    "level": 1,
+    "prompt": "Long multiplication",
+    "answers": [
+      "long multiplication"
+    ],
+    "forbidden": [
+      "written",
+      "multiply",
+      "columns",
+      "two-digit"
+    ],
+    "explanation": "Long multiplication is a written method for multiplying bigger numbers, like 23 × 14. You multiply by each digit and add the rows.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0148",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Multiplication and division",
+    "level": 1,
+    "prompt": "Multiplication sign",
+    "answers": [
+      "multiplication sign",
+      "times sign"
+    ],
+    "forbidden": [
+      "cross",
+      "letter",
+      "symbol",
+      "multiply"
+    ],
+    "explanation": "The multiplication sign × tells you to multiply. It looks like a small cross: 4 × 2 = 8.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0149",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Multiplication and division",
+    "level": 1,
+    "prompt": "Division sign",
+    "answers": [
+      "division sign",
+      "obelus"
+    ],
+    "forbidden": [
+      "dots",
+      "line",
+      "symbol",
+      "divide"
+    ],
+    "explanation": "The division sign ÷ is a line with a dot above and below. It tells you to divide: 10 ÷ 2 = 5.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0150",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Multiplication and division",
+    "level": 1,
+    "prompt": "Factor pair",
+    "answers": [
+      "factor pair",
+      "factor pairs"
+    ],
+    "forbidden": [
+      "two numbers",
+      "multiply",
+      "make",
+      "factors"
+    ],
+    "explanation": "A factor pair is two numbers that multiply to make a number. 3 and 4 are a factor pair of 12.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0151",
+    "type": "question",
+    "subject": "Maths",
+    "topic": "Multiplication and division",
+    "level": 1,
+    "prompt": "What is 8 × 8?",
+    "answers": [
+      "64",
+      "sixty-four"
+    ],
+    "forbidden": [
+      "eight",
+      "times",
+      "square",
+      "multiply"
+    ],
+    "explanation": "8 × 8 = 64. It is a square number, because 8 is multiplied by itself.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0152",
+    "type": "question",
+    "subject": "Maths",
+    "topic": "Multiplication and division",
+    "level": 1,
+    "prompt": "What is 12 × 3?",
+    "answers": [
+      "36",
+      "thirty-six"
+    ],
+    "forbidden": [
+      "twelve",
+      "three",
+      "times",
+      "multiply"
+    ],
+    "explanation": "12 × 3 = 36. Three lots of twelve make thirty-six.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0153",
+    "type": "question",
+    "subject": "Maths",
+    "topic": "Multiplication and division",
+    "level": 1,
+    "prompt": "What is 56 ÷ 7?",
+    "answers": [
+      "8",
+      "eight"
+    ],
+    "forbidden": [
+      "seven",
+      "fifty",
+      "divide",
+      "share"
+    ],
+    "explanation": "56 ÷ 7 = 8, because 7 × 8 = 56.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0154",
+    "type": "question",
+    "subject": "Maths",
+    "topic": "Multiplication and division",
+    "level": 1,
+    "prompt": "What is 5 × 9?",
+    "answers": [
+      "45",
+      "forty-five"
+    ],
+    "forbidden": [
+      "five",
+      "nine",
+      "times",
+      "multiply"
+    ],
+    "explanation": "5 × 9 = 45. Counting in fives nine times gives forty-five.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0155",
+    "type": "question",
+    "subject": "Maths",
+    "topic": "Multiplication and division",
+    "level": 1,
+    "prompt": "What is 7 × 7?",
+    "answers": [
+      "49",
+      "forty-nine"
+    ],
+    "forbidden": [
+      "seven",
+      "times",
+      "square",
+      "multiply"
+    ],
+    "explanation": "7 × 7 = 49. It is a square number.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0156",
+    "type": "question",
+    "subject": "Maths",
+    "topic": "Multiplication and division",
+    "level": 1,
+    "prompt": "How many fives make 35?",
+    "answers": [
+      "7",
+      "seven"
+    ],
+    "forbidden": [
+      "five",
+      "thirty",
+      "divide",
+      "groups"
+    ],
+    "explanation": "Seven fives make 35, because 5 × 7 = 35. So 35 ÷ 5 = 7.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0157",
+    "type": "question",
+    "subject": "Maths",
+    "topic": "Multiplication and division",
+    "level": 1,
+    "prompt": "What is 11 × 11?",
+    "answers": [
+      "121",
+      "one hundred and twenty-one"
+    ],
+    "forbidden": [
+      "eleven",
+      "times",
+      "square",
+      "multiply"
+    ],
+    "explanation": "11 × 11 = 121. It is the square of eleven.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0158",
+    "type": "question",
+    "subject": "Maths",
+    "topic": "Multiplication and division",
+    "level": 1,
+    "prompt": "What is 48 ÷ 4?",
+    "answers": [
+      "12",
+      "twelve"
+    ],
+    "forbidden": [
+      "four",
+      "forty",
+      "divide",
+      "share"
+    ],
+    "explanation": "48 ÷ 4 = 12, because 4 × 12 = 48.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0159",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Fractions",
+    "level": 1,
+    "prompt": "Third",
+    "answers": [
+      "third",
+      "one third",
+      "a third"
+    ],
+    "forbidden": [
+      "three",
+      "equal",
+      "parts",
+      "divide"
+    ],
+    "explanation": "A third is one of three equal parts of a whole. A third of 9 is 3.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0160",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Fractions",
+    "level": 1,
+    "prompt": "Fifth",
+    "answers": [
+      "fifth",
+      "one fifth",
+      "a fifth"
+    ],
+    "forbidden": [
+      "five",
+      "equal",
+      "parts",
+      "divide"
+    ],
+    "explanation": "A fifth is one of five equal parts of a whole. A fifth of 10 is 2.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0161",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Fractions",
+    "level": 1,
+    "prompt": "Tenth",
+    "answers": [
+      "tenth",
+      "one tenth",
+      "a tenth"
+    ],
+    "forbidden": [
+      "ten",
+      "equal",
+      "parts",
+      "decimal"
+    ],
+    "explanation": "A tenth is one of ten equal parts of a whole. As a decimal it is written 0.1.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0162",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Fractions",
+    "level": 1,
+    "prompt": "Whole",
+    "answers": [
+      "whole",
+      "one whole"
+    ],
+    "forbidden": [
+      "complete",
+      "all",
+      "one",
+      "parts"
+    ],
+    "explanation": "A whole is all of something, with nothing missing. Two halves or four quarters make one whole.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0163",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Fractions",
+    "level": 1,
+    "prompt": "Unit fraction",
+    "answers": [
+      "unit fraction",
+      "unit fractions"
+    ],
+    "forbidden": [
+      "one",
+      "top",
+      "numerator",
+      "fraction"
+    ],
+    "explanation": "A unit fraction has 1 as its numerator, like 1/2, 1/3 or 1/10. It is one equal part of a whole.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0164",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Fractions",
+    "level": 1,
+    "prompt": "Improper fraction",
+    "answers": [
+      "improper fraction",
+      "top-heavy fraction"
+    ],
+    "forbidden": [
+      "top heavy",
+      "bigger",
+      "numerator",
+      "more than one"
+    ],
+    "explanation": "An improper fraction has a numerator bigger than its denominator, like 5/4. It is worth more than one whole.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0165",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Fractions",
+    "level": 1,
+    "prompt": "Mixed number",
+    "answers": [
+      "mixed number",
+      "mixed numbers"
+    ],
+    "forbidden": [
+      "whole",
+      "fraction",
+      "both",
+      "and"
+    ],
+    "explanation": "A mixed number has a whole number and a fraction together, like 1 1/2. It means one whole and a half.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0166",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Fractions",
+    "level": 1,
+    "prompt": "Simplifying",
+    "answers": [
+      "simplifying",
+      "simplify",
+      "simplest form"
+    ],
+    "forbidden": [
+      "divide",
+      "smaller",
+      "common factor",
+      "reduce"
+    ],
+    "explanation": "Simplifying a fraction means dividing the top and bottom by the same number. 4/8 simplifies to 1/2.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0167",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Fractions",
+    "level": 1,
+    "prompt": "Percentage",
+    "answers": [
+      "percentage",
+      "percent",
+      "per cent"
+    ],
+    "forbidden": [
+      "hundred",
+      "out of",
+      "symbol",
+      "fraction"
+    ],
+    "explanation": "A percentage is a number out of 100, shown with the % sign. 50% means 50 out of 100, which is a half.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0168",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Fractions",
+    "level": 1,
+    "prompt": "Decimal",
+    "answers": [
+      "decimal",
+      "decimal number",
+      "decimals"
+    ],
+    "forbidden": [
+      "point",
+      "tenths",
+      "dot",
+      "fraction"
+    ],
+    "explanation": "A decimal uses a decimal point to show parts of a whole. 2.5 means two wholes and five tenths.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0169",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Fractions",
+    "level": 1,
+    "prompt": "Hundredth",
+    "answers": [
+      "hundredth",
+      "one hundredth",
+      "a hundredth"
+    ],
+    "forbidden": [
+      "hundred",
+      "equal",
+      "parts",
+      "decimal"
+    ],
+    "explanation": "A hundredth is one of a hundred equal parts. As a decimal it is 0.01, and one penny is a hundredth of a pound.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0170",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Fractions",
+    "level": 1,
+    "prompt": "Fraction",
+    "answers": [
+      "fraction",
+      "fractions"
+    ],
+    "forbidden": [
+      "part",
+      "whole",
+      "numerator",
+      "denominator"
+    ],
+    "explanation": "A fraction shows part of a whole. In 3/4, the whole is split into 4 equal parts and we have 3 of them.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0171",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Fractions",
+    "level": 1,
+    "prompt": "Fraction wall",
+    "answers": [
+      "fraction wall"
+    ],
+    "forbidden": [
+      "bricks",
+      "rows",
+      "chart",
+      "compare"
+    ],
+    "explanation": "A fraction wall is a chart of bars split into halves, thirds, quarters and more. It helps you compare fractions and spot equal ones.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0172",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Fractions",
+    "level": 1,
+    "prompt": "Equal parts",
+    "answers": [
+      "equal parts"
+    ],
+    "forbidden": [
+      "same",
+      "size",
+      "fair",
+      "split"
+    ],
+    "explanation": "Equal parts are pieces that are exactly the same size. A fraction only works when the whole is split into equal parts.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0173",
+    "type": "question",
+    "subject": "Maths",
+    "topic": "Fractions",
+    "level": 1,
+    "prompt": "What is a quarter of 12?",
+    "answers": [
+      "3",
+      "three"
+    ],
+    "forbidden": [
+      "four",
+      "twelve",
+      "divide",
+      "quarter"
+    ],
+    "explanation": "To find a quarter, divide by 4: 12 ÷ 4 = 3.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0174",
+    "type": "question",
+    "subject": "Maths",
+    "topic": "Fractions",
+    "level": 1,
+    "prompt": "How many quarters make a whole?",
+    "answers": [
+      "4",
+      "four"
+    ],
+    "forbidden": [
+      "quarter",
+      "whole",
+      "pieces"
+    ],
+    "explanation": "Four quarters make one whole, because a quarter is one of four equal parts.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0175",
+    "type": "question",
+    "subject": "Maths",
+    "topic": "Fractions",
+    "level": 1,
+    "prompt": "What is one half written as a decimal?",
+    "answers": [
+      "0.5",
+      "point five",
+      "nought point five",
+      "zero point five"
+    ],
+    "forbidden": [
+      "half",
+      "five",
+      "decimal",
+      "tenths"
+    ],
+    "explanation": "One half is 0.5 as a decimal: five tenths.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0176",
+    "type": "question",
+    "subject": "Maths",
+    "topic": "Fractions",
+    "level": 1,
+    "prompt": "What is 50% of 10?",
+    "answers": [
+      "5",
+      "five"
+    ],
+    "forbidden": [
+      "half",
+      "ten",
+      "percent",
+      "fifty"
+    ],
+    "explanation": "50% means a half, and half of 10 is 5.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0177",
+    "type": "question",
+    "subject": "Maths",
+    "topic": "Fractions",
+    "level": 1,
+    "prompt": "What is 0.25 as a fraction?",
+    "answers": [
+      "1/4"
+    ],
+    "forbidden": [
+      "quarter",
+      "decimal",
+      "hundredths",
+      "four"
+    ],
+    "explanation": "0.25 is twenty-five hundredths, which simplifies to 1/4.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0178",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Measurement",
+    "level": 1,
+    "prompt": "Metre",
+    "answers": [
+      "metre",
+      "metres",
+      "meter"
+    ],
+    "forbidden": [
+      "length",
+      "centimetres",
+      "long",
+      "ruler"
+    ],
+    "explanation": "A metre is a unit of length. It is 100 centimetres, about the height of a young child.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0179",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Measurement",
+    "level": 1,
+    "prompt": "Kilometre",
+    "answers": [
+      "kilometre",
+      "kilometres",
+      "kilometer",
+      "km"
+    ],
+    "forbidden": [
+      "distance",
+      "metres",
+      "thousand",
+      "far"
+    ],
+    "explanation": "A kilometre is 1000 metres. It is used to measure long distances, like a walk to school.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0180",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Measurement",
+    "level": 1,
+    "prompt": "Millimetre",
+    "answers": [
+      "millimetre",
+      "millimetres",
+      "millimeter",
+      "mm"
+    ],
+    "forbidden": [
+      "tiny",
+      "small",
+      "centimetre",
+      "ruler"
+    ],
+    "explanation": "A millimetre is a very small unit of length. There are 10 millimetres in a centimetre.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0181",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Measurement",
+    "level": 1,
+    "prompt": "Gram",
+    "answers": [
+      "gram",
+      "grams"
+    ],
+    "forbidden": [
+      "mass",
+      "weight",
+      "kilogram",
+      "light"
+    ],
+    "explanation": "A gram is a small unit of mass. A paper clip has a mass of about one gram.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0182",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Measurement",
+    "level": 1,
+    "prompt": "Litre",
+    "answers": [
+      "litre",
+      "litres",
+      "liter"
+    ],
+    "forbidden": [
+      "liquid",
+      "bottle",
+      "millilitres",
+      "capacity"
+    ],
+    "explanation": "A litre is a unit for measuring liquids. A large bottle of water often holds one or two litres.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0183",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Measurement",
+    "level": 1,
+    "prompt": "Millilitre",
+    "answers": [
+      "millilitre",
+      "millilitres",
+      "milliliter",
+      "ml"
+    ],
+    "forbidden": [
+      "liquid",
+      "small",
+      "spoon",
+      "litre"
+    ],
+    "explanation": "A millilitre is a small amount of liquid. A teaspoon holds about 5 millilitres, and 1000 make a litre.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0184",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Measurement",
+    "level": 1,
+    "prompt": "Ruler",
+    "answers": [
+      "ruler"
+    ],
+    "forbidden": [
+      "measure",
+      "straight",
+      "centimetres",
+      "line"
+    ],
+    "explanation": "A ruler is a straight strip marked in centimetres and millimetres. You use it to measure length and draw straight lines.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0185",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Measurement",
+    "level": 1,
+    "prompt": "Weighing scales",
+    "answers": [
+      "weighing scales",
+      "scales"
+    ],
+    "forbidden": [
+      "weigh",
+      "mass",
+      "kitchen",
+      "grams"
+    ],
+    "explanation": "Weighing scales measure how heavy something is. Kitchen scales show mass in grams and kilograms.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0186",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Measurement",
+    "level": 1,
+    "prompt": "Thermometer",
+    "answers": [
+      "thermometer"
+    ],
+    "forbidden": [
+      "temperature",
+      "hot",
+      "cold",
+      "degrees"
+    ],
+    "explanation": "A thermometer measures how hot or cold something is. It shows the temperature in degrees.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0187",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Measurement",
+    "level": 1,
+    "prompt": "Temperature",
+    "answers": [
+      "temperature"
+    ],
+    "forbidden": [
+      "hot",
+      "cold",
+      "degrees",
+      "thermometer"
+    ],
+    "explanation": "Temperature is how hot or cold something is. It is measured in degrees Celsius with a thermometer.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0188",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Measurement",
+    "level": 1,
+    "prompt": "Clock",
+    "answers": [
+      "clock"
+    ],
+    "forbidden": [
+      "time",
+      "hands",
+      "hours",
+      "tick"
+    ],
+    "explanation": "A clock shows the time. On a clock face, the short hand points to the hour and the long hand to the minutes.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0189",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Measurement",
+    "level": 1,
+    "prompt": "Calendar",
+    "answers": [
+      "calendar"
+    ],
+    "forbidden": [
+      "days",
+      "months",
+      "dates",
+      "year"
+    ],
+    "explanation": "A calendar shows the days, weeks and months of the year. You can use it to find dates and count days.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0190",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Measurement",
+    "level": 1,
+    "prompt": "Mass",
+    "answers": [
+      "mass"
+    ],
+    "forbidden": [
+      "heavy",
+      "weight",
+      "grams",
+      "kilograms"
+    ],
+    "explanation": "Mass is how much matter is in something, so how heavy it feels. It is measured in grams and kilograms.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0191",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Measurement",
+    "level": 1,
+    "prompt": "Length",
+    "answers": [
+      "length"
+    ],
+    "forbidden": [
+      "long",
+      "measure",
+      "ruler",
+      "centimetres"
+    ],
+    "explanation": "Length is how long something is from end to end. It is measured in units like centimetres and metres.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0192",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Measurement",
+    "level": 1,
+    "prompt": "Measuring jug",
+    "answers": [
+      "measuring jug"
+    ],
+    "forbidden": [
+      "liquid",
+      "millilitres",
+      "pour",
+      "kitchen"
+    ],
+    "explanation": "A measuring jug has a scale on its side for measuring liquids, usually in millilitres.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0193",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Measurement",
+    "level": 1,
+    "prompt": "Height",
+    "answers": [
+      "height"
+    ],
+    "forbidden": [
+      "tall",
+      "measure",
+      "top",
+      "bottom"
+    ],
+    "explanation": "Height is how tall something is, measured from the bottom to the top.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0194",
+    "type": "question",
+    "subject": "Maths",
+    "topic": "Measurement",
+    "level": 1,
+    "prompt": "How many grams are in a kilogram?",
+    "answers": [
+      "1000",
+      "one thousand grams"
+    ],
+    "forbidden": [
+      "thousand",
+      "kilo",
+      "mass"
+    ],
+    "explanation": "There are 1000 grams in a kilogram. Kilo means one thousand.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0195",
+    "type": "question",
+    "subject": "Maths",
+    "topic": "Measurement",
+    "level": 1,
+    "prompt": "How many days are in a leap year?",
+    "answers": [
+      "366",
+      "three hundred and sixty-six"
+    ],
+    "forbidden": [
+      "february",
+      "year",
+      "extra",
+      "four"
+    ],
+    "explanation": "A leap year has 366 days, one more than usual, because February gets a 29th day. It comes every four years.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0196",
+    "type": "question",
+    "subject": "Maths",
+    "topic": "Measurement",
+    "level": 1,
+    "prompt": "How many days are in a normal year?",
+    "answers": [
+      "365",
+      "three hundred and sixty-five"
+    ],
+    "forbidden": [
+      "months",
+      "weeks",
+      "calendar",
+      "leap"
+    ],
+    "explanation": "A normal year has 365 days. That is about how long the Earth takes to go once around the Sun.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0197",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Shapes",
+    "level": 1,
+    "prompt": "Square",
+    "answers": [
+      "square"
+    ],
+    "forbidden": [
+      "four",
+      "sides",
+      "equal",
+      "corners"
+    ],
+    "explanation": "A square is a flat shape with four equal sides and four right angles.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0198",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Shapes",
+    "level": 1,
+    "prompt": "Rectangle",
+    "answers": [
+      "rectangle"
+    ],
+    "forbidden": [
+      "four",
+      "sides",
+      "door",
+      "right angles"
+    ],
+    "explanation": "A rectangle has four sides and four right angles. Its opposite sides are equal, like a door or a book.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0199",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Shapes",
+    "level": 1,
+    "prompt": "Pentagon",
+    "answers": [
+      "pentagon"
+    ],
+    "forbidden": [
+      "five",
+      "sides",
+      "shape",
+      "corners"
+    ],
+    "explanation": "A pentagon is a flat shape with five straight sides and five corners.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0200",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Shapes",
+    "level": 1,
+    "prompt": "Hexagon",
+    "answers": [
+      "hexagon"
+    ],
+    "forbidden": [
+      "six",
+      "sides",
+      "honeycomb",
+      "bee"
+    ],
+    "explanation": "A hexagon is a flat shape with six straight sides. The cells in a honeycomb are hexagons.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0201",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Shapes",
+    "level": 1,
+    "prompt": "Octagon",
+    "answers": [
+      "octagon"
+    ],
+    "forbidden": [
+      "eight",
+      "sides",
+      "stop sign",
+      "octopus"
+    ],
+    "explanation": "An octagon is a flat shape with eight straight sides. Many stop signs are octagons.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0202",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Shapes",
+    "level": 1,
+    "prompt": "Sphere",
+    "answers": [
+      "sphere"
+    ],
+    "forbidden": [
+      "ball",
+      "round",
+      "globe",
+      "3d"
+    ],
+    "explanation": "A sphere is a perfectly round 3D shape, like a ball. Every point on its surface is the same distance from the centre.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0203",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Shapes",
+    "level": 1,
+    "prompt": "Cylinder",
+    "answers": [
+      "cylinder"
+    ],
+    "forbidden": [
+      "tin",
+      "can",
+      "circles",
+      "tube"
+    ],
+    "explanation": "A cylinder is a 3D shape with two circle faces joined by a curved surface, like a tin of beans.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0204",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Shapes",
+    "level": 1,
+    "prompt": "Cone",
+    "answers": [
+      "cone"
+    ],
+    "forbidden": [
+      "ice cream",
+      "point",
+      "circle",
+      "traffic"
+    ],
+    "explanation": "A cone is a 3D shape with a circle at the bottom and a curved surface rising to a point, like an ice-cream cone.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0205",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Shapes",
+    "level": 1,
+    "prompt": "Pyramid",
+    "answers": [
+      "pyramid"
+    ],
+    "forbidden": [
+      "egypt",
+      "point",
+      "triangles",
+      "base"
+    ],
+    "explanation": "A pyramid is a 3D shape with a flat base and triangle faces that meet at a point at the top.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0206",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Shapes",
+    "level": 1,
+    "prompt": "Cuboid",
+    "answers": [
+      "cuboid"
+    ],
+    "forbidden": [
+      "box",
+      "rectangles",
+      "faces",
+      "brick"
+    ],
+    "explanation": "A cuboid is a 3D shape like a box or a brick. It has six rectangular faces.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0207",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Shapes",
+    "level": 1,
+    "prompt": "Edge",
+    "answers": [
+      "edge",
+      "edges"
+    ],
+    "forbidden": [
+      "line",
+      "faces",
+      "meet",
+      "side"
+    ],
+    "explanation": "An edge is the line where two faces of a 3D shape meet. A cube has 12 edges.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0208",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Shapes",
+    "level": 1,
+    "prompt": "Vertex",
+    "answers": [
+      "vertex",
+      "vertices",
+      "corner"
+    ],
+    "forbidden": [
+      "point",
+      "meet",
+      "edges",
+      "pointy"
+    ],
+    "explanation": "A vertex is a corner, where edges or sides meet. A triangle has three vertices.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0209",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Shapes",
+    "level": 1,
+    "prompt": "Face",
+    "answers": [
+      "face",
+      "faces"
+    ],
+    "forbidden": [
+      "flat",
+      "surface",
+      "side",
+      "3d"
+    ],
+    "explanation": "A face is a flat surface of a 3D shape. A cube has six square faces.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0210",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Shapes",
+    "level": 1,
+    "prompt": "Angle",
+    "answers": [
+      "angle",
+      "angles"
+    ],
+    "forbidden": [
+      "turn",
+      "degrees",
+      "corner",
+      "lines"
+    ],
+    "explanation": "An angle is the amount of turn between two lines that meet. Angles are measured in degrees.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0211",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Shapes",
+    "level": 1,
+    "prompt": "Parallel lines",
+    "answers": [
+      "parallel lines",
+      "parallel"
+    ],
+    "forbidden": [
+      "never meet",
+      "same distance",
+      "railway",
+      "tracks"
+    ],
+    "explanation": "Parallel lines always stay the same distance apart and never meet, like railway tracks.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0212",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Shapes",
+    "level": 1,
+    "prompt": "Perpendicular",
+    "answers": [
+      "perpendicular",
+      "perpendicular lines"
+    ],
+    "forbidden": [
+      "right angle",
+      "cross",
+      "meet",
+      "ninety"
+    ],
+    "explanation": "Perpendicular lines meet at a right angle, like the corner of a square.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0213",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Shapes",
+    "level": 1,
+    "prompt": "2D shape",
+    "answers": [
+      "2d shape",
+      "flat shape",
+      "two-dimensional shape"
+    ],
+    "forbidden": [
+      "flat",
+      "paper",
+      "length",
+      "width"
+    ],
+    "explanation": "A 2D shape is flat, with length and width but no thickness, like a square drawn on paper.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0214",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Shapes",
+    "level": 1,
+    "prompt": "3D shape",
+    "answers": [
+      "3d shape",
+      "solid shape",
+      "three-dimensional shape"
+    ],
+    "forbidden": [
+      "solid",
+      "hold",
+      "depth",
+      "faces"
+    ],
+    "explanation": "A 3D shape is solid, with length, width and height, so you can hold it. Cubes and spheres are 3D shapes.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0215",
+    "type": "question",
+    "subject": "Maths",
+    "topic": "Shapes",
+    "level": 1,
+    "prompt": "How many degrees are in a full turn?",
+    "answers": [
+      "360",
+      "three hundred and sixty"
+    ],
+    "forbidden": [
+      "circle",
+      "around",
+      "right angles",
+      "turn"
+    ],
+    "explanation": "A full turn is 360 degrees. That is four right angles of 90 degrees each.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0216",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Data handling",
+    "level": 1,
+    "prompt": "Data",
+    "answers": [
+      "data"
+    ],
+    "forbidden": [
+      "information",
+      "facts",
+      "collect",
+      "numbers"
+    ],
+    "explanation": "Data is information collected to answer a question, such as everyone's favourite colour. It can be shown in tables and charts.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0217",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Data handling",
+    "level": 1,
+    "prompt": "Pie chart",
+    "answers": [
+      "pie chart"
+    ],
+    "forbidden": [
+      "circle",
+      "slices",
+      "pizza",
+      "parts"
+    ],
+    "explanation": "A pie chart is a circle cut into slices. Each slice shows what part of the whole each group is.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0218",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Data handling",
+    "level": 1,
+    "prompt": "Line graph",
+    "answers": [
+      "line graph"
+    ],
+    "forbidden": [
+      "points",
+      "joined",
+      "change",
+      "time"
+    ],
+    "explanation": "A line graph joins points with lines to show how something changes over time, like temperature through a day.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0219",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Data handling",
+    "level": 1,
+    "prompt": "Axis",
+    "answers": [
+      "axis",
+      "axes"
+    ],
+    "forbidden": [
+      "line",
+      "side",
+      "bottom",
+      "graph"
+    ],
+    "explanation": "An axis is one of the two lines along the side and bottom of a graph. Each axis has a scale and a label.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0220",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Data handling",
+    "level": 1,
+    "prompt": "Key",
+    "answers": [
+      "key"
+    ],
+    "forbidden": [
+      "symbol",
+      "stands for",
+      "means",
+      "pictogram"
+    ],
+    "explanation": "A key explains what the symbols or colours on a chart mean. In a pictogram it might show that one picture stands for two people.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0221",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Data handling",
+    "level": 1,
+    "prompt": "Carroll diagram",
+    "answers": [
+      "carroll diagram"
+    ],
+    "forbidden": [
+      "grid",
+      "sort",
+      "boxes",
+      "not"
+    ],
+    "explanation": "A Carroll diagram sorts things into a grid of boxes using yes-or-no questions, such as 'even' and 'not even'.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0222",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Data handling",
+    "level": 1,
+    "prompt": "Questionnaire",
+    "answers": [
+      "questionnaire"
+    ],
+    "forbidden": [
+      "questions",
+      "form",
+      "ask",
+      "answers"
+    ],
+    "explanation": "A questionnaire is a set of written questions that people answer to give you data.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0223",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Data handling",
+    "level": 1,
+    "prompt": "Frequency",
+    "answers": [
+      "frequency"
+    ],
+    "forbidden": [
+      "how many",
+      "often",
+      "times",
+      "count"
+    ],
+    "explanation": "Frequency is how many times something happens. In a tally chart, the frequency is the total for each row.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0224",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Data handling",
+    "level": 1,
+    "prompt": "Mode",
+    "answers": [
+      "mode"
+    ],
+    "forbidden": [
+      "most",
+      "common",
+      "often",
+      "popular"
+    ],
+    "explanation": "The mode is the value that appears most often. In 2, 3, 3, 5, the mode is 3.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0225",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Data handling",
+    "level": 1,
+    "prompt": "Average",
+    "answers": [
+      "average",
+      "mean"
+    ],
+    "forbidden": [
+      "add",
+      "divide",
+      "middle",
+      "typical"
+    ],
+    "explanation": "The mean average is found by adding all the values and dividing by how many there are. The mean of 2, 4 and 6 is 4.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0226",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Data handling",
+    "level": 1,
+    "prompt": "Range",
+    "answers": [
+      "range"
+    ],
+    "forbidden": [
+      "biggest",
+      "smallest",
+      "difference",
+      "spread"
+    ],
+    "explanation": "The range is the difference between the biggest and smallest values. For 3, 7 and 10, the range is 10 - 3 = 7.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0227",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Data handling",
+    "level": 1,
+    "prompt": "Sorting",
+    "answers": [
+      "sorting",
+      "sort"
+    ],
+    "forbidden": [
+      "groups",
+      "order",
+      "organise",
+      "arrange"
+    ],
+    "explanation": "Sorting means putting things into groups or into order, such as sorting shapes by how many sides they have.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0228",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Data handling",
+    "level": 1,
+    "prompt": "Block graph",
+    "answers": [
+      "block graph"
+    ],
+    "forbidden": [
+      "blocks",
+      "squares",
+      "column",
+      "stack"
+    ],
+    "explanation": "A block graph uses stacked blocks to show data. Each block stands for one thing, so taller columns mean more.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0229",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Data handling",
+    "level": 1,
+    "prompt": "Label",
+    "answers": [
+      "label",
+      "labels"
+    ],
+    "forbidden": [
+      "name",
+      "words",
+      "axis",
+      "title"
+    ],
+    "explanation": "A label is a word or phrase on a chart or graph that says what something shows, like 'Number of pupils'.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0230",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Data handling",
+    "level": 1,
+    "prompt": "Results",
+    "answers": [
+      "results"
+    ],
+    "forbidden": [
+      "answers",
+      "found",
+      "outcome",
+      "data"
+    ],
+    "explanation": "Results are what you find out from a survey or experiment. They are often shown in a table or chart.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0231",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Data handling",
+    "level": 1,
+    "prompt": "Coordinates",
+    "answers": [
+      "coordinates",
+      "coordinate"
+    ],
+    "forbidden": [
+      "grid",
+      "position",
+      "across",
+      "up"
+    ],
+    "explanation": "Coordinates give a position on a grid with two numbers, like (3, 2): three across, then two up.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0232",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Data handling",
+    "level": 1,
+    "prompt": "Vote",
+    "answers": [
+      "vote",
+      "voting"
+    ],
+    "forbidden": [
+      "choose",
+      "election",
+      "hands",
+      "choice"
+    ],
+    "explanation": "A vote is a way of choosing where everyone says what they prefer. Counting votes gives you data, like a class's favourite book.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0233",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Data handling",
+    "level": 1,
+    "prompt": "Category",
+    "answers": [
+      "category",
+      "categories"
+    ],
+    "forbidden": [
+      "group",
+      "type",
+      "kind",
+      "sort"
+    ],
+    "explanation": "A category is a group that data is sorted into, such as 'cats', 'dogs' and 'fish' for favourite pets.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0234",
+    "type": "term",
+    "subject": "Maths",
+    "topic": "Data handling",
+    "level": 1,
+    "prompt": "Comparing",
+    "answers": [
+      "comparing",
+      "compare"
+    ],
+    "forbidden": [
+      "more",
+      "less",
+      "difference",
+      "same"
+    ],
+    "explanation": "Comparing means looking at two or more things to see how they are alike or different, such as which bar on a chart is taller.",
+    "course": "primary-maths",
+    "status": "draft"
+  },
+  {
+    "id": "mat-0235",
+    "type": "question",
+    "subject": "Maths",
+    "topic": "Data handling",
+    "level": 1,
+    "prompt": "In a class vote, 6 children chose red and 5 chose blue. How many children voted?",
+    "answers": [
+      "11",
+      "eleven"
+    ],
+    "forbidden": [
+      "add",
+      "six",
+      "five",
+      "total"
+    ],
+    "explanation": "To find how many voted, add the votes together: 6 + 5 = 11.",
+    "course": "primary-maths",
+    "status": "draft"
   }
 ]
