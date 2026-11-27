@@ -69,7 +69,8 @@ parts with no cards yet are hidden. A choice can be shared as a link, e.g.
 All of this is stored on the device in the browser, works offline, and needs no account.
 
 ## Rooms
-- The host gets a **5-character code** and a **QR code** to share. Players join with a nickname, 2 to 12 players per room.
+- The host gets a **5-character code** and a **QR code** to share. Others tap **Online room → Join a room**, enter the code and a
+  nickname, or scan the QR code. Codes use letters and the numbers 2 to 9, never O, 0, I or 1. Players join with a nickname, 2 to 12 players per room.
 - The host picks what to play, the round length and the number of rounds, starts the game, and can remove a player.
 - If you refresh, you get your seat, score and role back. If the host leaves, the role passes to the player who has
   been there longest.
