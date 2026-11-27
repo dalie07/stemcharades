@@ -1655,5 +1655,1753 @@
     "explanation": "Screen time is the time spent looking at screens like tablets, phones and TVs. Taking regular breaks is healthy.",
     "course": "primary-computing",
     "status": "reviewed"
+  },
+  {
+    "id": "com-0078",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Using computers",
+    "level": 1,
+    "prompt": "Screen",
+    "answers": [
+      "screen",
+      "monitor"
+    ],
+    "forbidden": [
+      "display",
+      "see",
+      "pictures",
+      "television"
+    ],
+    "explanation": "The screen shows you what the computer is doing, such as pictures, words and videos.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0079",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Using computers",
+    "level": 1,
+    "prompt": "Laptop",
+    "answers": [
+      "laptop",
+      "laptop computer"
+    ],
+    "forbidden": [
+      "folding",
+      "carry",
+      "portable",
+      "lid"
+    ],
+    "explanation": "A laptop is a computer you can fold up and carry around. Its screen, keyboard and battery are all in one.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0080",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Using computers",
+    "level": 1,
+    "prompt": "Tablet",
+    "answers": [
+      "tablet",
+      "tablet computer"
+    ],
+    "forbidden": [
+      "touch",
+      "flat",
+      "screen",
+      "ipad"
+    ],
+    "explanation": "A tablet is a flat, handheld computer that you control by touching its screen.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0081",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Using computers",
+    "level": 1,
+    "prompt": "Touchscreen",
+    "answers": [
+      "touchscreen",
+      "touch screen"
+    ],
+    "forbidden": [
+      "finger",
+      "tap",
+      "swipe",
+      "phone"
+    ],
+    "explanation": "A touchscreen is a screen you control by tapping and swiping with your finger, like on a phone or tablet.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0082",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Using computers",
+    "level": 1,
+    "prompt": "Icon",
+    "answers": [
+      "icon",
+      "icons"
+    ],
+    "forbidden": [
+      "picture",
+      "small",
+      "click",
+      "symbol"
+    ],
+    "explanation": "An icon is a small picture on the screen that stands for an app, file or action. Clicking it opens what it stands for.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0083",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Using computers",
+    "level": 1,
+    "prompt": "Cursor",
+    "answers": [
+      "cursor",
+      "pointer"
+    ],
+    "forbidden": [
+      "arrow",
+      "mouse",
+      "moves",
+      "blinking"
+    ],
+    "explanation": "The cursor is the arrow or blinking line on the screen that shows where you are pointing or typing.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0084",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Using computers",
+    "level": 1,
+    "prompt": "Folder",
+    "answers": [
+      "folder",
+      "folders"
+    ],
+    "forbidden": [
+      "files",
+      "organise",
+      "store",
+      "yellow"
+    ],
+    "explanation": "A folder is a place on the computer where you keep files together, so they are easy to find.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0085",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Using computers",
+    "level": 1,
+    "prompt": "File",
+    "answers": [
+      "file",
+      "files"
+    ],
+    "forbidden": [
+      "document",
+      "save",
+      "open",
+      "folder"
+    ],
+    "explanation": "A file is a saved piece of work on a computer, such as a story, a picture or a song.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0086",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Using computers",
+    "level": 1,
+    "prompt": "Internet",
+    "answers": [
+      "internet",
+      "the internet"
+    ],
+    "forbidden": [
+      "online",
+      "web",
+      "connect",
+      "world"
+    ],
+    "explanation": "The internet is a huge network that connects computers all over the world, so they can share information.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0087",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Using computers",
+    "level": 1,
+    "prompt": "Website",
+    "answers": [
+      "website",
+      "web page",
+      "webpage"
+    ],
+    "forbidden": [
+      "internet",
+      "address",
+      "pages",
+      "browser"
+    ],
+    "explanation": "A website is a set of pages on the internet about one thing, such as a school, a game or a library.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0088",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Using computers",
+    "level": 1,
+    "prompt": "Search engine",
+    "answers": [
+      "search engine",
+      "search engines"
+    ],
+    "forbidden": [
+      "google",
+      "find",
+      "look up",
+      "type"
+    ],
+    "explanation": "A search engine helps you find web pages. You type in some words and it shows a list of results.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0089",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Using computers",
+    "level": 1,
+    "prompt": "Email",
+    "answers": [
+      "email",
+      "e-mail",
+      "emails"
+    ],
+    "forbidden": [
+      "message",
+      "send",
+      "inbox",
+      "letter"
+    ],
+    "explanation": "Email is a way of sending written messages from one computer to another over the internet.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0090",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Using computers",
+    "level": 1,
+    "prompt": "Headphones",
+    "answers": [
+      "headphones",
+      "earphones"
+    ],
+    "forbidden": [
+      "ears",
+      "listen",
+      "music",
+      "sound"
+    ],
+    "explanation": "Headphones go over or in your ears so you can listen to sound without disturbing others.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0091",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Using computers",
+    "level": 1,
+    "prompt": "Camera",
+    "answers": [
+      "camera",
+      "webcam"
+    ],
+    "forbidden": [
+      "photo",
+      "picture",
+      "video",
+      "lens"
+    ],
+    "explanation": "A camera takes photos and videos. Many computers and tablets have one built in for video calls.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0092",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Using computers",
+    "level": 1,
+    "prompt": "Log in",
+    "answers": [
+      "log in",
+      "login",
+      "sign in"
+    ],
+    "forbidden": [
+      "password",
+      "username",
+      "enter",
+      "account"
+    ],
+    "explanation": "To log in means to type your username and password to get into your account on a computer or website.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0093",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Using computers",
+    "level": 1,
+    "prompt": "Desktop computer",
+    "answers": [
+      "desktop computer",
+      "desktop"
+    ],
+    "forbidden": [
+      "desk",
+      "tower",
+      "big",
+      "stays"
+    ],
+    "explanation": "A desktop computer is a computer that stays on a desk, with a separate screen, keyboard and mouse.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0094",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Using computers",
+    "level": 1,
+    "prompt": "Wi-Fi",
+    "answers": [
+      "wi-fi",
+      "wifi",
+      "wireless internet"
+    ],
+    "forbidden": [
+      "internet",
+      "wireless",
+      "router",
+      "connect"
+    ],
+    "explanation": "Wi-Fi connects computers and phones to the internet without wires, using radio signals from a router.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0095",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Using computers",
+    "level": 1,
+    "prompt": "Charger",
+    "answers": [
+      "charger"
+    ],
+    "forbidden": [
+      "battery",
+      "plug",
+      "power",
+      "cable"
+    ],
+    "explanation": "A charger fills up a device's battery with electricity so it keeps working.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0096",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Using computers",
+    "level": 1,
+    "prompt": "Delete",
+    "answers": [
+      "delete",
+      "deleting"
+    ],
+    "forbidden": [
+      "remove",
+      "bin",
+      "rubbish",
+      "erase"
+    ],
+    "explanation": "To delete means to remove something, like a word, a file or a photo, from a computer.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0097",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Using computers",
+    "level": 1,
+    "prompt": "Copy and paste",
+    "answers": [
+      "copy and paste",
+      "copy paste"
+    ],
+    "forbidden": [
+      "duplicate",
+      "same",
+      "again",
+      "move"
+    ],
+    "explanation": "Copy and paste lets you make a copy of words or pictures and put it somewhere else, without typing it again.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0098",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Algorithms",
+    "level": 1,
+    "prompt": "Algorithm",
+    "answers": [
+      "algorithm",
+      "algorithms"
+    ],
+    "forbidden": [
+      "steps",
+      "instructions",
+      "order",
+      "recipe"
+    ],
+    "explanation": "An algorithm is a set of clear steps to solve a problem or do a task, like a recipe for making a sandwich.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0099",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Algorithms",
+    "level": 1,
+    "prompt": "Debugging",
+    "answers": [
+      "debugging",
+      "debug"
+    ],
+    "forbidden": [
+      "fix",
+      "mistake",
+      "error",
+      "bug"
+    ],
+    "explanation": "Debugging means finding and fixing the mistakes in a program or set of instructions.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0100",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Algorithms",
+    "level": 1,
+    "prompt": "Selection",
+    "answers": [
+      "selection"
+    ],
+    "forbidden": [
+      "choose",
+      "if",
+      "decision",
+      "either"
+    ],
+    "explanation": "Selection is when a program chooses what to do next, depending on whether something is true. For example: if it is raining, take an umbrella.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0101",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Algorithms",
+    "level": 1,
+    "prompt": "Decomposition",
+    "answers": [
+      "decomposition"
+    ],
+    "forbidden": [
+      "break",
+      "smaller",
+      "parts",
+      "problem"
+    ],
+    "explanation": "Decomposition means breaking a big problem into smaller parts that are easier to solve.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0102",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Algorithms",
+    "level": 1,
+    "prompt": "Flowchart",
+    "answers": [
+      "flowchart",
+      "flow chart"
+    ],
+    "forbidden": [
+      "boxes",
+      "arrows",
+      "diagram",
+      "steps"
+    ],
+    "explanation": "A flowchart is a diagram that shows the steps of an algorithm with boxes and arrows.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0103",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Algorithms",
+    "level": 1,
+    "prompt": "Step",
+    "answers": [
+      "step",
+      "steps"
+    ],
+    "forbidden": [
+      "one",
+      "instruction",
+      "next",
+      "stage"
+    ],
+    "explanation": "A step is one small instruction in an algorithm. The steps must be in the right order.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0104",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Algorithms",
+    "level": 1,
+    "prompt": "Robot",
+    "answers": [
+      "robot",
+      "robots"
+    ],
+    "forbidden": [
+      "machine",
+      "program",
+      "move",
+      "metal"
+    ],
+    "explanation": "A robot is a machine that follows a program to do tasks, such as moving, building or cleaning.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0105",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Algorithms",
+    "level": 1,
+    "prompt": "Prediction",
+    "answers": [
+      "prediction",
+      "predict"
+    ],
+    "forbidden": [
+      "guess",
+      "happen",
+      "before",
+      "think"
+    ],
+    "explanation": "A prediction is what you think will happen before you run a program. Testing shows whether you were right.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0106",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Algorithms",
+    "level": 1,
+    "prompt": "Logical reasoning",
+    "answers": [
+      "logical reasoning",
+      "logic"
+    ],
+    "forbidden": [
+      "think",
+      "explain",
+      "why",
+      "sense"
+    ],
+    "explanation": "Logical reasoning means thinking step by step to work out what a program will do and why.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0107",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Algorithms",
+    "level": 1,
+    "prompt": "Efficient",
+    "answers": [
+      "efficient",
+      "efficiency"
+    ],
+    "forbidden": [
+      "quick",
+      "fewer",
+      "best",
+      "waste"
+    ],
+    "explanation": "An efficient algorithm solves a problem using as few steps as possible, without wasting time.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0108",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Algorithms",
+    "level": 1,
+    "prompt": "Abstraction",
+    "answers": [
+      "abstraction"
+    ],
+    "forbidden": [
+      "ignore",
+      "important",
+      "details",
+      "simple"
+    ],
+    "explanation": "Abstraction means focusing on the important details and ignoring the rest, like a map that shows roads but not every tree.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0109",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Algorithms",
+    "level": 1,
+    "prompt": "Loop",
+    "answers": [
+      "loop",
+      "loops"
+    ],
+    "forbidden": [
+      "repeat",
+      "again",
+      "forever",
+      "circle"
+    ],
+    "explanation": "A loop repeats some instructions again and again, so you do not have to write them out many times.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0110",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Algorithms",
+    "level": 1,
+    "prompt": "Decision",
+    "answers": [
+      "decision",
+      "decisions"
+    ],
+    "forbidden": [
+      "choose",
+      "yes",
+      "no",
+      "if"
+    ],
+    "explanation": "A decision is a point in an algorithm where the next step depends on a yes-or-no question.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0111",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Algorithms",
+    "level": 1,
+    "prompt": "Searching",
+    "answers": [
+      "searching",
+      "search"
+    ],
+    "forbidden": [
+      "find",
+      "look",
+      "list",
+      "item"
+    ],
+    "explanation": "Searching means looking through information to find something, like finding a name in a list.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0112",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Algorithms",
+    "level": 1,
+    "prompt": "Recipe",
+    "answers": [
+      "recipe"
+    ],
+    "forbidden": [
+      "cooking",
+      "ingredients",
+      "steps",
+      "cake"
+    ],
+    "explanation": "A recipe is a set of steps for cooking something. It is a good everyday example of an algorithm.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0113",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Algorithms",
+    "level": 1,
+    "prompt": "Directions",
+    "answers": [
+      "directions",
+      "direction"
+    ],
+    "forbidden": [
+      "left",
+      "right",
+      "forward",
+      "way"
+    ],
+    "explanation": "Directions tell someone how to get somewhere, such as forward two steps, then turn left.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0114",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Algorithms",
+    "level": 1,
+    "prompt": "Precise",
+    "answers": [
+      "precise",
+      "precision"
+    ],
+    "forbidden": [
+      "exact",
+      "clear",
+      "careful",
+      "accurate"
+    ],
+    "explanation": "Instructions for a computer must be precise, or exact, because a computer does exactly what it is told.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0115",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Algorithms",
+    "level": 1,
+    "prompt": "Rotate",
+    "answers": [
+      "rotate",
+      "rotation",
+      "turn"
+    ],
+    "forbidden": [
+      "spin",
+      "around",
+      "degrees",
+      "clockwise"
+    ],
+    "explanation": "To rotate means to turn around a point. A robot might rotate 90 degrees to face a new direction.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0116",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Algorithms",
+    "level": 1,
+    "prompt": "Route",
+    "answers": [
+      "route",
+      "path"
+    ],
+    "forbidden": [
+      "way",
+      "map",
+      "journey",
+      "get"
+    ],
+    "explanation": "A route is the way you take to get from one place to another. Algorithms can find the shortest route.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0117",
+    "type": "question",
+    "subject": "Computing",
+    "topic": "Algorithms",
+    "level": 1,
+    "prompt": "What follows the steps of an algorithm exactly, without ever guessing what you meant?",
+    "answers": [
+      "computer",
+      "a computer"
+    ],
+    "forbidden": [
+      "machine",
+      "laptop",
+      "program",
+      "device"
+    ],
+    "explanation": "A computer follows instructions exactly as written. It cannot guess what you meant, so instructions must be precise.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0118",
+    "type": "question",
+    "subject": "Computing",
+    "topic": "Algorithms",
+    "level": 1,
+    "prompt": "Which shape shows a yes-or-no decision in a flowchart?",
+    "answers": [
+      "diamond",
+      "rhombus"
+    ],
+    "forbidden": [
+      "shape",
+      "four",
+      "corners",
+      "box"
+    ],
+    "explanation": "In a flowchart, a diamond shape holds a yes-or-no question, with a different arrow for each answer.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0119",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Coding",
+    "level": 1,
+    "prompt": "Program",
+    "answers": [
+      "program",
+      "computer program",
+      "programs"
+    ],
+    "forbidden": [
+      "code",
+      "instructions",
+      "run",
+      "software"
+    ],
+    "explanation": "A program is a set of instructions written in code that a computer can follow.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0120",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Coding",
+    "level": 1,
+    "prompt": "Block coding",
+    "answers": [
+      "block coding",
+      "block-based coding",
+      "blocks"
+    ],
+    "forbidden": [
+      "drag",
+      "drop",
+      "pieces",
+      "scratch"
+    ],
+    "explanation": "Block coding lets you build programs by joining blocks together, like puzzle pieces, instead of typing code.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0121",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Coding",
+    "level": 1,
+    "prompt": "Variable",
+    "answers": [
+      "variable",
+      "variables"
+    ],
+    "forbidden": [
+      "store",
+      "box",
+      "value",
+      "change"
+    ],
+    "explanation": "A variable stores a value in a program, such as a score, that can change while the program runs.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0122",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Coding",
+    "level": 1,
+    "prompt": "Event",
+    "answers": [
+      "event",
+      "events"
+    ],
+    "forbidden": [
+      "happens",
+      "click",
+      "trigger",
+      "when"
+    ],
+    "explanation": "An event is something that happens which starts code running, such as clicking a button or pressing a key.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0123",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Coding",
+    "level": 1,
+    "prompt": "Command",
+    "answers": [
+      "command",
+      "commands"
+    ],
+    "forbidden": [
+      "instruction",
+      "order",
+      "tell",
+      "do"
+    ],
+    "explanation": "A command is a single instruction that tells the computer to do one thing, such as move or say hello.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0124",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Coding",
+    "level": 1,
+    "prompt": "Run",
+    "answers": [
+      "run",
+      "run the program"
+    ],
+    "forbidden": [
+      "start",
+      "go",
+      "play",
+      "begin"
+    ],
+    "explanation": "To run a program means to start it, so the computer carries out its instructions.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0125",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Coding",
+    "level": 1,
+    "prompt": "Animation",
+    "answers": [
+      "animation",
+      "animate"
+    ],
+    "forbidden": [
+      "moving",
+      "pictures",
+      "cartoon",
+      "frames"
+    ],
+    "explanation": "An animation is a series of pictures shown quickly one after another so they look like they are moving.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0126",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Coding",
+    "level": 1,
+    "prompt": "Costume",
+    "answers": [
+      "costume",
+      "costumes"
+    ],
+    "forbidden": [
+      "look",
+      "change",
+      "picture",
+      "outfit"
+    ],
+    "explanation": "In block coding apps, a costume is one look for a sprite. Switching costumes quickly can make it look like it is walking.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0127",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Coding",
+    "level": 1,
+    "prompt": "Background",
+    "answers": [
+      "background",
+      "backdrop"
+    ],
+    "forbidden": [
+      "behind",
+      "stage",
+      "scene",
+      "picture"
+    ],
+    "explanation": "The background, or backdrop, is the picture behind the sprites in an animation or game.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0128",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Coding",
+    "level": 1,
+    "prompt": "Score",
+    "answers": [
+      "score",
+      "scores"
+    ],
+    "forbidden": [
+      "points",
+      "game",
+      "win",
+      "count"
+    ],
+    "explanation": "A score counts points in a game. It is usually stored in a variable that goes up when you do well.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0129",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Coding",
+    "level": 1,
+    "prompt": "Computer game",
+    "answers": [
+      "computer game",
+      "video game",
+      "game"
+    ],
+    "forbidden": [
+      "play",
+      "fun",
+      "level",
+      "win"
+    ],
+    "explanation": "A computer game is a program you play for fun, with rules, goals and often a score.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0130",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Coding",
+    "level": 1,
+    "prompt": "Wait",
+    "answers": [
+      "wait",
+      "wait block"
+    ],
+    "forbidden": [
+      "pause",
+      "seconds",
+      "stop",
+      "delay"
+    ],
+    "explanation": "A wait instruction pauses a program for a set time, such as one second, before the next step.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0131",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Coding",
+    "level": 1,
+    "prompt": "Forever loop",
+    "answers": [
+      "forever loop",
+      "forever"
+    ],
+    "forbidden": [
+      "never",
+      "stops",
+      "repeat",
+      "always"
+    ],
+    "explanation": "A forever loop repeats its instructions again and again until the program is stopped.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0132",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Coding",
+    "level": 1,
+    "prompt": "Programming language",
+    "answers": [
+      "programming language",
+      "coding language"
+    ],
+    "forbidden": [
+      "python",
+      "words",
+      "write",
+      "code"
+    ],
+    "explanation": "A programming language is a special language for writing instructions for computers, such as Scratch or Python.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0133",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Coding",
+    "level": 1,
+    "prompt": "If statement",
+    "answers": [
+      "if statement",
+      "if then"
+    ],
+    "forbidden": [
+      "condition",
+      "true",
+      "choose",
+      "else"
+    ],
+    "explanation": "An if statement runs some code only when something is true, such as: if the sprite touches the wall, turn around.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0134",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Coding",
+    "level": 1,
+    "prompt": "Click",
+    "answers": [
+      "click",
+      "clicking"
+    ],
+    "forbidden": [
+      "mouse",
+      "button",
+      "press",
+      "tap"
+    ],
+    "explanation": "To click means to press and let go of the mouse button. Clicking a sprite can start its code.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0135",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Coding",
+    "level": 1,
+    "prompt": "Sound effect",
+    "answers": [
+      "sound effect",
+      "sound effects"
+    ],
+    "forbidden": [
+      "noise",
+      "play",
+      "beep",
+      "music"
+    ],
+    "explanation": "A sound effect is a short noise played in a game or animation, like a pop when you score a point.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0136",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Coding",
+    "level": 1,
+    "prompt": "App",
+    "answers": [
+      "app",
+      "application",
+      "apps"
+    ],
+    "forbidden": [
+      "phone",
+      "download",
+      "program",
+      "tablet"
+    ],
+    "explanation": "An app is a program on a phone, tablet or computer, such as a game, a camera or a calculator.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0137",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Coding",
+    "level": 1,
+    "prompt": "Timer",
+    "answers": [
+      "timer",
+      "stopwatch"
+    ],
+    "forbidden": [
+      "seconds",
+      "count",
+      "clock",
+      "time"
+    ],
+    "explanation": "A timer counts time in a program, for example to give a player 30 seconds to finish a level.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0138",
+    "type": "question",
+    "subject": "Computing",
+    "topic": "Coding",
+    "level": 1,
+    "prompt": "Which key is used for jumping in many computer games?",
+    "answers": [
+      "space bar",
+      "spacebar",
+      "space"
+    ],
+    "forbidden": [
+      "long",
+      "keyboard",
+      "bottom",
+      "key"
+    ],
+    "explanation": "Many games use the space bar, the long key at the bottom of the keyboard, to jump.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0139",
+    "type": "question",
+    "subject": "Computing",
+    "topic": "Coding",
+    "level": 1,
+    "prompt": "What is the name of the free block coding app with a cat as its mascot?",
+    "answers": [
+      "scratch",
+      "scratch jr",
+      "scratchjr"
+    ],
+    "forbidden": [
+      "cat",
+      "blocks",
+      "free",
+      "mit"
+    ],
+    "explanation": "Scratch is a free block coding app whose mascot is an orange cat. Children use it to make games, stories and animations.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0140",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Staying safe online",
+    "level": 1,
+    "prompt": "Privacy settings",
+    "answers": [
+      "privacy settings",
+      "privacy"
+    ],
+    "forbidden": [
+      "private",
+      "who",
+      "see",
+      "settings"
+    ],
+    "explanation": "Privacy settings let you choose who can see your posts, photos and information online. Keep them on the safest setting.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0141",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Staying safe online",
+    "level": 1,
+    "prompt": "Stranger",
+    "answers": [
+      "stranger",
+      "strangers"
+    ],
+    "forbidden": [
+      "unknown",
+      "don't know",
+      "meet",
+      "danger"
+    ],
+    "explanation": "A stranger is someone you do not know in real life. Online, people may not be who they say they are.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0142",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Staying safe online",
+    "level": 1,
+    "prompt": "Scam",
+    "answers": [
+      "scam",
+      "scams"
+    ],
+    "forbidden": [
+      "trick",
+      "fake",
+      "money",
+      "cheat"
+    ],
+    "explanation": "A scam is a trick to get your money or information, such as a message saying you have won a prize.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0143",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Staying safe online",
+    "level": 1,
+    "prompt": "Computer virus",
+    "answers": [
+      "computer virus",
+      "virus",
+      "malware"
+    ],
+    "forbidden": [
+      "harm",
+      "spread",
+      "infect",
+      "download"
+    ],
+    "explanation": "A computer virus is a harmful program that can spread between computers and damage files. Only download things from places you trust.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0144",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Staying safe online",
+    "level": 1,
+    "prompt": "Pop-up",
+    "answers": [
+      "pop-up",
+      "popup",
+      "pop-up advert"
+    ],
+    "forbidden": [
+      "window",
+      "advert",
+      "appears",
+      "click"
+    ],
+    "explanation": "A pop-up is a small window that suddenly appears on the screen, often an advert. Do not click on pop-ups you do not trust.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0145",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Staying safe online",
+    "level": 1,
+    "prompt": "Report button",
+    "answers": [
+      "report button",
+      "report"
+    ],
+    "forbidden": [
+      "tell",
+      "flag",
+      "button",
+      "bad"
+    ],
+    "explanation": "A report button lets you tell a website or app about something unkind or worrying, so they can deal with it.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0146",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Staying safe online",
+    "level": 1,
+    "prompt": "Block",
+    "answers": [
+      "block",
+      "blocking"
+    ],
+    "forbidden": [
+      "stop",
+      "contact",
+      "messages",
+      "person"
+    ],
+    "explanation": "Blocking someone stops them from contacting you or seeing what you post.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0147",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Staying safe online",
+    "level": 1,
+    "prompt": "Digital footprint",
+    "answers": [
+      "digital footprint"
+    ],
+    "forbidden": [
+      "trail",
+      "online",
+      "stays",
+      "forever"
+    ],
+    "explanation": "Your digital footprint is the trail of everything you do online, such as posts and photos. It can stay there for a very long time.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0148",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Staying safe online",
+    "level": 1,
+    "prompt": "Fake news",
+    "answers": [
+      "fake news",
+      "misinformation"
+    ],
+    "forbidden": [
+      "false",
+      "lies",
+      "untrue",
+      "story"
+    ],
+    "explanation": "Fake news is false information made to look like a real news story. Check whether a source can be trusted before you believe it.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0149",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Staying safe online",
+    "level": 1,
+    "prompt": "Username",
+    "answers": [
+      "username",
+      "user name"
+    ],
+    "forbidden": [
+      "name",
+      "account",
+      "log in",
+      "nickname"
+    ],
+    "explanation": "A username is the name you use for an account online. It should not include your real full name.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0150",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Staying safe online",
+    "level": 1,
+    "prompt": "Age rating",
+    "answers": [
+      "age rating",
+      "age ratings"
+    ],
+    "forbidden": [
+      "old",
+      "games",
+      "films",
+      "suitable"
+    ],
+    "explanation": "An age rating shows how old you should be to play a game or watch a film. It helps keep you safe.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0151",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Staying safe online",
+    "level": 1,
+    "prompt": "Social media",
+    "answers": [
+      "social media"
+    ],
+    "forbidden": [
+      "posts",
+      "friends",
+      "apps",
+      "share"
+    ],
+    "explanation": "Social media are apps and websites where people share posts, photos and messages. Most have a minimum age of 13.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0152",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Staying safe online",
+    "level": 1,
+    "prompt": "Kindness",
+    "answers": [
+      "kindness",
+      "being kind"
+    ],
+    "forbidden": [
+      "nice",
+      "friendly",
+      "respect",
+      "good"
+    ],
+    "explanation": "Kindness online means treating others as you would face to face, and never posting something hurtful.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0153",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Staying safe online",
+    "level": 1,
+    "prompt": "Permission",
+    "answers": [
+      "permission",
+      "asking permission"
+    ],
+    "forbidden": [
+      "ask",
+      "allowed",
+      "adult",
+      "yes"
+    ],
+    "explanation": "Permission means asking and being told yes, for example before downloading an app or sharing a photo of a friend.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0154",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Staying safe online",
+    "level": 1,
+    "prompt": "Safe search",
+    "answers": [
+      "safe search",
+      "safesearch"
+    ],
+    "forbidden": [
+      "filter",
+      "search",
+      "children",
+      "block"
+    ],
+    "explanation": "Safe search is a setting that hides unsuitable results when you search the internet.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0155",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Staying safe online",
+    "level": 1,
+    "prompt": "Download",
+    "answers": [
+      "download",
+      "downloading"
+    ],
+    "forbidden": [
+      "save",
+      "get",
+      "install",
+      "internet"
+    ],
+    "explanation": "To download means to copy a file or app from the internet onto your device. Only download from places you trust.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0156",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Staying safe online",
+    "level": 1,
+    "prompt": "Phishing",
+    "answers": [
+      "phishing"
+    ],
+    "forbidden": [
+      "fish",
+      "email",
+      "trick",
+      "password"
+    ],
+    "explanation": "Phishing is a trick message pretending to be from someone you trust, to make you give away passwords or details.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0157",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Staying safe online",
+    "level": 1,
+    "prompt": "Strong password",
+    "answers": [
+      "strong password"
+    ],
+    "forbidden": [
+      "secret",
+      "guess",
+      "letters",
+      "numbers"
+    ],
+    "explanation": "A strong password is long and hard to guess, with a mix of letters, numbers and symbols. Never share it.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0158",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Staying safe online",
+    "level": 1,
+    "prompt": "Screenshot",
+    "answers": [
+      "screenshot",
+      "screen shot"
+    ],
+    "forbidden": [
+      "picture",
+      "screen",
+      "save",
+      "capture"
+    ],
+    "explanation": "A screenshot is a picture of what is on your screen. It can help you show a trusted adult something that worried you.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0159",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Staying safe online",
+    "level": 1,
+    "prompt": "Location sharing",
+    "answers": [
+      "location sharing",
+      "sharing your location"
+    ],
+    "forbidden": [
+      "where",
+      "map",
+      "gps",
+      "place"
+    ],
+    "explanation": "Location sharing shows other people where you are. It is safest to keep it switched off or share only with family.",
+    "course": "primary-computing",
+    "status": "draft"
+  },
+  {
+    "id": "com-0160",
+    "type": "term",
+    "subject": "Computing",
+    "topic": "Staying safe online",
+    "level": 1,
+    "prompt": "Chat",
+    "answers": [
+      "chat",
+      "chat room",
+      "chatting"
+    ],
+    "forbidden": [
+      "talk",
+      "messages",
+      "online",
+      "type"
+    ],
+    "explanation": "A chat is a conversation by typed messages online. Only chat with people you know in real life.",
+    "course": "primary-computing",
+    "status": "draft"
   }
 ]
