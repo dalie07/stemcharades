@@ -25,8 +25,14 @@ is marked `reviewed` and reaches players. Nothing Claude writes goes into the ga
    Good cards are added to `content/decks/` as drafts with new ids. Refused cards are listed with the reason and
    saved to `*.rejected.json` beside the file you imported: paste that file back to Claude and ask it to fix and
    resend those cards.
-7. **Review** the new cards (`"status": "draft"`) against a textbook, fix anything wrong, set
-   `"status": "reviewed"`, then run `npm run validate:cards`.
+7. **Review** the new cards with the review tool:
+   ```bash
+   npm run review        # then open http://localhost:4321
+   ```
+   It shows one draft at a time, styled like the game's cards. Check it against a textbook, then press
+   **Approve** (or the A key), **Edit** to fix it (E), **Skip** (→), or **Delete draft** if it is not worth fixing.
+   Every save is checked like `npm run validate:cards`, so a broken card cannot be saved. The tool runs only on
+   your own computer and is never part of the live game.
 8. **Refresh the requests** with `npm run cards:prompts`, so the next request knows what now exists. Commit with a
    message starting `content:`.
 

@@ -19,6 +19,7 @@ optional Postgres (Neon) through Drizzle · Vitest + Playwright · GitHub Action
 - `npm run validate:cards` – schema, duplicate ids, shared answers
 - `npm run cards:prompts` / `npm run cards:import -- <file>` – draft cards with Claude, then import them as drafts
   (see `content/prompts/README.md`)
+- `npm run review` – the local card review tool on http://localhost:4321 (never deployed)
 - `npm run db:generate -w server` – a new SQL migration after editing `server/src/db/schema.ts`
 
 Set `ALLOW_DRAFT_CARDS=1` locally: production serves only cards whose `status` is `reviewed`.
