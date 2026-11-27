@@ -50,8 +50,9 @@ const JOIN_TIMEOUT = { timeout: 30_000 };
 
 export async function createRoom(p: Player, base = ""): Promise<string> {
   await p.page.goto(`${base}/#/online`);
+  await p.page.getByRole("button", { name: /^Create a room/ }).click(JOIN_TIMEOUT);
   await p.page.getByLabel("Your nickname").fill(p.name);
-  await p.page.getByRole("button", { name: "Create a room" }).click();
+  await p.page.getByRole("button", { name: "Create room" }).click();
   const heading = p.page.getByRole("heading", { name: /^Room code/ });
   await expect(heading).toBeVisible(JOIN_TIMEOUT);
   return ((await heading.textContent()) ?? "").trim();
@@ -59,8 +60,9 @@ export async function createRoom(p: Player, base = ""): Promise<string> {
 
 export async function joinRoom(p: Player, code: string, base = ""): Promise<void> {
   await p.page.goto(`${base}/#/online`);
-  await p.page.getByLabel("Your nickname").fill(p.name);
+  await p.page.getByRole("button", { name: /^Join a room/ }).click(JOIN_TIMEOUT);
   await p.page.getByLabel("Room code").fill(code);
+  await p.page.getByLabel("Your nickname").fill(p.name);
   await p.page.getByRole("button", { name: "Join room" }).click();
   await expect(p.page.getByRole("heading", { name: /^Room code/ })).toBeVisible(JOIN_TIMEOUT);
 }

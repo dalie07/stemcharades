@@ -40,6 +40,7 @@ test("a room that does not exist, a taken nickname and a blocked name give clear
   const code = await createRoom(host);
   const dup = await newPlayer(browser, "host");
   await dup.page.goto("/#/online");
+  await dup.page.getByRole("button", { name: /^Join a room/ }).click();
   await dup.page.getByLabel("Your nickname").fill("host");
   await dup.page.getByLabel("Room code").fill(code);
   await dup.page.getByRole("button", { name: "Join room" }).click();
@@ -47,6 +48,7 @@ test("a room that does not exist, a taken nickname and a blocked name give clear
 
   const nope = await newPlayer(browser, "Zed");
   await nope.page.goto("/#/online");
+  await nope.page.getByRole("button", { name: /^Join a room/ }).click();
   await nope.page.getByLabel("Your nickname").fill("Zed");
   await nope.page.getByLabel("Room code").fill("ZZZZZ");
   await nope.page.getByRole("button", { name: "Join room" }).click();
@@ -54,8 +56,9 @@ test("a room that does not exist, a taken nickname and a blocked name give clear
 
   const rude = await newPlayer(browser, "sh1t");
   await rude.page.goto("/#/online");
+  await rude.page.getByRole("button", { name: /^Create a room/ }).click();
   await rude.page.getByLabel("Your nickname").fill("sh1t");
-  await rude.page.getByRole("button", { name: "Create a room" }).click();
+  await rude.page.getByRole("button", { name: "Create room" }).click();
   await expect(rude.page.getByRole("alert")).toContainText("friendlier");
 });
 

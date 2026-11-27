@@ -71,3 +71,29 @@ test("an invite link fills in the room code", async ({ page }) => {
   await page.goto("/#/online?join=ABCDE");
   await expect(page.getByLabel("Room code")).toHaveValue("ABCDE");
 });
+
+test("joining says what is missing instead of doing nothing, and forgives spaces and lowercase", async ({ browser }) => {
+  const host = await newPlayer(browser, "Host");
+  const code = await createRoom(host);
+  const ann = await newPlayer(browser, "Ann");
+  const page = ann.page;
+  await page.goto("/#/online");
+  await page.getByRole("button", { name: /^Join a room/ }).click();
+
+  // The code typed first, as on a second phone, with no nickname yet: the button explains instead of staying grey.
+  await page.getByLabel("Room code").fill(` ${code.slice(0, 2).toLowerCase()} ${code.slice(2).toLowerCase()} `);
+  await expect(page.getByLabel("Room code")).toHaveValue(code);
+  await page.getByRole("button", { name: "Join room" }).click();
+  await expect(page.getByRole("alert")).toContainText("Enter your nickname first");
+  await expect(page.getByLabel("Your nickname")).toBeFocused();
+
+  // A look-alike character gets a specific hint.
+  await page.getByLabel("Room code").fill("ABC0E");
+  await page.getByRole("button", { name: "Join room" }).click();
+  await expect(page.getByRole("alert")).toContainText("never use O, 0, I or 1");
+
+  await page.getByLabel("Room code").fill(code);
+  await page.getByLabel("Your nickname").fill("Ann");
+  await page.getByRole("button", { name: "Join room" }).click();
+  await expect(page.getByRole("heading", { name: /^Room code/ })).toBeVisible({ timeout: 30_000 });
+});
