@@ -53,15 +53,15 @@ Measured on 19 November 2026.
 | Metric | Target | Result | Notes |
 |---|---|---|---|
 | Guess-match accuracy | 95% or better on 200 labelled guesses | **99.0%** (198 of 200) | The labelled set was machine-drafted, not collected from students; see limitations. The two misses are "half lives" and "one hundred and eighty", both included deliberately as hard cases |
-| Clue-filter leak rate | Zero | **0 leaks in 26,047 attempts** over all 407 cards | Every forbidden word, answer and prompt, in 6 or more disguises each (case, punctuation, plural, split words) |
-| Content review coverage | 100% reviewed in production | **100% (407 of 407 cards)** | Checked by a person against course material; production serves only reviewed cards |
+| Clue-filter leak rate | Zero | **0 leaks in 49,106 attempts** over all 800 cards | Every forbidden word, answer and prompt, in 6 or more disguises each (case, punctuation, plural, split words) |
+| Content review coverage | 100% reviewed in production | **51% (407 of 800 cards)** | The 393 new Primary drafts await review; production serves only reviewed cards |
 | Engine test coverage | 90% of lines in `server/src/game` | **99.1%** | `npm run test:coverage` fails below 90% |
 | Flag rate, round completion, reconnect success | Measure at the playtest | Not measured | There is deliberately no analytics. Count them by hand at the playtest, or from the flag issues |
 
 ## Known limitations
 
 **Content**
-- The cards were machine-drafted, then each was checked by one person. A second reviewer, ideally a teacher, would
+- The cards were machine-drafted. The first 407 were each checked by one person; the 393 Primary drafts added since still need review. A second reviewer, ideally a teacher, would
   catch what one pair of eyes misses; the **Flag this card** button collects what players spot.
 - The 200-guess labelled set was machine-drafted too. Add real student guesses to
   `server/tests/fixtures/guess-labels.json` before trusting the 99% figure.

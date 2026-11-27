@@ -42,7 +42,7 @@ guess it. Then the round ends with the right answer explained, so even a wrong g
   account needed.
 - **A classroom look.** A green chalkboard at night, a whiteboard by day, following the device. Fonts chosen for
   young readers, a colour per subject, gentle animations and optional sound and vibration.
-- **400+ cards and growing** across Maths, Physics, Chemistry, Biology and Computing, with formulas typeset by KaTeX.
+- **800 cards and growing** across Maths, Physics, Chemistry, Biology and Computing, with formulas typeset by KaTeX.
   Every card is checked by machine (schema, curriculum map, unambiguous answers, safe language) and then by a person.
 - **Optional accounts.** Sign in with GitHub or Google to keep your game history, a personal revision list, and
   private decks for your class. Guests play exactly the same game.
@@ -51,7 +51,8 @@ guess it. Then the round ends with the right answer explained, so even a wrong g
 - **Runs for $0.** One Node process on a free Render web service. No database is needed to play.
 
 > [!NOTE]
-> **Content status.** All 407 cards were drafted with AI help and then checked by hand against course material.
+> **Content status.** Cards are drafted with AI help (see [content/prompts](content/prompts/README.md)) and checked by hand
+> against course material: 407 of the 800 are reviewed so far.
 > Only cards marked `reviewed` are ever served; see the [content guide](docs/content-guide.md). Spotted a mistake?
 > Every card has a **Flag this card** button.
 
