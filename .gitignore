@@ -18,3 +18,7 @@ playwright-report/
 .idea/
 .vscode/*
 !.vscode/extensions.json
+
+# Claude replies waiting to be imported (see content/prompts/README.md)
+content/incoming/*
+!content/incoming/README.md
